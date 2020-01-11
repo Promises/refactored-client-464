@@ -37,7 +37,7 @@ public abstract class GameShell extends Applet implements Runnable,
     public static long lastClick;
     public static long clickTime;
     public static int eventMouseButtonPressed;
-    public static int mouseButtonPressed;
+    public static int mouseButtonPressed = 0;
     public static int idleTime = 0;
     public boolean mouseWheelDown;
     public int mouseWheelX;

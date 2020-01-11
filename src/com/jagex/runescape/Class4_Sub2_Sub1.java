@@ -387,18 +387,18 @@ public class Class4_Sub2_Sub1 extends Class4_Sub2 {
 				JagexException.aClass4_Sub20_Sub12_Sub2Array1732 = Class4_Sub21
 						.method625(StringUtilities.aJagexString_678,
 								Game.aClass19_Sub1_1849,
-								Class34.aJagexString_1767, true);
+								StringUtilities.aJagexString_1767, true);
 			if (Class12.aClass4_Sub20_Sub12_Sub1Array359 == null)
 				Class12.aClass4_Sub20_Sub12_Sub1Array359 = Class63.method1055(
-						Class34.aJagexString_1767, Game.aClass19_Sub1_1849, 27,
+						StringUtilities.aJagexString_1767, Game.aClass19_Sub1_1849, 27,
 						RSFont.aJagexString_142);
 			if (Class28.aClass4_Sub20_Sub12_Sub1Array635 == null)
 				Class28.aClass4_Sub20_Sub12_Sub1Array635 = Class63.method1055(
-						Class34.aJagexString_1767, Game.aClass19_Sub1_1849, 74,
+						StringUtilities.aJagexString_1767, Game.aClass19_Sub1_1849, 74,
 						StringUtilities.aJagexString_361);
 			if (Class59.aClass4_Sub20_Sub12_Sub1Array1174 == null)
 				Class59.aClass4_Sub20_Sub12_Sub1Array1174 = Class63.method1055(
-						Class34.aJagexString_1767, Game.aClass19_Sub1_1849, 120,
+						StringUtilities.aJagexString_1767, Game.aClass19_Sub1_1849, 120,
 						StringUtilities.aJagexString_324);
 			Class4_Sub20_Sub12.method488(0, 23, 765, 480, 0);
 			Class4_Sub20_Sub12.method500(0, 0, 125, 23, 12425273, 9135624);

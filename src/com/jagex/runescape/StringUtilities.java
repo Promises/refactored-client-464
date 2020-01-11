@@ -115,6 +115,7 @@ public class StringUtilities {
     public static JagexString aJagexString_1768 = JagexString.getRs2PreparedString("");
     public static JagexString aJagexString_1769 = JagexString.getRs2PreparedString("");
     public static JagexString aJagexString_1771 = JagexString.getRs2PreparedString("");
+    public static JagexString aJagexString_1767 = JagexString.getRs2PreparedString("");
     public static JagexString aJagexString_728 = JagexString.getRs2PreparedString("You are standing in a members)2only area)3");
     public static JagexString aJagexString_735 = JagexString.getRs2PreparedString("null");
     public static JagexString aJagexString_741 = JagexString.getRs2PreparedString("Zu viele Anmelde)2Versuche von Ihrer Adresse");
@@ -125,4 +126,25 @@ public class StringUtilities {
     public static JagexString aJagexString_772 = JagexString.getRs2PreparedString("scrollbar");
     public static JagexString aJagexString_788 = JagexString.getRs2PreparedString("We suspect someone knows your password)3");
     public static JagexString aJagexString_791 = JagexString.getRs2PreparedString(" )2>");
+    public static JagexString aJagexString_797 = JagexString.getRs2PreparedString("This computers address has been blocked");
+    public static JagexString aJagexString_804 = JagexString.getRs2PreparedString("null");
+    public static JagexString aJagexString_835 = JagexString.getRs2PreparedString("oder benutzen Sie eine andere Welt)3");
+    public static JagexString aJagexString_836 = JagexString.getRs2PreparedString("cyan:");
+    public static JagexString aJagexString_838 = JagexString.getRs2PreparedString(" <col=ffffff>");
+    public static JagexString aJagexString_839 = JagexString.getRs2PreparedString("cyan:");
+    public static JagexString aJagexString_840 = JagexString.getRs2PreparedString("huffman");
+    public static JagexString aJagexString_842 = JagexString.getRs2PreparedString(" )2> <col=ff9040>");
+    public static JagexString aJagexString_843 = JagexString.getRs2PreparedString("Diese Betatest)2Welt ist nur f-Ur eingeladene");
+    public static JagexString aJagexString_846 = JagexString.getRs2PreparedString(")2");
+    public static JagexString aJagexString_850 = JagexString.getRs2PreparedString("Benutzen Sie bitte eine andere Welt)3");
+    public static JagexString aJagexString_857 = JagexString.getRs2PreparedString(")1p");
+    public static JagexString aJagexString_864  = JagexString.getRs2PreparedString("Loaded textures");
+    public static JagexString aJagexString_867  = JagexString.getRs2PreparedString("as it was used to break our rules)3");
+    public static JagexString aJagexString_889 = JagexString.getRs2PreparedString("Bitte wenden Sie sich an den Kundendienst)3");
+    public static JagexString aJagexString_905  = JagexString.getRs2PreparedString("Login server offline)3");
+    public static JagexString aJagexString_918 = JagexString.getRs2PreparedString("Mem:");
+    public static JagexString aJagexString_921 = JagexString.getRs2PreparedString("Schlie-8en");
+    public static JagexString aJagexString_922 = JagexString.getRs2PreparedString(" <col=ffff00>");
+    public static JagexString aJagexString_924 = JagexString.getRs2PreparedString("Lade Sprites )2 ");
+    public static JagexString aJagexString_925 = JagexString.getRs2PreparedString("<col=ff7000>");
 }

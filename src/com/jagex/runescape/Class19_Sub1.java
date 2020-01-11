@@ -192,7 +192,7 @@ public class Class19_Sub1 extends Class19 {
 				return Class4_Sub1.aJagexString_1856;
 			}
 			if ((i ^ 0xffffffff) > 2) {
-				return Class45.aJagexString_925;
+				return StringUtilities.aJagexString_925;
 			}
 			if ((i ^ 0xffffffff) > -1) {
 				return Class50.aJagexString_1024;

@@ -3,34 +3,13 @@ package com.jagex.runescape;
 import com.jagex.runescape.net.StreamBuffer;
 
 public class Class41 {
-	public static JagexString aJagexString_797;
-	public static JagexString aJagexString_804 = JagexString.getRs2PreparedString("null"
-	);
-	public static JagexString aJagexString_818;
-	public static JagexString aJagexString_834;
-	public static JagexString aJagexString_835;
-	public static JagexString aJagexString_836;
-	public static JagexString aJagexString_838;
-	public static JagexString aJagexString_839;
-	public static StreamBuffer aClass4_Sub11_796;
+    public static StreamBuffer aClass4_Sub11_796 = new StreamBuffer(new byte[5000]);
 	public static int anInt803;
 	public static int anInt808;
 	public static int anInt817;
 	public static int anInt822 = 0;
 	public static int anInt828;
 	public static int anInt837;
-	static {
-		aJagexString_818 = JagexString.getRs2PreparedString(
-				"This computers address has been blocked");
-		aJagexString_797 = aJagexString_818;
-		aClass4_Sub11_796 = new StreamBuffer(new byte[5000]);
-		aJagexString_834 = JagexString.getRs2PreparedString("cyan:");
-		aJagexString_836 = aJagexString_834;
-		aJagexString_839 = aJagexString_834;
-		aJagexString_838 = JagexString.getRs2PreparedString(" <col=ffffff>");
-		aJagexString_835 = JagexString.getRs2PreparedString(
-				"oder benutzen Sie eine andere Welt)3");
-	}
 
 	public static void loadGameRegions(byte arg0) {
 		try {
@@ -64,9 +43,9 @@ public class Class41 {
 					}
 				}
 			}
-			if (!bool)
-				Class4_Sub20.anInt2353 = 1;
-			else {
+			if (!bool) {
+                Class4_Sub20.anInt2353 = 1;
+            } else {
 				Class77.anInt1591 = 0;
 				bool = true;
 				for (int i = 0; i < GameShell.regionsData.length; i++) {
@@ -83,28 +62,31 @@ public class Class41 {
 						bool &= Class67.method1089(yAbs, xAbs, (byte) -97, is);
 					}
 				}
-				if (!bool)
-					Class4_Sub20.anInt2353 = 2;
-				else {
-					if (Class4_Sub20.anInt2353 != 0)
-						Class19.method735(
-								true,
-								(Class4_Sub24.method639((new JagexString[] {
-										Class7.aJagexString_228,
-										Class4_Sub14.aJagexString_2285}), -842)),
-								(byte) -126);
+				if (!bool) {
+                    Class4_Sub20.anInt2353 = 2;
+                } else {
+					if (Class4_Sub20.anInt2353 != 0) {
+                        Class19.method735(
+                                true,
+                                (Class4_Sub24.method639((new JagexString[] {
+                                        Class7.aJagexString_228,
+                                        Class4_Sub14.aJagexString_2285}), -842)),
+                                (byte) -126);
+                    }
 					method938((byte) 0);
 					Class62.method1050(true);
 					method938((byte) 0);
 					Class4_Sub20_Sub7_Sub6.aClass69_3439.method1136();
 					method938((byte) 0);
 					System.gc();
-					for (int i = 0; (i ^ 0xffffffff) > -5; i++)
-						Class57.regions[i].method68(true);
+					for (int i = 0; (i ^ 0xffffffff) > -5; i++) {
+                        Class57.regions[i].method68(true);
+                    }
 					for (int i = 0; i < 4; i++) {
 						for (int i_2_ = 0; i_2_ < 104; i_2_++) {
-							for (int i_3_ = 0; i_3_ < 104; i_3_++)
-								Class46.landscapeData[i][i_2_][i_3_] = (byte) 0;
+							for (int i_3_ = 0; i_3_ < 104; i_3_++) {
+                                Class46.landscapeData[i][i_2_][i_3_] = (byte) 0;
+                            }
 						}
 					}
 					method938((byte) 0);
@@ -182,18 +164,20 @@ public class Class41 {
 											}
 										}
 									}
-									if (!bool_17_)
-										Class52.method1000(i_14_, (byte) 6,
-												8 * i_16_, i_15_ * 8);
+									if (!bool_17_) {
+                                        Class52.method1000(i_14_, (byte) 6,
+                                                8 * i_16_, i_15_ * 8);
+                                    }
 								}
 							}
 						}
 						for (int i_25_ = 0; (i_25_ ^ 0xffffffff) > -14; i_25_++) {
 							for (int i_26_ = 0; (i_26_ ^ 0xffffffff) > -14; i_26_++) {
 								int i_27_ = (Class80.anIntArrayArrayArray1650[0][i_25_][i_26_]);
-								if ((i_27_ ^ 0xffffffff) == 0)
-									Class12.method676(8, 8 * i_26_, 0, 8,
-											8 * i_25_);
+								if ((i_27_ ^ 0xffffffff) == 0) {
+                                    Class12.method676(8, 8 * i_26_, 0, 8,
+                                            8 * i_25_);
+                                }
 							}
 						}
 						Class81.method1212(true, false);
@@ -238,18 +222,22 @@ public class Class41 {
 							(Class4_Sub20_Sub7_Sub6.aClass69_3439), (byte) -45);
 					Class81.method1212(true, false);
 					int i_38_ = Class4_Sub6.anInt1918;
-					if (Class82.anInt1711 < i_38_)
-						i_38_ = Class82.anInt1711;
-					if (Class82.anInt1711 + -1 > i_38_)
-						i_38_ = -1 + Class82.anInt1711;
-					if (Class59.aBoolean1189)
-						Class4_Sub20_Sub7_Sub6.aClass69_3439
-								.method1148(Class4_Sub6.anInt1918);
-					else
-						Class4_Sub20_Sub7_Sub6.aClass69_3439.method1148(0);
+					if (Class82.anInt1711 < i_38_) {
+                        i_38_ = Class82.anInt1711;
+                    }
+					if (Class82.anInt1711 + -1 > i_38_) {
+                        i_38_ = -1 + Class82.anInt1711;
+                    }
+					if (Class59.aBoolean1189) {
+                        Class4_Sub20_Sub7_Sub6.aClass69_3439
+                                .method1148(Class4_Sub6.anInt1918);
+                    } else {
+                        Class4_Sub20_Sub7_Sub6.aClass69_3439.method1148(0);
+                    }
 					for (int i_39_ = 0; (i_39_ ^ 0xffffffff) > -105; i_39_++) {
-						for (int i_40_ = 0; i_40_ < 104; i_40_++)
-							Class62.method1049(i_40_, i_39_, 64);
+						for (int i_40_ = 0; i_40_ < 104; i_40_++) {
+                            Class62.method1049(i_40_, i_39_, 64);
+                        }
 					}
 					method938((byte) 0);
 					Class6.method646(-21691);
@@ -339,27 +327,29 @@ public class Class41 {
 
 	public static void method938(byte arg0) {
 		anInt803++;
-		if (arg0 != 0)
-			aJagexString_804 = null;
-		if (Class4_Sub20_Sub6.aClass43_2932 != null)
-			Class4_Sub20_Sub6.aClass43_2932.method954((byte) 105);
-		if (JagexException.aClass43_1728 != null)
-			JagexException.aClass43_1728.method954((byte) 72);
+		if (arg0 != 0) {
+            StringUtilities.aJagexString_804 = null;
+        }
+		if (Class4_Sub20_Sub6.aClass43_2932 != null) {
+            Class4_Sub20_Sub6.aClass43_2932.method954((byte) 105);
+        }
+		if (JagexException.aClass43_1728 != null) {
+            JagexException.aClass43_1728.method954((byte) 72);
+        }
 	}
 
 	public static void method939(byte arg0) {
 		try {
-			aJagexString_839 = null;
-			aJagexString_836 = null;
-			if (arg0 >= -103)
-				method940(null, -81);
-			aJagexString_834 = null;
-			aJagexString_835 = null;
-			aJagexString_838 = null;
-			aJagexString_797 = null;
+			StringUtilities.aJagexString_839 = null;
+			StringUtilities.aJagexString_836 = null;
+			if (arg0 >= -103) {
+                method940(null, -81);
+            }
+			StringUtilities.aJagexString_835 = null;
+			StringUtilities.aJagexString_838 = null;
+			StringUtilities.aJagexString_797 = null;
 			aClass4_Sub11_796 = null;
-			aJagexString_818 = null;
-			aJagexString_804 = null;
+			StringUtilities.aJagexString_804 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "lb.E("
 					+ arg0 + ')');
@@ -370,19 +360,20 @@ public class Class41 {
 		try {
 			if (arg1 >= 112) {
 				anInt817++;
-				if (Class49.aBoolean990)
-					Class43.method966(14, arg0);
-				else {
+				if (Class49.aBoolean990) {
+                    Class43.method966(14, arg0);
+                } else {
 					if ((Class62.anInt1227 ^ 0xffffffff) == -2
 							&& Class37.anInt758 >= 715
 							&& ((JagexException.anInt1729 ^ 0xffffffff) <= -454)) {
 						Class34.aBoolean1765 = !Class34.aBoolean1765;
-						if (Class34.aBoolean1765)
-							Class4_Sub20_Sub16.method606(25651);
-						else
-							GameShell.method20(255, Class9.aJagexString_269, false,
-									21332, Class34.aJagexString_1767,
-									Class54.aClass19_Sub1_1107);
+						if (Class34.aBoolean1765) {
+                            Class4_Sub20_Sub16.method606(25651);
+                        } else {
+                            GameShell.method20(255, Class9.aJagexString_269, false,
+                                    21332, StringUtilities.aJagexString_1767,
+                                    Class54.aClass19_Sub1_1107);
+                        }
 					}
 					if (Class54.anInt1109 != 5) {
 						Game.anInt1833++;
@@ -403,8 +394,9 @@ public class Class41 {
 										return;
 									}
 								}
-								if (StreamBuffer.aClass64_2096 != null)
-									Class81.method1206(32768);
+								if (StreamBuffer.aClass64_2096 != null) {
+                                    Class81.method1206(32768);
+                                }
 							}
 							int i = Class37.anInt758;
 							int i_50_ = Class62.anInt1227;
@@ -441,8 +433,9 @@ public class Class41 {
 											&& i <= 75 + i_54_
 											&& ((i_51_ ^ 0xffffffff) <= (i_55_ - 20 ^ 0xffffffff))
 											&& ((i_51_ ^ 0xffffffff) >= (i_55_
-													- -20 ^ 0xffffffff)))
-										Class4_Sub20_Sub14.anInt3140 = 0;
+													- -20 ^ 0xffffffff))) {
+                                        Class4_Sub20_Sub14.anInt3140 = 0;
+                                    }
 								}
 							} else {
 								int i_56_ = 231;
@@ -450,14 +443,16 @@ public class Class41 {
 								int i_57_ = 302;
 								if (i_50_ == 1
 										&& (i_51_ ^ 0xffffffff) <= (i_56_ + -15 ^ 0xffffffff)
-										&& i_51_ < i_56_)
-									Class4_Sub20_Sub7_Sub1_Sub1.anInt3581 = 0;
+										&& i_51_ < i_56_) {
+                                    Class4_Sub20_Sub7_Sub1_Sub1.anInt3581 = 0;
+                                }
 								i_56_ += 15;
 								int i_58_ = 321;
 								if ((i_50_ ^ 0xffffffff) == -2
 										&& (i_51_ ^ 0xffffffff) <= (i_56_ - 15 ^ 0xffffffff)
-										&& (i_56_ ^ 0xffffffff) < (i_51_ ^ 0xffffffff))
-									Class4_Sub20_Sub7_Sub1_Sub1.anInt3581 = 1;
+										&& (i_56_ ^ 0xffffffff) < (i_51_ ^ 0xffffffff)) {
+                                    Class4_Sub20_Sub7_Sub1_Sub1.anInt3581 = 1;
+                                }
 								i_56_ += 15;
 								if ((i_50_ ^ 0xffffffff) == -2
 										&& (i ^ 0xffffffff) <= (-75 + i_57_ ^ 0xffffffff)
@@ -466,18 +461,18 @@ public class Class41 {
 										&& i_58_ - -20 >= i_51_) {
 									StringUtilities.aJagexString_1768 = StringUtilities.aJagexString_1768
 											.method816(122).method839(85);
-									if ((StringUtilities.aJagexString_1768.method825(-111) ^ 0xffffffff) == -1)
-										Class4_Sub20_Sub9.method477(
-												Class6.aJagexString_210, 17,
-												Class81.aJagexString_1704,
-												Class81.aJagexString_1652);
-									else if ((StringUtilities.aJagexString_1764
-											.method825(-99) ^ 0xffffffff) == -1)
-										Class4_Sub20_Sub9.method477(
-												Class64.aJagexString_1281, 102,
-												Class81.aJagexString_1683,
-												Class81.aJagexString_1685);
-									else {
+									if ((StringUtilities.aJagexString_1768.method825(-111) ^ 0xffffffff) == -1) {
+                                        Class4_Sub20_Sub9.method477(
+                                                Class6.aJagexString_210, 17,
+                                                Class81.aJagexString_1704,
+                                                Class81.aJagexString_1652);
+                                    } else if ((StringUtilities.aJagexString_1764
+											.method825(-99) ^ 0xffffffff) == -1) {
+                                        Class4_Sub20_Sub9.method477(
+                                                Class64.aJagexString_1281, 102,
+                                                Class81.aJagexString_1683,
+                                                Class81.aJagexString_1685);
+                                    } else {
 										Class4_Sub20_Sub9.method477(
 												StringUtilities.aJagexString_311, 12,
 												Class81.aJagexString_1700,
@@ -492,8 +487,8 @@ public class Class41 {
 											&& ((i_58_ + -20 ^ 0xffffffff) >= (i_51_ ^ 0xffffffff))
 											&& i_58_ + 20 >= i_51_) {
 										Class4_Sub20_Sub14.anInt3140 = 0;
-										StringUtilities.aJagexString_1764 = Class34.aJagexString_1767;
-										StringUtilities.aJagexString_1768 = Class34.aJagexString_1767;
+										StringUtilities.aJagexString_1764 = StringUtilities.aJagexString_1767;
+										StringUtilities.aJagexString_1768 = StringUtilities.aJagexString_1767;
 									}
 									while (RSCanvas.method34(127)) {
 										boolean bool = false;
@@ -508,59 +503,64 @@ public class Class41 {
 										if (((Class4_Sub20_Sub7_Sub1_Sub1.anInt3581) ^ 0xffffffff) == -1) {
 											if ((Class4_Sub15.anInt2298 ^ 0xffffffff) == -86
 													&& StringUtilities.aJagexString_1768
-															.method825(-110) > 0)
-												StringUtilities.aJagexString_1768 = (StringUtilities.aJagexString_1768
-														.method829(
-																(byte) -119,
-																0,
-																(-1 + (StringUtilities.aJagexString_1768
-																		.method825(-125)))));
+															.method825(-110) > 0) {
+                                                StringUtilities.aJagexString_1768 = (StringUtilities.aJagexString_1768
+                                                        .method829(
+                                                                (byte) -119,
+                                                                0,
+                                                                (-1 + (StringUtilities.aJagexString_1768
+                                                                        .method825(-125)))));
+                                            }
 											if ((Class4_Sub15.anInt2298 ^ 0xffffffff) == -85
-													|| (Class4_Sub15.anInt2298 ^ 0xffffffff) == -81)
-												Class4_Sub20_Sub7_Sub1_Sub1.anInt3581 = 1;
+													|| (Class4_Sub15.anInt2298 ^ 0xffffffff) == -81) {
+                                                Class4_Sub20_Sub7_Sub1_Sub1.anInt3581 = 1;
+                                            }
 											if (bool
 													&& (StringUtilities.aJagexString_1768
-															.method825(-111) ^ 0xffffffff) > -13)
-												StringUtilities.aJagexString_1768 = (StringUtilities.aJagexString_1768
-														.method838(
-																15871,
-																Class48.anInt980));
+															.method825(-111) ^ 0xffffffff) > -13) {
+                                                StringUtilities.aJagexString_1768 = (StringUtilities.aJagexString_1768
+                                                        .method838(
+                                                                15871,
+                                                                Class48.anInt980));
+                                            }
 										} else if (((Class4_Sub20_Sub7_Sub1_Sub1.anInt3581) ^ 0xffffffff) == -2) {
 											if ((Class4_Sub15.anInt2298 ^ 0xffffffff) == -86
 													&& StringUtilities.aJagexString_1764
-															.method825(-99) > 0)
-												StringUtilities.aJagexString_1764 = (StringUtilities.aJagexString_1764
-														.method829(
-																(byte) 70,
-																0,
-																(-1 + (StringUtilities.aJagexString_1764
-																		.method825(-125)))));
+															.method825(-99) > 0) {
+                                                StringUtilities.aJagexString_1764 = (StringUtilities.aJagexString_1764
+                                                        .method829(
+                                                                (byte) 70,
+                                                                0,
+                                                                (-1 + (StringUtilities.aJagexString_1764
+                                                                        .method825(-125)))));
+                                            }
 											if ((Class4_Sub15.anInt2298 ^ 0xffffffff) == -85
-													|| (Class4_Sub15.anInt2298 ^ 0xffffffff) == -81)
-												Class4_Sub20_Sub7_Sub1_Sub1.anInt3581 = 0;
+													|| (Class4_Sub15.anInt2298 ^ 0xffffffff) == -81) {
+                                                Class4_Sub20_Sub7_Sub1_Sub1.anInt3581 = 0;
+                                            }
 											if ((Class12.anInt341 ^ 0xffffffff) == -3
 													&& (Class4_Sub15.anInt2298 == 84)) {
 												StringUtilities.aJagexString_1768 = StringUtilities.aJagexString_1768
 														.method816(-93)
 														.method839(111);
 												if ((StringUtilities.aJagexString_1768
-														.method825(-102) ^ 0xffffffff) == -1)
-													Class4_Sub20_Sub9
-															.method477(
-																	Class6.aJagexString_210,
-																	121,
-																	Class81.aJagexString_1704,
-																	(Class81.aJagexString_1652));
-												else {
+														.method825(-102) ^ 0xffffffff) == -1) {
+                                                    Class4_Sub20_Sub9
+                                                            .method477(
+                                                                    Class6.aJagexString_210,
+                                                                    121,
+                                                                    Class81.aJagexString_1704,
+                                                                    (Class81.aJagexString_1652));
+                                                } else {
 													if ((StringUtilities.aJagexString_1764
-															.method825(-102) ^ 0xffffffff) == -1)
-														Class4_Sub20_Sub9
-																.method477(
-																		(Class64.aJagexString_1281),
-																		31,
-																		(Class81.aJagexString_1683),
-																		(Class81.aJagexString_1685));
-													else {
+															.method825(-102) ^ 0xffffffff) == -1) {
+                                                        Class4_Sub20_Sub9
+                                                                .method477(
+                                                                        (Class64.aJagexString_1281),
+                                                                        31,
+                                                                        (Class81.aJagexString_1683),
+                                                                        (Class81.aJagexString_1685));
+                                                    } else {
 														Class4_Sub20_Sub9
 																.method477(
 																		(StringUtilities.aJagexString_311),
@@ -576,11 +576,12 @@ public class Class41 {
 											}
 											if (bool
 													&& StringUtilities.aJagexString_1764
-															.method825(-110) < 20)
-												StringUtilities.aJagexString_1764 = (StringUtilities.aJagexString_1764
-														.method838(
-																15871,
-																Class48.anInt980));
+															.method825(-110) < 20) {
+                                                StringUtilities.aJagexString_1764 = (StringUtilities.aJagexString_1764
+                                                        .method838(
+                                                                15871,
+                                                                Class48.anInt980));
+                                            }
 										}
 									}
 								}
@@ -598,8 +599,6 @@ public class Class41 {
 	public static int method941(int arg0) {
 		try {
 			anInt828++;
-			if (arg0 != 8)
-				aJagexString_834 = null;
 			return GameShell.idleTime++;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "lb.B("

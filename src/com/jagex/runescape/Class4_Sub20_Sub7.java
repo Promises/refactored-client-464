@@ -62,8 +62,8 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             Class62.aJagexString_1238 = StringUtilities.aJagexString_560;
             Class81.aJagexString_1679 = Class61.aJagexString_1212;
             StringUtilities.aJagexString_581 = Class76.aJagexString_1560;
-            Class4_Sub20_Sub7_Sub1_Sub1.aJagexString_3592 = Class45.aJagexString_921;
-            Class4_Sub20_Sub7_Sub5.aJagexString_3383 = Class42.aJagexString_850;
+            Class4_Sub20_Sub7_Sub1_Sub1.aJagexString_3592 = StringUtilities.aJagexString_921;
+            Class4_Sub20_Sub7_Sub5.aJagexString_3383 = StringUtilities.aJagexString_850;
             Class81.aJagexString_1669 = Class50.aJagexString_1018;
             Class4_Sub20_Sub7_Sub1.aJagexString_3234 = Class4_Sub23.aJagexString_2417;
             StringUtilities.aJagexString_765 = Class4_Sub20_Sub11.aJagexString_3078;
@@ -91,7 +91,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             Class81.aJagexString_1675 = Class81.aJagexString_1701;
             Class81.aJagexString_1680 = Class61.aJagexString_1212;
             Class4_Sub20_Sub5.aJagexString_2884 = Class57.aJagexString_1139;
-            Class4_Sub20_Sub1.aJagexString_2731 = Class42.aJagexString_843;
+            Class4_Sub20_Sub1.aJagexString_2731 = StringUtilities.aJagexString_843;
             Class4_Sub3.aJagexString_1907 = Class65.aJagexString_1294;
             Class72.aJagexString_1485 = Class81.aJagexString_1659;
             Game.aJagexString_1852 = Class4_Sub20_Sub7_Sub1.aJagexString_3238;
@@ -117,7 +117,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             StringUtilities.aJagexString_93 = Class4_Sub20_Sub14.aJagexString_3135;
             Class4_Sub20_Sub11.aJagexString_3089 = Region.aJagexString_137;
             Class73.aJagexString_1507 = Class4_Sub20.aJagexString_2352;
-            Class43.aJagexString_867 = Class8.aJagexString_256;
+            StringUtilities.aJagexString_867 = Class8.aJagexString_256;
             StringUtilities.aJagexString_346 = Class4_Sub6.aJagexString_1938;
             Class53.aJagexString_1077 = StringUtilities.aJagexString_769;
             StringUtilities.aJagexString_662 = Class4_Sub20_Sub6.aJagexString_2896;
@@ -125,7 +125,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             Class4_Sub20_Sub11.aJagexString_3096 = Class4_Sub11_Sub1.aJagexString_2692;
             StringUtilities.aJagexString_432 = Game.aJagexString_1847;
             Class81.aJagexString_1676 = Class61.aJagexString_1212;
-            Class41.aJagexString_839 = StringUtilities.aJagexString_695;
+            StringUtilities.aJagexString_839 = StringUtilities.aJagexString_695;
             StringUtilities.aJagexString_679 = Class80.aJagexString_1642;
             Class4_Sub20_Sub4.aJagexString_2854 = Class4_Sub20_Sub7_Sub1.aJagexString_3243;
             Class71.aJagexString_1470 = Class4_Sub14.aJagexString_2287;
@@ -160,7 +160,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             StringUtilities.aJagexString_393 = StringUtilities.aJagexString_594;
             Class7.aJagexString_228 = Class58.aJagexString_1173;
             RSCanvas.aJagexString_58 = Class68.aJagexString_1374;
-            Class43.aJagexString_905 = Class7.aJagexString_219;
+            StringUtilities.aJagexString_905 = Class7.aJagexString_219;
             Class81.aJagexString_1658 = Class80.aJagexString_1647;
             StringUtilities.aJagexString_470 = StringUtilities.aJagexString_623;
             Class4_Sub20_Sub16.aJagexString_3165 = Class4_Sub15.aJagexString_2292;
@@ -188,21 +188,21 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             Class4_Sub7.aJagexString_1948 = Class4_Sub15.aJagexString_2294;
             Class4_Sub10.aJagexString_2046 = Class59.aJagexString_1176;
             Class6.aJagexString_199 = Class49.aJagexString_1001;
-            Class4_Sub20_Sub8.aJagexString_2973 = Class45.aJagexString_924;
+            Class4_Sub20_Sub8.aJagexString_2973 = StringUtilities.aJagexString_924;
             RSFont.aJagexString_163 = Class5.aJagexString_179;
             Class7.aJagexString_235 = StringUtilities.aJagexString_685;
             Class4_Sub23.aJagexString_2433 = StringUtilities.aJagexString_2475;
-            Class43.aJagexString_864 = Class4_Sub20_Sub7_Sub4.aJagexString_3373;
+            StringUtilities.aJagexString_864 = Class4_Sub20_Sub7_Sub4.aJagexString_3373;
             if (arg0 == 0) {
                 Game.aJagexString_1850 = Class4_Sub14.aJagexString_2274;
                 StringUtilities.aJagexString_411 = Class50.aJagexString_1018;
                 RSFont.aJagexString_138 = Class4_Sub6.aJagexString_1943;
-                Class41.aJagexString_797 = Class4_Sub11_Sub1.aJagexString_2679;
+                StringUtilities.aJagexString_797 = Class4_Sub11_Sub1.aJagexString_2679;
                 Class53.aJagexString_1078 = StringUtilities.aJagexString_373;
                 Class81.aJagexString_1683 = Class61.aJagexString_1212;
                 Class4_Sub16.aJagexString_2312 = StringUtilities.aJagexString_464;
                 Class58.aJagexString_1166 = StringUtilities.aJagexString_1458;
-                Class81.aJagexString_1687 = Class41.aJagexString_835;
+                Class81.aJagexString_1687 = StringUtilities.aJagexString_835;
                 Class54.aJagexString_1100 = Class76.aJagexString_1564;
                 Region.aJagexString_120 = Class81.aJagexString_1672;
                 StringUtilities.aJagexString_728 = StringUtilities.aJagexString_72;
@@ -214,7 +214,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
                 Class53.aJagexString_1084 = StringUtilities.aJagexString_373;
                 Class82.aJagexString_1713 = StringUtilities.aJagexString_69;
                 Class81.aJagexString_1702 = Class61.aJagexString_1212;
-                Class48.aJagexString_985 = Class43.aJagexString_889;
+                Class48.aJagexString_985 = StringUtilities.aJagexString_889;
                 Class62.aJagexString_1236 = Class64.aJagexString_1257;
                 Class81.aJagexString_1684 = Class80.aJagexString_1647;
                 Class59.aJagexString_1183 = Class4_Sub20_Sub7_Sub4.aJagexString_3361;

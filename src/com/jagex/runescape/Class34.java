@@ -8,7 +8,6 @@ public class Class34 implements Interface2 {
     public static boolean aBoolean1765 = false;
     public static boolean aBoolean1770 = true;
 
-
     public static Class4_Sub20_Sub12_Sub2 aClass4_Sub20_Sub12_Sub2_1760;
     public static Class66 aClass66_1758 = new Class66(100);
     public static int anInt1736;

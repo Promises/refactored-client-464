@@ -959,7 +959,7 @@ public class Class9 {
 						if ((arg1 ^ 0xffffffff) != -8) {
 							if ((arg1 ^ 0xffffffff) == -9)
 								Class4_Sub20_Sub9.method477(
-										Class43.aJagexString_905, 110,
+										StringUtilities.aJagexString_905, 110,
 										Class4_Sub20_Sub14.aJagexString_3147,
 										Class81.aJagexString_1706);
 							else if (arg1 == 9)
@@ -1029,9 +1029,9 @@ public class Class9 {
 														} else
 															Class4_Sub20_Sub9
 																	.method477(
-																			(Class43.aJagexString_867),
+																			(StringUtilities.aJagexString_867),
 																			46,
-																			(Class41.aJagexString_797),
+																			(StringUtilities.aJagexString_797),
 																			(Class81.aJagexString_1690));
 													} else
 														Class4_Sub20_Sub9

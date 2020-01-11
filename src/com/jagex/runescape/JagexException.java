@@ -40,23 +40,23 @@ public class JagexException extends RuntimeException {
 			if (!RSInterface.aBoolean2203) {
 				Class4_Sub20_Sub12.method496();
 				byte[] is = arg1.method753(false, JagexString.aJagexString_1824,
-						Class34.aJagexString_1767);
+						StringUtilities.aJagexString_1767);
 				Class4_Sub20_Sub16.aClass4_Sub20_Sub12_Sub2_3177 = new Class4_Sub20_Sub12_Sub2(
 						is, arg3);
 				Class34.aClass4_Sub20_Sub12_Sub2_1760 = Class4_Sub20_Sub16.aClass4_Sub20_Sub12_Sub2_3177
 						.method524();
 				Class31.aClass4_Sub20_Sub12_Sub1_676 = Class2.method44(24094,
-						Class34.aJagexString_1767, GameShell.aJagexString_25, arg0);
+						StringUtilities.aJagexString_1767, GameShell.aJagexString_25, arg0);
 				Class24.aClass4_Sub20_Sub12_Sub1_549 = Class2.method44(24094,
-						Class34.aJagexString_1767, StringUtilities.aJagexString_92, arg0);
+						StringUtilities.aJagexString_1767, StringUtilities.aJagexString_92, arg0);
 				Class4_Sub20_Sub7_Sub1.aClass4_Sub20_Sub12_Sub1_3260 = Class2
-						.method44(24094, Class34.aJagexString_1767,
+						.method44(24094, StringUtilities.aJagexString_1767,
 								Class4_Sub20_Sub11.aJagexString_3090, arg0);
 				Class81.aClass4_Sub20_Sub12_Sub1Array1709 = Class63.method1055(
-						Class34.aJagexString_1767, arg0, 92,
+						StringUtilities.aJagexString_1767, arg0, 92,
 						Class4_Sub20_Sub17.aJagexString_3214);
 				GameShell.aClass4_Sub20_Sub12_Sub1Array43 = Class63.method1055(
-						Class34.aJagexString_1767, arg0, 11,
+						StringUtilities.aJagexString_1767, arg0, 11,
 						Class4_Sub20_Sub7_Sub3.aJagexString_3337);
 				Class65.anIntArray1307 = new int[256];
 				for (int i = 0; (i ^ 0xffffffff) > -65; i++)
@@ -96,8 +96,8 @@ public class JagexException extends RuntimeException {
 					Class34.aBoolean1765 = false;
 				else
 					Class34.aBoolean1765 = true;
-				StringUtilities.aJagexString_1764 = Class34.aJagexString_1767;
-				StringUtilities.aJagexString_1768 = Class34.aJagexString_1767;
+				StringUtilities.aJagexString_1764 = StringUtilities.aJagexString_1767;
+				StringUtilities.aJagexString_1768 = StringUtilities.aJagexString_1767;
 				Class4_Sub20_Sub14.anInt3140 = 0;
 				Class49.aBoolean990 = false;
 				Class76.anIntArray1565 = new int[32768];
@@ -106,7 +106,7 @@ public class JagexException extends RuntimeException {
 				else
 					Class31.method879(Class9.aJagexString_269, 2,
 							Class54.aClass19_Sub1_1107, false, 255, -90,
-							Class34.aJagexString_1767);
+							StringUtilities.aJagexString_1767);
 				Class4_Sub20_Sub7_Sub5.method426(118, false);
 				RSInterface.aBoolean2203 = true;
 				Class4_Sub20_Sub16.aClass4_Sub20_Sub12_Sub2_3177

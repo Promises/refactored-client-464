@@ -400,7 +400,7 @@ public class Class4_Sub14 extends RSFont {
 							Class59.aBoolean1189 ? 64 : 128);
 					Class4_Sub20_Sub12_Sub3.method539(class34);
 					Class4_Sub20_Sub12_Sub3.method553(0.8);
-					StringUtilities.aJagexString_1762 = Class43.aJagexString_864;
+					StringUtilities.aJagexString_1762 = StringUtilities.aJagexString_864;
 					Class48.anInt989 = 110;
 					Region.anInt135 = 90;
 				}
@@ -412,7 +412,7 @@ public class Class4_Sub14 extends RSFont {
 				StringUtilities.aJagexString_1762 = Class4_Sub20_Sub6.aJagexString_2919;
 			} else if (Class48.anInt989 == 120) {
 				if (!Class77.aClass19_Sub1_1589.method744((byte) 126,
-						Class42.aJagexString_840, (Class4_Sub3.aJagexString_1895))) {
+						StringUtilities.aJagexString_840, (Class4_Sub3.aJagexString_1895))) {
 					StringUtilities.aJagexString_1762 = Class4_Sub24.method639(
 							(new JagexString[] { (Class4_Sub20_Sub8.aJagexString_2982),
 									StringUtilities.aJagexString_558}), -842);
@@ -420,7 +420,7 @@ public class Class4_Sub14 extends RSFont {
 				} else {
 					Class47 class47 = new Class47(
 							Class77.aClass19_Sub1_1589.method753(arg0,
-									Class42.aJagexString_840,
+									StringUtilities.aJagexString_840,
 									Class4_Sub3.aJagexString_1895));
 					Class16.method726(-1, class47);
 					Region.anInt135 = 96;

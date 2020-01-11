@@ -123,7 +123,7 @@ public class Class24 {
 				}
 				Class4_Sub15.aClass4_Sub20_Sub12_Sub4_Sub1_2289.method557(
 						Class4_Sub24.method639(
-								(new JagexString[] { Class45.aJagexString_918,
+								(new JagexString[] { StringUtilities.aJagexString_918,
 										Class74.method1168(-123, i_2_),
 										StringUtilities.aJagexString_472}), -842), i,
 						i_0_, i_1_, -1);

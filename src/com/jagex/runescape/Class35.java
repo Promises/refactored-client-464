@@ -163,7 +163,7 @@ public class Class35 {
 			if ((jagexString.method825(-126) ^ 0xffffffff) < -7) {
 				return (Class4_Sub24.method639(
 						(new JagexString[] {
-								Class41.aJagexString_838,
+								StringUtilities.aJagexString_838,
 								jagexString.method829((byte) 17, 0,
 										jagexString.method825(-110) + -4),
 								Class73.aJagexString_1507,
@@ -171,7 +171,7 @@ public class Class35 {
 								Class7.aJagexString_232}), -842));
 			}
 			return Class4_Sub24
-					.method639((new JagexString[] { Class45.aJagexString_922, jagexString,
+					.method639((new JagexString[] { StringUtilities.aJagexString_922, jagexString,
 							Class8.aJagexString_240}), -842);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("jf.N("

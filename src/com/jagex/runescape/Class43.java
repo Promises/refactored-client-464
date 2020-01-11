@@ -4,22 +4,15 @@ import com.jagex.runescape.util.Signlink;
 import java.awt.Component;
 
 public class Class43 {
-	public static JagexString aJagexString_864;
-	public static JagexString aJagexString_867;
-	public static JagexString aJagexString_871;
-	public static JagexString ruleBreaker;
-	public static JagexString aJagexString_888;
-	public static JagexString aJagexString_889;
-	public static JagexString aJagexString_905;
 	public static Signlink aClass75_872;
-	public static long[] aLongArray881;
+	public static long[] aLongArray881 = new long[32];
 	public static int anInt858;
 	public static int anInt859;
-	public static int anInt860;
+	public static int anInt860 = 0;
 	public static int anInt862;
 	public static int anInt863;
 	public static int anInt865;
-	public static int anInt868;
+	public static int anInt868 = 0;
 	public static int anInt870;
 	public static int anInt873;
 	public static int anInt874 = 0;
@@ -35,30 +28,14 @@ public class Class43 {
 	public static int anInt891;
 	public static int anInt892;
 	public static int anInt903;
-	public static int[] anIntArray885;
-	static {
-		anInt868 = 0;
-		anInt860 = 0;
-		ruleBreaker = JagexString.getRs2PreparedString(
-				"as it was used to break our rules)3");
-		aJagexString_888 = JagexString.getRs2PreparedString("Login server offline)3"
-		);
-		aJagexString_889 = (JagexString.getRs2PreparedString(
-				"Bitte wenden Sie sich an den Kundendienst)3"));
-		aJagexString_871 = JagexString.getRs2PreparedString("Loaded textures");
-		GameShell.mouseButtonPressed = 0;
-		aLongArray881 = new long[32];
-		anIntArray885 = new int[500];
-		aJagexString_864 = aJagexString_871;
-		aJagexString_867 = ruleBreaker;
-		aJagexString_905 = aJagexString_888;
-	}
+	public static int[] anIntArray885 = new int[500];
 
 	public static void method953(boolean arg0) {
 		try {
 			Class4_Sub23.aByteArrayArray2426 = null;
-			if (arg0 != true)
+			if (arg0 != true) {
 				anInt868 = 1;
+			}
 			anInt862++;
 			Class30.anIntArray650 = null;
 			Class4_Sub20_Sub7_Sub5.anIntArray3395 = null;
@@ -73,8 +50,9 @@ public class Class43 {
 
 	public static void method955(JagexString arg0, JagexString arg1, byte arg2, int arg3) {
 		try {
-			if (arg2 <= 106)
+			if (arg2 <= 106) {
 				method966(68, null);
+			}
 			anInt870++;
 			Class61.method1047(arg1, false, arg3, null, arg0);
 		} catch (RuntimeException runtimeexception) {
@@ -87,18 +65,13 @@ public class Class43 {
 
 	public static void method961(int arg0) {
 		try {
-			aJagexString_905 = null;
-			aJagexString_871 = null;
+			StringUtilities.aJagexString_905 = null;
 			anIntArray885 = null;
-			aJagexString_888 = null;
-			ruleBreaker = null;
 			aLongArray881 = null;
-			aJagexString_889 = null;
+			StringUtilities.aJagexString_889 = null;
 			aClass75_872 = null;
-			aJagexString_867 = null;
-			if (arg0 != -2948)
-				aJagexString_888 = null;
-			aJagexString_864 = null;
+			StringUtilities.aJagexString_867 = null;
+			StringUtilities.aJagexString_864 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ld.H("
 					+ arg0 + ')');
@@ -212,7 +185,7 @@ public class Class43 {
 										StringUtilities.aJagexString_301,
 										Class74.method1168(-25,
 												Class59.aBoolean1189 ? 1 : 0),
-										Class42.aJagexString_857,
+										StringUtilities.aJagexString_857,
 										Class74.method1168(-116,
 												Class25.anInt583),
 										StringUtilities.aJagexString_322,
@@ -227,8 +200,9 @@ public class Class43 {
 				}
 			}
 		}
-		if (arg0 != 14)
-			aJagexString_867 = null;
+		if (arg0 != 14) {
+			StringUtilities.aJagexString_867 = null;
+		}
 	}
 
 	public boolean aBoolean900;
@@ -267,8 +241,9 @@ public class Class43 {
 	public void method949(boolean arg0) {
 		try {
 			aBoolean900 = true;
-			if (arg0 != false)
+			if (arg0 != false) {
 				method952(24, null);
+			}
 			anInt875++;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ld.K("
@@ -306,8 +281,9 @@ public class Class43 {
 	public synchronized void method952(int arg0, Class4_Sub2 arg1) {
 		try {
 			aClass4_Sub2_884 = arg1;
-			if (arg0 != 7)
+			if (arg0 != 7) {
 				aLongArray881 = null;
+			}
 			anInt880++;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ld.Q("
@@ -322,22 +298,26 @@ public class Class43 {
 				long l = Class52.method1002((byte) -42);
 				try {
 					if (aLong898 != 0L) {
-						if ((aLong898 ^ 0xffffffffffffffffL) < (l ^ 0xffffffffffffffffL))
+						if ((aLong898 ^ 0xffffffffffffffffL) < (l ^ 0xffffffffffffffffL)) {
 							return;
+						}
 						method963(anInt902);
 						aLong898 = 0L;
 						aBoolean900 = true;
 					}
 					int i_0_ = method959();
-					if ((-i_0_ + anInt897 ^ 0xffffffff) < (anInt901 ^ 0xffffffff))
+					if ((-i_0_ + anInt897 ^ 0xffffffff) < (anInt901 ^ 0xffffffff)) {
 						anInt901 = anInt897 - i_0_;
+					}
 					int i_1_ = anInt895 + anInt896;
-					if (256 + i_1_ > 16384)
+					if (256 + i_1_ > 16384) {
 						i_1_ = 16128;
+					}
 					if ((anInt902 ^ 0xffffffff) > (256 + i_1_ ^ 0xffffffff)) {
 						anInt902 += 1024;
-						if (anInt902 > 16384)
+						if (anInt902 > 16384) {
 							anInt902 = 16384;
+						}
 						method960();
 						method963(anInt902);
 						if (256 + i_1_ > anInt902) {
@@ -353,9 +333,9 @@ public class Class43 {
 						method965();
 					}
 					if ((l ^ 0xffffffffffffffffL) < (aLong904 ^ 0xffffffffffffffffL)) {
-						if (aBoolean900)
+						if (aBoolean900) {
 							aBoolean900 = false;
-						else {
+						} else {
 							if (anInt901 == 0 && anInt906 == 0) {
 								method960();
 								aLong898 = l + 2000L;
@@ -373,10 +353,12 @@ public class Class43 {
 					aLong898 = 2000L + l;
 				}
 				try {
-					if ((500000L + aLong869 ^ 0xffffffffffffffffL) > (l ^ 0xffffffffffffffffL))
+					if ((500000L + aLong869 ^ 0xffffffffffffffffL) > (l ^ 0xffffffffffffffffL)) {
 						l = aLong869;
-					for (/**/; l > 5000L + aLong869; aLong869 += (256000 / Class67.anInt1354))
+					}
+					for (/**/; l > 5000L + aLong869; aLong869 += (256000 / Class67.anInt1354)) {
 						method964(-14762, 256);
+					}
 				} catch (Exception exception) {
 					aLong869 = l;
 				}
@@ -399,14 +381,16 @@ public class Class43 {
 	public void method957(Class4_Sub2 arg0, int arg1, int arg2) {
 		try {
 			anInt876++;
-			if (arg2 != 256)
+			if (arg2 != 256) {
 				method964(9, 97);
+			}
 			int i = arg1 >> -1336207163;
 			Class4_Sub2 class4_sub2 = aClass4_Sub2Array899[i];
-			if (class4_sub2 != null)
+			if (class4_sub2 != null) {
 				class4_sub2.aClass4_Sub2_1872 = arg0;
-			else
+			} else {
 				aClass4_Sub2Array893[i] = arg0;
+			}
 			aClass4_Sub2Array899[i] = arg0;
 			arg0.anInt1871 = arg1;
 		} catch (RuntimeException runtimeexception) {
@@ -418,20 +402,24 @@ public class Class43 {
 
 	public synchronized void method958(int arg0) {
 		try {
-			if (arg0 <= 43)
+			if (arg0 <= 43) {
 				method952(-42, null);
+			}
 			if (Class47.aClass50_960 != null) {
 				boolean bool = true;
 				for (int i = 0; (i ^ 0xffffffff) > -3; i++) {
-					if (this == Class47.aClass50_960.aClass43Array1013[i])
+					if (this == Class47.aClass50_960.aClass43Array1013[i]) {
 						Class47.aClass50_960.aClass43Array1013[i] = null;
-					if (Class47.aClass50_960.aClass43Array1013[i] != null)
+					}
+					if (Class47.aClass50_960.aClass43Array1013[i] != null) {
 						bool = false;
+					}
 				}
 				if (bool) {
 					Class47.aClass50_960.aBoolean1012 = true;
-					while (Class47.aClass50_960.aBoolean1006)
+					while (Class47.aClass50_960.aBoolean1006) {
 						Class25.method799(50L, 10);
+					}
 					Class47.aClass50_960 = null;
 				}
 			}
@@ -465,8 +453,9 @@ public class Class43 {
 
 	public void method962(int[] arg0, int arg1) {
 		int i = arg1;
-		if (Class4_Sub20_Sub7_Sub1.aBoolean3218)
+		if (Class4_Sub20_Sub7_Sub1.aBoolean3218) {
 			i <<= 1;
+		}
 		Class21.method776(arg0, 0, i);
 		anInt894 -= arg1;
 		if (aClass4_Sub2_884 != null && anInt894 <= 0) {
@@ -502,31 +491,36 @@ public class Class43 {
 								class4_sub2_8_.aBoolean1874 = true;
 								int i_9_ = class4_sub2_8_.method78();
 								i_2_ += i_9_;
-								if (class4_sub4 != null)
+								if (class4_sub4 != null) {
 									class4_sub4.anInt1913 += i_9_;
-								if (i_2_ >= anInt861)
+								}
+								if (i_2_ >= anInt861) {
 									break while_12_;
+								}
 								Class4_Sub2 class4_sub2_10_ = class4_sub2_8_
 										.method79();
 								if (class4_sub2_10_ != null) {
 									int i_11_ = class4_sub2_8_.anInt1871;
 									for (/**/; class4_sub2_10_ != null; class4_sub2_10_ = class4_sub2_8_
-											.method81())
+											.method81()) {
 										method957(
 												class4_sub2_10_,
 												i_11_
 														* class4_sub2_10_
 																.method83() >> 8,
 												256);
+									}
 								}
 								Class4_Sub2 class4_sub2_12_ = class4_sub2_8_.aClass4_Sub2_1872;
 								class4_sub2_8_.aClass4_Sub2_1872 = null;
-								if (class4_sub2 == null)
+								if (class4_sub2 == null) {
 									aClass4_Sub2Array893[i_5_] = class4_sub2_12_;
-								else
+								} else {
 									class4_sub2.aClass4_Sub2_1872 = class4_sub2_12_;
-								if (class4_sub2_12_ == null)
+								}
+								if (class4_sub2_12_ == null) {
 									aClass4_Sub2Array899[i_5_] = class4_sub2;
+								}
 								class4_sub2_8_ = class4_sub2_12_;
 							}
 						}
@@ -546,10 +540,12 @@ public class Class43 {
 				}
 			}
 		}
-		if (anInt894 < 0)
+		if (anInt894 < 0) {
 			anInt894 = 0;
-		if (aClass4_Sub2_884 != null)
+		}
+		if (aClass4_Sub2_884 != null) {
 			aClass4_Sub2_884.method80(arg0, 0, arg1);
+		}
 		aLong869 = Class52.method1002((byte) -42);
 	}
 
@@ -564,13 +560,16 @@ public class Class43 {
 
 	public void method964(int arg0, int arg1) {
 		anInt894 -= arg1;
-		if (arg0 != -14762)
+		if (arg0 != -14762) {
 			aClass4_Sub2_884 = null;
-		if ((anInt894 ^ 0xffffffff) > -1)
+		}
+		if ((anInt894 ^ 0xffffffff) > -1) {
 			anInt894 = 0;
+		}
 		anInt891++;
-		if (aClass4_Sub2_884 != null)
+		if (aClass4_Sub2_884 != null) {
 			aClass4_Sub2_884.method82(arg1);
+		}
 	}
 
 	public void method965() throws Exception {

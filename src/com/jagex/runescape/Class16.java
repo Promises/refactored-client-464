@@ -1517,12 +1517,12 @@ public class Class16 {
 																				i_147_ = 2;
 																			} else if (jagexString_146_
 																					.method808(
-																							Class41.aJagexString_836,
+																							StringUtilities.aJagexString_836,
 																							(byte) -95)) {
 																				i_147_ = 3;
 																				jagexString = jagexString
 																						.method805(
-																								Class41.aJagexString_836
+																								StringUtilities.aJagexString_836
 																										.method825(arg0
 																												^ ~0x73),
 																								94);
@@ -1605,7 +1605,7 @@ public class Class16 {
 																													(byte) -95)) {
 																										if (!jagexString_146_
 																												.method808(
-																														Class41.aJagexString_839,
+																														StringUtilities.aJagexString_839,
 																														(byte) -95)) {
 																											if (jagexString_146_
 																													.method808(
@@ -1696,7 +1696,7 @@ public class Class16 {
 																										} else {
 																											jagexString = jagexString
 																													.method805(
-																															Class41.aJagexString_839
+																															StringUtilities.aJagexString_839
 																																	.method825(arg0
 																																			+ -105),
 																															-35);
@@ -2027,9 +2027,9 @@ public class Class16 {
 																					(Class74.method1168(
 																							-44,
 																							i_158_)),
-																					(Class42.aJagexString_846),
+																					(StringUtilities.aJagexString_846),
 																					(Class47.aJagexStringArray954[i_159_]),
-																					(Class42.aJagexString_846),
+																					(StringUtilities.aJagexString_846),
 																					(Class74.method1168(
 																							-102,
 																							i_160_)) }),

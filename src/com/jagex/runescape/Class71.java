@@ -137,7 +137,7 @@ public class Class71 {
 															.method639(
 																	(new JagexString[] {
 																			Class62.aJagexString_1239,
-																			Class42.aJagexString_842,
+																			StringUtilities.aJagexString_842,
 																			(class4_sub20_sub8.aJagexString_2991) }),
 																	-842)),
 													arg1.anInt2172,
@@ -306,7 +306,7 @@ public class Class71 {
 														.method639(
 																(new JagexString[] {
 																		Class5.aJagexString_194,
-																		Class42.aJagexString_842,
+																		StringUtilities.aJagexString_842,
 																		class4_sub20_sub8.aJagexString_2991}),
 																-842)),
 												arg1.anInt2172, i_0_, 40,

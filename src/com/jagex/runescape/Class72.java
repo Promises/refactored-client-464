@@ -179,7 +179,7 @@ public class Class72 {
                                                 Class4_Sub20_Sub12_Sub4
                                                         .method574(StringUtilities.aJagexString_1768),
                                                 (((Region.anInt134 % 40 ^ 0xffffffff) > -21 & (Class4_Sub20_Sub7_Sub1_Sub1.anInt3581 ^ 0xffffffff) == -1) ? Class59.aJagexString_1187
-                                                        : Class34.aJagexString_1767)}),
+                                                        : StringUtilities.aJagexString_1767)}),
                                         -842)), 272, i, 16777215, 0);
                         i += 15;
                         arg0.method577(
@@ -188,7 +188,7 @@ public class Class72 {
                                                 Class4_Sub20_Sub9.aJagexString_3042,
                                                 StringUtilities.aJagexString_1764
                                                         .method809(-127),
-                                                (!(Region.anInt134 % 40 < 20 & ((Class4_Sub20_Sub7_Sub1_Sub1.anInt3581) ^ 0xffffffff) == -2) ? Class34.aJagexString_1767
+                                                (!(Region.anInt134 % 40 < 20 & ((Class4_Sub20_Sub7_Sub1_Sub1.anInt3581) ^ 0xffffffff) == -2) ? StringUtilities.aJagexString_1767
                                                         : Class59.aJagexString_1187)}),
                                         -842)), 274, i, 16777215, 0);
                         Class4_Sub20_Sub7_Sub1.aClass4_Sub20_Sub12_Sub1_3260
@@ -264,7 +264,7 @@ public class Class72 {
                                     16777215, 0);
                     } else
                         Class4_Sub20_Sub7_Sub1.aClass4_Sub20_Sub12_Sub1_3288 = Class2
-                                .method44(24094, Class34.aJagexString_1767,
+                                .method44(24094, StringUtilities.aJagexString_1767,
                                         Class63.aJagexString_1250,
                                         Game.aClass19_Sub1_1849);
                 }

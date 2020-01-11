@@ -17,39 +17,39 @@ public class Class28 {
 			}
 			int i = 0;
 			if (arg1.method744((byte) 127, JagexString.aJagexString_1824,
-					Class34.aJagexString_1767)) {
+					StringUtilities.aJagexString_1767)) {
 				i++;
 			}
 			if (arg2.method744((byte) 126, GameShell.aJagexString_25,
-					Class34.aJagexString_1767)) {
+					StringUtilities.aJagexString_1767)) {
 				i++;
 			}
 			if (arg2.method744((byte) 6, StringUtilities.aJagexString_92,
-					Class34.aJagexString_1767)) {
+					StringUtilities.aJagexString_1767)) {
 				i++;
 			}
 			if (arg2.method744((byte) 127, Class4_Sub20_Sub11.aJagexString_3090,
-					Class34.aJagexString_1767)) {
+					StringUtilities.aJagexString_1767)) {
 				i++;
 			}
 			if (arg2.method744((byte) 126, Class4_Sub20_Sub17.aJagexString_3214,
-					Class34.aJagexString_1767)) {
+					StringUtilities.aJagexString_1767)) {
 				i++;
 			}
 			if (arg2.method744((byte) 124,
-					Class4_Sub20_Sub7_Sub3.aJagexString_3337, Class34.aJagexString_1767)) {
+					Class4_Sub20_Sub7_Sub3.aJagexString_3337, StringUtilities.aJagexString_1767)) {
 				i++;
 			}
 			arg2.method744((byte) -1, StringUtilities.aJagexString_678,
-					Class34.aJagexString_1767);
+					StringUtilities.aJagexString_1767);
 			arg2.method744((byte) 35, RSFont.aJagexString_142,
-					Class34.aJagexString_1767);
+					StringUtilities.aJagexString_1767);
 			arg2.method744((byte) -31, StringUtilities.aJagexString_361,
-					Class34.aJagexString_1767);
+					StringUtilities.aJagexString_1767);
 			arg2.method744((byte) 126, StringUtilities.aJagexString_324,
-					Class34.aJagexString_1767);
+					StringUtilities.aJagexString_1767);
 			arg2.method744((byte) 127, Class63.aJagexString_1250,
-					Class34.aJagexString_1767);
+					StringUtilities.aJagexString_1767);
 			return i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ic.B("

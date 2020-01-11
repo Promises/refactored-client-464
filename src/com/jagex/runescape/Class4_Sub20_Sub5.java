@@ -67,7 +67,7 @@ public class Class4_Sub20_Sub5 extends Class4_Sub20 {
 		}
 	}
 
-	public JagexString aJagexString_2878 = Class41.aJagexString_804;
+	public JagexString aJagexString_2878 = StringUtilities.aJagexString_804;
 	public JagexString[] aJagexStringArray2877;
 	public int anInt2874;
 	public int anInt2875 = 0;
