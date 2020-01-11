@@ -6,11 +6,9 @@ import java.util.zip.CRC32;
 
 public class StreamBuffer extends RSFont {
 	public static boolean aBoolean2066 = false;
-	public static JagexString aJagexString_2101 = JagexString.getRs2PreparedString(":");
-	public static JagexString aJagexString_2115;
 	public static Class64 aClass64_2096;
-	public static Class65 aClass65_2073;
-	public static CRC32 aCRC32_2116;
+	public static Class65 aClass65_2073 = new Class65();
+	public static CRC32 aCRC32_2116 = new CRC32();
 	public static int anInt2052;
 	public static int anInt2053;
 	public static int anInt2054;
@@ -42,7 +40,7 @@ public class StreamBuffer extends RSFont {
 	public static int anInt2082;
 	public static int anInt2083;
 	public static int anInt2084;
-	public static int anInt2085;
+	public static int anInt2085 = 0;
 	public static int anInt2086;
 	public static int anInt2087;
 	public static int anInt2088;
@@ -68,12 +66,6 @@ public class StreamBuffer extends RSFont {
 	public static int anInt2112;
 	public static int anInt2113;
 	public static int anInt2114;
-	static {
-		anInt2085 = 0;
-		aClass65_2073 = new Class65();
-		aJagexString_2115 = JagexString.getRs2PreparedString(": ");
-		aCRC32_2116 = new CRC32();
-	}
 
 	public static boolean method206(Class19 arg0, int arg1, Class19 arg2,
 									Class4_Sub2_Sub1 arg3, Class19 arg4) {
@@ -99,8 +91,8 @@ public class StreamBuffer extends RSFont {
 		try {
 			aCRC32_2116 = null;
 			aClass64_2096 = null;
-			aJagexString_2115 = null;
-			aJagexString_2101 = null;
+			StringUtilities.aJagexString_2115 = null;
+			StringUtilities.aJagexString_2101 = null;
 			if (arg0 != 0)
 				aCRC32_2116 = null;
 			aClass65_2073 = null;
@@ -1816,7 +1808,7 @@ public class StreamBuffer extends RSFont {
 			long l = method219((byte) 73) & 0xffffffffL;
 			long l_0_ = method219((byte) 73) & 0xffffffffL;
 			if (arg0 != 33)
-				aJagexString_2115 = null;
+				StringUtilities.aJagexString_2115 = null;
 			return (l << -1181163488) - -l_0_;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.CC("
@@ -2243,7 +2235,7 @@ public class StreamBuffer extends RSFont {
 			anInt2058++;
 			pointion += 3;
 			if (arg0 != false)
-				aJagexString_2101 = null;
+				StringUtilities.aJagexString_2101 = null;
 			return ((byteBuffer[pointion + -1] & 0xff) + ((0xff0000 & byteBuffer[-3
 					+ pointion] << 609314768) + ((0xff & byteBuffer[pointion - 2]) << -970674840)));
 		} catch (RuntimeException runtimeexception) {
@@ -2289,7 +2281,7 @@ public class StreamBuffer extends RSFont {
 		byteBuffer[pointion++] = (byte) (arg0 >> 970760744);
 		anInt2071++;
 		if (arg1 != 53)
-			aJagexString_2101 = null;
+			StringUtilities.aJagexString_2101 = null;
 	}
 
 	public int method252(int arg0) {
@@ -2338,7 +2330,7 @@ public class StreamBuffer extends RSFont {
 		}
 		method227((byte) -27, 0x7f & arg0);
 		if (arg1 < 30)
-			aJagexString_2115 = null;
+			StringUtilities.aJagexString_2115 = null;
 	}
 
 	public void method255(int arg0, long arg1) {

@@ -79,7 +79,7 @@ public class Class67 {
 																	Class74.method1168(
 																			-84,
 																			i_7_),
-																	Class2.aJagexString_85,
+																	StringUtilities.aJagexString_85,
 																	Class74.method1168(
 																			-54,
 																			i_8_) }),
@@ -87,10 +87,10 @@ public class Class67 {
 							Class61.anIntArray1222[i_0_] = (Class4_Sub20_Sub6.aClass19_Sub1_2911
 									.method754((Class4_Sub24.method639(
 											(new JagexString[] {
-													Class13.aJagexString_368,
+													StringUtilities.aJagexString_368,
 													Class74.method1168(-125,
 															i_7_),
-													Class2.aJagexString_85,
+													StringUtilities.aJagexString_85,
 													Class74.method1168(-94,
 															i_8_) }), -842)), 1));
 							i_0_++;
@@ -165,7 +165,7 @@ public class Class67 {
 																			Class74.method1168(
 																					-109,
 																					i_30_),
-																			Class2.aJagexString_85,
+																			StringUtilities.aJagexString_85,
 																			Class74.method1168(
 																					-61,
 																					i_29_) }),
@@ -175,11 +175,11 @@ public class Class67 {
 													(Class4_Sub24
 															.method639(
 																	(new JagexString[] {
-																			Class13.aJagexString_368,
+																			StringUtilities.aJagexString_368,
 																			Class74.method1168(
 																					-11,
 																					i_30_),
-																			Class2.aJagexString_85,
+																			StringUtilities.aJagexString_85,
 																			Class74.method1168(
 																					-77,
 																					i_29_) }),

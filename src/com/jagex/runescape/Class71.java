@@ -175,7 +175,7 @@ public class Class71 {
 																45,
 																(class4_sub20_sub8.anInt2954),
 																(byte) 26,
-																Class24.aJagexString_564);
+																StringUtilities.aJagexString_564);
 											}
 										} else {
 											Class4_Sub20_Sub7.anInt2942++;
@@ -297,7 +297,7 @@ public class Class71 {
 												arg1.anInt2172, i_0_, 1002,
 												class4_sub20_sub8.anInt2954,
 												(byte) 127,
-												Class31.aJagexString_665);
+												StringUtilities.aJagexString_665);
 							} else if ((Class35.anInt740 & 0x10 ^ 0xffffffff) == -17) {
 								Class27.anInt600++;
 								Class4_Sub20_Sub4

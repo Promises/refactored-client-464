@@ -625,9 +625,9 @@ public class RSInterface extends RSFont {
 				if ((anInt2171 ^ 0xffffffff) == -2)
 					aJagexString_2264 = Class50.aJagexString_1011;
 				if (anInt2171 == 4)
-					aJagexString_2264 = Class25.aJagexString_586;
+					aJagexString_2264 = StringUtilities.aJagexString_586;
 				if ((anInt2171 ^ 0xffffffff) == -6)
-					aJagexString_2264 = Class25.aJagexString_586;
+					aJagexString_2264 = StringUtilities.aJagexString_586;
 				if ((anInt2171 ^ 0xffffffff) == -7)
 					aJagexString_2264 = Class4_Sub20_Sub8.aJagexString_2967;
 			}

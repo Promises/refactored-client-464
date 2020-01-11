@@ -2,41 +2,15 @@ package com.jagex.runescape;
 
 public class Class11 {
 	public static Class10 aClass10_321;
-	public static JagexString aJagexString_315 = JagexString.getRs2PreparedString(
-			"blinken2:");
-	public static JagexString aJagexString_316 = JagexString.getRs2PreparedString("<br>"
-    );
-	public static JagexString aJagexString_317;
-	public static JagexString aJagexString_318;
-	public static JagexString aJagexString_322;
-	public static JagexString aJagexString_323;
-	public static JagexString aJagexString_324;
-	public static JagexString aJagexString_328;
 	public static long aLong319;
 	public static int anInt314;
 	public static int anInt320 = 0;
 	public static int anInt325;
-	public static int anInt326;
+	public static int anInt326 = 0;
 	public static int anInt327;
-	public static int anInt329;
+	public static int anInt329 = 0;
 	public static int anInt330;
-	public static int anInt331;
-
-	static {
-		aJagexString_318 = JagexString.getRs2PreparedString(
-				"Enter your username (V password)3");
-		aJagexString_317 = JagexString.getRs2PreparedString("(U2");
-		anInt326 = 0;
-		aJagexString_328 = (JagexString
-				.getRs2PreparedString(
-						"Ihre Freunde)2Liste ist voll(Q Mitglieder k-Onnen 200 Freunde hinzuf-Ugen)1 freie Spieler nur 100)3"
-                ));
-		anInt329 = 0;
-		aJagexString_323 = aJagexString_318;
-		aJagexString_324 = JagexString.getRs2PreparedString("sl_stars");
-		aJagexString_322 = JagexString.getRs2PreparedString(")1j");
-		anInt331 = 0;
-	}
+	public static int anInt331 = 0;
 
 	public static void method672(int arg0, int arg1, Class19_Sub1 arg2,
 			byte arg3, int arg4, boolean arg5, byte arg6) {
@@ -93,16 +67,15 @@ public class Class11 {
 
 	public static void method673(int arg0) {
 		try {
-			aJagexString_318 = null;
-			aJagexString_322 = null;
-			aJagexString_323 = null;
+			StringUtilities.aJagexString_322 = null;
+			StringUtilities.aJagexString_323 = null;
 			if (arg0 > 83) {
-				aJagexString_316 = null;
-				aJagexString_315 = null;
-				aJagexString_317 = null;
+				StringUtilities.aJagexString_316 = null;
+				StringUtilities.aJagexString_315 = null;
+				StringUtilities.aJagexString_317 = null;
 				aClass10_321 = null;
-				aJagexString_324 = null;
-				aJagexString_328 = null;
+				StringUtilities.aJagexString_324 = null;
+				StringUtilities.aJagexString_328 = null;
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "cc.C("

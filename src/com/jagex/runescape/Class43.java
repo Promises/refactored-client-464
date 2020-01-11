@@ -183,7 +183,7 @@ public class Class43 {
 				if (!Class77.aBoolean1590 != class9.aBoolean267) {
 					byte[] is = Class4_Sub24.method639(
 							new JagexString[] { class9.aJagexString_264,
-									Class34.aJagexString_1759}, -842).method836(
+									StringUtilities.aJagexString_1759}, -842).method836(
 							arg0 + -10664);
 					Class4_Sub20_Sub6.aString2900 = new String(is, 0, is.length);
 					Class61.anInt1201 = class9.anInt279;
@@ -205,17 +205,17 @@ public class Class43 {
 				JagexString jagexString = (Class4_Sub24
 						.method639(
 								(new JagexString[] {
-										Class10.aJagexString_308,
+										StringUtilities.aJagexString_308,
 										class9.aJagexString_264,
-										Class34.aJagexString_1759,
+										StringUtilities.aJagexString_1759,
 										Class4_Sub3.aJagexString_1903,
-										Class10.aJagexString_301,
+										StringUtilities.aJagexString_301,
 										Class74.method1168(-25,
 												Class59.aBoolean1189 ? 1 : 0),
 										Class42.aJagexString_857,
 										Class74.method1168(-116,
 												Class25.anInt583),
-										Class11.aJagexString_322,
+										StringUtilities.aJagexString_322,
 										Class74.method1168(-38,
 												RSInterface.anInt2186) }),
 								-842));

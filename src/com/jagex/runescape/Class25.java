@@ -4,15 +4,8 @@ import com.jagex.runescape.net.StreamBuffer;
 
 public class Class25 {
     public static boolean aBoolean582 = false;
-    public static JagexString aJagexString_578;
-    public static JagexString aJagexString_581;
-    public static JagexString aJagexString_586;
-    public static JagexString aJagexString_590;
-    public static JagexString aJagexString_594;
-    public static JagexString aJagexString_595;
-    public static JagexString aJagexString_596;
     public static StreamBuffer[] aClass4_Sub11Array575 = new StreamBuffer[2048];
-    public static Class66 aClass66_592;
+    public static Class66 aClass66_592 = new Class66(50);
     public static long aLong584;
     public static int anInt574;
     public static int anInt577;
@@ -22,46 +15,34 @@ public class Class25 {
     public static int anInt585;
     public static int anInt589;
     public static int[] anIntArray587 = {1, 0, -1, 0};
-    public static int[] anIntArray593;
+    public static int[] anIntArray593 = new int[50];
 
-    static {
-        aJagexString_578 = JagexString.getRs2PreparedString(
-                " is already on your friend list");
-        aJagexString_590 = JagexString.getRs2PreparedString("Select");
-        aJagexString_581 = aJagexString_578;
-        aJagexString_586 = aJagexString_590;
-        aClass66_592 = new Class66(50);
-        aJagexString_594 = JagexString.getRs2PreparedString("Bitte versuchen Sie)1"
-        );
-        anIntArray593 = new int[50];
-        aJagexString_595 = JagexString.getRs2PreparedString("Angreifen");
-        aJagexString_596 = (JagexString.getRs2PreparedString(
-                "Spieler)3 Bitte w-=hlen Sie eine andere Welt)3"));
-    }
 
     public static void method796(byte arg0) {
         try {
-            if (arg0 != 103)
+            if (arg0 != 103) {
                 method797(-35);
+            }
             anInt579++;
             for (Class4_Sub20_Sub7_Sub3 class4_sub20_sub7_sub3 = ((Class4_Sub20_Sub7_Sub3) Class4_Sub20_Sub13.aClass65_3106
                     .method1071(-126)); class4_sub20_sub7_sub3 != null; class4_sub20_sub7_sub3 = ((Class4_Sub20_Sub7_Sub3) Class4_Sub20_Sub13.aClass65_3106
                     .method1075(arg0 ^ 0x4852))) {
                 if (((Class82.anInt1711 ^ 0xffffffff) != (class4_sub20_sub7_sub3.anInt3345 ^ 0xffffffff))
-                        || class4_sub20_sub7_sub3.aBoolean3338)
+                        || class4_sub20_sub7_sub3.aBoolean3338) {
                     class4_sub20_sub7_sub3.clear();
-                else if (class4_sub20_sub7_sub3.anInt3341 <= Region.anInt134) {
+                } else if (class4_sub20_sub7_sub3.anInt3341 <= Region.anInt134) {
                     class4_sub20_sub7_sub3.method419((byte) 125,
                             Class4_Sub20_Sub6.anInt2906);
-                    if (class4_sub20_sub7_sub3.aBoolean3338)
+                    if (class4_sub20_sub7_sub3.aBoolean3338) {
                         class4_sub20_sub7_sub3.clear();
-                    else
+                    } else {
                         Class4_Sub20_Sub7_Sub6.aClass69_3439.method1132(
                                 class4_sub20_sub7_sub3.anInt3345,
                                 class4_sub20_sub7_sub3.anInt3344,
                                 class4_sub20_sub7_sub3.anInt3348,
                                 class4_sub20_sub7_sub3.anInt3349, 60,
                                 class4_sub20_sub7_sub3, 0, -1, false);
+                    }
                 }
             }
         } catch (RuntimeException runtimeexception) {
@@ -75,14 +56,12 @@ public class Class25 {
             aClass66_592 = null;
             if (arg0 == -30004) {
                 anIntArray593 = null;
-                aJagexString_581 = null;
-                aJagexString_586 = null;
-                aJagexString_595 = null;
-                aJagexString_590 = null;
-                aJagexString_594 = null;
-                aJagexString_596 = null;
+                StringUtilities.aJagexString_581 = null;
+                StringUtilities.aJagexString_586 = null;
+                StringUtilities.aJagexString_595 = null;
+                StringUtilities.aJagexString_594 = null;
+                StringUtilities.aJagexString_596 = null;
                 aClass4_Sub11Array575 = null;
-                aJagexString_578 = null;
                 anIntArray587 = null;
             }
         } catch (RuntimeException runtimeexception) {
@@ -97,8 +76,9 @@ public class Class25 {
             int i = Class4_Sub20_Sub7_Sub6.aClass69_3439.method1146(
                     Class82.anInt1711, arg2, arg1, arg0);
             int i_0_ = 0x7fff & arg0 >> -11557778;
-            if ((i ^ 0xffffffff) == 0)
+            if ((i ^ 0xffffffff) == 0) {
                 return false;
+            }
             int i_1_ = i & 0x1f;
             int i_2_ = (0xd6 & i) >> -1761014874;
             if (i_1_ == 10 || (i_1_ ^ 0xffffffff) == -12
@@ -115,8 +95,9 @@ public class Class25 {
                     i_4_ = class4_sub20_sub1.anInt2725;
                     i_5_ = class4_sub20_sub1.anInt2744;
                 }
-                if (i_2_ != 0)
+                if (i_2_ != 0) {
                     i_3_ = (0xf & i_3_ << i_2_) - -(i_3_ >> 4 - i_2_);
+                }
                 Class4_Sub20
                         .method319(
                                 i_5_,
@@ -131,7 +112,7 @@ public class Class25 {
                                 arg3,
                                 i_3_,
                                 (Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]));
-            } else
+            } else {
                 Class4_Sub20
                         .method319(
                                 0,
@@ -146,6 +127,7 @@ public class Class25 {
                                 0,
                                 0,
                                 (Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]));
+            }
             Class28.anInt640 = 2;
             Class11.anInt331 = arg3;
             Class2.anInt96 = JagexException.anInt1729;
@@ -164,8 +146,9 @@ public class Class25 {
                 if ((arg0 % arg1 ^ 0xffffffffffffffffL) == -1L) {
                     Class4_Sub6.method186(arg0 - 1L, arg1 + 125);
                     Class4_Sub6.method186(1L, arg1 ^ 0x8d);
-                } else
+                } else {
                     Class4_Sub6.method186(arg0, arg1 ^ 0x8d);
+                }
             }
         } catch (RuntimeException runtimeexception) {
             throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ha.B("
@@ -1075,8 +1058,9 @@ public class Class25 {
                 Class78.anInt1599 = 0;
                 Class4_Sub20_Sub11.incomingPacket = -1;
                 Class13_Sub2.method692(0);
-                for (int i = 0; i < 100; i++)
+                for (int i = 0; i < 100; i++) {
                     Class4_Sub2_Sub1.aJagexStringArray2574[i] = null;
+                }
                 Class4_Sub20_Sub5.anInt2889 = -20
                         + (int) (Math.random() * 30.0);
                 Class5.anInt175 = 0;
@@ -1099,15 +1083,17 @@ public class Class25 {
                     Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i] = null;
                     aClass4_Sub11Array575[i] = null;
                 }
-                for (int i = 0; (i ^ 0xffffffff) > -32769; i++)
+                for (int i = 0; (i ^ 0xffffffff) > -32769; i++) {
                     Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i] = null;
+                }
                 Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302 = Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[2047] = new Class4_Sub20_Sub7_Sub1_Sub1();
                 Class4_Sub20_Sub11.aClass65_3075.method1070((byte) 112);
                 Class4_Sub20_Sub13.aClass65_3106.method1070((byte) -19);
                 for (int i = 0; (i ^ 0xffffffff) > -5; i++) {
                     for (int i_6_ = 0; i_6_ < 104; i_6_++) {
-                        for (int i_7_ = 0; (i_7_ ^ 0xffffffff) > -105; i_7_++)
+                        for (int i_7_ = 0; (i_7_ ^ 0xffffffff) > -105; i_7_++) {
                             Class40.aClass65ArrayArrayArray787[i][i_6_][i_7_] = null;
+                        }
                     }
                 }
                 Class4_Sub20_Sub7_Sub1_Sub2.aClass65_3618 = new Class65();
@@ -1122,14 +1108,17 @@ public class Class25 {
                         Class31.anIntArray687[i] = 0;
                     }
                 }
-                for (int i = 0; ((RSFont.anIntArray160.length ^ 0xffffffff) < (i ^ 0xffffffff)); i++)
+                for (int i = 0; ((RSFont.anIntArray160.length ^ 0xffffffff) < (i ^ 0xffffffff)); i++) {
                     RSFont.anIntArray160[i] = -1;
-                if (Class4_Sub6.anInt1932 != -1)
+                }
+                if (Class4_Sub6.anInt1932 != -1) {
                     Class52.method1003(-119, Class4_Sub6.anInt1932);
+                }
                 for (Class4_Sub16 class4_sub16 = ((Class4_Sub16) Class31.aClass16_677
                         .method724((byte) 118)); class4_sub16 != null; class4_sub16 = (Class4_Sub16) Class31.aClass16_677
-                        .method723((byte) -25))
+                        .method723((byte) -25)) {
                     Class4_Sub20_Sub7_Sub3.method418(-80, true, class4_sub16);
+                }
                 Class4_Sub6.anInt1932 = -1;
                 Class31.aClass16_677 = new Class16(8);
                 Class4_Sub20_Sub16.aBoolean3169 = false;
@@ -1143,8 +1132,9 @@ public class Class25 {
                 }
                 Class13_Sub2.method695((byte) -85);
                 Class34.aBoolean1770 = true;
-                for (int i = 0; (i ^ 0xffffffff) > -101; i++)
+                for (int i = 0; (i ^ 0xffffffff) > -101; i++) {
                     Class4_Sub20_Sub11.aBooleanArray3083[i] = true;
+                }
                 Class50.aJagexString_1019 = null;
                 Class4_Sub10.anInt2021 = 0;
                 Class13_Sub2.aClass4_Sub8Array2482 = null;

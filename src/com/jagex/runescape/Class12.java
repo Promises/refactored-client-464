@@ -3,15 +3,7 @@ package com.jagex.runescape;
 import java.math.BigInteger;
 
 public class Class12 {
-    public static BigInteger aBigInteger350 = (new BigInteger(
-            "7162900525229798032761816791230527296329313291232324290237849263501208207972894053929065636522363163621000728841182238772712427862772219676577293600221789"));
-    public static JagexString aJagexString_336 = JagexString.getRs2PreparedString(
-            "Malformed login packet)3");
-    public static JagexString aJagexString_346 = aJagexString_336;
-    public static JagexString aJagexString_361 = JagexString.getRs2PreparedString(
-            "sl_arrows");
-    public static JagexString aJagexString_363 = JagexString.getRs2PreparedString(
-            "Service unavailable)3");
+    public static BigInteger rsaModulus = new BigInteger("7162900525229798032761816791230527296329313291232324290237849263501208207972894053929065636522363163621000728841182238772712427862772219676577293600221789");
     public static Class4_Sub20_Sub12_Sub1[] aClass4_Sub20_Sub12_Sub1Array359;
     public static Class66 aClass66_367 = new Class66(64);
     public static int anInt338;
@@ -487,7 +479,7 @@ public class Class12 {
             arg1 |= arg1 >>> -923167228;
             arg1 |= arg1 >>> -473856792;
             if (arg0 != -473856792)
-                aBigInteger350 = null;
+                rsaModulus = null;
             arg1 |= arg1 >>> -940770512;
             return 1 + arg1;
         } catch (RuntimeException runtimeexception) {
@@ -503,12 +495,11 @@ public class Class12 {
             aClass4_Sub20_Sub12_Sub1Array359 = null;
             anIntArray342 = null;
             anObject366 = null;
-            aJagexString_346 = null;
-            aJagexString_336 = null;
-            aJagexString_363 = null;
+            StringUtilities.aJagexString_346 = null;
+            StringUtilities.aJagexString_363 = null;
             aClass66_367 = null;
-            aJagexString_361 = null;
-            aBigInteger350 = null;
+            StringUtilities.aJagexString_361 = null;
+            rsaModulus = null;
             anIntArray357 = null;
         } catch (RuntimeException runtimeexception) {
             throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "cd.B("

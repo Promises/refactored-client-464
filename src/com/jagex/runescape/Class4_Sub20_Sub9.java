@@ -78,9 +78,9 @@ public class Class4_Sub20_Sub9 extends Class4_Sub20 {
                                  JagexString arg3) {
 		try {
 			if (arg1 > 3) {
-				Class34.aJagexString_1769 = arg3;
-				Class34.aJagexString_1766 = arg0;
-				Class34.aJagexString_1771 = arg2;
+				StringUtilities.aJagexString_1769 = arg3;
+				StringUtilities.aJagexString_1766 = arg0;
+				StringUtilities.aJagexString_1771 = arg2;
 				anInt3030++;
 			}
 		} catch (RuntimeException runtimeexception) {

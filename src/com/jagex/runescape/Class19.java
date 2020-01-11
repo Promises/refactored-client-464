@@ -4,10 +4,6 @@ import com.jagex.runescape.net.StreamBuffer;
 import java.awt.Graphics;
 
 public abstract class Class19 {
-	public static JagexString aJagexString_495 = (JagexString.getRs2PreparedString(
-			"Verbindung konnte nicht hergestellt werden)3"));
-	public static JagexString aJagexString_517 = JagexString.getRs2PreparedString(
-			"<col=ffffff> )4 ");
 	public static Class4_Sub20_Sub12_Sub2[] aClass4_Sub20_Sub12_Sub2Array504;
 	public static long aLong524 = 0L;
 	public static int anInt485;
@@ -34,10 +30,7 @@ public abstract class Class19 {
 	public static int anInt519;
 	public static int anInt520;
 	public static int anInt522;
-	public static int[] anIntArray514;
-	static {
-		anIntArray514 = new int[2000];
-	}
+	public static int[] anIntArray514 = new int[2000];
 
 	public static void method735(boolean arg0, JagexString arg1, byte arg2) {
 		try {
@@ -80,7 +73,7 @@ public abstract class Class19 {
 		try {
 			anInt501++;
 			if (arg0 != true)
-				aJagexString_495 = null;
+				StringUtilities.aJagexString_495 = null;
 			if (arg1 >= 97 && (arg1 ^ 0xffffffff) >= -123)
 				return true;
 			if ((arg1 ^ 0xffffffff) <= -66 && (arg1 ^ 0xffffffff) >= -91)
@@ -96,12 +89,12 @@ public abstract class Class19 {
 
 	public static void method757(byte arg0) {
 		try {
-			aJagexString_517 = null;
+			StringUtilities.aJagexString_517 = null;
 			if (arg0 > -61)
-				aJagexString_517 = null;
+				StringUtilities.aJagexString_517 = null;
 			aClass4_Sub20_Sub12_Sub2Array504 = null;
 			anIntArray514 = null;
-			aJagexString_495 = null;
+			StringUtilities.aJagexString_495 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ef.W("
 					+ arg0 + ')');
@@ -360,7 +353,7 @@ public abstract class Class19 {
 	public void method743(int arg0, int arg1) {
 		anInt497++;
 		if (arg1 != 10064)
-			aJagexString_495 = null;
+			StringUtilities.aJagexString_495 = null;
 	}
 
 	public boolean method744(byte arg0, JagexString arg1, JagexString arg2) {

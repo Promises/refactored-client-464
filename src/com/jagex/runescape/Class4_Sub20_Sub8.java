@@ -231,7 +231,7 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 		anInt3003 = 0;
 		anInt3006 = -1;
 		aJagexStringArray2988 = new JagexString[] { null, null, null, null,
-				Class24.aJagexString_564};
+				StringUtilities.aJagexString_564};
 		aJagexStringArray3008 = new JagexString[] { null, null,
 				Class4_Sub6.aJagexString_1933, null, null };
 		anInt2986 = -1;
@@ -480,7 +480,7 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 												.method212();
 										if (aJagexStringArray3008[arg2 + -30]
 												.method818(
-														Class28.aJagexString_638,
+														StringUtilities.aJagexString_638,
 														(byte) -105))
 											aJagexStringArray3008[arg2 + -30] = null;
 									}

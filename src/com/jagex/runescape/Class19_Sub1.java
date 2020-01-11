@@ -3,19 +3,12 @@ package com.jagex.runescape;
 import com.jagex.runescape.net.StreamBuffer;
 
 public class Class19_Sub1 extends Class19 {
-	public static boolean aBoolean2538;
+	public static boolean aBoolean2538 = false;
 	public static Class22 aClass22_2517;
-	public static JagexString aJagexString_2514;
-	public static JagexString aJagexString_2515 = JagexString.getRs2PreparedString(
-			"Bitte geben Sie Ihr Passwort ein)3");
-	public static JagexString aJagexString_2518;
-	public static JagexString aJagexString_2528;
-	public static JagexString aJagexString_2529 = JagexString.getRs2PreparedString(
-			"Loaded wordpack");
 	public static int anInt2506;
 	public static int anInt2507;
 	public static int anInt2510;
-	public static int anInt2511;
+	public static int anInt2511 = 5063219;
 	public static int anInt2512;
 	public static int anInt2516;
 	public static int anInt2521;
@@ -28,16 +21,9 @@ public class Class19_Sub1 extends Class19 {
 	public static int anInt2531;
 	public static int anInt2532;
 	public static int anInt2534;
-	public static int anInt2536;
+	public static int anInt2536 = 0;
 	public static int anInt2537;
-	static {
-		aJagexString_2518 = JagexString.getRs2PreparedString(":chalreq:");
-		anInt2511 = 5063219;
-		aJagexString_2528 = JagexString.getRs2PreparedString("mapscene");
-		aJagexString_2514 = aJagexString_2529;
-		anInt2536 = 0;
-		aBoolean2538 = false;
-	}
+
 
 	public static void method763(int arg0, byte arg1, RSInterface[] arg2) {
 		try {
@@ -200,7 +186,7 @@ public class Class19_Sub1 extends Class19 {
 				return Class4_Sub20_Sub7_Sub6.aJagexString_3430;
 			}
 			if (arg2 != -45) {
-				aJagexString_2518 = null;
+				StringUtilities.aJagexString_2518 = null;
 			}
 			if ((i ^ 0xffffffff) > 5) {
 				return Class4_Sub1.aJagexString_1856;
@@ -284,13 +270,12 @@ public class Class19_Sub1 extends Class19 {
 
 	public static void method771(byte arg0) {
 		try {
-			aJagexString_2515 = null;
+			StringUtilities.aJagexString_2515 = null;
 			aClass22_2517 = null;
-			aJagexString_2528 = null;
+			StringUtilities.aJagexString_2528 = null;
 			if (arg0 < -45) {
-				aJagexString_2529 = null;
-				aJagexString_2514 = null;
-				aJagexString_2518 = null;
+				StringUtilities.aJagexString_2514 = null;
+				StringUtilities.aJagexString_2518 = null;
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "eb.H("
@@ -335,7 +320,7 @@ public class Class19_Sub1 extends Class19 {
 	public void method743(int arg0, int arg1) {
 		try {
 			if (arg1 != 10064) {
-				aJagexString_2528 = null;
+				StringUtilities.aJagexString_2528 = null;
 			}
 			anInt2521++;
 			Class16.method719(arg0, (byte) -85, anInt2513);

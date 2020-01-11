@@ -82,7 +82,7 @@ public class Class65 {
 									arg0.method805(i - -2, -72) }), -842));
 				}
 				for (;;) {
-					int i = arg0.method803(Class11.aJagexString_317, (byte) -52);
+					int i = arg0.method803(StringUtilities.aJagexString_317, (byte) -52);
 					if (i == -1)
 						break;
 					arg0 = (Class4_Sub24
@@ -150,7 +150,7 @@ public class Class65 {
 											arg0.method805(2 + i, 115) }), -842));
 				}
 				for (;;) {
-					int i = arg0.method803(Class14.aJagexString_402, (byte) -108);
+					int i = arg0.method803(StringUtilities.aJagexString_402, (byte) -108);
 					if ((i ^ 0xffffffff) == 0)
 						break;
 					JagexString jagexString = Class4_Sub3.aJagexString_1895;

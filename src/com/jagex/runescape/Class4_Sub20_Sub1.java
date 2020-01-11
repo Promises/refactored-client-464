@@ -386,7 +386,7 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 												.method212();
 										if (aJagexStringArray2716[-30 + arg2]
 												.method818(
-														Class28.aJagexString_638,
+														StringUtilities.aJagexString_638,
 														(byte) -105))
 											aJagexStringArray2716[arg2 + -30] = null;
 									}

@@ -6,15 +6,9 @@ import java.awt.Graphics;
 import java.awt.Image;
 
 public abstract class Class13 {
-	public static JagexString aJagexString_368;
-	public static JagexString aJagexString_370;
-	public static JagexString aJagexString_373;
-	public static JagexString aJagexString_375 = JagexString.getRs2PreparedString(
-			"Error loading your profile)3");
-	public static JagexString aJagexString_386;
-	public static JagexString[] aJagexStringArray385;
-	public static Class65 aClass65_381;
-	public static Class65 aClass65_383;
+	public static JagexString[] aJagexStringArray385 = new JagexString[100];
+	public static Class65 aClass65_381 = new Class65();
+	public static Class65 aClass65_383 = new Class65();
 	public static int anInt369;
 	public static int anInt372;
 	public static int anInt374;
@@ -25,14 +19,6 @@ public abstract class Class13 {
 	public static int anInt387;
 	public static int anInt388;
 	static {
-		aJagexString_373 = JagexString.getRs2PreparedString("Bitte entfernen Sie "
-        );
-		aJagexString_370 = aJagexString_375;
-		aJagexString_368 = JagexString.getRs2PreparedString("l");
-		aClass65_381 = new Class65();
-		aJagexStringArray385 = new JagexString[100];
-		aJagexString_386 = JagexString.getRs2PreparedString("welle2:");
-		aClass65_383 = new Class65();
 	}
 
 	public static void method679(int arg0, int arg1, boolean arg2, int arg3) {
@@ -362,12 +348,11 @@ public abstract class Class13 {
 	public static void method683(byte arg0) {
 		try {
 			aClass65_383 = null;
-			aJagexString_370 = null;
-			aJagexString_375 = null;
-			aJagexString_368 = null;
-			aJagexString_386 = null;
+			StringUtilities.aJagexString_370 = null;
+			StringUtilities.aJagexString_368 = null;
+			StringUtilities.aJagexString_386 = null;
 			aClass65_381 = null;
-			aJagexString_373 = null;
+			StringUtilities.aJagexString_373 = null;
 			aJagexStringArray385 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "dd.R("
@@ -435,7 +420,7 @@ public abstract class Class13 {
 						&& (Class4_Sub20_Sub8.anInt2980 ^ 0xffffffff) > -3)
 					jagexString = Class4_Sub24.method639((new JagexString[] {
 							Class57.aJagexString_1154, Class46.aJagexString_942,
-							Class62.aJagexString_1239, Class40.aJagexString_791}),
+							Class62.aJagexString_1239, StringUtilities.aJagexString_791}),
 							-842);
 				else if (!Class4_Sub23.aBoolean2421
 						|| Class4_Sub20_Sub8.anInt2980 >= 2)
@@ -444,13 +429,13 @@ public abstract class Class13 {
 				else
 					jagexString = Class4_Sub24.method639((new JagexString[] {
 							Class82.aJagexString_1714, Class46.aJagexString_942,
-							Class5.aJagexString_194, Class40.aJagexString_791}), -842);
+							Class5.aJagexString_194, StringUtilities.aJagexString_791}), -842);
 				if (Class4_Sub20_Sub8.anInt2980 > 2)
 					jagexString = (Class4_Sub24
 							.method639(
 									(new JagexString[] {
                                             jagexString,
-											Class19.aJagexString_517,
+											StringUtilities.aJagexString_517,
 											Class74.method1168(
 													-41,
 													(Class4_Sub20_Sub8.anInt2980)

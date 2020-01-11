@@ -93,7 +93,7 @@ public class Class4_Sub20_Sub7_Sub1_Sub1 extends Class4_Sub20_Sub7_Sub1 {
 						jagexString.aByteArray1803, arg2, 0);
 				return jagexString;
 			} catch (Exception exception) {
-				return Class4_Sub20_Sub7.aJagexString_2936;
+				return StringUtilities.aJagexString_2936;
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("d.U("

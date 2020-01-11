@@ -78,7 +78,7 @@ public class Class5 {
 				if (arg0.method818(Class4_Sub21.garbageCollection, (byte) -105)) {
 					System.gc();
 				}
-				if (arg0.method818(Class27.aJagexString_622, (byte) -105)) {
+				if (arg0.method818(StringUtilities.aJagexString_622, (byte) -105)) {
 					Class11.method674(-1);
 				}
 				if (arg0.method818(Class4_Sub20_Sub5.aJagexString_2886, (byte) -105)) {
@@ -88,7 +88,7 @@ public class Class5 {
 					Class43.method955(JagexString.getRs2PreparedString("hello world"),
 							JagexString.getRs2PreparedString("Testname:"), (byte) 108, 4);
 				}
-				if (arg0.method818(Class30.aJagexString_659, (byte) -105)) {
+				if (arg0.method818(StringUtilities.aJagexString_659, (byte) -105)) {
 					Class4_Sub20_Sub9.aBoolean3048 = false;
 				}
 				if (arg0.method818(Class7.aJagexString_223, (byte) -105)) {
@@ -110,7 +110,7 @@ public class Class5 {
 					Class43.method955(
 							(Class4_Sub24.method639(
 									(new JagexString[] {
-											Class16.aJagexString_451,
+											StringUtilities.aJagexString_451,
 											Class74.method1168(-41,
 													(Class52.anInt1052)) }),
 									-842)), null, (byte) 118, 0);

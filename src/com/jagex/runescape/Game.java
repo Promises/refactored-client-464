@@ -34,7 +34,6 @@ public class Game extends GameShell {
 	public static int anInt1842;
 	public static int anInt1843;
 	public static int anInt1845;
-	public static int anInt1853;
 
 	static {
 		aJagexString_1846 = JagexString.getRs2PreparedString(
@@ -263,7 +262,7 @@ public class Game extends GameShell {
 						Class4_Sub20_Sub7_Sub5.runeCanvas);
 		}
 		if (Class54.anInt1109 == 0)
-			Class6.method650(Class34.aJagexString_1762, null, false,
+			Class6.method650(StringUtilities.aJagexString_1762, null, false,
 					Region.anInt135);
 		else if ((Class54.anInt1109 ^ 0xffffffff) != -6) {
 			if ((Class54.anInt1109 ^ 0xffffffff) == -11)
@@ -283,7 +282,7 @@ public class Game extends GameShell {
 									(new JagexString[] { Class7.aJagexString_228,
 											Class4_Sub20_Sub11.aJagexString_3081,
 											Class74.method1168(-7, i_0_),
-											Class31.aJagexString_684}), -842)),
+											StringUtilities.aJagexString_684}), -842)),
 							(byte) -126);
 				} else if ((Class4_Sub20.anInt2353 ^ 0xffffffff) != -3)
 					Class19.method735(false, Class7.aJagexString_228, (byte) -126);
@@ -297,7 +296,7 @@ public class Game extends GameShell {
 									(new JagexString[] { Class7.aJagexString_228,
 											Class4_Sub20_Sub11.aJagexString_3081,
 											Class74.method1168(-50, i_1_),
-											Class31.aJagexString_684}), -842)),
+											StringUtilities.aJagexString_684}), -842)),
 							(byte) -126);
 				}
 			} else if (Class54.anInt1109 == 30)
@@ -306,7 +305,7 @@ public class Game extends GameShell {
 				Class19.method735(
 						false,
 						Class4_Sub24.method639((new JagexString[] {
-								Class66.aJagexString_1320, Class11.aJagexString_316,
+								Class66.aJagexString_1320, StringUtilities.aJagexString_316,
 								Class81.aJagexString_1666}), -842), (byte) -126);
 		} else
 			Class72.method1163(Class68.aClass4_Sub20_Sub12_Sub4_Sub1_1384, 124,
@@ -553,17 +552,16 @@ public class Game extends GameShell {
 	}
 
 	@Override
-	public void method21(int arg0) {
+	public void method21() {
 		anInt1839++;
 		if (Class31.aClass53_690 != null)
 			Class31.aClass53_690.aBoolean1071 = false;
-		if (arg0 == -18075) {
 			Class31.aClass53_690 = null;
 			if (Class4_Sub20_Sub17.aClass76_3189 != null) {
 				Class4_Sub20_Sub17.aClass76_3189.method1181(-31709);
 				Class4_Sub20_Sub17.aClass76_3189 = null;
 			}
-			Class72.method1159(arg0 ^ 0x4689);
+			Class72.method1159();
 			Class76.method1182(-121);
 			Region.aClass42_130 = null;
 			if (JagexException.aClass43_1728 != null)
@@ -591,7 +589,6 @@ public class Game extends GameShell {
 				}
 				break;
 			} while (false);
-		}
 	}
 
 	@Override
@@ -635,7 +632,7 @@ public class Game extends GameShell {
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
-					"client.M(" + arg0 + ')');
+					"client.M(" + -19134 + ')');
 		}
 	}
 

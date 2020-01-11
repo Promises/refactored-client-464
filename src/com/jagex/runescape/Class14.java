@@ -1,21 +1,8 @@
 package com.jagex.runescape;
 
 public abstract class Class14 {
-	public static JagexString aJagexString_390;
-	public static JagexString aJagexString_393;
-	public static JagexString aJagexString_396;
-	public static JagexString aJagexString_397;
-	public static JagexString aJagexString_398;
-	public static JagexString aJagexString_400;
-	public static JagexString aJagexString_402;
-	public static JagexString aJagexString_403;
-	public static JagexString aJagexString_406;
-	public static JagexString aJagexString_407;
-	public static JagexString aJagexString_409;
-	public static JagexString aJagexString_411;
-	public static JagexString aJagexString_413;
 	public static Class4_Sub20_Sub12_Sub2[] aClass4_Sub20_Sub12_Sub2Array405;
-	public static Class66 aClass66_408;
+	public static Class66 aClass66_408 = new Class66(64);
 	public static int anInt389;
 	public static int anInt391;
 	public static int anInt394;
@@ -23,8 +10,8 @@ public abstract class Class14 {
 	public static int anInt399;
 	public static int anInt401;
 	public static int anInt404;
-	public static int anInt410;
-	public static int anInt412;
+	public static int anInt410 = 0;
+	public static int anInt412 = 0;
 	public static int[] anIntArray392 = { -1, -1, -1, -1, -1, -1, -1, -1, 85,
 			80, 84, -1, 91, -1, -1, -1, 81, 82, 86, -1, -1, -1, -1, -1, -1, -1,
 			-1, 0, -1, -1, -1, -1, 83, 104, 105, 103, 102, 96, 98, 97, 99, -1,
@@ -58,29 +45,7 @@ public abstract class Class14 {
 			-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
 			-1, -1, -1, -1, -1, -1 };
 
-	static {
-		aJagexString_390 = JagexString.getRs2PreparedString(
-				"Musik)2Engine vorbereitet)3");
-		aJagexString_406 = JagexString.getRs2PreparedString(
-				"Please try using a different world)3");
-		aJagexString_402 = JagexString.getRs2PreparedString("(Udns");
-		aJagexString_393 = aJagexString_406;
-		aJagexString_398 = aJagexString_406;
-		aJagexString_409 = JagexString.getRs2PreparedString("white:");
-		aJagexString_407 = aJagexString_409;
-		aJagexString_397 = aJagexString_406;
-		aJagexString_403 = aJagexString_409;
-		aJagexString_400 = aJagexString_406;
-		aJagexString_396 = aJagexString_406;
-		anInt410 = 0;
-		anInt412 = 0;
-		aJagexString_411 = aJagexString_406;
-		aClass66_408 = new Class66(64);
-		aJagexString_413 = (JagexString
-				.getRs2PreparedString(
-						"Sie k-Onnen sich selbst nicht auf Ihre Freunde)2Liste setzen(Q"
-                ));
-	}
+
 
 	public static int method698(boolean arg0, int arg1, boolean arg2) {
 		try {
@@ -103,7 +68,7 @@ public abstract class Class14 {
 			int i = ((-Class4_Sub20_Sub12_Sub3.anIntArray3528[arg3 * 1024
 					/ arg1] + 65536) >> 1072078657);
 			if (arg4 < 106)
-				aJagexString_403 = null;
+				StringUtilities.aJagexString_403 = null;
 			anInt389++;
 			return ((arg0 * i >> -551652816) + ((-i + 65536) * arg2 >> -49237744));
 		} catch (RuntimeException runtimeexception) {
@@ -139,7 +104,7 @@ public abstract class Class14 {
 				Class4_Sub20_Sub12.method502(i - -1, 18 + i_1_, i_2_ - 2, -19
 						+ i_3_, 0);
 				Class68.aClass4_Sub20_Sub12_Sub4_Sub1_1384.method577(
-						Class24.aJagexString_563, i - -3, i_1_ + 14, i_4_, -1);
+						StringUtilities.aJagexString_563, i - -3, i_1_ + 14, i_4_, -1);
 				int i_5_ = Class37.anInt767;
 				int i_6_ = Class4_Sub1.anInt1859;
 				for (int i_7_ = 0; Class4_Sub20_Sub8.anInt2980 > i_7_; i_7_++) {
@@ -187,7 +152,7 @@ public abstract class Class14 {
 						&& !Class4_Sub23.aBoolean2421) {
 					Class4_Sub20_Sub4.method359(Class4_Sub3.aJagexString_1895,
 							-arg0 + arg1, arg4 + -arg3, 35, 0, (byte) 122,
-							Class16.aJagexString_434);
+							StringUtilities.aJagexString_434);
 					Class19_Sub1.anInt2526++;
 				}
 				anInt391++;
@@ -267,7 +232,7 @@ public abstract class Class14 {
 															(Class4_Sub24
 																	.method639(
 																			(new JagexString[] {
-																					Class10.aJagexString_303,
+																					StringUtilities.aJagexString_303,
 																					(class4_sub20_sub1.aJagexString_2713) }),
 																			-842)),
 															i_15_, i_14_,
@@ -282,7 +247,7 @@ public abstract class Class14 {
 												(Class4_Sub24
 														.method639(
 																(new JagexString[] {
-																		Class10.aJagexString_303,
+																		StringUtilities.aJagexString_303,
 																		class4_sub20_sub1.aJagexString_2713}),
 																-842)),
 												i_15_,
@@ -290,7 +255,7 @@ public abstract class Class14 {
 												1005,
 												class4_sub20_sub1.anInt2700 << 802017966,
 												(byte) 118,
-												Class31.aJagexString_665);
+												StringUtilities.aJagexString_665);
 							}
 						}
 						if ((i_12_ ^ 0xffffffff) == -2) {
@@ -461,7 +426,7 @@ public abstract class Class14 {
 															1001,
 															(class4_sub20_sub7_sub4.anInt3379),
 															(byte) 79,
-															Class31.aJagexString_665);
+															StringUtilities.aJagexString_665);
 										}
 									} else {
 										Class4_Sub20_Sub4
@@ -488,7 +453,6 @@ public abstract class Class14 {
 				}
 				if (arg2 == 64)
 					break;
-				aJagexString_406 = null;
 			} catch (RuntimeException runtimeexception) {
 				throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
 						("df.I(" + arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3
@@ -501,23 +465,21 @@ public abstract class Class14 {
 	public static void method706(byte arg0) {
 		try {
 			aClass66_408 = null;
-			aJagexString_390 = null;
-			aJagexString_407 = null;
-			aJagexString_398 = null;
-			aJagexString_393 = null;
-			aJagexString_402 = null;
+			StringUtilities.aJagexString_390 = null;
+			StringUtilities.aJagexString_407 = null;
+			StringUtilities.aJagexString_398 = null;
+			StringUtilities.aJagexString_393 = null;
+			StringUtilities.aJagexString_402 = null;
 			anIntArray392 = null;
 			if (arg0 < 17)
 				method701(101);
-			aJagexString_396 = null;
-			aJagexString_413 = null;
-			aJagexString_406 = null;
-			aJagexString_397 = null;
-			aJagexString_400 = null;
-			aJagexString_411 = null;
-			aJagexString_403 = null;
+			StringUtilities.aJagexString_396 = null;
+			StringUtilities.aJagexString_413 = null;
+			StringUtilities.aJagexString_397 = null;
+			StringUtilities.aJagexString_400 = null;
+			StringUtilities.aJagexString_411 = null;
+			StringUtilities.aJagexString_403 = null;
 			aClass4_Sub20_Sub12_Sub2Array405 = null;
-			aJagexString_409 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "df.L("
 					+ arg0 + ')');

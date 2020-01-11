@@ -3,10 +3,6 @@ package com.jagex.runescape;
 public class Class1 {
 	public static Class19 aClass19_67;
 	public static Class19 aClass19_80;
-	public static JagexString aJagexString_69;
-	public static JagexString aJagexString_72 = (JagexString.getRs2PreparedString(
-			"Sie befinden sich in einem Mitglieder)2Gebiet(Q"));
-	public static JagexString aJagexString_79;
 	public static Class4_Sub2_Sub1 aClass4_Sub2_Sub1_64;
 	public static Class4_Sub20_Sub12_Sub1[] aClass4_Sub20_Sub12_Sub1Array66;
 	public static Class76 aClass76_61;
@@ -14,36 +10,28 @@ public class Class1 {
 	public static int anInt62;
 	public static int anInt63;
 	public static int anInt68;
-	public static int anInt70;
+	public static int anInt70 = 128;
 	public static int anInt71;
 	public static int anInt73;
-	public static int anInt74;
+	public static int anInt74 = 0;
 	public static int anInt75;
 	public static int anInt76;
 	public static int anInt77;
-	public static int[] anIntArray78;
-	static {
-		anInt70 = 128;
-		aJagexString_69 = JagexString.getRs2PreparedString("Abbrechen");
-		anIntArray78 = new int[50];
-		aJagexString_79 = JagexString.getRs2PreparedString(
-				"60 Sekunden noch einmal)3)3)3");
-		anInt74 = 0;
-	}
+	public static int[] anIntArray78 = new int[50];
 
 	public static void method39(int arg0) {
 		try {
 			aClass4_Sub2_Sub1_64 = null;
-			aJagexString_79 = null;
+			StringUtilities.aJagexString_79 = null;
 			aClass19_80 = null;
 			aClass76_61 = null;
 			aClass19_67 = null;
 			if (arg0 >= -48)
 				method41(-12);
 			aClass4_Sub20_Sub12_Sub1Array66 = null;
-			aJagexString_69 = null;
+			StringUtilities.aJagexString_69 = null;
 			anIntArray78 = null;
-			aJagexString_72 = null;
+			StringUtilities.aJagexString_72 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "a.A("
 					+ arg0 + ')');
@@ -159,7 +147,7 @@ public class Class1 {
 				arg0.method320(-1);
 			arg0.aClass4_Sub20_2355 = aClass4_Sub20_65;
 			if (arg1 != 1)
-				aJagexString_72 = null;
+				StringUtilities.aJagexString_72 = null;
 			arg0.aClass4_Sub20_2359 = aClass4_Sub20_65.aClass4_Sub20_2359;
 			arg0.aClass4_Sub20_2355.aClass4_Sub20_2359 = arg0;
 			arg0.aClass4_Sub20_2359.aClass4_Sub20_2355 = arg0;

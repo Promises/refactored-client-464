@@ -58,7 +58,7 @@ public class Class4_Sub11_Sub1 extends StreamBuffer {
 			if ((arg0 ^ 0xffffffffffffffffL) != -1L) {
 				if (((GameShell.anInt23 ^ 0xffffffff) <= -101 && (RSFont.anInt162 ^ 0xffffffff) != -2)
 						|| GameShell.anInt23 >= 200)
-					Class43.method955(Class27.aJagexString_624,
+					Class43.method955(StringUtilities.aJagexString_624,
 							Class4_Sub3.aJagexString_1895, (byte) 109, 0);
 				else {
 					if (arg1 != -314)
@@ -69,7 +69,7 @@ public class Class4_Sub11_Sub1 extends StreamBuffer {
 						if ((arg0 ^ 0xffffffffffffffffL) == (Class64.aLongArray1279[i] ^ 0xffffffffffffffffL)) {
 							Class43.method955(Class4_Sub24.method639(
 									(new JagexString[] {jagexString,
-											(Class25.aJagexString_581) }), -842),
+											(StringUtilities.aJagexString_581) }), -842),
 									Class4_Sub3.aJagexString_1895, (byte) 113, 0);
 							return;
 						}

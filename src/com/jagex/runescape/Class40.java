@@ -5,39 +5,30 @@ import com.jagex.runescape.util.Signlink;
 import java.awt.Component;
 
 public class Class40 {
-	public static JagexString aJagexString_788;
-	public static JagexString aJagexString_791;
-	public static JagexString aJagexString_792;
 	public static StreamBuffer aClass4_Sub11_783;
 	public static Class65[][][] aClass65ArrayArrayArray787 = new Class65[4][104][104];
 	public static int anInt780 = -1;
-	public static int anInt781;
+	public static int anInt781 = 0;
 	public static int anInt782;
 	public static int anInt784;
 	public static int anInt785;
 	public static int anInt786;
 	public static int anInt790;
-	public static int[] anIntArray789;
-
-	static {
-		anInt781 = 0;
-		aJagexString_792 = (JagexString.getRs2PreparedString(
-				"We suspect someone knows your password)3"));
-		anIntArray789 = new int[500];
-		aJagexString_791 = JagexString.getRs2PreparedString(" )2>");
-		aJagexString_788 = aJagexString_792;
-	}
+	public static int[] anIntArray789 = new int[500];
 
 	public static Class43 method931(int arg0, int arg1, Signlink arg2,
 			Component arg3, int arg4) {
 		try {
 			anInt784++;
-			if (Class67.anInt1354 == 0)
+			if (Class67.anInt1354 == 0) {
 				throw new IllegalStateException();
-			if ((arg4 ^ 0xffffffff) > -1 || arg4 >= 2)
+			}
+			if ((arg4 ^ 0xffffffff) > -1 || arg4 >= 2) {
 				throw new IllegalArgumentException();
-			if (arg1 < 256)
+			}
+			if (arg1 < 256) {
 				arg1 = 256;
+			}
 			try {
 				Class43 class43 = (Class43) Class.forName("com.jagex.runescape.Class43_Sub2")
 						.newInstance();
@@ -46,10 +37,12 @@ public class Class40 {
 						: 1)];
 				class43.method956(arg3);
 				class43.anInt902 = 1024 + (~0x3ff & arg1);
-				if (arg0 >= -56)
+				if (arg0 >= -56) {
 					method932(97);
-				if ((class43.anInt902 ^ 0xffffffff) < -16385)
+				}
+				if ((class43.anInt902 ^ 0xffffffff) < -16385) {
 					class43.anInt902 = 16384;
+				}
 				class43.method963(class43.anInt902);
 				if (Class4_Sub12.anInt2125 > 0 && Class47.aClass50_960 == null) {
 					Class47.aClass50_960 = new Class50();
@@ -58,8 +51,9 @@ public class Class40 {
 							Class4_Sub12.anInt2125, 83);
 				}
 				if (Class47.aClass50_960 != null) {
-					if (Class47.aClass50_960.aClass43Array1013[arg4] != null)
+					if (Class47.aClass50_960.aClass43Array1013[arg4] != null) {
 						throw new IllegalArgumentException();
+					}
 					Class47.aClass50_960.aClass43Array1013[arg4] = class43;
 				}
 				return class43;
@@ -80,8 +74,9 @@ public class Class40 {
 								Class4_Sub12.anInt2125, 10);
 					}
 					if (Class47.aClass50_960 != null) {
-						if (Class47.aClass50_960.aClass43Array1013[arg4] != null)
+						if (Class47.aClass50_960.aClass43Array1013[arg4] != null) {
 							throw new IllegalArgumentException();
+						}
 						Class47.aClass50_960.aClass43Array1013[arg4] = class43_sub1;
 					}
 					return class43_sub1;
@@ -100,12 +95,12 @@ public class Class40 {
 	public static void method932(int arg0) {
 		try {
 			anIntArray789 = null;
-			aJagexString_792 = null;
-			if (arg0 != 14778)
+			if (arg0 != 14778) {
 				anInt781 = -93;
+			}
 			aClass65ArrayArrayArray787 = null;
-			aJagexString_788 = null;
-			aJagexString_791 = null;
+			StringUtilities.aJagexString_788 = null;
+			StringUtilities.aJagexString_791 = null;
 			aClass4_Sub11_783 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "la.A("
@@ -121,16 +116,20 @@ public class Class40 {
 				arg5 = arg0;
 				arg0 = i;
 			}
-			if (arg1 != true)
+			if (arg1 != true) {
 				method934(-25, -35, -32);
+			}
 			arg2 &= 0x3;
 			anInt786++;
-			if (arg2 == 0)
+			if (arg2 == 0) {
 				return arg3;
-			if ((arg2 ^ 0xffffffff) == -2)
+			}
+			if ((arg2 ^ 0xffffffff) == -2) {
 				return -arg4 + 7 - (arg5 - 1);
-			if ((arg2 ^ 0xffffffff) == -3)
+			}
+			if ((arg2 ^ 0xffffffff) == -3) {
 				return 7 + (-arg3 - (-1 + arg0));
+			}
 			return arg4;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("la.C("
@@ -143,8 +142,9 @@ public class Class40 {
 		anInt790++;
 		if ((Class4_Sub20_Sub9.anInt3051 ^ 0xffffffff) == -1
 				|| Class4_Sub20_Sub9.anInt3051 == 3) {
-			if (arg2 != 0)
+			if (arg2 != 0) {
 				aClass65ArrayArrayArray787 = null;
+			}
 			if ((Class62.anInt1227 ^ 0xffffffff) == -2) {
 				int i = -arg1 + (-25 + Class37.anInt758);
 				int i_1_ = -arg0 + (JagexException.anInt1729 + -5);
@@ -219,8 +219,9 @@ public class Class40 {
 			}
 			Class62.method1050(true);
 			Class4_Sub20_Sub7_Sub6.aClass69_3439.method1136();
-			for (int i = arg0; (i ^ 0xffffffff) > -5; i++)
+			for (int i = arg0; (i ^ 0xffffffff) > -5; i++) {
 				Class57.regions[i].method68(true);
+			}
 			System.gc();
 			Class32.method882(2, arg0 + 69);
 			Class4_Sub20_Sub6.aBoolean2895 = false;

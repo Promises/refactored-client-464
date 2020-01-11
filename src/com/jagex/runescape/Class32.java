@@ -3,27 +3,13 @@ package com.jagex.runescape;
 import com.jagex.runescape.net.StreamBuffer;
 
 public class Class32 {
-	public static volatile boolean aBoolean702;
-	public static boolean aBoolean703;
-	public static JagexString aJagexString_695 = JagexString.getRs2PreparedString(
-			"blaugr-Un:");
-	public static JagexString aJagexString_700;
-	public static JagexString aJagexString_701 = JagexString.getRs2PreparedString(
-			"Passwort: ");
+	public static volatile boolean aBoolean702 = true;
+	public static boolean aBoolean703 = false;
 	public static RSInterface aClass4_Sub13_698;
-	public static long[] aLongArray699;
+	public static long[] aLongArray699 = new long[32];
 	public static int anInt694;
 	public static int anInt696;
-	public static int[][] anIntArrayArray697;
-
-	static {
-		aJagexString_700 = JagexString.getRs2PreparedString(
-				"Lade Benutzeroberfl-=che )2 ");
-		anIntArrayArray697 = new int[5][5000];
-		aBoolean702 = true;
-		aLongArray699 = new long[32];
-		aBoolean703 = false;
-	}
+	public static int[][] anIntArrayArray697 = new int[5][5000];
 
 	public static void method882(int arg0, int arg1) {
 		try {
@@ -47,9 +33,9 @@ public class Class32 {
 		try {
 			aClass4_Sub13_698 = null;
 			anIntArrayArray697 = null;
-			aJagexString_695 = null;
-			aJagexString_701 = null;
-			aJagexString_700 = null;
+			StringUtilities.aJagexString_695 = null;
+			StringUtilities.aJagexString_701 = null;
+			StringUtilities.aJagexString_700 = null;
 			if (arg0 == 1)
 				aLongArray699 = null;
 		} catch (RuntimeException runtimeexception) {

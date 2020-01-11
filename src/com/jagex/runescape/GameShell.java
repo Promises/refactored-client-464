@@ -306,7 +306,7 @@ public abstract class GameShell extends Applet implements Runnable,
                     /* empty */
                 }
                 try {
-                    method21(arg0 + -19075);
+                    method21();
                 } catch (Exception exception) {
                     /* empty */
                 }
@@ -351,7 +351,7 @@ public abstract class GameShell extends Applet implements Runnable,
         }
     }
 
-    public abstract void method21(int i);
+    public abstract void method21();
 
     public void method22(byte arg0) {
         try {

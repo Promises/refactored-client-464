@@ -678,7 +678,7 @@ public abstract class Class42 {
 														Class74.method1168(arg2
 																^ ~0x48d,
 																arg0.anInt2814),
-														Class30.aJagexString_652}),
+														StringUtilities.aJagexString_652}),
 												-842));
 							if (Class4_Sub20_Sub1.anInt2734 == 1) {
 								Class4_Sub20_Sub4.method359(
@@ -771,7 +771,7 @@ public abstract class Class42 {
 														Class80.aJagexString_1641,
                                                         jagexString}, -842)),
 										arg3, arg1, 1004, arg4, (byte) 110,
-										Class31.aJagexString_665);
+										StringUtilities.aJagexString_665);
 							} else {
 								if ((0x2 & Class35.anInt740 ^ 0xffffffff) != -3)
 									break;

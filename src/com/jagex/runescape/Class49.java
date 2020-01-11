@@ -1109,10 +1109,10 @@ public class Class49 implements Runnable {
 				if (Class4_Sub20_Sub11.incomingPacket == 108) { // Server message, sendmessage 128 in 317
 					JagexString jagexString = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.method212();
-					if (jagexString.method826(Class18.aJagexString_478, (byte) 126)) {
+					if (jagexString.method826(StringUtilities.aJagexString_478, (byte) 126)) {
 						JagexString jagexString_113_ = (jagexString
 								.method829((byte) -122, 0, jagexString.method803(
-										StreamBuffer.aJagexString_2101, (byte) 117)));
+										StringUtilities.aJagexString_2101, (byte) 117)));
 						long l = jagexString_113_.method806((byte) -25);
 						boolean bool = false;
 						for (int i_114_ = 0; JagexString.anInt1827 > i_114_; i_114_++) {
@@ -1127,7 +1127,7 @@ public class Class49 implements Runnable {
 					} else if (jagexString.method826(Class47.aJagexString_962,
 							(byte) 127)) {
 						JagexString jagexString_115_ = (jagexString.method829((byte) 19, 0,
-								jagexString.method803(StreamBuffer.aJagexString_2101,
+								jagexString.method803(StringUtilities.aJagexString_2101,
 										(byte) -89)));
 						long l = jagexString_115_.method806((byte) -117);
 						boolean bool = false;
@@ -1140,10 +1140,10 @@ public class Class49 implements Runnable {
 						if (!bool && Class81.anInt1695 == 0)
 							Class43.method955(Class4_Sub20_Sub3.aJagexString_2794,
                                     jagexString_115_, (byte) 122, 8);
-					} else if (jagexString.method826(Class19_Sub1.aJagexString_2518,
+					} else if (jagexString.method826(StringUtilities.aJagexString_2518,
 							(byte) -6)) {
 						JagexString jagexString_117_ = (jagexString.method829((byte) 32, 0,
-								jagexString.method803(StreamBuffer.aJagexString_2101,
+								jagexString.method803(StringUtilities.aJagexString_2101,
 										(byte) 30)));
 						long l = jagexString_117_.method806((byte) -25);
 						boolean bool = false;
@@ -1156,20 +1156,20 @@ public class Class49 implements Runnable {
 						if (!bool && (Class81.anInt1695 ^ 0xffffffff) == -1) {
 							JagexString jagexString_119_ = (jagexString.method829(
 									(byte) -119, jagexString.method803(
-											(StreamBuffer.aJagexString_2101),
+											(StringUtilities.aJagexString_2101),
 											(byte) -18) + 1, jagexString
 											.method825(-117) - 9));
 							Class43.method955(jagexString_119_, jagexString_117_,
 									(byte) 125, 8);
 						}
-					} else if (!jagexString.method826(Class24.aJagexString_565,
+					} else if (!jagexString.method826(StringUtilities.aJagexString_565,
 							(byte) 123))
 						Class43.method955(jagexString, Class4_Sub3.aJagexString_1895,
 								(byte) 117, 0);
 					else {
 						JagexString jagexString_120_ = (jagexString
 								.method829((byte) -128, 0, jagexString.method803(
-										StreamBuffer.aJagexString_2101, (byte) -74)));
+										StringUtilities.aJagexString_2101, (byte) -74)));
 						long l = jagexString_120_.method806((byte) -49);
 						boolean bool = false;
 						for (int i_121_ = 0; ((JagexString.anInt1827 ^ 0xffffffff) < (i_121_ ^ 0xffffffff)); i_121_++) {

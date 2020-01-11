@@ -1,20 +1,15 @@
 package com.jagex.runescape;
 
 public class Class2 {
-	public static JagexString aJagexString_81;
-	public static JagexString aJagexString_85 = JagexString.getRs2PreparedString("_");
-	public static JagexString aJagexString_88;
-	public static JagexString aJagexString_92;
-	public static JagexString aJagexString_93;
 	public static long aLong82;
 	public static int anInt86;
 	public static int anInt87;
 	public static int anInt89;
 	public static int anInt91;
 	public static int anInt94;
-	public static int anInt95;
-	public static int anInt96;
-	public static int[] anIntArray84;
+	public static int anInt95 = 0;
+	public static int anInt96 = 0;
+	public static int[] anIntArray84 = new int[32];
 	public static int[] anIntArray90;
 	public static short[][] aShortArrayArray83 = {
 			{ 6798, 107, 10283, 16, 4797, 7744, 5799, 4634, -31839, 22433,
@@ -26,32 +21,20 @@ public class Class2 {
 			{ 4626, 11146, 6439, 12, 4758, 10270 },
 			{ 4550, 4537, 5681, 5673, 5790, 6806, 8076, 4574 } };
 
-	static {
-		aJagexString_81 = JagexString.getRs2PreparedString("Clientscript error in: "
-        );
-		anIntArray84 = new int[32];
-		aJagexString_88 = JagexString.getRs2PreparedString("No response from server)3"
-        );
-		aJagexString_92 = JagexString.getRs2PreparedString("titlebox");
-		anInt96 = 0;
-		aJagexString_93 = aJagexString_88;
-		anInt95 = 0;
-	}
-
 	public static void method42(int arg0, Class4_Sub20_Sub7_Sub1_Sub1 arg1,
 			int arg2, int arg3, int arg4) {
 		anInt87++;
 		if (arg1 != Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302
 				&& Class4_Sub20_Sub8.anInt2980 < 400) {
 			JagexString jagexString;
-			if ((arg1.anInt3586 ^ 0xffffffff) != -1)
+			if ((arg1.anInt3586 ^ 0xffffffff) != -1) {
 				jagexString = (Class4_Sub24.method639(
 						(new JagexString[] { arg1.aJagexString_3593,
 								Class4_Sub7.aJagexString_1957,
 								Class4_Sub7.aJagexString_1948,
 								Class74.method1168(-73, arg1.anInt3586),
-								Class30.aJagexString_652}), arg0 + -31187));
-			else
+								StringUtilities.aJagexString_652}), arg0 + -31187));
+			} else {
 				jagexString = (Class4_Sub24
 						.method639(
 								(new JagexString[] {
@@ -64,7 +47,8 @@ public class Class2 {
 										Class4_Sub7.aJagexString_1957,
 										RSFont.aJagexString_164,
 										Class74.method1168(-80, arg1.anInt3584),
-										Class30.aJagexString_652}), -842));
+										StringUtilities.aJagexString_652}), -842));
+			}
 			if ((Class4_Sub20_Sub1.anInt2734 ^ 0xffffffff) == -2) {
 				Class4_Sub20_Sub4.method359(
 						Class4_Sub24.method639((new JagexString[] {
@@ -88,17 +72,20 @@ public class Class2 {
 						int i_0_ = 0;
 						if (!Class4_Sub22.aJagexStringArray2387[i].method818(
 								Class4_Sub16.aJagexString_2305, (byte) -105)) {
-							if (Class4_Sub20_Sub7.aBooleanArray2946[i])
+							if (Class4_Sub20_Sub7.aBooleanArray2946[i]) {
 								i_0_ = 2000;
+							}
 						} else {
-							if (((Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3584) ^ 0xffffffff) > (arg1.anInt3584 ^ 0xffffffff))
+							if (((Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3584) ^ 0xffffffff) > (arg1.anInt3584 ^ 0xffffffff)) {
 								i_0_ = 2000;
+							}
 							if ((Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3590) != 0
 									&& arg1.anInt3590 != 0) {
-								if (arg1.anInt3590 != (Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3590))
+								if (arg1.anInt3590 != (Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3590)) {
 									i_0_ = 0;
-								else
+								} else {
 									i_0_ = 2000;
+								}
 							}
 						}
 						int i_1_ = i_0_ + Class4_Sub20_Sub13.anIntArray3130[i];
@@ -118,8 +105,9 @@ public class Class2 {
 					break;
 				}
 			}
-			if (arg0 != 30345)
-				aJagexString_85 = null;
+			if (arg0 != 30345) {
+				StringUtilities.aJagexString_85 = null;
+			}
 		}
 	}
 
@@ -130,11 +118,10 @@ public class Class2 {
 					.method724((byte) 60)); class4_sub16 != null; class4_sub16 = ((Class4_Sub16) Class31.aClass16_677
 					.method723((byte) -25))) {
 				if ((class4_sub16.anInt2306 ^ 0xffffffff) == -1
-						|| class4_sub16.anInt2306 == 3)
+						|| class4_sub16.anInt2306 == 3) {
 					Class4_Sub20_Sub7_Sub3.method418(-46, true, class4_sub16);
+				}
 			}
-			if (arg0 < 120)
-				aJagexString_88 = null;
 			anInt86++;
 			if (RSInterface.aClass4_Sub13_2141 != null) {
 				Class67.method1088(RSInterface.aClass4_Sub13_2141);
@@ -151,8 +138,9 @@ public class Class2 {
                                                    JagexString arg2, Class19 arg3) {
 		try {
 			anInt91++;
-			if (arg0 != 24094)
-				aJagexString_85 = null;
+			if (arg0 != 24094) {
+				StringUtilities.aJagexString_85 = null;
+			}
 			int i = arg3.method754(arg2, 1);
 			int i_2_ = arg3.method747(false, arg1, i);
 			return Class4_Sub20_Sub15.method602(true, arg3, i_2_, i);
@@ -166,12 +154,14 @@ public class Class2 {
 
 	public static boolean method45(int arg0, int arg1) {
 		try {
-			if (arg0 >= -98)
-				aJagexString_85 = null;
+			if (arg0 >= -98) {
+				StringUtilities.aJagexString_85 = null;
+			}
 			anInt94++;
 			if ((arg1 < 97 || (arg1 ^ 0xffffffff) < -123)
-					&& ((arg1 ^ 0xffffffff) > -66 || arg1 > 90))
+					&& ((arg1 ^ 0xffffffff) > -66 || arg1 > 90)) {
 				return false;
+			}
 			return true;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("aa.B("
@@ -181,13 +171,12 @@ public class Class2 {
 
 	public static void method46(int arg0) {
 		try {
-			aJagexString_92 = null;
-			aJagexString_85 = null;
-			aJagexString_81 = null;
+			StringUtilities.aJagexString_92 = null;
+			StringUtilities.aJagexString_85 = null;
+			StringUtilities.aJagexString_81 = null;
 			aShortArrayArray83 = null;
-			aJagexString_93 = null;
+			StringUtilities.aJagexString_93 = null;
 			if (arg0 == 4634) {
-				aJagexString_88 = null;
 				anIntArray84 = null;
 				anIntArray90 = null;
 			}
@@ -199,11 +188,13 @@ public class Class2 {
 
 	public static boolean method47(int arg0, int arg1) {
 		try {
-			if (arg1 != 4626)
-				aJagexString_92 = null;
+			if (arg1 != 4626) {
+				StringUtilities.aJagexString_92 = null;
+			}
 			anInt89++;
-			if ((0x1 & arg0 >> 2132745916 ^ 0xffffffff) == -1)
+			if ((0x1 & arg0 >> 2132745916 ^ 0xffffffff) == -1) {
 				return false;
+			}
 			return true;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("aa.C("

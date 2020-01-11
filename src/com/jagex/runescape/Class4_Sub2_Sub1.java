@@ -385,7 +385,7 @@ public class Class4_Sub2_Sub1 extends Class4_Sub2 {
 			anInt2570++;
 			if (JagexException.aClass4_Sub20_Sub12_Sub2Array1732 == null)
 				JagexException.aClass4_Sub20_Sub12_Sub2Array1732 = Class4_Sub21
-						.method625(Class31.aJagexString_678,
+						.method625(StringUtilities.aJagexString_678,
 								Game.aClass19_Sub1_1849,
 								Class34.aJagexString_1767, true);
 			if (Class12.aClass4_Sub20_Sub12_Sub1Array359 == null)
@@ -395,11 +395,11 @@ public class Class4_Sub2_Sub1 extends Class4_Sub2 {
 			if (Class28.aClass4_Sub20_Sub12_Sub1Array635 == null)
 				Class28.aClass4_Sub20_Sub12_Sub1Array635 = Class63.method1055(
 						Class34.aJagexString_1767, Game.aClass19_Sub1_1849, 74,
-						Class12.aJagexString_361);
+						StringUtilities.aJagexString_361);
 			if (Class59.aClass4_Sub20_Sub12_Sub1Array1174 == null)
 				Class59.aClass4_Sub20_Sub12_Sub1Array1174 = Class63.method1055(
 						Class34.aJagexString_1767, Game.aClass19_Sub1_1849, 120,
-						Class11.aJagexString_324);
+						StringUtilities.aJagexString_324);
 			Class4_Sub20_Sub12.method488(0, 23, 765, 480, 0);
 			Class4_Sub20_Sub12.method500(0, 0, 125, 23, 12425273, 9135624);
 			Class4_Sub20_Sub12.method500(125, 0, 640, 23, 5197647, 2697513);
@@ -408,7 +408,7 @@ public class Class4_Sub2_Sub1 extends Class4_Sub2 {
 				if (Class59.aClass4_Sub20_Sub12_Sub1Array1174 != null) {
 					Class59.aClass4_Sub20_Sub12_Sub1Array1174[1].method507(140,
 							1);
-					arg1.method577(Class27.aJagexString_629, 152, 10, 16777215, -1);
+					arg1.method577(StringUtilities.aJagexString_629, 152, 10, 16777215, -1);
 					Class59.aClass4_Sub20_Sub12_Sub1Array1174[0].method507(140,
 							12);
 					arg1.method577(Class76.aJagexString_1561, 152, 21, 16777215, -1);

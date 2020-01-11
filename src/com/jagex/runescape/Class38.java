@@ -3,20 +3,12 @@ package com.jagex.runescape;
 import com.jagex.runescape.net.StreamBuffer;
 
 public class Class38 {
-	public static JagexString aJagexString_769;
-	public static JagexString aJagexString_772 = JagexString.getRs2PreparedString(
-			"scrollbar");
 	public static int anInt768;
-	public static int anInt770;
+	public static int anInt770 = 0;
 	public static int anInt771;
 	public static int anInt773;
 	public static int anInt774;
 	public static int anInt775;
-
-	static {
-		aJagexString_769 = JagexString.getRs2PreparedString("Standort");
-		anInt770 = 0;
-	}
 
 	public static JagexString method919(int arg0, RSInterface arg1, int arg2) {
 		try {
@@ -34,7 +26,7 @@ public class Class38 {
 							-106) == 0)) {
 				if (Class19_Sub1.aBoolean2538)
 					return (Class4_Sub24.method639(
-							new JagexString[] { Class24.aJagexString_551,
+							new JagexString[] { StringUtilities.aJagexString_551,
 									Class74.method1168(-67, arg2) },
 							arg0 + 9864));
 				return null;
@@ -101,7 +93,7 @@ public class Class38 {
 	public static void method921(int arg0) {
 		try {
 			if (arg0 != -19752)
-				aJagexString_769 = null;
+				StringUtilities.aJagexString_769 = null;
 			Class4_Sub16.aClass66_2316.method1084(0);
 			Class4_Sub20_Sub4.aClass66_2848.method1084(0);
 			anInt773++;
@@ -137,8 +129,8 @@ public class Class38 {
 		try {
 			if (arg0 != 60)
 				method919(-88, null, -27);
-			aJagexString_772 = null;
-			aJagexString_769 = null;
+			StringUtilities.aJagexString_772 = null;
+			StringUtilities.aJagexString_769 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "kd.C("
 					+ arg0 + ')');

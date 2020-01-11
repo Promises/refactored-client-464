@@ -135,7 +135,7 @@ public class Class4_Sub20_Sub3 extends Class4_Sub20 {
 		anInt2821 = -1;
 		anInt2833 = 128;
 		anInt2814 = -1;
-		aJagexString_2812 = Class35.aJagexString_735;
+		aJagexString_2812 = StringUtilities.aJagexString_735;
 		anInt2829 = 0;
 		aBoolean2826 = false;
 		anInt2800 = -1;
@@ -271,7 +271,7 @@ public class Class4_Sub20_Sub3 extends Class4_Sub20 {
 						} else if (arg1 >= 30 && arg1 < 35) {
 							aJagexStringArray2790[-30 + arg1] = arg0.method212();
 							if (aJagexStringArray2790[arg1 - 30].method818(
-									Class28.aJagexString_638, (byte) -105))
+									StringUtilities.aJagexString_638, (byte) -105))
 								aJagexStringArray2790[arg1 - 30] = null;
 						} else if ((arg1 ^ 0xffffffff) != -41) {
 							if (arg1 == 60) {

@@ -8,11 +8,6 @@ import java.awt.event.FocusListener;
 
 public class AppletListener implements
         FocusListener {
-    public static JagexString aJagexString_1458 = JagexString.getRs2PreparedString(
-            "blinken3:");
-    public static JagexString aJagexString_1461 = JagexString.getRs2PreparedString(
-            "Existing User");
-    public static JagexString aJagexString_1463 = aJagexString_1461;
     public static int anInt1448 = 0;
     public static int anInt1449;
     public static int anInt1452;
@@ -61,10 +56,8 @@ public class AppletListener implements
     public static void method1150(byte arg0) {
         try {
             anIntArray1465 = null;
-            aJagexString_1458 = null;
-            aJagexString_1463 = null;
-            if (arg0 == -7)
-                aJagexString_1461 = null;
+            StringUtilities.aJagexString_1458 = null;
+            StringUtilities.aJagexString_1463 = null;
         } catch (RuntimeException runtimeexception) {
             throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "te.D("
                     + arg0 + ')');

@@ -4,37 +4,28 @@ import com.jagex.runescape.net.StreamBuffer;
 
 public class SceneGraph extends Class14 {
 	public static Class19 aClass19_2483;
-	public static Class19_Sub1[] aClass19_Sub1Array2492;
+	public static Class19_Sub1[] aClass19_Sub1Array2492 = new Class19_Sub1[256];
 	public static JagexString aJagexString_2485 = JagexString.getRs2PreparedString("Welt"
     );
-	public static JagexString aJagexString_2488;
-	public static JagexString aJagexString_2496;
-	public static JagexString aJagexString_2497;
+	public static JagexString aJagexString_2488 = JagexString.getRs2PreparedString("Stufe)2");
+	public static JagexString aJagexString_2497 = JagexString.getRs2PreparedString(
+			"RuneScape has been updated(Q");
 	public static int anInt2484;
 	public static int anInt2486;
 	public static int anInt2487;
 	public static int anInt2493 = 0;
 	public static int anInt2498;
-	public static int anInt2502;
+	public static int anInt2502 = -1;
 	public static int anInt2503;
-	public static int[] anIntArray2504;
+	public static int[] anIntArray2504 = new int[5];
 	public static int[][] anIntArrayArray2489 = new int[104][104]; //104 | 104 = length, width - Barry
 	public static int[][][] heightmap;
-	static {
-		aJagexString_2488 = JagexString.getRs2PreparedString("Stufe)2");
-		aClass19_Sub1Array2492 = new Class19_Sub1[256];
-		aJagexString_2496 = JagexString.getRs2PreparedString(
-				"RuneScape has been updated(Q");
-		anInt2502 = -1;
-		anIntArray2504 = new int[5];
-		aJagexString_2497 = aJagexString_2496;
-	}
 
 	public static void method707(int arg0) {
 		try {
 			anInt2487++;
 			int i = Class68.aClass4_Sub20_Sub12_Sub4_Sub1_1384
-					.method560(Class24.aJagexString_563);
+					.method560(StringUtilities.aJagexString_563);
 			for (int i_3_ = 0; ((Class4_Sub20_Sub8.anInt2980 ^ 0xffffffff) < (i_3_ ^ 0xffffffff)); i_3_++) {
 				int i_4_ = Class68.aClass4_Sub20_Sub12_Sub4_Sub1_1384
 						.method560(Class4_Sub15.method298(i_3_, true));
@@ -71,9 +62,7 @@ public class SceneGraph extends Class14 {
 				anInt2493 = 99;
 			aJagexString_2485 = null;
 			anIntArray2504 = null;
-			aJagexString_2496 = null;
 			heightmap = null;
-			aJagexString_2497 = null;
 			aClass19_2483 = null;
 			aJagexString_2488 = null;
 			aClass19_Sub1Array2492 = null;

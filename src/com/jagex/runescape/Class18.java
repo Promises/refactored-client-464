@@ -6,62 +6,36 @@ import java.awt.event.KeyListener;
 
 public class Class18 implements KeyListener, FocusListener {
 	public static Class19_Sub1 aClass19_Sub1_482;
-	public static JagexString aJagexString_464 = (JagexString.getRs2PreparedString(
-			"Wir vermuten)1 dass Ihr Konto gestohlen wurde"));
-	public static JagexString aJagexString_469;
-	public static JagexString aJagexString_470;
-	public static JagexString aJagexString_472;
-	public static JagexString aJagexString_474;
-	public static JagexString aJagexString_478 = JagexString.getRs2PreparedString(
-			":tradereq:");
-	public static JagexString aJagexString_484;
 	public static JagexString[] aJagexStringArray462 = new JagexString[500];
-	public static Class65 aClass65_463;
-	public static long[] aLongArray483;
+	public static Class65 aClass65_463 = new Class65();
+	public static long[] aLongArray483 = new long[100];
 	public static int anInt465;
 	public static int anInt466;
 	public static int anInt467;
 	public static int anInt468;
 	public static int anInt471;
-	public static int anInt475;
-	public static int anInt476;
-	public static int anInt477;
+	public static int anInt475 = 0;
+	public static int anInt476 = 127;
+	public static int anInt477 = -1;
 	public static int anInt479;
 	public static int anInt480;
 	public static int anInt481;
-	public static int[] anIntArray473;
-
-	static {
-		aJagexString_469 = JagexString.getRs2PreparedString(
-				"Try again in 60 secs)3)3)3");
-		anInt477 = -1;
-		aJagexString_472 = JagexString.getRs2PreparedString("k");
-		anInt476 = 127;
-		aJagexString_474 = (JagexString.getRs2PreparedString(
-				"Benutzen Sie die (WPasswort -=ndern(W Option"));
-		anInt475 = 0;
-		aJagexString_470 = aJagexString_469;
-		aLongArray483 = new long[100];
-		anIntArray473 = new int[100];
-		aJagexString_484 = JagexString.getRs2PreparedString("<)4col> x");
-		aClass65_463 = new Class65();
-	}
+	public static int[] anIntArray473 = new int[100];
 
 	public static void method731(int arg0) {
 		try {
-			aJagexString_469 = null;
 			aJagexStringArray462 = null;
 			aClass19_Sub1_482 = null;
-			aJagexString_474 = null;
+			StringUtilities.aJagexString_474 = null;
 			aLongArray483 = null;
-			aJagexString_478 = null;
-			aJagexString_472 = null;
+			StringUtilities.aJagexString_478 = null;
+			StringUtilities.aJagexString_472 = null;
 			if (arg0 > -73)
 				method733(4, (byte) 123, -124, 90);
-			aJagexString_464 = null;
+			StringUtilities.aJagexString_464 = null;
 			aClass65_463 = null;
-			aJagexString_484 = null;
-			aJagexString_470 = null;
+			StringUtilities.aJagexString_484 = null;
+			StringUtilities.aJagexString_470 = null;
 			anIntArray473 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ee.B("

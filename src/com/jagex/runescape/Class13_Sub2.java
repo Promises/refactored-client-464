@@ -16,13 +16,6 @@ import java.net.Socket;
 
 public class Class13_Sub2 extends Class13 implements ImageProducer,
         ImageObserver {
-    public static JagexString aJagexString_2469 = JagexString.getRs2PreparedString("me"
-    );
-    public static JagexString aJagexString_2474;
-    public static JagexString aJagexString_2475;
-    public static JagexString aJagexString_2477;
-    public static JagexString aJagexString_2479;
-    public static JagexString aJagexString_2481;
     public static Class4_Sub8[] aClass4_Sub8Array2482;
     public static Class66 aClass66_2468;
     public static int anInt2454;
@@ -48,13 +41,6 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
     static {
         aClass66_2468 = new Class66(64);
         GameShell.mouseX = -1;
-        aJagexString_2481 = JagexString.getRs2PreparedString("flash1:");
-        aJagexString_2477 = JagexString.getRs2PreparedString(
-                "Bitte laden Sie die Seite neu)3");
-        aJagexString_2479 = aJagexString_2481;
-        aJagexString_2474 = aJagexString_2481;
-        aJagexString_2475 = JagexString.getRs2PreparedString("Update)2Liste geladen)3"
-        );
     }
 
     public static void method690(Component arg0, int arg1) {
@@ -106,7 +92,7 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
                 }
             }
             if (RSFont.anInt148 == 2) {
-                long l = (Class25.aLong584 = Class34.aJagexString_1768
+                long l = (Class25.aLong584 = StringUtilities.aJagexString_1768
                         .method806((byte) -30));
                 int i = (int) (l >> 321638480 & 0x1fL);
                 Class66.aClass4_Sub11_Sub1_1328.pointion = 0;
@@ -171,11 +157,11 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
                 Class66.aClass4_Sub11_Sub1_1328.method236(181,
                         Class43.aClass75_872.anInt1542);
                 Class66.aClass4_Sub11_Sub1_1328.method255(189354448,
-                        Class34.aJagexString_1768.method806((byte) -123));
+                        StringUtilities.aJagexString_1768.method806((byte) -123));
                 Class66.aClass4_Sub11_Sub1_1328.method259(
-                        Class34.aJagexString_1764, 18601);
+                        StringUtilities.aJagexString_1764, 18601);
                 Class66.aClass4_Sub11_Sub1_1328.method233(
-                        (Class12.aBigInteger350), (Class49.aBigInteger994),
+                        (Class12.rsaModulus), (Class49.aBigInteger994),
                         arg0 ^ 0x63d6);
                 Class4_Sub1.aClass4_Sub11_Sub1_1854.pointion = 0;
                 if (Class54.anInt1109 == 40)
@@ -349,16 +335,15 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
 
     public static void method694(byte arg0) {
         try {
-            aJagexString_2474 = null;
+            StringUtilities.aJagexString_2474 = null;
             aClass66_2468 = null;
             anIntArray2480 = null;
             if (arg0 > 64) {
-                aJagexString_2479 = null;
-                aJagexString_2481 = null;
+                StringUtilities.aJagexString_2479 = null;
                 aClass4_Sub8Array2482 = null;
-                aJagexString_2475 = null;
-                aJagexString_2477 = null;
-                aJagexString_2469 = null;
+                StringUtilities.aJagexString_2475 = null;
+                StringUtilities.aJagexString_2477 = null;
+                StringUtilities.aJagexString_2469 = null;
                 aShortArrayArray2476 = null;
             }
         } catch (RuntimeException runtimeexception) {
@@ -502,7 +487,7 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
                                        int arg4) {
         try {
             if (arg2 < 121)
-                aJagexString_2475 = null;
+                StringUtilities.aJagexString_2475 = null;
             anInt2455++;
             if (anImageConsumer2453 != null) {
                 anImageConsumer2453.setPixels(arg1, arg0, arg4, arg3,

@@ -281,7 +281,7 @@ public class Class41 {
 																			Class74.method1168(
 																					-90,
 																					i_45_),
-																			Class2.aJagexString_85,
+																			StringUtilities.aJagexString_85,
 																			Class74.method1168(
 																					-19,
 																					i_46_) }),
@@ -292,11 +292,11 @@ public class Class41 {
 													(Class4_Sub24
 															.method639(
 																	(new JagexString[] {
-																			Class13.aJagexString_368,
+																			StringUtilities.aJagexString_368,
 																			Class74.method1168(
 																					-7,
 																					i_45_),
-																			Class2.aJagexString_85,
+																			StringUtilities.aJagexString_85,
 																			Class74.method1168(
 																					-85,
 																					i_46_) }),
@@ -427,10 +427,10 @@ public class Class41 {
 										&& i_51_ >= i_53_ + -20
 										&& ((i_51_ ^ 0xffffffff) >= (20 + i_53_ ^ 0xffffffff))) {
 									Class4_Sub20_Sub7_Sub1_Sub1.anInt3581 = 0;
-									Class34.aJagexString_1766 = Class11.aJagexString_323;
-									Class34.aJagexString_1769 = Class81.aJagexString_1651;
+									StringUtilities.aJagexString_1766 = StringUtilities.aJagexString_323;
+									StringUtilities.aJagexString_1769 = Class81.aJagexString_1651;
 									Class4_Sub20_Sub14.anInt3140 = 2;
-									Class34.aJagexString_1771 = Class81.aJagexString_1707;
+									StringUtilities.aJagexString_1771 = Class81.aJagexString_1707;
 								}
 							} else if ((Class4_Sub20_Sub14.anInt3140 ^ 0xffffffff) != -3) {
 								if (Class4_Sub20_Sub14.anInt3140 == 3) {
@@ -464,14 +464,14 @@ public class Class41 {
 										&& ((75 + i_57_ ^ 0xffffffff) <= (i ^ 0xffffffff))
 										&& -20 + i_58_ <= i_51_
 										&& i_58_ - -20 >= i_51_) {
-									Class34.aJagexString_1768 = Class34.aJagexString_1768
+									StringUtilities.aJagexString_1768 = StringUtilities.aJagexString_1768
 											.method816(122).method839(85);
-									if ((Class34.aJagexString_1768.method825(-111) ^ 0xffffffff) == -1)
+									if ((StringUtilities.aJagexString_1768.method825(-111) ^ 0xffffffff) == -1)
 										Class4_Sub20_Sub9.method477(
 												Class6.aJagexString_210, 17,
 												Class81.aJagexString_1704,
 												Class81.aJagexString_1652);
-									else if ((Class34.aJagexString_1764
+									else if ((StringUtilities.aJagexString_1764
 											.method825(-99) ^ 0xffffffff) == -1)
 										Class4_Sub20_Sub9.method477(
 												Class64.aJagexString_1281, 102,
@@ -479,7 +479,7 @@ public class Class41 {
 												Class81.aJagexString_1685);
 									else {
 										Class4_Sub20_Sub9.method477(
-												Class10.aJagexString_311, 12,
+												StringUtilities.aJagexString_311, 12,
 												Class81.aJagexString_1700,
 												Class81.aJagexString_1691);
 										Region.method50(20, 1);
@@ -492,8 +492,8 @@ public class Class41 {
 											&& ((i_58_ + -20 ^ 0xffffffff) >= (i_51_ ^ 0xffffffff))
 											&& i_58_ + 20 >= i_51_) {
 										Class4_Sub20_Sub14.anInt3140 = 0;
-										Class34.aJagexString_1764 = Class34.aJagexString_1767;
-										Class34.aJagexString_1768 = Class34.aJagexString_1767;
+										StringUtilities.aJagexString_1764 = Class34.aJagexString_1767;
+										StringUtilities.aJagexString_1768 = Class34.aJagexString_1767;
 									}
 									while (RSCanvas.method34(127)) {
 										boolean bool = false;
@@ -507,43 +507,43 @@ public class Class41 {
 										}
 										if (((Class4_Sub20_Sub7_Sub1_Sub1.anInt3581) ^ 0xffffffff) == -1) {
 											if ((Class4_Sub15.anInt2298 ^ 0xffffffff) == -86
-													&& Class34.aJagexString_1768
+													&& StringUtilities.aJagexString_1768
 															.method825(-110) > 0)
-												Class34.aJagexString_1768 = (Class34.aJagexString_1768
+												StringUtilities.aJagexString_1768 = (StringUtilities.aJagexString_1768
 														.method829(
 																(byte) -119,
 																0,
-																(-1 + (Class34.aJagexString_1768
+																(-1 + (StringUtilities.aJagexString_1768
 																		.method825(-125)))));
 											if ((Class4_Sub15.anInt2298 ^ 0xffffffff) == -85
 													|| (Class4_Sub15.anInt2298 ^ 0xffffffff) == -81)
 												Class4_Sub20_Sub7_Sub1_Sub1.anInt3581 = 1;
 											if (bool
-													&& (Class34.aJagexString_1768
+													&& (StringUtilities.aJagexString_1768
 															.method825(-111) ^ 0xffffffff) > -13)
-												Class34.aJagexString_1768 = (Class34.aJagexString_1768
+												StringUtilities.aJagexString_1768 = (StringUtilities.aJagexString_1768
 														.method838(
 																15871,
 																Class48.anInt980));
 										} else if (((Class4_Sub20_Sub7_Sub1_Sub1.anInt3581) ^ 0xffffffff) == -2) {
 											if ((Class4_Sub15.anInt2298 ^ 0xffffffff) == -86
-													&& Class34.aJagexString_1764
+													&& StringUtilities.aJagexString_1764
 															.method825(-99) > 0)
-												Class34.aJagexString_1764 = (Class34.aJagexString_1764
+												StringUtilities.aJagexString_1764 = (StringUtilities.aJagexString_1764
 														.method829(
 																(byte) 70,
 																0,
-																(-1 + (Class34.aJagexString_1764
+																(-1 + (StringUtilities.aJagexString_1764
 																		.method825(-125)))));
 											if ((Class4_Sub15.anInt2298 ^ 0xffffffff) == -85
 													|| (Class4_Sub15.anInt2298 ^ 0xffffffff) == -81)
 												Class4_Sub20_Sub7_Sub1_Sub1.anInt3581 = 0;
 											if ((Class12.anInt341 ^ 0xffffffff) == -3
 													&& (Class4_Sub15.anInt2298 == 84)) {
-												Class34.aJagexString_1768 = Class34.aJagexString_1768
+												StringUtilities.aJagexString_1768 = StringUtilities.aJagexString_1768
 														.method816(-93)
 														.method839(111);
-												if ((Class34.aJagexString_1768
+												if ((StringUtilities.aJagexString_1768
 														.method825(-102) ^ 0xffffffff) == -1)
 													Class4_Sub20_Sub9
 															.method477(
@@ -552,7 +552,7 @@ public class Class41 {
 																	Class81.aJagexString_1704,
 																	(Class81.aJagexString_1652));
 												else {
-													if ((Class34.aJagexString_1764
+													if ((StringUtilities.aJagexString_1764
 															.method825(-102) ^ 0xffffffff) == -1)
 														Class4_Sub20_Sub9
 																.method477(
@@ -563,7 +563,7 @@ public class Class41 {
 													else {
 														Class4_Sub20_Sub9
 																.method477(
-																		(Class10.aJagexString_311),
+																		(StringUtilities.aJagexString_311),
 																		117,
 																		(Class81.aJagexString_1700),
 																		(Class81.aJagexString_1691));
@@ -575,9 +575,9 @@ public class Class41 {
 												break;
 											}
 											if (bool
-													&& Class34.aJagexString_1764
+													&& StringUtilities.aJagexString_1764
 															.method825(-110) < 20)
-												Class34.aJagexString_1764 = (Class34.aJagexString_1764
+												StringUtilities.aJagexString_1764 = (StringUtilities.aJagexString_1764
 														.method838(
 																15871,
 																Class48.anInt980));

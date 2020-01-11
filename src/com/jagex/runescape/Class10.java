@@ -1,21 +1,6 @@
 package com.jagex.runescape;
 
 public class Class10 {
-	public static JagexString aJagexString_287 = JagexString.getRs2PreparedString("flash2:"
-    );
-	public static JagexString aJagexString_295 = aJagexString_287;
-	public static JagexString aJagexString_297 = aJagexString_287;
-	public static JagexString aJagexString_300;
-	public static JagexString aJagexString_301 = JagexString.getRs2PreparedString(")4l"
-    );
-	public static JagexString aJagexString_302;
-	public static JagexString aJagexString_303;
-	public static JagexString aJagexString_304;
-	public static JagexString aJagexString_308;
-	public static JagexString aJagexString_309;
-	public static JagexString aJagexString_310;
-	public static JagexString aJagexString_311;
-	public static JagexString aJagexString_312;
 	public static Class47 aClass47_305;
 	public static Class66 aClass66_299 = new Class66(500);
 	public static int anInt286;
@@ -24,45 +9,26 @@ public class Class10 {
 	public static int anInt293;
 	public static int anInt296;
 	public static int anInt298;
-	public static int anInt306;
-	public static int anInt307;
-	public static int anInt313;
-	static {
-		aJagexString_300 = JagexString.getRs2PreparedString("leuchten2:");
-		aJagexString_309 = JagexString.getRs2PreparedString("va");
-		aJagexString_310 = JagexString.getRs2PreparedString("Ausw-=hlen");
-		anInt307 = 0;
-		aJagexString_304 = JagexString.getRs2PreparedString(
-				"Connecting to server)3)3)3");
-		anInt306 = 0;
-		aJagexString_308 = JagexString.getRs2PreparedString("http:)4)4");
-		aJagexString_311 = aJagexString_304;
-		aJagexString_302 = JagexString.getRs2PreparedString(
-				"Der Server wird gerade aktualisiert)3");
-		aJagexString_303 = JagexString.getRs2PreparedString("<col=00ffff>");
-		aJagexString_312 = (JagexString.getRs2PreparedString(
-				" steht bereits auf Ihrer Ignorieren)2Liste(Q"));
-		anInt313 = 0;
-	}
+	public static int anInt306 = 0;
+	public static int anInt307 = 0;
+	public static int anInt313 = 0;
 
 	public static void method667(int arg0) {
 		try {
-			aJagexString_309 = null;
-			aJagexString_303 = null;
-			aJagexString_304 = null;
-			aJagexString_308 = null;
-			aJagexString_300 = null;
-			aJagexString_297 = null;
+			StringUtilities.aJagexString_309 = null;
+			StringUtilities.aJagexString_303 = null;
+			StringUtilities.aJagexString_308 = null;
+			StringUtilities.aJagexString_300 = null;
+			StringUtilities.aJagexString_297 = null;
 			if (arg0 == 0) {
-				aJagexString_287 = null;
-				aJagexString_312 = null;
-				aJagexString_301 = null;
-				aJagexString_310 = null;
-				aJagexString_295 = null;
-				aJagexString_302 = null;
+				StringUtilities.aJagexString_312 = null;
+				StringUtilities.aJagexString_301 = null;
+				StringUtilities.aJagexString_310 = null;
+				StringUtilities.aJagexString_295 = null;
+				StringUtilities.aJagexString_302 = null;
 				aClass66_299 = null;
 				aClass47_305 = null;
-				aJagexString_311 = null;
+				StringUtilities.aJagexString_311 = null;
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "cb.A("
@@ -145,7 +111,7 @@ public class Class10 {
 							jagexStrings[i], arg1[i] }, -842);
 			}
 			if (arg0 != false)
-				aJagexString_300 = null;
+				StringUtilities.aJagexString_300 = null;
 			anInt292++;
 			return jagexStrings;
 		} catch (RuntimeException runtimeexception) {
@@ -226,7 +192,7 @@ public class Class10 {
 					Class8.aByteArray258[1] = (byte) (arg0 >> 120321960);
 					Class8.aByteArray258[5] = (byte) i;
 					if (arg2 != 255)
-						aJagexString_311 = null;
+						StringUtilities.aJagexString_311 = null;
 					int i_1_ = 0;
 					Class8.aByteArray258[0] = (byte) (arg0 >> -1773830704);
 					Class8.aByteArray258[2] = (byte) arg0;
