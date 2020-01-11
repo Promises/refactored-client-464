@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class4_Sub23 extends RSFont {
 	public static boolean aBoolean2419;
 	public static boolean aBoolean2421;

@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class53 implements Runnable {
 	public static JagexString aJagexString_1068;
 	public static JagexString aJagexString_1069;
@@ -152,10 +154,10 @@ public class Class53 implements Runnable {
 				throw new RuntimeException("gnp1 pos:"
 						+ (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointion)
 						+ " psize:" + Class4_Sub20_Sub15.anInt3157);
-			for (int i = 0; (i ^ 0xffffffff) > (RSApplet.anInt12 ^ 0xffffffff); i++) {
+			for (int i = 0; (i ^ 0xffffffff) > (GameShell.anInt12 ^ 0xffffffff); i++) {
 				if ((Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[Class4_Sub11_Sub1.anIntArray2695[i]]) == null)
 					throw new RuntimeException("gnp2 pos:" + i + " size:"
-							+ RSApplet.anInt12);
+							+ GameShell.anInt12);
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "of.D("

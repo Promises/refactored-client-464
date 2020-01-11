@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class4_Sub20_Sub5 extends Class4_Sub20 {
 	public static byte[][] aByteArrayArray2887;
 	public static Class19 aClass19_2892;
@@ -89,7 +91,7 @@ public class Class4_Sub20_Sub5 extends Class4_Sub20 {
 						aJagexStringArray2877 = new JagexString[anInt2875];
 						for (int i = 0; (anInt2875 ^ 0xffffffff) < (i ^ 0xffffffff); i++) {
 							anIntArray2870[i] = arg2.method219((byte) 73);
-							aJagexStringArray2877[i] = arg2.method212(123);
+							aJagexStringArray2877[i] = arg2.method212();
 						}
 					} else if ((arg0 ^ 0xffffffff) == -7) {
 						anInt2875 = arg2.method209((byte) -110);
@@ -101,7 +103,7 @@ public class Class4_Sub20_Sub5 extends Class4_Sub20 {
 						}
 					}
 				} else
-					aJagexString_2878 = arg2.method212(88);
+					aJagexString_2878 = arg2.method212();
 			} else
 				anInt2876 = arg2.get();
 		} else

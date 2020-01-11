@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class4_Sub9 extends RSFont {
 	public static boolean aBoolean1999 = false;
 	public static boolean[] aBooleanArray2005;

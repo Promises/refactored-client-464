@@ -49,7 +49,7 @@ public class Class6 {
 				class4_sub7.anInt1952 = 0;
 				Class4_Sub20_Sub7.method375(class4_sub7, 18278);
 			} else
-				class4_sub7.method70(-315);
+				class4_sub7.clear();
 		}
 		if (arg0 != -21691)
 			method648(-32);
@@ -79,7 +79,7 @@ public class Class6 {
 					i_0_ = 2047;
 				Class4_Sub20_Sub7_Sub1_Sub1 class4_sub20_sub7_sub1_sub1 = (Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i_0_]);
 				if (class4_sub20_sub7_sub1_sub1 != null)
-					Client.method31(1, arg0 + 5, class4_sub20_sub7_sub1_sub1);
+					Game.method31(1, arg0 + 5, class4_sub20_sub7_sub1_sub1);
 			}
 			anInt213++;
 		} catch (RuntimeException runtimeexception) {

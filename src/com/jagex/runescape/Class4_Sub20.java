@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class4_Sub20 extends RSFont {
 	public static JagexString aJagexString_2352 = JagexString.getRs2PreparedString("T"
     );
@@ -54,11 +56,11 @@ public class Class4_Sub20 extends RSFont {
 		try {
 			anInt2361++;
 			if (arg0 == 14931) {
-				for (int i = 0; (RSApplet.anInt12 ^ 0xffffffff) < (i ^ 0xffffffff); i++) {
+				for (int i = 0; (GameShell.anInt12 ^ 0xffffffff) < (i ^ 0xffffffff); i++) {
 					int i_0_ = Class4_Sub11_Sub1.anIntArray2695[i];
 					Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i_0_];
 					if (class4_sub20_sub7_sub1_sub2 != null)
-						Client.method31(
+						Game.method31(
 								(class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617.anInt2791),
 								4, class4_sub20_sub7_sub1_sub2);
 				}

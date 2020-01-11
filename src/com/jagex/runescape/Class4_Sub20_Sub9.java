@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class4_Sub20_Sub9 extends Class4_Sub20 {
 	public static boolean aBoolean3048;
 	public static Class16 aClass16_3038 = new Class16(4096);

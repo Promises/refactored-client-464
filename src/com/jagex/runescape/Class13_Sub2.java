@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 import java.awt.Component;
 import java.awt.Graphics;
 import java.awt.Image;
@@ -45,7 +47,7 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
 
     static {
         aClass66_2468 = new Class66(64);
-        RSApplet.mouseX = -1;
+        GameShell.mouseX = -1;
         aJagexString_2481 = JagexString.getRs2PreparedString("flash1:");
         aJagexString_2477 = JagexString.getRs2PreparedString(
                 "Bitte laden Sie die Seite neu)3");
@@ -57,11 +59,11 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
 
     public static void method690(Component arg0, int arg1) {
         try {
-//			arg0.removeMouseListener(com.jagex.runescape.RSApplet);
+//			arg0.removeMouseListener(com.jagex.runescape.GameShell);
             anInt2466++;
-//			arg0.removeMouseMotionListener(com.jagex.runescape.RSApplet);
-            arg0.removeFocusListener(RSApplet.appletListener);
-            RSApplet.mouseButtonPressed = arg1;
+//			arg0.removeMouseMotionListener(com.jagex.runescape.GameShell);
+            arg0.removeFocusListener(GameShell.appletListener);
+            GameShell.mouseButtonPressed = arg1;
         } catch (RuntimeException runtimeexception) {
             throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("i.C("
                     + (arg0 != null ? "{...}" : "null") + ',' + arg1 + ')'));
@@ -69,7 +71,7 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
     }
 
     public static void method692(int arg0) {
-        RSApplet.idleTime = arg0;
+        GameShell.idleTime = arg0;
     }
 
     public static void method693(byte arg0) {
@@ -204,7 +206,7 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
                 Class4_Sub1.aClass4_Sub11_Sub1_1854.method236(181,
                         Class4_Sub24.aClass19_Sub1_2451.anInt492);
                 Class4_Sub1.aClass4_Sub11_Sub1_1854.method236(181,
-                        Client.aClass19_Sub1_1849.anInt492);
+                        Game.aClass19_Sub1_1849.anInt492);
                 Class4_Sub1.aClass4_Sub11_Sub1_1854.method236(181,
                         Class18.aClass19_Sub1_482.anInt492);
                 Class4_Sub1.aClass4_Sub11_Sub1_1854.method236(arg0 + 276,
@@ -294,7 +296,7 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
                                     (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.byteBuffer),
                                     arg0 ^ ~0x35, 0, 1);
                     Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointion = 0;
-                    Class4_Sub20_Sub11.anInt3092 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
+                    Class4_Sub20_Sub11.incomingPacket = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                             .method265(true);
                     Class4_Sub20_Sub17.aClass76_3189
                             .method1186(
@@ -315,7 +317,7 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
                         Class25.method800(arg0 + 1);
                         Class53.anInt1079 = -1;
                         Class67.method1086(false, (byte) 53);
-                        Class4_Sub20_Sub11.anInt3092 = -1;
+                        Class4_Sub20_Sub11.incomingPacket = -1;
                     }
                 } else {
                     Class4_Sub20_Sub7_Sub5.anInt3419++;
@@ -478,7 +480,7 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
         arg0.prepareImage(anImage378, this);
         this.method689(-108);
         if (arg2 > -63)
-            RSApplet.mouseX = 64;
+            GameShell.mouseX = 64;
     }
 
     @Override

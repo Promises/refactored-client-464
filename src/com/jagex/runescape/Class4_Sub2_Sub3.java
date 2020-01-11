@@ -848,7 +848,7 @@ public class Class4_Sub2_Sub3 extends Class4_Sub2 {
 		if (anInt2634 == -2147483648) {
 			anInt2634 = 0;
 			anInt2640 = anInt2638 = anInt2631 = 0;
-			this.method70(-315);
+			this.clear();
 			return true;
 		}
 		method144();
@@ -927,12 +927,12 @@ public class Class4_Sub2_Sub3 extends Class4_Sub2 {
 	public synchronized void method164(int arg0) {
 		if (arg0 == 0) {
 			method148(0);
-			this.method70(-315);
+			this.clear();
 		} else if (anInt2638 == 0 && anInt2631 == 0) {
 			anInt2628 = 0;
 			anInt2634 = 0;
 			anInt2640 = 0;
-			this.method70(-315);
+			this.clear();
 		} else {
 			int i = -anInt2640;
 			if (anInt2640 > i)
@@ -986,7 +986,7 @@ public class Class4_Sub2_Sub3 extends Class4_Sub2 {
 					anInt2633 = 0;
 				else {
 					method156();
-					this.method70(-315);
+					this.clear();
 					return;
 				}
 			}
@@ -995,7 +995,7 @@ public class Class4_Sub2_Sub3 extends Class4_Sub2 {
 					anInt2633 = i_1_ - 1;
 				else {
 					method156();
-					this.method70(-315);
+					this.clear();
 					return;
 				}
 			}
@@ -1136,14 +1136,14 @@ public class Class4_Sub2_Sub3 extends Class4_Sub2 {
 					if (anInt2633 < 0) {
 						anInt2633 = -1;
 						method156();
-						this.method70(-315);
+						this.clear();
 					}
 				} else {
 					method141(arg0, i_3_, i_1_, arg2, 0);
 					if (anInt2633 >= i_1_) {
 						anInt2633 = i_1_;
 						method156();
-						this.method70(-315);
+						this.clear();
 					}
 				}
 			}
@@ -1162,7 +1162,7 @@ public class Class4_Sub2_Sub3 extends Class4_Sub2 {
 				if (anInt2634 == -2147483648) {
 					anInt2634 = 0;
 					anInt2640 = anInt2638 = anInt2631 = 0;
-					this.method70(-315);
+					this.clear();
 					arg0 = anInt2628;
 				}
 				anInt2628 = 0;
@@ -1186,7 +1186,7 @@ public class Class4_Sub2_Sub3 extends Class4_Sub2 {
 				anInt2633 = 0;
 			else {
 				method156();
-				this.method70(-315);
+				this.clear();
 				return;
 			}
 		}
@@ -1195,7 +1195,7 @@ public class Class4_Sub2_Sub3 extends Class4_Sub2 {
 				anInt2633 = i_11_ - 1;
 			else {
 				method156();
-				this.method70(-315);
+				this.clear();
 				return;
 			}
 		}
@@ -1276,12 +1276,12 @@ public class Class4_Sub2_Sub3 extends Class4_Sub2 {
 				if (anInt2633 < 0) {
 					anInt2633 = -1;
 					method156();
-					this.method70(-315);
+					this.clear();
 				}
 			} else if (anInt2633 >= i_11_) {
 				anInt2633 = i_11_;
 				method156();
-				this.method70(-315);
+				this.clear();
 			}
 		}
 	}

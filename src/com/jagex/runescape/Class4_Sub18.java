@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class4_Sub18 extends RSFont {
 	public static Class4_Sub18 method311(Class19 arg0, int arg1, int arg2) {
 		byte[] is = arg0.method746(arg1, (byte) 105, arg2);

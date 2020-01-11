@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class4_Sub12 extends RSFont {
 	public static JagexString aJagexString_2129 = JagexString.getRs2PreparedString(
 			"scrollen:");

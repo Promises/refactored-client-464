@@ -1,4 +1,6 @@
 package com.jagex.runescape;
+import com.jagex.runescape.net.StreamBuffer;
+
 import java.awt.Font;
 
 public class Class4_Sub20_Sub11 extends Class4_Sub20 {
@@ -23,7 +25,7 @@ public class Class4_Sub20_Sub11 extends Class4_Sub20 {
 	public static int anInt3079;
 	public static int anInt3084;
 	public static int anInt3088;
-	public static int anInt3092;
+	public static int incomingPacket;
 	public static int anInt3093;
 	public static int[] anIntArray3076 = { 16, 32, 64, 128 };
 	static {
@@ -38,7 +40,7 @@ public class Class4_Sub20_Sub11 extends Class4_Sub20 {
 		aJagexString_3086 = JagexString.getRs2PreparedString("glow1:");
 		anInt3093 = 0;
 		aJagexString_3095 = aJagexString_3086;
-		anInt3092 = 0;
+		incomingPacket = 0;
 		aJagexString_3094 = aJagexString_3086;
 		aJagexString_3091 = JagexString.getRs2PreparedString(
 				"Unexpected loginserver response)3");

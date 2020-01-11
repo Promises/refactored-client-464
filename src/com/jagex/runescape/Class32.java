@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class32 {
 	public static volatile boolean aBoolean702;
 	public static boolean aBoolean703;

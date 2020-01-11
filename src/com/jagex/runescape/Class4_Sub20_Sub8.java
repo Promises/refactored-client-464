@@ -1,4 +1,7 @@
 package com.jagex.runescape;
+import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.util.Signlink;
+
 import java.awt.Component;
 import java.lang.reflect.Method;
 
@@ -397,7 +400,7 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 									else if (arg2 < 30 || arg2 >= 35) {
 										if (arg2 >= 35 && arg2 < 40)
 											aJagexStringArray2988[arg2 + -35] = arg1
-													.method212(arg0 + 144);
+													.method212();
 										else if (arg2 != 40) {
 											if (arg2 != 78) {
 												if (arg2 == 79)
@@ -474,7 +477,7 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 										}
 									} else {
 										aJagexStringArray3008[arg2 - 30] = arg1
-												.method212(82);
+												.method212();
 										if (aJagexStringArray3008[arg2 + -30]
 												.method818(
 														Class28.aJagexString_638,
@@ -494,7 +497,7 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 				} else
 					anInt3003 = arg1.method209((byte) -117);
 			} else
-				aJagexString_2991 = arg1.method212(94);
+				aJagexString_2991 = arg1.method212();
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("je.D("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ','

@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class4_Sub22 extends RSFont {
 	public static boolean aBoolean2400 = false;
 	public static JagexString aJagexString_2395 = JagexString.getRs2PreparedString("null"
@@ -7,7 +9,7 @@ public class Class4_Sub22 extends RSFont {
 	public static JagexString aJagexString_2396;
 	public static JagexString aJagexString_2403;
 	public static JagexString[] aJagexStringArray2387;
-	public static RSApplet anApplet_Sub1_2401;
+	public static GameShell anApplet_Sub1_2401;
 	public static int anInt2385;
 	public static int anInt2391;
 	public static int anInt2392;
@@ -57,7 +59,7 @@ public class Class4_Sub22 extends RSFont {
 				Class59.aClass4_Sub20_Sub12_Sub1Array1174 = null;
 				Class4_Sub20_Sub7_Sub1.aClass4_Sub20_Sub12_Sub1_3288 = null;
 				Class52.anIntArray1059 = null;
-				RSApplet.aClass4_Sub20_Sub12_Sub1Array43 = null;
+				GameShell.aClass4_Sub20_Sub12_Sub1Array43 = null;
 				Class81.aClass4_Sub20_Sub12_Sub1Array1709 = null;
 				Class12.aClass4_Sub20_Sub12_Sub1Array359 = null;
 				Class65.anIntArray1284 = null;

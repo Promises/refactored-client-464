@@ -193,8 +193,8 @@ public class Class65 {
 
 	public Class65() {
 		try {
-			aClass4_1286.aClass4_154 = aClass4_1286;
-			aClass4_1286.aClass4_149 = aClass4_1286;
+			aClass4_1286.prev = aClass4_1286;
+			aClass4_1286.next = aClass4_1286;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
 					"se.<init>(" + ')');
@@ -209,7 +209,7 @@ public class Class65 {
 				aClass4_1305 = null;
 				return null;
 			}
-			aClass4_1305 = class4.aClass4_154;
+			aClass4_1305 = class4.prev;
 			if (arg0 != false)
 				method1077(false, null);
 			return class4;
@@ -222,13 +222,13 @@ public class Class65 {
 	public void method1068(RSFont arg0, byte arg1) {
 		try {
 			anInt1288++;
-			if (arg0.aClass4_154 != null)
-				arg0.method70(-315);
+			if (arg0.prev != null)
+				arg0.clear();
 			if (arg1 <= -114) {
-				arg0.aClass4_149 = aClass4_1286;
-				arg0.aClass4_154 = aClass4_1286.aClass4_154;
-				arg0.aClass4_154.aClass4_149 = arg0;
-				arg0.aClass4_149.aClass4_154 = arg0;
+				arg0.next = aClass4_1286;
+				arg0.prev = aClass4_1286.prev;
+				arg0.prev.next = arg0;
+				arg0.next.prev = arg0;
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("se.D("
@@ -241,10 +241,10 @@ public class Class65 {
 			if (arg0 != 2)
 				aJagexString_1308 = null;
 			anInt1302++;
-			RSFont class4 = aClass4_1286.aClass4_154;
+			RSFont class4 = aClass4_1286.prev;
 			if (class4 == aClass4_1286)
 				return null;
-			class4.method70(-315);
+			class4.clear();
 			return class4;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "se.G("
@@ -256,10 +256,10 @@ public class Class65 {
 		try {
 			anInt1311++;
 			for (;;) {
-				RSFont class4 = aClass4_1286.aClass4_149;
+				RSFont class4 = aClass4_1286.next;
 				if (aClass4_1286 == class4)
 					break;
-				class4.method70(-315);
+				class4.clear();
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "se.C("
@@ -272,12 +272,12 @@ public class Class65 {
 			if (arg0 >= -119)
 				method1078(-10);
 			anInt1300++;
-			RSFont class4 = aClass4_1286.aClass4_149;
+			RSFont class4 = aClass4_1286.next;
 			if (class4 == aClass4_1286) {
 				aClass4_1305 = null;
 				return null;
 			}
-			aClass4_1305 = class4.aClass4_149;
+			aClass4_1305 = class4.next;
 			return class4;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "se.F("
@@ -288,10 +288,10 @@ public class Class65 {
 	public RSFont method1072(int arg0) {
 		try {
 			anInt1303++;
-			RSFont class4 = aClass4_1286.aClass4_149;
+			RSFont class4 = aClass4_1286.next;
 			if (aClass4_1286 == class4)
 				return null;
-			class4.method70(arg0 + -313);
+			class4.clear();
 			if (arg0 != -2)
 				method1073(false);
 			return class4;
@@ -303,15 +303,15 @@ public class Class65 {
 
 	public void method1074(RSFont arg0, byte arg1, RSFont arg2) {
 		try {
-			if (arg0.aClass4_154 != null)
-				arg0.method70(-315);
+			if (arg0.prev != null)
+				arg0.clear();
 			if (arg1 > -46)
 				anIntArray1307 = null;
-			arg0.aClass4_154 = arg2.aClass4_154;
+			arg0.prev = arg2.prev;
 			anInt1301++;
-			arg0.aClass4_149 = arg2;
-			arg0.aClass4_154.aClass4_149 = arg0;
-			arg0.aClass4_149.aClass4_154 = arg0;
+			arg0.next = arg2;
+			arg0.prev.next = arg0;
+			arg0.next.prev = arg0;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("se.I("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ','
@@ -327,7 +327,7 @@ public class Class65 {
 				aClass4_1305 = null;
 				return null;
 			}
-			aClass4_1305 = class4.aClass4_149;
+			aClass4_1305 = class4.next;
 			if (arg0 != 18485)
 				anIntArray1289 = null;
 			return class4;
@@ -340,13 +340,13 @@ public class Class65 {
 	public void method1077(boolean arg0, RSFont arg1) {
 		try {
 			anInt1296++;
-			if (arg1.aClass4_154 != null)
-				arg1.method70(-315);
-			arg1.aClass4_149 = aClass4_1286.aClass4_149;
+			if (arg1.prev != null)
+				arg1.clear();
+			arg1.next = aClass4_1286.next;
 			if (arg0 == false) {
-				arg1.aClass4_154 = aClass4_1286;
-				arg1.aClass4_154.aClass4_149 = arg1;
-				arg1.aClass4_149.aClass4_154 = arg1;
+				arg1.prev = aClass4_1286;
+				arg1.prev.next = arg1;
+				arg1.next.prev = arg1;
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("se.H("
@@ -359,12 +359,12 @@ public class Class65 {
 			anInt1295++;
 			if (arg0 != 0)
 				method1077(false, null);
-			RSFont class4 = aClass4_1286.aClass4_154;
+			RSFont class4 = aClass4_1286.prev;
 			if (aClass4_1286 == class4) {
 				aClass4_1305 = null;
 				return null;
 			}
-			aClass4_1305 = class4.aClass4_154;
+			aClass4_1305 = class4.prev;
 			return class4;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "se.L("

@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class73 {
 	public static volatile boolean aBoolean1495;
 	public static Class19_Sub1 aClass19_Sub1_1504;
@@ -121,7 +123,7 @@ public class Class73 {
 		}
 		if ((0x80 & arg3) != 0) {
 			arg2.aJagexString_3271 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-					.method212(arg1 + -17848);
+					.method212();
 			if (arg2.aJagexString_3271.method834(21340, 0) == 126) {
 				arg2.aJagexString_3271 = arg2.aJagexString_3271.method805(1, arg1
 						^ ~0x466a);

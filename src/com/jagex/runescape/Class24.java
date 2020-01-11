@@ -304,9 +304,9 @@ public class Class24 {
 			Class62.method1048(false, arg1);
 			RSInterface class4_sub13 = Class4_Sub20.method322(true, arg3);
 			if (class4_sub13 != null)
-				Class67.method1088(class4_sub13, 0);
+				Class67.method1088(class4_sub13);
 			if (RSInterface.aClass4_Sub13_2141 != null) {
-				Class67.method1088(RSInterface.aClass4_Sub13_2141, 0);
+				Class67.method1088(RSInterface.aClass4_Sub13_2141);
 				RSInterface.aClass4_Sub13_2141 = null;
 			}
 			Class4_Sub20_Sub8.anInt2980 = 0;

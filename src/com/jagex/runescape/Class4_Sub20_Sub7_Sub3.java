@@ -50,13 +50,13 @@ public class Class4_Sub20_Sub7_Sub3 extends Class4_Sub20_Sub7 {
 		anInt3346++;
 		int i = arg2.anInt2311;
 		int i_0_ = (int) arg2.aLong150;
-		arg2.method70(-315);
+		arg2.clear();
 		if (arg1)
 			Class52.method1003(-119, i);
 		Class4_Sub3.method174((byte) 62, i);
 		RSInterface class4_sub13 = Class4_Sub20.method322(true, i_0_);
 		if (class4_sub13 != null)
-			Class67.method1088(class4_sub13, 0);
+			Class67.method1088(class4_sub13);
 		Class4_Sub20_Sub8.anInt2980 = 0;
 		Class4_Sub20_Sub16.aBoolean3169 = false;
 		Class4_Sub20_Sub17.method621(Class4_Sub1.anInt1860, 16052,

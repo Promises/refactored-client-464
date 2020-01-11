@@ -75,7 +75,7 @@ public class Class4_Sub3 extends RSFont {
 											|| ((class4_sub20_sub17.anIntArray3211).length <= class4_sub13.anInt2153))
 										class4_sub13.anInt2153 = 0;
 								}
-								Class67.method1088(class4_sub13, arg1 + -31);
+								Class67.method1088(class4_sub13);
 							}
 						}
 					}
@@ -89,7 +89,7 @@ public class Class4_Sub3 extends RSFont {
 						i_2_ *= Class4_Sub20_Sub6.anInt2906;
 						class4_sub13.anInt2236 = 0x7ff & i_2_
 								+ class4_sub13.anInt2236;
-						Class67.method1088(class4_sub13, arg1 ^ 0x1f);
+						Class67.method1088(class4_sub13);
 					}
 				}
 			}
@@ -105,7 +105,7 @@ public class Class4_Sub3 extends RSFont {
 					.method724((byte) -61)); class4_sub15 != null; class4_sub15 = (Class4_Sub15) Class64.aClass16_1259
 					.method723((byte) -25)) {
 				if ((class4_sub15.aLong150 >> -358625744 & 0xffffL ^ 0xffffffffffffffffL) == (arg1 ^ 0xffffffffffffffffL))
-					class4_sub15.method70(-315);
+					class4_sub15.clear();
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("db.A("
@@ -184,7 +184,7 @@ public class Class4_Sub3 extends RSFont {
 					if (!class4_sub13.aBoolean2178
 							|| ((i_8_ ^ 0xffffffff) > (i_7_ ^ 0xffffffff) && (i_6_ ^ 0xffffffff) < (i_5_ ^ 0xffffffff))) {
 						if ((class4_sub13.anInt2227 ^ 0xffffffff) == -1338)
-							Class67.method1088(class4_sub13, 0);
+							Class67.method1088(class4_sub13);
 						else if (class4_sub13.anInt2227 == 1338)
 							Class40.method934(i_3_, i_4_, 0);
 						else {

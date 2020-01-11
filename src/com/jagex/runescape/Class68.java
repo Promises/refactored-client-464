@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class68 {
 	public static JagexString aJagexString_1368;
 	public static JagexString aJagexString_1374 = JagexString.getRs2PreparedString("VOLL"
@@ -91,7 +93,7 @@ public class Class68 {
 		Class62.aClass66_1231.method1084(0);
 		anInt1378++;
 		Region.aClass66_131.method1084(0);
-		Client.aClass66_1844.method1084(arg0 + -2);
+		Game.aClass66_1844.method1084(arg0 + -2);
 		if (arg0 != 2)
 			method1092(-99, 27);
 	}

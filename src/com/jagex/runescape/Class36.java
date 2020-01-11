@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class36 {
 	public static Class36 method913(Class19 arg0, int arg1, int arg2) {
 		byte[] is = arg0.method746(arg1, (byte) 102, arg2);

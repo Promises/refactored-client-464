@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class4_Sub6 extends RSFont {
 	public static boolean aBoolean1922;
 	public static Class19 aClass19_1930;

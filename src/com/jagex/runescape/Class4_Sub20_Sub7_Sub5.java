@@ -1,4 +1,6 @@
 package com.jagex.runescape;
+import com.jagex.runescape.net.StreamBuffer;
+
 import java.awt.Canvas;
 
 public class Class4_Sub20_Sub7_Sub5 extends Class4_Sub20_Sub7 {
@@ -256,7 +258,7 @@ public class Class4_Sub20_Sub7_Sub5 extends Class4_Sub20_Sub7 {
 					Class16.method721(1, class4_sub14);
 				}
 				Class4_Sub23.aBoolean2421 = arg0;
-				Class67.method1088(class4_sub13, 0);
+				Class67.method1088(class4_sub13);
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ka.G("

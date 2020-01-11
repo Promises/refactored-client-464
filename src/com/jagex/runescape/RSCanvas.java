@@ -1,6 +1,4 @@
-package com.jagex.runescape;/* Canvas_Sub1 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+package com.jagex.runescape;
 import java.awt.Canvas;
 import java.awt.Component;
 import java.awt.Graphics;

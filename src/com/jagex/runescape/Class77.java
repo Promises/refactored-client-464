@@ -1,4 +1,7 @@
 package com.jagex.runescape;
+import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.util.Signlink;
+
 import java.util.zip.Inflater;
 
 public class Class77 {

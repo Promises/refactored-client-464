@@ -1,4 +1,7 @@
 package com.jagex.runescape;
+import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.util.Signlink;
+
 import java.io.DataInputStream;
 import java.io.IOException;
 import java.net.URL;

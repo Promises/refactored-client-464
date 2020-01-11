@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class67 {
 	public static Class19 aClass19_1363;
 	public static JagexString aJagexString_1355;
@@ -57,7 +59,7 @@ public class Class67 {
 						.method209((byte) -103); // short
 				Class4_Sub20_Sub5.aByteArrayArray2887 = new byte[i_0_][];
 				Class47.regionIds = new int[i_0_];
-				RSApplet.regionsData = new byte[i_0_][];
+				GameShell.regionsData = new byte[i_0_][];
 				Class4_Sub15.anIntArray2290 = new int[i_0_];
 				Class61.anIntArray1222 = new int[i_0_];
 				i_0_ = 0;
@@ -130,7 +132,7 @@ public class Class67 {
 								.method219((byte) 73);
 				}
 				Class47.regionIds = new int[i_18_];
-				RSApplet.regionsData = new byte[i_18_][];
+				GameShell.regionsData = new byte[i_18_][];
 				Class4_Sub15.anIntArray2290 = new int[i_18_];
 				Class4_Sub20_Sub5.aByteArrayArray2887 = new byte[i_18_][];
 				Class61.anIntArray1222 = new int[i_18_];
@@ -217,10 +219,8 @@ public class Class67 {
 		}
 	}
 
-	public static void method1088(RSInterface arg0, int arg1) {
+	public static void method1088(RSInterface arg0) {
 		anInt1346++;
-		if (arg1 != 0)
-			aJagexString_1365 = null;
 		if ((Class4_Sub20_Sub5.anInt2879 ^ 0xffffffff) == (arg0.anInt2235 ^ 0xffffffff))
 			Class4_Sub20_Sub11.aBooleanArray3083[arg0.anInt2193] = true;
 	}

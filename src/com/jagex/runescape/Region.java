@@ -1,6 +1,6 @@
-package com.jagex.runescape;/* Class3 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+package com.jagex.runescape;
+
+import com.jagex.runescape.net.StreamBuffer;
 
 public class Region {
 	public static boolean aBoolean126;
@@ -44,7 +44,7 @@ public class Region {
 	public static int anInt99;
 	static {
 		aClass1_103 = new Class1();
-		RSApplet.mouseY = -1;
+		GameShell.mouseY = -1;
 		aBoolean129 = false;
 		anInt127 = -1;
 		aClass66_131 = new Class66(50);
@@ -80,7 +80,7 @@ public class Region {
 				}
 				if ((arg0 ^ 0xffffffff) == -6 || arg0 == 10
 						|| (arg0 ^ 0xffffffff) == -21)
-					JagexException.method1219(Client.aClass19_Sub1_1849,
+					JagexException.method1219(Game.aClass19_Sub1_1849,
 							Class77.aClass19_Sub1_1589, (byte) 99,
 							Class4_Sub20_Sub7_Sub5.runeCanvas);
 				else
@@ -222,7 +222,7 @@ public class Region {
 
 	public static void method65(int arg0, int arg1) {
 		anInt115++;
-		Class4_Sub20_Sub7.method374((byte) -78);
+		Class4_Sub20_Sub7.method374();
 		Class4_Sub20_Sub13.method592(false);
 		if (arg1 != 2)
 			aBoolean129 = false;

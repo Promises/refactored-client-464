@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class35 {
 	public static boolean aBoolean744;
 	public static JagexString aJagexString_724;

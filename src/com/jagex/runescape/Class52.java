@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.util.Signlink;
+
 public class Class52 {
 	public static JagexString aJagexString_1051;
 	public static JagexString aJagexString_1054;
@@ -25,7 +27,7 @@ public class Class52 {
 		aJagexString_1051 = aJagexString_1060;
 		aJagexString_1063 = JagexString.getRs2PreparedString(
 				"and choose the (Wcreate account(W");
-		RSApplet.eventMouseButtonPressed = 0;
+		GameShell.eventMouseButtonPressed = 0;
 		aJagexString_1065 = (JagexString.getRs2PreparedString(
 				"You need a members account to login to this world)3"));
 		aJagexString_1054 = aJagexString_1063;

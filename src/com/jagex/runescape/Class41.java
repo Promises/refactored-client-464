@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class41 {
 	public static JagexString aJagexString_797;
 	public static JagexString aJagexString_804 = JagexString.getRs2PreparedString("null"
@@ -36,13 +38,13 @@ public class Class41 {
 			Class81.method1212(false, false);
 			anInt808++;
 			Class4_Sub23.anInt2415 = 0;
-			for (int i = 0; ((i ^ 0xffffffff) > (RSApplet.regionsData.length ^ 0xffffffff)); i++) {
+			for (int i = 0; ((i ^ 0xffffffff) > (GameShell.regionsData.length ^ 0xffffffff)); i++) {
 				if (Class4_Sub15.anIntArray2290[i] != -1
-						&& RSApplet.regionsData[i] == null) {
-					RSApplet.regionsData[i] = (Class4_Sub20_Sub6.aClass19_Sub1_2911
+						&& GameShell.regionsData[i] == null) {
+					GameShell.regionsData[i] = (Class4_Sub20_Sub6.aClass19_Sub1_2911
 							.method746(Class4_Sub15.anIntArray2290[i],
 									(byte) 112, 0));
-					if (RSApplet.regionsData[i] == null) {
+					if (GameShell.regionsData[i] == null) {
 						bool = false;
 						Class4_Sub23.anInt2415++;
 					}
@@ -67,7 +69,7 @@ public class Class41 {
 			else {
 				Class77.anInt1591 = 0;
 				bool = true;
-				for (int i = 0; i < RSApplet.regionsData.length; i++) {
+				for (int i = 0; i < GameShell.regionsData.length; i++) {
 					byte[] is = Class4_Sub20_Sub5.aByteArrayArray2887[i];
 					if (is != null) {
 						System.out
@@ -107,14 +109,14 @@ public class Class41 {
 					}
 					method938((byte) 0);
 					Class73.method1165((byte) -123);
-					int i_4_ = RSApplet.regionsData.length;
+					int i_4_ = GameShell.regionsData.length;
 					Class49.method992((byte) 107);
 					Class81.method1212(true, false);
 					if (!Class4_Sub22.aBoolean2400) {
 						for (int i_5_ = 0; i_5_ < i_4_; i_5_++) {
 							int xAbs = (-Class6.anInt217 + (Class47.regionIds[i_5_] >> -1839099960) * 64);
 							int yAbs = ((0xff & Class47.regionIds[i_5_]) * 64 + -Class4_Sub20_Sub8.anInt2987);
-							byte[] is = RSApplet.regionsData[i_5_];
+							byte[] is = GameShell.regionsData[i_5_];
 							if (is != null) {
 								method938((byte) 0);
 								Class58.method1030(xAbs, yAbs, Class57.regions,
@@ -125,7 +127,7 @@ public class Class41 {
 						for (int i_8_ = 0; i_8_ < i_4_; i_8_++) {
 							int i_9_ = (64 * (Class47.regionIds[i_8_] >> 960249192) - Class6.anInt217);
 							int i_10_ = (-Class4_Sub20_Sub8.anInt2987 + ((0xff & Class47.regionIds[i_8_]) * 64));
-							byte[] is = RSApplet.regionsData[i_8_];
+							byte[] is = GameShell.regionsData[i_8_];
 							if (is == null
 									&& (Class4_Sub17.anInt2324 ^ 0xffffffff) > -801) {
 								method938((byte) 0);
@@ -162,13 +164,13 @@ public class Class41 {
 										int i_23_ = (i_19_ / 8 + (i_22_ / 8 << 1466911880));
 										for (int i_24_ = 0; ((Class47.regionIds.length ^ 0xffffffff) < (i_24_ ^ 0xffffffff)); i_24_++) {
 											if ((Class47.regionIds[i_24_] == i_23_)
-													&& ((RSApplet.regionsData[i_24_]) != null)) {
+													&& ((GameShell.regionsData[i_24_]) != null)) {
 												SceneGraph
 														.createCollisionMaps(
 																8 * (i_22_ & 0x7),
 																i_21_,
 																Class57.regions,
-																(RSApplet.regionsData[i_24_]),
+																(GameShell.regionsData[i_24_]),
 																i_20_,
 																8 * i_15_,
 																(i_19_ & 0x7) * 8,
@@ -252,7 +254,7 @@ public class Class41 {
 					method938((byte) 0);
 					Class6.method646(-21691);
 					Class10.aClass66_299.method1084(0);
-					if (JagexString.aFrame1786 != null) {
+					if (JagexString.gameFrame != null) {
 						Class66.aClass4_Sub11_Sub1_1328.method264(174, 120);
 						Class66.aClass4_Sub11_Sub1_1328.method236(181,
 								1057001181);
@@ -364,7 +366,7 @@ public class Class41 {
 		}
 	}
 
-	public static void method940(RSApplet arg0, int arg1) {
+	public static void method940(GameShell arg0, int arg1) {
 		try {
 			if (arg1 >= 112) {
 				anInt817++;
@@ -378,12 +380,12 @@ public class Class41 {
 						if (Class34.aBoolean1765)
 							Class4_Sub20_Sub16.method606(25651);
 						else
-							RSApplet.method20(255, Class9.aJagexString_269, false,
+							GameShell.method20(255, Class9.aJagexString_269, false,
 									21332, Class34.aJagexString_1767,
 									Class54.aClass19_Sub1_1107);
 					}
 					if (Class54.anInt1109 != 5) {
-						Client.anInt1833++;
+						Game.anInt1833++;
 						if ((Class54.anInt1109 ^ 0xffffffff) == -11) {
 							if ((Class25.anInt583 ^ 0xffffffff) != -3
 									&& ((Class19_Sub1.anInt2536 ^ 0xffffffff) == -1)) {
@@ -598,7 +600,7 @@ public class Class41 {
 			anInt828++;
 			if (arg0 != 8)
 				aJagexString_834 = null;
-			return RSApplet.idleTime++;
+			return GameShell.idleTime++;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "lb.B("
 					+ arg0 + ')');

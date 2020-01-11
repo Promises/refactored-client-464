@@ -1,4 +1,6 @@
 package com.jagex.runescape;
+import com.jagex.runescape.net.StreamBuffer;
+
 import java.awt.Graphics;
 
 public class Class72 {
@@ -226,16 +228,16 @@ public class Class72 {
 					}
 				}
 				if ((Class4_Sub7.anInt1944 ^ 0xffffffff) != -2) {
-					if ((Client.anInt1833 ^ 0xffffffff) < -1) {
+					if ((Game.anInt1833 ^ 0xffffffff) < -1) {
 
-						RSInterface.method281(Client.anInt1833, (byte) -5);
+						RSInterface.method281(Game.anInt1833, (byte) -5);
 
-						Client.anInt1833 = 0;
+						Game.anInt1833 = 0;
 					}
 
 					Class7.method655(false);
 				}
-				RSApplet.aClass4_Sub20_Sub12_Sub1Array43[Class34.aBoolean1765 ? 1
+				GameShell.aClass4_Sub20_Sub12_Sub1Array43[Class34.aBoolean1765 ? 1
 						: 0].method507(725, 463);
 				if ((Class54.anInt1109 ^ 0xffffffff) < -6
 						&& Class25.anInt583 != 2 && Class19_Sub1.anInt2536 == 0) {
@@ -266,7 +268,7 @@ public class Class72 {
 						Class4_Sub20_Sub7_Sub1.aClass4_Sub20_Sub12_Sub1_3288 = Class2
 								.method44(24094, Class34.aJagexString_1767,
 										Class63.aJagexString_1250,
-										Client.aClass19_Sub1_1849);
+										Game.aClass19_Sub1_1849);
 				}
 				try {
 					if (arg1 < 113)

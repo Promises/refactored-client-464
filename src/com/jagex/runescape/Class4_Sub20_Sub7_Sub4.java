@@ -1,55 +1,46 @@
 package com.jagex.runescape;
+import com.jagex.runescape.util.Signlink;
+
 import java.awt.event.ActionEvent;
 import java.io.DataInputStream;
 import java.net.URL;
 
 public class Class4_Sub20_Sub7_Sub4 extends Class4_Sub20_Sub7 {
 	public static Class19 aClass19_3371;
-	public static JagexString aJagexString_3359;
 	public static JagexString aJagexString_3361 = JagexString.getRs2PreparedString("Art"
     );
-	public static JagexString aJagexString_3362;
-	public static JagexString aJagexString_3368;
+	public static JagexString aJagexString_3362 = JagexString.getRs2PreparedString("World");
+	public static JagexString aJagexString_3368 = JagexString.getRs2PreparedString("::qa_op_test");
 	public static JagexString aJagexString_3369;
-	public static JagexString aJagexString_3370;
-	public static JagexString aJagexString_3373;
-	public static JagexString aJagexString_3374;
-	public static JagexString aJagexString_3376;
+	public static JagexString aJagexString_3370 = (JagexString.getRs2PreparedString(
+			"Begeben Sie sich in ein freies Gebiet)1 um"));
+	public static JagexString aJagexString_3373 = JagexString
+			.getRs2PreparedString("Texturen geladen)3");
+	public static JagexString aJagexString_3374 = JagexString.getRs2PreparedString(
+			"To create a new account you need to");
+	public static JagexString aJagexString_3376 = JagexString.getRs2PreparedString("World");
 	public static RSInterface[] aClass4_Sub13Array3377;
-	public static Class4_Sub20_Sub7_Sub1_Sub1[] aClass4_Sub20_Sub7_Sub1_Sub1Array3358;
-	public static int anInt3357;
+	public static Class4_Sub20_Sub7_Sub1_Sub1[] aClass4_Sub20_Sub7_Sub1_Sub1Array3358 = new Class4_Sub20_Sub7_Sub1_Sub1[2048];
+	public static int anInt3357 = 0;
 	public static int anInt3360;
 	public static int anInt3363;
 	public static int anInt3364;
 	public static int anInt3365;
-	public static int anInt3366;
+	public static int anInt3366 = 0;
 	public static int anInt3367;
 	public static int anInt3372;
 	public static int anInt3380;
 	public static int[][] anIntArrayArray3375;
+	public int anInt3378;
+	public int anInt3379;
 	static {
-		aClass4_Sub20_Sub7_Sub1_Sub1Array3358 = new Class4_Sub20_Sub7_Sub1_Sub1[2048];
-		anInt3366 = 0;
-		aJagexString_3359 = JagexString.getRs2PreparedString("World");
-		aJagexString_3368 = JagexString.getRs2PreparedString("::qa_op_test");
-		aJagexString_3370 = (JagexString.getRs2PreparedString(
-				"Begeben Sie sich in ein freies Gebiet)1 um"));
-		aJagexString_3362 = aJagexString_3359;
-		anInt3357 = 0;
-		aJagexString_3374 = JagexString.getRs2PreparedString(
-				"To create a new account you need to");
-		aJagexString_3376 = aJagexString_3359;
 		aJagexString_3369 = aJagexString_3374;
-		aJagexString_3373 = JagexString
-				.getRs2PreparedString("Texturen geladen)3");
 	}
 
 	public static void method420(int arg0) {
 		try {
 			anIntArrayArray3375 = null;
-			aJagexString_3359 = null;
 			aJagexString_3368 = null;
-			aJagexString_3362 = null;
 			aJagexString_3369 = null;
 			aClass19_3371 = null;
 			aJagexString_3374 = null;
@@ -59,7 +50,6 @@ public class Class4_Sub20_Sub7_Sub4 extends Class4_Sub20_Sub7 {
 				method424((byte) 93, null, null);
 			aClass4_Sub13Array3377 = null;
 			aJagexString_3373 = null;
-			aJagexString_3376 = null;
 			aJagexString_3361 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw method423(runtimeexception, "gf.C(" + arg0 + ')');
@@ -226,13 +216,13 @@ public class Class4_Sub20_Sub7_Sub4 extends Class4_Sub20_Sub7 {
 		do {
 			try {
 				anInt3372++;
-				if (arg2.anEventQueue1533 != null && arg0 <= -28) {
+				if (arg2.eventQueue != null && arg0 <= -28) {
 					for (int i = 0; i < 50
-							&& arg2.anEventQueue1533.peekEvent() != null; i++)
+							&& arg2.eventQueue.peekEvent() != null; i++)
 						Class25.method799(1L, 10);
 					if (arg1 == null)
 						break;
-					arg2.anEventQueue1533.postEvent(new ActionEvent(arg1, 1001,
+					arg2.eventQueue.postEvent(new ActionEvent(arg1, 1001,
 							"dummy"));
 				}
 			} catch (RuntimeException runtimeexception) {
@@ -244,9 +234,7 @@ public class Class4_Sub20_Sub7_Sub4 extends Class4_Sub20_Sub7 {
 		} while (false);
 	}
 
-	public int anInt3378;
 
-	public int anInt3379;
 
 	@Override
 	public Class4_Sub20_Sub7_Sub7 method378(boolean arg0) {

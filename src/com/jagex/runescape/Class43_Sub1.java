@@ -1,4 +1,6 @@
 package com.jagex.runescape;
+import com.jagex.runescape.util.Signlink;
+
 import java.awt.Component;
 
 public class Class43_Sub1 extends Class43 {
@@ -11,7 +13,7 @@ public class Class43_Sub1 extends Class43 {
 	public int anInt2541;
 
 	public Class43_Sub1(Signlink arg0, int arg1) {
-		anInterface1_2542 = arg0.method1177(-113);
+		anInterface1_2542 = null;
 		anInt2541 = arg1;
 	}
 

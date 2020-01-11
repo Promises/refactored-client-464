@@ -55,30 +55,30 @@ public class Class1 {
 		Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method271((byte) -33);
 		int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
 				-1432215741, 8);
-		if (RSApplet.anInt12 > i) {
-			for (int i_0_ = i; (i_0_ ^ 0xffffffff) > (RSApplet.anInt12 ^ 0xffffffff); i_0_++)
+		if (GameShell.anInt12 > i) {
+			for (int i_0_ = i; (i_0_ ^ 0xffffffff) > (GameShell.anInt12 ^ 0xffffffff); i_0_++)
 				Class58.anIntArray1164[Class4_Sub20_Sub7_Sub5.anInt3386++] = Class4_Sub11_Sub1.anIntArray2695[i_0_];
 		}
-		if (RSApplet.anInt12 < i)
+		if (GameShell.anInt12 < i)
 			throw new RuntimeException("gnpov1");
-		RSApplet.anInt12 = 0;
+		GameShell.anInt12 = 0;
 		for (int i_1_ = 0; (i ^ 0xffffffff) < (i_1_ ^ 0xffffffff); i_1_++) {
 			int i_2_ = Class4_Sub11_Sub1.anIntArray2695[i_1_];
 			Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i_2_];
 			int i_3_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
 					-1432215741, 1);
 			if (i_3_ == 0) {
-				Class4_Sub11_Sub1.anIntArray2695[RSApplet.anInt12++] = i_2_;
+				Class4_Sub11_Sub1.anIntArray2695[GameShell.anInt12++] = i_2_;
 				class4_sub20_sub7_sub1_sub2.anInt3256 = Region.anInt134;
 			} else {
 				int i_4_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
 						-1432215741, 2);
 				if ((i_4_ ^ 0xffffffff) == -1) {
-					Class4_Sub11_Sub1.anIntArray2695[RSApplet.anInt12++] = i_2_;
+					Class4_Sub11_Sub1.anIntArray2695[GameShell.anInt12++] = i_2_;
 					class4_sub20_sub7_sub1_sub2.anInt3256 = Region.anInt134;
 					Class48.anIntArray979[JagexException.anInt1726++] = i_2_;
 				} else if (i_4_ == 1) {
-					Class4_Sub11_Sub1.anIntArray2695[RSApplet.anInt12++] = i_2_;
+					Class4_Sub11_Sub1.anIntArray2695[GameShell.anInt12++] = i_2_;
 					class4_sub20_sub7_sub1_sub2.anInt3256 = Region.anInt134;
 					int i_5_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.method266(-1432215741, 3);
@@ -88,7 +88,7 @@ public class Class1 {
 					if (i_6_ == 1)
 						Class48.anIntArray979[JagexException.anInt1726++] = i_2_;
 				} else if ((i_4_ ^ 0xffffffff) == -3) {
-					Class4_Sub11_Sub1.anIntArray2695[RSApplet.anInt12++] = i_2_;
+					Class4_Sub11_Sub1.anIntArray2695[GameShell.anInt12++] = i_2_;
 					class4_sub20_sub7_sub1_sub2.anInt3256 = Region.anInt134;
 					int i_7_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.method266(-1432215741, 3);

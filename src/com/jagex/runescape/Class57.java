@@ -82,7 +82,7 @@ public class Class57 {
 								(byte) -103, class4_sub7.anInt1955,
 								class4_sub7.anInt1962, class4_sub7.anInt1950,
 								class4_sub7.anInt1959);
-						class4_sub7.method70(-315);
+						class4_sub7.clear();
 					}
 				} else {
 					if (class4_sub7.anInt1952 > 0)
@@ -103,11 +103,11 @@ public class Class57 {
 						class4_sub7.anInt1952 = -1;
 						if (class4_sub7.anInt1951 == class4_sub7.anInt1958
 								&& (class4_sub7.anInt1958 ^ 0xffffffff) == 0)
-							class4_sub7.method70(-315);
+							class4_sub7.clear();
 						else if (class4_sub7.anInt1958 == class4_sub7.anInt1951
 								&& ((class4_sub7.anInt1955 ^ 0xffffffff) == (class4_sub7.anInt1949 ^ 0xffffffff))
 								&& ((class4_sub7.anInt1962 ^ 0xffffffff) == (class4_sub7.anInt1946 ^ 0xffffffff)))
-							class4_sub7.method70(-315);
+							class4_sub7.clear();
 					}
 				}
 			}
@@ -134,7 +134,7 @@ public class Class57 {
 			Class4_Sub20_Sub8.anInt2980 = 0;
 			Class4_Sub20_Sub16.aBoolean3169 = false;
 			AppletListener.anInt1448 = 0;
-			Class4_Sub20_Sub11.anInt3092 = -1;
+			Class4_Sub20_Sub11.incomingPacket = -1;
 			for (int i = 0; ((i ^ 0xffffffff) > ((Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358).length ^ 0xffffffff)); i++) {
 				if ((Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i]) != null)
 					Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i].anInt3293 = -1;
@@ -170,7 +170,7 @@ public class Class57 {
 						class4_sub20_sub7_sub1_sub1.aJagexString_3271 = null;
 				}
 			}
-			for (int i = 0; (RSApplet.anInt12 ^ 0xffffffff) < (i ^ 0xffffffff); i++) {
+			for (int i = 0; (GameShell.anInt12 ^ 0xffffffff) < (i ^ 0xffffffff); i++) {
 				int i_10_ = Class4_Sub11_Sub1.anIntArray2695[i];
 				Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i_10_];
 				if (class4_sub20_sub7_sub1_sub2 != null

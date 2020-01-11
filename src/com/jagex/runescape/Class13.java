@@ -1,4 +1,6 @@
 package com.jagex.runescape;
+import com.jagex.runescape.net.StreamBuffer;
+
 import java.awt.Component;
 import java.awt.Graphics;
 import java.awt.Image;
@@ -78,7 +80,7 @@ public abstract class Class13 {
 						}
 					}
 				}
-				for (int i_9_ = 0; RSApplet.anInt12 > i_9_; i_9_++) {
+				for (int i_9_ = 0; GameShell.anInt12 > i_9_; i_9_++) {
 					Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = (Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[Class4_Sub11_Sub1.anIntArray2695[i_9_]]);
 					if (class4_sub20_sub7_sub1_sub2 != null
 							&& class4_sub20_sub7_sub1_sub2.method384(-19456)) {
@@ -111,7 +113,7 @@ public abstract class Class13 {
 						int i_14_ = (-((Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3267) / 32) + class4_sub20_sub7_sub1_sub1.anInt3267 / 32);
 						long l = class4_sub20_sub7_sub1_sub1.aJagexString_3593
 								.method806((byte) -111);
-						for (int i_15_ = 0; i_15_ < RSApplet.anInt23; i_15_++) {
+						for (int i_15_ = 0; i_15_ < GameShell.anInt23; i_15_++) {
 							if (Class64.aLongArray1279[i_15_] == l
 									&& (Class50.anIntArray1005[i_15_] ^ 0xffffffff) != -1) {
 								bool = true;
@@ -277,16 +279,16 @@ public abstract class Class13 {
 									RSFont.anInt161 = 0;
 									if (RS2Font.aClass4_Sub13_2763 != null)
 										Class67.method1088(
-												(RS2Font.aClass4_Sub13_2763),
-												0);
+												(RS2Font.aClass4_Sub13_2763)
+                                        );
 									RS2Font.aClass4_Sub13_2763 = Class4_Sub20
 											.method322(true, i_30_);
 									Class58.anInt1161 = JagexException.anInt1729;
 									AppletListener.anInt1464 = Class37.anInt758;
 									Class4_Sub20_Sub14.anInt3139 = i_31_;
 									Class67.method1088(
-											(RS2Font.aClass4_Sub13_2763),
-											0);
+											(RS2Font.aClass4_Sub13_2763)
+                                    );
 									break;
 								}
 							}

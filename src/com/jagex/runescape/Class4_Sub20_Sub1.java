@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 	public static JagexString aJagexString_2731;
 	public static JagexString aJagexString_2733 = JagexString.getRs2PreparedString(" x "
@@ -249,7 +251,7 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 		if (arg1 >= 91) {
 			if (arg2 != 1) {
 				if ((arg2 ^ 0xffffffff) == -3)
-					aJagexString_2713 = arg0.method212(78);
+					aJagexString_2713 = arg0.method212();
 				else if (arg2 == 5) {
 					int i = arg0.get();
 					if (i > 0) {
@@ -381,7 +383,7 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 										}
 									} else {
 										aJagexStringArray2716[-30 + arg2] = arg0
-												.method212(80);
+												.method212();
 										if (aJagexStringArray2716[-30 + arg2]
 												.method818(
 														Class28.aJagexString_638,
@@ -433,13 +435,13 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 					return true;
 				boolean bool = true;
 				for (int i = 0; (i ^ 0xffffffff) > (anIntArray2723.length ^ 0xffffffff); i++)
-					bool &= Client.aClass19_1851.method739((byte) -4,
+					bool &= Game.aClass19_1851.method739((byte) -4,
 							(anIntArray2723[i] & 0xffff), 0);
 				return bool;
 			}
 			for (int i = 0; i < anIntArray2707.length; i++) {
 				if (anIntArray2707[i] == arg0)
-					return Client.aClass19_1851.method739((byte) -4,
+					return Game.aClass19_1851.method739((byte) -4,
 							(anIntArray2723[i] & 0xffff), 0);
 			}
 			return true;
@@ -458,7 +460,7 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 				return true;
 			boolean bool = true;
 			for (int i = 0; anIntArray2723.length > i; i++)
-				bool &= Client.aClass19_1851.method739((byte) -4,
+				bool &= Game.aClass19_1851.method739((byte) -4,
 						(0xffff & anIntArray2723[i]), 0);
 			return bool;
 		} catch (RuntimeException runtimeexception) {
@@ -584,7 +586,7 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 						.method1083(i_9_, true));
 				if (class4_sub20_sub7_sub2 == null) {
 					class4_sub20_sub7_sub2 = Class4_Sub20_Sub7_Sub2.method399(
-							(Client.aClass19_1851), i_9_ & 0xffff, 0);
+							(Game.aClass19_1851), i_9_ & 0xffff, 0);
 					if (class4_sub20_sub7_sub2 == null)
 						return null;
 					if (bool)
@@ -607,7 +609,7 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 							.method1083(i_12_, true));
 					if (class4_sub20_sub7_sub2 == null) {
 						class4_sub20_sub7_sub2 = (Class4_Sub20_Sub7_Sub2
-								.method399(Client.aClass19_1851,
+								.method399(Game.aClass19_1851,
 										0xffff & i_12_, 0));
 						if (class4_sub20_sub7_sub2 == null)
 							return null;

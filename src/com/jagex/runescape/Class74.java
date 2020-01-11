@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class74 {
 	public static JagexString aJagexString_1517 = JagexString.getRs2PreparedString(
 			"Versteckt");

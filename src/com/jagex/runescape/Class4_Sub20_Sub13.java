@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 	public static boolean aBoolean3116 = false;
 	public static boolean[] aBooleanArray3124 = { true, true, true, true, true,
@@ -54,7 +56,7 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 			Class4_Sub20.anInt2357 = arg1;
 			Class4_Sub20_Sub11.anInt3088 = arg2;
 			Class35.anInt740 = arg0;
-			Class67.method1088(class4_sub13, 0);
+			Class67.method1088(class4_sub13);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ne.J("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ')'));
@@ -158,7 +160,7 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 						}
 					}
 					if (i_3_ == 11)
-						i_5_ = Class4_Sub20_Sub7_Sub1.anInt3249;
+						i_5_ = Class4_Sub20_Sub7_Sub1.runEnergy;
 					if ((i_3_ ^ 0xffffffff) == -13)
 						i_5_ = Class77.anInt1588;
 					if ((i_3_ ^ 0xffffffff) == -14) {

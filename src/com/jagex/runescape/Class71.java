@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class71 {
 	public static Class19 aClass19_1474;
 	public static JagexString aJagexString_1470;

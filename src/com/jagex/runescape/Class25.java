@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class25 {
     public static boolean aBoolean582 = false;
     public static JagexString aJagexString_578;
@@ -47,12 +49,12 @@ public class Class25 {
                     .method1075(arg0 ^ 0x4852))) {
                 if (((Class82.anInt1711 ^ 0xffffffff) != (class4_sub20_sub7_sub3.anInt3345 ^ 0xffffffff))
                         || class4_sub20_sub7_sub3.aBoolean3338)
-                    class4_sub20_sub7_sub3.method70(-315);
+                    class4_sub20_sub7_sub3.clear();
                 else if (class4_sub20_sub7_sub3.anInt3341 <= Region.anInt134) {
                     class4_sub20_sub7_sub3.method419((byte) 125,
                             Class4_Sub20_Sub6.anInt2906);
                     if (class4_sub20_sub7_sub3.aBoolean3338)
-                        class4_sub20_sub7_sub3.method70(-315);
+                        class4_sub20_sub7_sub3.clear();
                     else
                         Class4_Sub20_Sub7_Sub6.aClass69_3439.method1132(
                                 class4_sub20_sub7_sub3.anInt3345,
@@ -229,7 +231,6 @@ public class Class25 {
             RSFont.anInt141 = 0;
             Class4_Sub20_Sub7.anInt2949 = 0;
             Class4_Sub20_Sub8.anInt3016 = 0;
-            RSFont.anInt145 = 0;
             Class10.anInt292 = 0;
             Class35.anInt745 = 0;
             Class4_Sub2_Sub1.anInt2582 = 0;
@@ -237,7 +238,7 @@ public class Class25 {
             Class4_Sub20_Sub7_Sub1_Sub1.anInt3613 = 0;
             Class34.anInt1736 = 0;
             Class33.anInt720 = 0;
-            Client.anInt1835 = 0;
+            Game.anInt1835 = 0;
             Class4_Sub20_Sub7_Sub1.anInt3252 = 0;
             Class16.anInt438 = 0;
             Class4_Sub20_Sub8.anInt2956 = 0;
@@ -263,7 +264,7 @@ public class Class25 {
             Class4_Sub23.anInt2413 = 0;
             Class13_Sub2.anInt2465 = 0;
             RSCanvas.anInt50 = 0;
-            Client.anInt1843 = 0;
+            Game.anInt1843 = 0;
             Class19_Sub1.anInt2531 = 0;
             Class42.anInt847 = 0;
             Class49.anInt997 = 0;
@@ -297,7 +298,7 @@ public class Class25 {
             RSInterface.anInt2211 = 0;
             RSCanvas.anInt49 = 0;
             Class4_Sub20_Sub1.anInt2715 = 0;
-            Client.anInt1831 = 0;
+            Game.anInt1831 = 0;
             Class4_Sub2_Sub1.anInt2615 = 0;
             StreamBuffer.anInt2111 = 0;
             Class27.anInt628 = 0;
@@ -340,7 +341,6 @@ public class Class25 {
             Region.anInt98 = 0;
             Class4_Sub20_Sub8.anInt3018 = 0;
             Class52.anInt1056 = 0;
-            RSFont.anInt155 = 0;
             Class4_Sub2_Sub1.anInt2614 = 0;
             Class27.anInt600 = 0;
             StreamBuffer.anInt2076 = 0;
@@ -451,19 +451,19 @@ public class Class25 {
             anInt579 = 0;
             Class4_Sub20_Sub17.anInt3203 = 0;
             Class4_Sub20_Sub5.anInt2867 = 0;
-            Client.anInt1832 = 0;
+            Game.anInt1832 = 0;
 
             Class4_Sub12.anInt2121 = 0;
             Region.anInt105 = 0;
             Class4_Sub17.anInt2326 = 0;
-            Client.anInt1839 = 0;
+            Game.anInt1839 = 0;
             Class68.anInt1376 = 0;
             Class4_Sub20_Sub13.anInt3119 = 0;
             Class46.anInt929 = 0;
             Class4_Sub20_Sub6.anInt2907 = 0;
             Class4_Sub20_Sub8.anInt2959 = 0;
             Class13_Sub2.anInt2466 = 0;
-            Client.anInt1842 = 0;
+            Game.anInt1842 = 0;
             Class4_Sub20_Sub7_Sub3.anInt3339 = 0;
             Class16.anInt441 = 0;
             Class73.anInt1496 = 0;
@@ -513,7 +513,7 @@ public class Class25 {
             Class4_Sub10.anInt2025 = 0;
             Class48.anInt987 = 0;
             Class46.anInt927 = 0;
-            Client.anInt1837 = 0;
+            Game.anInt1837 = 0;
             Region.anInt119 = 0;
             Class16.anInt447 = 0;
             Class13.anInt369 = 0;
@@ -524,7 +524,7 @@ public class Class25 {
             Class4_Sub2_Sub1.anInt2549 = 0;
             Class19.anInt498 = 0;
             Class4_Sub20_Sub17.anInt3215 = 0;
-            Client.anInt1840 = 0;
+            Game.anInt1840 = 0;
             Class19.anInt486 = 0;
             RSInterface.anInt2217 = 0;
             Class1.anInt68 = 0;
@@ -615,7 +615,7 @@ public class Class25 {
             Class65.anInt1300 = 0;
             Class4_Sub20_Sub8.anInt2960 = 0;
             Class4_Sub10.anInt2023 = 0;
-            Client.anInt1841 = 0;
+            Game.anInt1841 = 0;
             Class4_Sub20_Sub7_Sub1_Sub1.anInt3582 = 0;
             Class4_Sub2_Sub1.anInt2575 = 0;
             Class11.anInt314 = 0;
@@ -744,7 +744,7 @@ public class Class25 {
                 Class4_Sub20_Sub6.anInt2918 = 0;
                 Class4_Sub2_Sub1.anInt2578 = 0;
                 Class4_Sub20_Sub8.anInt2968 = 0;
-                Client.anInt1845 = 0;
+                Game.anInt1845 = 0;
                 Class12.anInt344 = 0;
 
                 AppletListener.anInt1455 = 0;
@@ -838,7 +838,7 @@ public class Class25 {
                 Class8.anInt241 = 0;
                 Class40.anInt784 = 0;
                 Class4_Sub20_Sub7_Sub6.anInt3435 = 0;
-                Client.anInt1834 = 0;
+                Game.anInt1834 = 0;
                 Class46.anInt933 = 0;
 
                 Class12.anInt345 = 0;
@@ -952,7 +952,7 @@ public class Class25 {
                 Class4_Sub6.anInt1935 = 0;
                 Class4_Sub20_Sub8.anInt2994 = 0;
                 Class19_Sub1.anInt2534 = 0;
-                Client.anInt1836 = 0;
+                Game.anInt1836 = 0;
                 Class19_Sub1.anInt2506 = 0;
                 Class4_Sub15.anInt2300 = 0;
                 RS2Font.anInt2783 = 0;
@@ -1073,7 +1073,7 @@ public class Class25 {
                 AppletListener.anInt1448 = 0;
                 Class4_Sub20_Sub16.aBoolean3169 = false;
                 Class78.anInt1599 = 0;
-                Class4_Sub20_Sub11.anInt3092 = -1;
+                Class4_Sub20_Sub11.incomingPacket = -1;
                 Class13_Sub2.method692(0);
                 for (int i = 0; i < 100; i++)
                     Class4_Sub2_Sub1.aJagexStringArray2574[i] = null;
@@ -1092,7 +1092,7 @@ public class Class25 {
                 Class4_Sub16.anInt2318 = -40 + (int) (80.0 * Math.random());
                 Class4_Sub20_Sub9.anInt3051 = 0;
                 Class4_Sub20_Sub7_Sub6.anInt3431 = 0;
-                RSApplet.anInt12 = 0;
+                GameShell.anInt12 = 0;
                 Class67.anInt1352 = 0;
                 Class1.anInt74 = 0;
                 for (int i = 0; (i ^ 0xffffffff) > -2049; i++) {
@@ -1111,7 +1111,7 @@ public class Class25 {
                     }
                 }
                 Class4_Sub20_Sub7_Sub1_Sub2.aClass65_3618 = new Class65();
-                RSApplet.anInt23 = 0;
+                GameShell.anInt23 = 0;
                 Class11.anInt326 = 0;
                 for (int i = 0; (i ^ 0xffffffff) > (Class82.anInt1715 ^ 0xffffffff); i++) {
                     Class4_Sub20_Sub15 class4_sub20_sub15 = Class4_Sub10

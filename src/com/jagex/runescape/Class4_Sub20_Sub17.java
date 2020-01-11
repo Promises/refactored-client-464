@@ -1,4 +1,6 @@
 package com.jagex.runescape;
+import com.jagex.runescape.net.StreamBuffer;
+
 import java.io.IOException;
 
 public class Class4_Sub20_Sub17 extends Class4_Sub20 {
@@ -229,7 +231,7 @@ public class Class4_Sub20_Sub17 extends Class4_Sub20 {
 												Class40.aClass4_Sub11_783.byteBuffer);
 							}
 							Class4_Sub20_Sub8.aClass4_Sub20_Sub10_2990
-									.method70(-315);
+									.clear();
 							if (!Class4_Sub20_Sub4.aBoolean2857)
 								Class5.anInt188--;
 							else

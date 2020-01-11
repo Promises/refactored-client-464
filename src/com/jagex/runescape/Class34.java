@@ -1,4 +1,6 @@
 package com.jagex.runescape;
+import com.jagex.runescape.net.StreamBuffer;
+
 import java.awt.event.KeyEvent;
 
 public class Class34 implements Interface2 {

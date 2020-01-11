@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class58 {
 	public static Class16 aClass16_1171;
 	public static Class19 aClass19_1165;
@@ -136,7 +138,7 @@ public class Class58 {
 					}
 					if ((i_5_ & 0x80 ^ 0xffffffff) != -1) {
 						class4_sub20_sub7_sub1_sub2.aJagexString_3271 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-								.method212(109);
+								.method212();
 						class4_sub20_sub7_sub1_sub2.anInt3253 = 100;
 					}
 					if ((i_5_ & 0x8 ^ 0xffffffff) != -1) {

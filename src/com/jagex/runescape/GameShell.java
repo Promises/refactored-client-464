@@ -1,6 +1,6 @@
-package com.jagex.runescape;/* Applet_Sub1 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+package com.jagex.runescape;
+
+import com.jagex.runescape.util.Signlink;
 
 import java.applet.Applet;
 import java.applet.AppletContext;
@@ -9,7 +9,7 @@ import java.awt.event.*;
 import java.lang.reflect.Method;
 import java.net.URL;
 
-public abstract class RSApplet extends Applet implements Runnable,
+public abstract class GameShell extends Applet implements Runnable,
         FocusListener, WindowListener, MouseListener, MouseMotionListener {
     /**
      *
@@ -55,7 +55,7 @@ public abstract class RSApplet extends Applet implements Runnable,
 
     }
 
-    public static void method380(boolean arg0, Component arg1, RSApplet applet) {
+    public static void method380(boolean arg0, Component arg1, GameShell applet) {
         try {
             arg1.addMouseListener(applet);
             arg1.addMouseMotionListener(applet);
@@ -136,7 +136,7 @@ public abstract class RSApplet extends Applet implements Runnable,
 
     public AppletContext getAppletContext() {
         try {
-            if (JagexString.aFrame1786 != null)
+            if (JagexString.gameFrame != null)
                 return null;
             if (Class43.aClass75_872 != null
                     && Class43.aClass75_872.applet != this)
@@ -150,7 +150,7 @@ public abstract class RSApplet extends Applet implements Runnable,
 
     public URL getCodeBase() {
         try {
-            if (JagexString.aFrame1786 != null)
+            if (JagexString.gameFrame != null)
                 return null;
             if (Class43.aClass75_872 != null
                     && Class43.aClass75_872.applet != this)
@@ -163,7 +163,7 @@ public abstract class RSApplet extends Applet implements Runnable,
 
     public URL getDocumentBase() {
         try {
-            if (JagexString.aFrame1786 != null)
+            if (JagexString.gameFrame != null)
                 return null;
             if (Class43.aClass75_872 != null
                     && this != Class43.aClass75_872.applet)
@@ -177,7 +177,7 @@ public abstract class RSApplet extends Applet implements Runnable,
 
     public String getParameter(String arg0) {
         try {
-            if (JagexString.aFrame1786 != null)
+            if (JagexString.gameFrame != null)
                 return null;
             if (Class43.aClass75_872 != null
                     && Class43.aClass75_872.applet != this)
@@ -195,10 +195,10 @@ public abstract class RSApplet extends Applet implements Runnable,
     public synchronized void method11(int arg0) {
         try {
             Container container;
-            if (JagexString.aFrame1786 == null)
+            if (JagexString.gameFrame == null)
                 container = Class43.aClass75_872.applet;
             else
-                container = JagexString.aFrame1786;
+                container = JagexString.gameFrame;
             if (Class4_Sub20_Sub7_Sub5.runeCanvas != null) {
                 Class4_Sub20_Sub7_Sub5.runeCanvas.removeFocusListener(this);
                 container.remove(Class4_Sub20_Sub7_Sub5.runeCanvas);
@@ -208,10 +208,10 @@ public abstract class RSApplet extends Applet implements Runnable,
             Class4_Sub20_Sub7_Sub5.runeCanvas.setSize(Class58.anInt1160,
                     Class57.anInt1138);
             Class4_Sub20_Sub7_Sub5.runeCanvas.setVisible(true);
-            if (JagexString.aFrame1786 == null)
+            if (JagexString.gameFrame == null)
                 Class4_Sub20_Sub7_Sub5.runeCanvas.setLocation(0, 0);
             else {
-                Insets insets = JagexString.aFrame1786.getInsets();
+                Insets insets = JagexString.gameFrame.getInsets();
                 Class4_Sub20_Sub7_Sub5.runeCanvas.setLocation(insets.left,
                         insets.top);
             }
@@ -244,8 +244,8 @@ public abstract class RSApplet extends Applet implements Runnable,
                 Class4_Sub20_Sub7_Sub5.runeCanvas.setSize(Class58.anInt1160,
                         Class57.anInt1138);
                 Class4_Sub20_Sub7_Sub5.runeCanvas.setVisible(true);
-                if (JagexString.aFrame1786 != null) {
-                    Insets insets = JagexString.aFrame1786.getInsets();
+                if (JagexString.gameFrame != null) {
+                    Insets insets = JagexString.gameFrame.getInsets();
                     Class4_Sub20_Sub7_Sub5.runeCanvas.setLocation(insets.left,
                             insets.top);
                 } else
@@ -268,17 +268,17 @@ public abstract class RSApplet extends Applet implements Runnable,
                 Class57.anInt1138 = arg2;
                 Class4_Sub22.anApplet_Sub1_2401 = this;
                 Class58.anInt1160 = arg1;
-                JagexString.aFrame1786 = new Frame();
-                JagexString.aFrame1786.setTitle("Jagex");
-                JagexString.aFrame1786.setResizable(arg5);
-                JagexString.aFrame1786.addWindowListener(this);
-                JagexString.aFrame1786.setVisible(true);
-                JagexString.aFrame1786.toFront();
-                Insets insets = JagexString.aFrame1786.getInsets();
-                JagexString.aFrame1786.setSize(insets.left + (arg1 + insets.right),
+                JagexString.gameFrame = new Frame();
+                JagexString.gameFrame.setTitle("Jagex");
+                JagexString.gameFrame.setResizable(arg5);
+                JagexString.gameFrame.addWindowListener(this);
+                JagexString.gameFrame.setVisible(true);
+                JagexString.gameFrame.toFront();
+                Insets insets = JagexString.gameFrame.getInsets();
+                JagexString.gameFrame.setSize(insets.left + (arg1 + insets.right),
                         insets.bottom + (arg2 - -insets.top));
                 Class77.aClass75_1597 = Class43.aClass75_872 = new Signlink(
-                        true, null, arg6, arg4, arg0);
+                        true, null, arg4, arg0);
                 Class43.aClass75_872.method1172(this, 1, 66);
             } catch (Exception exception) {
                 Class4_Sub20_Sub7_Sub4.method422(exception, -77, null);
@@ -310,7 +310,7 @@ public abstract class RSApplet extends Applet implements Runnable,
                 } catch (Exception exception) {
                     /* empty */
                 }
-                if (JagexString.aFrame1786 != null) {
+                if (JagexString.gameFrame != null) {
                     try {
                         System.exit(0);
                     } catch (Throwable throwable) {
@@ -324,7 +324,7 @@ public abstract class RSApplet extends Applet implements Runnable,
                         /* empty */
                     }
                 }
-                method16(-107);
+//                method16(-107);
             }
         } catch (RuntimeException runtimeexception) {
             throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "we.C("
@@ -391,7 +391,7 @@ public abstract class RSApplet extends Applet implements Runnable,
                     Class58.anInt1160 = arg3;
                     if (Class43.aClass75_872 == null)
                         Class77.aClass75_1597 = Class43.aClass75_872 = new Signlink(
-                                false, this, arg4, null, 0);
+                                false, this, null, 0);
                     Class43.aClass75_872.method1172(this, 1, 14);
                 }
             } catch (Exception exception) {
@@ -595,13 +595,13 @@ public abstract class RSApplet extends Applet implements Runnable,
     @Override
     public synchronized void mouseDragged(MouseEvent mouseEvent) {
         try {
-            RSApplet.idleTime = 0;
-            RSApplet.mouseX = mouseEvent.getX();
-            RSApplet.mouseY = mouseEvent.getY();
+            GameShell.idleTime = 0;
+            GameShell.mouseX = mouseEvent.getX();
+            GameShell.mouseY = mouseEvent.getY();
             if (mouseWheelDown) {
-                RSApplet.mouseY = mouseWheelX - mouseEvent.getX();
+                GameShell.mouseY = mouseWheelX - mouseEvent.getX();
                 int k = mouseWheelY - mouseEvent.getY();
-                mouseWheelDragged(RSApplet.mouseY, -k);
+                mouseWheelDragged(GameShell.mouseY, -k);
                 mouseWheelX = mouseEvent.getX();
                 mouseWheelY = mouseEvent.getY();
             }
@@ -618,56 +618,56 @@ public abstract class RSApplet extends Applet implements Runnable,
 
     @Override
     public synchronized void mouseEntered(MouseEvent mouseEvent) {
-        if (RSApplet.appletListener != null) {
-            RSApplet.idleTime = 0;
-            RSApplet.mouseX = mouseEvent.getX();
-            RSApplet.mouseY = mouseEvent.getY();
+        if (GameShell.appletListener != null) {
+            GameShell.idleTime = 0;
+            GameShell.mouseX = mouseEvent.getX();
+            GameShell.mouseY = mouseEvent.getY();
         }
     }
 
     @Override
     public synchronized void mouseExited(MouseEvent arg0) {
-        if (RSApplet.appletListener != null) {
-            RSApplet.idleTime = 0;
-            RSApplet.mouseX = -1;
-            RSApplet.mouseY = -1;
+        if (GameShell.appletListener != null) {
+            GameShell.idleTime = 0;
+            GameShell.mouseX = -1;
+            GameShell.mouseY = -1;
         }
     }
 
     @Override
     public synchronized void mouseMoved(MouseEvent mouseevent) {
-        if (RSApplet.appletListener != null) {
-            RSApplet.idleTime = 0;
-            RSApplet.mouseX = mouseevent.getX();
-            RSApplet.mouseY = mouseevent.getY();
+        if (GameShell.appletListener != null) {
+            GameShell.idleTime = 0;
+            GameShell.mouseX = mouseevent.getX();
+            GameShell.mouseY = mouseevent.getY();
         }
     }
 
     @Override
     public synchronized void mousePressed(MouseEvent mouseEvent) {
-        RSApplet.idleTime = 0;
-        RSApplet.eventClickX = mouseEvent.getX();
-        RSApplet.eventClickY = mouseEvent.getY();
-        RSApplet.lastClick = System.currentTimeMillis();
+        GameShell.idleTime = 0;
+        GameShell.eventClickX = mouseEvent.getX();
+        GameShell.eventClickY = mouseEvent.getY();
+        GameShell.lastClick = System.currentTimeMillis();
         if (mouseEvent.getButton() == MouseEvent.BUTTON2) {
             mouseWheelDown = true;
-            mouseWheelX = RSApplet.mouseX;
-            mouseWheelY = RSApplet.mouseY;
+            mouseWheelX = GameShell.mouseX;
+            mouseWheelY = GameShell.mouseY;
             return;
         }
         if (mouseEvent.isMetaDown() || mouseEvent.getButton() == MouseEvent.BUTTON3) {
-            RSApplet.eventMouseButtonPressed = 2;
-            RSApplet.mouseButtonPressed = 2;
+            GameShell.eventMouseButtonPressed = 2;
+            GameShell.mouseButtonPressed = 2;
         } else {
-            RSApplet.eventMouseButtonPressed = 1;
-            RSApplet.mouseButtonPressed = 1;
+            GameShell.eventMouseButtonPressed = 1;
+            GameShell.mouseButtonPressed = 1;
         }
     }
 
     @Override
     public synchronized void mouseReleased(MouseEvent mouseEvent) {
-        RSApplet.idleTime = 0;
-        RSApplet.mouseButtonPressed = 0;
+        GameShell.idleTime = 0;
+        GameShell.mouseButtonPressed = 0;
         mouseWheelDown = false;
     }
 }

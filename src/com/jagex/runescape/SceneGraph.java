@@ -1,6 +1,6 @@
-package com.jagex.runescape;/* Class14_Sub1 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+package com.jagex.runescape;
+
+import com.jagex.runescape.net.StreamBuffer;
 
 public class SceneGraph extends Class14 {
 	public static Class19 aClass19_2483;

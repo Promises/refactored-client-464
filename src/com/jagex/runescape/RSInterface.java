@@ -1,6 +1,6 @@
-package com.jagex.runescape;/* Class4_Sub13 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+package com.jagex.runescape;
+
+import com.jagex.runescape.net.StreamBuffer;
 
 public class RSInterface extends RSFont {
 	public static boolean aBoolean2203;
@@ -534,7 +534,7 @@ public class RSInterface extends RSFont {
 			}
 			aJagexStringArray2233 = new JagexString[5];
 			for (int i_38_ = 0; i_38_ < 5; i_38_++) {
-				JagexString jagexString = arg1.method212(96);
+				JagexString jagexString = arg1.method212();
 				if (jagexString.method825(arg0 ^ ~0x70) > 0) {
 					aJagexStringArray2233[i_38_] = jagexString;
 					anInt2246 |= 1 << i_38_ + 23;
@@ -553,8 +553,8 @@ public class RSInterface extends RSFont {
 			aBoolean2159 = (arg1.get() ^ 0xffffffff) == -2;
 		}
 		if (anInt2258 == 4) {
-			aJagexString_2150 = arg1.method212(81);
-			aJagexString_2149 = arg1.method212(122);
+			aJagexString_2150 = arg1.method212();
+			aJagexString_2149 = arg1.method212();
 		}
 		if ((anInt2258 ^ 0xffffffff) == -2 || anInt2258 == 3
 				|| (anInt2258 ^ 0xffffffff) == -5)
@@ -603,7 +603,7 @@ public class RSInterface extends RSFont {
 				anInt2246 |= 0x40000000;
 			aJagexStringArray2233 = new JagexString[5];
 			for (int i_40_ = 0; i_40_ < 5; i_40_++) {
-				JagexString jagexString = arg1.method212(101);
+				JagexString jagexString = arg1.method212();
 				if ((jagexString.method825(-114) ^ 0xffffffff) < -1) {
 					aJagexStringArray2233[i_40_] = jagexString;
 					anInt2246 |= 1 << 23 - -i_40_;
@@ -611,16 +611,16 @@ public class RSInterface extends RSFont {
 			}
 		}
 		if (anInt2258 == 8)
-			aJagexString_2150 = arg1.method212(101);
+			aJagexString_2150 = arg1.method212();
 		if (anInt2171 == 2 || (anInt2258 ^ 0xffffffff) == -3) {
-			aJagexString_2174 = arg1.method212(arg0 ^ 0x58);
-			aJagexString_2202 = arg1.method212(arg0 + 117);
+			aJagexString_2174 = arg1.method212();
+			aJagexString_2202 = arg1.method212();
 			int i_41_ = 0x3f & arg1.method209((byte) -119);
 			anInt2246 |= i_41_ << -340517109;
 		}
 		if ((anInt2171 ^ 0xffffffff) == -2 || (anInt2171 ^ 0xffffffff) == -5
 				|| (anInt2171 ^ 0xffffffff) == -6 || anInt2171 == 6) {
-			aJagexString_2264 = arg1.method212(82);
+			aJagexString_2264 = arg1.method212();
 			if ((aJagexString_2264.method825(-112) ^ 0xffffffff) == -1) {
 				if ((anInt2171 ^ 0xffffffff) == -2)
 					aJagexString_2264 = Class50.aJagexString_1011;
@@ -755,7 +755,7 @@ public class RSInterface extends RSFont {
 					anInt2170 = arg0.method209((byte) -104);
 					if ((anInt2170 ^ 0xffffffff) == -65536)
 						anInt2170 = -1;
-					aJagexString_2150 = arg0.method212(127);
+					aJagexString_2150 = arg0.method212();
 					anInt2161 = arg0.get();
 					anInt2214 = arg0.get();
 					anInt2262 = arg0.get();
@@ -772,17 +772,17 @@ public class RSInterface extends RSFont {
 					anInt2195 = arg0.method219((byte) 73);
 				}
 				anInt2246 = arg0.method248(false);
-				aJagexString_2196 = arg0.method212(93);
+				aJagexString_2196 = arg0.method212();
 				int i = arg0.get();
 				if ((i ^ 0xffffffff) < -1) {
 					aJagexStringArray2247 = new JagexString[i];
 					for (int i_43_ = 0; (i_43_ ^ 0xffffffff) > (i ^ 0xffffffff); i_43_++)
-						aJagexStringArray2247[i_43_] = arg0.method212(78);
+						aJagexStringArray2247[i_43_] = arg0.method212();
 				}
 				anInt2248 = arg0.get();
 				anInt2198 = arg0.get();
 				aBoolean2160 = (arg0.get() ^ 0xffffffff) == -2;
-				aJagexString_2174 = arg0.method212(112);
+				aJagexString_2174 = arg0.method212();
 				anObjectArray2242 = method290(arg0, (byte) 115);
 				anObjectArray2265 = method290(arg0, (byte) 115);
 				anObjectArray2182 = method290(arg0, (byte) 115);
@@ -834,7 +834,7 @@ public class RSInterface extends RSFont {
 			Class4_Sub20_Sub13.aBoolean3116 = false;
 			if ((anInt2170 ^ 0xffffffff) == 0)
 				return null;
-			Class4_Sub20_Sub12_Sub4_Sub1 class4_sub20_sub12_sub4_sub1 = ((Class4_Sub20_Sub12_Sub4_Sub1) Client.aClass66_1844
+			Class4_Sub20_Sub12_Sub4_Sub1 class4_sub20_sub12_sub4_sub1 = ((Class4_Sub20_Sub12_Sub4_Sub1) Game.aClass66_1844
 					.method1083(anInt2170, true));
 			if (class4_sub20_sub12_sub4_sub1 != null)
 				return class4_sub20_sub12_sub4_sub1;
@@ -844,7 +844,7 @@ public class RSInterface extends RSFont {
 			if (class4_sub20_sub12_sub4_sub1 == null)
 				Class4_Sub20_Sub13.aBoolean3116 = true;
 			else
-				Client.aClass66_1844.method1082(true, anInt2170,
+				Game.aClass66_1844.method1082(true, anInt2170,
 						class4_sub20_sub12_sub4_sub1);
 			return class4_sub20_sub12_sub4_sub1;
 		} catch (RuntimeException runtimeexception) {
@@ -867,7 +867,7 @@ public class RSInterface extends RSFont {
 				if ((i_45_ ^ 0xffffffff) == -1)
 					objects[i_44_] = new Integer(arg0.method219((byte) 73));
 				else if ((i_45_ ^ 0xffffffff) == -2)
-					objects[i_44_] = arg0.method212(90);
+					objects[i_44_] = arg0.method212();
 			}
 			aBoolean2237 = true;
 			return objects;

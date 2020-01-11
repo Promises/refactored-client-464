@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class38 {
 	public static JagexString aJagexString_769;
 	public static JagexString aJagexString_772 = JagexString.getRs2PreparedString(
@@ -50,7 +52,7 @@ public class Class38 {
 			anInt768++;
 			int i = 0;
 			if (arg1 == 12981) {
-				for (/**/; (i ^ 0xffffffff) > (RSApplet.anInt12 ^ 0xffffffff); i++) {
+				for (/**/; (i ^ 0xffffffff) > (GameShell.anInt12 ^ 0xffffffff); i++) {
 					Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = (Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[Class4_Sub11_Sub1.anIntArray2695[i]]);
 					int i_0_ = 536870912 - -(Class4_Sub11_Sub1.anIntArray2695[i] << -601574610);
 					if (class4_sub20_sub7_sub1_sub2 != null

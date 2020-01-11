@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class56 {
 	public static float aFloat1117;
 	public static float[][] aFloatArrayArray1119 = new float[2][8];

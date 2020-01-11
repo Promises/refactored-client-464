@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class4_Sub14 extends RSFont {
 	public static byte[][][] aByteArrayArrayArray2275;
 	public static Class18 aClass18_2272;
@@ -68,7 +70,7 @@ public class Class4_Sub14 extends RSFont {
 						false, 6, true);
 				Class4_Sub24.aClass19_Sub1_2451 = Class4_Sub20.method317(1,
 						true, true, 7, false);
-				Client.aClass19_Sub1_1849 = Class4_Sub20.method317(1, true,
+				Game.aClass19_Sub1_1849 = Class4_Sub20.method317(1, true,
 						true, 8, false);
 				Class18.aClass19_Sub1_482 = Class4_Sub20.method317(1, true,
 						true, 9, false);
@@ -97,7 +99,7 @@ public class Class4_Sub14 extends RSFont {
 				i += Class4_Sub20_Sub6.aClass19_Sub1_2911.method767((byte) -31) * 4 / 100;
 				i += (Class54.aClass19_Sub1_1107.method767((byte) -31) * 2 / 100);
 				i += (Class4_Sub24.aClass19_Sub1_2451.method767((byte) -31) * 60 / 100);
-				i += Client.aClass19_Sub1_1849.method767((byte) -31) * 2 / 100;
+				i += Game.aClass19_Sub1_1849.method767((byte) -31) * 2 / 100;
 				i += 2 * Class18.aClass19_Sub1_482.method767((byte) -31) / 100;
 				i += (Class77.aClass19_Sub1_1589.method767((byte) -31) * 2 / 100);
 				i += Class24.aClass19_Sub1_562.method767((byte) -31) * 2 / 100;
@@ -149,7 +151,7 @@ public class Class4_Sub14 extends RSFont {
 				if (Class33.aClass4_Sub20_Sub12_Sub4_Sub1_717 == null)
 					Class33.aClass4_Sub20_Sub12_Sub4_Sub1_717 = Class57
 							.method1026(Class4_Sub20_Sub6.aJagexString_2904,
-									Client.aClass19_Sub1_1849, -107,
+									Game.aClass19_Sub1_1849, -107,
 									Class4_Sub3.aJagexString_1895,
 									(Class4_Sub20_Sub6.aClass19_Sub1_2921));
 				else
@@ -159,7 +161,7 @@ public class Class4_Sub14 extends RSFont {
 				else
 					Class4_Sub15.aClass4_Sub20_Sub12_Sub4_Sub1_2289 = Class57
 							.method1026(Class78.aJagexString_1606,
-									Client.aClass19_Sub1_1849, 105,
+									Game.aClass19_Sub1_1849, 105,
 									Class4_Sub3.aJagexString_1895,
 									(Class4_Sub20_Sub6.aClass19_Sub1_2921));
 				if (Class68.aClass4_Sub20_Sub12_Sub4_Sub1_1384 != null)
@@ -167,7 +169,7 @@ public class Class4_Sub14 extends RSFont {
 				else
 					Class68.aClass4_Sub20_Sub12_Sub4_Sub1_1384 = Class57
 							.method1026(Class4_Sub7.aJagexString_1964,
-									Client.aClass19_Sub1_1849, -111,
+									Game.aClass19_Sub1_1849, -111,
 									Class4_Sub3.aJagexString_1895,
 									(Class4_Sub20_Sub6.aClass19_Sub1_2921));
 				if ((i ^ 0xffffffff) > -4) {
@@ -186,7 +188,7 @@ public class Class4_Sub14 extends RSFont {
 				}
 			} else if (Class48.anInt989 == 60) {
 				int i = Class28.method854((byte) -95,
-						Class77.aClass19_Sub1_1589, Client.aClass19_Sub1_1849);
+						Class77.aClass19_Sub1_1589, Game.aClass19_Sub1_1849);
 				int i_3_ = Class4_Sub20_Sub16.method608(6);
 				if ((i_3_ ^ 0xffffffff) < (i ^ 0xffffffff)) {
 					Class34.aJagexString_1762 = (Class4_Sub24
@@ -239,9 +241,9 @@ public class Class4_Sub14 extends RSFont {
 							Class4_Sub1.aClass19_Sub1_1861);
 					Class5.method645(111, Class4_Sub1.aClass19_Sub1_1863,
 							Class4_Sub24.aClass19_Sub1_2451);
-					Client.method26((byte) 45, Class4_Sub1.aClass19_Sub1_1863);
+					Game.method26((byte) 45, Class4_Sub1.aClass19_Sub1_1863);
 					Class34.method894(Class4_Sub1.aClass19_Sub1_1863, 73);
-					Class4_Sub11_Sub1.method267(77, Client.aClass19_Sub1_1849,
+					Class4_Sub11_Sub1.method267(77, Game.aClass19_Sub1_1849,
 							Class4_Sub20_Sub6.aClass19_Sub1_2921,
 							Class4_Sub17.aClass19_Sub1_2321,
 							Class4_Sub24.aClass19_Sub1_2451);
@@ -257,13 +259,13 @@ public class Class4_Sub14 extends RSFont {
 				int i = 0;
 				if (Class37.aClass4_Sub20_Sub12_Sub2_761 == null)
 					Class37.aClass4_Sub20_Sub12_Sub2_761 = Class57.method1024(
-							26149, Client.aClass19_Sub1_1849,
+							26149, Game.aClass19_Sub1_1849,
 							Class61.aJagexString_1220, Class4_Sub3.aJagexString_1895);
 				else
 					i++;
 				if (Class4_Sub21.aClass4_Sub20_Sub12_Sub2_2368 == null)
 					Class4_Sub21.aClass4_Sub20_Sub12_Sub2_2368 = Class57
-							.method1024(26149, Client.aClass19_Sub1_1849,
+							.method1024(26149, Game.aClass19_Sub1_1849,
 									Class4_Sub20_Sub10.aJagexString_3056,
 									Class4_Sub3.aJagexString_1895);
 				else
@@ -273,26 +275,26 @@ public class Class4_Sub14 extends RSFont {
 				else
 					Class1.aClass4_Sub20_Sub12_Sub1Array66 = Class63
 							.method1055(Class4_Sub3.aJagexString_1895,
-									Client.aClass19_Sub1_1849, 74,
+									Game.aClass19_Sub1_1849, 74,
 									Class19_Sub1.aJagexString_2528);
 				if (Class19.aClass4_Sub20_Sub12_Sub2Array504 != null)
 					i++;
 				else
 					Class19.aClass4_Sub20_Sub12_Sub2Array504 = Class4_Sub21
 							.method625((Class4_Sub20_Sub7_Sub1.aJagexString_3284),
-									Client.aClass19_Sub1_1849,
+									Game.aClass19_Sub1_1849,
 									Class4_Sub3.aJagexString_1895, true);
 				if (Class65.aClass4_Sub20_Sub12_Sub2Array1290 == null)
 					Class65.aClass4_Sub20_Sub12_Sub2Array1290 = Class4_Sub21
 							.method625(Class37.aJagexString_762,
-									Client.aClass19_Sub1_1849,
+									Game.aClass19_Sub1_1849,
 									Class4_Sub3.aJagexString_1895, true);
 				else
 					i++;
 				if (Class54.aClass4_Sub20_Sub12_Sub2Array1092 == null)
 					Class54.aClass4_Sub20_Sub12_Sub2Array1092 = Class4_Sub21
 							.method625(Class52.aJagexString_1057,
-									Client.aClass19_Sub1_1849,
+									Game.aClass19_Sub1_1849,
 									Class4_Sub3.aJagexString_1895, !arg0);
 				else
 					i++;
@@ -301,19 +303,19 @@ public class Class4_Sub14 extends RSFont {
 				else
 					Class4_Sub21.aClass4_Sub20_Sub12_Sub2Array2378 = Class4_Sub21
 							.method625((Class4_Sub20_Sub5.aJagexString_2868),
-									Client.aClass19_Sub1_1849,
+									Game.aClass19_Sub1_1849,
 									Class4_Sub3.aJagexString_1895, true);
 				if (Class14.aClass4_Sub20_Sub12_Sub2Array405 != null)
 					i++;
 				else
 					Class14.aClass4_Sub20_Sub12_Sub2Array405 = Class4_Sub21
-							.method625(RSApplet.aJagexString_15,
-									Client.aClass19_Sub1_1849,
+							.method625(GameShell.aJagexString_15,
+									Game.aClass19_Sub1_1849,
 									Class4_Sub3.aJagexString_1895, true);
 				if (Class4_Sub10.aClass4_Sub20_Sub12_Sub2Array2022 == null)
 					Class4_Sub10.aClass4_Sub20_Sub12_Sub2Array2022 = Class4_Sub21
 							.method625(RSFont.aJagexString_151,
-									Client.aClass19_Sub1_1849,
+									Game.aClass19_Sub1_1849,
 									Class4_Sub3.aJagexString_1895, true);
 				else
 					i++;
@@ -322,26 +324,26 @@ public class Class4_Sub14 extends RSFont {
 				else
 					Class8.aClass4_Sub20_Sub12_Sub2Array253 = Class4_Sub21
 							.method625((Class4_Sub20_Sub8.aJagexString_3013),
-									Client.aClass19_Sub1_1849,
+									Game.aClass19_Sub1_1849,
 									Class4_Sub3.aJagexString_1895, !arg0);
 				if (Class35.aClass4_Sub20_Sub12_Sub2Array749 != null)
 					i++;
 				else
 					Class35.aClass4_Sub20_Sub12_Sub2Array749 = Class4_Sub21
 							.method625(Class61.aJagexString_1206,
-									Client.aClass19_Sub1_1849,
+									Game.aClass19_Sub1_1849,
 									Class4_Sub3.aJagexString_1895, true);
 				if (Class8.aClass4_Sub20_Sub12_Sub1Array262 != null)
 					i++;
 				else
 					Class8.aClass4_Sub20_Sub12_Sub1Array262 = Class63
 							.method1055(Class4_Sub3.aJagexString_1895,
-									Client.aClass19_Sub1_1849, 44,
+									Game.aClass19_Sub1_1849, 44,
 									Class38.aJagexString_772);
 				if (Class57.aClass4_Sub20_Sub12_Sub1Array1135 == null)
 					Class57.aClass4_Sub20_Sub12_Sub1Array1135 = Class63
 							.method1055(Class4_Sub3.aJagexString_1895,
-									Client.aClass19_Sub1_1849, 124,
+									Game.aClass19_Sub1_1849, 124,
 									Class81.aJagexString_1689);
 				else
 					i++;
@@ -350,7 +352,7 @@ public class Class4_Sub14 extends RSFont {
 				else
 					Region.aClass4_Sub20_Sub12_Sub1_132 = Class2.method44(
 							24094, Class4_Sub3.aJagexString_1895,
-							RSFont.aJagexString_146, Client.aClass19_Sub1_1849);
+							RSFont.aJagexString_146, Game.aClass19_Sub1_1849);
 				if (i < 14) {
 					Class34.aJagexString_1762 = (Class4_Sub24
 							.method639(
@@ -394,7 +396,7 @@ public class Class4_Sub14 extends RSFont {
 					Region.anInt135 = 90;
 				} else {
 					Class34 class34 = new Class34(Class18.aClass19_Sub1_482,
-							Client.aClass19_Sub1_1849, 20, 0.8,
+							Game.aClass19_Sub1_1849, 20, 0.8,
 							Class59.aBoolean1189 ? 64 : 128);
 					Class4_Sub20_Sub12_Sub3.method539(class34);
 					Class4_Sub20_Sub12_Sub3.method553(0.8);

@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class4_Sub20_Sub7_Sub2 extends Class4_Sub20_Sub7 {
 	public static int anInt3322;
 	public static int[] anIntArray3300;

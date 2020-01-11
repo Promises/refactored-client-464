@@ -137,7 +137,7 @@ public class Class2 {
 				aJagexString_88 = null;
 			anInt86++;
 			if (RSInterface.aClass4_Sub13_2141 != null) {
-				Class67.method1088(RSInterface.aClass4_Sub13_2141, 0);
+				Class67.method1088(RSInterface.aClass4_Sub13_2141);
 				RSInterface.aClass4_Sub13_2141 = null;
 			}
 			Class12.anInt344++;

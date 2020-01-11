@@ -1,5 +1,8 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.util.Signlink;
+
 public class Class50 implements Runnable {
 	public static Class19 aClass19_1021;
 	public static JagexString aJagexString_1011;
@@ -84,7 +87,7 @@ public class Class50 implements Runnable {
 
 	public static void method996(int arg0) {
 		anInt1020++;
-		Class67.method1088(Class4_Sub20_Sub16.aClass4_Sub13_3179, 0);
+		Class67.method1088(Class4_Sub20_Sub16.aClass4_Sub13_3179);
 		Class4_Sub20_Sub7.anInt2947++;
 		if (!Class57.aBoolean1132 || !Class33.aBoolean711) {
 			if ((Class4_Sub20_Sub7.anInt2947 ^ 0xffffffff) < -2)

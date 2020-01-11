@@ -1,4 +1,6 @@
 package com.jagex.runescape;
+import com.jagex.runescape.net.StreamBuffer;
+
 import java.io.EOFException;
 import java.io.File;
 import java.io.IOException;
@@ -107,7 +109,7 @@ public class Class27 {
 			boolean arg3) {
 		try {
 			Class4_Sub6.aClass19_1930 = arg2;
-			Client.aClass19_1851 = arg1;
+			Game.aClass19_1851 = arg1;
 			if (arg0 != -1)
 				method852(-41, null, null, false);
 			StreamBuffer.aBoolean2066 = arg3;

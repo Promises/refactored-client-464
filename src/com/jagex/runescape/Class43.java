@@ -1,4 +1,6 @@
 package com.jagex.runescape;
+import com.jagex.runescape.util.Signlink;
+
 import java.awt.Component;
 
 public class Class43 {
@@ -44,7 +46,7 @@ public class Class43 {
 		aJagexString_889 = (JagexString.getRs2PreparedString(
 				"Bitte wenden Sie sich an den Kundendienst)3"));
 		aJagexString_871 = JagexString.getRs2PreparedString("Loaded textures");
-		RSApplet.mouseButtonPressed = 0;
+		GameShell.mouseButtonPressed = 0;
 		aLongArray881 = new long[32];
 		anIntArray885 = new int[500];
 		aJagexString_864 = aJagexString_871;
@@ -103,7 +105,7 @@ public class Class43 {
 		}
 	}
 
-	public static void method966(int arg0, RSApplet arg1) {
+	public static void method966(int arg0, GameShell arg1) {
 		anInt878++;
 		if ((Class62.anInt1227 ^ 0xffffffff) == -2) {
 			int i = 280;

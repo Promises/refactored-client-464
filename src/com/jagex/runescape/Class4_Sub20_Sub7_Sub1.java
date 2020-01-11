@@ -13,7 +13,7 @@ public abstract class Class4_Sub20_Sub7_Sub1 extends Class4_Sub20_Sub7 {
 	public static JagexString aJagexString_3294;
 	public static Class4_Sub20_Sub12_Sub1 aClass4_Sub20_Sub12_Sub1_3260;
 	public static Class4_Sub20_Sub12_Sub1 aClass4_Sub20_Sub12_Sub1_3288;
-	public static int anInt3249;
+	public static int runEnergy;
 	public static int anInt3252;
 	public static int anInt3254;
 	public static int anInt3255;
@@ -26,7 +26,7 @@ public abstract class Class4_Sub20_Sub7_Sub1 extends Class4_Sub20_Sub7 {
 	public static int[] anIntArray3268;
 	static {
 		aJagexString_3234 = aJagexString_3227;
-		anInt3249 = 0;
+		runEnergy = 0;
 		aJagexString_3238 = JagexString.getRs2PreparedString(
 				"Ihr Spielkonto wird bereits benutzt)3");
 		aJagexString_3285 = JagexString.getRs2PreparedString(")4slr)3ws?order=LPWM"
@@ -48,7 +48,7 @@ public abstract class Class4_Sub20_Sub7_Sub1 extends Class4_Sub20_Sub7 {
 					.method1075(18485))) {
 				if (class4_sub20_sub7_sub5.anInt3389 != Class82.anInt1711
 						|| ((Region.anInt134 ^ 0xffffffff) < (class4_sub20_sub7_sub5.anInt3424 ^ 0xffffffff)))
-					class4_sub20_sub7_sub5.method70(-315);
+					class4_sub20_sub7_sub5.clear();
 				else if ((Region.anInt134 ^ 0xffffffff) <= (class4_sub20_sub7_sub5.anInt3388 ^ 0xffffffff)) {
 					if ((class4_sub20_sub7_sub5.anInt3400 ^ 0xffffffff) < -1) {
 						Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = (Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[-1

@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class61 {
 	public static Class19 aClass19_1202;
 	public static Class19 aClass19_1218;
@@ -26,7 +28,7 @@ public class Class61 {
 				"Please wait 1 minute and try again)3");
 		aJagexString_1210 = aJagexString_1203;
 		anInt1201 = 1;
-		RSApplet.clickTime = 0L;
+		GameShell.clickTime = 0L;
 		aJagexString_1206 = JagexString.getRs2PreparedString("mapdots");
 		aJagexString_1220 = JagexString.getRs2PreparedString("compass");
 		aJagexString_1221 = aJagexString_1203;
@@ -192,8 +194,8 @@ public class Class61 {
 					int i_10_ = 0;
 					if ((Class62.anInt1227 ^ 0xffffffff) == -3)
 						i_10_ = 1;
-					long l = (-Class4_Sub20_Sub10.aLong3063 + RSApplet.clickTime) / 50L;
-					Class4_Sub20_Sub10.aLong3063 = RSApplet.clickTime;
+					long l = (-Class4_Sub20_Sub10.aLong3063 + GameShell.clickTime) / 50L;
+					Class4_Sub20_Sub10.aLong3063 = GameShell.clickTime;
 					if ((l ^ 0xffffffffffffffffL) < -4096L)
 						l = 4095L;
 					Class66.aClass4_Sub11_Sub1_1328.method264(99, arg0 + -74);
@@ -252,13 +254,13 @@ public class Class61 {
 						if (Class46.rsInterface != null) {
 							Class18.anInt475++;
 							if ((Class18.anInt475 ^ 0xffffffff) <= -16) {
-								Class67.method1088(Class46.rsInterface, 0);
+								Class67.method1088(Class46.rsInterface);
 								Class46.rsInterface = null;
 							}
 						}
 						if (RS2Font.aClass4_Sub13_2763 != null) {
 							Class67.method1088(
-									(RS2Font.aClass4_Sub13_2763), 0);
+									(RS2Font.aClass4_Sub13_2763));
 							if (5 + AppletListener.anInt1464 < Class37.anInt767
 									|| Class37.anInt767 < -5
 											+ AppletListener.anInt1464
@@ -441,26 +443,26 @@ public class Class61 {
 						Class13.method682((byte) 48);
 						if (class4_sub13 != Class32.aClass4_Sub13_698) {
 							if (class4_sub13 != null)
-								Class67.method1088(class4_sub13, 0);
+								Class67.method1088(class4_sub13);
 							if (Class32.aClass4_Sub13_698 != null)
-								Class67.method1088(Class32.aClass4_Sub13_698, 0);
+								Class67.method1088(Class32.aClass4_Sub13_698);
 						}
 						if ((class4_sub13_16_ != Class4_Sub20_Sub10.aClass4_Sub13_3064)
 								&& Class5.anInt196 == Class78.anInt1598) {
 							if (class4_sub13_16_ != null)
-								Class67.method1088(class4_sub13_16_, arg0 ^ 0x1);
+								Class67.method1088(class4_sub13_16_);
 							if (Class4_Sub20_Sub10.aClass4_Sub13_3064 != null)
 								Class67.method1088(
-										(Class4_Sub20_Sub10.aClass4_Sub13_3064),
-										0);
+										(Class4_Sub20_Sub10.aClass4_Sub13_3064)
+                                );
 						}
 						if (Class4_Sub20_Sub10.aClass4_Sub13_3064 != null) {
 							if (Class78.anInt1598 < Class5.anInt196) {
 								Class78.anInt1598++;
 								if ((Class5.anInt196 ^ 0xffffffff) == (Class78.anInt1598 ^ 0xffffffff))
 									Class67.method1088(
-											(Class4_Sub20_Sub10.aClass4_Sub13_3064),
-											arg0 ^ 0x1);
+											(Class4_Sub20_Sub10.aClass4_Sub13_3064)
+                                    );
 							}
 						} else if ((Class78.anInt1598 ^ 0xffffffff) < -1)
 							Class78.anInt1598--;

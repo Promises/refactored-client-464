@@ -175,7 +175,7 @@ public class Class47 {
 							|| (class4_sub7.anInt1950 ^ 0xffffffff) > -1
 							|| class4_sub7.anInt1953 >= 104
 							|| class4_sub7.anInt1950 >= 104)
-						class4_sub7.method70(-315);
+						class4_sub7.clear();
 				}
 				Class5.anInt175 = 0;
 				Class18.anInt477 = -1;

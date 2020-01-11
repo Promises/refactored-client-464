@@ -274,7 +274,7 @@ public class Class78 {
 					}
 					arg2.method234(i, arg1 + 62);
 					arg2.method258(-i + arg2.pointion, (byte) 50);
-					class4_sub6.method70(-315);
+					class4_sub6.clear();
 				}
 			}
 		} catch (RuntimeException runtimeexception) {

@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class81 {
 	public static JagexString aJagexString_1651;
 	public static JagexString aJagexString_1652;
@@ -126,7 +128,7 @@ public class Class81 {
 								class9.anInt279 = i_0_ & 0x7fff;
 								class9.aBoolean267 = (i_0_ & 0x8000 ^ 0xffffffff) != -1;
 								class9.aJagexString_264 = class4_sub11
-										.method212(127);
+										.method212();
 								class9.anInt265 = class4_sub11
 										.method238((byte) -80);
 								class9.anInt263 = i;
@@ -347,7 +349,7 @@ public class Class81 {
 			class4_sub4_sub1 = class4_sub9.method196(arg0);
 			if (class4_sub4_sub1 == null)
 				return null;
-			class4_sub9.method70(-315);
+			class4_sub9.clear();
 			aClass16_1697.method720(class4_sub4_sub1, l, false);
 			return class4_sub4_sub1;
 		} catch (RuntimeException runtimeexception) {

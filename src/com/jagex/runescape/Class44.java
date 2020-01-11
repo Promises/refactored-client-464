@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class44 {
 	public static int[] anIntArray907 = new int[500];
 	public static int[] anIntArray913;

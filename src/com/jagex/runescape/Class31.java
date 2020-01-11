@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class31 {
 	public static Class16 aClass16_671;
 	public static Class16 aClass16_677;

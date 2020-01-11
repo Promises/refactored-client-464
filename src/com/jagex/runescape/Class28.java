@@ -26,7 +26,7 @@ public class Class28 {
 			if (arg1.method744((byte) 127, JagexString.aJagexString_1824,
 					Class34.aJagexString_1767))
 				i++;
-			if (arg2.method744((byte) 126, RSApplet.aJagexString_25,
+			if (arg2.method744((byte) 126, GameShell.aJagexString_25,
 					Class34.aJagexString_1767))
 				i++;
 			if (arg2.method744((byte) 6, Class2.aJagexString_92,

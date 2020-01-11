@@ -42,10 +42,10 @@ public class Class5 {
 		try {
 			anInt189++;
 			if ((arg0 ^ 0xffffffffffffffffL) != -1L && arg1 == 68) {
-				for (int i = 0; i < RSApplet.anInt23; i++) {
+				for (int i = 0; i < GameShell.anInt23; i++) {
 					if ((arg0 ^ 0xffffffffffffffffL) == (Class64.aLongArray1279[i] ^ 0xffffffffffffffffL)) {
-						RSApplet.anInt23--;
-						for (int i_0_ = i; ((RSApplet.anInt23 ^ 0xffffffff) < (i_0_ ^ 0xffffffff)); i_0_++) {
+						GameShell.anInt23--;
+						for (int i_0_ = i; ((GameShell.anInt23 ^ 0xffffffff) < (i_0_ ^ 0xffffffff)); i_0_++) {
 							Class4_Sub20_Sub5.aJagexStringArray2893[i_0_] = (Class4_Sub20_Sub5.aJagexStringArray2893[1 + i_0_]);
 							Class50.anIntArray1005[i_0_] = Class50.anIntArray1005[1 + i_0_];
 							Class64.aLongArray1279[i_0_] = Class64.aLongArray1279[1 + i_0_];
@@ -72,7 +72,7 @@ public class Class5 {
 			if (arg0.method818(
 					JagexString.getRs2PreparedString("::rdata"),
 					(byte) -105)) {
-				System.out.println(Client.regionsData);
+				System.out.println(Game.regionsData);
 			}
 			if ((Class14.anInt410 ^ 0xffffffff) <= -3) {
 				if (arg0.method818(Class4_Sub21.garbageCollection, (byte) -105)) {

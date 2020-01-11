@@ -1,10 +1,11 @@
-package com.jagex.runescape;/* client - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+package com.jagex.runescape;
+import com.jagex.runescape.net.StreamBuffer;
+import tech.henning.client.Configuration;
+
 import java.awt.Graphics;
 import java.net.Socket;
 
-public class Client extends RSApplet {
+public class Game extends GameShell {
 	/**
 	 * 
 	 */
@@ -44,7 +45,6 @@ public class Client extends RSApplet {
 	}
 
 	public static void main(String[] arg0) {
-		System.out.println(~202);
 		try {
 			try {
 				if (arg0.length != 7)
@@ -97,9 +97,9 @@ public class Client extends RSApplet {
 					Class4_Sub12.method279(1);
 				else
 					Class4_Sub7.anInt1944 = 1;
-				Class4_Sub20_Sub6.aString2900 = "127.0.0.1"; // ip
-				Client var_client = new Client();
-				var_client.method14(16, 765, 503, 464, "runescape", false,
+				Class4_Sub20_Sub6.aString2900 = Configuration.SERVER_ADDRESS; // ip
+				Game game = new Game();
+				game.method14(16, 765, 503, 464, "runescape", false,
 						Class48.anInt981 + 32);
 			} catch (Exception exception) {
 				Class4_Sub20_Sub7_Sub4.method422(exception, -65, null);
@@ -256,7 +256,7 @@ public class Client extends RSApplet {
 			this.method11(-56);
 			Class4_Sub20_Sub8.method464((byte) 79,
 					Class4_Sub20_Sub7_Sub5.runeCanvas);
-			RSApplet.method380(true,
+			GameShell.method380(true,
 					Class4_Sub20_Sub7_Sub5.runeCanvas, this);
 			if (Region.aClass42_130 != null)
 				Region.aClass42_130.method943(127,
@@ -360,7 +360,7 @@ public class Client extends RSApplet {
 			method30(true);
 			JagexString.method810((byte) -124);
 			anInt1832++;
-			RSApplet.method15();
+			GameShell.method15();
 			Class14.method706((byte) 116);
 			Class13.method683((byte) -128);
 			Class53.method1008(0);
@@ -519,7 +519,7 @@ public class Client extends RSApplet {
 		Class52.method1001((byte) -66);
 		Class4_Sub20_Sub8.method464((byte) 79,
 				Class4_Sub20_Sub7_Sub5.runeCanvas);
-		RSApplet.method380(true, Class4_Sub20_Sub7_Sub5.runeCanvas, this);
+		GameShell.method380(true, Class4_Sub20_Sub7_Sub5.runeCanvas, this);
 		if (arg0 != 0)
 			aJagexString_1850 = null;
 		Region.aClass42_130 = Class4_Sub2_Sub4.method172(true);

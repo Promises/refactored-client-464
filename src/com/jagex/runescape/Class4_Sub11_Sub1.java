@@ -1,4 +1,6 @@
 package com.jagex.runescape;
+import com.jagex.runescape.net.StreamBuffer;
+
 import java.util.zip.CRC32;
 
 public class Class4_Sub11_Sub1 extends StreamBuffer {
@@ -54,8 +56,8 @@ public class Class4_Sub11_Sub1 extends StreamBuffer {
 		try {
 			anInt2690++;
 			if ((arg0 ^ 0xffffffffffffffffL) != -1L) {
-				if (((RSApplet.anInt23 ^ 0xffffffff) <= -101 && (RSFont.anInt162 ^ 0xffffffff) != -2)
-						|| RSApplet.anInt23 >= 200)
+				if (((GameShell.anInt23 ^ 0xffffffff) <= -101 && (RSFont.anInt162 ^ 0xffffffff) != -2)
+						|| GameShell.anInt23 >= 200)
 					Class43.method955(Class27.aJagexString_624,
 							Class4_Sub3.aJagexString_1895, (byte) 109, 0);
 				else {
@@ -63,7 +65,7 @@ public class Class4_Sub11_Sub1 extends StreamBuffer {
 						aJagexString_2693 = null;
 					JagexString jagexString = Class68.method1094(arg1 + 309, arg0)
 							.method839(80);
-					for (int i = 0; RSApplet.anInt23 > i; i++) {
+					for (int i = 0; GameShell.anInt23 > i; i++) {
 						if ((arg0 ^ 0xffffffffffffffffL) == (Class64.aLongArray1279[i] ^ 0xffffffffffffffffL)) {
 							Class43.method955(Class4_Sub24.method639(
 									(new JagexString[] {jagexString,
@@ -90,12 +92,12 @@ public class Class4_Sub11_Sub1 extends StreamBuffer {
 						Class43.method955(Class68.aJagexString_1383,
 								Class4_Sub3.aJagexString_1895, (byte) 112, 0);
 					else {
-						Class4_Sub20_Sub5.aJagexStringArray2893[(RSApplet.anInt23)] = jagexString;
+						Class4_Sub20_Sub5.aJagexStringArray2893[(GameShell.anInt23)] = jagexString;
 						Class19_Sub1.anInt2516++;
-						Class64.aLongArray1279[RSApplet.anInt23] = arg0;
-						Class50.anIntArray1005[RSApplet.anInt23] = 0;
-						Class34.anIntArray1743[RSApplet.anInt23] = 0;
-						RSApplet.anInt23++;
+						Class64.aLongArray1279[GameShell.anInt23] = arg0;
+						Class50.anIntArray1005[GameShell.anInt23] = 0;
+						Class34.anIntArray1743[GameShell.anInt23] = 0;
+						GameShell.anInt23++;
 						Class4_Sub20_Sub1.anInt2718 = Class4_Sub20_Sub10.anInt3053;
 						Class66.aClass4_Sub11_Sub1_1328.method264(197, -102);
 						Class66.aClass4_Sub11_Sub1_1328.method255(189354448,

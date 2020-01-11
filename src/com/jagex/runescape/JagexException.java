@@ -1,6 +1,4 @@
-package com.jagex.runescape;/* RuntimeException_Sub1 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+package com.jagex.runescape;
 import java.awt.Component;
 
 public class JagexException extends RuntimeException {
@@ -48,7 +46,7 @@ public class JagexException extends RuntimeException {
 				Class34.aClass4_Sub20_Sub12_Sub2_1760 = Class4_Sub20_Sub16.aClass4_Sub20_Sub12_Sub2_3177
 						.method524();
 				Class31.aClass4_Sub20_Sub12_Sub1_676 = Class2.method44(24094,
-						Class34.aJagexString_1767, RSApplet.aJagexString_25, arg0);
+						Class34.aJagexString_1767, GameShell.aJagexString_25, arg0);
 				Class24.aClass4_Sub20_Sub12_Sub1_549 = Class2.method44(24094,
 						Class34.aJagexString_1767, Class2.aJagexString_92, arg0);
 				Class4_Sub20_Sub7_Sub1.aClass4_Sub20_Sub12_Sub1_3260 = Class2
@@ -57,7 +55,7 @@ public class JagexException extends RuntimeException {
 				Class81.aClass4_Sub20_Sub12_Sub1Array1709 = Class63.method1055(
 						Class34.aJagexString_1767, arg0, 92,
 						Class4_Sub20_Sub17.aJagexString_3214);
-				RSApplet.aClass4_Sub20_Sub12_Sub1Array43 = Class63.method1055(
+				GameShell.aClass4_Sub20_Sub12_Sub1Array43 = Class63.method1055(
 						Class34.aJagexString_1767, arg0, 11,
 						Class4_Sub20_Sub7_Sub3.aJagexString_3337);
 				Class65.anIntArray1307 = new int[256];

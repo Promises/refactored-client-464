@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class4_Sub20_Sub14 extends Class4_Sub20 {
 	public static Class19_Sub1 aClass19_Sub1_3146;
 	public static JagexString aJagexString_3135 = JagexString.getRs2PreparedString(

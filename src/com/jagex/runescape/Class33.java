@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class33 {
 	public static boolean aBoolean711 = false;
 	public static Class4_Sub20_Sub12_Sub4_Sub1 aClass4_Sub20_Sub12_Sub4_Sub1_717;
@@ -238,7 +240,7 @@ public class Class33 {
 			anInt722 += ++anInt716;
 			anInt712++;
 			if (arg0 != true)
-				RSApplet.eventClickY = 58;
+				GameShell.eventClickY = 58;
 			for (int i = 0; i < 256; i++) {
 				int i_10_ = anIntArray709[i];
 				if ((0x2 & i ^ 0xffffffff) == -1) {

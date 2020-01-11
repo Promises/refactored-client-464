@@ -11,9 +11,9 @@ public class Class4_Sub2_Sub2 extends Class4_Sub2 {
 	}
 
 	public void method121(Class4_Sub5 arg0) {
-		arg0.method70(-315);
+		arg0.clear();
 		arg0.method178();
-		RSFont class4 = aClass65_2624.aClass4_1286.aClass4_149;
+		RSFont class4 = aClass65_2624.aClass4_1286.next;
 		if (class4 == aClass65_2624.aClass4_1286)
 			anInt2626 = -1;
 		else
@@ -21,15 +21,15 @@ public class Class4_Sub2_Sub2 extends Class4_Sub2 {
 	}
 
 	public synchronized void method122(Class4_Sub2 arg0) {
-		arg0.method70(-315);
+		arg0.clear();
 	}
 
 	public void method123(RSFont arg0, Class4_Sub5 arg1) {
-		for (/**/; (arg0 != aClass65_2624.aClass4_1286 && ((Class4_Sub5) arg0).anInt1914 <= arg1.anInt1914); arg0 = arg0.aClass4_149) {
+		for (/**/; (arg0 != aClass65_2624.aClass4_1286 && ((Class4_Sub5) arg0).anInt1914 <= arg1.anInt1914); arg0 = arg0.next) {
 			/* empty */
 		}
 		aClass65_2624.method1074(arg1, (byte) -62, arg0);
-		anInt2626 = ((Class4_Sub5) aClass65_2624.aClass4_1286.aClass4_149).anInt1914;
+		anInt2626 = ((Class4_Sub5) aClass65_2624.aClass4_1286.next).anInt1914;
 	}
 
 	public void method124() {
@@ -94,7 +94,7 @@ public class Class4_Sub2_Sub2 extends Class4_Sub2 {
 					method121(class4_sub5);
 				} else {
 					class4_sub5.anInt1914 = i_0_;
-					method123(class4_sub5.aClass4_149, class4_sub5);
+					method123(class4_sub5.next, class4_sub5);
 				}
 			}
 		} while (arg2 != 0);
@@ -131,7 +131,7 @@ public class Class4_Sub2_Sub2 extends Class4_Sub2 {
 					method121(class4_sub5);
 				} else {
 					class4_sub5.anInt1914 = i_1_;
-					method123(class4_sub5.aClass4_149, class4_sub5);
+					method123(class4_sub5.next, class4_sub5);
 				}
 			}
 		} while (arg0 != 0);

@@ -142,7 +142,7 @@ public class Class62 {
 			Class4_Sub20_Sub6.aClass19_Sub1_2911.method736(0);
 			Class54.aClass19_Sub1_1107.method736(0);
 			Class4_Sub24.aClass19_Sub1_2451.method736(0);
-			Client.aClass19_Sub1_1849.method736(0);
+			Game.aClass19_Sub1_1849.method736(0);
 			Class18.aClass19_Sub1_482.method736(0);
 			Class77.aClass19_Sub1_1589.method736(0);
 			Class24.aClass19_Sub1_562.method736(0);

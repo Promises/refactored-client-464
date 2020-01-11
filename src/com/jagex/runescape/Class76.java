@@ -1,4 +1,6 @@
 package com.jagex.runescape;
+import com.jagex.runescape.util.Signlink;
+
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -48,7 +50,7 @@ public class Class76 implements Runnable {
 						10145, -6882, 5027, 1457, 16565, -30545, 25486 },
 				new short[0], new short[0], new short[0] };
 		aJagexString_1561 = aJagexString_1566;
-		RSApplet.appletListener = new AppletListener();
+		GameShell.appletListener = new AppletListener();
 		anInt1580 = 0;
 		aJagexString_1579 = JagexString.getRs2PreparedString("blinken1:");
 		anInt1581 = 0;
@@ -61,7 +63,7 @@ public class Class76 implements Runnable {
 			anIntArray1565 = null;
 			aJagexString_1564 = null;
 			aShortArrayArray1576 = null;
-			RSApplet.appletListener = null;
+			GameShell.appletListener = null;
 			anIntArray1571 = null;
 			aJagexString_1563 = null;
 			aByteArrayArray1578 = null;
@@ -80,9 +82,9 @@ public class Class76 implements Runnable {
 
 	public static void method1182(int arg0) {
 		anInt1569++;
-		if (RSApplet.appletListener != null) {
-			synchronized (RSApplet.appletListener) {
-				RSApplet.appletListener = null;
+		if (GameShell.appletListener != null) {
+			synchronized (GameShell.appletListener) {
+				GameShell.appletListener = null;
 			}
 		}
 		if (arg0 >= -75)
@@ -132,7 +134,7 @@ public class Class76 implements Runnable {
 					.method725((byte) 117, arg1));
 			if (class4_sub1 != null) {
 				if (arg0 < 104)
-					RSApplet.appletListener = null;
+					GameShell.appletListener = null;
 				for (int i = 0; ((i ^ 0xffffffff) > (class4_sub1.anIntArray1866.length ^ 0xffffffff)); i++) {
 					class4_sub1.anIntArray1866[i] = -1;
 					class4_sub1.anIntArray1858[i] = 0;

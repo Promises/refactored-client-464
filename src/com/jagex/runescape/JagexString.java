@@ -5,37 +5,29 @@ import java.awt.Frame;
 import java.awt.Graphics;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 
 public class JagexString {
     public static Class<?> aClass1830;
-    public static JagexString aJagexString_1775;
-    public static JagexString aJagexString_1800;
+    public static JagexString aJagexString_1775 = getRs2PreparedString(
+            "No reply from loginserver)3");
     public static JagexString aJagexString_1801 = getRs2PreparedString("(U1");
-    public static JagexString aJagexString_1812;
-    public static JagexString aJagexString_1814;
-    public static JagexString aJagexString_1815;
-    public static JagexString aJagexString_1822;
-    public static JagexString aJagexString_1824;
-    public static Frame aFrame1786;
+    public static JagexString aJagexString_1814 = getRs2PreparedString(
+            "Starting game engine)3)3)3");
+    public static JagexString aJagexString_1815 = getRs2PreparedString(" )2> <col=ffffff>");
+    public static JagexString aJagexString_1822 = getRs2PreparedString("welle:");
+    public static JagexString aJagexString_1824 = getRs2PreparedString("title)3jpg");
+    public static Frame gameFrame;
     public static int[] anIntArray1798;
     public static int anInt1827 = 0;
-
-    static {
-        aJagexString_1800 = getRs2PreparedString(
-                "No reply from loginserver)3");
-        aJagexString_1812 = getRs2PreparedString("welle:");
-        aJagexString_1814 = getRs2PreparedString(
-                "Starting game engine)3)3)3");
-        aJagexString_1822 = aJagexString_1814;
-        aJagexString_1775 = aJagexString_1800;
-        aJagexString_1824 = getRs2PreparedString("title)3jpg");
-        aJagexString_1815 = getRs2PreparedString(" )2> <col=ffffff>");
-    }
+    public boolean aBoolean1774 = true;
+    public byte[] aByteArray1803;
+    public int anInt1788;
+    public int anInt1805;
 
     public static void method810(byte arg0) {
         try {
-            aJagexString_1800 = null;
-            aFrame1786 = null;
+            gameFrame = null;
             aJagexString_1822 = null;
             if (arg0 >= -98) {
                 aJagexString_1824 = null;
@@ -45,7 +37,6 @@ public class JagexString {
             aJagexString_1824 = null;
             aJagexString_1815 = null;
             aJagexString_1775 = null;
-            aJagexString_1812 = null;
             aJagexString_1801 = null;
         } catch (RuntimeException runtimeexception) {
             throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "he.Q("
@@ -160,7 +151,7 @@ public class JagexString {
             if (arg1 == null) {
                 return false;
             }
-            for (int i = 0; RSApplet.anInt23 > i; i++) {
+            for (int i = 0; GameShell.anInt23 > i; i++) {
                 if (arg1.method818(Class4_Sub20_Sub5.aJagexStringArray2893[i],
                         (byte) -105)) {
                     return true;
@@ -208,13 +199,6 @@ public class JagexString {
         }
     }
 
-    public boolean aBoolean1774 = true;
-
-    public byte[] aByteArray1803;
-
-    public int anInt1788;
-
-    public int anInt1805;
 
     public JagexString() {
 
@@ -665,15 +649,7 @@ public class JagexString {
 
     public void method817(int arg0, byte arg1, int arg2, Graphics arg3) {
         try {
-            String string;
-            try {
-                string = new String(aByteArray1803, 0, anInt1805, "ISO-8859-1");
-                if (arg1 > -96) {
-                    aJagexString_1800 = null;
-                }
-            } catch (java.io.UnsupportedEncodingException unsupportedencodingexception) {
-                string = new String(aByteArray1803, 0, anInt1805);
-            }
+            String string = new String(aByteArray1803, 0, anInt1805, StandardCharsets.ISO_8859_1);
             arg3.drawString(string, arg0, arg2);
         } catch (RuntimeException runtimeexception) {
             throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("he.G("

@@ -1,4 +1,6 @@
 package com.jagex.runescape;
+import com.jagex.runescape.net.StreamBuffer;
+
 import java.awt.Image;
 
 public class Class66 {
@@ -99,7 +101,7 @@ public class Class66 {
 				int i_1_ = class4_sub11.method209((byte) -104);
 				if ((i_1_ ^ 0xffffffff) == -4)
 					class4_sub20_sub16.aJagexStringArray3178[i] = class4_sub11
-							.method212(74);
+							.method212();
 				else if (i_1_ < 100 && i_1_ != 21 && i_1_ != 38 && i_1_ != 39)
 					class4_sub20_sub16.anIntArray3171[i] = class4_sub11
 							.method219((byte) 73);
@@ -151,7 +153,7 @@ public class Class66 {
 					method1081(75, -61L);
 				if (class4_sub20 == null)
 					break;
-				class4_sub20.method70(-315);
+				class4_sub20.clear();
 				class4_sub20.method320(-1);
 				anInt1333++;
 			} catch (RuntimeException runtimeexception) {
@@ -167,11 +169,11 @@ public class Class66 {
 			if (arg0 == true) {
 				if ((anInt1333 ^ 0xffffffff) == -1) {
 					Class4_Sub20 class4_sub20 = aClass1_1332.method40(118);
-					class4_sub20.method70(-315);
+					class4_sub20.clear();
 					class4_sub20.method320(-1);
 					if (aClass4_Sub20_1321 == class4_sub20) {
 						class4_sub20 = aClass1_1332.method40(-101);
-						class4_sub20.method70(-315);
+						class4_sub20.clear();
 						class4_sub20.method320(-1);
 					}
 				} else
@@ -209,7 +211,7 @@ public class Class66 {
 				Class4_Sub20 class4_sub20 = aClass1_1332.method40(-88);
 				if (class4_sub20 == null)
 					break;
-				class4_sub20.method70(-315);
+				class4_sub20.clear();
 				class4_sub20.method320(-1);
 			}
 			if (arg0 != 0)

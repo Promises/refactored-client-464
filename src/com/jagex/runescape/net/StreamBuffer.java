@@ -1,13 +1,12 @@
-package com.jagex.runescape;/* Class4_Sub11 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+package com.jagex.runescape.net;
+import com.jagex.runescape.*;
+
 import java.math.BigInteger;
 import java.util.zip.CRC32;
 
 public class StreamBuffer extends RSFont {
 	public static boolean aBoolean2066 = false;
-	public static JagexString aJagexString_2101 = JagexString.getRs2PreparedString(":"
-	);
+	public static JagexString aJagexString_2101 = JagexString.getRs2PreparedString(":");
 	public static JagexString aJagexString_2115;
 	public static Class64 aClass64_2096;
 	public static Class65 aClass65_2073;
@@ -77,7 +76,7 @@ public class StreamBuffer extends RSFont {
 	}
 
 	public static boolean method206(Class19 arg0, int arg1, Class19 arg2,
-			Class4_Sub2_Sub1 arg3, Class19 arg4) {
+									Class4_Sub2_Sub1 arg3, Class19 arg4) {
 		try {
 			Class1.aClass4_Sub2_Sub1_64 = arg3;
 			Class4_Sub7.aClass19_1956 = arg0;
@@ -557,7 +556,7 @@ public class StreamBuffer extends RSFont {
 					Class57.anInt1142 = i_3_;
 					Class43.anInt887 = i_1_;
 					Class4_Sub20_Sub1.anInt2734 = 1;
-					Class67.method1088(class4_sub13, 0);
+					Class67.method1088(class4_sub13);
 					Class62.aJagexString_1239 = Class4_Sub24
 							.method639(
 									(new JagexString[] {
@@ -934,7 +933,7 @@ public class StreamBuffer extends RSFont {
 						Class78.method1195(i_1_, i_3_, false);
 						RSInterface.aClass4_Sub13_2141 = Class54.method1012(
 								i_3_, -1, i_1_);
-						Class67.method1088(RSInterface.aClass4_Sub13_2141, 0);
+						Class67.method1088(RSInterface.aClass4_Sub13_2141);
 					}
 					if ((i ^ 0xffffffff) == -50) {
 						Class4_Sub20_Sub8.anInt3004++;
@@ -1340,14 +1339,14 @@ public class StreamBuffer extends RSFont {
 					if ((Class4_Sub20_Sub1.anInt2734 ^ 0xffffffff) != -1) {
 						Class4_Sub20_Sub1.anInt2734 = 0;
 						Class67.method1088(
-								Class4_Sub20.method322(true, Class57.anInt1142),
-								0);
+								Class4_Sub20.method322(true, Class57.anInt1142)
+                        );
 					}
 					if (Class4_Sub23.aBoolean2421)
 						Class4_Sub20_Sub7_Sub5.method432(false);
 					if (Class46.rsInterface != null
 							&& (Class18.anInt475 ^ 0xffffffff) == -1)
-						Class67.method1088(Class46.rsInterface, 0);
+						Class67.method1088(Class46.rsInterface);
 				}
 			}
 		}
@@ -1756,33 +1755,31 @@ public class StreamBuffer extends RSFont {
 
 	public void method211(int arg0, int arg1) {
 		try {
-			byteBuffer[pointion++] = (byte) (arg0 >> -760978392);
+			byteBuffer[pointion++] = (byte) (arg0 >> 8);
 			anInt2069++;
 			byteBuffer[pointion++] = (byte) arg0;
-			byteBuffer[pointion++] = (byte) (arg0 >> -1387540232);
+			byteBuffer[pointion++] = (byte) (arg0 >> 24);
 			if (arg1 != -1387540232)
 				aClass64_2096 = null;
-			byteBuffer[pointion++] = (byte) (arg0 >> 1641445456);
+			byteBuffer[pointion++] = (byte) (arg0 >> 16);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.GC("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
 
-	public JagexString method212(int arg0) {
+	public JagexString method212() {
 		try {
 			int i = pointion;
-			if (arg0 < 70)
-				aBoolean2066 = false;
 			anInt2100++;
-			while ((byteBuffer[pointion++] ^ 0xffffffff) != -1) {
+			while (byteBuffer[pointion++] != 0) {
 				/* empty */
 			}
 			return Class61.method1046(-1 + -i + pointion, (byte) 73, i,
 					byteBuffer);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.VA("
-					+ arg0 + ')');
+					+ 70 + ')');
 		}
 	}
 
@@ -1939,7 +1936,7 @@ public class StreamBuffer extends RSFont {
 				pointion++;
 				return null;
 			}
-			return method212(arg0);
+			return method212();
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.U("
 					+ arg0 + ')');

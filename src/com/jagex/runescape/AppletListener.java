@@ -1,6 +1,7 @@
-package com.jagex.runescape;/* Class70 - Decompiled by JODE
- * Visit http://jode.sourceforge.net/
- */
+package com.jagex.runescape;
+
+import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.util.Signlink;
 
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
@@ -40,15 +41,15 @@ public class AppletListener implements
 
     public static void method1149() {
         try {
-            synchronized (RSApplet.appletListener) {
-                Class4_Sub20_Sub7_Sub1_Sub1.anInt3587 = RSApplet.mouseButtonPressed;
-                Class37.anInt767 = RSApplet.mouseX;
-                Class4_Sub1.anInt1859 = RSApplet.mouseY;
-                Class62.anInt1227 = RSApplet.eventMouseButtonPressed;
-                Class37.anInt758 = RSApplet.eventClickX;
-                JagexException.anInt1729 = RSApplet.eventClickY;
-                RSApplet.clickTime = RSApplet.lastClick;
-                RSApplet.eventMouseButtonPressed = 0;
+            synchronized (GameShell.appletListener) {
+                Class4_Sub20_Sub7_Sub1_Sub1.anInt3587 = GameShell.mouseButtonPressed;
+                Class37.anInt767 = GameShell.mouseX;
+                Class4_Sub1.anInt1859 = GameShell.mouseY;
+                Class62.anInt1227 = GameShell.eventMouseButtonPressed;
+                Class37.anInt758 = GameShell.eventClickX;
+                JagexException.anInt1729 = GameShell.eventClickY;
+                GameShell.clickTime = GameShell.lastClick;
+                GameShell.eventMouseButtonPressed = 0;
             }
             anInt1449++;
         } catch (RuntimeException runtimeexception) {
@@ -113,14 +114,14 @@ public class AppletListener implements
                             if ((i_0_ ^ 0xffffffff) == -4
                                     || (i_0_ ^ 0xffffffff) == -5) {
                                 String string = new String(arg3.method212(
-                                        arg2 ^ 0x7f).method836(-10650));
+                                ).method836(-10650));
                                 String string_1_ = new String(arg3.method212(
-                                        arg2 + 71).method836(-10650));
+                                ).method836(-10650));
                                 int i_2_ = arg3.get();
                                 String[] strings = new String[i_2_];
                                 for (int i_3_ = 0; (i_3_ ^ 0xffffffff) > (i_2_ ^ 0xffffffff); i_3_++)
                                     strings[i_3_] = new String(arg3.method212(
-                                            102).method836(arg2 + -10670));
+                                    ).method836(arg2 + -10670));
                                 byte[][] is = new byte[i_2_][];
                                 if (i_0_ == 3) {
                                     for (int i_4_ = 0; i_4_ < i_2_; i_4_++) {
@@ -143,8 +144,8 @@ public class AppletListener implements
                             }
                         } else {
                             String string = new String(arg3
-                                    .method212(arg2 + 61).method836(-10650));
-                            String string_7_ = new String(arg3.method212(126)
+                                    .method212().method836(-10650));
+                            String string_7_ = new String(arg3.method212()
                                     .method836(arg2 + -10670));
                             int i_8_ = 0;
                             if ((i_0_ ^ 0xffffffff) == -2)
@@ -191,8 +192,8 @@ public class AppletListener implements
     @Override
     public synchronized void focusLost(FocusEvent arg0) {
         try {
-            if (RSApplet.appletListener != null)
-                RSApplet.mouseButtonPressed = 0;
+            if (GameShell.appletListener != null)
+                GameShell.mouseButtonPressed = 0;
             anInt1466++;
         } catch (RuntimeException runtimeexception) {
             throw Class4_Sub20_Sub7_Sub4

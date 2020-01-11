@@ -1,5 +1,7 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.net.StreamBuffer;
+
 public class Class4_Sub20_Sub3 extends Class4_Sub20 {
 	public static JagexString aJagexString_2794;
 	public static JagexString aJagexString_2795 = JagexString.getRs2PreparedString(
@@ -267,7 +269,7 @@ public class Class4_Sub20_Sub3 extends Class4_Sub20 {
 							anInt2793 = arg0.method209((byte) -101);
 							anInt2796 = arg0.method209((byte) -107);
 						} else if (arg1 >= 30 && arg1 < 35) {
-							aJagexStringArray2790[-30 + arg1] = arg0.method212(116);
+							aJagexStringArray2790[-30 + arg1] = arg0.method212();
 							if (aJagexStringArray2790[arg1 - 30].method818(
 									Class28.aJagexString_638, (byte) -105))
 								aJagexStringArray2790[arg1 - 30] = null;
@@ -343,7 +345,7 @@ public class Class4_Sub20_Sub3 extends Class4_Sub20 {
 				} else
 					anInt2801 = arg0.method209((byte) -113);
 			} else
-				aJagexString_2812 = arg0.method212(110);
+				aJagexString_2812 = arg0.method212();
 			anInt2819++;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ba.H("

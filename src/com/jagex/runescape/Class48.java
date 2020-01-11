@@ -84,7 +84,7 @@ public class Class48 {
 							return;
 						}
 					}
-					for (int i = 0; RSApplet.anInt23 > i; i++) {
+					for (int i = 0; GameShell.anInt23 > i; i++) {
 						if (arg0 == Class64.aLongArray1279[i]) {
 							Class43.method955(
 									Class4_Sub24
