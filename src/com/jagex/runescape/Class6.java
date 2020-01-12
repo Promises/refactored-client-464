@@ -106,8 +106,7 @@ public class Class6 {
 		try {
 			anInt218++;
 			try {
-				Graphics graphics = Class4_Sub20_Sub7_Sub5.runeCanvas
-						.getGraphics();
+				Graphics graphics = Class4_Sub20_Sub7_Sub5.runeCanvas.getGraphics();
 				if (Class4_Sub20_Sub11.aFont3087 == null) {
 					Class4_Sub20_Sub11.aFont3087 = new Font("Helvetica", 1, 13);
 					Class7.aFontMetrics230 = Class4_Sub20_Sub7_Sub5.runeCanvas
@@ -116,8 +115,8 @@ public class Class6 {
 				if (Class4_Sub20_Sub4.aBoolean2849) {
 					Class4_Sub20_Sub4.aBoolean2849 = false;
 					graphics.setColor(Color.black);
-					graphics.fillRect(0, 0, Class58.anInt1160,
-							Class57.anInt1138);
+					graphics.fillRect(0, 0, GameShell.width,
+							GameShell.height);
 				}
 				if (arg1 == null)
 					arg1 = new Color(140, 17, 17);
@@ -140,12 +139,12 @@ public class Class6 {
 								(-arg0.method822(59, Class7.aFontMetrics230) + 304) / 2,
 								(byte) -100, 22, graphics_1_);
 						graphics.drawImage(Class66.anImage1326,
-								Class58.anInt1160 / 2 + -152, Class57.anInt1138
+								GameShell.width / 2 + -152, GameShell.height
 										/ 2 + -18, null);
 					}
 				} catch (Exception exception) {
-					int i = -152 + Class58.anInt1160 / 2;
-					int i_2_ = Class57.anInt1138 / 2 - 18;
+					int i = -152 + GameShell.width / 2;
+					int i_2_ = GameShell.height / 2 - 18;
 					graphics.setColor(arg1);
 					graphics.drawRect(i, i_2_, 303, 33);
 					graphics.fillRect(i + 2, i_2_ - -2, 3 * arg3, 30);

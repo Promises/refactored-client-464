@@ -5,7 +5,7 @@ import com.jagex.runescape.util.Signlink;
 import java.util.zip.Inflater;
 
 public class Class77 {
-	public static boolean aBoolean1590;
+	public static boolean members;
 	public static Class19_Sub1 aClass19_Sub1_1589;
 	public static Signlink aClass75_1597;
 	public static int anInt1583;
@@ -21,7 +21,7 @@ public class Class77 {
 	public static int[][] anIntArrayArray1592 = new int[104][104];
 	static {
 		anIntArray1585 = new int[100];
-		aBoolean1590 = false;
+		members = false;
 		anInt1591 = 0;
 		anInt1588 = 0;
 		anInt1583 = 0;

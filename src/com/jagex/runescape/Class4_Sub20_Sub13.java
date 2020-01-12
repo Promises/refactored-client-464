@@ -108,7 +108,7 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 								i_6_);
 						int i_7_ = is[i_2_++];
 						if (i_7_ != -1
-								&& (!(Class4_Sub23.method633(i_7_, (byte) -106).aBoolean3002) || Class77.aBoolean1590)) {
+								&& (!(Class4_Sub23.method633(i_7_, (byte) -106).aBoolean3002) || Class77.members)) {
 							for (int i_8_ = 0; i_8_ < class4_sub13.items.length; i_8_++) {
 								if (class4_sub13.items[i_8_] == 1 + i_7_)
 									i_5_ += class4_sub13.itemAmounts[i_8_];
@@ -138,7 +138,7 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 						int i_11_ = is[i_2_++];
 						if ((i_11_ ^ 0xffffffff) != 0
 								&& (!(Class4_Sub23
-										.method633(i_11_, (byte) -127).aBoolean3002) || Class77.aBoolean1590)) {
+										.method633(i_11_, (byte) -127).aBoolean3002) || Class77.members)) {
 							for (int i_12_ = 0; i_12_ < class4_sub13.items.length; i_12_++) {
 								if (class4_sub13.items[i_12_] == 1 + i_11_) {
 									i_5_ = 999999999;

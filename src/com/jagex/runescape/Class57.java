@@ -17,8 +17,7 @@ public class Class57 {
 	public static int anInt1133;
 	public static int anInt1134;
 	public static int anInt1136;
-	public static int anInt1138;
-	public static int anInt1141;
+    public static int anInt1141;
 	public static int anInt1142;
 	public static int anInt1145;
 	public static int anInt1146;

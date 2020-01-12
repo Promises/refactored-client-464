@@ -153,7 +153,7 @@ public class Class43 {
 			}
 			if ((Class64.anInt1277 ^ 0xffffffff) != 0) {
 				Class9 class9 = (Player.aClass9Array3579[Class64.anInt1277]);
-				if (!Class77.aBoolean1590 != class9.aBoolean267) {
+				if (!Class77.members != class9.aBoolean267) {
 					byte[] is = Class4_Sub24.method639(
 							new JagexString[] { class9.aJagexString_264,
 									StringUtilities.aJagexString_1759}, -842).method836(
@@ -192,12 +192,11 @@ public class Class43 {
 										Class74.method1168(-38,
 												RSInterface.anInt2186) }),
 								-842));
-				try {
-					arg1.getAppletContext().showDocument(
-							jagexString.method814((byte) -84), "_self");
-				} catch (Exception exception) {
-					/* empty */
-				}
+//				try {
+//					arg1.getAppletContext().showDocument(jagexString.method814((byte) -84), "_self");
+//				} catch (Exception exception) {
+//					/* empty */
+//				}
 			}
 		}
 		if (arg0 != 14) {

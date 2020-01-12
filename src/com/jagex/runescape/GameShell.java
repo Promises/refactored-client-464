@@ -1,15 +1,13 @@
 package com.jagex.runescape;
 
 import com.jagex.runescape.util.Signlink;
+import tech.henning.client.Configuration;
 
-import java.applet.Applet;
-import java.applet.AppletContext;
 import java.awt.*;
 import java.awt.event.*;
 import java.lang.reflect.Method;
-import java.net.URL;
 
-public abstract class GameShell extends Applet implements Runnable,
+public abstract class GameShell extends Canvas implements Runnable,
         FocusListener, WindowListener, MouseListener, MouseMotionListener {
     /**
      *
@@ -39,9 +37,14 @@ public abstract class GameShell extends Applet implements Runnable,
     public static int eventMouseButtonPressed;
     public static int mouseButtonPressed = 0;
     public static int idleTime = 0;
+    public static GameFrame gameFrame;
+    public static int height;
+    public static int width;
     public boolean mouseWheelDown;
     public int mouseWheelX;
     public int mouseWheelY;
+    public int extraWidth;
+    public int extraHeight;
 
 
     public static void method15() {
@@ -96,7 +99,6 @@ public abstract class GameShell extends Applet implements Runnable,
     public boolean aBoolean19 = false;
 
 
-    @Override
     public void destroy() {
         try {
             if (this == Class4_Sub22.anApplet_Sub1_2401 && !Class27.aBoolean616) {
@@ -134,87 +136,80 @@ public abstract class GameShell extends Applet implements Runnable,
         }
     }
 
-    public AppletContext getAppletContext() {
-        try {
-            if (JagexString.gameFrame != null)
-                return null;
-            if (Class43.aClass75_872 != null
-                    && Class43.aClass75_872.applet != this)
-                return Class43.aClass75_872.applet.getAppletContext();
-            return super.getAppletContext();
-        } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
-                    ("we.getAppletContext(" + ')'));
-        }
-    }
+//    public AppletContext getAppletContext() {
+//        try {
+//            if (gameFrame != null)
+//                return null;
+//            if (Class43.aClass75_872 != null
+//                    && Class43.aClass75_872.gameShell != this)
+//                return Class43.aClass75_872.gameShell.getAppletContext();
+//            return super.getAppletContext();
+//        } catch (RuntimeException runtimeexception) {
+//            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+//                    ("we.getAppletContext(" + ')'));
+//        }
+//    }
 
-    public URL getCodeBase() {
-        try {
-            if (JagexString.gameFrame != null)
-                return null;
-            if (Class43.aClass75_872 != null
-                    && Class43.aClass75_872.applet != this)
-                return Class43.aClass75_872.applet.getCodeBase();
-            return super.getCodeBase();
-        } catch (RuntimeException runtimeexception) {
-            throw runtimeexception;
-        }
-    }
+//    public URL getCodeBase() {
+//        try {
+//            if (gameFrame != null)
+//                return null;
+//            if (Class43.aClass75_872 != null
+//                    && Class43.aClass75_872.gameShell != this)
+//                return Class43.aClass75_872.gameShell.getCodeBase();
+//            return super.getCodeBase();
+//        } catch (RuntimeException runtimeexception) {
+//            throw runtimeexception;
+//        }
+//    }
+//
+//    public URL getDocumentBase() {
+//        try {
+//            if (gameFrame != null)
+//                return null;
+//            if (Class43.aClass75_872 != null
+//                    && this != Class43.aClass75_872.gameShell)
+//                return Class43.aClass75_872.gameShell.getDocumentBase();
+//            return super.getDocumentBase();
+//        } catch (RuntimeException runtimeexception) {
+//            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+//                    ("we.getDocumentBase(" + ')'));
+//        }
+//    }
+//
+//    public String getParameter(String arg0) {
+//        try {
+//            if (gameFrame != null)
+//                return null;
+//            if (Class43.aClass75_872 != null
+//                    && Class43.aClass75_872.gameShell != this)
+//                return Class43.aClass75_872.gameShell.getParameter(arg0);
+//            return super.getParameter(arg0);
+//        } catch (RuntimeException runtimeexception) {
+//            throw Class4_Sub20_Sub7_Sub4
+//                    .method423(runtimeexception, ("we.getParameter("
+//                            + (arg0 != null ? "{...}" : "null") + ')'));
+//        }
+//    }
 
-    public URL getDocumentBase() {
-        try {
-            if (JagexString.gameFrame != null)
-                return null;
-            if (Class43.aClass75_872 != null
-                    && this != Class43.aClass75_872.applet)
-                return Class43.aClass75_872.applet.getDocumentBase();
-            return super.getDocumentBase();
-        } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
-                    ("we.getDocumentBase(" + ')'));
-        }
-    }
-
-    public String getParameter(String arg0) {
-        try {
-            if (JagexString.gameFrame != null)
-                return null;
-            if (Class43.aClass75_872 != null
-                    && Class43.aClass75_872.applet != this)
-                return Class43.aClass75_872.applet.getParameter(arg0);
-            return super.getParameter(arg0);
-        } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4
-                    .method423(runtimeexception, ("we.getParameter("
-                            + (arg0 != null ? "{...}" : "null") + ')'));
-        }
-    }
-
-    public abstract void init();
 
     public synchronized void method11(int arg0) {
         try {
-            Container container;
-            if (JagexString.gameFrame == null)
-                container = Class43.aClass75_872.applet;
-            else
-                container = JagexString.gameFrame;
+
+            Container container = gameFrame;
             if (Class4_Sub20_Sub7_Sub5.runeCanvas != null) {
                 Class4_Sub20_Sub7_Sub5.runeCanvas.removeFocusListener(this);
                 container.remove(Class4_Sub20_Sub7_Sub5.runeCanvas);
             }
             Class4_Sub20_Sub7_Sub5.runeCanvas = new RSCanvas(this);
             container.add(Class4_Sub20_Sub7_Sub5.runeCanvas);
-            Class4_Sub20_Sub7_Sub5.runeCanvas.setSize(Class58.anInt1160,
-                    Class57.anInt1138);
+            Class4_Sub20_Sub7_Sub5.runeCanvas.setSize(width,
+                    height);
             Class4_Sub20_Sub7_Sub5.runeCanvas.setVisible(true);
-            if (JagexString.gameFrame == null)
+            if (gameFrame == null) {
                 Class4_Sub20_Sub7_Sub5.runeCanvas.setLocation(0, 0);
-            else {
-                Insets insets = JagexString.gameFrame.getInsets();
-                Class4_Sub20_Sub7_Sub5.runeCanvas.setLocation(insets.left,
-                        insets.top);
             }
+
             Class4_Sub20_Sub7_Sub5.runeCanvas.addFocusListener(this);
             Class4_Sub20_Sub7_Sub5.runeCanvas.requestFocus();
             Class4_Sub20_Sub4.aBoolean2849 = true;
@@ -229,8 +224,9 @@ public abstract class GameShell extends Applet implements Runnable,
     public void method12(byte arg0) {
         try {
             long l = Class52.method1002((byte) -42);
-            if (arg0 < 6)
+            if (arg0 < 6) {
                 anInt23 = -110;
+            }
             long l_0_ = Class32.aLongArray699[Class41.anInt837];
             Class32.aLongArray699[Class41.anInt837] = l;
             if (l_0_ != 0L && l > l_0_) {
@@ -241,15 +237,16 @@ public abstract class GameShell extends Applet implements Runnable,
             if (Class27.anInt625++ > 50) {
                 Class4_Sub20_Sub4.aBoolean2849 = true;
                 Class27.anInt625 -= 50;
-                Class4_Sub20_Sub7_Sub5.runeCanvas.setSize(Class58.anInt1160,
-                        Class57.anInt1138);
+                Class4_Sub20_Sub7_Sub5.runeCanvas.setSize(width,
+                        height);
                 Class4_Sub20_Sub7_Sub5.runeCanvas.setVisible(true);
-                if (JagexString.gameFrame != null) {
-                    Insets insets = JagexString.gameFrame.getInsets();
-                    Class4_Sub20_Sub7_Sub5.runeCanvas.setLocation(insets.left,
-                            insets.top);
-                } else
+                if (gameFrame != null) {
+//                    Insets insets = gameFrame.getInsets();
+//                    Class4_Sub20_Sub7_Sub5.runeCanvas.setLocation(insets.left,
+//                            insets.top);
+                } else {
                     Class4_Sub20_Sub7_Sub5.runeCanvas.setLocation(0, 0);
+                }
             }
             method13((byte) -103);
         } catch (RuntimeException runtimeexception) {
@@ -260,32 +257,24 @@ public abstract class GameShell extends Applet implements Runnable,
 
     public abstract void method13(byte i);
 
-    public void method14(int arg0, int arg1, int arg2, int arg3, String arg4,
-                         boolean arg5, int arg6) {
+    public void initializeApplication(int arg0, int width, int height, int revision, String arg4,
+                                      boolean arg5, int arg6) {
         try {
             try {
-                Class4_Sub20_Sub7_Sub3.anInt3347 = arg3;
-                Class57.anInt1138 = arg2;
+                Class4_Sub20_Sub7_Sub3.revision = revision;
+                GameShell.height = height;
+                GameShell.width = width;
                 Class4_Sub22.anApplet_Sub1_2401 = this;
-                Class58.anInt1160 = arg1;
-                JagexString.gameFrame = new Frame();
-                JagexString.gameFrame.setTitle("Jagex");
-                JagexString.gameFrame.setResizable(arg5);
-                JagexString.gameFrame.addWindowListener(this);
-                JagexString.gameFrame.setVisible(true);
-                JagexString.gameFrame.toFront();
-                Insets insets = JagexString.gameFrame.getInsets();
-                JagexString.gameFrame.setSize(insets.left + (arg1 + insets.right),
-                        insets.bottom + (arg2 - -insets.top));
-                Class77.aClass75_1597 = Class43.aClass75_872 = new Signlink(
-                        true, null, arg4, arg0);
+                gameFrame = new GameFrame(this, width, height);
+
+                Class77.aClass75_1597 = Class43.aClass75_872 = new Signlink(true, null, arg4, arg0);
                 Class43.aClass75_872.method1172(this, 1, 66);
             } catch (Exception exception) {
                 Class4_Sub20_Sub7_Sub4.method422(exception, -77, null);
             }
         } catch (RuntimeException runtimeexception) {
             throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("we.I("
-                    + arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ','
+                    + arg0 + ',' + width + ',' + height + ',' + revision + ','
                     + (arg4 != null ? "{...}" : "null") + ',' + arg5 + ','
                     + arg6 + ')'));
         }
@@ -310,7 +299,7 @@ public abstract class GameShell extends Applet implements Runnable,
                 } catch (Exception exception) {
                     /* empty */
                 }
-                if (JagexString.gameFrame != null) {
+                if (gameFrame != null) {
                     try {
                         System.exit(0);
                     } catch (Throwable throwable) {
@@ -337,13 +326,11 @@ public abstract class GameShell extends Applet implements Runnable,
             if (!aBoolean19) {
                 aBoolean19 = true;
                 System.out.println("error_game_" + arg1);
-                try {
-                    getAppletContext().showDocument(
-                            new URL(getCodeBase(),
-                                    ("error_game_" + arg1 + ".ws")), "_self");
-                } catch (Exception exception) {
-                    /* empty */
-                }
+//                try {
+//                    getAppletContext().showDocument(new URL(getCodeBase(), ("error_game_" + arg1 + ".ws")), "_self");
+//                } catch (Exception exception) {
+//                    /* empty */
+//                }
             }
         } catch (RuntimeException runtimeexception) {
             throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("we.F("
@@ -356,8 +343,9 @@ public abstract class GameShell extends Applet implements Runnable,
     public void method22(byte arg0) {
         try {
             long l = Class52.method1002((byte) -42);
-            if (arg0 < 25)
+            if (arg0 < 25) {
                 anInt6 = 88;
+            }
             long l_2_ = Class43.aLongArray881[Class4_Sub1.anInt1865];
             if (l_2_ != 0L && l_2_ < l) {
                 /* empty */
@@ -379,19 +367,20 @@ public abstract class GameShell extends Applet implements Runnable,
             try {
                 if (Class4_Sub22.anApplet_Sub1_2401 != null) {
                     Class4_Sub20_Sub10.anInt3066++;
-                    if (Class4_Sub20_Sub10.anInt3066 >= 3)
+                    if (Class4_Sub20_Sub10.anInt3066 >= 3) {
                         method19((byte) 100, "alreadyloaded");
-                    else
-                        getAppletContext().showDocument(getDocumentBase(),
-                                "_self");
+                    } else {
+//                        getAppletContext().showDocument(getDocumentBase(),
+//                                "_self");
+                    }
                 } else {
                     Class4_Sub22.anApplet_Sub1_2401 = this;
-                    Class57.anInt1138 = arg1;
-                    Class4_Sub20_Sub7_Sub3.anInt3347 = arg0;
-                    Class58.anInt1160 = arg3;
-                    if (Class43.aClass75_872 == null)
-                        Class77.aClass75_1597 = Class43.aClass75_872 = new Signlink(
-                                false, this, null, 0);
+                    height = arg1;
+                    Class4_Sub20_Sub7_Sub3.revision = arg0;
+                    width = arg3;
+                    if (Class43.aClass75_872 == null) {
+                        Class77.aClass75_1597 = Class43.aClass75_872 = new Signlink(false, this, null, 0);
+                    }
                     Class43.aClass75_872.method1172(this, 1, 14);
                 }
             } catch (Exception exception) {
@@ -407,24 +396,28 @@ public abstract class GameShell extends Applet implements Runnable,
 
     public boolean method24(int arg0) {
         try {
-            String string = getDocumentBase().getHost().toLowerCase();
-            if (string.equals("jagex.com") || string.endsWith(".jagex.com"))
+            String string = Configuration.SERVER_ADDRESS;
+            if (string.equals("jagex.com") || string.endsWith(".jagex.com")) {
                 return true;
-            if (string.equals("runescape.com")
-                    || string.endsWith(".runescape.com"))
+            }
+            if (string.equals("runescape.com") || string.endsWith(".runescape.com")) {
                 return true;
-            if (string.endsWith("127.0.0.1"))
+            }
+            if (string.endsWith("127.0.0.1")) {
                 return true;
+            }
             for (/**/; (string.length() > 0
                     && string.charAt(-1 + string.length()) >= '0' && string
                     .charAt(string.length() + -1) <= '9'); string = string
                     .substring(0, string.length() + -1)) {
                 /* empty */
             }
-            if (string.endsWith("192.168.1."))
+            if (string.endsWith("192.168.1.")) {
                 return true;
-            if (arg0 != 0)
+            }
+            if (arg0 != 0) {
                 windowDeiconified(null);
+            }
             method19((byte) -87, "invalidhost");
             return false;
         } catch (RuntimeException runtimeexception) {
@@ -444,12 +437,14 @@ public abstract class GameShell extends Applet implements Runnable,
                     if (Signlink.jVersion == null
                             || !Signlink.jVersion.startsWith("1.5")
                             || (-Class9.aLong281
-                            + Class52.method1002((byte) -42) <= 1000L))
+                            + Class52.method1002((byte) -42) <= 1000L)) {
                         break;
+                    }
                     Rectangle rectangle = arg0.getClipBounds();
                     if (rectangle == null
-                            || (((rectangle.width ^ 0xffffffff) <= (Class58.anInt1160 ^ 0xffffffff)) && ((Class57.anInt1138 ^ 0xffffffff) >= (rectangle.height ^ 0xffffffff))))
+                            || (((rectangle.width ^ 0xffffffff) <= (width ^ 0xffffffff)) && ((height ^ 0xffffffff) >= (rectangle.height ^ 0xffffffff)))) {
                         Class73.aBoolean1495 = true;
+                    }
                 }
             } catch (RuntimeException runtimeexception) {
                 throw Class4_Sub20_Sub7_Sub4
@@ -488,11 +483,11 @@ public abstract class GameShell extends Applet implements Runnable,
                         Class4_Sub20.anInt2358 = 5;
                     }
                 }
-                if (Class43.aClass75_872.applet != null) {
+                if (Class43.aClass75_872.gameShell != null) {
                     Method method = Signlink.setFocusCycleRoot;
                     if (method != null) {
                         try {
-                            method.invoke(Class43.aClass75_872.applet,
+                            method.invoke(Class43.aClass75_872.gameShell,
                                     new Object[]{Boolean.TRUE});
                         } catch (Throwable throwable) {
                             /* empty */
@@ -501,8 +496,8 @@ public abstract class GameShell extends Applet implements Runnable,
                 }
                 method11(-3);
                 Class62.aClass13_1225 = Class63.method1058(-113,
-                        Class58.anInt1160, Class4_Sub20_Sub7_Sub5.runeCanvas,
-                        Class57.anInt1138);
+                        width, Class4_Sub20_Sub7_Sub5.runeCanvas,
+                        height);
                 method17(0);
                 Class4_Sub20_Sub13.aClass14_3126 = Class4_Sub12.method276(-98);
                 while (Class50.aLong1027 == 0L
@@ -511,8 +506,9 @@ public abstract class GameShell extends Applet implements Runnable,
                     Class4_Sub10.anInt2024 = (Class4_Sub20_Sub13.aClass14_3126
                             .method705(true, Class4_Sub20.anInt2358,
                                     Class31.anInt691));
-                    for (int i = 0; ((Class4_Sub10.anInt2024 ^ 0xffffffff) < (i ^ 0xffffffff)); i++)
+                    for (int i = 0; ((Class4_Sub10.anInt2024 ^ 0xffffffff) < (i ^ 0xffffffff)); i++) {
                         method22((byte) 65);
+                    }
                     method12((byte) 77);
                     Class4_Sub20_Sub7_Sub4.method424((byte) -48,
                             (Class4_Sub20_Sub7_Sub5.runeCanvas),
@@ -531,8 +527,9 @@ public abstract class GameShell extends Applet implements Runnable,
 
     public void start() {
         try {
-            if (Class4_Sub22.anApplet_Sub1_2401 == this && !Class27.aBoolean616)
+            if (Class4_Sub22.anApplet_Sub1_2401 == this && !Class27.aBoolean616) {
                 Class50.aLong1027 = 0L;
+            }
         } catch (RuntimeException runtimeexception) {
             throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
                     "we.start(" + ')');
@@ -541,8 +538,9 @@ public abstract class GameShell extends Applet implements Runnable,
 
     public void stop() {
         try {
-            if (Class4_Sub22.anApplet_Sub1_2401 == this && !Class27.aBoolean616)
+            if (Class4_Sub22.anApplet_Sub1_2401 == this && !Class27.aBoolean616) {
                 Class50.aLong1027 = Class52.method1002((byte) -42) + 4000L;
+            }
         } catch (RuntimeException runtimeexception) {
             throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
                     "we.stop(" + ')');

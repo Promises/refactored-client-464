@@ -916,7 +916,7 @@ public class Class16 {
                                                                                 16383,
                                                                                 i_74_));
                                                             } else if ((i_13_ ^ 0xffffffff) == -3313) {
-                                                                Class24.anIntArray557[i_10_++] = ((Class77.aBoolean1590) ? 1
+                                                                Class24.anIntArray557[i_10_++] = ((Class77.members) ? 1
                                                                         : 0);
                                                             } else if ((i_13_ ^ 0xffffffff) == -3314) {
                                                                 i_10_ -= 2;

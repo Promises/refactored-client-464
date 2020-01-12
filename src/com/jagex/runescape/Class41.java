@@ -242,7 +242,7 @@ public class Class41 {
 					method938((byte) 0);
 					Class6.method646(-21691);
 					Class10.aClass66_299.method1084(0);
-					if (JagexString.gameFrame != null) {
+					if (GameShell.gameFrame != null) {
 						Class66.aClass4_Sub11_Sub1_1328.method264(174, 120);
 						Class66.aClass4_Sub11_Sub1_1328.method236(181,
 								1057001181);

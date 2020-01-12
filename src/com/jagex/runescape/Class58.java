@@ -15,8 +15,7 @@ public class Class58 {
 	public static RSInterface aClass4_Sub13_1159;
 	public static int anInt1156;
 	public static int anInt1158;
-	public static int anInt1160;
-	public static int anInt1161;
+    public static int anInt1161;
 	public static int anInt1169;
 	public static int anInt1170;
 	public static int[] anIntArray1163 = new int[5];

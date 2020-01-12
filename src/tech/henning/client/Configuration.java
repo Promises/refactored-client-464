@@ -72,4 +72,16 @@ public class Configuration {
      */
     public static final boolean ROOFS_ENABLED = true;
 
+
+    /**
+     * Client parameters
+     */
+    public static final String LANGUAGE = "english"; // english or german
+    public static final int WORLD = 1;
+    public static final boolean HIGHMEN = true;
+    public static final boolean MEMBERS = true;
+    public static final String GAME_TYPE = "game0";
+    public static final String DEPLOYMENT = "live"; //[live/office/local]
+    public static final String GAMEVERSION = "live";// [live/rc/wip]
+
 }

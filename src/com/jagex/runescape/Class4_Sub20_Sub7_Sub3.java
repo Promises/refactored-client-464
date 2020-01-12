@@ -7,7 +7,7 @@ public class Class4_Sub20_Sub7_Sub3 extends Class4_Sub20_Sub7 {
 	public static int anInt3339;
 	public static int anInt3340;
 	public static int anInt3346;
-	public static int anInt3347;
+	public static int revision;
 	public static int anInt3354 = 0;
 	public static int anInt3356;
 

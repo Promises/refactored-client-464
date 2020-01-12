@@ -2,6 +2,7 @@ package com.jagex.runescape.util;
 
 import com.jagex.runescape.Class22;
 import com.jagex.runescape.Class39;
+import com.jagex.runescape.GameShell;
 import tech.henning.client.Configuration;
 
 import java.applet.Applet;
@@ -33,21 +34,21 @@ public class Signlink implements Runnable {
     public Class39[] aClass39Array1541;
     public File aFile1526 = null;
     public File aFile1531 = null;
-    public Applet applet;
+    public GameShell gameShell;
     public EventQueue eventQueue;
     public int anInt1542;
     public Thread aThread1532;
 
-    public Signlink(boolean active, Applet applet, String arg3, int arg4) {
+    public Signlink(boolean active, GameShell gameShell, String arg3, int arg4) {
         aClass39_1527 = null;
         aClass22_1530 = null;
         aClass22_1535 = null;
         anInt1542 = 0;
         aBoolean1543 = false;
-        this.applet = null;
+        this.gameShell = null;
         try {
             jVersion = "1.1";
-            this.applet = applet;
+            this.gameShell = gameShell;
             jVendor = "Unknown";
             try {
                 jVendor = System.getProperty("java.vendor");
@@ -71,24 +72,24 @@ public class Signlink implements Runnable {
                 /* empty */
             }
             try {
-                if (applet == null)
+                if (this.gameShell == null)
                     aMethod1537 = (Class.forName("java.awt.Component")
                             .getDeclaredMethod("setFocusTraversalKeysEnabled",
                                     new Class[]{Boolean.TYPE}));
                 else
-                    aMethod1537 = (applet.getClass().getMethod(
+                    aMethod1537 = (this.gameShell.getClass().getMethod(
                             "setFocusTraversalKeysEnabled",
                             new Class[]{Boolean.TYPE}));
             } catch (Exception exception) {
                 /* empty */
             }
             try {
-                if (applet == null)
+                if (this.gameShell == null)
                     setFocusCycleRoot = (Class.forName("java.awt.Container")
                             .getDeclaredMethod("setFocusCycleRoot",
                                     new Class[]{Boolean.TYPE}));
                 else
-                    setFocusCycleRoot = applet.getClass()
+                    setFocusCycleRoot = this.gameShell.getClass()
                             .getMethod("setFocusCycleRoot",
                                     (new Class[]{Boolean.TYPE}));
             } catch (Exception exception) {

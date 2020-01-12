@@ -1,7 +1,6 @@
 package com.jagex.runescape;
 
 import java.awt.FontMetrics;
-import java.awt.Frame;
 import java.awt.Graphics;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -17,7 +16,6 @@ public class JagexString {
     public static JagexString aJagexString_1815 = getRs2PreparedString(" )2> <col=ffffff>");
     public static JagexString aJagexString_1822 = getRs2PreparedString("welle:");
     public static JagexString aJagexString_1824 = getRs2PreparedString("title)3jpg");
-    public static Frame gameFrame;
     public static int[] anIntArray1798;
     public static int anInt1827 = 0;
     public boolean aBoolean1774 = true;
@@ -27,7 +25,6 @@ public class JagexString {
 
     public static void method810(byte arg0) {
         try {
-            gameFrame = null;
             aJagexString_1822 = null;
             if (arg0 >= -98) {
                 aJagexString_1824 = null;

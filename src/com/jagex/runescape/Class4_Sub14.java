@@ -217,7 +217,7 @@ public class Class4_Sub14 extends RSFont {
 							(Class33.aClass4_Sub20_Sub12_Sub4_Sub1_717),
 							Class4_Sub24.aClass19_Sub1_2451, (byte) -55,
 							Class4_Sub1.aClass19_Sub1_1863,
-							Class77.aBoolean1590);
+							Class77.members);
 					RSCanvas.method33(Class73.aClass19_Sub1_1504,
 							Class4_Sub1.aClass19_Sub1_1863, (byte) -85,
 							Class4_Sub1.aClass19_Sub1_1861);

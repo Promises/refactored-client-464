@@ -171,14 +171,13 @@ public class Class4_Sub20_Sub7_Sub4 extends Class4_Sub20_Sub7 {
 				string = string.replace('@', '_');
 				string = string.replace('&', '_');
 				string = string.replace('#', '_');
-				if (Class77.aClass75_1597.applet != null) {
+				if (Class77.aClass75_1597.gameShell != null) {
 					if (arg1 >= -42)
 						method422(null, 50, null);
 					Class22 class22 = (Class77.aClass75_1597.method1173(
 							-128,
-							new URL(Class77.aClass75_1597.applet
-									.getCodeBase(), ("clienterror.ws?c="
-									+ Class4_Sub20_Sub7_Sub3.anInt3347 + "&u="
+							new URL(null, ("clienterror.ws?c="
+									+ Class4_Sub20_Sub7_Sub3.revision + "&u="
 									+ Class25.aLong584 + "&v1="
 									+ Signlink.jVendor + "&v2="
 									+ Signlink.jVersion + "&e=" + string))));
