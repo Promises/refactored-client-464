@@ -679,13 +679,12 @@ public class Class16 {
                                             + -1) ^ 0xffffffff) == -116) {
                                         objects_55_[i_56_] = (StringUtilities.aJagexStringArray2673[--i_11_]);
                                     } else {
-                                        objects_55_[i_56_] = new Integer(
-                                                Class24.anIntArray557[--i_10_]);
+                                        objects_55_[i_56_] = Class24.anIntArray557[--i_10_];
                                     }
                                 }
                                 int i_57_ = Class24.anIntArray557[--i_10_];
                                 if (i_57_ != -1) {
-                                    objects_55_[0] = new Integer(i_57_);
+                                    objects_55_[0] = i_57_;
                                 } else {
                                     objects_55_ = null;
                                 }

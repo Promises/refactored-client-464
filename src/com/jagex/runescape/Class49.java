@@ -1338,17 +1338,15 @@ public class Class49 implements Runnable {
                             .method825(arg0 + -159) - -1];
                     for (int i_134_ = jagexString.method825(-118) + -1; i_134_ >= 0; i_134_--) {
                         if (jagexString.method834(21340, i_134_) != 115) {
-                            objects[i_134_ + 1] = new Integer(
-                                    Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                                            .readInt((byte) 73));
+                            objects[i_134_ + 1] = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
+                                    .readInt((byte) 73);
                         } else {
                             objects[i_134_ + 1] = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                                     .method212();
                         }
                     }
-                    objects[0] = new Integer(
-                            Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                                    .readInt((byte) 73));
+                    objects[0] = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
+                            .readInt((byte) 73);
                     Class4_Sub14 class4_sub14 = new Class4_Sub14();
                     class4_sub14.anObjectArray2267 = objects;
                     Class16.method721(1, class4_sub14);

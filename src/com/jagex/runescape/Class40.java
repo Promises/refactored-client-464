@@ -30,8 +30,7 @@ public class Class40 {
 				arg1 = 256;
 			}
 			try {
-				Class43 class43 = (Class43) Class.forName("com.jagex.runescape.Class43_Sub2")
-						.newInstance();
+				Class43 class43 = new Class43_Sub2();
 				class43.anInt896 = arg1;
 				class43.anIntArray877 = new int[256 * (Actor.aBoolean3218 ? 2
 						: 1)];

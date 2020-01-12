@@ -42,8 +42,7 @@ public class Class4_Sub21 extends RSFont {
 				return null;
 			if (arg0.length > 136 && !Class57.aBoolean1127) {
 				try {
-					Class45 class45 = ((Class45) Class.forName("com.jagex.runescape.Class45_Sub1")
-							.newInstance());
+					Class45 class45 = new Class45_Sub1();
 					class45.method970(arg2 ^ ~0x1a, arg0);
 					return class45;
 				} catch (Throwable throwable) {

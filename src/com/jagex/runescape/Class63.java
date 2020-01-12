@@ -130,8 +130,7 @@ public class Class63 {
 			if (arg0 >= -81)
 				return null;
 			try {
-				Class<?> var_class = Class.forName("com.jagex.runescape.Class13_Sub1");
-				Class13 class13 = (Class13) var_class.newInstance();
+				Class13 class13 = new Class13_Sub1();
 				class13.method686(arg2, arg3, -87, arg1);
 				return class13;
 			} catch (Throwable throwable) {

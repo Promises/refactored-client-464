@@ -880,7 +880,7 @@ public class RSInterface extends RSFont {
 			for (int i_44_ = 0; (i_44_ ^ 0xffffffff) > (i ^ 0xffffffff); i_44_++) {
 				int i_45_ = arg0.get();
 				if ((i_45_ ^ 0xffffffff) == -1)
-					objects[i_44_] = new Integer(arg0.readInt((byte) 73));
+					objects[i_44_] = arg0.readInt((byte) 73);
 				else if ((i_45_ ^ 0xffffffff) == -2)
 					objects[i_44_] = arg0.method212();
 			}

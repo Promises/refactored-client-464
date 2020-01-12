@@ -76,7 +76,7 @@ public class Class4_Sub2_Sub4 extends Class4_Sub2 {
 			try {
 				if (arg0 != true)
 					method168(93);
-				return (Class42) Class.forName("com.jagex.runescape.Class42_Sub1").newInstance();
+				return new Class42_Sub1();
 			} catch (Throwable throwable) {
 				return null;
 			}

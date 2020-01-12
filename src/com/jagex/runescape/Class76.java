@@ -191,17 +191,6 @@ public class Class76 implements Runnable {
 		}
 	}
 
-	@Override
-	public void finalize() {
-		try {
-			anInt1549++;
-			method1181(-31709);
-		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
-					"vc.finalize(" + ')');
-		}
-	}
-
 	public void method1181(int arg0) {
 		anInt1556++;
 		if (!aBoolean1567) {
