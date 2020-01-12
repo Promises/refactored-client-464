@@ -8,7 +8,7 @@ public class Class4_Sub20_Sub15 extends Class4_Sub20 {
 	public static int anInt3154;
 	public static int anInt3155;
 	public static int anInt3156;
-	public static int anInt3157 = 0;
+	public static int packetSize = 0;
 	public static int anInt3158;
 	public static int anInt3159;
 
@@ -110,7 +110,7 @@ public class Class4_Sub20_Sub15 extends Class4_Sub20 {
 				}
 				if (arg1 == -4)
 					break;
-				anInt3157 = -76;
+				packetSize = -76;
 			} catch (RuntimeException runtimeexception) {
 				throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
 						("sc.C(" + (arg0 != null ? "{...}" : "null") + ','
@@ -141,7 +141,7 @@ public class Class4_Sub20_Sub15 extends Class4_Sub20 {
 
 	public static void method603(boolean arg0) {
 		try {
-			for (int i = 0; (i ^ 0xffffffff) > (JagexException.anInt1726 ^ 0xffffffff); i++) {
+			for (int i = 0; (i ^ 0xffffffff) > (JagexException.updatedPlayerCount ^ 0xffffffff); i++) {
 				int i_9_ = Class48.anIntArray979[i];
 				Player player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_9_]);
 				int i_10_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get();
@@ -152,7 +152,7 @@ public class Class4_Sub20_Sub15 extends Class4_Sub20 {
 						i_10_);
 			}
 			if (arg0 != false)
-				anInt3157 = 9;
+				packetSize = 9;
 			anInt3155++;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "sc.D("
@@ -165,9 +165,9 @@ public class Class4_Sub20_Sub15 extends Class4_Sub20 {
 	public void method604(int arg0, boolean arg1, Buffer arg2) {
 		anInt3152++;
 		if (arg1 != false)
-			anInt3157 = 115;
+			packetSize = 115;
 		if ((arg0 ^ 0xffffffff) == -6)
-			anInt3151 = arg2.read_u16();
+			anInt3151 = arg2.readShort();
 	}
 
 	public void method605(Buffer arg0, int arg1) {
@@ -179,7 +179,7 @@ public class Class4_Sub20_Sub15 extends Class4_Sub20 {
 				method604(i, false, arg0);
 			}
 			if (arg1 != 4606)
-				anInt3157 = -93;
+				packetSize = -93;
 			anInt3154++;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("sc.E("

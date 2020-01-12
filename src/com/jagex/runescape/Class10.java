@@ -39,10 +39,10 @@ public class Class10 {
 	public static void method669(int arg0) {
 		try {
 			int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-					-1432215741, 8);
+					8);
 			if (Class4_Sub20_Sub7_Sub6.anInt3431 > i) {
 				for (int i_6_ = i; i_6_ < Class4_Sub20_Sub7_Sub6.anInt3431; i_6_++)
-					Class58.anIntArray1164[Class4_Sub20_Sub7_Sub5.anInt3386++] = Class4_Sub23.anIntArray2432[i_6_];
+					Class58.removePlayers[Class4_Sub20_Sub7_Sub5.removePlayerCount++] = Class4_Sub23.anIntArray2432[i_6_];
 			}
 			anInt298++;
 			if ((Class4_Sub20_Sub7_Sub6.anInt3431 ^ 0xffffffff) > (i ^ 0xffffffff))
@@ -52,45 +52,45 @@ public class Class10 {
 				int i_8_ = Class4_Sub23.anIntArray2432[i_7_];
 				Player player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_8_]);
 				int i_9_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-						-1432215741, 1);
+						1);
 				if ((i_9_ ^ 0xffffffff) == -1) {
 					Class4_Sub23.anIntArray2432[Class4_Sub20_Sub7_Sub6.anInt3431++] = i_8_;
-					player.anInt3256 = Region.anInt134;
+					player.pulseCycle = Region.pulseCycle;
 				} else {
 					int i_10_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-							.method266(-1432215741, 2);
+							.method266(2);
 					if (i_10_ == 0) {
 						Class4_Sub23.anIntArray2432[Class4_Sub20_Sub7_Sub6.anInt3431++] = i_8_;
-						player.anInt3256 = Region.anInt134;
-						Class48.anIntArray979[JagexException.anInt1726++] = i_8_;
+						player.pulseCycle = Region.pulseCycle;
+						Class48.anIntArray979[JagexException.updatedPlayerCount++] = i_8_;
 					} else if (i_10_ == 1) {
 						Class4_Sub23.anIntArray2432[Class4_Sub20_Sub7_Sub6.anInt3431++] = i_8_;
-						player.anInt3256 = Region.anInt134;
+						player.pulseCycle = Region.pulseCycle;
 						int i_11_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-								.method266(-1432215741, 3);
+								.method266(3);
 						player.method386(false, false,
 								i_11_);
 						int i_12_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-								.method266(arg0 ^ ~0x555de0bc, 1);
+								.method266(1);
 						if ((i_12_ ^ 0xffffffff) == -2)
-							Class48.anIntArray979[JagexException.anInt1726++] = i_8_;
+							Class48.anIntArray979[JagexException.updatedPlayerCount++] = i_8_;
 					} else if ((i_10_ ^ 0xffffffff) == -3) {
 						Class4_Sub23.anIntArray2432[Class4_Sub20_Sub7_Sub6.anInt3431++] = i_8_;
-						player.anInt3256 = Region.anInt134;
+						player.pulseCycle = Region.pulseCycle;
 						int i_13_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-								.method266(-1432215741, 3);
+								.method266(3);
 						player.method386(false, true,
 								i_13_);
 						int i_14_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-								.method266(-1432215741, 3);
+								.method266(3);
 						player.method386(false, true,
 								i_14_);
 						int i_15_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-								.method266(-1432215741, 1);
+								.method266(1);
 						if (i_15_ == 1)
-							Class48.anIntArray979[JagexException.anInt1726++] = i_8_;
+							Class48.anIntArray979[JagexException.updatedPlayerCount++] = i_8_;
 					} else if ((i_10_ ^ 0xffffffff) == -4)
-						Class58.anIntArray1164[Class4_Sub20_Sub7_Sub5.anInt3386++] = i_8_;
+						Class58.removePlayers[Class4_Sub20_Sub7_Sub5.removePlayerCount++] = i_8_;
 				}
 			}
 		} catch (RuntimeException runtimeexception) {

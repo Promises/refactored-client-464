@@ -84,22 +84,22 @@ public class Class4_Sub20_Sub5 extends Class4_Sub20 {
 			if (arg0 != 2) {
 				if (arg0 != 3) {
 					if (arg0 == 4)
-						anInt2881 = arg2.read_32((byte) 73);
+						anInt2881 = arg2.readInt((byte) 73);
 					else if (arg0 == 5) {
-						anInt2875 = arg2.read_u16();
+						anInt2875 = arg2.readShort();
 						anIntArray2870 = new int[anInt2875];
 						aJagexStringArray2877 = new JagexString[anInt2875];
 						for (int i = 0; (anInt2875 ^ 0xffffffff) < (i ^ 0xffffffff); i++) {
-							anIntArray2870[i] = arg2.read_32((byte) 73);
+							anIntArray2870[i] = arg2.readInt((byte) 73);
 							aJagexStringArray2877[i] = arg2.method212();
 						}
 					} else if ((arg0 ^ 0xffffffff) == -7) {
-						anInt2875 = arg2.read_u16();
+						anInt2875 = arg2.readShort();
 						anIntArray2870 = new int[anInt2875];
 						anIntArray2872 = new int[anInt2875];
 						for (int i = 0; (i ^ 0xffffffff) > (anInt2875 ^ 0xffffffff); i++) {
-							anIntArray2870[i] = arg2.read_32((byte) 73);
-							anIntArray2872[i] = arg2.read_32((byte) 73);
+							anIntArray2870[i] = arg2.readInt((byte) 73);
+							anIntArray2872[i] = arg2.readInt((byte) 73);
 						}
 					}
 				} else

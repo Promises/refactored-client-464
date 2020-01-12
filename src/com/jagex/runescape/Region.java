@@ -36,7 +36,7 @@ public class Region {
 	public static int anInt124;
 	public static int anInt127;
 	public static int anInt133;
-	public static int anInt134;
+	public static int pulseCycle;
 	public static int anInt135;
 	public static int anInt136;
 	public static int anInt97;
@@ -48,7 +48,7 @@ public class Region {
 		aBoolean129 = false;
 		anInt127 = -1;
 		aClass66_131 = new Class66(50);
-		anInt134 = 0;
+		pulseCycle = 0;
 		anInt135 = 10;
 		anInt136 = -1;
 		aJagexString_137 = (JagexString.getRs2PreparedString(

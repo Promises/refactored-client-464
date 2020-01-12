@@ -68,11 +68,11 @@ public class Class73 {
 			aJagexString_1507 = null;
 		anInt1505++;
 		if ((arg3 & 0x100 ^ 0xffffffff) != -1) {
-			int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method240(32767); // bytes
+			int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.readByteSubtracted(32767); // bytes
 			int i_0_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-					.method240(32767); // bytes
-			arg2.method383(i, false, Region.anInt134, i_0_);
-			arg2.anInt3273 = 300 + Region.anInt134;
+					.readByteSubtracted(32767); // bytes
+			arg2.method383(i, false, Region.pulseCycle, i_0_);
+			arg2.anInt3273 = 300 + Region.pulseCycle;
 			arg2.anInt3259 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 					.method239((byte) 111); // bytea
 			arg2.anInt3262 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
@@ -80,16 +80,16 @@ public class Class73 {
 		}
 		if ((0x200 & arg3) != 0) {
 			arg2.anInt3226 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-					.read_u16(); // short
+					.readShort(); // short
 			int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method237(arg1
 					+ -18031); // int2
 			arg2.anInt3241 = 0;
 			arg2.anInt3242 = 0;
 			if ((arg2.anInt3226 ^ 0xffffffff) == -65536)
 				arg2.anInt3226 = -1;
-			arg2.anInt3235 = (i & 0xffff) + Region.anInt134;
+			arg2.anInt3235 = (i & 0xffff) + Region.pulseCycle;
 			arg2.anInt3229 = i >> -831758576;
-			if (arg2.anInt3235 > Region.anInt134)
+			if (arg2.anInt3235 > Region.pulseCycle)
 				arg2.anInt3242 = -1;
 		}
 		if ((arg3 & 0x8 ^ 0xffffffff) != -1) {
@@ -106,17 +106,17 @@ public class Class73 {
 		}
 		if ((0x400 & arg3 ^ 0xffffffff) != -1) {
 			arg2.anInt3240 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-					.method240(32767);
+					.readByteSubtracted(32767);
 			arg2.anInt3279 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-					.method240(32767);
+					.readByteSubtracted(32767);
 			arg2.anInt3278 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-					.method240(arg1 + 14834);
+					.readByteSubtracted(arg1 + 14834);
 			arg2.anInt3232 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 					.method239((byte) 42);
 			arg2.anInt3224 = (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-					.method223(0) + Region.anInt134);
+					.method223(0) + Region.pulseCycle);
 			arg2.anInt3281 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-					.read_u16() + Region.anInt134;
+					.readShort() + Region.pulseCycle;
 			arg2.anInt3245 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.getC();
 			arg2.anInt3236 = 0;
 			arg2.anInt3228 = 1;
@@ -150,7 +150,7 @@ public class Class73 {
 			int i_2_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 					.method239((byte) 34); // bytea
 			int i_3_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get(); // byte
-			int i_4_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer;
+			int i_4_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.currentPosition;
 			if (arg2.aJagexString_3593 != null && arg2.aClass35_3609 != null) {
 				long l = arg2.aJagexString_3593.method806((byte) -113);
 				boolean bool = false;
@@ -163,11 +163,11 @@ public class Class73 {
 					}
 				}
 				if (!bool && Class81.anInt1695 == 0) {
-					Class41.aClass4_Sub11_796.pointer = 0;
+					Class41.aClass4_Sub11_796.currentPosition = 0;
 					Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method220(
 							Class41.aClass4_Sub11_796.byteBuffer, 0,
 							arg1 + 960034779, i_3_);
-					Class41.aClass4_Sub11_796.pointer = 0;
+					Class41.aClass4_Sub11_796.currentPosition = 0;
 					JagexString jagexString = (Class4_Sub20_Sub12_Sub4
 							.method574(Class4_Sub22.method629((byte) -83,
 									Class41.aClass4_Sub11_796).method801(false)));
@@ -195,19 +195,19 @@ public class Class73 {
 								(byte) 122, 1);
 				}
 			}
-			Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer = i_3_ + i_4_;
+			Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.currentPosition = i_3_ + i_4_;
 		}
 		if ((0x2 & arg3) != 0) {
 			int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 					.method239((byte) 33); // bytea
 			int i_6_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-					.method240(32767); // bytes
-			arg2.method383(i, false, Region.anInt134, i_6_);
-			arg2.anInt3273 = Region.anInt134 - -300;
+					.readByteSubtracted(32767); // bytes
+			arg2.method383(i, false, Region.pulseCycle, i_6_);
+			arg2.anInt3273 = Region.pulseCycle - -300;
 			arg2.anInt3259 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-					.method240(arg1 + 14834); // bytes
+					.readByteSubtracted(arg1 + 14834); // bytes
 			arg2.anInt3262 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-					.method240(arg1 ^ 0x39f2); // bytes
+					.readByteSubtracted(arg1 ^ 0x39f2); // bytes
 		}
 		if ((arg3 & 0x40) != 0) {
 			int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883

@@ -100,9 +100,9 @@ public class Class61 {
 								^ ~0x3b);
 						Class66.aClass4_Sub11_Sub1_1328
 								.method227((byte) -27, 0);
-						int i_0_ = Class66.aClass4_Sub11_Sub1_1328.pointer;
+						int i_0_ = Class66.aClass4_Sub11_Sub1_1328.currentPosition;
 						for (int i_1_ = 0; Class31.aClass53_690.anInt1089 > i_1_; i_1_++) {
-							if ((-i_0_ + Class66.aClass4_Sub11_Sub1_1328.pointer) >= 240)
+							if ((-i_0_ + Class66.aClass4_Sub11_Sub1_1328.currentPosition) >= 240)
 								break;
 							i++;
 							int i_2_ = Class31.aClass53_690.anIntArray1088[i_1_];
@@ -164,7 +164,7 @@ public class Class61 {
 						}
 						Class66.aClass4_Sub11_Sub1_1328
 								.method258(
-										Class66.aClass4_Sub11_Sub1_1328.pointer
+										Class66.aClass4_Sub11_Sub1_1328.currentPosition
 												- i_0_, (byte) 109);
 						if (Class31.aClass53_690.anInt1089 > i) {
 							Class31.aClass53_690.anInt1089 -= i;
@@ -279,17 +279,17 @@ public class Class61 {
 										if (Class19_Sub1.anInt2525 == 1
 												&& class4_sub13.anInt2227 == 206)
 											i = 1;
-										if ((class4_sub13.anIntArray2179[Class34.anInt1761]) <= 0)
+										if ((class4_sub13.items[Class34.anInt1761]) <= 0)
 											i = 0;
 										if (Class72.method1161(1, Class54
 												.method1011(class4_sub13,
 														-22389))) {
 											int i_12_ = Class4_Sub20_Sub14.anInt3139;
 											int i_13_ = Class34.anInt1761;
-											class4_sub13.anIntArray2179[i_13_] = (class4_sub13.anIntArray2179[i_12_]);
-											class4_sub13.anIntArray2216[i_13_] = (class4_sub13.anIntArray2216[i_12_]);
-											class4_sub13.anIntArray2179[i_12_] = -1;
-											class4_sub13.anIntArray2216[i_12_] = 0;
+											class4_sub13.items[i_13_] = (class4_sub13.items[i_12_]);
+											class4_sub13.itemAmounts[i_13_] = (class4_sub13.itemAmounts[i_12_]);
+											class4_sub13.items[i_12_] = -1;
+											class4_sub13.itemAmounts[i_12_] = 0;
 										} else if ((i ^ 0xffffffff) == -2) {
 											int i_14_ = Class34.anInt1761;
 											int i_15_ = Class4_Sub20_Sub14.anInt3139;
@@ -366,8 +366,8 @@ public class Class61 {
 								break;
 							RSInterface class4_sub13_17_ = class4_sub14.aClass4_Sub13_2282;
 							if (class4_sub13_17_.anInt2163 >= 0) {
-								RSInterface class4_sub13_18_ = Class4_Sub20
-										.method322(true,
+								RSInterface class4_sub13_18_ = RSInterface
+										.forId(
 												(class4_sub13_17_.anInt2183));
 								if (class4_sub13_18_ == null
 										|| (class4_sub13_18_.aClass4_Sub13Array2215 == null)
@@ -384,8 +384,8 @@ public class Class61 {
 								break;
 							RSInterface class4_sub13_19_ = class4_sub14.aClass4_Sub13_2282;
 							if ((class4_sub13_19_.anInt2163 ^ 0xffffffff) <= -1) {
-								RSInterface class4_sub13_20_ = Class4_Sub20
-										.method322(true,
+								RSInterface class4_sub13_20_ = RSInterface
+										.forId(
 												(class4_sub13_19_.anInt2183));
 								if (class4_sub13_20_ == null
 										|| (class4_sub13_20_.aClass4_Sub13Array2215 == null)
@@ -402,8 +402,8 @@ public class Class61 {
 								break;
 							RSInterface class4_sub13_21_ = class4_sub14.aClass4_Sub13_2282;
 							if ((class4_sub13_21_.anInt2163 ^ 0xffffffff) <= -1) {
-								RSInterface class4_sub13_22_ = Class4_Sub20
-										.method322(true,
+								RSInterface class4_sub13_22_ = RSInterface
+										.forId(
 												(class4_sub13_21_.anInt2183));
 								if (class4_sub13_22_ == null
 										|| (class4_sub13_22_.aClass4_Sub13Array2215 == null)
@@ -528,16 +528,16 @@ public class Class61 {
 						do {
 							try {
 								if (Class4_Sub20_Sub17.aClass76_3189 == null
-										|| ((Class66.aClass4_Sub11_Sub1_1328.pointer) ^ 0xffffffff) >= -1)
+										|| ((Class66.aClass4_Sub11_Sub1_1328.currentPosition) ^ 0xffffffff) >= -1)
 									break;
 								Class4_Sub20_Sub17.aClass76_3189
 										.method1183(
-												Class66.aClass4_Sub11_Sub1_1328.pointer,
+												Class66.aClass4_Sub11_Sub1_1328.currentPosition,
 												0,
 												arg0 ^ 0x7d,
 												(Class66.aClass4_Sub11_Sub1_1328.byteBuffer));
 								Class4_Sub20_Sub6.anInt2903 = 0;
-								Class66.aClass4_Sub11_Sub1_1328.pointer = 0;
+								Class66.aClass4_Sub11_Sub1_1328.currentPosition = 0;
 							} catch (java.io.IOException ioexception) {
 								Class11.method674(-1);
 								break;

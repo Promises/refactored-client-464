@@ -39,7 +39,7 @@ public class Class4_Sub20_Sub7_Sub6 extends Class4_Sub20_Sub7 {
 			if (arg0.anInt3245 == 1)
 				arg0.anInt3217 = 1536;
 			int i_0_ = 128 * arg0.anInt3240 - -(64 * arg0.anInt3244);
-			int i_1_ = arg0.anInt3224 - Region.anInt134;
+			int i_1_ = arg0.anInt3224 - Region.pulseCycle;
 			if ((arg0.anInt3245 ^ 0xffffffff) == -3)
 				arg0.anInt3217 = 0;
 			anInt3444++;
@@ -90,8 +90,8 @@ public class Class4_Sub20_Sub7_Sub6 extends Class4_Sub20_Sub7 {
 					if (i_4_ >= 0 && (i_4_ ^ 0xffffffff) > -105 && i_5_ >= 0
 							&& i_5_ < 104) {
 						if ((player.aClass4_Sub20_Sub7_Sub7_3596) != null
-								&& (player.anInt3608 ^ 0xffffffff) >= (Region.anInt134 ^ 0xffffffff)
-								&& ((Region.anInt134 ^ 0xffffffff) > (player.anInt3601 ^ 0xffffffff))) {
+								&& (player.anInt3608 ^ 0xffffffff) >= (Region.pulseCycle ^ 0xffffffff)
+								&& ((Region.pulseCycle ^ 0xffffffff) > (player.anInt3601 ^ 0xffffffff))) {
 							player.aBoolean3594 = false;
 							player.anInt3604 = (Class67
 									.getFloorDrawHeight(
@@ -166,7 +166,7 @@ public class Class4_Sub20_Sub7_Sub6 extends Class4_Sub20_Sub7 {
 		anInt3433 = arg3;
 		if ((arg7 ^ 0xffffffff) != 0) {
 			aClass4_Sub20_Sub17_3428 = Class68.method1093(arg7, (byte) -111);
-			anInt3427 = Region.anInt134 + -1;
+			anInt3427 = Region.pulseCycle + -1;
 			anInt3436 = 0;
 			if ((aClass4_Sub20_Sub17_3428.anInt3191 ^ 0xffffffff) == -1
 					&& arg9 != null && arg9 instanceof Class4_Sub20_Sub7_Sub6) {
@@ -189,7 +189,7 @@ public class Class4_Sub20_Sub7_Sub6 extends Class4_Sub20_Sub7 {
 	public Class4_Sub20_Sub7_Sub7 method378(boolean arg0) {
 		try {
 			if (aClass4_Sub20_Sub17_3428 != null) {
-				int i = Region.anInt134 - anInt3427;
+				int i = Region.pulseCycle - anInt3427;
 				if ((i ^ 0xffffffff) < -101
 						&& aClass4_Sub20_Sub17_3428.anInt3202 > 0)
 					i = 100;
@@ -205,7 +205,7 @@ public class Class4_Sub20_Sub7_Sub6 extends Class4_Sub20_Sub7 {
 						}
 					}
 				}
-				anInt3427 = -i + Region.anInt134;
+				anInt3427 = -i + Region.pulseCycle;
 			}
 			anInt3442++;
 			if (arg0 != false)

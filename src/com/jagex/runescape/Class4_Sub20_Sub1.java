@@ -257,13 +257,13 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 					if (i > 0) {
 						if (anIntArray2723 != null
 								&& !Buffer.aBoolean2066)
-							arg0.pointer += 2 * i;
+							arg0.currentPosition += 2 * i;
 						else {
 							anIntArray2723 = new int[i];
 							anIntArray2707 = null;
 							for (int i_1_ = 0; i > i_1_; i_1_++)
 								anIntArray2723[i_1_] = arg0
-										.read_u16();
+										.readShort();
 						}
 					}
 				} else if (arg2 == 14)
@@ -295,12 +295,12 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 														aBoolean2712 = false;
 													else if ((arg2 ^ 0xffffffff) == -66)
 														anInt2717 = (arg0
-																.read_u16());
+																.readShort());
 													else if (arg2 != 66) {
 														if (arg2 != 67) {
 															if (arg2 == 68)
 																anInt2702 = (arg0
-																		.read_u16());
+																		.readShort());
 															else if (arg2 == 69)
 																anInt2758 = (arg0
 																		.get());
@@ -318,11 +318,11 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 																else if (arg2 != 75) {
 																	if (arg2 == 77) {
 																		anInt2745 = arg0
-																				.read_u16();
+																				.readShort();
 																		if (anInt2745 == 65535)
 																			anInt2745 = -1;
 																		anInt2710 = arg0
-																				.read_u16();
+																				.readShort();
 																		if ((anInt2710 ^ 0xffffffff) == -65536)
 																			anInt2710 = -1;
 																		int i = arg0
@@ -330,20 +330,20 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 																		anIntArray2732 = new int[i + 1];
 																		for (int i_2_ = 0; (i_2_ ^ 0xffffffff) >= (i ^ 0xffffffff); i_2_++) {
 																			anIntArray2732[i_2_] = arg0
-																					.read_u16();
+																					.readShort();
 																			if ((anIntArray2732[i_2_] ^ 0xffffffff) == -65536)
 																				anIntArray2732[i_2_] = -1;
 																		}
 																	} else if (arg2 == 78) {
 																		anInt2756 = arg0
-																				.read_u16();
+																				.readShort();
 																		anInt2743 = arg0
 																				.get();
 																	} else if ((arg2 ^ 0xffffffff) == -80) {
 																		anInt2727 = arg0
-																				.read_u16();
+																				.readShort();
 																		anInt2721 = arg0
-																				.read_u16();
+																				.readShort();
 																		anInt2743 = arg0
 																				.get();
 																		int i = arg0
@@ -351,7 +351,7 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 																		anIntArray2736 = new int[i];
 																		for (int i_3_ = 0; (i_3_ ^ 0xffffffff) > (i ^ 0xffffffff); i_3_++)
 																			anIntArray2736[i_3_] = arg0
-																					.read_u16();
+																					.readShort();
 																	}
 																} else
 																	anInt2747 = (arg0
@@ -361,24 +361,24 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 																		.method238((byte) -67));
 														} else
 															anInt2699 = (arg0
-																	.read_u16());
+																	.readShort());
 													} else
 														anInt2706 = (arg0
-																.read_u16());
+																.readShort());
 												} else
 													aBoolean2696 = true;
 											} else
 												anInt2711 = (arg0
-														.read_u16());
+														.readShort());
 										} else {
 											int i = arg0.get();
 											aShortArray2728 = new short[i];
 											aShortArray2737 = new short[i];
 											for (int i_4_ = 0; ((i_4_ ^ 0xffffffff) > (i ^ 0xffffffff)); i_4_++) {
 												aShortArray2737[i_4_] = (short) (arg0
-														.read_u16());
+														.readShort());
 												aShortArray2728[i_4_] = (short) (arg0
-														.read_u16());
+														.readShort());
 											}
 										}
 									} else {
@@ -395,7 +395,7 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 							} else
 								anInt2750 = arg0.get();
 						} else {
-							anInt2709 = arg0.read_u16();
+							anInt2709 = arg0.readShort();
 							if (anInt2709 == 65535)
 								anInt2709 = -1;
 						}
@@ -409,12 +409,12 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 				int i = arg0.get();
 				if ((i ^ 0xffffffff) < -1) {
 					if (anIntArray2723 != null && !Buffer.aBoolean2066)
-						arg0.pointer += 3 * i;
+						arg0.currentPosition += 3 * i;
 					else {
 						anIntArray2723 = new int[i];
 						anIntArray2707 = new int[i];
 						for (int i_5_ = 0; (i ^ 0xffffffff) < (i_5_ ^ 0xffffffff); i_5_++) {
-							anIntArray2723[i_5_] = arg0.read_u16();
+							anIntArray2723[i_5_] = arg0.readShort();
 							anIntArray2707[i_5_] = arg0.get();
 						}
 					}

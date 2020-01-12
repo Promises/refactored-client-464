@@ -30,7 +30,7 @@ public class Class25 {
                 if (((Class82.plane ^ 0xffffffff) != (class4_sub20_sub7_sub3.anInt3345 ^ 0xffffffff))
                         || class4_sub20_sub7_sub3.aBoolean3338) {
                     class4_sub20_sub7_sub3.clear();
-                } else if (class4_sub20_sub7_sub3.anInt3341 <= Region.anInt134) {
+                } else if (class4_sub20_sub7_sub3.anInt3341 <= Region.pulseCycle) {
                     class4_sub20_sub7_sub3.method419((byte) 125,
                             Class4_Sub20_Sub6.anInt2906);
                     if (class4_sub20_sub7_sub3.aBoolean3338) {
@@ -386,7 +386,6 @@ public class Class25 {
             Class4_Sub2_Sub4.anInt2649 = 0;
 
             Class43.anInt883 = 0;
-            Class53.anInt1087 = 0;
             Class54.anInt1108 = 0;
             Class4_Sub20.anInt2354 = 0;
             Class76.anInt1545 = 0;
@@ -422,7 +421,7 @@ public class Class25 {
             RS2Font.anInt2780 = 0;
             Class16.anInt430 = 0;
             Class4_Sub20_Sub14.anInt3141 = 0;
-            Class4_Sub20_Sub7_Sub1_Sub2.anInt3616 = 0;
+            Npc.anInt3616 = 0;
             Class57.anInt1153 = 0;
             Class4_Sub11_Sub1.anInt2690 = 0;
             Class4_Sub7.anInt1945 = 0;
@@ -513,7 +512,6 @@ public class Class25 {
             Class76.anInt1556 = 0;
             Class4_Sub17.anInt2330 = 0;
             Class53.anInt1082 = 0;
-            Class4_Sub20.anInt2362 = 0;
             Class4_Sub2_Sub1.anInt2580 = 0;
             Class4_Sub11_Sub1.anInt2670 = 0;
             Class68.anInt1382 = 0;
@@ -632,7 +630,7 @@ public class Class25 {
             Class4_Sub20_Sub7_Sub3.anInt3356 = 0;
             Class53.anInt1067 = 0;
             Class34.anInt1745 = 0;
-            Class4_Sub20_Sub7_Sub1_Sub2.anInt3619 = 0;
+            Npc.anInt3619 = 0;
             Class9.anInt273 = 0;
             Class4_Sub20_Sub9.anInt3032 = 0;
             Class73.anInt1500 = 0;
@@ -650,7 +648,7 @@ public class Class25 {
             Class19.anInt500 = 0;
             Class76.anInt1549 = 0;
             Class71.anInt1469 = 0;
-            Class4_Sub20_Sub7_Sub1_Sub2.anInt3614 = 0;
+            Npc.anInt3614 = 0;
             Player.anInt3607 = 0;
             Class76.anInt1551 = 0;
             Class4_Sub20_Sub15.anInt3152 = 0;
@@ -890,7 +888,7 @@ public class Class25 {
                 Class62.anInt1234 = 0;
                 Class24.anInt561 = 0;
                 Class4_Sub20_Sub14.anInt3142 = 0;
-                Class4_Sub20_Sub7_Sub1_Sub2.anInt3615 = 0;
+                Npc.anInt3615 = 0;
                 Class61.anInt1213 = 0;
                 Class48.anInt975 = 0;
                 Class4_Sub2_Sub1.anInt2598 = 0;
@@ -1037,10 +1035,10 @@ public class Class25 {
                 Class59.aBoolean1188 = true;
                 Class59.anInt1184 = 0;
                 Class82.method1213((byte) -117);
-                Class66.aClass4_Sub11_Sub1_1328.pointer = 0;
+                Class66.aClass4_Sub11_Sub1_1328.currentPosition = 0;
                 Class57.anInt1130 = 0;
                 Class4_Sub20_Sub8.anInt2980 = 0;
-                Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer = 0;
+                Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.currentPosition = 0;
                 RSCanvas.anInt56 = -1;
                 Class57.anInt1141 = 0;
                 Class43.anInt874 = -1;
@@ -1076,7 +1074,7 @@ public class Class25 {
                     aClass4_Sub11Array575[i] = null;
                 }
                 for (int i = 0; (i ^ 0xffffffff) > -32769; i++) {
-                    Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i] = null;
+                    Class57.npcs[i] = null;
                 }
                 Class4_Sub15.localPlayer = Class4_Sub20_Sub7_Sub4.aPlayerArray3358[2047] = new Player();
                 Class4_Sub20_Sub11.aClass65_3075.method1070((byte) 112);
@@ -1088,7 +1086,7 @@ public class Class25 {
                         }
                     }
                 }
-                Class4_Sub20_Sub7_Sub1_Sub2.aClass65_3618 = new Class65();
+                Npc.aClass65_3618 = new Class65();
                 GameShell.anInt23 = 0;
                 Class11.anInt326 = 0;
                 for (int i = 0; (i ^ 0xffffffff) > (Class82.anInt1715 ^ 0xffffffff); i++) {

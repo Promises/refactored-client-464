@@ -88,8 +88,8 @@ public class Player extends Actor {
 				if (jagexString.anInt1805 > arg0)
 					jagexString.anInt1805 = arg0;
 				jagexString.aByteArray1803 = new byte[jagexString.anInt1805];
-				arg1.pointer += Class10.aClass47_305.method980(
-						arg1.byteBuffer, jagexString.anInt1805, arg1.pointer,
+				arg1.currentPosition += Class10.aClass47_305.method980(
+						arg1.byteBuffer, jagexString.anInt1805, arg1.currentPosition,
 						jagexString.aByteArray1803, arg2, 0);
 				return jagexString;
 			} catch (Exception exception) {
@@ -168,9 +168,9 @@ public class Player extends Actor {
 				}
 			}
 			if (!aBoolean3594 && aClass4_Sub20_Sub7_Sub7_3596 != null) {
-				if (anInt3601 <= Region.anInt134)
+				if (anInt3601 <= Region.pulseCycle)
 					aClass4_Sub20_Sub7_Sub7_3596 = null;
-				if (Region.anInt134 >= anInt3608 && anInt3601 > Region.anInt134) {
+				if (Region.pulseCycle >= anInt3608 && anInt3601 > Region.pulseCycle) {
 					Class4_Sub20_Sub7_Sub7 class4_sub20_sub7_sub7_11_ = aClass4_Sub20_Sub7_Sub7_3596;
 					class4_sub20_sub7_sub7_11_.method445(anInt3602 - worldX,
 							(-anInt3604 + anInt3583), (-worldY + anInt3598));
@@ -234,7 +234,7 @@ public class Player extends Actor {
 
 	public void method391(int arg0, Buffer arg1) {
 		try {
-			arg1.pointer = 0;
+			arg1.currentPosition = 0;
 			anInt3588++;
 			int i = arg1.get();
 			anInt3597 = arg1.method229(arg0 ^ ~0x7b);
@@ -250,7 +250,7 @@ public class Player extends Actor {
 					int i_3_ = arg1.get();
 					is[i_1_] = (i_2_ << -1745695480) + i_3_;
 					if (i_1_ == 0 && (is[0] ^ 0xffffffff) == -65536) {
-						i_0_ = arg1.read_u16();
+						i_0_ = arg1.readShort();
 						break;
 					}
 					if (is[i_1_] >= 512) {
@@ -269,33 +269,33 @@ public class Player extends Actor {
 					i_7_ = 0;
 				is_5_[i_6_] = i_7_;
 			}
-			anInt3265 = arg1.read_u16();
+			anInt3265 = arg1.readShort();
 			if (anInt3265 == 65535)
 				anInt3265 = -1;
-			anInt3250 = arg1.read_u16();
+			anInt3250 = arg1.readShort();
 			if (anInt3250 == 65535)
 				anInt3250 = -1;
 			anInt3246 = anInt3250;
-			anInt3272 = arg1.read_u16();
+			anInt3272 = arg1.readShort();
 			if ((anInt3272 ^ 0xffffffff) == -65536)
 				anInt3272 = -1;
-			anInt3269 = arg1.read_u16();
+			anInt3269 = arg1.readShort();
 			if ((anInt3269 ^ 0xffffffff) == -65536)
 				anInt3269 = -1;
-			anInt3263 = arg1.read_u16();
+			anInt3263 = arg1.readShort();
 			if (anInt3263 == 65535)
 				anInt3263 = -1;
-			anInt3251 = arg1.read_u16();
+			anInt3251 = arg1.readShort();
 			if (anInt3251 == 65535)
 				anInt3251 = -1;
-			anInt3274 = arg1.read_u16();
+			anInt3274 = arg1.readShort();
 			if (anInt3274 == 65535)
 				anInt3274 = -1;
 			long name = arg1.readLong((byte) 33);
 			JagexString string1 = Class68.method1094(-5, name);
 			aJagexString_3593 = string1.method839(arg0 ^ 0x5d);
 			anInt3584 = arg1.get();
-			anInt3586 = arg1.read_u16();
+			anInt3586 = arg1.readShort();
 			if (aClass35_3609 == null)
 				aClass35_3609 = new Class35();
 			aClass35_3609.method901(is_5_, is, i_0_, (byte) -79, i == 1);

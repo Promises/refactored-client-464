@@ -104,7 +104,7 @@ public class Class4_Sub20_Sub6 extends Class4_Sub20 {
 			if (Class4_Sub20_Sub8.aClass4_Sub20_Sub10_2990 == null
 					|| Class4_Sub20_Sub8.aClass4_Sub20_Sub10_2990.aLong150 != l)
 				return 0;
-			return 1 + (99 * Class40.aClass4_Sub11_783.pointer / (Class40.aClass4_Sub11_783.byteBuffer.length - (Class4_Sub20_Sub8.aClass4_Sub20_Sub10_2990.aByte3052)));
+			return 1 + (99 * Class40.aClass4_Sub11_783.currentPosition / (Class40.aClass4_Sub11_783.byteBuffer.length - (Class4_Sub20_Sub8.aClass4_Sub20_Sub10_2990.aByte3052)));
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("hc.A("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
@@ -226,10 +226,10 @@ public class Class4_Sub20_Sub6 extends Class4_Sub20 {
 		anInt2924++;
 		if ((arg2 ^ 0xffffffff) != -2) {
 			if ((arg2 ^ 0xffffffff) == -3)
-				anInt2909 = arg1.read_u16();
+				anInt2909 = arg1.readShort();
 			else if ((arg2 ^ 0xffffffff) != -5) {
 				if (arg2 == 5)
-					anInt2898 = arg1.read_u16();
+					anInt2898 = arg1.readShort();
 				else if (arg2 != 6) {
 					if ((arg2 ^ 0xffffffff) != -8) {
 						if (arg2 == 8)
@@ -238,18 +238,18 @@ public class Class4_Sub20_Sub6 extends Class4_Sub20 {
 								|| (arg2 ^ 0xffffffff) <= -51) {
 							if ((arg2 ^ 0xffffffff) <= -51 && arg2 < 60)
 								aShortArray2925[-50 + arg2] = (short) arg1
-										.read_u16();
+										.readShort();
 						} else
 							aShortArray2910[-40 + arg2] = (short) arg1
-									.read_u16();
+									.readShort();
 					} else
 						anInt2912 = arg1.get();
 				} else
-					anInt2913 = arg1.read_u16();
+					anInt2913 = arg1.readShort();
 			} else
-				anInt2901 = arg1.read_u16();
+				anInt2901 = arg1.readShort();
 		} else
-			anInt2930 = arg1.read_u16();
+			anInt2930 = arg1.readShort();
 		if (arg0 != 32767)
 			anInt2913 = -23;
 	}

@@ -12,7 +12,7 @@ public class JagexException extends RuntimeException {
             ")4lang)4de");
     public static ImageRGB[] aImageRGBArray1732;
     public static Class43 aClass43_1728;
-    public static int anInt1726 = 0;
+    public static int updatedPlayerCount = 0;
     public static int anInt1727;
     public static int anInt1729 = 0;
     public static int anInt1731;

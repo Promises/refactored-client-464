@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-public class Class4_Sub20_Sub7_Sub1_Sub2 extends Actor {
+public class Npc extends Actor {
 	public static JagexString aJagexString_3620 = JagexString.getRs2PreparedString("ams"
     );
 	public static JagexString aJagexString_3622;
@@ -75,7 +75,7 @@ public class Class4_Sub20_Sub7_Sub1_Sub2 extends Actor {
 		}
 	}
 
-	public Class4_Sub20_Sub3 aClass4_Sub20_Sub3_3617;
+	public Class4_Sub20_Sub3 npcDefinition;
 
 	@Override
 	public Class4_Sub20_Sub7_Sub7 method378(boolean arg0) {
@@ -83,7 +83,7 @@ public class Class4_Sub20_Sub7_Sub1_Sub2 extends Actor {
 			anInt3616++;
 			if (arg0 != false)
 				method395(88);
-			if (aClass4_Sub20_Sub3_3617 == null)
+			if (npcDefinition == null)
 				return null;
 			Class4_Sub20_Sub17 class4_sub20_sub17 = (anInt3277 == -1
 					|| anInt3222 != 0 ? null : Class68.method1093(anInt3277,
@@ -91,7 +91,7 @@ public class Class4_Sub20_Sub7_Sub1_Sub2 extends Actor {
 			Class4_Sub20_Sub17 class4_sub20_sub17_0_ = (anInt3257 != -1
 					&& (anInt3265 != anInt3257 || class4_sub20_sub17 == null) ? Class68
 					.method1093(anInt3257, (byte) -127) : null);
-			Class4_Sub20_Sub7_Sub7 class4_sub20_sub7_sub7 = aClass4_Sub20_Sub3_3617
+			Class4_Sub20_Sub7_Sub7 class4_sub20_sub7_sub7 = npcDefinition
 					.method347(0, class4_sub20_sub17, class4_sub20_sub17_0_,
 							anInt3258, anInt3239);
 			if (class4_sub20_sub7_sub7 == null)
@@ -109,7 +109,7 @@ public class Class4_Sub20_Sub7_Sub1_Sub2 extends Actor {
 							class4_sub20_sub7_sub7s, 2);
 				}
 			}
-			if (aClass4_Sub20_Sub3_3617.anInt2791 == 1)
+			if (npcDefinition.anInt2791 == 1)
 				class4_sub20_sub7_sub7.aBoolean3454 = true;
 			return class4_sub20_sub7_sub7;
 		} catch (RuntimeException runtimeexception) {
@@ -124,7 +124,7 @@ public class Class4_Sub20_Sub7_Sub1_Sub2 extends Actor {
 			anInt3619++;
 			if (arg0 != -19456)
 				aClass65_3618 = null;
-			if (aClass4_Sub20_Sub3_3617 == null)
+			if (npcDefinition == null)
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {

@@ -175,15 +175,15 @@ public class Class4_Sub11_Sub1 extends Buffer {
 
 	public static int method270(Buffer arg0, int arg1, JagexString arg2) {
 		try {
-			int i = arg0.pointer;
+			int i = arg0.currentPosition;
 			arg0.method243(13952, arg2.anInt1805);
-			arg0.pointer += Class10.aClass47_305.method979(arg0.byteBuffer,
-					arg2.aByteArray1803, arg0.pointer, arg2.anInt1805, 0, arg1
+			arg0.currentPosition += Class10.aClass47_305.method979(arg0.byteBuffer,
+					arg2.aByteArray1803, arg0.currentPosition, arg2.anInt1805, 0, arg1
 							^ ~0x1d7d);
 			if (arg1 != -7547)
 				method275((byte) -38, 54);
 			anInt2672++;
-			return -i + arg0.pointer;
+			return -i + arg0.currentPosition;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ib.L("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ','
@@ -245,7 +245,7 @@ public class Class4_Sub11_Sub1 extends Buffer {
 
 	public void method264(int arg0, int arg1) {
 		try {
-			byteBuffer[pointer++] = (byte) (arg0 + aClass33_2685.method884(6));
+			byteBuffer[currentPosition++] = (byte) (arg0 + aClass33_2685.method884(6));
 			anInt2674++;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ib.M("
@@ -258,18 +258,16 @@ public class Class4_Sub11_Sub1 extends Buffer {
 			anInt2689++;
 			if (arg0 != true)
 				anInt2682 = 25;
-			return 0xff & (byteBuffer[pointer++] + -aClass33_2685.method884(6));
+			return 0xff & (byteBuffer[currentPosition++] + -aClass33_2685.method884(6));
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ib.F("
 					+ arg0 + ')');
 		}
 	}
 
-	public int method266(int arg0, int arg1) {
+	public int method266(int arg1) {
 		try {
 			anInt2681++;
-			if (arg0 != -1432215741)
-				method264(-109, 111);
 			int i = anInt2665 >> -1432215741;
 			int i_0_ = 0;
 			int i_1_ = 8 - (anInt2665 & 0x7);
@@ -285,14 +283,13 @@ public class Class4_Sub11_Sub1 extends Buffer {
 				i_0_ += (byteBuffer[i] >> i_1_ + -arg1 & RS2Font.anIntArray2777[arg1]);
 			return i_0_;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ib.N("
-					+ arg0 + ',' + arg1 + ')'));
+			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ib.N(" + arg1 + ')'));
 		}
 	}
 
 	public void method271(byte arg0) {
 		try {
-			anInt2665 = 8 * pointer;
+			anInt2665 = 8 * currentPosition;
 			if (arg0 >= -17)
 				aJagexString_2679 = null;
 			anInt2684++;
@@ -317,7 +314,7 @@ public class Class4_Sub11_Sub1 extends Buffer {
 	public void method274(byte arg0) {
 		try {
 			anInt2666++;
-			pointer = (anInt2665 - -7) / 8;
+			currentPosition = (anInt2665 - -7) / 8;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ib.A("
 					+ arg0 + ')');

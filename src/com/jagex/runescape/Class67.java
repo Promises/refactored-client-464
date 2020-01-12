@@ -39,7 +39,7 @@ public class Class67 {
             if (!Class4_Sub22.aBoolean2400) {
                 int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method223(0); // shorta,
                 // regiony
-                int i_0_ = ((-Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer + Class4_Sub20_Sub15.anInt3157) / 16);
+                int i_0_ = ((-Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.currentPosition + Class4_Sub20_Sub15.packetSize) / 16);
                 Class4_Sub20_Sub7_Sub4.anIntArrayArray3375 = new int[i_0_][4];
                 for (int i_1_ = 0; (i_0_ ^ 0xffffffff) < (i_1_ ^ 0xffffffff); i_1_++) {
                     for (int i_2_ = 0; (i_2_ ^ 0xffffffff) > -5; i_2_++) {
@@ -50,7 +50,7 @@ public class Class67 {
                 int i_3_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                         .method213((byte) -114); // leshort, regionx
                 int i_4_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                        .read_u16(); // short
+                        .readShort(); // short
                 int i_5_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get(); // byte
                 boolean bool = false;
                 if (((i_3_ / 8 ^ 0xffffffff) == -49 || i_3_ / 8 == 49)
@@ -61,7 +61,7 @@ public class Class67 {
                     bool = true;
                 }
                 int i_6_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                        .read_u16(); // short
+                        .readShort(); // short
                 Class4_Sub20_Sub5.aByteArrayArray2887 = new byte[i_0_][];
                 Class47.regionIds = new int[i_0_];
                 GameShell.regionsData = new byte[i_0_][];
@@ -107,7 +107,7 @@ public class Class67 {
                 int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                         .method235((byte) 126);
                 int i_10_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                        .method240(32767);
+                        .readByteSubtracted(32767);
                 int i_11_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                         .method235((byte) 106);
                 int i_12_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
@@ -119,10 +119,10 @@ public class Class67 {
                     for (int i_15_ = 0; (i_15_ ^ 0xffffffff) > -14; i_15_++) {
                         for (int i_16_ = 0; i_16_ < 13; i_16_++) {
                             int i_17_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                                    .method266(-1432215741, 1);
+                                    .method266(1);
                             if ((i_17_ ^ 0xffffffff) == -2) {
                                 Class80.anIntArrayArrayArray1650[i_14_][i_15_][i_16_] = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                                        .method266(-1432215741, 26);
+                                        .method266(26);
                             } else {
                                 Class80.anIntArrayArrayArray1650[i_14_][i_15_][i_16_] = -1;
                             }
@@ -130,12 +130,12 @@ public class Class67 {
                     }
                 }
                 Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method274((byte) 67);
-                int i_18_ = ((Class4_Sub20_Sub15.anInt3157 + -Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer) / 16);
+                int i_18_ = ((Class4_Sub20_Sub15.packetSize + -Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.currentPosition) / 16);
                 Class4_Sub20_Sub7_Sub4.anIntArrayArray3375 = new int[i_18_][4];
                 for (int i_19_ = 0; (i_18_ ^ 0xffffffff) < (i_19_ ^ 0xffffffff); i_19_++) {
                     for (int i_20_ = 0; (i_20_ ^ 0xffffffff) > -5; i_20_++) {
                         Class4_Sub20_Sub7_Sub4.anIntArrayArray3375[i_19_][i_20_] = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                                .read_32((byte) 73);
+                                .readInt((byte) 73);
                     }
                 }
                 Class47.regionIds = new int[i_18_];

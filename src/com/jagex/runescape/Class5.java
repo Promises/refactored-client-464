@@ -133,7 +133,7 @@ public class Class5 {
 			if (arg1 != false) {
 				method644((byte) 55, -24);
 			}
-			Class4_Sub20_Sub7_Sub1_Sub2.anInt3614++;
+			Npc.anInt3614++;
 			Class66.aClass4_Sub11_Sub1_1328.method264(165, 117);
 			Class66.aClass4_Sub11_Sub1_1328.method227((byte) -27,
 					-1 + arg0.method825(-97));

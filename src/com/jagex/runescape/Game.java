@@ -1,6 +1,4 @@
 package com.jagex.runescape;
-import com.jagex.runescape.audio.Filter;
-import com.jagex.runescape.audio.Instrument;
 import com.jagex.runescape.io.Buffer;
 import tech.henning.client.Configuration;
 
@@ -148,8 +146,8 @@ public class Game extends GameShell {
 	public static void method31(int arg0, int arg1, Actor arg2) {
 		try {
 			anInt1845++;
-			if (Region.anInt134 >= arg2.anInt3224) {
-				if ((Region.anInt134 ^ 0xffffffff) < (arg2.anInt3281 ^ 0xffffffff))
+			if (Region.pulseCycle >= arg2.anInt3224) {
+				if ((Region.pulseCycle ^ 0xffffffff) < (arg2.anInt3281 ^ 0xffffffff))
 					Class4_Sub20_Sub14.method596(false, arg2);
 				else
 					Class7.method654(arg1 ^ 0x6, arg2);
@@ -371,7 +369,7 @@ public class Game extends GameShell {
 //			Class19_Sub1.method771((byte) -82);
 //			Class27.method850(77);
 //			Class10.method667(0);
-//			Class4_Sub20_Sub7_Sub1_Sub2.method395(2);
+//			Npc.method395(2);
 //			Class4_Sub11_Sub1.method269(1);
 //			Class69.method1106();
 //			Region.method66(false);
@@ -598,7 +596,7 @@ public class Game extends GameShell {
 	public void method25(int arg0) {
 		try {
 			anInt1831++;
-			Region.anInt134++;
+			Region.pulseCycle++;
 			method28((byte) -97);
 			Class4_Sub23.method636(arg0 + 19134);
 			Class53.method1010(0);

@@ -34,7 +34,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             Class66.aJagexString_1319 = StringUtilities.aJagexString_474;
             Class53.aJagexString_1068 = StringUtilities.aJagexString_741;
             Class4_Sub6.aJagexString_1942 = Class71.aJagexString_1471;
-            Class4_Sub8.aJagexString_1974 = Class4_Sub20_Sub7_Sub1_Sub2.aJagexString_3628;
+            Class4_Sub8.aJagexString_1974 = Npc.aJagexString_3628;
             SceneGraph.aJagexString_2497 = Class4_Sub7.aJagexString_1965;
             Class4_Sub20_Sub14.aJagexString_3147 = StringUtilities.aJagexString_495;
             Class4_Sub20_Sub9.aJagexString_3042 = StringUtilities.aJagexString_701;
@@ -48,7 +48,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             Class81.aJagexString_1705 = Class61.aJagexString_1212;
             Class52.aJagexString_1055 = Class4_Sub21.aJagexString_2366;
             RSFont.aJagexString_153 = Class4_Sub20_Sub5.aJagexString_2890;
-            Class4_Sub20_Sub7_Sub1_Sub2.aJagexString_3623 = Class4_Sub11_Sub1.aJagexString_2678;
+            Npc.aJagexString_3623 = Class4_Sub11_Sub1.aJagexString_2678;
             StringUtilities.aJagexString_629 = Class4_Sub17.aJagexString_2322;
             Class4_Sub20_Sub6.aJagexString_2899 = RSFont.aJagexString_147;
             Class81.aJagexString_1668 = Class4_Sub2_Sub4.aJagexString_2653;
@@ -78,7 +78,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             Class4_Sub20_Sub11.aJagexString_3074 = Class4_Sub14.aJagexString_2278;
             Class76.aJagexString_1561 = Class4_Sub8.aJagexString_1966;
             StringUtilities.aJagexString_400 = Class80.aJagexString_1634;
-            Class4_Sub20_Sub7_Sub1_Sub2.aJagexString_3626 = Class4_Sub6.aJagexString_1928;
+            Npc.aJagexString_3626 = Class4_Sub6.aJagexString_1928;
             Class4_Sub11_Sub1.aJagexString_2669 = Class4_Sub20_Sub9.aJagexString_3043;
             RS2Font.aJagexString_2762 = StringUtilities.aJagexString_390;
             StringUtilities.aJagexString_311 = RS2Font.aJagexString_2759;
@@ -151,7 +151,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             Class50.aJagexString_1011 = Class57.aJagexString_1152;
             RSFont.aJagexString_164 = SceneGraph.aJagexString_2488;
             Class81.aJagexString_1674 = Class81.aJagexString_1701;
-            Class4_Sub20_Sub7_Sub1_Sub2.aJagexString_3630 = Class4_Sub20_Sub16.aJagexString_3180;
+            Npc.aJagexString_3630 = Class4_Sub20_Sub16.aJagexString_3180;
             Class6.aJagexString_210 = Class4_Sub3.aJagexString_1912;
             Class4_Sub17.aJagexString_2325 = Class48.aJagexString_988;
             Class81.aJagexString_1700 = Class61.aJagexString_1212;
@@ -226,7 +226,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
         }
     }
 
-    public static void method374() {
+    public static void method374() { //redraw tab maybe? or just interface?
         try {
             for (Class4_Sub16 class4_sub16 = ((Class4_Sub16) Class31.aClass16_677
                     .method724((byte) -41)); class4_sub16 != null; class4_sub16 = ((Class4_Sub16) Class31.aClass16_677
@@ -243,8 +243,8 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
                     }
                     if (!bool) {
                         int i_1_ = (int) class4_sub16.aLong150;
-                        RSInterface class4_sub13 = Class4_Sub20.method322(
-                                true, i_1_);
+                        RSInterface class4_sub13 = RSInterface.forId(
+                                i_1_);
                         if (class4_sub13 != null) {
                             Class67.method1088(class4_sub13);
                         }
@@ -334,26 +334,26 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
 
     public static void method379(int arg0) {
         try {
-            JagexException.anInt1726 = 0;
+            JagexException.updatedPlayerCount = 0;
             anInt2939++;
-            Class4_Sub20_Sub7_Sub5.anInt3386 = 0;
+            Class4_Sub20_Sub7_Sub5.removePlayerCount = 0;
             Class4_Sub24.method637((byte) 42); // done
             Class10.method669(0); // done
             Buffer.method246((byte) 83); // done
             Class4_Sub20_Sub15.method603(false); // done
-            for (int i = 0; Class4_Sub20_Sub7_Sub5.anInt3386 > i; i++) {
-                int i_6_ = Class58.anIntArray1164[i];
-                if ((Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_6_].anInt3256) != Region.anInt134) {
+            for (int i = 0; Class4_Sub20_Sub7_Sub5.removePlayerCount > i; i++) {
+                int i_6_ = Class58.removePlayers[i];
+                if ((Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_6_].pulseCycle) != Region.pulseCycle) {
                     Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_6_] = null;
                 }
             }
             if (arg0 != 28231) {
                 anInt2941 = -117;
             }
-            if (Class4_Sub20_Sub15.anInt3157 != Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer) {
+            if (Class4_Sub20_Sub15.packetSize != Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.currentPosition) {
                 throw new RuntimeException("Gpp1 pos:"
-                        + (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer)
-                        + " P size:" + Class4_Sub20_Sub15.anInt3157);
+                        + (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.currentPosition)
+                        + " P size:" + Class4_Sub20_Sub15.packetSize);
             }
             for (int i = 0; Class4_Sub20_Sub7_Sub6.anInt3431 > i; i++) {
                 if ((Class4_Sub20_Sub7_Sub4.aPlayerArray3358[Class4_Sub23.anIntArray2432[i]]) == null) {

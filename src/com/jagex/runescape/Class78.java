@@ -193,7 +193,7 @@ public class Class78 {
                     }
                     arg2.method264(arg0, 108);
                     arg2.method227((byte) -27, 0);
-                    int i = arg2.pointer;
+                    int i = arg2.currentPosition;
                     arg2.method236(181, class4_sub6.anInt1937);
                     for (int i_10_ = 0; ((i_10_ ^ 0xffffffff) > (class4_sub6.anInt1916 ^ 0xffffffff)); i_10_++) {
                         if ((class4_sub6.anIntArray1926[i_10_] ^ 0xffffffff) != -1) {
@@ -282,7 +282,7 @@ public class Class78 {
                         }
                     }
                     arg2.method234(i, arg1 + 62);
-                    arg2.method258(-i + arg2.pointer, (byte) 50);
+                    arg2.method258(-i + arg2.currentPosition, (byte) 50);
                     class4_sub6.clear();
                 }
             }

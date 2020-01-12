@@ -138,18 +138,18 @@ public class Class4_Sub23 extends RSFont {
 			int i = 0;
 			aByteArray2420 = new byte[128];
 			Buffer class4_sub11;
-			for (class4_sub11 = new Buffer(arg0); class4_sub11.byteBuffer[class4_sub11.pointer
+			for (class4_sub11 = new Buffer(arg0); class4_sub11.byteBuffer[class4_sub11.currentPosition
 					+ i] != 0; i++) {
 				/* empty */
 			}
 			byte[] is = new byte[i];
 			for (int i_2_ = 0; i_2_ < i; i_2_++)
 				is[i_2_] = class4_sub11.method229(-118);
-			class4_sub11.pointer++;
-			int i_3_ = class4_sub11.pointer;
+			class4_sub11.currentPosition++;
+			int i_3_ = class4_sub11.currentPosition;
 			i++;
 			int i_4_ = 0;
-			for (class4_sub11.pointer += i; ((class4_sub11.byteBuffer[class4_sub11.pointer
+			for (class4_sub11.currentPosition += i; ((class4_sub11.byteBuffer[class4_sub11.currentPosition
 					+ i_4_] ^ 0xffffffff) != -1); i_4_++) {
 				/* empty */
 			}
@@ -157,10 +157,10 @@ public class Class4_Sub23 extends RSFont {
 			for (int i_6_ = 0; i_6_ < i_4_; i_6_++)
 				is_5_[i_6_] = class4_sub11.method229(18);
 			i_4_++;
-			class4_sub11.pointer++;
+			class4_sub11.currentPosition++;
 			int i_7_ = 0;
-			int i_8_ = class4_sub11.pointer;
-			for (class4_sub11.pointer += i_4_; ((class4_sub11.byteBuffer[class4_sub11.pointer
+			int i_8_ = class4_sub11.currentPosition;
+			for (class4_sub11.currentPosition += i_4_; ((class4_sub11.byteBuffer[class4_sub11.currentPosition
 					+ i_7_] ^ 0xffffffff) != -1); i_7_++) {
 				/* empty */
 			}
@@ -168,7 +168,7 @@ public class Class4_Sub23 extends RSFont {
 			for (int i_10_ = 0; (i_10_ ^ 0xffffffff) > (i_7_ ^ 0xffffffff); i_10_++)
 				is_9_[i_10_] = class4_sub11.method229(-117);
 			i_7_++;
-			class4_sub11.pointer++;
+			class4_sub11.currentPosition++;
 			byte[] is_11_ = new byte[i_7_];
 			int i_12_;
 			if ((i_7_ ^ 0xffffffff) < -2) {
@@ -206,13 +206,13 @@ public class Class4_Sub23 extends RSFont {
 					: new byte[i_19_ * 2];
 			i_19_ = class4_sub11.get();
 			byte[] is_21_ = i_19_ > 0 ? new byte[2 * i_19_] : null;
-			for (/**/; ((class4_sub11.byteBuffer[i_18_ + class4_sub11.pointer] ^ 0xffffffff) != -1); i_18_++) {
+			for (/**/; ((class4_sub11.byteBuffer[i_18_ + class4_sub11.currentPosition] ^ 0xffffffff) != -1); i_18_++) {
 				/* empty */
 			}
 			byte[] is_22_ = new byte[i_18_];
 			for (int i_23_ = 0; i_23_ < i_18_; i_23_++)
 				is_22_[i_23_] = class4_sub11.method229(14);
-			class4_sub11.pointer++;
+			class4_sub11.currentPosition++;
 			i_18_++;
 			int i_24_ = 0;
 			for (int i_25_ = 0; (i_25_ ^ 0xffffffff) > -129; i_25_++) {

@@ -91,7 +91,7 @@ public class AppletListener implements
             anInt1462++;
             Class4_Sub6 class4_sub6 = new Class4_Sub6();
             class4_sub6.anInt1916 = arg3.get();
-            class4_sub6.anInt1937 = arg3.read_32((byte) 73);
+            class4_sub6.anInt1937 = arg3.readInt((byte) 73);
             class4_sub6.aClass22Array1940 = new Class22[class4_sub6.anInt1916];
             class4_sub6.anIntArray1926 = new int[class4_sub6.anInt1916];
             class4_sub6.aClass22Array1927 = new Class22[class4_sub6.anInt1916];
@@ -118,7 +118,7 @@ public class AppletListener implements
                                 byte[][] is = new byte[i_2_][];
                                 if (i_0_ == 3) {
                                     for (int i_4_ = 0; i_4_ < i_2_; i_4_++) {
-                                        int i_5_ = arg3.read_32((byte) 73);
+                                        int i_5_ = arg3.readInt((byte) 73);
                                         is[i_4_] = new byte[i_5_];
                                         arg3.method253(0, (byte) -121, i_5_,
                                                 is[i_4_]);
@@ -142,7 +142,7 @@ public class AppletListener implements
                                     .method836(arg2 + -10670));
                             int i_8_ = 0;
                             if ((i_0_ ^ 0xffffffff) == -2)
-                                i_8_ = arg3.read_32((byte) 73);
+                                i_8_ = arg3.readInt((byte) 73);
                             class4_sub6.anIntArray1920[i] = i_0_;
                             class4_sub6.anIntArray1929[i] = i_8_;
                             class4_sub6.aClass22Array1940[i] = signlink

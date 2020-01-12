@@ -55,8 +55,8 @@ public class Class19_Sub1 extends Class19 {
 					if ((arg0 ^ 0xffffffff) == -2
 							&& class4_sub13.anObjectArray2244 != null) {
 						if (class4_sub13.anInt2163 >= 0) {
-							RSInterface class4_sub13_6_ = Class4_Sub20
-									.method322(true, class4_sub13.anInt2172);
+							RSInterface class4_sub13_6_ = RSInterface
+									.forId(class4_sub13.anInt2172);
 							if (class4_sub13_6_ == null
 									|| (class4_sub13_6_.aClass4_Sub13Array2215 == null)
 									|| (((class4_sub13_6_.aClass4_Sub13Array2215).length ^ 0xffffffff) >= (class4_sub13.anInt2163 ^ 0xffffffff))
@@ -416,7 +416,7 @@ public class Class19_Sub1 extends Class19 {
 							}
 							int i_4_ = 0;
 							if (i_3_ >= 6) {
-								i_4_ = class4_sub11.read_32((byte) 73);
+								i_4_ = class4_sub11.readInt((byte) 73);
 							}
 							if (i != anInt2509 || anInt2519 != i_4_) {
 								Class11.method672(anInt2509, anInt2513, this,

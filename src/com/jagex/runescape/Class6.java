@@ -40,10 +40,10 @@ public class Class6 {
 	}
 
 	public static void method646(int arg0) {
-		Class4_Sub7 class4_sub7 = ((Class4_Sub7) Class4_Sub20_Sub7_Sub1_Sub2.aClass65_3618
+		Class4_Sub7 class4_sub7 = ((Class4_Sub7) Npc.aClass65_3618
 				.method1071(-122));
 		anInt204++;
-		for (/**/; class4_sub7 != null; class4_sub7 = (Class4_Sub7) Class4_Sub20_Sub7_Sub1_Sub2.aClass65_3618
+		for (/**/; class4_sub7 != null; class4_sub7 = (Class4_Sub7) Npc.aClass65_3618
 				.method1075(arg0 + 40176)) {
 			if ((class4_sub7.anInt1954 ^ 0xffffffff) == 0) {
 				class4_sub7.anInt1952 = 0;

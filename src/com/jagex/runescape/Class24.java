@@ -40,7 +40,7 @@ public class Class24 {
             if (arg0 != false) {
                 aClass4_Sub20_Sub12_Sub1_549 = null;
             }
-            Class4_Sub20_Sub5.anInt2879 = Region.anInt134;
+            Class4_Sub20_Sub5.anInt2879 = Region.pulseCycle;
             Class4_Sub12.anInt2128 = -1;
             Class42.aClass4_Sub13_855 = null;
             anInt548++;
@@ -308,7 +308,7 @@ public class Class24 {
             Class31.aClass16_677.method720(class4_sub16, arg3, false);
             Class66.method1080(arg1, 0);
             Class62.method1048(false, arg1);
-            RSInterface class4_sub13 = Class4_Sub20.method322(true, arg3);
+            RSInterface class4_sub13 = RSInterface.forId(arg3);
             if (class4_sub13 != null) {
                 Class67.method1088(class4_sub13);
             }

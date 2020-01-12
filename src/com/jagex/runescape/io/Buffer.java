@@ -138,15 +138,15 @@ public class Buffer extends RSFont {
 				}
 			}
 			if (i == 47) {
-				Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i_2_];
-				if (class4_sub20_sub7_sub1_sub2 != null) {
+				Npc npc = Class57.npcs[i_2_];
+				if (npc != null) {
 					Class49.anInt993++;
 					Class4_Sub20
 							.method319(
 									1,
 									(Class4_Sub15.localPlayer.anIntArray3247[0]),
-									class4_sub20_sub7_sub1_sub2.anIntArray3247[0],
-									class4_sub20_sub7_sub1_sub2.anIntArray3248[0],
+									npc.anIntArray3247[0],
+									npc.anIntArray3248[0],
 									1,
 									0,
 									false,
@@ -171,7 +171,7 @@ public class Buffer extends RSFont {
 				Class66.aClass4_Sub11_Sub1_1328.method224(13421, i_1_);
 				Class66.aClass4_Sub11_Sub1_1328.method224(13421, i_2_);
 				Class18.anInt475 = 0;
-				Class46.rsInterface = Class4_Sub20.method322(true, i_3_);
+				Class46.rsInterface = RSInterface.forId(i_3_);
 				Class4_Sub20_Sub7_Sub6.anInt3443 = i_1_;
 			}
 			if (i == 29) {
@@ -181,7 +181,7 @@ public class Buffer extends RSFont {
 				Class66.aClass4_Sub11_Sub1_1328.method211(i_3_, -1387540232);
 				Class66.aClass4_Sub11_Sub1_1328.method207(i_1_, 2018779304);
 				Class18.anInt475 = 0;
-				Class46.rsInterface = Class4_Sub20.method322(true, i_3_);
+				Class46.rsInterface = RSInterface.forId(i_3_);
 				Class4_Sub20_Sub7_Sub6.anInt3443 = i_1_;
 			}
 			if ((i ^ 0xffffffff) == -5) {
@@ -191,7 +191,7 @@ public class Buffer extends RSFont {
 				Class66.aClass4_Sub11_Sub1_1328.method207(i_2_, 2018779304);
 				Class66.aClass4_Sub11_Sub1_1328.method244(98, i_3_);
 				Class18.anInt475 = 0;
-				Class46.rsInterface = Class4_Sub20.method322(true, i_3_);
+				Class46.rsInterface = RSInterface.forId(i_3_);
 				Class4_Sub20_Sub7_Sub6.anInt3443 = i_1_;
 			}
 			if (i == 26) {
@@ -250,15 +250,15 @@ public class Buffer extends RSFont {
 				}
 			} else {
 				if (i == 3) {
-					Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i_2_];
-					if (class4_sub20_sub7_sub1_sub2 != null) {
+					Npc npc = Class57.npcs[i_2_];
+					if (npc != null) {
 						SceneGraph.anInt2498++;
 						Class4_Sub20
 								.method319(
 										1,
 										(Class4_Sub15.localPlayer.anIntArray3247[0]),
-										class4_sub20_sub7_sub1_sub2.anIntArray3247[0],
-										class4_sub20_sub7_sub1_sub2.anIntArray3248[0],
+										npc.anIntArray3247[0],
+										npc.anIntArray3248[0],
 										1,
 										0,
 										false,
@@ -279,15 +279,15 @@ public class Buffer extends RSFont {
 				if ((i ^ 0xffffffff) == -52)
 					Class2.method43(123);
 				if ((i ^ 0xffffffff) == -59) {
-					Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i_2_];
-					if (class4_sub20_sub7_sub1_sub2 != null) {
+					Npc npc = Class57.npcs[i_2_];
+					if (npc != null) {
 						Class4_Sub1.anInt1864++;
 						Class4_Sub20
 								.method319(
 										1,
 										(Class4_Sub15.localPlayer.anIntArray3247[0]),
-										class4_sub20_sub7_sub1_sub2.anIntArray3247[0],
-										class4_sub20_sub7_sub1_sub2.anIntArray3248[0],
+										npc.anIntArray3247[0],
+										npc.anIntArray3248[0],
 										1,
 										0,
 										false,
@@ -307,10 +307,10 @@ public class Buffer extends RSFont {
 					}
 				}
 				if ((i ^ 0xffffffff) == -1003) {
-					RSInterface class4_sub13 = Class4_Sub20.method322(true,
+					RSInterface class4_sub13 = RSInterface.forId(
 							i_3_);
 					if (class4_sub13 == null
-							|| class4_sub13.anIntArray2216[i_1_] < 100000) {
+							|| class4_sub13.itemAmounts[i_1_] < 100000) {
 						Class66.aClass4_Sub11_Sub1_1328.method264(205,
 								arg0 + 107);
 						Class66.aClass4_Sub11_Sub1_1328.method207(i_2_,
@@ -322,14 +322,14 @@ public class Buffer extends RSFont {
 										(new JagexString[] {
 												Class74.method1168(
 														arg0 ^ ~0x22,
-														(class4_sub13.anIntArray2216[i_1_])),
+														(class4_sub13.itemAmounts[i_1_])),
 												Class4_Sub20_Sub1.aJagexString_2733,
 												(Class4_Sub23.method633(i_2_,
 														(byte) -117).aJagexString_2991) }),
 										-842)), Class4_Sub3.aJagexString_1895,
 								(byte) 110, 0);
 					Class18.anInt475 = 0;
-					Class46.rsInterface = Class4_Sub20.method322(true,
+					Class46.rsInterface = RSInterface.forId(
 							i_3_);
 					Class4_Sub20_Sub7_Sub6.anInt3443 = i_1_;
 				}
@@ -542,7 +542,7 @@ public class Buffer extends RSFont {
 				}
 				if ((i ^ 0xffffffff) == -51) {
 					Class4_Sub20_Sub7_Sub5.method432(false);
-					RSInterface class4_sub13 = Class4_Sub20.method322(true,
+					RSInterface class4_sub13 = RSInterface.forId(
 							i_3_);
 					Class35.anInt730 = i_2_;
 					Class57.anInt1142 = i_3_;
@@ -580,8 +580,8 @@ public class Buffer extends RSFont {
 						Class66.aClass4_Sub11_Sub1_1328.method224(arg0 + 13421,
 								i_2_);
 						Class18.anInt475 = 0;
-						Class46.rsInterface = Class4_Sub20.method322(
-								true, i_3_);
+						Class46.rsInterface = RSInterface.forId(
+								i_3_);
 						Class4_Sub20_Sub7_Sub6.anInt3443 = i_1_;
 					}
 					if (i == 35)
@@ -599,15 +599,15 @@ public class Buffer extends RSFont {
 								+ Class6.anInt217, 2018779304);
 					}
 					if ((i ^ 0xffffffff) == -39) {
-						Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = (Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i_2_]);
-						if (class4_sub20_sub7_sub1_sub2 != null) {
+						Npc npc = (Class57.npcs[i_2_]);
+						if (npc != null) {
 							Class64.anInt1264++;
 							Class4_Sub20
 									.method319(
 											1,
 											(Class4_Sub15.localPlayer.anIntArray3247[0]),
-											class4_sub20_sub7_sub1_sub2.anIntArray3247[0],
-											class4_sub20_sub7_sub1_sub2.anIntArray3248[0],
+											npc.anIntArray3247[0],
+											npc.anIntArray3248[0],
 											1,
 											0,
 											false,
@@ -723,8 +723,8 @@ public class Buffer extends RSFont {
 						Class66.aClass4_Sub11_Sub1_1328.method251(i_1_,
 								(byte) 53);
 						Class18.anInt475 = 0;
-						Class46.rsInterface = Class4_Sub20.method322(
-								true, i_3_);
+						Class46.rsInterface = RSInterface.forId(
+								i_3_);
 						Class4_Sub20_Sub7_Sub6.anInt3443 = i_1_;
 					}
 					if (i == 41) {
@@ -737,8 +737,8 @@ public class Buffer extends RSFont {
 						Class66.aClass4_Sub11_Sub1_1328.method224(
 								arg0 ^ 0x346d, i_2_);
 						Class18.anInt475 = 0;
-						Class46.rsInterface = Class4_Sub20.method322(
-								true, i_3_);
+						Class46.rsInterface = RSInterface.forId(
+								i_3_);
 						Class4_Sub20_Sub7_Sub6.anInt3443 = i_1_;
 					}
 					if (i == 33) {
@@ -746,8 +746,8 @@ public class Buffer extends RSFont {
 						Class66.aClass4_Sub11_Sub1_1328.method264(153, -92);
 						Class66.aClass4_Sub11_Sub1_1328.method236(arg0 ^ 0xb5,
 								i_3_);
-						RSInterface class4_sub13 = Class4_Sub20.method322(
-								true, i_3_);
+						RSInterface class4_sub13 = RSInterface.forId(
+								i_3_);
 						if (class4_sub13.anIntArrayArray2134 != null
 								&& (class4_sub13.anIntArrayArray2134[0][0] ^ 0xffffffff) == -6) {
 							int i_4_ = class4_sub13.anIntArrayArray2134[0][1];
@@ -849,8 +849,8 @@ public class Buffer extends RSFont {
 								2018779304);
 						Class66.aClass4_Sub11_Sub1_1328.method230(false, i_3_);
 						Class18.anInt475 = 0;
-						Class46.rsInterface = Class4_Sub20.method322(
-								true, i_3_);
+						Class46.rsInterface = RSInterface.forId(
+								i_3_);
 						Class4_Sub20_Sub7_Sub6.anInt3443 = i_1_;
 					}
 					if ((i ^ 0xffffffff) == -16
@@ -881,15 +881,15 @@ public class Buffer extends RSFont {
 								arg0 + 2018779304);
 					}
 					if (i == 44) {
-						Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = (Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i_2_]);
-						if (class4_sub20_sub7_sub1_sub2 != null) {
+						Npc npc = (Class57.npcs[i_2_]);
+						if (npc != null) {
 							Class4_Sub20_Sub7_Sub4.anInt3364++;
 							Class4_Sub20
 									.method319(
 											1,
 											(Class4_Sub15.localPlayer.anIntArray3247[0]),
-											class4_sub20_sub7_sub1_sub2.anIntArray3247[0],
-											class4_sub20_sub7_sub1_sub2.anIntArray3248[0],
+											npc.anIntArray3247[0],
+											npc.anIntArray3248[0],
 											1,
 											0,
 											false,
@@ -912,8 +912,8 @@ public class Buffer extends RSFont {
 								arg0 ^ 0x7e);
 						Class1.anInt73++;
 						Class66.aClass4_Sub11_Sub1_1328.method236(181, i_3_);
-						RSInterface class4_sub13 = Class4_Sub20.method322(
-								true, i_3_);
+						RSInterface class4_sub13 = RSInterface.forId(
+								i_3_);
 						if (class4_sub13.anIntArrayArray2134 != null
 								&& (class4_sub13.anIntArrayArray2134[0][0] ^ 0xffffffff) == -6) {
 							int i_5_ = class4_sub13.anIntArrayArray2134[0][1];
@@ -1010,8 +1010,8 @@ public class Buffer extends RSFont {
 						Class66.aClass4_Sub11_Sub1_1328.method224(13421, i_1_);
 						Class66.aClass4_Sub11_Sub1_1328.method236(181, i_3_);
 						Class18.anInt475 = 0;
-						Class46.rsInterface = Class4_Sub20.method322(
-								true, i_3_);
+						Class46.rsInterface = RSInterface.forId(
+								i_3_);
 						Class4_Sub20_Sub7_Sub6.anInt3443 = i_1_;
 					}
 					if ((i ^ 0xffffffff) == -24) {
@@ -1029,8 +1029,8 @@ public class Buffer extends RSFont {
 						Class66.aClass4_Sub11_Sub1_1328.method218(-98,
 								Class35.anInt730);
 						Class18.anInt475 = 0;
-						Class46.rsInterface = Class4_Sub20.method322(
-								true, i_3_);
+						Class46.rsInterface = RSInterface.forId(
+								i_3_);
 						Class4_Sub20_Sub7_Sub6.anInt3443 = i_1_;
 					}
 					if ((i ^ 0xffffffff) == -17) {
@@ -1068,8 +1068,8 @@ public class Buffer extends RSFont {
 						Class66.aClass4_Sub11_Sub1_1328.method224(13421, i_1_);
 						Class66.aClass4_Sub11_Sub1_1328.method224(13421, i_2_);
 						Class18.anInt475 = 0;
-						Class46.rsInterface = Class4_Sub20.method322(
-								true, i_3_);
+						Class46.rsInterface = RSInterface.forId(
+								i_3_);
 						Class4_Sub20_Sub7_Sub6.anInt3443 = i_1_;
 					}
 					if (i == 45) {
@@ -1079,13 +1079,13 @@ public class Buffer extends RSFont {
 						Class66.aClass4_Sub11_Sub1_1328.method218(-98, i_2_);
 						Class66.aClass4_Sub11_Sub1_1328.method224(13421, i_1_);
 						Class18.anInt475 = 0;
-						Class46.rsInterface = Class4_Sub20.method322(
-								true, i_3_);
+						Class46.rsInterface = RSInterface.forId(
+								i_3_);
 						Class4_Sub20_Sub7_Sub6.anInt3443 = i_1_;
 					}
 					if (i == 24) {
-						RSInterface class4_sub13 = Class4_Sub20.method322(
-								true, i_3_);
+						RSInterface class4_sub13 = RSInterface.forId(
+								i_3_);
 						boolean bool = true;
 						if (class4_sub13.anInt2227 > 0)
 							bool = RSFont.method71(arg0 + -124, class4_sub13);
@@ -1164,8 +1164,8 @@ public class Buffer extends RSFont {
 						Class66.aClass4_Sub11_Sub1_1328.method244(114,
 								Class4_Sub20.anInt2357);
 						Class18.anInt475 = 0;
-						Class46.rsInterface = Class4_Sub20.method322(
-								true, i_3_);
+						Class46.rsInterface = RSInterface.forId(
+								i_3_);
 						Class4_Sub20_Sub7_Sub6.anInt3443 = i_1_;
 					}
 					if (i == 18) {
@@ -1197,14 +1197,14 @@ public class Buffer extends RSFont {
 						}
 					}
 					if ((i ^ 0xffffffff) == -47) {
-						Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = (Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i_2_]);
-						if (class4_sub20_sub7_sub1_sub2 != null) {
+						Npc npc = (Class57.npcs[i_2_]);
+						if (npc != null) {
 							Class4_Sub20
 									.method319(
 											1,
 											(Class4_Sub15.localPlayer.anIntArray3247[0]),
-											class4_sub20_sub7_sub1_sub2.anIntArray3247[0],
-											class4_sub20_sub7_sub1_sub2.anIntArray3248[0],
+											npc.anIntArray3247[0],
+											npc.anIntArray3248[0],
 											1,
 											0,
 											false,
@@ -1235,9 +1235,9 @@ public class Buffer extends RSFont {
 						Class57.anInt1155 = Class37.anInt758;
 						Class11.anInt331 = 0;
 						Class28.anInt640 = 2;
-						Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = (Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i_2_]);
-						if (class4_sub20_sub7_sub1_sub2 != null) {
-							Class4_Sub20_Sub3 class4_sub20_sub3 = (class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617);
+						Npc npc = (Class57.npcs[i_2_]);
+						if (npc != null) {
+							Class4_Sub20_Sub3 class4_sub20_sub3 = (npc.npcDefinition);
 							if (class4_sub20_sub3.anIntArray2832 != null)
 								class4_sub20_sub3 = class4_sub20_sub3
 										.method354((byte) 104);
@@ -1251,14 +1251,14 @@ public class Buffer extends RSFont {
 						}
 					}
 					if ((i ^ 0xffffffff) == -44) {
-						Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = (Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i_2_]);
-						if (class4_sub20_sub7_sub1_sub2 != null) {
+						Npc npc = (Class57.npcs[i_2_]);
+						if (npc != null) {
 							Class4_Sub20
 									.method319(
 											1,
 											(Class4_Sub15.localPlayer.anIntArray3247[0]),
-											class4_sub20_sub7_sub1_sub2.anIntArray3247[0],
-											class4_sub20_sub7_sub1_sub2.anIntArray3248[0],
+											npc.anIntArray3247[0],
+											npc.anIntArray3248[0],
 											1,
 											0,
 											false,
@@ -1331,7 +1331,7 @@ public class Buffer extends RSFont {
 					if ((Class4_Sub20_Sub1.anInt2734 ^ 0xffffffff) != -1) {
 						Class4_Sub20_Sub1.anInt2734 = 0;
 						Class67.method1088(
-								Class4_Sub20.method322(true, Class57.anInt1142)
+								RSInterface.forId(Class57.anInt1142)
                         );
 					}
 					if (Class4_Sub23.aBoolean2421)
@@ -1347,9 +1347,9 @@ public class Buffer extends RSFont {
 	public static void method246(byte arg0) {
 		anInt2075++;
 		while (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method262((byte) 24,
-				Class4_Sub20_Sub15.anInt3157) >= 11) {
+				Class4_Sub20_Sub15.packetSize) >= 11) {
 			int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-					-1432215741, 11);
+					11);
 			if ((i ^ 0xffffffff) == -2048)
 				break;
 			boolean bool = false;
@@ -1362,23 +1362,23 @@ public class Buffer extends RSFont {
 			}
 			Class4_Sub23.anIntArray2432[Class4_Sub20_Sub7_Sub6.anInt3431++] = i;
 			Player player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i]);
-			player.anInt3256 = Region.anInt134;
+			player.pulseCycle = Region.pulseCycle;
 			int i_9_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-					-1432215741, 5);
+					5);
 			if ((i_9_ ^ 0xffffffff) < -16)
 				i_9_ -= 32;
 			int i_10_ = (Class34.anIntArray1763[Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-					.method266(-1432215741, 3)]);
+					.method266(3)]);
 			if (bool)
 				player.anInt3217 = player.anInt3219 = i_10_;
 			int i_11_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-					-1432215741, 1);
+					1);
 			int i_12_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-					-1432215741, 1);
+					1);
 			if ((i_12_ ^ 0xffffffff) == -2)
-				Class48.anIntArray979[JagexException.anInt1726++] = i;
+				Class48.anIntArray979[JagexException.updatedPlayerCount++] = i;
 			int i_13_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-					-1432215741, 5);
+					5);
 			if ((i_13_ ^ 0xffffffff) < -16)
 				i_13_ -= 32;
 			player
@@ -1677,11 +1677,11 @@ public class Buffer extends RSFont {
 
 	public byte[] byteBuffer;
 
-	public int pointer;
+	public int currentPosition;
 
 	public Buffer(byte[] data) {
 		try {
-			pointer = 0;
+			currentPosition = 0;
 			byteBuffer = data;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
@@ -1691,7 +1691,7 @@ public class Buffer extends RSFont {
 
 	public Buffer(int arg0) {
 		try {
-			pointer = 0;
+			currentPosition = 0;
 			byteBuffer = Class72.method1160(-1, arg0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
@@ -1704,8 +1704,8 @@ public class Buffer extends RSFont {
 			if (arg1 != 2018779304)
 				method242(-57);
 			anInt2111++;
-			byteBuffer[pointer++] = (byte) (arg0 >> 2018779304);
-			byteBuffer[pointer++] = (byte) arg0;
+			byteBuffer[currentPosition++] = (byte) (arg0 >> 2018779304);
+			byteBuffer[currentPosition++] = (byte) arg0;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.TB("
 					+ arg0 + ',' + arg1 + ')'));
@@ -1714,18 +1714,18 @@ public class Buffer extends RSFont {
 
 	public int getC() {
 		try {
-			return -byteBuffer[pointer++] & 0xff;
+			return -byteBuffer[currentPosition++] & 0xff;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
 					"Error with getC in: " + Buffer.class.getName());
 		}
 	}
 
-	public int read_u16() {
+	public int readShort() {
 		try {
 			anInt2072++;
-			pointer += 2;
-			return ((byteBuffer[-1 + pointer] & 0xff) + (byteBuffer[pointer
+			currentPosition += 2;
+			return ((byteBuffer[-1 + currentPosition] & 0xff) + (byteBuffer[currentPosition
 					+ -2] << -315536632 & 0xff00));
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.V()");
@@ -1735,7 +1735,7 @@ public class Buffer extends RSFont {
 	public void method210(int arg0, int arg1) {
 		try {
 			anInt2112++;
-			byteBuffer[pointer++] = (byte) (arg1 + -arg0);
+			byteBuffer[currentPosition++] = (byte) (arg1 + -arg0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.UB("
 					+ arg0 + ',' + arg1 + ')'));
@@ -1744,13 +1744,13 @@ public class Buffer extends RSFont {
 
 	public void method211(int arg0, int arg1) {
 		try {
-			byteBuffer[pointer++] = (byte) (arg0 >> 8);
+			byteBuffer[currentPosition++] = (byte) (arg0 >> 8);
 			anInt2069++;
-			byteBuffer[pointer++] = (byte) arg0;
-			byteBuffer[pointer++] = (byte) (arg0 >> 24);
+			byteBuffer[currentPosition++] = (byte) arg0;
+			byteBuffer[currentPosition++] = (byte) (arg0 >> 24);
 			if (arg1 != -1387540232)
 				aClass64_2096 = null;
-			byteBuffer[pointer++] = (byte) (arg0 >> 16);
+			byteBuffer[currentPosition++] = (byte) (arg0 >> 16);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.GC("
 					+ arg0 + ',' + arg1 + ')'));
@@ -1759,12 +1759,12 @@ public class Buffer extends RSFont {
 
 	public JagexString method212() {
 		try {
-			int i = pointer;
+			int i = currentPosition;
 			anInt2100++;
-			while (byteBuffer[pointer++] != 0) {
+			while (byteBuffer[currentPosition++] != 0) {
 				/* empty */
 			}
-			return Class61.method1046(-1 + -i + pointer, (byte) 73, i,
+			return Class61.method1046(-1 + -i + currentPosition, (byte) 73, i,
 					byteBuffer);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.VA("
@@ -1776,10 +1776,10 @@ public class Buffer extends RSFont {
 		try {
 			if (arg0 > -11)
 				method250(-118);
-			pointer += 2;
+			currentPosition += 2;
 			anInt2102++;
-			return ((byteBuffer[-1 + pointer] << -1801742808 & 0xff00) + (0xff & byteBuffer[-2
-					+ pointer]));
+			return ((byteBuffer[-1 + currentPosition] << -1801742808 & 0xff00) + (0xff & byteBuffer[-2
+					+ currentPosition]));
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.JA("
 					+ arg0 + ')');
@@ -1788,10 +1788,10 @@ public class Buffer extends RSFont {
 
 	public int readUnsignedSmart() {
 		try {
-			int i = 0xff & byteBuffer[pointer];
+			int i = 0xff & byteBuffer[currentPosition];
 			anInt2113++;
 			if ((i ^ 0xffffffff) <= -129)
-				return -32768 + read_u16();
+				return -32768 + readShort();
 			return get();
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
@@ -1802,8 +1802,8 @@ public class Buffer extends RSFont {
 	public long readLong(byte arg0) {
 		try {
 			anInt2099++;
-			long l = read_32((byte) 73) & 0xffffffffL;
-			long l_0_ = read_32((byte) 73) & 0xffffffffL;
+			long l = readInt((byte) 73) & 0xffffffffL;
+			long l_0_ = readInt((byte) 73) & 0xffffffffL;
 			if (arg0 != 33)
 				StringUtilities.aJagexString_2115 = null;
 			return (l << -1181163488) - -l_0_;
@@ -1816,7 +1816,7 @@ public class Buffer extends RSFont {
 	public int get() {
 		try {
 			anInt2052++;
-			return byteBuffer[pointer++] & 0xff;
+			return byteBuffer[currentPosition++] & 0xff;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
 					"Error with get in: " + Buffer.class.getName());
@@ -1826,23 +1826,23 @@ public class Buffer extends RSFont {
 	public void method218(int arg0, int arg1) {
 		try {
 			anInt2063++;
-			byteBuffer[pointer++] = (byte) (arg1 >> -508699864);
-			byteBuffer[pointer++] = (byte) (arg1 - -128);
+			byteBuffer[currentPosition++] = (byte) (arg1 >> -508699864);
+			byteBuffer[currentPosition++] = (byte) (arg1 - -128);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.EC("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
 
-	public int read_32(byte arg0) {
+	public int readInt(byte arg0) {
 		try {
-			pointer += 4;
+			currentPosition += 4;
 			anInt2087++;
 			if (arg0 != 73)
 				return -52;
-			return ((0xff0000 & byteBuffer[pointer - 3] << 189354448) + ((~0xffffff & byteBuffer[pointer - 4] << 1162396728)
-					+ ((0xff & byteBuffer[-2 + pointer]) << 716984520) + (byteBuffer[-1
-					+ pointer] & 0xff)));
+			return ((0xff0000 & byteBuffer[currentPosition - 3] << 189354448) + ((~0xffffff & byteBuffer[currentPosition - 4] << 1162396728)
+					+ ((0xff & byteBuffer[-2 + currentPosition]) << 716984520) + (byteBuffer[-1
+					+ currentPosition] & 0xff)));
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.QB("
 					+ arg0 + ')');
@@ -1853,7 +1853,7 @@ public class Buffer extends RSFont {
 		try {
 			if (arg2 == 960052712) {
 				for (int i = arg1 + arg3 + -1; (arg1 ^ 0xffffffff) >= (i ^ 0xffffffff); i--)
-					arg0[i] = byteBuffer[pointer++];
+					arg0[i] = byteBuffer[currentPosition++];
 				anInt2084++;
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -1863,15 +1863,15 @@ public class Buffer extends RSFont {
 		}
 	}
 
-	public int method222(boolean arg0) {
+	public int readLEInt(boolean arg0) {
 		try {
 			if (arg0 != false)
 				anInt2085 = -41;
 			anInt2067++;
-			pointer += 4;
-			return (((0xff & byteBuffer[-3 + pointer]) << -739116824) + ((0xff0000 & byteBuffer[-2
-					+ pointer] << -1421440464) + ((~0xffffff & byteBuffer[-1
-					+ pointer] << 2049339992) + (byteBuffer[pointer - 4] & 0xff))));
+			currentPosition += 4;
+			return (((0xff & byteBuffer[-3 + currentPosition]) << -739116824) + ((0xff0000 & byteBuffer[-2
+					+ currentPosition] << -1421440464) + ((~0xffffff & byteBuffer[-1
+					+ currentPosition] << 2049339992) + (byteBuffer[currentPosition - 4] & 0xff))));
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.UA("
 					+ arg0 + ')');
@@ -1883,9 +1883,9 @@ public class Buffer extends RSFont {
 			if (arg0 != 0)
 				return -30;
 			anInt2091++;
-			pointer += 2;
-			return ((0xff & -128 + byteBuffer[pointer + -1]) + (0xff00 & byteBuffer[-2
-					+ pointer] << 37992360));
+			currentPosition += 2;
+			return ((0xff & -128 + byteBuffer[currentPosition + -1]) + (0xff00 & byteBuffer[-2
+					+ currentPosition] << 37992360));
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.CA("
 					+ arg0 + ')');
@@ -1896,9 +1896,9 @@ public class Buffer extends RSFont {
 		try {
 			if (arg0 != 13421)
 				method238((byte) 125);
-			byteBuffer[pointer++] = (byte) arg1;
+			byteBuffer[currentPosition++] = (byte) arg1;
 			anInt2059++;
-			byteBuffer[pointer++] = (byte) (arg1 >> 1446702280);
+			byteBuffer[currentPosition++] = (byte) (arg1 >> 1446702280);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.WA("
 					+ arg0 + ',' + arg1 + ')'));
@@ -1907,7 +1907,7 @@ public class Buffer extends RSFont {
 
 	public void method225(int arg0, byte arg1) {
 		try {
-			byteBuffer[pointer++] = (byte) (arg0 - -128);
+			byteBuffer[currentPosition++] = (byte) (arg0 - -128);
 			if (arg1 == 97)
 				anInt2055++;
 		} catch (RuntimeException runtimeexception) {
@@ -1921,8 +1921,8 @@ public class Buffer extends RSFont {
 			if (arg0 != 76)
 				return null;
 			anInt2104++;
-			if ((byteBuffer[pointer] ^ 0xffffffff) == -1) {
-				pointer++;
+			if ((byteBuffer[currentPosition] ^ 0xffffffff) == -1) {
+				currentPosition++;
 				return null;
 			}
 			return method212();
@@ -1933,7 +1933,7 @@ public class Buffer extends RSFont {
 	}
 
 	public void method227(byte arg0, int arg1) {
-		byteBuffer[pointer++] = (byte) arg1;
+		byteBuffer[currentPosition++] = (byte) arg1;
 		anInt2083++;
 		if (arg0 != -27)
 			readLong((byte) -64);
@@ -1942,9 +1942,9 @@ public class Buffer extends RSFont {
 	public int method228(int arg0) {
 		try {
 			anInt2077++;
-			int i = byteBuffer[pointer++];
+			int i = byteBuffer[currentPosition++];
 			int i_6_ = arg0;
-			for (/**/; (i ^ 0xffffffff) > -1; i = byteBuffer[pointer++])
+			for (/**/; (i ^ 0xffffffff) > -1; i = byteBuffer[currentPosition++])
 				i_6_ = (0x7f & i | i_6_) << 432199079;
 			return i | i_6_;
 		} catch (RuntimeException runtimeexception) {
@@ -1956,7 +1956,7 @@ public class Buffer extends RSFont {
 	public byte method229(int arg0) {
 		try {
 			anInt2105++;
-			return byteBuffer[pointer++];
+			return byteBuffer[currentPosition++];
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.S("
 					+ arg0 + ')');
@@ -1965,13 +1965,13 @@ public class Buffer extends RSFont {
 
 	public void method230(boolean arg0, int arg1) {
 		try {
-			byteBuffer[pointer++] = (byte) (arg1 >> 1910008400);
-			byteBuffer[pointer++] = (byte) (arg1 >> 275834264);
-			byteBuffer[pointer++] = (byte) arg1;
+			byteBuffer[currentPosition++] = (byte) (arg1 >> 1910008400);
+			byteBuffer[currentPosition++] = (byte) (arg1 >> 275834264);
+			byteBuffer[currentPosition++] = (byte) arg1;
 			anInt2107++;
 			if (arg0 != false)
 				aCRC32_2116 = null;
-			byteBuffer[pointer++] = (byte) (arg1 >> -652404408);
+			byteBuffer[currentPosition++] = (byte) (arg1 >> -652404408);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.FA("
 					+ arg0 + ',' + arg1 + ')'));
@@ -1981,9 +1981,9 @@ public class Buffer extends RSFont {
 	public void method231(int arg0, int arg1) {
 		try {
 			anInt2108++;
-			byteBuffer[pointer++] = (byte) (arg0 >> -653287184);
-			byteBuffer[pointer++] = (byte) (arg0 >> 972296968);
-			byteBuffer[pointer++] = (byte) arg0;
+			byteBuffer[currentPosition++] = (byte) (arg0 >> -653287184);
+			byteBuffer[currentPosition++] = (byte) (arg0 >> 972296968);
+			byteBuffer[currentPosition++] = (byte) arg0;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.OA("
 					+ arg0 + ',' + arg1 + ')'));
@@ -1996,7 +1996,7 @@ public class Buffer extends RSFont {
 			int i = arg1;
 			if (arg2 == -104) {
 				for (/**/; (i ^ 0xffffffff) > (arg1 + arg3 ^ 0xffffffff); i++)
-					byteBuffer[pointer++] = arg0[i];
+					byteBuffer[currentPosition++] = arg0[i];
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.O("
@@ -2008,16 +2008,16 @@ public class Buffer extends RSFont {
 	public void method233(BigInteger arg0, BigInteger arg1, int arg2) {
 		try {
 			if (arg2 != -25481)
-				pointer = 98;
+				currentPosition = 98;
 			anInt2093++;
-			int i = pointer;
+			int i = currentPosition;
 			byte[] is = new byte[i];
-			pointer = 0;
+			currentPosition = 0;
 			method253(0, (byte) -105, i, is);
 			BigInteger biginteger = new BigInteger(is);
 			BigInteger biginteger_7_ = biginteger;// .modPow(arg1, arg0);
 			byte[] is_8_ = biginteger_7_.toByteArray();
-			pointer = 0;
+			currentPosition = 0;
 			method227((byte) -27, is_8_.length);
 			method232(is_8_, 0, (byte) -104, is_8_.length);
 		} catch (RuntimeException runtimeexception) {
@@ -2030,7 +2030,7 @@ public class Buffer extends RSFont {
 	public int method234(int arg0, int arg1) {
 		try {
 			anInt2065++;
-			int i = Class53.method1009((byte) -127, byteBuffer, arg0, pointer);
+			int i = Class53.method1009((byte) -127, byteBuffer, arg0, currentPosition);
 			if (arg1 != 1)
 				return 91;
 			method236(181, i);
@@ -2044,9 +2044,9 @@ public class Buffer extends RSFont {
 	public int method235(byte arg0) {
 		try {
 			anInt2106++;
-			pointer += 2;
-			return (((0xff & byteBuffer[pointer - 1]) << 1159843944) + (0xff & byteBuffer[-2
-					+ pointer] - 128));
+			currentPosition += 2;
+			return (((0xff & byteBuffer[currentPosition - 1]) << 1159843944) + (0xff & byteBuffer[-2
+					+ currentPosition] - 128));
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.TA("
 					+ arg0 + ')');
@@ -2056,12 +2056,12 @@ public class Buffer extends RSFont {
 	public void method236(int arg0, int arg1) {
 		try {
 			anInt2056++;
-			byteBuffer[pointer++] = (byte) (arg1 >> 622136184);
-			byteBuffer[pointer++] = (byte) (arg1 >> 550550928);
-			byteBuffer[pointer++] = (byte) (arg1 >> 545485064);
+			byteBuffer[currentPosition++] = (byte) (arg1 >> 622136184);
+			byteBuffer[currentPosition++] = (byte) (arg1 >> 550550928);
+			byteBuffer[currentPosition++] = (byte) (arg1 >> 545485064);
 			if (arg0 != 181)
 				method236(102, -54);
-			byteBuffer[pointer++] = (byte) arg1;
+			byteBuffer[currentPosition++] = (byte) arg1;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.QA("
 					+ arg0 + ',' + arg1 + ')'));
@@ -2071,10 +2071,10 @@ public class Buffer extends RSFont {
 	public int method237(int arg0) {
 		try {
 			anInt2054++;
-			pointer += 4;
-			return ((byteBuffer[pointer + -2] & 0xff)
-					+ (((0xff & byteBuffer[-1 + pointer]) << 479365160) + ((byteBuffer[pointer - 3] & 0xff) << -1995013832)) + (0xff0000 & byteBuffer[-4
-					+ pointer] << 2021760848));
+			currentPosition += 4;
+			return ((byteBuffer[currentPosition + -2] & 0xff)
+					+ (((0xff & byteBuffer[-1 + currentPosition]) << 479365160) + ((byteBuffer[currentPosition - 3] & 0xff) << -1995013832)) + (0xff0000 & byteBuffer[-4
+					+ currentPosition] << 2021760848));
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.SA("
 					+ arg0 + ')');
@@ -2083,11 +2083,11 @@ public class Buffer extends RSFont {
 
 	public int method238(byte arg0) {
 		try {
-			pointer += 2;
+			currentPosition += 2;
 			if (arg0 > -45)
 				method207(-7, -42);
 			anInt2103++;
-			int i = ((byteBuffer[-1 + pointer] & 0xff) + ((0xff & byteBuffer[pointer
+			int i = ((byteBuffer[-1 + currentPosition] & 0xff) + ((0xff & byteBuffer[currentPosition
 					+ -2]) << -1101684792));
 			if ((i ^ 0xffffffff) < -32768)
 				i -= 65536;
@@ -2103,19 +2103,19 @@ public class Buffer extends RSFont {
 			if (arg0 < 28)
 				method236(30, -102);
 			anInt2060++;
-			return -128 + byteBuffer[pointer++] & 0xff;
+			return -128 + byteBuffer[currentPosition++] & 0xff;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.AB("
 					+ arg0 + ')');
 		}
 	}
 
-	public int method240(int arg0) {
+	public int readByteSubtracted(int arg0) {
 		try {
 			anInt2114++;
 			if (arg0 != 32767)
 				return -65;
-			return 0xff & 128 - byteBuffer[pointer++];
+			return 0xff & 128 - byteBuffer[currentPosition++];
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.KA("
 					+ arg0 + ')');
@@ -2124,12 +2124,12 @@ public class Buffer extends RSFont {
 
 	public int method241(int arg0) {
 		try {
-			pointer += arg0;
+			currentPosition += arg0;
 			anInt2080++;
-			return (((byteBuffer[pointer - 2] & 0xff) << 2127599416)
-					- (-(byteBuffer[pointer + -1] << 967823088 & 0xff0000) - ((byteBuffer[-4
-							+ pointer] & 0xff) << -1687385432)) + (0xff & byteBuffer[-3
-					+ pointer]));
+			return (((byteBuffer[currentPosition - 2] & 0xff) << 2127599416)
+					- (-(byteBuffer[currentPosition + -1] << 967823088 & 0xff0000) - ((byteBuffer[-4
+							+ currentPosition] & 0xff) << -1687385432)) + (0xff & byteBuffer[-3
+					+ currentPosition]));
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.IA("
 					+ arg0 + ')');
@@ -2141,7 +2141,7 @@ public class Buffer extends RSFont {
 			if (arg0 != 0)
 				return (byte) -114;
 			anInt2092++;
-			return (byte) -byteBuffer[pointer++];
+			return (byte) -byteBuffer[currentPosition++];
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.FC("
 					+ arg0 + ')');
@@ -2171,10 +2171,10 @@ public class Buffer extends RSFont {
 			anInt2074++;
 			if (arg0 < 87)
 				method224(-114, -102);
-			byteBuffer[pointer++] = (byte) arg1;
-			byteBuffer[pointer++] = (byte) (arg1 >> -313779192);
-			byteBuffer[pointer++] = (byte) (arg1 >> -61734032);
-			byteBuffer[pointer++] = (byte) (arg1 >> -1178496840);
+			byteBuffer[currentPosition++] = (byte) arg1;
+			byteBuffer[currentPosition++] = (byte) (arg1 >> -313779192);
+			byteBuffer[currentPosition++] = (byte) (arg1 >> -61734032);
+			byteBuffer[currentPosition++] = (byte) (arg1 >> -1178496840);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.LB("
 					+ arg0 + ',' + arg1 + ')'));
@@ -2184,9 +2184,9 @@ public class Buffer extends RSFont {
 	public byte method245(int arg0) {
 		try {
 			if (arg0 != 12605)
-				pointer = 125;
+				currentPosition = 125;
 			anInt2098++;
-			return (byte) (128 - byteBuffer[pointer++]);
+			return (byte) (128 - byteBuffer[currentPosition++]);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.AA("
 					+ arg0 + ')');
@@ -2195,14 +2195,14 @@ public class Buffer extends RSFont {
 
 	public void method247(int arg0, int arg1, int[] arg2, int arg3) {
 		try {
-			int i = pointer;
+			int i = currentPosition;
 			int i_14_ = (arg3 - arg0) / 8;
 			anInt2094++;
-			pointer = arg0;
+			currentPosition = arg0;
 			for (int i_15_ = 0; i_14_ > i_15_; i_15_++) {
-				int i_16_ = read_32((byte) 73);
+				int i_16_ = readInt((byte) 73);
 				int i_17_ = -957401312;
-				int i_18_ = read_32((byte) 73);
+				int i_18_ = readInt((byte) 73);
 				int i_19_ = -1640531527;
 				int i_20_ = 32;
 				while (i_20_-- > 0) {
@@ -2213,13 +2213,13 @@ public class Buffer extends RSFont {
 					i_16_ -= ((i_18_ << 1436977156 ^ i_18_ >>> -848638619) - -i_18_)
 							^ arg2[i_17_ & 0x3] + i_17_;
 				}
-				pointer -= 8;
+				currentPosition -= 8;
 				method236(181, i_16_);
 				method236(181, i_18_);
 			}
 			if (arg1 != 255)
 				byteBuffer = null;
-			pointer = i;
+			currentPosition = i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.DA("
 					+ arg0 + ',' + arg1 + ','
@@ -2230,11 +2230,11 @@ public class Buffer extends RSFont {
 	public int method248(boolean arg0) {
 		try {
 			anInt2058++;
-			pointer += 3;
+			currentPosition += 3;
 			if (arg0 != false)
 				StringUtilities.aJagexString_2101 = null;
-			return ((byteBuffer[pointer + -1] & 0xff) + ((0xff0000 & byteBuffer[-3
-					+ pointer] << 609314768) + ((0xff & byteBuffer[pointer - 2]) << -970674840)));
+			return ((byteBuffer[currentPosition + -1] & 0xff) + ((0xff0000 & byteBuffer[-3
+					+ currentPosition] << 609314768) + ((0xff & byteBuffer[currentPosition - 2]) << -970674840)));
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.MA("
 					+ arg0 + ')');
@@ -2246,10 +2246,10 @@ public class Buffer extends RSFont {
 			if (arg1 != -22334)
 				readSmart(-29);
 			anInt2086++;
-			byteBuffer[pointer - (arg0 + 4)] = (byte) (arg0 >> 785083640);
-			byteBuffer[pointer - (arg0 + 3)] = (byte) (arg0 >> -1508303056);
-			byteBuffer[-2 + pointer - arg0] = (byte) (arg0 >> -812178424);
-			byteBuffer[-1 + pointer - arg0] = (byte) arg0;
+			byteBuffer[currentPosition - (arg0 + 4)] = (byte) (arg0 >> 785083640);
+			byteBuffer[currentPosition - (arg0 + 3)] = (byte) (arg0 >> -1508303056);
+			byteBuffer[-2 + currentPosition - arg0] = (byte) (arg0 >> -812178424);
+			byteBuffer[-1 + currentPosition - arg0] = (byte) arg0;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.AC("
 					+ arg0 + ',' + arg1 + ')'));
@@ -2261,9 +2261,9 @@ public class Buffer extends RSFont {
 			anInt2057++;
 			if (arg0 != 0)
 				return -61;
-			pointer += 2;
-			int i = (((0xff & byteBuffer[-1 + pointer]) << -1006873816) - -(0xff & byteBuffer[-2
-					+ pointer]));
+			currentPosition += 2;
+			int i = (((0xff & byteBuffer[-1 + currentPosition]) << -1006873816) - -(0xff & byteBuffer[-2
+					+ currentPosition]));
 			if (i > 32767)
 				i -= 65536;
 			return i;
@@ -2274,8 +2274,8 @@ public class Buffer extends RSFont {
 	}
 
 	public void method251(int arg0, byte arg1) {
-		byteBuffer[pointer++] = (byte) (128 + arg0);
-		byteBuffer[pointer++] = (byte) (arg0 >> 970760744);
+		byteBuffer[currentPosition++] = (byte) (128 + arg0);
+		byteBuffer[currentPosition++] = (byte) (arg0 >> 970760744);
 		anInt2071++;
 		if (arg1 != 53)
 			StringUtilities.aJagexString_2101 = null;
@@ -2283,12 +2283,12 @@ public class Buffer extends RSFont {
 
 	public int method252(int arg0) {
 		try {
-			pointer += 2;
+			currentPosition += 2;
 			anInt2097++;
 			if (arg0 != 23580)
-				pointer = 88;
-			int i = (((byteBuffer[-1 + pointer] & 0xff) << 1150759592) + (0xff & -128
-					+ byteBuffer[pointer - 2]));
+				currentPosition = 88;
+			int i = (((byteBuffer[-1 + currentPosition] & 0xff) << 1150759592) + (0xff & -128
+					+ byteBuffer[currentPosition - 2]));
 			if (i > 32767)
 				i -= 65536;
 			return i;
@@ -2301,9 +2301,9 @@ public class Buffer extends RSFont {
 	public void method253(int arg0, byte arg1, int arg2, byte[] arg3) {
 		try {
 			for (int i = arg0; i < arg0 + arg2; i++)
-				arg3[i] = byteBuffer[pointer++];
+				arg3[i] = byteBuffer[currentPosition++];
 			if (arg1 >= -5)
-				method240(-98);
+				readByteSubtracted(-98);
 			anInt2068++;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.R("
@@ -2333,16 +2333,16 @@ public class Buffer extends RSFont {
 	public void method255(int arg0, long arg1) {
 		try {
 			anInt2090++;
-			byteBuffer[pointer++] = (byte) (int) (arg1 >> -810024136);
-			byteBuffer[pointer++] = (byte) (int) (arg1 >> -600474832);
-			byteBuffer[pointer++] = (byte) (int) (arg1 >> 832291176);
+			byteBuffer[currentPosition++] = (byte) (int) (arg1 >> -810024136);
+			byteBuffer[currentPosition++] = (byte) (int) (arg1 >> -600474832);
+			byteBuffer[currentPosition++] = (byte) (int) (arg1 >> 832291176);
 			if (arg0 != 189354448)
 				aBoolean2066 = true;
-			byteBuffer[pointer++] = (byte) (int) (arg1 >> 1902473824);
-			byteBuffer[pointer++] = (byte) (int) (arg1 >> 71101464);
-			byteBuffer[pointer++] = (byte) (int) (arg1 >> 1758569936);
-			byteBuffer[pointer++] = (byte) (int) (arg1 >> -1402663096);
-			byteBuffer[pointer++] = (byte) (int) arg1;
+			byteBuffer[currentPosition++] = (byte) (int) (arg1 >> 1902473824);
+			byteBuffer[currentPosition++] = (byte) (int) (arg1 >> 71101464);
+			byteBuffer[currentPosition++] = (byte) (int) (arg1 >> 1758569936);
+			byteBuffer[currentPosition++] = (byte) (int) (arg1 >> -1402663096);
+			byteBuffer[currentPosition++] = (byte) (int) arg1;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.OB("
 					+ arg0 + ',' + arg1 + ')'));
@@ -2367,7 +2367,7 @@ public class Buffer extends RSFont {
 	}
 
 	public void method258(int arg0, byte arg1) {
-		byteBuffer[-arg0 + (pointer + -1)] = (byte) arg0;
+		byteBuffer[-arg0 + (currentPosition + -1)] = (byte) arg0;
 		anInt2062++;
 		if (arg1 <= 18)
 			method226((byte) -3);
@@ -2377,10 +2377,10 @@ public class Buffer extends RSFont {
 		try {
 			anInt2076++;
 			if (arg1 != 18601)
-				pointer = -31;
-			pointer += arg0.method821(arg0.method825(-114), pointer, true, 0,
+				currentPosition = -31;
+			currentPosition += arg0.method821(arg0.method825(-114), currentPosition, true, 0,
 					byteBuffer);
-			byteBuffer[pointer++] = (byte) 0;
+			byteBuffer[currentPosition++] = (byte) 0;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.KB("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ')'));
@@ -2391,10 +2391,10 @@ public class Buffer extends RSFont {
 		try {
 			anInt2053++;
 			if (arg0 > -54)
-				read_32((byte) 15);
-			int i = byteBuffer[pointer] & 0xff;
+				readInt((byte) 15);
+			int i = byteBuffer[currentPosition] & 0xff;
 			if ((i ^ 0xffffffff) <= -129)
-				return -49152 + read_u16();
+				return -49152 + readShort();
 			return get() - 64;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.Q("
@@ -2407,7 +2407,7 @@ public class Buffer extends RSFont {
 			anInt2081++;
 			if (arg0 >= -62)
 				return (byte) -29;
-			return (byte) (-128 + byteBuffer[pointer++]);
+			return (byte) (-128 + byteBuffer[currentPosition++]);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.HB("
 					+ arg0 + ')');

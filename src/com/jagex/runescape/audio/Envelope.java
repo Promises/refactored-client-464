@@ -26,8 +26,8 @@ public class Envelope {
 
 	public void decode(Buffer data) {
 		form = data.get();
-		start = data.read_32((byte) 73);
-		end = data.read_32((byte) 73);
+		start = data.readInt((byte) 73);
+		end = data.readInt((byte) 73);
 		decode_shape(data);
 	}
 
@@ -58,8 +58,8 @@ public class Envelope {
 		phase_dur = new int[num_phases];
 		phase_peak = new int[num_phases];
 		for (int i = 0; i < num_phases; i++) {
-			phase_dur[i] = arg0.read_u16();
-			phase_peak[i] = arg0.read_u16();
+			phase_dur[i] = arg0.readShort();
+			phase_peak[i] = arg0.readShort();
 		}
 	}
 }

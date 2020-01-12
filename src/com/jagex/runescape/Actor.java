@@ -26,28 +26,28 @@ public abstract class Actor extends Class4_Sub20_Sub7 {
 			for (/**/; class4_sub20_sub7_sub5 != null; class4_sub20_sub7_sub5 = ((Class4_Sub20_Sub7_Sub5) Class4_Sub20_Sub11.aClass65_3075
 					.method1075(18485))) {
 				if (class4_sub20_sub7_sub5.anInt3389 != Class82.plane
-						|| ((Region.anInt134 ^ 0xffffffff) < (class4_sub20_sub7_sub5.anInt3424 ^ 0xffffffff))) {
+						|| ((Region.pulseCycle ^ 0xffffffff) < (class4_sub20_sub7_sub5.anInt3424 ^ 0xffffffff))) {
 					class4_sub20_sub7_sub5.clear();
-				} else if ((Region.anInt134 ^ 0xffffffff) <= (class4_sub20_sub7_sub5.anInt3388 ^ 0xffffffff)) {
+				} else if ((Region.pulseCycle ^ 0xffffffff) <= (class4_sub20_sub7_sub5.anInt3388 ^ 0xffffffff)) {
 					if ((class4_sub20_sub7_sub5.anInt3400 ^ 0xffffffff) < -1) {
-						Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = (Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[-1
+						Npc npc = (Class57.npcs[-1
 								+ class4_sub20_sub7_sub5.anInt3400]);
-						if (class4_sub20_sub7_sub1_sub2 != null
-								&& class4_sub20_sub7_sub1_sub2.worldX >= 0
-								&& class4_sub20_sub7_sub1_sub2.worldX < 13312
-								&& (class4_sub20_sub7_sub1_sub2.worldY ^ 0xffffffff) <= -1
-								&& class4_sub20_sub7_sub1_sub2.worldY < 13312) {
+						if (npc != null
+								&& npc.worldX >= 0
+								&& npc.worldX < 13312
+								&& (npc.worldY ^ 0xffffffff) <= -1
+								&& npc.worldY < 13312) {
 							class4_sub20_sub7_sub5
 									.method425(
-											class4_sub20_sub7_sub1_sub2.worldX,
+											npc.worldX,
 											((Class67
 													.getFloorDrawHeight(
-															class4_sub20_sub7_sub1_sub2.worldX,
-															class4_sub20_sub7_sub1_sub2.worldY,
+															npc.worldX,
+															npc.worldY,
 															class4_sub20_sub7_sub5.anInt3389
 													)) + -class4_sub20_sub7_sub5.anInt3387),
-											Region.anInt134,
-											class4_sub20_sub7_sub1_sub2.worldY,
+											Region.pulseCycle,
+											npc.worldY,
 											87);
 						}
 					}
@@ -73,7 +73,7 @@ public abstract class Actor extends Class4_Sub20_Sub7 {
 															player.worldY,
 															class4_sub20_sub7_sub5.anInt3389
 													)) - class4_sub20_sub7_sub5.anInt3387),
-											Region.anInt134,
+											Region.pulseCycle,
 											player.worldY,
 											97);
 						}
@@ -178,7 +178,7 @@ public abstract class Actor extends Class4_Sub20_Sub7 {
 	public int anInt3250;
 	public int anInt3251;
 	public int anInt3253;
-	public int anInt3256;
+	public int pulseCycle;
 	public int anInt3257;
 	public int anInt3258;
 	public int anInt3259;
@@ -220,7 +220,7 @@ public abstract class Actor extends Class4_Sub20_Sub7 {
 		anInt3226 = -1;
 		anInt3258 = 0;
 		anInt3220 = 0;
-		anInt3256 = 0;
+		pulseCycle = 0;
 		anInt3246 = -1;
 		anInt3242 = 0;
 		anInt3230 = 0;

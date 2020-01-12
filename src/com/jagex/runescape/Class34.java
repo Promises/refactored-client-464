@@ -24,7 +24,7 @@ public class Class34 implements Interface2 {
     public static int anInt1757;
     public static int anInt1761 = 0;
     public static int[] anIntArray1743 = new int[200];
-    public static int[] anIntArray1751 = new int[99];
+    public static int[] SKILL_EXPERIENCE = new int[99];
     public static int[] anIntArray1763 = new int[]{768, 1024, 1280, 512, 1536, 256, 0, 1792};
 
     static {
@@ -33,7 +33,7 @@ public class Class34 implements Interface2 {
             int i_3_ = i_2_ + 1;
             int i_4_ = (int) (300.0 * Math.pow(2.0, i_3_ / 7.0) + i_3_);
             i += i_4_;
-            anIntArray1751[i_2_] = i / 4;
+            SKILL_EXPERIENCE[i_2_] = i / 4;
         }
 
 
@@ -91,7 +91,7 @@ public class Class34 implements Interface2 {
             if (arg1.method808(Class46.aJagexString_930, (byte) -95)) {
                 return 3;
             }
-            if (arg1.method808(Class4_Sub20_Sub7_Sub1_Sub2.aJagexString_3620,
+            if (arg1.method808(Npc.aJagexString_3620,
                     (byte) -95)) {
                 return 4;
             }
@@ -135,7 +135,7 @@ public class Class34 implements Interface2 {
             aClass66_1758 = null;
             StringUtilities.aJagexString_1759 = null;
             aImageRGB_1760 = null;
-            anIntArray1751 = null;
+            SKILL_EXPERIENCE = null;
             StringUtilities.aJagexString_1769 = null;
             StringUtilities.aJagexString_1771 = null;
             StringUtilities.aJagexString_1753 = null;

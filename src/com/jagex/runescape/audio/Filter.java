@@ -83,24 +83,24 @@ public class Filter {
 		num_pairs[0] = i >> 4;
 		num_pairs[1] = i & 0xf;
 		if (i != 0) {
-			unity[0] = data.read_u16();
-			unity[1] = data.read_u16();
+			unity[0] = data.readShort();
+			unity[1] = data.readShort();
 			int i_3_ = data.get();
 			for (int i_4_ = 0; i_4_ < 2; i_4_++) {
 				for (int i_5_ = 0; i_5_ < num_pairs[i_4_]; i_5_++) {
 					pair_phase[i_4_][0][i_5_] = data
-							.read_u16();
+							.readShort();
 					pair_mag[i_4_][0][i_5_] = data
-							.read_u16();
+							.readShort();
 				}
 			}
 			for (int i_6_ = 0; i_6_ < 2; i_6_++) {
 				for (int i_7_ = 0; i_7_ < num_pairs[i_6_]; i_7_++) {
 					if ((i_3_ & 1 << i_6_ * 4 << i_7_) != 0) {
 						pair_phase[i_6_][1][i_7_] = data
-								.read_u16();
+								.readShort();
 						pair_mag[i_6_][1][i_7_] = data
-								.read_u16();
+								.readShort();
 					} else {
 						pair_phase[i_6_][1][i_7_] = pair_phase[i_6_][0][i_7_];
 						pair_mag[i_6_][1][i_7_] = pair_mag[i_6_][0][i_7_];

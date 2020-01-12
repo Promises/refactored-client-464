@@ -376,8 +376,8 @@ public class Class16 {
                                 if (i_40_ == 0) {
                                     throw new RuntimeException();
                                 }
-                                RSInterface class4_sub13 = Class4_Sub20
-                                        .method322(true, i_39_);
+                                RSInterface class4_sub13 = RSInterface
+                                        .forId(i_39_);
                                 if (class4_sub13.aClass4_Sub13Array2215 == null) {
                                     class4_sub13.aClass4_Sub13Array2215 = new RSInterface[i_41_ + 1];
                                 }
@@ -409,15 +409,14 @@ public class Class16 {
                             } else if (i_13_ == 101) {
                                 RSInterface class4_sub13 = (!bool ? Class4_Sub20_Sub5.aClass4_Sub13_2882
                                         : Class9.aClass4_Sub13_285);
-                                RSInterface class4_sub13_44_ = Class4_Sub20
-                                        .method322(true,
+                                RSInterface class4_sub13_44_ = RSInterface
+                                        .forId(
                                                 (class4_sub13.anInt2172));
                                 class4_sub13_44_.aClass4_Sub13Array2215[class4_sub13.anInt2163] = null;
                                 Class67.method1088(class4_sub13_44_);
                             } else if (i_13_ == 102) {
-                                RSInterface class4_sub13 = Class4_Sub20
-                                        .method322(
-                                                true,
+                                RSInterface class4_sub13 = RSInterface
+                                        .forId(
                                                 (Class24.anIntArray557[--i_10_]));
                                 class4_sub13.aClass4_Sub13Array2215 = null;
                                 Class67.method1088(class4_sub13);
@@ -452,8 +451,7 @@ public class Class16 {
                                             : (Class4_Sub20_Sub5.aClass4_Sub13_2882));
                                 } else {
                                     i_13_ -= 1000;
-                                    class4_sub13 = (Class4_Sub20.method322(
-                                            true,
+                                    class4_sub13 = (RSInterface.forId(
                                             Class24.anIntArray557[--i_10_]));
                                 }
                                 if (i_13_ == 1100) {
@@ -569,8 +567,7 @@ public class Class16 {
                                             : Class9.aClass4_Sub13_285);
                                 } else {
                                     i_13_ -= 1000;
-                                    class4_sub13 = (Class4_Sub20.method322(
-                                            true,
+                                    class4_sub13 = (RSInterface.forId(
                                             Class24.anIntArray557[--i_10_]));
                                 }
                                 Class67.method1088(class4_sub13);
@@ -610,8 +607,7 @@ public class Class16 {
                                             : Class9.aClass4_Sub13_285);
                                 } else {
                                     i_13_ -= 1000;
-                                    class4_sub13 = (Class4_Sub20.method322(
-                                            true,
+                                    class4_sub13 = (RSInterface.forId(
                                             Class24.anIntArray557[--i_10_]));
                                 }
                                 if ((i_13_ ^ 0xffffffff) == -1301) {
@@ -654,8 +650,7 @@ public class Class16 {
                                     || ((i_13_ ^ 0xffffffff) <= -2401 && (i_13_ ^ 0xffffffff) > -2501)) {
                                 RSInterface class4_sub13;
                                 if (i_13_ >= 2000) {
-                                    class4_sub13 = (Class4_Sub20.method322(
-                                            true,
+                                    class4_sub13 = (RSInterface.forId(
                                             Class24.anIntArray557[--i_10_]));
                                     i_13_ -= 1000;
                                 } else {
@@ -805,9 +800,8 @@ public class Class16 {
                                                 }
                                             }
                                         } else if (i_13_ < 2600) {
-                                            RSInterface class4_sub13 = (Class4_Sub20
-                                                    .method322(
-                                                            true,
+                                            RSInterface class4_sub13 = (RSInterface
+                                                    .forId(
                                                             (Class24.anIntArray557[--i_10_])));
                                             if ((i_13_ ^ 0xffffffff) == -2501) {
                                                 Class24.anIntArray557[i_10_++] = class4_sub13.anInt2181;
@@ -827,9 +821,8 @@ public class Class16 {
                                                 Class24.anIntArray557[i_10_++] = class4_sub13.anInt2183;
                                             }
                                         } else if (i_13_ < 2700) {
-                                            RSInterface class4_sub13 = (Class4_Sub20
-                                                    .method322(
-                                                            true,
+                                            RSInterface class4_sub13 = (RSInterface
+                                                    .forId(
                                                             (Class24.anIntArray557[--i_10_])));
                                             if (i_13_ == 2600) {
                                                 Class24.anIntArray557[i_10_++] = class4_sub13.anInt2231;
@@ -859,7 +852,7 @@ public class Class16 {
                                                     if (i_13_ >= 3300) {
                                                         if (i_13_ < 3400) {
                                                             if ((i_13_ ^ 0xffffffff) == -3301) {
-                                                                Class24.anIntArray557[i_10_++] = (Region.anInt134);
+                                                                Class24.anIntArray557[i_10_++] = (Region.pulseCycle);
                                                             } else if ((i_13_ ^ 0xffffffff) == -3302) {
                                                                 i_10_ -= 2;
                                                                 int i_59_ = (Class24.anIntArray557[i_10_]);
@@ -895,13 +888,13 @@ public class Class16 {
                                                                                 i_65_).anInt3082);
                                                             } else if (i_13_ == 3305) {
                                                                 int i_66_ = (Class24.anIntArray557[--i_10_]);
-                                                                Class24.anIntArray557[i_10_++] = (Class76.anIntArray1571[i_66_]);
+                                                                Class24.anIntArray557[i_10_++] = (Class76.skillLevel[i_66_]);
                                                             } else if (i_13_ == 3306) {
                                                                 int i_67_ = (Class24.anIntArray557[--i_10_]);
-                                                                Class24.anIntArray557[i_10_++] = (Class31.anIntArray693[i_67_]);
+                                                                Class24.anIntArray557[i_10_++] = (Class31.skillMaxLevel[i_67_]);
                                                             } else if (i_13_ == 3307) {
                                                                 int i_68_ = (Class24.anIntArray557[--i_10_]);
-                                                                Class24.anIntArray557[i_10_++] = (Class46.anIntArray945[i_68_]);
+                                                                Class24.anIntArray557[i_10_++] = (Class46.skillExperience[i_68_]);
                                                             } else if ((i_13_ ^ 0xffffffff) == -3309) {
                                                                 int i_69_ = (Class82.plane);
                                                                 int i_70_ = ((Class6.anInt217) + ((Class4_Sub15.localPlayer.worldX) >> 1922140999));
@@ -1888,7 +1881,7 @@ public class Class16 {
                                                                                 .method227(
                                                                                         (byte) -27,
                                                                                         0);
-                                                                        int i_149_ = Class66.aClass4_Sub11_Sub1_1328.pointer;
+                                                                        int i_149_ = Class66.aClass4_Sub11_Sub1_1328.currentPosition;
                                                                         Class66.aClass4_Sub11_Sub1_1328
                                                                                 .method227(
                                                                                         (byte) -27,
@@ -1904,7 +1897,7 @@ public class Class16 {
                                                                                         jagexString);
                                                                         Class66.aClass4_Sub11_Sub1_1328
                                                                                 .method258(
-                                                                                        Class66.aClass4_Sub11_Sub1_1328.pointer
+                                                                                        Class66.aClass4_Sub11_Sub1_1328.currentPosition
                                                                                                 + -i_149_,
                                                                                         (byte) 90);
                                                                     }
@@ -1921,7 +1914,7 @@ public class Class16 {
                                                                             .method227(
                                                                                     (byte) -27,
                                                                                     0);
-                                                                    int i_151_ = (Class66.aClass4_Sub11_Sub1_1328.pointer);
+                                                                    int i_151_ = (Class66.aClass4_Sub11_Sub1_1328.currentPosition);
                                                                     Class66.aClass4_Sub11_Sub1_1328
                                                                             .method255(
                                                                                     189354448,
@@ -1933,7 +1926,7 @@ public class Class16 {
                                                                                     jagexString_150_);
                                                                     Class66.aClass4_Sub11_Sub1_1328
                                                                             .method258(
-                                                                                    (-i_151_ + (Class66.aClass4_Sub11_Sub1_1328.pointer)),
+                                                                                    (-i_151_ + (Class66.aClass4_Sub11_Sub1_1328.currentPosition)),
                                                                                     (byte) 93);
                                                                 } else if ((i_13_ ^ 0xffffffff) == -5011) {
                                                                     int i_152_ = (Class24.anIntArray557[--i_10_]);
@@ -2285,8 +2278,8 @@ public class Class16 {
                                                             - -1]);
                                                     int i_185_ = (Class24.anIntArray557[i_10_]);
                                                     int i_186_ = (Class24.anIntArray557[2 + i_10_]);
-                                                    RSInterface class4_sub13 = (Class4_Sub20
-                                                            .method322(true,
+                                                    RSInterface class4_sub13 = (RSInterface
+                                                            .forId(
                                                                     i_186_));
                                                     Region.method54((byte) 85,
                                                             i_184_, i_185_,
@@ -2306,9 +2299,8 @@ public class Class16 {
                                                             class4_sub13);
                                                 }
                                             } else {
-                                                RSInterface class4_sub13 = (Class4_Sub20
-                                                        .method322(
-                                                                true,
+                                                RSInterface class4_sub13 = (RSInterface
+                                                        .forId(
                                                                 (Class24.anIntArray557[--i_10_])));
                                                 if (i_13_ == 2800) {
                                                     Class24.anIntArray557[i_10_++] = (Class68
@@ -2339,15 +2331,13 @@ public class Class16 {
                                                 }
                                             }
                                         } else if ((i_13_ ^ 0xffffffff) == -2701) {
-                                            RSInterface class4_sub13 = (Class4_Sub20
-                                                    .method322(
-                                                            true,
+                                            RSInterface class4_sub13 = (RSInterface
+                                                    .forId(
                                                             (Class24.anIntArray557[--i_10_])));
                                             Class24.anIntArray557[i_10_++] = class4_sub13.anInt2226;
                                         } else if ((i_13_ ^ 0xffffffff) == -2702) {
-                                            RSInterface class4_sub13 = (Class4_Sub20
-                                                    .method322(
-                                                            true,
+                                            RSInterface class4_sub13 = (RSInterface
+                                                    .forId(
                                                             (Class24.anIntArray557[--i_10_])));
                                             if ((class4_sub13.anInt2226 ^ 0xffffffff) == 0) {
                                                 Class24.anIntArray557[i_10_++] = 0;
@@ -2436,7 +2426,7 @@ public class Class16 {
                         } else {
                             RSInterface class4_sub13;
                             if (i_13_ >= 2000) {
-                                class4_sub13 = Class4_Sub20.method322(true,
+                                class4_sub13 = RSInterface.forId(
                                         (Class24.anIntArray557[--i_10_]));
                                 i_13_ -= 1000;
                             } else {
@@ -2573,10 +2563,10 @@ public class Class16 {
             if (arg0.anInt3237 != 0) {
                 if ((arg0.anInt3293 ^ 0xffffffff) != 0
                         && (arg0.anInt3293 ^ 0xffffffff) > -32769) {
-                    Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = (Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[arg0.anInt3293]);
-                    if (class4_sub20_sub7_sub1_sub2 != null) {
-                        int i_196_ = (arg0.worldY - class4_sub20_sub7_sub1_sub2.worldY);
-                        int i_197_ = (-class4_sub20_sub7_sub1_sub2.worldX + arg0.worldX);
+                    Npc npc = (Class57.npcs[arg0.anInt3293]);
+                    if (npc != null) {
+                        int i_196_ = (arg0.worldY - npc.worldY);
+                        int i_197_ = (-npc.worldX + arg0.worldX);
                         if (i_197_ != 0 || i_196_ != 0) {
                             arg0.anInt3217 = ((int) (325.949 * Math.atan2(
                                     i_197_, i_196_)) & 0x7ff);

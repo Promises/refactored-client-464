@@ -95,12 +95,12 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
                 long l = (Class25.aLong584 = StringUtilities.aJagexString_1768
                         .method806((byte) -30));
                 int i = (int) (l >> 321638480 & 0x1fL);
-                Class66.aClass4_Sub11_Sub1_1328.pointer = 0;
+                Class66.aClass4_Sub11_Sub1_1328.currentPosition = 0;
                 Class66.aClass4_Sub11_Sub1_1328.method227((byte) -27, 14);
                 Class66.aClass4_Sub11_Sub1_1328.method227((byte) -27, i);
                 Class4_Sub20_Sub17.aClass76_3189.method1183(2, 0, arg0 ^ ~0x24,
                         Class66.aClass4_Sub11_Sub1_1328.byteBuffer);
-                Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer = 0;
+                Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.currentPosition = 0;
                 RSFont.anInt148 = 3;
             }
             if (RSFont.anInt148 == 3) {
@@ -118,32 +118,32 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
                     return;
                 }
                 RSFont.anInt148 = 4;
-                Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer = 0;
+                Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.currentPosition = 0;
             }
             if (RSFont.anInt148 == 4) {
-                if ((Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer ^ 0xffffffff) > -9) {
+                if ((Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.currentPosition ^ 0xffffffff) > -9) {
                     int i = Class4_Sub20_Sub17.aClass76_3189.method1189(true);
-                    if (8 + -(Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer) < i)
-                        i = 8 + -(Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer);
+                    if (8 + -(Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.currentPosition) < i)
+                        i = 8 + -(Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.currentPosition);
                     if ((i ^ 0xffffffff) < -1) {
                         Class4_Sub20_Sub17.aClass76_3189
                                 .method1186(
                                         (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.byteBuffer),
                                         arg0 + 193,
-                                        (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer),
+                                        (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.currentPosition),
                                         i);
-                        Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer += i;
+                        Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.currentPosition += i;
                     }
                 }
-                if (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer == 8) {
-                    Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer = 0;
+                if (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.currentPosition == 8) {
+                    Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.currentPosition = 0;
                     Class19.aLong524 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                             .readLong((byte) 33);
                     RSFont.anInt148 = 5;
                 }
             }
             if ((RSFont.anInt148 ^ 0xffffffff) == -6) {
-                Class66.aClass4_Sub11_Sub1_1328.pointer = 0;
+                Class66.aClass4_Sub11_Sub1_1328.currentPosition = 0;
                 int[] is = new int[4];
                 is[0] = (int) (Math.random() * 9.9999999E7);
                 is[2] = (int) (Class19.aLong524 >> -63538976);
@@ -163,7 +163,7 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
                 Class66.aClass4_Sub11_Sub1_1328.method233(
                         (Class12.rsaModulus), (Class49.aBigInteger994),
                         arg0 ^ 0x63d6);
-                Class4_Sub1.aClass4_Sub11_Sub1_1854.pointer = 0;
+                Class4_Sub1.aClass4_Sub11_Sub1_1854.currentPosition = 0;
                 if (Class54.anInt1109 == 40)
                     Class4_Sub1.aClass4_Sub11_Sub1_1854.method227((byte) -27,
                             18);
@@ -171,7 +171,7 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
                     Class4_Sub1.aClass4_Sub11_Sub1_1854.method227((byte) -27,
                             16);
                 Class4_Sub1.aClass4_Sub11_Sub1_1854.method227((byte) -27,
-                        Class66.aClass4_Sub11_Sub1_1328.pointer + 69);
+                        Class66.aClass4_Sub11_Sub1_1328.currentPosition + 69);
                 Class4_Sub1.aClass4_Sub11_Sub1_1854.method236(arg0 + 276, 464);
                 Class4_Sub1.aClass4_Sub11_Sub1_1854.method227((byte) -27,
                         !Class59.aBoolean1189 ? 0 : 1);
@@ -209,9 +209,9 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
                         Class42.aClass19_Sub1_856.anInt492);
                 Class4_Sub1.aClass4_Sub11_Sub1_1854.method232(
                         Class66.aClass4_Sub11_Sub1_1328.byteBuffer, 0,
-                        (byte) -104, Class66.aClass4_Sub11_Sub1_1328.pointer);
+                        (byte) -104, Class66.aClass4_Sub11_Sub1_1328.currentPosition);
                 Class4_Sub20_Sub17.aClass76_3189.method1183(
-                        Class4_Sub1.aClass4_Sub11_Sub1_1854.pointer, 0, 125,
+                        Class4_Sub1.aClass4_Sub11_Sub1_1854.currentPosition, 0, 125,
                         Class4_Sub1.aClass4_Sub11_Sub1_1854.byteBuffer);
                 Class66.aClass4_Sub11_Sub1_1328.method273(is, (byte) -104);
                 for (int i = 0; i < 4; i++)
@@ -281,25 +281,25 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
                             .method1186(
                                     (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.byteBuffer),
                                     arg0 ^ ~0x35, 0, 1);
-                    Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer = 0;
+                    Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.currentPosition = 0;
                     Class4_Sub20_Sub11.incomingPacket = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                             .method265(true);
                     Class4_Sub20_Sub17.aClass76_3189
                             .method1186(
                                     (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.byteBuffer),
                                     30, 0, 2);
-                    Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer = 0;
-                    Class4_Sub20_Sub15.anInt3157 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                            .read_u16();
+                    Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.currentPosition = 0;
+                    Class4_Sub20_Sub15.packetSize = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
+                            .readShort();
                     RSFont.anInt148 = 10;
                 }
                 if (RSFont.anInt148 == 10) {
-                    if (Class4_Sub20_Sub17.aClass76_3189.method1189(true) >= Class4_Sub20_Sub15.anInt3157) {
-                        Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer = 0;
+                    if (Class4_Sub20_Sub17.aClass76_3189.method1189(true) >= Class4_Sub20_Sub15.packetSize) {
+                        Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.currentPosition = 0;
                         Class4_Sub20_Sub17.aClass76_3189
                                 .method1186(
                                         (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.byteBuffer),
-                                        98, 0, Class4_Sub20_Sub15.anInt3157);
+                                        98, 0, Class4_Sub20_Sub15.packetSize);
                         Class25.method800(arg0 + 1);
                         Class53.anInt1079 = -1;
                         Class67.method1086(false, (byte) 53);

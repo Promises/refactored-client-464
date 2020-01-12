@@ -45,7 +45,7 @@ public class Class54 {
 	public static RSInterface method1012(int arg0, int arg1, int arg2) {
 		try {
 			anInt1098++;
-			RSInterface class4_sub13 = Class4_Sub20.method322(true, arg0);
+			RSInterface class4_sub13 = RSInterface.forId(arg0);
 			if (arg1 == arg2)
 				return class4_sub13;
 			if (class4_sub13 == null

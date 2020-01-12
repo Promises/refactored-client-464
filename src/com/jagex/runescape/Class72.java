@@ -178,7 +178,7 @@ public class Class72 {
                                                 Class4_Sub8.aJagexString_1977,
                                                 Class4_Sub20_Sub12_Sub4
                                                         .method574(StringUtilities.aJagexString_1768),
-                                                (((Region.anInt134 % 40 ^ 0xffffffff) > -21 & (Player.anInt3581 ^ 0xffffffff) == -1) ? Class59.aJagexString_1187
+                                                (((Region.pulseCycle % 40 ^ 0xffffffff) > -21 & (Player.anInt3581 ^ 0xffffffff) == -1) ? Class59.aJagexString_1187
                                                         : StringUtilities.aJagexString_1767)}),
                                         -842)), 272, i, 16777215, 0);
                         i += 15;
@@ -188,7 +188,7 @@ public class Class72 {
                                                 Class4_Sub20_Sub9.aJagexString_3042,
                                                 StringUtilities.aJagexString_1764
                                                         .method809(-127),
-                                                (!(Region.anInt134 % 40 < 20 & ((Player.anInt3581) ^ 0xffffffff) == -2) ? StringUtilities.aJagexString_1767
+                                                (!(Region.pulseCycle % 40 < 20 & ((Player.anInt3581) ^ 0xffffffff) == -2) ? StringUtilities.aJagexString_1767
                                                         : Class59.aJagexString_1187)}),
                                         -842)), 274, i, 16777215, 0);
                         Actor.aClass4_Sub20_Sub12_Sub1_3260

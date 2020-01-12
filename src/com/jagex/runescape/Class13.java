@@ -49,13 +49,13 @@ public abstract class Class13 {
 					}
 				}
 				for (int i_9_ = 0; GameShell.anInt12 > i_9_; i_9_++) {
-					Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = (Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[Class4_Sub11_Sub1.anIntArray2695[i_9_]]);
-					if (class4_sub20_sub7_sub1_sub2 != null && class4_sub20_sub7_sub1_sub2.method384(-19456)) {
-						Class4_Sub20_Sub3 class4_sub20_sub3 = (class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617);
+					Npc npc = (Class57.npcs[Class4_Sub11_Sub1.anIntArray2695[i_9_]]);
+					if (npc != null && npc.method384(-19456)) {
+						Class4_Sub20_Sub3 class4_sub20_sub3 = (npc.npcDefinition);
 						if (class4_sub20_sub3 != null && class4_sub20_sub3.anIntArray2832 != null) class4_sub20_sub3 = class4_sub20_sub3.method354((byte) 120);
 						if (class4_sub20_sub3 != null && class4_sub20_sub3.aBoolean2804 && class4_sub20_sub3.aBoolean2835) {
-							int i_10_ = (-((Class4_Sub15.localPlayer.worldX) / 32) + (class4_sub20_sub7_sub1_sub2.worldX / 32));
-							int i_11_ = (class4_sub20_sub7_sub1_sub2.worldY / 32 - (Class4_Sub15.localPlayer.worldY) / 32);
+							int i_10_ = (-((Class4_Sub15.localPlayer.worldX) / 32) + (npc.worldX / 32));
+							int i_11_ = (npc.worldY / 32 - (Class4_Sub15.localPlayer.worldY) / 32);
 							Class4_Sub20_Sub9
 									.drawOnMinimap(
 											Class35.aImageRGBArray749[1], i_10_,
@@ -106,14 +106,14 @@ public abstract class Class13 {
 					}
 				}
 				if (Class57.anInt1141 != 0
-						&& (Region.anInt134 % 20 ^ 0xffffffff) > -11) {
+						&& (Region.pulseCycle % 20 ^ 0xffffffff) > -11) {
 					if (Class57.anInt1141 == 1
 							&& Class10.anInt313 >= 0
-							&& (Class10.anInt313 < (Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151).length)) {
-						Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = (Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[Class10.anInt313]);
-						if (class4_sub20_sub7_sub1_sub2 != null) {
-							int i_17_ = (-((Class4_Sub15.localPlayer.worldX) / 32) + (class4_sub20_sub7_sub1_sub2.worldX / 32));
-							int i_18_ = (-((Class4_Sub15.localPlayer.worldY) / 32) + (class4_sub20_sub7_sub1_sub2.worldY / 32));
+							&& (Class10.anInt313 < (Class57.npcs).length)) {
+						Npc npc = (Class57.npcs[Class10.anInt313]);
+						if (npc != null) {
+							int i_17_ = (-((Class4_Sub15.localPlayer.worldX) / 32) + (npc.worldX / 32));
+							int i_18_ = (-((Class4_Sub15.localPlayer.worldY) / 32) + (npc.worldY / 32));
 							Class4_Sub20
 									.method323(
 											(Class4_Sub10.aImageRGBArray2022[1]),
@@ -221,8 +221,8 @@ public abstract class Class13 {
 										+ Class4_Sub20_Sub8.anInt2980]);
 								int i_31_ = (Class43.anIntArray885[-1
 										+ Class4_Sub20_Sub8.anInt2980]);
-								RSInterface class4_sub13 = Class4_Sub20
-										.method322(true, i_30_);
+								RSInterface class4_sub13 = RSInterface
+										.forId(i_30_);
 								if ((Class2.method47(Class54.method1011(
 										class4_sub13, -22389), 4626))
 										|| (Class72.method1161(1, Class54
@@ -234,8 +234,8 @@ public abstract class Class13 {
 										Class67.method1088(
 												(RS2Font.aClass4_Sub13_2763)
                                         );
-									RS2Font.aClass4_Sub13_2763 = Class4_Sub20
-											.method322(true, i_30_);
+									RS2Font.aClass4_Sub13_2763 = RSInterface
+											.forId(i_30_);
 									Class58.anInt1161 = JagexException.anInt1729;
 									AppletListener.anInt1464 = Class37.anInt758;
 									Class4_Sub20_Sub14.anInt3139 = i_31_;
@@ -410,7 +410,7 @@ public abstract class Class13 {
 											Class65.aJagexString_1308}), -842));
 				Class68.aClass4_Sub20_Sub12_Sub4_Sub1_1384.method575(jagexString,
 						4 + arg2, arg0 + 15, 16777215, 0,
-						Region.anInt134 / 1000);
+						Region.pulseCycle / 1000);
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("dd.O("

@@ -22,7 +22,7 @@ public class Class12 {
         anInt338++;
         if (Class4_Sub20_Sub11.incomingPacket == 39) {
             int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method223(0);
-            int i_0_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method240(arg0
+            int i_0_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.readByteSubtracted(arg0
                     ^ ~0x7f97);
             int i_1_ = (((i_0_ & 0x74) >> 1302313444) + Class4_Sub20_Sub7_Sub4.anInt3367);
             int i_2_ = Class64.anInt1273 - -(i_0_ & 0x7);
@@ -48,10 +48,10 @@ public class Class12 {
             int i_3_ = (0x7 & i) + Class64.anInt1273;
             int i_4_ = (((0x7a & i) >> -1853807996) + Class4_Sub20_Sub7_Sub4.anInt3367);
             int i_5_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                    .read_u16();
+                    .readShort();
             int i_6_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get();
             int i_7_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                    .read_u16();
+                    .readShort();
             if ((i_4_ ^ 0xffffffff) <= -1 && i_3_ >= 0
                     && (i_4_ ^ 0xffffffff) > -105 && (i_3_ ^ 0xffffffff) > -105) {
                 i_4_ = i_4_ * 128 + 64;
@@ -59,14 +59,14 @@ public class Class12 {
                 Class4_Sub20_Sub7_Sub3 class4_sub20_sub7_sub3 = (new Class4_Sub20_Sub7_Sub3(
                         i_5_, Class82.plane, i_4_, i_3_,
                         Class67.getFloorDrawHeight(i_4_, i_3_, Class82.plane)
-                                + -i_6_, i_7_, Region.anInt134));
+                                + -i_6_, i_7_, Region.pulseCycle));
                 Class4_Sub20_Sub13.aClass65_3106.method1068(
                         class4_sub20_sub7_sub3, (byte) -115);
             }
         } else {
-            if ((Class4_Sub20_Sub11.incomingPacket ^ 0xffffffff) == -240) {
+            if (Class4_Sub20_Sub11.incomingPacket == 239) {
                 int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                        .read_u16();
+                        .readShort();
                 int i_8_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                         .method223(0);
                 int i_9_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
@@ -109,11 +109,11 @@ public class Class12 {
                     if (class4_sub20_sub7_sub7 != null) {
                         Class27.method847(-1, 0, i_13_, 0, i_19_, -1, i_8_ + 1,
                                 i_12_, 1 + i_15_, Class82.plane);
-                        player.anInt3601 = Region.anInt134
+                        player.anInt3601 = Region.pulseCycle
                                 + i_15_;
                         int i_26_ = class4_sub20_sub1.anInt2725;
                         player.anInt3608 = i_8_
-                                - -Region.anInt134;
+                                - -Region.pulseCycle;
                         player.aClass4_Sub20_Sub7_Sub7_3596 = class4_sub20_sub7_sub7;
                         if (i_10_ > i_20_) {
                             int i_27_ = i_10_;
@@ -146,7 +146,7 @@ public class Class12 {
                     }
                 }
             }
-            if ((Class4_Sub20_Sub11.incomingPacket ^ 0xffffffff) == -219) {
+            if (Class4_Sub20_Sub11.incomingPacket == 218) {
                 int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get();
                 int i_30_ = (((i & 0x7f) >> 1717267588) + Class4_Sub20_Sub7_Sub4.anInt3367);
                 int i_31_ = (i & 0x7) + Class64.anInt1273;
@@ -158,13 +158,13 @@ public class Class12 {
                 int i_34_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                         .method238((byte) -56);
                 int i_35_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                        .read_u16();
+                        .readShort();
                 int i_36_ = 4 * Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get();
                 int i_37_ = 4 * Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get();
                 int i_38_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                        .read_u16();
+                        .readShort();
                 int i_39_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                        .read_u16();
+                        .readShort();
                 int i_40_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get();
                 int i_41_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get();
                 if ((i_30_ ^ 0xffffffff) <= -1 && (i_31_ ^ 0xffffffff) <= -1
@@ -179,15 +179,15 @@ public class Class12 {
                     Class4_Sub20_Sub7_Sub5 class4_sub20_sub7_sub5 = (new Class4_Sub20_Sub7_Sub5(
                             i_35_, Class82.plane, i_30_, i_31_, -i_36_
                             + Class67.getFloorDrawHeight(i_30_, i_31_, Class82.plane
-                    ), Region.anInt134
-                            + i_38_, Region.anInt134 + i_39_, i_40_,
+                    ), Region.pulseCycle
+                            + i_38_, Region.pulseCycle + i_39_, i_40_,
                             i_41_, i_34_, i_37_));
                     class4_sub20_sub7_sub5.method425(
                             i_32_,
                             -i_37_
                                     + Class67.getFloorDrawHeight(i_32_, i_33_, Class82.plane
                             ), i_38_
-                                    - -Region.anInt134, i_33_, 121);
+                                    - -Region.pulseCycle, i_33_, 121);
                     Class4_Sub20_Sub11.aClass65_3075.method1068(
                             class4_sub20_sub7_sub5, (byte) -117);
                 }
@@ -199,11 +199,11 @@ public class Class12 {
                     int i_42_ = ((i >> -63049820 & 0x7) + Class4_Sub20_Sub7_Sub4.anInt3367);
                     int i_43_ = Class64.anInt1273 + (i & 0x7);
                     int i_44_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                            .read_u16();
+                            .readShort();
                     int i_45_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                            .read_u16();
+                            .readShort();
                     int i_46_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                            .read_u16();
+                            .readShort();
                     if (i_42_ >= 0 && (i_43_ ^ 0xffffffff) <= -1
                             && (i_42_ ^ 0xffffffff) > -105
                             && (i_43_ ^ 0xffffffff) > -105) {
@@ -227,7 +227,7 @@ public class Class12 {
                         int i_47_ = (((0x74 & i) >> 1020323844) + Class4_Sub20_Sub7_Sub4.anInt3367);
                         int i_48_ = Class64.anInt1273 + (i & 0x7);
                         int i_49_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                                .read_u16();
+                                .readShort();
                         int i_50_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                                 .get();
                         int i_51_ = (0xf0 & i_50_) >> -1244425436;
@@ -260,7 +260,7 @@ public class Class12 {
                     }
                     if ((Class4_Sub20_Sub11.incomingPacket ^ 0xffffffff) == -27) {
                         int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                                .method240(32767);
+                                .readByteSubtracted(32767);
                         int i_55_ = (0x7 & i) + Class64.anInt1273;
                         int i_56_ = (Class4_Sub20_Sub7_Sub4.anInt3367 - -((i & 0x72) >> -384487932));
                         int i_57_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
@@ -414,11 +414,11 @@ public class Class12 {
                         }
                     } else if ((Class4_Sub20_Sub11.incomingPacket ^ 0xffffffff) == -113) {
                         int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                                .read_u16();
+                                .readShort();
                         int i_85_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                                 .method213((byte) -124);
                         int i_86_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                                .method240(32767);
+                                .readByteSubtracted(32767);
                         int i_87_ = (((0x71 & i_86_) >> -543299452) + Class4_Sub20_Sub7_Sub4.anInt3367);
                         int i_88_ = Class64.anInt1273 - -(i_86_ & 0x7);
                         if (i_87_ >= 0 && (i_88_ ^ 0xffffffff) <= -1

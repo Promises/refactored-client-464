@@ -134,35 +134,31 @@ public class Class53 implements Runnable {
 		}
 	}
 
-	public static void method1007(int arg0) {
+	public static void updateNpcs() {
 		try {
-			Class4_Sub20_Sub7_Sub5.anInt3386 = 0;
-			anInt1087++;
-			if (arg0 != -21432)
-				method1007(50);
-			JagexException.anInt1726 = 0;
-			Class1.method41(arg0 ^ 0x53b4);
+			Class4_Sub20_Sub7_Sub5.removePlayerCount = 0;
+			JagexException.updatedPlayerCount = 0;
+			Class1.method41();
 			RS2Font.method341((byte) -49);
-			Class58.method1031(-1);
-			for (int i = 0; ((i ^ 0xffffffff) > (Class4_Sub20_Sub7_Sub5.anInt3386 ^ 0xffffffff)); i++) {
-				int i_8_ = Class58.anIntArray1164[i];
-				if ((Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i_8_].anInt3256) != Region.anInt134) {
-					Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i_8_].aClass4_Sub20_Sub3_3617 = null;
-					Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i_8_] = null;
+			Class58.parseNpcUpdateMasks(-1);
+			for (int i = 0; i < Class4_Sub20_Sub7_Sub5.removePlayerCount; i++) {
+				int i_8_ = Class58.removePlayers[i];
+				if ((Class57.npcs[i_8_].pulseCycle) != Region.pulseCycle) {
+					Class57.npcs[i_8_].npcDefinition = null;
+					Class57.npcs[i_8_] = null;
 				}
 			}
-			if (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer != Class4_Sub20_Sub15.anInt3157)
+			if (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.currentPosition != Class4_Sub20_Sub15.packetSize)
 				throw new RuntimeException("gnp1 pos:"
-						+ (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer)
-						+ " psize:" + Class4_Sub20_Sub15.anInt3157);
+						+ (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.currentPosition)
+						+ " psize:" + Class4_Sub20_Sub15.packetSize);
 			for (int i = 0; (i ^ 0xffffffff) > (GameShell.anInt12 ^ 0xffffffff); i++) {
-				if ((Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[Class4_Sub11_Sub1.anIntArray2695[i]]) == null)
+				if ((Class57.npcs[Class4_Sub11_Sub1.anIntArray2695[i]]) == null)
 					throw new RuntimeException("gnp2 pos:" + i + " size:"
 							+ GameShell.anInt12);
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "of.D("
-					+ arg0 + ')');
+			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "of.D()");
 		}
 	}
 

@@ -3,7 +3,7 @@ package com.jagex.runescape;
 public class Class60 {
 	public static int method1041(int arg0, int arg1) {
 		int i;
-		for (i = (int) Math.pow(arg0, 1.0 / arg1) + 1; Class4_Sub20_Sub7_Sub1_Sub2
+		for (i = (int) Math.pow(arg0, 1.0 / arg1) + 1; Npc
 				.method396(i, (byte) -31, arg1) > arg0; i--) {
 			/* empty */
 		}

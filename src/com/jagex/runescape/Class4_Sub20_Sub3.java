@@ -253,21 +253,21 @@ public class Class4_Sub20_Sub3 extends Class4_Sub20 {
 				int i = arg0.get();
 				anIntArray2834 = new int[i];
 				for (int i_2_ = 0; (i_2_ ^ 0xffffffff) > (i ^ 0xffffffff); i_2_++)
-					anIntArray2834[i_2_] = arg0.read_u16();
+					anIntArray2834[i_2_] = arg0.readShort();
 			} else if (arg1 != 2) {
 				if (arg1 == 12)
 					anInt2791 = arg0.get();
 				else if ((arg1 ^ 0xffffffff) == -14)
-					anInt2825 = arg0.read_u16();
+					anInt2825 = arg0.readShort();
 				else if (arg1 != 14) {
 					if ((arg1 ^ 0xffffffff) != -16) {
 						if (arg1 == 16)
-							anInt2800 = arg0.read_u16();
+							anInt2800 = arg0.readShort();
 						else if ((arg1 ^ 0xffffffff) == -18) {
-							anInt2801 = arg0.read_u16();
-							anInt2821 = arg0.read_u16();
-							anInt2793 = arg0.read_u16();
-							anInt2796 = arg0.read_u16();
+							anInt2801 = arg0.readShort();
+							anInt2821 = arg0.readShort();
+							anInt2793 = arg0.readShort();
+							anInt2796 = arg0.readShort();
 						} else if (arg1 >= 30 && arg1 < 35) {
 							aJagexStringArray2790[-30 + arg1] = arg0.method212();
 							if (aJagexStringArray2790[arg1 - 30].method818(
@@ -279,7 +279,7 @@ public class Class4_Sub20_Sub3 extends Class4_Sub20 {
 								anIntArray2836 = new int[i];
 								for (int i_3_ = 0; i_3_ < i; i_3_++)
 									anIntArray2836[i_3_] = arg0
-											.read_u16();
+											.readShort();
 							} else if ((arg1 ^ 0xffffffff) != -94) {
 								if ((arg1 ^ 0xffffffff) != -96) {
 									if (arg1 != 97) {
@@ -294,22 +294,22 @@ public class Class4_Sub20_Sub3 extends Class4_Sub20 {
 														.method229(arg2 + 8750) * 5);
 											else if ((arg1 ^ 0xffffffff) == -103)
 												anInt2797 = (arg0
-														.read_u16());
+														.readShort());
 											else if (arg1 != 103) {
 												if ((arg1 ^ 0xffffffff) == -107) {
 													anInt2827 = (arg0
-															.read_u16());
+															.readShort());
 													if (anInt2827 == 65535)
 														anInt2827 = -1;
 													anInt2828 = (arg0
-															.read_u16());
+															.readShort());
 													if ((anInt2828 ^ 0xffffffff) == -65536)
 														anInt2828 = -1;
 													int i = arg0.get();
 													anIntArray2832 = new int[1 + i];
 													for (int i_4_ = 0; ((i ^ 0xffffffff) <= (i_4_ ^ 0xffffffff)); i_4_++) {
 														anIntArray2832[i_4_] = (arg0
-																.read_u16());
+																.readShort());
 														if ((anIntArray2832[i_4_]) == 65535)
 															anIntArray2832[i_4_] = -1;
 													}
@@ -319,14 +319,14 @@ public class Class4_Sub20_Sub3 extends Class4_Sub20 {
 													aBoolean2792 = false;
 											} else
 												anInt2837 = (arg0
-														.read_u16());
+														.readShort());
 										} else
 											anInt2833 = arg0
-													.read_u16();
+													.readShort();
 									} else
-										anInt2822 = arg0.read_u16();
+										anInt2822 = arg0.readShort();
 								} else
-									anInt2814 = arg0.read_u16();
+									anInt2814 = arg0.readShort();
 							} else
 								aBoolean2804 = false;
 						} else {
@@ -335,15 +335,15 @@ public class Class4_Sub20_Sub3 extends Class4_Sub20 {
 							aShortArray2838 = new short[i];
 							for (int i_5_ = 0; i_5_ < i; i_5_++) {
 								aShortArray2838[i_5_] = (short) arg0
-										.read_u16();
+										.readShort();
 								aShortArray2839[i_5_] = (short) arg0
-										.read_u16();
+										.readShort();
 							}
 						}
 					} else
-						anInt2807 = arg0.read_u16();
+						anInt2807 = arg0.readShort();
 				} else
-					anInt2801 = arg0.read_u16();
+					anInt2801 = arg0.readShort();
 			} else
 				aJagexString_2812 = arg0.method212();
 			anInt2819++;

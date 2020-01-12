@@ -19,7 +19,7 @@ public class Class31 {
 	public static int anInt689 = 0;
 	public static int anInt691 = 20;
 	public static int[] anIntArray687 = new int[2000];
-	public static int[] anIntArray693 = new int[25];
+	public static int[] skillMaxLevel = new int[25];
 
 	public static void method875(byte arg0, Class19 arg1, Class19 arg2) {
 		try {
@@ -63,7 +63,7 @@ public class Class31 {
 			StringUtilities.aJagexString_675 = null;
 			aClass4_Sub20_Sub12_Sub1_676 = null;
 			StringUtilities.aJagexString_681 = null;
-			anIntArray693 = null;
+			skillMaxLevel = null;
 			StringUtilities.aJagexString_684 = null;
 			StringUtilities.aJagexString_679 = null;
 			aClass16_671 = null;

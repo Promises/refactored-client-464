@@ -18,7 +18,6 @@ public class Class4_Sub20 extends RSFont {
 	public static int anInt2358 = 1;
 	public static int anInt2360;
 	public static int anInt2361;
-	public static int anInt2362;
 
 	public static void method316(boolean arg0) {
 		try {
@@ -58,11 +57,11 @@ public class Class4_Sub20 extends RSFont {
 			if (arg0 == 14931) {
 				for (int i = 0; (GameShell.anInt12 ^ 0xffffffff) < (i ^ 0xffffffff); i++) {
 					int i_0_ = Class4_Sub11_Sub1.anIntArray2695[i];
-					Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i_0_];
-					if (class4_sub20_sub7_sub1_sub2 != null)
+					Npc npc = Class57.npcs[i_0_];
+					if (npc != null)
 						Game.method31(
-								(class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617.anInt2791),
-								4, class4_sub20_sub7_sub1_sub2);
+								(npc.npcDefinition.anInt2791),
+								4, npc);
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -342,26 +341,6 @@ public class Class4_Sub20 extends RSFont {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("rc.RB("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ','
 					+ (arg3 != null ? "{...}" : "null") + ')'));
-		}
-	}
-
-	public static RSInterface method322(boolean arg0, int arg1) {
-		try {
-			if (arg0 != true)
-				return null;
-			int i = arg1 >> 896933264;
-			anInt2362++;
-			int i_20_ = 0xffff & arg1;
-			if (Class28.aClass4_Sub13ArrayArray632[i] == null
-					|| Class28.aClass4_Sub13ArrayArray632[i][i_20_] == null) {
-				boolean bool = Class4_Sub12.method277((byte) 116, i);
-				if (!bool)
-					return null;
-			}
-			return Class28.aClass4_Sub13ArrayArray632[i][i_20_];
-		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("rc.TB("
-					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
 

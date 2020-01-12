@@ -53,13 +53,13 @@ public class Class71 {
 			} else if ((i ^ 0xffffffff) == -328) {
 				arg1.anInt2213 = 150;
 				arg1.anInt2236 = 0x7ff & (int) (Math
-						.sin(Region.anInt134 / 40.0) * 256.0);
+						.sin(Region.pulseCycle / 40.0) * 256.0);
 				arg1.anInt2137 = 5;
 				arg1.anInt2250 = 0;
 			} else if ((i ^ 0xffffffff) == -329) {
 				arg1.anInt2213 = 150;
 				arg1.anInt2236 = 0x7ff & (int) (256.0 * Math
-						.sin(Region.anInt134 / 40.0));
+						.sin(Region.pulseCycle / 40.0));
 				arg1.anInt2137 = 5;
 				arg1.anInt2250 = 1;
 			}
@@ -121,10 +121,10 @@ public class Class71 {
 							&& (32 + i_4_ ^ 0xffffffff) < (arg2 ^ 0xffffffff)) {
 						Class34.anInt1761 = i_0_;
 						Class42.aClass4_Sub13_855 = arg1;
-						if (arg1.anIntArray2179[i_0_] > 0) {
+						if (arg1.items[i_0_] > 0) {
 							Class4_Sub20_Sub8 class4_sub20_sub8 = Class4_Sub23
 									.method633(
-											-1 + (arg1.anIntArray2179[i_0_]),
+											-1 + (arg1.items[i_0_]),
 											(byte) -107);
 							if (((Class4_Sub20_Sub1.anInt2734 ^ 0xffffffff) == -2)
 									&& (Class80.method1204((byte) -127,

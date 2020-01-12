@@ -28,50 +28,50 @@ public class Class4_Sub24 extends RSFont {
 	public static void method637(byte arg0) {
 		Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method271((byte) -28);
 		int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-				-1432215741, 1);
+                1);
 		if (arg0 != 42)
 			aJagexString_2448 = null;
 		anInt2445++;
 		if ((i ^ 0xffffffff) != -1) {
 			int i_0_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-					-1432215741, 2);
+                    2);
 			if (i_0_ == 0)
-				Class48.anIntArray979[JagexException.anInt1726++] = 2047;
+				Class48.anIntArray979[JagexException.updatedPlayerCount++] = 2047;
 			else if ((i_0_ ^ 0xffffffff) == -2) {
 				int i_1_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-						arg0 + -1432215783, 3);
+                        3);
 				Class4_Sub15.localPlayer.method386(false,
 						false, i_1_);
 				int i_2_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-						-1432215741, 1);
+                        1);
 				if (i_2_ == 1)
-					Class48.anIntArray979[JagexException.anInt1726++] = 2047;
+					Class48.anIntArray979[JagexException.updatedPlayerCount++] = 2047;
 			} else if (i_0_ == 2) {
 				int i_3_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-						arg0 + -1432215783, 3);
+                        3);
 				Class4_Sub15.localPlayer.method386(false,
 						true, i_3_);
 				int i_4_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-						-1432215741, 3);
+                        3);
 				Class4_Sub15.localPlayer.method386(false,
 						true, i_4_);
 				int i_5_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-						-1432215741, 1);
+                        1);
 				if (i_5_ == 1)
-					Class48.anIntArray979[JagexException.anInt1726++] = 2047;
+					Class48.anIntArray979[JagexException.updatedPlayerCount++] = 2047;
 			} else if ((i_0_ ^ 0xffffffff) == -4) {
 				Class82.plane = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-						.method266(arg0 ^ ~0x555de096, 2);
+						.method266(2);
 				int i_6_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-						-1432215741, 7);
+                        7);
 				int i_7_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-						-1432215741, 1);
+                        1);
 				int i_8_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-						-1432215741, 7);
+                        7);
 				int i_9_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-						-1432215741, 1);
+                        1);
 				if ((i_9_ ^ 0xffffffff) == -2)
-					Class48.anIntArray979[JagexException.anInt1726++] = 2047;
+					Class48.anIntArray979[JagexException.updatedPlayerCount++] = 2047;
 				Class4_Sub15.localPlayer.method385(i_6_,
 						(i_7_ ^ 0xffffffff) == -2, arg0 ^ 0xaa, i_8_);
 			}

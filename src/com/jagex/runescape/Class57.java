@@ -10,7 +10,7 @@ public class Class57 {
 	public static JagexString aJagexString_1154;
 	public static Region[] regions;
 	public static Class4_Sub20_Sub12_Sub1[] aClass4_Sub20_Sub12_Sub1Array1135;
-	public static Class4_Sub20_Sub7_Sub1_Sub2[] aClass4_Sub20_Sub7_Sub1_Sub2Array1151;
+	public static Npc[] npcs;
 	public static Class66 aClass66_1131;
 	public static int anInt1122;
 	public static int anInt1130;
@@ -36,7 +36,7 @@ public class Class57 {
 		aJagexString_1128 = JagexString.getRs2PreparedString("Use");
 		anInt1141 = 0;
 		anInt1147 = (int) (Math.random() * 17.0) + -8;
-		aClass4_Sub20_Sub7_Sub1_Sub2Array1151 = new Class4_Sub20_Sub7_Sub1_Sub2[32768];
+		npcs = new Npc[32768];
 		aJagexString_1152 = JagexString.getRs2PreparedString("Okay");
 		aJagexString_1154 = aJagexString_1128;
 		aClass66_1131 = new Class66(64);
@@ -68,8 +68,8 @@ public class Class57 {
 	public static void method1021(int arg0) {
 		try {
 			anInt1145++;
-			for (Class4_Sub7 class4_sub7 = (Class4_Sub7) Class4_Sub20_Sub7_Sub1_Sub2.aClass65_3618
-					.method1071(-124); class4_sub7 != null; class4_sub7 = (Class4_Sub7) Class4_Sub20_Sub7_Sub1_Sub2.aClass65_3618
+			for (Class4_Sub7 class4_sub7 = (Class4_Sub7) Npc.aClass65_3618
+					.method1071(-124); class4_sub7 != null; class4_sub7 = (Class4_Sub7) Npc.aClass65_3618
 					.method1075(18485)) {
 				if ((class4_sub7.anInt1954 ^ 0xffffffff) < -1)
 					class4_sub7.anInt1954--;
@@ -122,15 +122,15 @@ public class Class57 {
 			Class4_Sub20_Sub9.minimapState = 0;
 			Class1.anInt74 = 0;
 			Class41.anInt822 = -1;
-			Class66.aClass4_Sub11_Sub1_1328.pointer = 0;
+			Class66.aClass4_Sub11_Sub1_1328.currentPosition = 0;
 			if (arg0 > -86)
 				aJagexString_1154 = null;
 			RSCanvas.anInt56 = -1;
 			Class43.anInt874 = -1;
-			Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer = 0;
+			Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.currentPosition = 0;
 			anInt1134++;
 			anInt1130 = 0;
-			Class4_Sub20_Sub15.anInt3157 = 0;
+			Class4_Sub20_Sub15.packetSize = 0;
 			Class4_Sub20_Sub8.anInt2980 = 0;
 			Class4_Sub20_Sub16.aBoolean3169 = false;
 			AppletListener.anInt1448 = 0;
@@ -139,9 +139,9 @@ public class Class57 {
 				if ((Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i]) != null)
 					Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i].anInt3293 = -1;
 			}
-			for (int i = 0; i < aClass4_Sub20_Sub7_Sub1_Sub2Array1151.length; i++) {
-				if (aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i] != null)
-					aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i].anInt3293 = -1;
+			for (int i = 0; i < npcs.length; i++) {
+				if (npcs[i] != null)
+					npcs[i].anInt3293 = -1;
 			}
 			Class13_Sub2.method695((byte) -127);
 			Region.method50(30, 1);
@@ -172,12 +172,12 @@ public class Class57 {
 			}
 			for (int i = 0; (GameShell.anInt12 ^ 0xffffffff) < (i ^ 0xffffffff); i++) {
 				int i_10_ = Class4_Sub11_Sub1.anIntArray2695[i];
-				Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i_10_];
-				if (class4_sub20_sub7_sub1_sub2 != null
-						&& ((class4_sub20_sub7_sub1_sub2.anInt3253 ^ 0xffffffff) < -1)) {
-					class4_sub20_sub7_sub1_sub2.anInt3253--;
-					if (class4_sub20_sub7_sub1_sub2.anInt3253 == 0)
-						class4_sub20_sub7_sub1_sub2.aJagexString_3271 = null;
+				Npc npc = npcs[i_10_];
+				if (npc != null
+						&& ((npc.anInt3253 ^ 0xffffffff) < -1)) {
+					npc.anInt3253--;
+					if (npc.anInt3253 == 0)
+						npc.aJagexString_3271 = null;
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -372,7 +372,7 @@ public class Class57 {
 
 	public static void method1027(int arg0) {
 		try {
-			aClass4_Sub20_Sub7_Sub1_Sub2Array1151 = null;
+			npcs = null;
 			aJagexString_1128 = null;
 			aClass66_1131 = null;
 			if (arg0 != -10159)

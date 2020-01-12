@@ -259,19 +259,19 @@ public abstract class Class14 {
 							}
 						}
 						if ((i_12_ ^ 0xffffffff) == -2) {
-							Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = (Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i_13_]);
-							if (((class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617.anInt2791) ^ 0xffffffff) == -2
-									&& ((0x7f & class4_sub20_sub7_sub1_sub2.worldX) ^ 0xffffffff) == -65
-									&& ((class4_sub20_sub7_sub1_sub2.worldY & 0x7f) ^ 0xffffffff) == -65) {
+							Npc npc = (Class57.npcs[i_13_]);
+							if (((npc.npcDefinition.anInt2791) ^ 0xffffffff) == -2
+									&& ((0x7f & npc.worldX) ^ 0xffffffff) == -65
+									&& ((npc.worldY & 0x7f) ^ 0xffffffff) == -65) {
 								for (int i_18_ = 0; ((GameShell.anInt12 ^ 0xffffffff) < (i_18_ ^ 0xffffffff)); i_18_++) {
-									Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2_19_ = (Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[(Class4_Sub11_Sub1.anIntArray2695[i_18_])]);
-									if (class4_sub20_sub7_sub1_sub2_19_ != null
-											&& (class4_sub20_sub7_sub1_sub2_19_ != class4_sub20_sub7_sub1_sub2)
-											&& ((class4_sub20_sub7_sub1_sub2_19_.aClass4_Sub20_Sub3_3617.anInt2791) ^ 0xffffffff) == -2
-											&& ((class4_sub20_sub7_sub1_sub2.worldX) == (class4_sub20_sub7_sub1_sub2_19_.worldX))
-											&& ((class4_sub20_sub7_sub1_sub2.worldY) == (class4_sub20_sub7_sub1_sub2_19_.worldY)))
+									Npc npc_19_ = (Class57.npcs[(Class4_Sub11_Sub1.anIntArray2695[i_18_])]);
+									if (npc_19_ != null
+											&& (npc_19_ != npc)
+											&& ((npc_19_.npcDefinition.anInt2791) ^ 0xffffffff) == -2
+											&& ((npc.worldX) == (npc_19_.worldX))
+											&& ((npc.worldY) == (npc_19_.worldY)))
 										Class42.method946(
-												(class4_sub20_sub7_sub1_sub2_19_.aClass4_Sub20_Sub3_3617),
+												(npc_19_.npcDefinition),
 												i_14_,
 												1170,
 												i_15_,
@@ -280,8 +280,8 @@ public abstract class Class14 {
 								for (int i_20_ = 0; i_20_ < Class4_Sub20_Sub7_Sub6.anInt3431; i_20_++) {
 									Player player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[(Class4_Sub23.anIntArray2432[i_20_])]);
 									if (player != null
-											&& (((player.worldX) ^ 0xffffffff) == ((class4_sub20_sub7_sub1_sub2.worldX) ^ 0xffffffff))
-											&& (((player.worldY) ^ 0xffffffff) == ((class4_sub20_sub7_sub1_sub2.worldY) ^ 0xffffffff)))
+											&& (((player.worldX) ^ 0xffffffff) == ((npc.worldX) ^ 0xffffffff))
+											&& (((player.worldY) ^ 0xffffffff) == ((npc.worldY) ^ 0xffffffff)))
 										Class2.method42(
 												30345,
 												player,
@@ -291,7 +291,7 @@ public abstract class Class14 {
 								}
 							}
 							Class42.method946(
-									(class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617),
+									(npc.npcDefinition),
 									i_14_, arg2 ^ 0x4d2, i_15_, i_13_);
 						}
 						if ((i_12_ ^ 0xffffffff) == -1) {
@@ -299,13 +299,13 @@ public abstract class Class14 {
 							if ((player.worldX & 0x7f ^ 0xffffffff) == -65
 									&& (player.worldY & 0x7f) == 64) {
 								for (int i_21_ = 0; i_21_ < GameShell.anInt12; i_21_++) {
-									Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = (Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[(Class4_Sub11_Sub1.anIntArray2695[i_21_])]);
-									if (class4_sub20_sub7_sub1_sub2 != null
-											&& ((class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617.anInt2791) ^ 0xffffffff) == -2
-											&& (((player.worldX) ^ 0xffffffff) == ((class4_sub20_sub7_sub1_sub2.worldX) ^ 0xffffffff))
-											&& ((player.worldY) == (class4_sub20_sub7_sub1_sub2.worldY)))
+									Npc npc = (Class57.npcs[(Class4_Sub11_Sub1.anIntArray2695[i_21_])]);
+									if (npc != null
+											&& ((npc.npcDefinition.anInt2791) ^ 0xffffffff) == -2
+											&& (((player.worldX) ^ 0xffffffff) == ((npc.worldX) ^ 0xffffffff))
+											&& ((player.worldY) == (npc.worldY)))
 										Class42.method946(
-												(class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617),
+												(npc.npcDefinition),
 												i_14_,
 												1170,
 												i_15_,

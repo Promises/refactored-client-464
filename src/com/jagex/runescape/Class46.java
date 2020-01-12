@@ -26,7 +26,7 @@ public class Class46 {
 	public static int[] anIntArray934 = new int[256];
 	public static int[] anIntArray937;
 	public static int[] anIntArray939;
-	public static int[] anIntArray945;
+	public static int[] skillExperience;
 
 	static {
 		for (int i = 0; (i ^ 0xffffffff) > -257; i++) {
@@ -44,7 +44,7 @@ public class Class46 {
 		anIntArray939 = new int[5];
 		aJagexString_944 = JagexString.getRs2PreparedString("gleiten:");
 		anInt943 = -1;
-		anIntArray945 = new int[25];
+		skillExperience = new int[25];
 		aJagexString_941 = JagexString.getRs2PreparedString(" ");
 		aJagexString_942 = aJagexString_941;
 	}
@@ -127,7 +127,7 @@ public class Class46 {
 			aJagexString_928 = null;
 			aJagexString_941 = null;
 			aJagexString_942 = null;
-			anIntArray945 = null;
+			skillExperience = null;
 			aJagexString_944 = null;
 			anIntArray939 = null;
 		} catch (RuntimeException runtimeexception) {

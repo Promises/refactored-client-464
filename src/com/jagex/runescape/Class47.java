@@ -113,14 +113,14 @@ public class Class47 {
 				int i_2_ = Class6.anInt217 - i;
 				i = Class6.anInt217;
 				for (int i_3_ = 0; i_3_ < 32768; i_3_++) {
-					Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i_3_];
-					if (class4_sub20_sub7_sub1_sub2 != null) {
+					Npc npc = Class57.npcs[i_3_];
+					if (npc != null) {
 						for (int i_4_ = 0; i_4_ < 10; i_4_++) {
-							class4_sub20_sub7_sub1_sub2.anIntArray3248[i_4_] -= i_2_;
-							class4_sub20_sub7_sub1_sub2.anIntArray3247[i_4_] -= i_1_;
+							npc.anIntArray3248[i_4_] -= i_2_;
+							npc.anIntArray3247[i_4_] -= i_1_;
 						}
-						class4_sub20_sub7_sub1_sub2.worldY -= i_1_ * 128;
-						class4_sub20_sub7_sub1_sub2.worldX -= 128 * i_2_;
+						npc.worldY -= i_1_ * 128;
+						npc.worldX -= 128 * i_2_;
 					}
 				}
 				for (int i_5_ = 0; (i_5_ ^ 0xffffffff) > -2049; i_5_++) {
@@ -166,8 +166,8 @@ public class Class47 {
 						}
 					}
 				}
-				for (Class4_Sub7 class4_sub7 = (Class4_Sub7) Class4_Sub20_Sub7_Sub1_Sub2.aClass65_3618
-						.method1071(-120); class4_sub7 != null; class4_sub7 = (Class4_Sub7) Class4_Sub20_Sub7_Sub1_Sub2.aClass65_3618
+				for (Class4_Sub7 class4_sub7 = (Class4_Sub7) Npc.aClass65_3618
+						.method1071(-120); class4_sub7 != null; class4_sub7 = (Class4_Sub7) Npc.aClass65_3618
 						.method1075(18485)) {
 					class4_sub7.anInt1953 -= i_2_;
 					class4_sub7.anInt1950 -= i_1_;

@@ -79,11 +79,11 @@ public class Class4_Sub20_Sub16 extends Class4_Sub20 {
 			Buffer class4_sub11 = new Buffer(arg1);
 			anInt3167++;
 			int i = class4_sub11.get();
-			int i_0_ = class4_sub11.read_32((byte) 73);
+			int i_0_ = class4_sub11.readInt((byte) 73);
 			if (i_0_ < 0 || Class31.anInt689 != 0 && Class31.anInt689 < i_0_)
 				throw new RuntimeException();
 			if (i != 0) {
-				int i_1_ = class4_sub11.read_32((byte) 73);
+				int i_1_ = class4_sub11.readInt((byte) 73);
 				if ((i_1_ ^ 0xffffffff) > -1
 						|| ((Class31.anInt689 ^ 0xffffffff) != -1 && (i_1_ ^ 0xffffffff) < (Class31.anInt689 ^ 0xffffffff)))
 					throw new RuntimeException();

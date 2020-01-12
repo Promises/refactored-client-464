@@ -70,7 +70,7 @@ public class JagexString {
             }
         }
         if (arg1.anInt3226 != -1
-                && (Region.anInt134 ^ 0xffffffff) <= (arg1.anInt3235 ^ 0xffffffff)) {
+                && (Region.pulseCycle ^ 0xffffffff) <= (arg1.anInt3235 ^ 0xffffffff)) {
             if (arg1.anInt3242 < 0) {
                 arg1.anInt3242 = 0;
             }
@@ -104,8 +104,8 @@ public class JagexString {
                     arg1.anInt3277, (byte) -109);
             if ((class4_sub20_sub17.anInt3183 ^ 0xffffffff) == -2
                     && (arg1.anInt3236 ^ 0xffffffff) < -1
-                    && Region.anInt134 >= arg1.anInt3224
-                    && (arg1.anInt3281 ^ 0xffffffff) > (Region.anInt134 ^ 0xffffffff)) {
+                    && Region.pulseCycle >= arg1.anInt3224
+                    && (arg1.anInt3281 ^ 0xffffffff) > (Region.pulseCycle ^ 0xffffffff)) {
                 arg1.anInt3222 = 1;
                 return;
             }

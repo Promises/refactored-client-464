@@ -35,11 +35,11 @@ public class Class44 {
 		aClass4_Sub24_915 = arg1;
 		Buffer class4_sub11 = new Buffer(arg0);
 		Buffer class4_sub11_0_ = new Buffer(arg0);
-		class4_sub11.pointer = 2;
+		class4_sub11.currentPosition = 2;
 		int i = class4_sub11.get();
 		int i_1_ = -1;
 		int i_2_ = 0;
-		class4_sub11_0_.pointer = class4_sub11.pointer + i;
+		class4_sub11_0_.currentPosition = class4_sub11.currentPosition + i;
 		for (int i_3_ = 0; i_3_ < i; i_3_++) {
 			int i_4_ = class4_sub11.get();
 			if (i_4_ > 0) {
@@ -77,7 +77,7 @@ public class Class44 {
 					aBoolean911 = true;
 			}
 		}
-		if (class4_sub11_0_.pointer != arg0.length)
+		if (class4_sub11_0_.currentPosition != arg0.length)
 			throw new RuntimeException();
 		anInt910 = i_2_;
 		anIntArray909 = new int[i_2_];

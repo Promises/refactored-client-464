@@ -85,7 +85,7 @@ public class Class4_Sub14 extends RSFont {
 						true, false, 14, false);
 				Class42.aClass19_Sub1_856 = Class4_Sub20.method317(1, true,
 						true, 15, false);
-				StringUtilities.aJagexString_1762 = Class4_Sub20_Sub7_Sub1_Sub2.aJagexString_3630;
+				StringUtilities.aJagexString_1762 = Npc.aJagexString_3630;
 				Region.anInt135 = 20;
 				Class48.anInt989 = 40;
 			} else if ((Class48.anInt989 ^ 0xffffffff) == -41) {
@@ -115,7 +115,7 @@ public class Class4_Sub14 extends RSFont {
 										(new JagexString[] {
 												Actor.aJagexString_3234,
 												Class74.method1168(-47, i),
-												(Class4_Sub20_Sub7_Sub1_Sub2.aJagexString_3627) }),
+												(Npc.aJagexString_3627) }),
 										-842));
 					Region.anInt135 = 30;
 				} else {
@@ -177,7 +177,7 @@ public class Class4_Sub14 extends RSFont {
 									(new JagexString[] {
 											Class4_Sub20_Sub5.aJagexString_2884,
 											Class74.method1168(-90, i * 100 / 3),
-											Class4_Sub20_Sub7_Sub1_Sub2.aJagexString_3627}),
+											Npc.aJagexString_3627}),
 									-842));
 					Region.anInt135 = 40;
 				} else {
@@ -196,7 +196,7 @@ public class Class4_Sub14 extends RSFont {
 											StringUtilities.aJagexString_662,
 											Class74.method1168(-126, i * 100
 													/ i_3_),
-											Class4_Sub20_Sub7_Sub1_Sub2.aJagexString_3627}),
+											Npc.aJagexString_3627}),
 									-842));
 					Region.anInt135 = 50;
 				} else {
@@ -215,7 +215,7 @@ public class Class4_Sub14 extends RSFont {
 													-36,
 													Class4_Sub1.aClass19_Sub1_1863
 															.method761((byte) 119)),
-											Class4_Sub20_Sub7_Sub1_Sub2.aJagexString_3627}),
+											Npc.aJagexString_3627}),
 									-842));
 					Region.anInt135 = 60;
 				} else {
@@ -359,7 +359,7 @@ public class Class4_Sub14 extends RSFont {
 											Class4_Sub20_Sub8.aJagexString_2973,
 											Class74.method1168(-14,
 													i * 100 / 14),
-											Class4_Sub20_Sub7_Sub1_Sub2.aJagexString_3627}),
+											Npc.aJagexString_3627}),
 									-842));
 					Region.anInt135 = 70;
 				} else {
@@ -390,7 +390,7 @@ public class Class4_Sub14 extends RSFont {
 													-42,
 													Class18.aClass19_Sub1_482
 															.method761((byte) 119)),
-											Class4_Sub20_Sub7_Sub1_Sub2.aJagexString_3627}),
+											Npc.aJagexString_3627}),
 									-842));
 					Region.anInt135 = 90;
 				} else {
@@ -436,7 +436,7 @@ public class Class4_Sub14 extends RSFont {
 													-47,
 													(4 * Class4_Sub17.aClass19_Sub1_2321
 															.method761((byte) 119) / 5)),
-											Class4_Sub20_Sub7_Sub1_Sub2.aJagexString_3627}),
+											Npc.aJagexString_3627}),
 									-842));
 					Region.anInt135 = 100;
 				} else if (!Class4_Sub20_Sub14.aClass19_Sub1_3146
@@ -449,7 +449,7 @@ public class Class4_Sub14 extends RSFont {
 													-106,
 													80 + Class4_Sub20_Sub14.aClass19_Sub1_3146
 															.method761((byte) 119) / 6)),
-											Class4_Sub20_Sub7_Sub1_Sub2.aJagexString_3627}),
+											Npc.aJagexString_3627}),
 									-842));
 					Region.anInt135 = 100;
 				} else if (!Class4_Sub20_Sub6.aClass19_Sub1_2921
@@ -462,7 +462,7 @@ public class Class4_Sub14 extends RSFont {
 													-25,
 													96 - -(Class4_Sub20_Sub6.aClass19_Sub1_2921
 															.method761((byte) 119) / 20))),
-											Class4_Sub20_Sub7_Sub1_Sub2.aJagexString_3627}),
+											Npc.aJagexString_3627}),
 									-842));
 					Region.anInt135 = 100;
 				} else {

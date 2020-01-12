@@ -94,7 +94,7 @@ public class RS2Font extends Class4_Sub20 {
             if ((i ^ 0xffffffff) == -1)
                 return null;
             for (int i_3_ = 0; (i ^ 0xffffffff) < (i_3_ ^ 0xffffffff); i_3_++) {
-                arg0 = Class4_Sub20.method322(arg1, arg0.anInt2183);
+                arg0 = RSInterface.forId(arg0.anInt2183);
                 if (arg0 == null)
                     return null;
             }
@@ -134,53 +134,53 @@ public class RS2Font extends Class4_Sub20 {
     public static void method341(byte arg0) {
         try {
             while ((Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method262(
-                    (byte) 24, Class4_Sub20_Sub15.anInt3157) ^ 0xffffffff) <= -28) {
+                    (byte) 24, Class4_Sub20_Sub15.packetSize) ^ 0xffffffff) <= -28) {
                 int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-                        -1432215741, 15);
+                        15);
                 if (i == 32767)
                     break;
                 boolean bool = false;
-                if (Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i] == null) {
-                    Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i] = new Class4_Sub20_Sub7_Sub1_Sub2();
+                if (Class57.npcs[i] == null) {
+                    Class57.npcs[i] = new Npc();
                     bool = true;
                 }
-                Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i];
+                Npc npc = Class57.npcs[i];
                 Class4_Sub11_Sub1.anIntArray2695[GameShell.anInt12++] = i;
-                class4_sub20_sub7_sub1_sub2.anInt3256 = Region.anInt134;
+                npc.pulseCycle = Region.pulseCycle;
                 int i_4_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-                        -1432215741, 5);
+                        5);
                 if (i_4_ > 15)
                     i_4_ -= 32;
-                class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617 = Class71
+                npc.npcDefinition = Class71
                         .method1155(-91,
                                 Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                                        .method266(-1432215741, 14));
+                                        .method266(14));
                 int i_5_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-                        -1432215741, 1);
+                        1);
                 if ((i_5_ ^ 0xffffffff) == -2)
-                    Class48.anIntArray979[JagexException.anInt1726++] = i;
+                    Class48.anIntArray979[JagexException.updatedPlayerCount++] = i;
                 int i_6_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-                        -1432215741, 1);
+                        1);
                 int i_7_ = (Class34.anIntArray1763[Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                        .method266(arg0 ^ 0x555de08c, 3)]);
+                        .method266(3)]);
                 if (bool)
-                    class4_sub20_sub7_sub1_sub2.anInt3217 = class4_sub20_sub7_sub1_sub2.anInt3219 = i_7_;
+                    npc.anInt3217 = npc.anInt3219 = i_7_;
                 int i_8_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-                        -1432215741, 5);
-                class4_sub20_sub7_sub1_sub2.anInt3269 = (class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617.anInt2821);
+                        5);
+                npc.anInt3269 = (npc.npcDefinition.anInt2821);
                 if (i_8_ > 15)
                     i_8_ -= 32;
-                class4_sub20_sub7_sub1_sub2.anInt3246 = (class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617.anInt2800);
-                class4_sub20_sub7_sub1_sub2.anInt3237 = (class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617.anInt2837);
-                class4_sub20_sub7_sub1_sub2.anInt3263 = (class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617.anInt2793);
-                class4_sub20_sub7_sub1_sub2.anInt3272 = (class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617.anInt2801);
-                if ((class4_sub20_sub7_sub1_sub2.anInt3237 ^ 0xffffffff) == -1)
-                    class4_sub20_sub7_sub1_sub2.anInt3219 = 0;
-                class4_sub20_sub7_sub1_sub2.anInt3250 = (class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617.anInt2807);
-                class4_sub20_sub7_sub1_sub2.anInt3251 = (class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617.anInt2796);
-                class4_sub20_sub7_sub1_sub2.anInt3265 = (class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617.anInt2825);
-                class4_sub20_sub7_sub1_sub2.anInt3244 = (class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617.anInt2791);
-                class4_sub20_sub7_sub1_sub2
+                npc.anInt3246 = (npc.npcDefinition.anInt2800);
+                npc.anInt3237 = (npc.npcDefinition.anInt2837);
+                npc.anInt3263 = (npc.npcDefinition.anInt2793);
+                npc.anInt3272 = (npc.npcDefinition.anInt2801);
+                if ((npc.anInt3237 ^ 0xffffffff) == -1)
+                    npc.anInt3219 = 0;
+                npc.anInt3250 = (npc.npcDefinition.anInt2807);
+                npc.anInt3251 = (npc.npcDefinition.anInt2796);
+                npc.anInt3265 = (npc.npcDefinition.anInt2825);
+                npc.anInt3244 = (npc.npcDefinition.anInt2791);
+                npc
                         .method385(
                                 (Class4_Sub15.localPlayer.anIntArray3248[0])
                                         + i_8_,

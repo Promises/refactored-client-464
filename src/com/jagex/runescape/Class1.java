@@ -27,7 +27,7 @@ public class Class1 {
 			aClass76_61 = null;
 			aClass19_67 = null;
 			if (arg0 >= -48)
-				method41(-12);
+				method41();
 			aClass4_Sub20_Sub12_Sub1Array66 = null;
 			StringUtilities.aJagexString_69 = null;
 			anIntArray78 = null;
@@ -38,62 +38,60 @@ public class Class1 {
 		}
 	}
 
-	public static void method41(int arg0) {
+	public static void method41() {
 		anInt71++;
 		Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method271((byte) -33);
 		int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-				-1432215741, 8);
+				8);
 		if (GameShell.anInt12 > i) {
 			for (int i_0_ = i; (i_0_ ^ 0xffffffff) > (GameShell.anInt12 ^ 0xffffffff); i_0_++)
-				Class58.anIntArray1164[Class4_Sub20_Sub7_Sub5.anInt3386++] = Class4_Sub11_Sub1.anIntArray2695[i_0_];
+				Class58.removePlayers[Class4_Sub20_Sub7_Sub5.removePlayerCount++] = Class4_Sub11_Sub1.anIntArray2695[i_0_];
 		}
 		if (GameShell.anInt12 < i)
 			throw new RuntimeException("gnpov1");
 		GameShell.anInt12 = 0;
 		for (int i_1_ = 0; (i ^ 0xffffffff) < (i_1_ ^ 0xffffffff); i_1_++) {
 			int i_2_ = Class4_Sub11_Sub1.anIntArray2695[i_1_];
-			Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i_2_];
+			Npc npc = Class57.npcs[i_2_];
 			int i_3_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-					-1432215741, 1);
+					1);
 			if (i_3_ == 0) {
 				Class4_Sub11_Sub1.anIntArray2695[GameShell.anInt12++] = i_2_;
-				class4_sub20_sub7_sub1_sub2.anInt3256 = Region.anInt134;
+				npc.pulseCycle = Region.pulseCycle;
 			} else {
 				int i_4_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
-						-1432215741, 2);
+						2);
 				if ((i_4_ ^ 0xffffffff) == -1) {
 					Class4_Sub11_Sub1.anIntArray2695[GameShell.anInt12++] = i_2_;
-					class4_sub20_sub7_sub1_sub2.anInt3256 = Region.anInt134;
-					Class48.anIntArray979[JagexException.anInt1726++] = i_2_;
+					npc.pulseCycle = Region.pulseCycle;
+					Class48.anIntArray979[JagexException.updatedPlayerCount++] = i_2_;
 				} else if (i_4_ == 1) {
 					Class4_Sub11_Sub1.anIntArray2695[GameShell.anInt12++] = i_2_;
-					class4_sub20_sub7_sub1_sub2.anInt3256 = Region.anInt134;
+					npc.pulseCycle = Region.pulseCycle;
 					int i_5_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-							.method266(-1432215741, 3);
-					class4_sub20_sub7_sub1_sub2.method386(false, false, i_5_);
+							.method266(3);
+					npc.method386(false, false, i_5_);
 					int i_6_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-							.method266(-1432215741, 1);
+							.method266(1);
 					if (i_6_ == 1)
-						Class48.anIntArray979[JagexException.anInt1726++] = i_2_;
+						Class48.anIntArray979[JagexException.updatedPlayerCount++] = i_2_;
 				} else if ((i_4_ ^ 0xffffffff) == -3) {
 					Class4_Sub11_Sub1.anIntArray2695[GameShell.anInt12++] = i_2_;
-					class4_sub20_sub7_sub1_sub2.anInt3256 = Region.anInt134;
+					npc.pulseCycle = Region.pulseCycle;
 					int i_7_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-							.method266(-1432215741, 3);
-					class4_sub20_sub7_sub1_sub2.method386(false, true, i_7_);
+							.method266(3);
+					npc.method386(false, true, i_7_);
 					int i_8_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-							.method266(-1432215741, 3);
-					class4_sub20_sub7_sub1_sub2.method386(false, true, i_8_);
+							.method266(3);
+					npc.method386(false, true, i_8_);
 					int i_9_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-							.method266(arg0 ^ 0x555de0bf, 1);
+							.method266(1);
 					if ((i_9_ ^ 0xffffffff) == -2)
-						Class48.anIntArray979[JagexException.anInt1726++] = i_2_;
+						Class48.anIntArray979[JagexException.updatedPlayerCount++] = i_2_;
 				} else if ((i_4_ ^ 0xffffffff) == -4)
-					Class58.anIntArray1164[Class4_Sub20_Sub7_Sub5.anInt3386++] = i_2_;
+					Class58.removePlayers[Class4_Sub20_Sub7_Sub5.removePlayerCount++] = i_2_;
 			}
 		}
-		if (arg0 != -4)
-			method41(-82);
 	}
 
 	public Class4_Sub20 aClass4_Sub20_65 = new Class4_Sub20();

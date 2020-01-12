@@ -39,7 +39,7 @@ public class Class9 {
 					i_0_ = SceneGraph.anInt2493++;
 				}
 				rsInterface.anInt2193 = i_0_;
-				rsInterface.anInt2235 = Region.anInt134;
+				rsInterface.anInt2235 = Region.pulseCycle;
 				if (!rsInterface.aBoolean2178
 						|| !Class53.method1005(110, rsInterface)) {
 					if ((rsInterface.anInt2227 ^ 0xffffffff) < -1)
@@ -214,9 +214,9 @@ public class Class9 {
 												i_24_ += (rsInterface.anIntArray2257[i_20_]);
 												i_23_ += (rsInterface.anIntArray2223[i_20_]);
 											}
-											if (((rsInterface.anIntArray2179[i_20_]) ^ 0xffffffff) < -1) {
+											if (((rsInterface.items[i_20_]) ^ 0xffffffff) < -1) {
 												int i_25_ = -1
-														+ (rsInterface.anIntArray2179[i_20_]);
+														+ (rsInterface.items[i_20_]);
 												if ((32 + i_23_ > arg8
 														&& ((arg3 ^ 0xffffffff) < (i_23_ ^ 0xffffffff))
 														&& ((arg6 ^ 0xffffffff) > (32 + i_24_ ^ 0xffffffff)) && i_24_ < arg1)
@@ -229,7 +229,7 @@ public class Class9 {
 																.method421(
 																		false,
 																		i_25_,
-																		(rsInterface.anIntArray2216[i_20_]),
+																		(rsInterface.itemAmounts[i_20_]),
 																		1,
 																		(byte) -97,
 																		3153952));
@@ -238,7 +238,7 @@ public class Class9 {
 																.method421(
 																		false,
 																		i_25_,
-																		(rsInterface.anIntArray2216[i_20_]),
+																		(rsInterface.itemAmounts[i_20_]),
 																		2,
 																		(byte) -97,
 																		0));
@@ -658,14 +658,14 @@ public class Class9 {
 										int i_45_ = 0;
 										for (int i_46_ = 0; ((i_46_ ^ 0xffffffff) > (rsInterface.anInt2185 ^ 0xffffffff)); i_46_++) {
 											for (int i_47_ = 0; ((rsInterface.anInt2156 ^ 0xffffffff) < (i_47_ ^ 0xffffffff)); i_47_++) {
-												if (((rsInterface.anIntArray2179[i_45_]) ^ 0xffffffff) < -1) {
+												if (((rsInterface.items[i_45_]) ^ 0xffffffff) < -1) {
 													Class4_Sub20_Sub8 class4_sub20_sub8 = (Class4_Sub23
 															.method633(
-																	(rsInterface.anIntArray2179[i_45_]) - 1,
+																	(rsInterface.items[i_45_]) - 1,
 																	(byte) -123));
 													JagexString jagexString;
 													if ((class4_sub20_sub8.anInt3012) == 1
-															|| (((rsInterface.anIntArray2216[i_45_]) ^ 0xffffffff) != -2))
+															|| (((rsInterface.itemAmounts[i_45_]) ^ 0xffffffff) != -2))
 														jagexString = (Class4_Sub24
 																.method639(
 																		(new JagexString[] {
@@ -674,7 +674,7 @@ public class Class9 {
 																				(StringUtilities.aJagexString_484),
 																				(Class35.method912(
 																						(byte) 83,
-																						(rsInterface.anIntArray2216[i_45_]))) }),
+																						(rsInterface.itemAmounts[i_45_]))) }),
 																		-842));
 													else
 														jagexString = (Class4_Sub24
@@ -886,7 +886,7 @@ public class Class9 {
 					2 * Class4_Sub17.anInt2329,
 					((-Class4_Sub20_Sub8.anInt2987 + Class76.anInt1550) << 588365671)
 							- -Class11.anInt320);
-			if (Class27.anInt604 > -1 && Region.anInt134 % 20 < 10)
+			if (Class27.anInt604 > -1 && Region.pulseCycle % 20 < 10)
 				Class14.aImageRGBArray405[0].drawImage(-12
 						+ Class27.anInt604 + arg0, arg1
 						- -SceneGraph.anInt2502 - 28);
@@ -941,7 +941,7 @@ public class Class9 {
 							Class81.aJagexString_1699, Class81.aJagexString_1702);
 				else if (arg1 == 4)
 					Class4_Sub20_Sub9.method477(
-							(Class4_Sub20_Sub7_Sub1_Sub2.aJagexString_3623), 100,
+							(Npc.aJagexString_3623), 100,
 							Class72.aJagexString_1489, Class81.aJagexString_1705);
 				else if (arg1 != 5) {
 					if (arg1 != 6) {

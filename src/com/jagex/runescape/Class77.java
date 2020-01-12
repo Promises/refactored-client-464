@@ -96,14 +96,14 @@ public class Class77 {
 	public void method1190(byte arg0, byte[] arg1, Buffer arg2) {
 		try {
 			anInt1594++;
-			if (arg2.byteBuffer[arg2.pointer] != 31
-					|| arg2.byteBuffer[1 + arg2.pointer] != -117)
+			if (arg2.byteBuffer[arg2.currentPosition] != 31
+					|| arg2.byteBuffer[1 + arg2.currentPosition] != -117)
 				throw new RuntimeException("Invalid GZIP header!");
 			if (anInflater1586 == null)
 				anInflater1586 = new Inflater(true);
 			try {
-				anInflater1586.setInput(arg2.byteBuffer, 10 + arg2.pointer,
-						(arg2.byteBuffer.length + (-arg2.pointer - 10 + -8)));
+				anInflater1586.setInput(arg2.byteBuffer, 10 + arg2.currentPosition,
+						(arg2.byteBuffer.length + (-arg2.currentPosition - 10 + -8)));
 				anInflater1586.inflate(arg1);
 			} catch (Exception exception) {
 				anInflater1586.reset();

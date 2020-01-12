@@ -67,7 +67,7 @@ public class Class65 {
 	public static JagexString method1076(JagexString arg0, RSInterface arg1,
 										 boolean arg2) {
 		try {
-			if (arg0.method803(Class4_Sub20_Sub7_Sub1_Sub2.aJagexString_3627,
+			if (arg0.method803(Npc.aJagexString_3627,
 					(byte) 126) != -1) {
 				for (;;) {
 					int i = arg0.method803(JagexString.aJagexString_1801, (byte) -95);

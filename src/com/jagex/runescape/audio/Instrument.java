@@ -92,7 +92,7 @@ public class Instrument {
 		vol_env.decode(data);
 		int option = data.get();
 		if (option != 0) {
-			data.pointer--;
+			data.currentPosition--;
 			pitch_mod_env = new Envelope();
 			pitch_mod_env.decode(data);
 			pitch_mod_amp_env = new Envelope();
@@ -100,7 +100,7 @@ public class Instrument {
 		}
 		option = data.get();
 		if (option != 0) {
-			data.pointer--;
+			data.currentPosition--;
 			vol_mod_env = new Envelope();
 			vol_mod_env.decode(data);
 			vol_mod_amp_env = new Envelope();
@@ -108,7 +108,7 @@ public class Instrument {
 		}
 		option = data.get();
 		if (option != 0) {
-			data.pointer--;
+			data.currentPosition--;
 			gating_release_env = new Envelope();
 			gating_release_env.decode(data);
 			gating_attack_env = new Envelope();
@@ -125,8 +125,8 @@ public class Instrument {
 		}
 		delay_time = data.readUnsignedSmart();
 		delay_feedback = data.readUnsignedSmart();
-		duration = data.read_u16();
-		begin = data.read_u16();
+		duration = data.readShort();
+		begin = data.readShort();
 		filter = new Filter();
 		filter_env = new Envelope();
 		filter.decode(data, filter_env);

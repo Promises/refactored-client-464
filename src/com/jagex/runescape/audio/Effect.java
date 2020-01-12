@@ -50,13 +50,13 @@ public class Effect {
 		for (int i = 0; i < 10; i++) {
 			int i_10_ = arg0.get();
 			if (i_10_ != 0) {
-				arg0.pointer--;
+				arg0.currentPosition--;
 				instruments[i] = new Instrument();
 				instruments[i].decode(arg0);
 			}
 		}
-		loop_begin = arg0.read_u16();
-		loop_end = arg0.read_u16();
+		loop_begin = arg0.readShort();
+		loop_end = arg0.readShort();
 	}
 
 	public byte[] method915() {

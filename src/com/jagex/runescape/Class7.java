@@ -42,12 +42,12 @@ public class Class7 {
 
 	public static void method654(int arg0, Actor arg1) {
 		try {
-			if (Region.anInt134 == arg1.anInt3281
+			if (Region.pulseCycle == arg1.anInt3281
 					|| (arg1.anInt3277 ^ 0xffffffff) == 0
 					|| arg1.anInt3222 != 0
 					|| ((arg1.anInt3233 - -1 ^ 0xffffffff) < ((Class68
 							.method1093(arg1.anInt3277, (byte) -115).anIntArray3200[arg1.anInt3239]) ^ 0xffffffff))) {
-				int i = -arg1.anInt3224 + Region.anInt134;
+				int i = -arg1.anInt3224 + Region.pulseCycle;
 				int i_0_ = arg1.anInt3281 - arg1.anInt3224;
 				int i_1_ = 64 * arg1.anInt3244 + arg1.anInt3240 * 128;
 				int i_2_ = 64 * arg1.anInt3244 + arg1.anInt3279 * 128;

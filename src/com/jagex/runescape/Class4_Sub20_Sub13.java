@@ -102,7 +102,7 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 					if ((i_3_ ^ 0xffffffff) == -1)
 						return i;
 					if ((i_3_ ^ 0xffffffff) == -2)
-						i_5_ = Class76.anIntArray1571[is[i_2_++]];
+						i_5_ = Class76.skillLevel[is[i_2_++]];
 					if ((i_3_ ^ 0xffffffff) == -16)
 						i_4_ = 1;
 					if ((i_3_ ^ 0xffffffff) == -17)
@@ -110,28 +110,28 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 					if (i_3_ == 17)
 						i_4_ = 3;
 					if ((i_3_ ^ 0xffffffff) == -3)
-						i_5_ = Class31.anIntArray693[is[i_2_++]];
+						i_5_ = Class31.skillMaxLevel[is[i_2_++]];
 					if (i_3_ == 3)
-						i_5_ = Class46.anIntArray945[is[i_2_++]];
+						i_5_ = Class46.skillExperience[is[i_2_++]];
 					if ((i_3_ ^ 0xffffffff) == -5) {
 						int i_6_ = is[i_2_++] << 1607309168;
 						i_6_ += is[i_2_++];
-						RSInterface class4_sub13 = Class4_Sub20.method322(
-								true, i_6_);
+						RSInterface class4_sub13 = RSInterface.forId(
+								i_6_);
 						int i_7_ = is[i_2_++];
 						if (i_7_ != -1
 								&& (!(Class4_Sub23.method633(i_7_, (byte) -106).aBoolean3002) || Class77.aBoolean1590)) {
-							for (int i_8_ = 0; i_8_ < class4_sub13.anIntArray2179.length; i_8_++) {
-								if (class4_sub13.anIntArray2179[i_8_] == 1 + i_7_)
-									i_5_ += class4_sub13.anIntArray2216[i_8_];
+							for (int i_8_ = 0; i_8_ < class4_sub13.items.length; i_8_++) {
+								if (class4_sub13.items[i_8_] == 1 + i_7_)
+									i_5_ += class4_sub13.itemAmounts[i_8_];
 							}
 						}
 					}
 					if ((i_3_ ^ 0xffffffff) == -6)
 						i_5_ = Class31.anIntArray687[is[i_2_++]];
 					if ((i_3_ ^ 0xffffffff) == -7)
-						i_5_ = (Class34.anIntArray1751[-1
-								+ Class31.anIntArray693[is[i_2_++]]]);
+						i_5_ = (Class34.SKILL_EXPERIENCE[-1
+								+ Class31.skillMaxLevel[is[i_2_++]]]);
 					if (i_3_ == 7)
 						i_5_ = 100 * Class31.anIntArray687[is[i_2_++]] / 46875;
 					if ((i_3_ ^ 0xffffffff) == -9)
@@ -139,20 +139,20 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 					if (i_3_ == 9) {
 						for (int i_9_ = 0; i_9_ < 25; i_9_++) {
 							if (aBooleanArray3124[i_9_])
-								i_5_ += Class31.anIntArray693[i_9_];
+								i_5_ += Class31.skillMaxLevel[i_9_];
 						}
 					}
 					if (i_3_ == 10) {
 						int i_10_ = is[i_2_++] << 2039815920;
 						i_10_ += is[i_2_++];
-						RSInterface class4_sub13 = Class4_Sub20.method322(
-								true, i_10_);
+						RSInterface class4_sub13 = RSInterface.forId(
+								i_10_);
 						int i_11_ = is[i_2_++];
 						if ((i_11_ ^ 0xffffffff) != 0
 								&& (!(Class4_Sub23
 										.method633(i_11_, (byte) -127).aBoolean3002) || Class77.aBoolean1590)) {
-							for (int i_12_ = 0; i_12_ < class4_sub13.anIntArray2179.length; i_12_++) {
-								if (class4_sub13.anIntArray2179[i_12_] == 1 + i_11_) {
+							for (int i_12_ = 0; i_12_ < class4_sub13.items.length; i_12_++) {
+								if (class4_sub13.items[i_12_] == 1 + i_11_) {
 									i_5_ = 999999999;
 									break;
 								}
@@ -295,20 +295,20 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 					if (arg1 < 50 || (arg1 ^ 0xffffffff) <= -61) {
 						if (arg1 >= 60 && arg1 < 70)
 							anIntArray3105[arg1 - 60] = arg2
-									.read_u16();
+									.readShort();
 					} else
 						aShortArray3109[-50 + arg1] = (short) arg2
-								.read_u16();
+								.readShort();
 				} else
 					aShortArray3104[arg1 + -40] = (short) arg2
-							.read_u16();
+							.readShort();
 			} else
 				aBoolean3117 = true;
 		} else {
 			int i = arg2.get();
 			anIntArray3114 = new int[i];
 			for (int i_0_ = 0; (i_0_ ^ 0xffffffff) > (i ^ 0xffffffff); i_0_++)
-				anIntArray3114[i_0_] = arg2.read_u16();
+				anIntArray3114[i_0_] = arg2.readShort();
 		}
 		if (arg0 != 34)
 			method592(true);

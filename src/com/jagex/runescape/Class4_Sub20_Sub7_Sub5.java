@@ -10,7 +10,7 @@ public class Class4_Sub20_Sub7_Sub5 extends Class4_Sub20_Sub7 {
 	public static JagexString aJagexString_3410;
 	public static JagexString aJagexString_3422;
 	public static int anInt3382;
-	public static int anInt3386 = 0;
+	public static int removePlayerCount = 0;
 	public static int anInt3392;
 	public static int anInt3393;
 	public static int anInt3394;
@@ -70,7 +70,7 @@ public class Class4_Sub20_Sub7_Sub5 extends Class4_Sub20_Sub7 {
 			aJagexString_3410 = null;
 			aJagexString_3422 = null;
 			if (arg0 != false)
-				anInt3386 = -82;
+				removePlayerCount = -82;
 			aJagexString_3404 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ka.C("

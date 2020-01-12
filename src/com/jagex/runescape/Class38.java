@@ -45,41 +45,41 @@ public class Class38 {
 			int i = 0;
 			if (arg1 == 12981) {
 				for (/**/; (i ^ 0xffffffff) > (GameShell.anInt12 ^ 0xffffffff); i++) {
-					Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = (Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[Class4_Sub11_Sub1.anIntArray2695[i]]);
+					Npc npc = (Class57.npcs[Class4_Sub11_Sub1.anIntArray2695[i]]);
 					int i_0_ = 536870912 - -(Class4_Sub11_Sub1.anIntArray2695[i] << -601574610);
-					if (class4_sub20_sub7_sub1_sub2 != null
-							&& class4_sub20_sub7_sub1_sub2.method384(-19456)
-							&& !(class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617.aBoolean2826) == !arg0
-							&& class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617
+					if (npc != null
+							&& npc.method384(-19456)
+							&& !(npc.npcDefinition.aBoolean2826) == !arg0
+							&& npc.npcDefinition
 									.method355((byte) -43)) {
-						int i_1_ = (class4_sub20_sub7_sub1_sub2.worldY >> -1116516633);
-						int i_2_ = (class4_sub20_sub7_sub1_sub2.worldX >> 354464647);
+						int i_1_ = (npc.worldY >> -1116516633);
+						int i_2_ = (npc.worldX >> 354464647);
 						if (i_2_ >= 0 && (i_2_ ^ 0xffffffff) > -105
 								&& i_1_ >= 0 && i_1_ < 104) {
-							if ((class4_sub20_sub7_sub1_sub2.anInt3244 ^ 0xffffffff) == -2
-									&& ((0x7f & class4_sub20_sub7_sub1_sub2.worldX) ^ 0xffffffff) == -65
-									&& (class4_sub20_sub7_sub1_sub2.worldY & 0x7f) == 64) {
+							if ((npc.anInt3244 ^ 0xffffffff) == -2
+									&& ((0x7f & npc.worldX) ^ 0xffffffff) == -65
+									&& (npc.worldY & 0x7f) == 64) {
 								if (Class43.anInt860 == Class77.anIntArrayArray1592[i_2_][i_1_])
 									continue;
 								Class77.anIntArrayArray1592[i_2_][i_1_] = Class43.anInt860;
 							}
-							if (!class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617.aBoolean2835)
+							if (!npc.npcDefinition.aBoolean2835)
 								i_0_ += -2147483648;
 							Class4_Sub20_Sub7_Sub6.aClass69_3439
 									.method1132(
 											Class82.plane,
-											class4_sub20_sub7_sub1_sub2.worldX,
-											class4_sub20_sub7_sub1_sub2.worldY,
+											npc.worldX,
+											npc.worldY,
 											(Class67.getFloorDrawHeight(
-													(class4_sub20_sub7_sub1_sub2.worldX - -(64 * ((class4_sub20_sub7_sub1_sub2.anInt3244) + -1))),
-													(class4_sub20_sub7_sub1_sub2.worldY
-															- -(64 * (class4_sub20_sub7_sub1_sub2.anInt3244)) - 64),
+													(npc.worldX - -(64 * ((npc.anInt3244) + -1))),
+													(npc.worldY
+															- -(64 * (npc.anInt3244)) - 64),
 													Class82.plane)),
-											60 + (-64 + 64 * (class4_sub20_sub7_sub1_sub2.anInt3244)),
-											class4_sub20_sub7_sub1_sub2,
-											class4_sub20_sub7_sub1_sub2.anInt3219,
+											60 + (-64 + 64 * (npc.anInt3244)),
+                                            npc,
+											npc.anInt3219,
 											i_0_,
-											class4_sub20_sub7_sub1_sub2.aBoolean3290);
+											npc.aBoolean3290);
 						}
 					}
 				}

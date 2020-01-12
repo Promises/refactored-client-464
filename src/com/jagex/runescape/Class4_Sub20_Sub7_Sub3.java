@@ -54,7 +54,7 @@ public class Class4_Sub20_Sub7_Sub3 extends Class4_Sub20_Sub7 {
 		if (arg1)
 			Class52.method1003(-119, i);
 		Class4_Sub3.method174((byte) 62, i);
-		RSInterface class4_sub13 = Class4_Sub20.method322(true, i_0_);
+		RSInterface class4_sub13 = RSInterface.forId(i_0_);
 		if (class4_sub13 != null)
 			Class67.method1088(class4_sub13);
 		Class4_Sub20_Sub8.anInt2980 = 0;

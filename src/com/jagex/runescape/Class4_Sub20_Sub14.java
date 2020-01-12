@@ -141,8 +141,8 @@ public class Class4_Sub20_Sub14 extends Class4_Sub20 {
 				arg1.anInt3257 = i_3_;
 				int i_5_ = 4;
 				boolean bool = true;
-				if (arg1 instanceof Class4_Sub20_Sub7_Sub1_Sub2)
-					bool = (((Class4_Sub20_Sub7_Sub1_Sub2) arg1).aClass4_Sub20_Sub3_3617.aBoolean2792);
+				if (arg1 instanceof Npc)
+					bool = (((Npc) arg1).npcDefinition.aBoolean2792);
 				if (!bool) {
 					if (arg1.anInt3228 > 1)
 						i_5_ = 6;
@@ -235,7 +235,7 @@ public class Class4_Sub20_Sub14 extends Class4_Sub20 {
 			Class4_Sub20_Sub9.aClass76_3047 = arg2;
 			if (arg1 == false) {
 				Class4_Sub20_Sub7_Sub5.method426(122, arg0);
-				Class74.aClass4_Sub11_1516.pointer = 0;
+				Class74.aClass4_Sub11_1516.currentPosition = 0;
 				Class40.aClass4_Sub11_783 = null;
 				Class71.anInt1477 = 0;
 				Class4_Sub20_Sub8.aClass4_Sub20_Sub10_2990 = null;

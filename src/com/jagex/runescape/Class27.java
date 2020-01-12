@@ -29,10 +29,10 @@ public class Class27 {
 			int arg4, int arg5, int arg6, int arg7, int arg8, int arg9) {
 		try {
 			anInt605++;
-			Class4_Sub7 class4_sub7 = (Class4_Sub7) Class4_Sub20_Sub7_Sub1_Sub2.aClass65_3618
+			Class4_Sub7 class4_sub7 = (Class4_Sub7) Npc.aClass65_3618
 					.method1071(arg0 + -126);
 			Class4_Sub7 class4_sub7_1_ = null;
-			for (/**/; class4_sub7 != null; class4_sub7 = (Class4_Sub7) Class4_Sub20_Sub7_Sub1_Sub2.aClass65_3618
+			for (/**/; class4_sub7 != null; class4_sub7 = (Class4_Sub7) Npc.aClass65_3618
 					.method1075(18485)) {
 				if (class4_sub7.anInt1961 == arg9
 						&& (arg2 ^ 0xffffffff) == (class4_sub7.anInt1953 ^ 0xffffffff)
@@ -49,7 +49,7 @@ public class Class27 {
 				class4_sub7_1_.anInt1961 = arg9;
 				class4_sub7_1_.anInt1953 = arg2;
 				Class4_Sub20_Sub7.method375(class4_sub7_1_, 18278);
-				Class4_Sub20_Sub7_Sub1_Sub2.aClass65_3618.method1068(
+				Npc.aClass65_3618.method1068(
 						class4_sub7_1_, (byte) -123);
 			}
 			class4_sub7_1_.anInt1952 = arg6;

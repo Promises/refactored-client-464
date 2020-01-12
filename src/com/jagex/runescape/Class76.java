@@ -34,13 +34,13 @@ public class Class76 implements Runnable {
 	public static int anInt1581;
 	public static int anInt1582;
 	public static int[] anIntArray1565;
-	public static int[] anIntArray1571;
+	public static int[] skillLevel;
 	public static short[][] aShortArrayArray1576;
 	static {
 		anInt1550 = 0;
 		aJagexString_1557 = JagexString.getRs2PreparedString("W-=hlen Sie eine Option"
         );
-		anIntArray1571 = new int[25];
+		skillLevel = new int[25];
 		aJagexString_1563 = JagexString.getRs2PreparedString("Neuer Benutzer");
 		aJagexString_1566 = JagexString.getRs2PreparedString("Free world");
 		aJagexString_1564 = JagexString.getRs2PreparedString(" loggt sich aus)3");
@@ -64,7 +64,7 @@ public class Class76 implements Runnable {
 			aJagexString_1564 = null;
 			aShortArrayArray1576 = null;
 			GameShell.appletListener = null;
-			anIntArray1571 = null;
+			skillLevel = null;
 			aJagexString_1563 = null;
 			aByteArrayArray1578 = null;
 			aJagexString_1561 = null;
