@@ -3,7 +3,7 @@ package com.jagex.runescape;
 import com.jagex.runescape.io.Buffer;
 
 public class Class25 {
-    public static boolean aBoolean582 = false;
+    public static boolean cutsceneActive = false;
     public static Buffer[] aClass4_Sub11Array575 = new Buffer[2048];
     public static Class66 aClass66_592 = new Class66(50);
     public static long aLong584;
@@ -297,7 +297,6 @@ public class Class25 {
             Class49.anInt998 = 0;
             Class52.anInt1064 = 0;
             Class62.anInt1224 = 0;
-            Class16.anInt446 = 0;
             Class4_Sub2_Sub4.anInt2657 = 0;
             RS2Font.anInt2781 = 0;
             Class27.anInt626 = 0;
@@ -1063,7 +1062,7 @@ public class Class25 {
                         + -55;
                 Class18.anInt477 = -1;
                 Class4_Sub20_Sub1.anInt2734 = 0;
-                Class4_Sub16.anInt2318 = -40 + (int) (80.0 * Math.random());
+                Class4_Sub16.cameraRandomisationA = -40 + (int) (80.0 * Math.random());
                 Class4_Sub20_Sub9.minimapState = 0;
                 Class4_Sub20_Sub7_Sub6.anInt3431 = 0;
                 GameShell.anInt12 = 0;

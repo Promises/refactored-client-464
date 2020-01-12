@@ -474,7 +474,7 @@ public class Class49 implements Runnable {
                     return true;
                 }
                 if (Class4_Sub20_Sub11.incomingPacket == 82) {
-                    Class25.aBoolean582 = true;
+                    Class25.cutsceneActive = true;
                     Actor.anInt3255 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                             .get(); // readByte()
                     Class71.anInt1479 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
@@ -660,7 +660,7 @@ public class Class49 implements Runnable {
                     return true;
                 }
                 if (Class4_Sub20_Sub11.incomingPacket == 113) {
-                    Class25.aBoolean582 = true;
+                    Class25.cutsceneActive = true;
                     Class12.anInt348 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                             .get(); // readByte()
                     Class14.anInt399 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
@@ -733,9 +733,9 @@ public class Class49 implements Runnable {
                     return true;
                 }
                 if (Class4_Sub20_Sub11.incomingPacket == 99) { // no data
-                    Class25.aBoolean582 = false;
+                    Class25.cutsceneActive = false;
                     for (int i_73_ = 0; (i_73_ ^ 0xffffffff) > -6; i_73_++) {
-                        RS2Font.aBooleanArray2765[i_73_] = false;
+                        RS2Font.customCameraActive[i_73_] = false;
                     }
                     Class4_Sub20_Sub11.incomingPacket = -1;
                     return true;
@@ -871,7 +871,7 @@ public class Class49 implements Runnable {
                     int i_86_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get(); // readByte()
                     int i_87_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get(); // readByte()
                     int i_88_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get(); // readByte()
-                    RS2Font.aBooleanArray2765[i_85_] = true;
+                    RS2Font.customCameraActive[i_85_] = true;
                     Class78.anIntArray1607[i_85_] = i_86_;
                     SceneGraph.anIntArray2504[i_85_] = i_87_;
                     Class58.anIntArray1163[i_85_] = i_88_;

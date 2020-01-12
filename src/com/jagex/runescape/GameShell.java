@@ -8,7 +8,7 @@ import java.awt.event.*;
 import java.lang.reflect.Method;
 
 public abstract class GameShell extends Canvas implements Runnable,
-        FocusListener, WindowListener, MouseListener, MouseMotionListener {
+        FocusListener, WindowListener, MouseListener, MouseMotionListener, MouseWheelListener {
     /**
      *
      */
@@ -101,7 +101,7 @@ public abstract class GameShell extends Canvas implements Runnable,
 
     public void destroy() {
         try {
-            if (this == Class4_Sub22.anApplet_Sub1_2401 && !Class27.aBoolean616) {
+            if (!Class27.aBoolean616) {
                 Class50.aLong1027 = Class52.method1002((byte) -42);
                 Class25.method799(5000L, 10);
                 Class77.aClass75_1597 = null;
@@ -211,6 +211,14 @@ public abstract class GameShell extends Canvas implements Runnable,
             }
 
             Class4_Sub20_Sub7_Sub5.runeCanvas.addFocusListener(this);
+            Class4_Sub20_Sub7_Sub5.runeCanvas.addMouseWheelListener(this);
+            gameFrame.addWindowListener(new WindowAdapter() {
+                @Override
+                public void windowClosing(WindowEvent event) {
+                    System.out.println("Closing Client...");
+                    System.exit(0);
+                }
+            });
             Class4_Sub20_Sub7_Sub5.runeCanvas.requestFocus();
             Class4_Sub20_Sub4.aBoolean2849 = true;
             Class73.aBoolean1495 = false;
@@ -457,6 +465,7 @@ public abstract class GameShell extends Canvas implements Runnable,
 
     public void run() {
         this.addMouseListener(this);
+        this.addMouseWheelListener(this);
         this.addMouseMotionListener(this);
         this.addFocusListener(this);
         try {
@@ -560,6 +569,7 @@ public abstract class GameShell extends Canvas implements Runnable,
     }
 
     public void windowClosed(WindowEvent arg0) {
+        destroy();
     }
 
     public void windowClosing(WindowEvent arg0) {
@@ -611,6 +621,96 @@ public abstract class GameShell extends Canvas implements Runnable,
     }
 
     void mouseWheelDragged(int param1, int param2) {
+
+    }
+
+    public void mouseWheelMoved(MouseWheelEvent event) {
+        int rotation = event.getWheelRotation();
+        if (this instanceof Game) {
+            if(!handleInterfaceScrolling(event, (Game) this)) {
+                if ((Class6.cameraZoom <= 300 && rotation <= 0)
+                        || (Class6.cameraZoom >= 1200 && rotation >= 0)) {
+                    return;
+                }
+                int diff = rotation * 8;
+                Class6.cameraZoom = Class6.cameraZoom + diff;
+            }
+        }
+    }
+
+    public boolean handleInterfaceScrolling(MouseWheelEvent event, Game client) {
+//        int rotation = event.getWheelRotation();
+//        if (mouseX > 0 && mouseY > 346 && mouseX < 516 && mouseY < 505 && client.backDialogueId == -1) {
+//            if (rotation < 0) {
+//                if (client.chatboxInterface.scrollPosition >= 1) {
+//                    client.chatboxScroll = client.chatboxScroll + 30;
+//                    client.redrawChatbox = true;
+//                }
+//            } else {
+//                if (client.chatboxScroll < 1) {
+//                    client.chatboxScroll = 0;
+//                    client.redrawChatbox = true;
+//                } else {
+//                    client.chatboxScroll = client.chatboxScroll - 30;
+//                    client.redrawChatbox = true;
+//                }
+//            }
+//            return true;
+//        } else {
+//            int positionX = 0;
+//            int positionY = 0;
+//            int width = 0;
+//            int height = 0;
+//            int offsetX = 0;
+//            int offsetY = 0;
+//            int childID = 0;
+//            /* Tab interface scrolling */
+//            int tabInterfaceID = client.tabInterfaceIDs[client.currentTabId];
+//            if (tabInterfaceID != -1) {
+//                Widget tab = Widget.interfaces[tabInterfaceID];
+//                offsetX = 765 - 218;
+//                offsetY = 503 - 298;
+//                for (int index = 0; index < tab.children.length; index++) {
+//                    if (Widget.interfaces[tab.children[index]].scrollLimit > 0) {
+//                        childID = index;
+//                        positionX = tab.childrenX[index];
+//                        positionY = tab.childrenY[index];
+//                        width = Widget.interfaces[tab.children[index]].width;
+//                        height = Widget.interfaces[tab.children[index]].height;
+//                        break;
+//                    }
+//                }
+//                if (mouseX > offsetX + positionX && mouseY > offsetY + positionY && mouseX < offsetX + positionX + width && mouseY < offsetY + positionY + height) {
+//                    Widget.interfaces[tab.children[childID]].scrollPosition += rotation * 30;
+////				client.tabAreaAltered = true;
+//                    client.redrawTabArea = true;
+//                    return true;
+//                }
+//            }
+//            /* Main interface scrolling */
+//            if (client.openInterfaceId != -1) {
+//                Widget widget = Widget.interfaces[client.openInterfaceId];
+//                offsetX = 4;
+//                offsetY = 4;
+//                for (int index = 0; index < widget.children.length; index++) {
+//                    if (Widget.interfaces[widget.children[index]].scrollLimit > 0) {
+//                        childID = index;
+//                        positionX = widget.childrenX[index];
+//                        positionY = widget.childrenY[index];
+//                        width = Widget.interfaces[widget.children[index]].width;
+//                        height = Widget.interfaces[widget.children[index]].height;
+//                        break;
+//                    }
+//                }
+//                if (mouseX > offsetX + positionX && mouseY > offsetY + positionY && mouseX < offsetX + positionX + width && mouseY < offsetY + positionY + height) {
+//                    Widget.interfaces[widget.children[childID]].scrollPosition += rotation * 30;
+//                    return true;
+//                }
+//
+//            }
+//        }
+        return false;
+
 
     }
 

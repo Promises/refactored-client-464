@@ -143,7 +143,7 @@ public class Class47 {
 				}
 				Class5.anInt175 = 0;
 				Class18.anInt477 = -1;
-				Class25.aBoolean582 = false;
+				Class25.cutsceneActive = false;
 				if ((Class1.anInt74 ^ 0xffffffff) != -1) {
 					Class67.anInt1352 -= i_1_;
 					Class1.anInt74 -= i_2_;

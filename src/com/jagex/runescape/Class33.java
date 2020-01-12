@@ -30,7 +30,7 @@ public class Class33 {
 					if (i >= 0)
 						Game.keyStatus[i] = true;
 					else
-						Game.keyStatus[i ^ 0xffffffff] = false;
+						Game.keyStatus[~i] = false;
 				}
 			}
 			Class4_Sub20_Sub10.anInt3060 = Class4_Sub21.anInt2380;

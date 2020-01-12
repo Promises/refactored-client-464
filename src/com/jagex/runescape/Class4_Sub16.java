@@ -6,7 +6,7 @@ public class Class4_Sub16 extends RSFont {
 	public static int anInt2308;
 	public static int anInt2309 = -16 + (int) (Math.random() * 33.0);
 	public static int anInt2313;
-	public static int anInt2318 = 0;
+	public static int cameraRandomisationA = 0;
 
 	public static void method302(int arg0) {
 		try {

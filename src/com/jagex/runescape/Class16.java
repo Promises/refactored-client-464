@@ -16,46 +16,41 @@ public class Class16 {
     public static int anInt441;
     public static int anInt442;
     public static int anInt444;
-    public static int anInt446;
     public static int anInt447;
     public static int anInt454;
     public static short[] aShortArray448;
 
-    public static void method718(int arg0, int x, int arg2, int arg3,
-                                 int y, int arg5, byte arg6) {
+    public static void setCameraPosition(int pitch, int x, int z, int arg3,
+                                         int y, int yaw) {
         try {
-            anInt446++;
-            int i = -arg0 + 2048 & 0x7ff;
-            int i_0_ = 0x7ff & 2048 + -arg5;
-            if (arg6 <= 31) {
-                StringUtilities.aJagexString_432 = null;
-            }
-            int i_1_ = 0;
+            int pitchDifference = 2048 - pitch & 0x7ff;
+            int yawDifference = 2048 - yaw & 0x7ff;
             int xOffset = 0;
-            int yOffset = arg3;
-            if (i != 0) {
-                int i_4_ = Class4_Sub20_Sub12_Sub3.SINE[i];
-                int i_5_ = Class4_Sub20_Sub12_Sub3.COSINE[i];
-                int i_6_ = i_1_ * i_5_ + -(yOffset * i_4_) >> 403159312;
-                yOffset = i_1_ * i_4_ + yOffset * i_5_ >> -1415500816;
-                i_1_ = i_6_;
+            int zOffset = 0;
+            int yOffset = Class6.cameraZoom + 3 * pitch;
+            if (pitchDifference != 0) {
+                int sine = Class4_Sub20_Sub12_Sub3.SINE[pitchDifference];
+                int cosine = Class4_Sub20_Sub12_Sub3.COSINE[pitchDifference];
+                int temp = zOffset * cosine - yOffset * sine >> 16;
+                yOffset = zOffset * sine + yOffset * cosine >> 16;
+                zOffset = temp;
             }
-            if (i_0_ != 0) {
-                int i_7_ = Class4_Sub20_Sub12_Sub3.SINE[i_0_];
-                int i_8_ = Class4_Sub20_Sub12_Sub3.COSINE[i_0_];
-                int i_9_ = i_7_ * yOffset + xOffset * i_8_ >> 1463245200;
-                yOffset = -(xOffset * i_7_) + i_8_ * yOffset >> 1330156432;
-                xOffset = i_9_;
+            if (yawDifference != 0) {
+                int sine = Class4_Sub20_Sub12_Sub3.SINE[yawDifference];
+                int cosine = Class4_Sub20_Sub12_Sub3.COSINE[yawDifference];
+                int temp = yOffset * sine + xOffset * cosine >> 16;
+                yOffset = yOffset * cosine - xOffset * sine >> 16;
+                xOffset = temp;
             }
             Class33.cameraY = y - yOffset;
             Class6.cameraX = x - xOffset;
-            Class4_Sub20_Sub13.cameraVerticalRotation = arg0;
-            RSInterface.cameraZ = -i_1_ + arg2;
-            Class4_Sub6.cameraHorizontalRotation = arg5;
+            RSInterface.cameraZ = z - zOffset;
+            Class4_Sub20_Sub13.cameraVerticalRotation = pitch;
+            Class4_Sub6.cameraHorizontalRotation = yaw;
         } catch (RuntimeException runtimeexception) {
             throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ec.K("
-                    + arg0 + ',' + x + ',' + arg2 + ',' + arg3 + ',' + y
-                    + ',' + arg5 + ',' + arg6 + ')'));
+                    + pitch + ',' + x + ',' + z + ',' + arg3 + ',' + y
+                    + ',' + yaw + ')'));
         }
     }
 

@@ -3,7 +3,7 @@ package com.jagex.runescape;
 import com.jagex.runescape.io.Buffer;
 
 public class RS2Font extends Class4_Sub20 {
-    public static boolean[] aBooleanArray2765;
+    public static boolean[] customCameraActive;
     public static JagexString aJagexString_2759;
     public static JagexString aJagexString_2762;
     public static JagexString aJagexString_2764;
@@ -34,7 +34,7 @@ public class RS2Font extends Class4_Sub20 {
     static {
         aJagexString_2779 = JagexString.getRs2PreparedString("::");
         aJagexString_2764 = JagexString.getRs2PreparedString("mn");
-        aBooleanArray2765 = new boolean[5];
+        customCameraActive = new boolean[5];
         anIntArray2771 = new int[256];
         aJagexString_2762 = aJagexString_2782;
         aJagexString_2787 = JagexString.getRs2PreparedString(
@@ -120,7 +120,7 @@ public class RS2Font extends Class4_Sub20 {
                 aJagexString_2762 = null;
                 anIntArray2777 = null;
                 aJagexString_2787 = null;
-                aBooleanArray2765 = null;
+                customCameraActive = null;
                 aClass4_Sub13_2763 = null;
                 aJagexString_2782 = null;
                 anIntArray2771 = null;

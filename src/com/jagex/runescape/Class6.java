@@ -18,6 +18,7 @@ public class Class6 {
 	public static int anInt204;
 	public static int anInt208;
 	public static int cameraX;
+	public static int cameraZoom = 600;
 	public static int anInt212;
 	public static int anInt213;
 	public static int anInt216;
