@@ -11,7 +11,7 @@ public class Class4_Sub20_Sub16 extends Class4_Sub20 {
 	public static JagexString aJagexString_3180;
 	public static JagexString aJagexString_3181;
 	public static RSInterface aClass4_Sub13_3179;
-	public static Class4_Sub20_Sub12_Sub2 aClass4_Sub20_Sub12_Sub2_3177;
+	public static ImageRGB aImageRGB_3177;
 	public static int anInt3160;
 	public static int anInt3161;
 	public static int anInt3164;
@@ -112,7 +112,7 @@ public class Class4_Sub20_Sub16 extends Class4_Sub20 {
 			aClass4_Sub13_3179 = null;
 			aJagexString_3166 = null;
 			aJagexString_3180 = null;
-			aClass4_Sub20_Sub12_Sub2_3177 = null;
+			aImageRGB_3177 = null;
 			aJagexString_3162 = null;
 			aJagexString_3165 = null;
 		} catch (RuntimeException runtimeexception) {

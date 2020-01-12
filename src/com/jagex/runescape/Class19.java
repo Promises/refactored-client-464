@@ -4,7 +4,7 @@ import com.jagex.runescape.net.StreamBuffer;
 import java.awt.Graphics;
 
 public abstract class Class19 {
-	public static Class4_Sub20_Sub12_Sub2[] aClass4_Sub20_Sub12_Sub2Array504;
+	public static ImageRGB[] aImageRGBArray504;
 	public static long aLong524 = 0L;
 	public static int anInt485;
 	public static int anInt486;
@@ -38,8 +38,9 @@ public abstract class Class19 {
 			int i = 4;
 			int i_0_ = i + 6;
 			int i_1_ = 6 - -i;
-			if (arg2 != -126)
+			if (arg2 != -126) {
 				method757((byte) -111);
+			}
 			int i_2_ = Class4_Sub15.aClass4_Sub20_Sub12_Sub4_Sub1_2289
 					.method568(arg1, 250);
 			int i_3_ = (Class4_Sub15.aClass4_Sub20_Sub12_Sub4_Sub1_2289
@@ -60,8 +61,9 @@ public abstract class Class19 {
 				} catch (Exception exception) {
 					Class4_Sub20_Sub7_Sub5.runeCanvas.repaint();
 				}
-			} else
+			} else {
 				Class67.method1087(arg2 ^ 0x753a, i_0_, i_2_, i_3_, i_1_);
+			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ef.HA("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ','
@@ -72,14 +74,18 @@ public abstract class Class19 {
 	public static boolean method750(boolean arg0, int arg1) {
 		try {
 			anInt501++;
-			if (arg0 != true)
+			if (arg0 != true) {
 				StringUtilities.aJagexString_495 = null;
-			if (arg1 >= 97 && (arg1 ^ 0xffffffff) >= -123)
+			}
+			if (arg1 >= 97 && (arg1 ^ 0xffffffff) >= -123) {
 				return true;
-			if ((arg1 ^ 0xffffffff) <= -66 && (arg1 ^ 0xffffffff) >= -91)
+			}
+			if ((arg1 ^ 0xffffffff) <= -66 && (arg1 ^ 0xffffffff) >= -91) {
 				return true;
-			if ((arg1 ^ 0xffffffff) <= -49 && arg1 <= 57)
+			}
+			if ((arg1 ^ 0xffffffff) <= -49 && arg1 <= 57) {
 				return true;
+			}
 			return false;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ef.BA("
@@ -90,9 +96,10 @@ public abstract class Class19 {
 	public static void method757(byte arg0) {
 		try {
 			StringUtilities.aJagexString_517 = null;
-			if (arg0 > -61)
+			if (arg0 > -61) {
 				StringUtilities.aJagexString_517 = null;
-			aClass4_Sub20_Sub12_Sub2Array504 = null;
+			}
+			aImageRGBArray504 = null;
 			anIntArray514 = null;
 			StringUtilities.aJagexString_495 = null;
 		} catch (RuntimeException runtimeexception) {
@@ -135,8 +142,9 @@ public abstract class Class19 {
 		try {
 			for (int i = arg0; ((anObjectArrayArray487.length ^ 0xffffffff) < (i ^ 0xffffffff)); i++) {
 				if (anObjectArrayArray487[i] != null) {
-					for (int i_4_ = 0; ((anObjectArrayArray487[i].length ^ 0xffffffff) < (i_4_ ^ 0xffffffff)); i_4_++)
+					for (int i_4_ = 0; ((anObjectArrayArray487[i].length ^ 0xffffffff) < (i_4_ ^ 0xffffffff)); i_4_++) {
 						anObjectArrayArray487[i][i_4_] = null;
+					}
 				}
 			}
 			anInt505++;
@@ -149,10 +157,12 @@ public abstract class Class19 {
 	public boolean method737(int arg0, byte arg1, int[] arg2) {
 		try {
 			anInt489++;
-			if (anObjectArray488[arg0] == null)
+			if (anObjectArray488[arg0] == null) {
 				return false;
-			if (arg1 < 55)
+			}
+			if (arg1 < 55) {
 				return true;
+			}
 			int i = anIntArray510[arg0];
 			int[] is = anIntArrayArray493[arg0];
 			Object[] objects = anObjectArrayArray487[arg0];
@@ -163,14 +173,15 @@ public abstract class Class19 {
 					break;
 				}
 			}
-			if (bool)
+			if (bool) {
 				return true;
+			}
 			byte[] is_6_;
 			if (arg2 == null
-					|| (arg2[0] == 0 && arg2[1] == 0 && arg2[2] == 0 && arg2[3] == 0))
+					|| (arg2[0] == 0 && arg2[1] == 0 && arg2[2] == 0 && arg2[3] == 0)) {
 				is_6_ = Class59.method1034(false, (byte) 85,
 						anObjectArray488[arg0]);
-			else {
+			} else {
 				is_6_ = Class59.method1034(true, (byte) 101,
 						anObjectArray488[arg0]);
 				StreamBuffer class4_sub11 = new StreamBuffer(is_6_);
@@ -198,8 +209,9 @@ public abstract class Class19 {
 												is_6_.length + -2) + ","
 										+ anIntArray496[arg0] + "," + anInt492));
 			}
-			if (aBoolean502)
+			if (aBoolean502) {
 				anObjectArray488[arg0] = null;
+			}
 			if (i > 1) {
 				int i_8_ = is_7_.length;
 				int i_9_ = is_7_[--i_8_] & 0xff;
@@ -232,17 +244,19 @@ public abstract class Class19 {
 					}
 				}
 				for (int i_20_ = 0; i > i_20_; i_20_++) {
-					if (aBoolean525)
+					if (aBoolean525) {
 						objects[is[i_20_]] = is_14_[i_20_];
-					else
+					} else {
 						objects[is[i_20_]] = Class4_Sub21.method623(
 								is_14_[i_20_], false, (byte) 75);
+					}
 				}
-			} else if (!aBoolean525)
+			} else if (!aBoolean525) {
 				objects[is[0]] = Class4_Sub21
 						.method623(is_7_, false, (byte) 75);
-			else
+			} else {
 				objects[is[0]] = is_7_;
+			}
 			return true;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ef.CA("
@@ -254,21 +268,24 @@ public abstract class Class19 {
 	public byte[] method738(int arg0, byte arg1, int arg2) {
 		try {
 			anInt509++;
-			if (arg1 >= -69)
+			if (arg1 >= -69) {
 				return null;
+			}
 			if (arg2 < 0
 					|| (arg2 ^ 0xffffffff) <= (anObjectArrayArray487.length ^ 0xffffffff)
 					|| anObjectArrayArray487[arg2] == null
 					|| (arg0 ^ 0xffffffff) > -1
-					|| (arg0 ^ 0xffffffff) <= (anObjectArrayArray487[arg2].length ^ 0xffffffff))
+					|| (arg0 ^ 0xffffffff) <= (anObjectArrayArray487[arg2].length ^ 0xffffffff)) {
 				return null;
+			}
 			if (anObjectArrayArray487[arg2][arg0] == null) {
 				boolean bool = method737(arg2, (byte) 105, null);
 				if (!bool) {
 					method748(-127, arg2);
 					bool = method737(arg2, (byte) 121, null);
-					if (!bool)
+					if (!bool) {
 						return null;
+					}
 				}
 			}
 			byte[] is = Class59.method1034(false, (byte) -109,
@@ -287,17 +304,22 @@ public abstract class Class19 {
 					|| arg1 >= anObjectArrayArray487.length
 					|| anObjectArrayArray487[arg1] == null
 					|| arg2 < 0
-					|| (arg2 ^ 0xffffffff) <= (anObjectArrayArray487[arg1].length ^ 0xffffffff))
+					|| (arg2 ^ 0xffffffff) <= (anObjectArrayArray487[arg1].length ^ 0xffffffff)) {
 				return false;
-			if (anObjectArrayArray487[arg1][arg2] != null)
+			}
+			if (anObjectArrayArray487[arg1][arg2] != null) {
 				return true;
-			if (anObjectArray488[arg1] != null)
+			}
+			if (anObjectArray488[arg1] != null) {
 				return true;
+			}
 			method748(33, arg1);
-			if (anObjectArray488[arg1] != null)
+			if (anObjectArray488[arg1] != null) {
 				return true;
-			if (arg0 != -4)
+			}
+			if (arg0 != -4) {
 				method747(false, null, -78);
+			}
 			return false;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ef.O("
@@ -307,13 +329,16 @@ public abstract class Class19 {
 
 	public byte[] method740(int arg0, boolean arg1) {
 		try {
-			if (arg1 != true)
+			if (arg1 != true) {
 				return null;
+			}
 			anInt513++;
-			if (anObjectArrayArray487.length == 1)
+			if (anObjectArrayArray487.length == 1) {
 				return method746(0, (byte) 113, arg0);
-			if ((anObjectArrayArray487[arg0].length ^ 0xffffffff) == -2)
+			}
+			if ((anObjectArrayArray487[arg0].length ^ 0xffffffff) == -2) {
 				return method746(arg0, (byte) 104, 0);
+			}
 			throw new RuntimeException();
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ef.KA("
@@ -324,8 +349,9 @@ public abstract class Class19 {
 	public int method741(int arg0, boolean arg1) {
 		try {
 			anInt507++;
-			if (arg1 != true)
+			if (arg1 != true) {
 				return 121;
+			}
 			return anObjectArrayArray487[arg0].length;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ef.AA("
@@ -336,13 +362,16 @@ public abstract class Class19 {
 	public boolean method742(int arg0, int arg1) {
 		try {
 			anInt522++;
-			if (anObjectArray488[arg0] != null)
+			if (anObjectArray488[arg0] != null) {
 				return true;
+			}
 			method748(arg1 + -20503, arg0);
-			if (anObjectArray488[arg0] != null)
+			if (anObjectArray488[arg0] != null) {
 				return true;
-			if (arg1 != 20619)
+			}
+			if (arg1 != 20619) {
 				method759(69);
+			}
 			return false;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ef.MA("
@@ -352,8 +381,9 @@ public abstract class Class19 {
 
 	public void method743(int arg0, int arg1) {
 		anInt497++;
-		if (arg1 != 10064)
+		if (arg1 != 10064) {
 			StringUtilities.aJagexString_495 = null;
+		}
 	}
 
 	public boolean method744(byte arg0, JagexString arg1, JagexString arg2) {
@@ -380,8 +410,9 @@ public abstract class Class19 {
 				int i = aClass62_521.method1051(arg1.method820((byte) 123),
 						(byte) -123);
 				anInt490++;
-				if (i >= 0)
+				if (i >= 0) {
 					method743(i, 10064);
+				}
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ef.FA("
@@ -391,8 +422,9 @@ public abstract class Class19 {
 
 	public byte[] method746(int arg0, byte arg1, int arg2) {
 		try {
-			if (arg1 < 82)
+			if (arg1 < 82) {
 				method752((byte) 36);
+			}
 			anInt515++;
 			return method758(null, arg0, false, arg2);
 		} catch (RuntimeException runtimeexception) {
@@ -405,8 +437,9 @@ public abstract class Class19 {
 		try {
 			arg1 = arg1.method827((byte) -55);
 			anInt499++;
-			if (arg0 != false)
+			if (arg0 != false) {
 				return 30;
+			}
 			return aClass62Array523[arg2].method1051(
 					arg1.method820((byte) 113), (byte) -127);
 		} catch (RuntimeException runtimeexception) {
@@ -428,12 +461,15 @@ public abstract class Class19 {
 	public byte[] method749(boolean arg0, int arg1) {
 		try {
 			anInt520++;
-			if (anObjectArrayArray487.length == 1)
+			if (anObjectArrayArray487.length == 1) {
 				return method738(arg1, (byte) -87, 0);
-			if (anObjectArrayArray487[arg1].length == 1)
+			}
+			if (anObjectArrayArray487[arg1].length == 1) {
 				return method738(0, (byte) -109, arg1);
-			if (arg0 != true)
+			}
+			if (arg0 != true) {
 				aClass62_521 = null;
+			}
 			throw new RuntimeException();
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ef.R("
@@ -443,8 +479,9 @@ public abstract class Class19 {
 
 	public int[] method751(int arg0, int arg1) {
 		try {
-			if (arg0 <= 57)
+			if (arg0 <= 57) {
 				method758(null, 34, false, -16);
+			}
 			anInt486++;
 			return anIntArrayArray493[arg1];
 		} catch (RuntimeException runtimeexception) {
@@ -461,8 +498,9 @@ public abstract class Class19 {
 				int i_23_ = anIntArray518[i];
 				if (anObjectArray488[i_23_] == null) {
 					method748(-100, i_23_);
-					if (anObjectArray488[i_23_] == null)
+					if (anObjectArray488[i_23_] == null) {
 						bool = false;
+					}
 				}
 			}
 			return bool;
@@ -474,8 +512,9 @@ public abstract class Class19 {
 
 	public byte[] method753(boolean arg0, JagexString arg1, JagexString arg2) {
 		try {
-			if (arg0 != false)
+			if (arg0 != false) {
 				method739((byte) -40, 5, 102);
+			}
 			anInt508++;
 			arg1 = arg1.method827((byte) -55);
 			arg2 = arg2.method827((byte) -55);
@@ -495,8 +534,6 @@ public abstract class Class19 {
 		try {
 			arg0 = arg0.method827((byte) -55);
 			anInt519++;
-			if (arg1 != 1)
-				anIntArray510 = null;
 			return aClass62_521.method1051(arg0.method820((byte) 74),
 					(byte) -126);
 		} catch (RuntimeException runtimeexception) {
@@ -508,10 +545,12 @@ public abstract class Class19 {
 	public void method755(int arg0, int arg1) {
 		try {
 			anInt498++;
-			if (arg0 != -91)
+			if (arg0 != -91) {
 				aClass62Array523 = null;
-			for (int i = 0; ((i ^ 0xffffffff) > (anObjectArrayArray487[arg1].length ^ 0xffffffff)); i++)
+			}
+			for (int i = 0; ((i ^ 0xffffffff) > (anObjectArrayArray487[arg1].length ^ 0xffffffff)); i++) {
 				anObjectArrayArray487[arg1][i] = null;
+			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ef.JA("
 					+ arg0 + ',' + arg1 + ')'));
@@ -524,10 +563,12 @@ public abstract class Class19 {
 		StreamBuffer class4_sub11 = new StreamBuffer(
 				Class4_Sub20_Sub16.method609(-37, arg1));
 		int i = class4_sub11.get();
-		if ((i ^ 0xffffffff) != -6 && (i ^ 0xffffffff) != -7)
+		if ((i ^ 0xffffffff) != -6 && (i ^ 0xffffffff) != -7) {
 			throw new RuntimeException("Incorrect JS5 protocol number: " + i);
-		if (i >= 6)
+		}
+		if (i >= 6) {
 			class4_sub11.method219((byte) 73);
+		}
 		int i_25_ = class4_sub11.get();
 		int i_26_ = -1;
 		int i_27_ = 0;
@@ -535,11 +576,13 @@ public abstract class Class19 {
 		anIntArray518 = new int[anInt526];
 		for (int i_28_ = 0; i_28_ < anInt526; i_28_++) {
 			anIntArray518[i_28_] = i_27_ += class4_sub11.method209((byte) -127);
-			if ((anIntArray518[i_28_] ^ 0xffffffff) < (i_26_ ^ 0xffffffff))
+			if ((anIntArray518[i_28_] ^ 0xffffffff) < (i_26_ ^ 0xffffffff)) {
 				i_26_ = anIntArray518[i_28_];
+			}
 		}
-		if (arg0 != 108)
+		if (arg0 != 108) {
 			anIntArray518 = null;
+		}
 		anObjectArray488 = new Object[1 + i_26_];
 		anIntArray528 = new int[1 + i_26_];
 		anIntArray510 = new int[i_26_ - -1];
@@ -548,20 +591,24 @@ public abstract class Class19 {
 		anIntArrayArray493 = new int[1 + i_26_][];
 		if (i_25_ != 0) {
 			anIntArray512 = new int[1 + i_26_];
-			for (int i_29_ = 0; anInt526 > i_29_; i_29_++)
+			for (int i_29_ = 0; anInt526 > i_29_; i_29_++) {
 				anIntArray512[anIntArray518[i_29_]] = class4_sub11
 						.method219((byte) 73);
+			}
 			aClass62_521 = new Class62(anIntArray512);
 		}
-		for (int i_30_ = 0; (i_30_ ^ 0xffffffff) > (anInt526 ^ 0xffffffff); i_30_++)
+		for (int i_30_ = 0; (i_30_ ^ 0xffffffff) > (anInt526 ^ 0xffffffff); i_30_++) {
 			anIntArray496[anIntArray518[i_30_]] = class4_sub11
 					.method219((byte) 73);
-		for (int i_31_ = 0; i_31_ < anInt526; i_31_++)
+		}
+		for (int i_31_ = 0; i_31_ < anInt526; i_31_++) {
 			anIntArray528[anIntArray518[i_31_]] = class4_sub11
 					.method219((byte) 73);
-		for (int i_32_ = 0; (i_32_ ^ 0xffffffff) > (anInt526 ^ 0xffffffff); i_32_++)
+		}
+		for (int i_32_ = 0; (i_32_ ^ 0xffffffff) > (anInt526 ^ 0xffffffff); i_32_++) {
 			anIntArray510[anIntArray518[i_32_]] = class4_sub11
 					.method209((byte) -101);
+		}
 		for (int i_33_ = 0; anInt526 > i_33_; i_33_++) {
 			i_27_ = 0;
 			int i_34_ = anIntArray518[i_33_];
@@ -571,8 +618,9 @@ public abstract class Class19 {
 			for (int i_37_ = 0; i_37_ < i_36_; i_37_++) {
 				int i_38_ = (anIntArrayArray493[i_34_][i_37_] = i_27_ += class4_sub11
 						.method209((byte) -119));
-				if ((i_38_ ^ 0xffffffff) < (i_35_ ^ 0xffffffff))
+				if ((i_38_ ^ 0xffffffff) < (i_35_ ^ 0xffffffff)) {
 					i_35_ = i_38_;
+				}
 			}
 			anObjectArrayArray487[i_34_] = new Object[1 + i_35_];
 		}
@@ -583,9 +631,10 @@ public abstract class Class19 {
 				int i_40_ = anIntArray518[i_39_];
 				int i_41_ = anIntArray510[i_40_];
 				anIntArrayArray527[i_40_] = new int[anObjectArrayArray487[i_40_].length];
-				for (int i_42_ = 0; (i_41_ ^ 0xffffffff) < (i_42_ ^ 0xffffffff); i_42_++)
+				for (int i_42_ = 0; (i_41_ ^ 0xffffffff) < (i_42_ ^ 0xffffffff); i_42_++) {
 					anIntArrayArray527[i_40_][anIntArrayArray493[i_40_][i_42_]] = class4_sub11
 							.method219((byte) 73);
+				}
 				aClass62Array523[i_40_] = new Class62(anIntArrayArray527[i_40_]);
 			}
 		}
@@ -598,21 +647,24 @@ public abstract class Class19 {
 					|| (arg1 ^ 0xffffffff) <= (anObjectArrayArray487.length ^ 0xffffffff)
 					|| anObjectArrayArray487[arg1] == null
 					|| (arg3 ^ 0xffffffff) > -1
-					|| arg3 >= anObjectArrayArray487[arg1].length)
+					|| arg3 >= anObjectArrayArray487[arg1].length) {
 				return null;
+			}
 			if (anObjectArrayArray487[arg1][arg3] == null) {
 				boolean bool = method737(arg1, (byte) 104, arg0);
 				if (!bool) {
 					method748(110, arg1);
 					bool = method737(arg1, (byte) 66, arg0);
-					if (!bool)
+					if (!bool) {
 						return null;
+					}
 				}
 			}
 			byte[] is = Class59.method1034(arg2, (byte) -90,
 					anObjectArrayArray487[arg1][arg3]);
-			if (aBoolean525)
+			if (aBoolean525) {
 				anObjectArrayArray487[arg1][arg3] = null;
+			}
 			return is;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ef.GA("
@@ -624,8 +676,9 @@ public abstract class Class19 {
 	public int method759(int arg0) {
 		try {
 			anInt500++;
-			if (arg0 <= 15)
+			if (arg0 <= 15) {
 				method741(63, false);
+			}
 			return anObjectArrayArray487.length;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ef.P("

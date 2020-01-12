@@ -22,7 +22,6 @@ public class RSCanvas extends Canvas {
 	public static int anInt52;
 	public static int anInt53 = 0;
 	public static int anInt56;
-	public static int anInt57;
 	public Component component;
 	static {
 		aClass16_47 = new Class16(32);

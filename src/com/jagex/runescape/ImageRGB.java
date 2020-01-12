@@ -5,7 +5,7 @@ import java.awt.MediaTracker;
 import java.awt.Toolkit;
 import java.awt.image.PixelGrabber;
 
-public class Class4_Sub20_Sub12_Sub2 extends Class4_Sub20_Sub12 {
+public class ImageRGB extends Class4_Sub20_Sub12 {
 	public static void method512(int[] arg0, int[] arg1, int arg2, int arg3,
 			int arg4, int arg5, int arg6, int arg7, int arg8, int arg9,
 			int arg10) {
@@ -196,11 +196,11 @@ public class Class4_Sub20_Sub12_Sub2 extends Class4_Sub20_Sub12 {
 
 	public int anInt3516;
 
-	public int anInt3517;
+	public int maxHeight;
 
 	public int anInt3518;
 
-	public int anInt3519;
+	public int maxWidth;
 
 	public int anInt3520;
 
@@ -208,11 +208,11 @@ public class Class4_Sub20_Sub12_Sub2 extends Class4_Sub20_Sub12 {
 
 	public int[] anIntArray3515;
 
-	public Class4_Sub20_Sub12_Sub2() {
+	public ImageRGB() {
 		/* empty */
 	}
 
-	public Class4_Sub20_Sub12_Sub2(byte[] arg0, Component arg1) {
+	public ImageRGB(byte[] arg0, Component arg1) {
 		try {
 			Image image = Toolkit.getDefaultToolkit().createImage(arg0);
 			MediaTracker mediatracker = new MediaTracker(arg1);
@@ -220,8 +220,8 @@ public class Class4_Sub20_Sub12_Sub2 extends Class4_Sub20_Sub12 {
 			mediatracker.waitForAll();
 			anInt3520 = image.getWidth(arg1);
 			anInt3516 = image.getHeight(arg1);
-			anInt3519 = anInt3520;
-			anInt3517 = anInt3516;
+			maxWidth = anInt3520;
+			maxHeight = anInt3516;
 			anInt3518 = 0;
 			anInt3521 = 0;
 			anIntArray3515 = new int[anInt3520 * anInt3516];
@@ -233,10 +233,10 @@ public class Class4_Sub20_Sub12_Sub2 extends Class4_Sub20_Sub12 {
 		}
 	}
 
-	public Class4_Sub20_Sub12_Sub2(int arg0, int arg1) {
+	public ImageRGB(int arg0, int arg1) {
 		anIntArray3515 = new int[arg0 * arg1];
-		anInt3520 = anInt3519 = arg0;
-		anInt3516 = anInt3517 = arg1;
+		anInt3520 = maxWidth = arg0;
+		anInt3516 = maxHeight = arg1;
 		anInt3518 = anInt3521 = 0;
 	}
 
@@ -246,8 +246,8 @@ public class Class4_Sub20_Sub12_Sub2 extends Class4_Sub20_Sub12 {
 			int i_0_ = anInt3516;
 			int i_1_ = 0;
 			int i_2_ = 0;
-			int i_3_ = anInt3519;
-			int i_4_ = anInt3517;
+			int i_3_ = maxWidth;
+			int i_4_ = maxHeight;
 			int i_5_ = (i_3_ << 16) / arg2;
 			int i_6_ = (i_4_ << 16) / arg3;
 			if (anInt3518 > 0) {
@@ -369,23 +369,23 @@ public class Class4_Sub20_Sub12_Sub2 extends Class4_Sub20_Sub12 {
 	}
 
 	public void method518() {
-		if (anInt3520 != anInt3519 || anInt3516 != anInt3517) {
-			int[] is = new int[anInt3519 * anInt3517];
+		if (anInt3520 != maxWidth || anInt3516 != maxHeight) {
+			int[] is = new int[maxWidth * maxHeight];
 			for (int i = 0; i < anInt3516; i++) {
 				for (int i_40_ = 0; i_40_ < anInt3520; i_40_++)
-					is[(i + anInt3521) * anInt3519 + (i_40_ + anInt3518)] = anIntArray3515[i
+					is[(i + anInt3521) * maxWidth + (i_40_ + anInt3518)] = anIntArray3515[i
 							* anInt3520 + i_40_];
 			}
 			anIntArray3515 = is;
-			anInt3520 = anInt3519;
-			anInt3516 = anInt3517;
+			anInt3520 = maxWidth;
+			anInt3516 = maxHeight;
 			anInt3518 = 0;
 			anInt3521 = 0;
 		}
 	}
 
 	public void method519(int arg0, int arg1, int arg2, int arg3) {
-		method533(anInt3519 << 3, anInt3517 << 3, arg0 << 4, arg1 << 4, arg2,
+		method533(maxWidth << 3, maxHeight << 3, arg0 << 4, arg1 << 4, arg2,
 				arg3);
 	}
 
@@ -406,8 +406,8 @@ public class Class4_Sub20_Sub12_Sub2 extends Class4_Sub20_Sub12 {
 			int i_43_ = anInt3516;
 			int i_44_ = 0;
 			int i_45_ = 0;
-			int i_46_ = anInt3519;
-			int i_47_ = anInt3517;
+			int i_46_ = maxWidth;
+			int i_47_ = maxHeight;
 			int i_48_ = (i_46_ << 16) / arg2;
 			int i_49_ = (i_47_ << 16) / arg3;
 			if (anInt3518 > 0) {
@@ -489,19 +489,19 @@ public class Class4_Sub20_Sub12_Sub2 extends Class4_Sub20_Sub12 {
 					i, i_62_, i_61_, i_63_, i_64_);
 	}
 
-	public Class4_Sub20_Sub12_Sub2 method524() {
-		Class4_Sub20_Sub12_Sub2 class4_sub20_sub12_sub2 = new Class4_Sub20_Sub12_Sub2(
+	public ImageRGB method524() {
+		ImageRGB imageRGB = new ImageRGB(
 				anInt3520, anInt3516);
-		class4_sub20_sub12_sub2.anInt3519 = anInt3519;
-		class4_sub20_sub12_sub2.anInt3517 = anInt3517;
-		class4_sub20_sub12_sub2.anInt3518 = anInt3519 - anInt3520 - anInt3518;
-		class4_sub20_sub12_sub2.anInt3521 = anInt3521;
+		imageRGB.maxWidth = maxWidth;
+		imageRGB.maxHeight = maxHeight;
+		imageRGB.anInt3518 = maxWidth - anInt3520 - anInt3518;
+		imageRGB.anInt3521 = anInt3521;
 		for (int i = 0; i < anInt3516; i++) {
 			for (int i_68_ = 0; i_68_ < anInt3520; i_68_++)
-				class4_sub20_sub12_sub2.anIntArray3515[i * anInt3520 + i_68_] = anIntArray3515[i
+				imageRGB.anIntArray3515[i * anInt3520 + i_68_] = anIntArray3515[i
 						* anInt3520 + anInt3520 - 1 - i_68_];
 		}
-		return class4_sub20_sub12_sub2;
+		return imageRGB;
 	}
 
 	public void method525(Class4_Sub20_Sub12_Sub1 arg0, int arg1, int arg2) {
@@ -585,12 +585,12 @@ public class Class4_Sub20_Sub12_Sub2 extends Class4_Sub20_Sub12 {
 				is[i++] = anIntArray3515[i_92_ + i_91_ * anInt3520];
 		}
 		anIntArray3515 = is;
-		anInt3521 = anInt3517 - anInt3516 - anInt3521;
+		anInt3521 = maxHeight - anInt3516 - anInt3521;
 	}
 
 	public void method530(int arg0, int arg1, int arg2, int arg3) {
 		if (arg2 == 256)
-			method532(arg0, arg1);
+			drawImage(arg0, arg1);
 		else {
 			arg0 += anInt3518;
 			arg1 += anInt3521;
@@ -631,19 +631,19 @@ public class Class4_Sub20_Sub12_Sub2 extends Class4_Sub20_Sub12 {
 	}
 
 	public void method531(int arg0) {
-		if (anInt3520 != anInt3519 || anInt3516 != anInt3517) {
+		if (anInt3520 != maxWidth || anInt3516 != maxHeight) {
 			int i = arg0;
 			if (i > anInt3518)
 				i = anInt3518;
 			int i_101_ = arg0;
-			if (i_101_ + anInt3518 + anInt3520 > anInt3519)
-				i_101_ = anInt3519 - anInt3518 - anInt3520;
+			if (i_101_ + anInt3518 + anInt3520 > maxWidth)
+				i_101_ = maxWidth - anInt3518 - anInt3520;
 			int i_102_ = arg0;
 			if (i_102_ > anInt3521)
 				i_102_ = anInt3521;
 			int i_103_ = arg0;
-			if (i_103_ + anInt3521 + anInt3516 > anInt3517)
-				i_103_ = anInt3517 - anInt3521 - anInt3516;
+			if (i_103_ + anInt3521 + anInt3516 > maxHeight)
+				i_103_ = maxHeight - anInt3521 - anInt3516;
 			int i_104_ = anInt3520 + i + i_101_;
 			int i_105_ = anInt3516 + i_102_ + i_103_;
 			int[] is = new int[i_104_ * i_105_];
@@ -660,7 +660,7 @@ public class Class4_Sub20_Sub12_Sub2 extends Class4_Sub20_Sub12 {
 		}
 	}
 
-	public void method532(int arg0, int arg1) {
+	public void drawImage(int arg0, int arg1) {
 		arg0 += anInt3518;
 		arg1 += anInt3521;
 		int i = arg0 + arg1 * Class4_Sub20_Sub12.anInt3098;
@@ -1113,8 +1113,8 @@ public class Class4_Sub20_Sub12_Sub2 extends Class4_Sub20_Sub12 {
 		}
 	}
 
-	public void method535(int arg0, int arg1, int arg2, int arg3, int arg4,
-			int arg5, int arg6, int arg7, int[] arg8, int[] arg9) {
+	public void shapeImageToPixels(int arg0, int arg1, int arg2, int arg3, int arg4,
+                                   int arg5, int arg6, int arg7, int[] arg8, int[] arg9) {
 		try {
 			int i = -arg2 / 2;
 			int i_206_ = -arg3 / 2;
@@ -1153,7 +1153,7 @@ public class Class4_Sub20_Sub12_Sub2 extends Class4_Sub20_Sub12 {
 				is[i++] = anIntArray3515[i_217_ + i_216_ * anInt3520];
 		}
 		anIntArray3515 = is;
-		anInt3518 = anInt3519 - anInt3520 - anInt3518;
+		anInt3518 = maxWidth - anInt3520 - anInt3518;
 	}
 
 	public void method537(int arg0) {

@@ -31,18 +31,18 @@ public class Class77 {
 	public static void method1191(byte arg0) {
 		anInt1596++;
 		if (Class59.aBoolean1189
-				&& (Class82.anInt1711 ^ 0xffffffff) != (Class50.anInt1010 ^ 0xffffffff))
+				&& (Class82.plane ^ 0xffffffff) != (Class50.anInt1010 ^ 0xffffffff))
 			Class47.method978(
 					Class53.anInt1079,
-					(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]),
+					(Class4_Sub15.localPlayer.anIntArray3248[0]),
 					false,
-					Class82.anInt1711,
-					(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+					Class82.plane,
+					(Class4_Sub15.localPlayer.anIntArray3247[0]),
 					Class4_Sub17.anInt2324);
 		else if (arg0 < -8) {
-			if ((Class18.anInt477 ^ 0xffffffff) != (Class82.anInt1711 ^ 0xffffffff)) {
-				Class18.anInt477 = Class82.anInt1711;
-				Class4_Sub20_Sub7_Sub5.method429(4, Class82.anInt1711);
+			if ((Class18.anInt477 ^ 0xffffffff) != (Class82.plane ^ 0xffffffff)) {
+				Class18.anInt477 = Class82.plane;
+				Class4_Sub20_Sub7_Sub5.method429(4, Class82.plane);
 			}
 		}
 	}
@@ -50,6 +50,7 @@ public class Class77 {
 	public static void method1192(int arg0, boolean arg1, Class19 arg2,
 			int arg3, int arg4, int arg5, int arg6) {
 		try {
+
 			if (arg6 == 0) {
 				Class25.anInt577 = arg0;
 				Class67.aClass19_1363 = arg2;

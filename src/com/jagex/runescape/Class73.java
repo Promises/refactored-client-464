@@ -63,7 +63,7 @@ public class Class73 {
 	}
 
 	public static void method1166(int arg0, int arg1,
-			Class4_Sub20_Sub7_Sub1_Sub1 arg2, int arg3) {
+								  Player arg2, int arg3) {
 		if (arg1 != 17933)
 			aJagexString_1507 = null;
 		anInt1505++;
@@ -129,7 +129,7 @@ public class Class73 {
 						^ ~0x466a);
 				Class43.method955(arg2.aJagexString_3271, arg2.aJagexString_3593,
 						(byte) 122, 2);
-			} else if (Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302 == arg2)
+			} else if (Class4_Sub15.localPlayer == arg2)
 				Class43.method955(arg2.aJagexString_3271, arg2.aJagexString_3593,
 						(byte) 114, 2);
 			arg2.anInt3253 = 150;

@@ -148,7 +148,7 @@ public class RSFont {
         Class32.aBoolean703 = false;
         if (arg2 < 73)
             aClass65_144 = null;
-        if (Class4_Sub20_Sub7_Sub1_Sub1.anInt3587 != 0) {
+        if (Player.anInt3587 != 0) {
             if (arg1 > arg0 || (arg0 ^ 0xffffffff) <= (16 + arg1 ^ 0xffffffff)
                     || arg7 < arg6
                     || (16 + arg6 ^ 0xffffffff) >= (arg7 ^ 0xffffffff)) {

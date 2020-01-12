@@ -20,7 +20,7 @@ public class Class4_Sub20_Sub7_Sub4 extends Class4_Sub20_Sub7 {
 			"To create a new account you need to");
 	public static JagexString aJagexString_3376 = JagexString.getRs2PreparedString("World");
 	public static RSInterface[] aClass4_Sub13Array3377;
-	public static Class4_Sub20_Sub7_Sub1_Sub1[] aClass4_Sub20_Sub7_Sub1_Sub1Array3358 = new Class4_Sub20_Sub7_Sub1_Sub1[2048];
+	public static Player[] aPlayerArray3358 = new Player[2048];
 	public static int anInt3357 = 0;
 	public static int anInt3360;
 	public static int anInt3363;
@@ -45,7 +45,7 @@ public class Class4_Sub20_Sub7_Sub4 extends Class4_Sub20_Sub7 {
 			aClass19_3371 = null;
 			aJagexString_3374 = null;
 			aJagexString_3370 = null;
-			aClass4_Sub20_Sub7_Sub1_Sub1Array3358 = null;
+			aPlayerArray3358 = null;
 			if (arg0 != -2)
 				method424((byte) 93, null, null);
 			aClass4_Sub13Array3377 = null;
@@ -56,16 +56,16 @@ public class Class4_Sub20_Sub7_Sub4 extends Class4_Sub20_Sub7 {
 		}
 	}
 
-	public static Class4_Sub20_Sub12_Sub2 method421(boolean arg0, int arg1,
-			int arg2, int arg3, byte arg4, int arg5) {
+	public static ImageRGB method421(boolean arg0, int arg1,
+									 int arg2, int arg3, byte arg4, int arg5) {
 		try {
 			long l = (((long) arg5 << 1366978280) + (arg1 + (((long) arg2 << -358778032) - -((long) arg3 << -1982051354))));
 			anInt3380++;
 			if (!arg0) {
-				Class4_Sub20_Sub12_Sub2 class4_sub20_sub12_sub2 = ((Class4_Sub20_Sub12_Sub2) Class9.aClass66_277
+				ImageRGB imageRGB = ((ImageRGB) Class9.aClass66_277
 						.method1083(l, true));
-				if (class4_sub20_sub12_sub2 != null)
-					return class4_sub20_sub12_sub2;
+				if (imageRGB != null)
+					return imageRGB;
 			}
 			Class4_Sub20_Sub8 class4_sub20_sub8 = Class4_Sub23.method633(arg1,
 					(byte) -115);
@@ -84,11 +84,11 @@ public class Class4_Sub20_Sub7_Sub4 extends Class4_Sub20_Sub7 {
 					.method461(arg4 + 86, 1);
 			if (class4_sub20_sub7_sub7 == null)
 				return null;
-			Class4_Sub20_Sub12_Sub2 class4_sub20_sub12_sub2 = null;
+			ImageRGB imageRGB = null;
 			if ((class4_sub20_sub8.anInt2986 ^ 0xffffffff) != 0) {
-				class4_sub20_sub12_sub2 = method421(true,
+				imageRGB = method421(true,
 						class4_sub20_sub8.anInt2977, 10, 1, (byte) -97, 0);
-				if (class4_sub20_sub12_sub2 == null)
+				if (imageRGB == null)
 					return null;
 			}
 			int[] is = Class4_Sub20_Sub12.anIntArray3099;
@@ -96,10 +96,10 @@ public class Class4_Sub20_Sub7_Sub4 extends Class4_Sub20_Sub7 {
 			int i_1_ = Class4_Sub20_Sub12.anInt3102;
 			int[] is_2_ = new int[4];
 			Class4_Sub20_Sub12.method495(is_2_);
-			Class4_Sub20_Sub12_Sub2 class4_sub20_sub12_sub2_3_ = new Class4_Sub20_Sub12_Sub2(
+			ImageRGB imageRGB_3_ = new ImageRGB(
 					36, 32);
 			Class4_Sub20_Sub12.method493(
-					class4_sub20_sub12_sub2_3_.anIntArray3515, 36, 32);
+					imageRGB_3_.anIntArray3515, 36, 32);
 			Class4_Sub20_Sub12.method496();
 			Class4_Sub20_Sub12_Sub3.method543();
 			Class4_Sub20_Sub12_Sub3.method546(16, 16);
@@ -109,9 +109,9 @@ public class Class4_Sub20_Sub7_Sub4 extends Class4_Sub20_Sub7 {
 				i_4_ = (int) (1.5 * i_4_);
 			else if (arg3 == 2)
 				i_4_ = (int) (1.04 * i_4_);
-			int i_5_ = ((Class4_Sub20_Sub12_Sub3.anIntArray3524[class4_sub20_sub8.anInt3003])
+			int i_5_ = ((Class4_Sub20_Sub12_Sub3.SINE[class4_sub20_sub8.anInt3003])
 					* i_4_ >> -1882203568);
-			int i_6_ = ((Class4_Sub20_Sub12_Sub3.anIntArray3528[class4_sub20_sub8.anInt3003])
+			int i_6_ = ((Class4_Sub20_Sub12_Sub3.COSINE[class4_sub20_sub8.anInt3003])
 					* i_4_ >> 1098861360);
 			class4_sub20_sub7_sub7.method446();
 			class4_sub20_sub7_sub7
@@ -124,15 +124,15 @@ public class Class4_Sub20_Sub7_Sub4 extends Class4_Sub20_Sub7 {
 							(class4_sub20_sub8.anInt3010 + (class4_sub20_sub7_sub7.anInt2938 / 2 + i_5_)),
 							i_6_ + class4_sub20_sub8.anInt3010);
 			if ((arg3 ^ 0xffffffff) <= -2)
-				class4_sub20_sub12_sub2_3_.method537(1);
+				imageRGB_3_.method537(1);
 			if ((arg3 ^ 0xffffffff) <= -3)
-				class4_sub20_sub12_sub2_3_.method537(16777215);
+				imageRGB_3_.method537(16777215);
 			if ((arg5 ^ 0xffffffff) != -1)
-				class4_sub20_sub12_sub2_3_.method520(arg5);
+				imageRGB_3_.method520(arg5);
 			Class4_Sub20_Sub12.method493(
-					class4_sub20_sub12_sub2_3_.anIntArray3515, 36, 32);
+					imageRGB_3_.anIntArray3515, 36, 32);
 			if ((class4_sub20_sub8.anInt2986 ^ 0xffffffff) != 0)
-				class4_sub20_sub12_sub2.method532(0, 0);
+				imageRGB.drawImage(0, 0);
 			if (!arg0
 					&& ((class4_sub20_sub8.anInt3012 ^ 0xffffffff) == -2 || arg2 != 1)
 					&& arg2 != -1)
@@ -142,12 +142,12 @@ public class Class4_Sub20_Sub7_Sub4 extends Class4_Sub20_Sub7 {
 				method424((byte) 64, null, null);
 			if (!arg0)
 				Class9.aClass66_277.method1082(true, l,
-						class4_sub20_sub12_sub2_3_);
+						imageRGB_3_);
 			Class4_Sub20_Sub12.method493(is, i, i_1_);
 			Class4_Sub20_Sub12.method490(is_2_);
 			Class4_Sub20_Sub12_Sub3.method543();
 			Class4_Sub20_Sub12_Sub3.aBoolean3537 = true;
-			return class4_sub20_sub12_sub2_3_;
+			return imageRGB_3_;
 		} catch (RuntimeException runtimeexception) {
 			throw method423(runtimeexception, ("gf.B(" + arg0 + ',' + arg1
 					+ ',' + arg2 + ',' + arg3 + ',' + arg4 + ',' + arg5 + ')'));

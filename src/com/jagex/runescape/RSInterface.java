@@ -10,7 +10,7 @@ public class RSInterface extends RSFont {
 	public static int anInt2131;
 	public static int anInt2139;
 	public static int anInt2157;
-	public static int anInt2176;
+	public static int cameraZ;
 	public static int anInt2184;
 	public static int anInt2186 = 1;
 	public static int anInt2191;
@@ -656,7 +656,7 @@ public class RSInterface extends RSFont {
 		}
 	}
 
-	public Class4_Sub20_Sub12_Sub2 method286(int arg0, boolean arg1) {
+	public ImageRGB method286(int arg0, boolean arg1) {
 		try {
 			Class4_Sub20_Sub13.aBoolean3116 = false;
 			int i;
@@ -670,30 +670,30 @@ public class RSInterface extends RSFont {
 			long l = (((long) anInt2162 << -455131544)
 					+ ((!aBoolean2194 ? 0L : 1L) << -234930969)
 					+ ((!aBoolean2187 ? 0L : 1L) << -2021443098) + (i - -((long) anInt2201 << 1107163492)));
-			Class4_Sub20_Sub12_Sub2 class4_sub20_sub12_sub2 = ((Class4_Sub20_Sub12_Sub2) Class62.aClass66_1231
+			ImageRGB imageRGB = ((ImageRGB) Class62.aClass66_1231
 					.method1083(l, true));
-			if (class4_sub20_sub12_sub2 != null)
-				return class4_sub20_sub12_sub2;
-			class4_sub20_sub12_sub2 = Class4_Sub20.method321(0, i, -1,
+			if (imageRGB != null)
+				return imageRGB;
+			imageRGB = Class4_Sub20.method321(0, i, -1,
 					Class7.aClass19_234);
-			if (class4_sub20_sub12_sub2 == null) {
+			if (imageRGB == null) {
 				Class4_Sub20_Sub13.aBoolean3116 = true;
 				return null;
 			}
 			if (aBoolean2187)
-				class4_sub20_sub12_sub2.method529();
+				imageRGB.method529();
 			if (aBoolean2194)
-				class4_sub20_sub12_sub2.method536();
+				imageRGB.method536();
 			if ((anInt2201 ^ 0xffffffff) < -1)
-				class4_sub20_sub12_sub2.method531(anInt2201);
+				imageRGB.method531(anInt2201);
 			if (anInt2201 >= arg0)
-				class4_sub20_sub12_sub2.method537(1);
+				imageRGB.method537(1);
 			if ((anInt2201 ^ 0xffffffff) <= -3)
-				class4_sub20_sub12_sub2.method537(16777215);
+				imageRGB.method537(16777215);
 			if ((anInt2162 ^ 0xffffffff) != -1)
-				class4_sub20_sub12_sub2.method520(anInt2162);
-			Class62.aClass66_1231.method1082(true, l, class4_sub20_sub12_sub2);
-			return class4_sub20_sub12_sub2;
+				imageRGB.method520(anInt2162);
+			Class62.aClass66_1231.method1082(true, l, imageRGB);
+			return imageRGB;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("nc.H("
 					+ arg0 + ',' + arg1 + ')'));
@@ -877,7 +877,7 @@ public class RSInterface extends RSFont {
 		}
 	}
 
-	public Class4_Sub20_Sub12_Sub2 method292(int arg0, byte arg1) {
+	public ImageRGB method292(int arg0, byte arg1) {
 		try {
 			anInt2157++;
 			Class4_Sub20_Sub13.aBoolean3116 = false;
@@ -889,18 +889,18 @@ public class RSInterface extends RSFont {
 				return null;
 			if (arg1 != -107)
 				return null;
-			Class4_Sub20_Sub12_Sub2 class4_sub20_sub12_sub2 = ((Class4_Sub20_Sub12_Sub2) Class62.aClass66_1231
+			ImageRGB imageRGB = ((ImageRGB) Class62.aClass66_1231
 					.method1083(i, true));
-			if (class4_sub20_sub12_sub2 != null)
-				return class4_sub20_sub12_sub2;
-			class4_sub20_sub12_sub2 = Class4_Sub20.method321(0, i, -1,
+			if (imageRGB != null)
+				return imageRGB;
+			imageRGB = Class4_Sub20.method321(0, i, -1,
 					Class7.aClass19_234);
-			if (class4_sub20_sub12_sub2 != null)
+			if (imageRGB != null)
 				Class62.aClass66_1231.method1082(true, i,
-						class4_sub20_sub12_sub2);
+						imageRGB);
 			else
 				Class4_Sub20_Sub13.aBoolean3116 = true;
-			return class4_sub20_sub12_sub2;
+			return imageRGB;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("nc.B("
 					+ arg0 + ',' + arg1 + ')'));

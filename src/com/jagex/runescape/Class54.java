@@ -1,33 +1,27 @@
 package com.jagex.runescape;
 
 public class Class54 {
-	public static boolean aBoolean1103;
+	public static boolean aBoolean1103 = false;
 	public static Class19_Sub1 aClass19_Sub1_1107;
 	public static JagexString aJagexString_1093;
 	public static JagexString aJagexString_1095 = JagexString.getRs2PreparedString(
 			"zur-Uck auf die RuneScape)2Webseite gehen");
 	public static JagexString aJagexString_1100;
-	public static JagexString aJagexString_1101;
-	public static JagexString aJagexString_1102;
+	public static JagexString aJagexString_1101 = JagexString.getRs2PreparedString("glow3:");
+	public static JagexString aJagexString_1102 = JagexString.getRs2PreparedString("Konfig geladen)3");
 	public static JagexString aJagexString_1104 = JagexString.getRs2PreparedString(
 			"m-Ochte mit Ihnen handeln)3");
-	public static JagexString aJagexString_1105;
-	public static JagexString aJagexString_1106;
-	public static Class4_Sub20_Sub12_Sub2[] aClass4_Sub20_Sub12_Sub2Array1092;
+	public static JagexString aJagexString_1105 = JagexString.getRs2PreparedString(" has logged out)3");
+	public static JagexString aJagexString_1106 = aJagexString_1101;
+	public static ImageRGB[] aImageRGBArray1092;
 	public static int anInt1091;
 	public static int anInt1098;
 	public static int anInt1099;
 	public static int anInt1108;
-	public static int anInt1109;
+	public static int anInt1109 = 0;
 	static {
-		aBoolean1103 = false;
-		aJagexString_1102 = JagexString.getRs2PreparedString("Konfig geladen)3");
-		aJagexString_1101 = JagexString.getRs2PreparedString("glow3:");
-		aJagexString_1106 = aJagexString_1101;
-		aJagexString_1105 = JagexString.getRs2PreparedString(" has logged out)3");
 		aJagexString_1093 = aJagexString_1101;
 		aJagexString_1100 = aJagexString_1105;
-		anInt1109 = 0;
 	}
 
 	public static int method1011(RSInterface arg0, int arg1) {
@@ -70,7 +64,7 @@ public class Class54 {
 			aClass19_Sub1_1107 = null;
 			aJagexString_1106 = null;
 			aJagexString_1104 = null;
-			aClass4_Sub20_Sub12_Sub2Array1092 = null;
+			aImageRGBArray1092 = null;
 			aJagexString_1100 = null;
 			aJagexString_1095 = null;
 			aJagexString_1101 = null;

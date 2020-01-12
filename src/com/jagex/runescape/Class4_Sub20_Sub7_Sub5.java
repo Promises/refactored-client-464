@@ -92,7 +92,7 @@ public class Class4_Sub20_Sub7_Sub5 extends Class4_Sub20_Sub7 {
 
 	public static void method429(int arg0, int arg1) {
 		try {
-			int[] is = (RS2Font.aClass4_Sub20_Sub12_Sub2_2769.anIntArray3515);
+			int[] is = (RS2Font.minimapImage.anIntArray3515);
 			anInt3412++;
 			int i = is.length;
 			for (int i_2_ = 0; i > i_2_; i_2_++)
@@ -100,11 +100,11 @@ public class Class4_Sub20_Sub7_Sub5 extends Class4_Sub20_Sub7 {
 			for (int i_3_ = 1; i_3_ < 103; i_3_++) {
 				int i_4_ = 24628 + 4 * (-(i_3_ * 512) + 52736);
 				for (int i_5_ = 1; i_5_ < 103; i_5_++) {
-					if ((0x18 & Class46.landscapeData[arg1][i_5_][i_3_]) == 0)
+					if ((0x18 & Class46.currentSceneTileFlags[arg1][i_5_][i_3_]) == 0)
 						Class4_Sub20_Sub7_Sub6.aClass69_3439.method1137(is,
 								i_4_, 512, arg1, i_5_, i_3_);
 					if ((arg1 ^ 0xffffffff) > -4
-							&& ((Class46.landscapeData[arg1 - -1][i_5_][i_3_]) & 0x8) != 0)
+							&& ((Class46.currentSceneTileFlags[arg1 - -1][i_5_][i_3_]) & 0x8) != 0)
 						Class4_Sub20_Sub7_Sub6.aClass69_3439.method1137(is,
 								i_4_, 512, 1 + arg1, i_5_, i_3_);
 					i_4_ += 4;
@@ -113,26 +113,26 @@ public class Class4_Sub20_Sub7_Sub5 extends Class4_Sub20_Sub7 {
 			int i_6_ = ((228 - -(int) (20.0 * Math.random()) << -48105328)
 					- -(-10 + (238 - -(int) (Math.random() * 20.0)) << 1565855048)
 					- (-(int) (20.0 * Math.random()) + -238) + -10);
-			RS2Font.aClass4_Sub20_Sub12_Sub2_2769.method516();
+			RS2Font.minimapImage.method516();
 			int i_7_ = 228 + (int) (Math.random() * 20.0) << 1104080464;
 			for (int i_8_ = 1; (i_8_ ^ 0xffffffff) > -104; i_8_++) {
 				for (int i_9_ = 1; i_9_ < 103; i_9_++) {
-					if (((0x18 & Class46.landscapeData[arg1][i_9_][i_8_]) ^ 0xffffffff) == -1)
+					if (((0x18 & Class46.currentSceneTileFlags[arg1][i_9_][i_8_]) ^ 0xffffffff) == -1)
 						Class57.method1025(arg1, (byte) -91, i_9_, i_7_, i_6_,
 								i_8_);
 					if (arg1 < 3
-							&& (0x8 & (Class46.landscapeData[1 + arg1][i_9_][i_8_]) ^ 0xffffffff) != -1)
+							&& (0x8 & (Class46.currentSceneTileFlags[1 + arg1][i_9_][i_8_]) ^ 0xffffffff) != -1)
 						Class57.method1025(arg1 + 1, (byte) -97, i_9_, i_7_,
 								i_6_, i_8_);
 				}
 			}
 			if (arg0 != 4)
 				aJagexString_3410 = null;
-			Class13_Sub2.anInt2470 = 0;
+			Class13_Sub2.minimapHintCount = 0;
 			for (int i_10_ = 0; i_10_ < 104; i_10_++) {
 				for (int i_11_ = 0; i_11_ < 104; i_11_++) {
 					int i_12_ = Class4_Sub20_Sub7_Sub6.aClass69_3439
-							.method1101(Class82.anInt1711, i_10_, i_11_);
+							.method1101(Class82.plane, i_10_, i_11_);
 					if (i_12_ != 0) {
 						i_12_ = 0x7fff & i_12_ >> -1135397330;
 						int i_13_ = Region.method56(true, i_12_).anInt2711;
@@ -144,7 +144,7 @@ public class Class4_Sub20_Sub7_Sub5 extends Class4_Sub20_Sub7 {
 									&& (i_13_ ^ 0xffffffff) != -37
 									&& (i_13_ ^ 0xffffffff) != -47
 									&& i_13_ != 47 && i_13_ != 48) {
-								int[][] is_16_ = (Class57.regions[Class82.anInt1711].clippingData);
+								int[][] is_16_ = (Class57.regions[Class82.plane].clippingData);
 								for (int i_17_ = 0; i_17_ < 10; i_17_++) {
 									int i_18_ = (int) (Math.random() * 4.0);
 									if (i_18_ == 0
@@ -171,10 +171,10 @@ public class Class4_Sub20_Sub7_Sub5 extends Class4_Sub20_Sub7 {
 										i_15_++;
 								}
 							}
-							Class4_Sub2_Sub1.aClass4_Sub20_Sub12_Sub2Array2600[Class13_Sub2.anInt2470] = (Class19.aClass4_Sub20_Sub12_Sub2Array504[i_13_]);
-							Class7.anIntArray221[Class13_Sub2.anInt2470] = i_14_;
-							Class4_Sub8.anIntArray1979[Class13_Sub2.anInt2470] = i_15_;
-							Class13_Sub2.anInt2470++;
+							Class4_Sub2_Sub1.minimapHint[Class13_Sub2.minimapHintCount] = (Class19.aImageRGBArray504[i_13_]);
+							Class7.minimapHintX[Class13_Sub2.minimapHintCount] = i_14_;
+							Class4_Sub8.minimapHintY[Class13_Sub2.minimapHintCount] = i_15_;
+							Class13_Sub2.minimapHintCount++;
 						}
 					}
 				}
@@ -191,17 +191,17 @@ public class Class4_Sub20_Sub7_Sub5 extends Class4_Sub20_Sub7 {
 		JagexString jagexString = arg1.method816(104).method839(89);
 		boolean bool = false;
 		for (int i_19_ = 0; i_19_ < Class4_Sub20_Sub7_Sub6.anInt3431; i_19_++) {
-			Class4_Sub20_Sub7_Sub1_Sub1 class4_sub20_sub7_sub1_sub1 = (Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[Class4_Sub23.anIntArray2432[i_19_]]);
-			if (class4_sub20_sub7_sub1_sub1 != null
-					&& class4_sub20_sub7_sub1_sub1.aJagexString_3593 != null
-					&& class4_sub20_sub7_sub1_sub1.aJagexString_3593.method818(
+			Player player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[Class4_Sub23.anIntArray2432[i_19_]]);
+			if (player != null
+					&& player.aJagexString_3593 != null
+					&& player.aJagexString_3593.method818(
                     jagexString, (byte) -105)) {
 				Class4_Sub20
 						.method319(
 								1,
-								(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
-								class4_sub20_sub7_sub1_sub1.anIntArray3247[0],
-								class4_sub20_sub7_sub1_sub1.anIntArray3248[0],
+								(Class4_Sub15.localPlayer.anIntArray3247[0]),
+								player.anIntArray3247[0],
+								player.anIntArray3248[0],
 								1,
 								0,
 								false,
@@ -209,7 +209,7 @@ public class Class4_Sub20_Sub7_Sub5 extends Class4_Sub20_Sub7 {
 								0,
 								0,
 								0,
-								(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]));
+								(Class4_Sub15.localPlayer.anIntArray3248[0]));
 				bool = true;
 				if ((arg2 ^ 0xffffffff) == -2) {
 					Class66.aClass4_Sub11_Sub1_1328.method264(84, 118);

@@ -10,7 +10,7 @@ public class Class82 {
     );
 	public static JagexString aJagexString_1721;
 	public static JagexString aJagexString_1724;
-	public static int anInt1711;
+	public static int plane;
 	public static int anInt1715;
 	public static int anInt1716;
 	public static int anInt1718;
@@ -95,15 +95,15 @@ public class Class82 {
 				method1217(-108, -72, -54, null, -111, 32, -17, 87);
 			if (arg1 >= 0 && (arg1 ^ 0xffffffff) > -105
 					&& (arg2 ^ 0xffffffff) <= -1 && arg2 < 104) {
-				Class46.landscapeData[arg0][arg1][arg2] = (byte) 0;
+				Class46.currentSceneTileFlags[arg0][arg1][arg2] = (byte) 0;
 				for (;;) {
 					int i = arg3.get();
 					if ((i ^ 0xffffffff) == -1) {
 						if (arg0 != 0)
-							Class4_Sub23.anIntArrayArrayArray2416[arg0][arg1][arg2] = (Class4_Sub23.anIntArrayArrayArray2416[-1
+							Class4_Sub23.intGroundArray[arg0][arg1][arg2] = (Class4_Sub23.intGroundArray[-1
 									+ arg0][arg1][arg2]) - 240;
 						else
-							Class4_Sub23.anIntArrayArrayArray2416[0][arg1][arg2] = -Class4_Sub22
+							Class4_Sub23.intGroundArray[0][arg1][arg2] = -Class4_Sub22
 									.method627((arg4 + 556238 - -arg2), arg5
 											+ -5501, arg6 + (932731 + arg1)) * 8;
 						break;
@@ -113,9 +113,9 @@ public class Class82 {
 						if ((i_0_ ^ 0xffffffff) == -2)
 							i_0_ = 0;
 						if (arg0 == 0)
-							Class4_Sub23.anIntArrayArrayArray2416[0][arg1][arg2] = 8 * -i_0_;
+							Class4_Sub23.intGroundArray[0][arg1][arg2] = 8 * -i_0_;
 						else
-							Class4_Sub23.anIntArrayArrayArray2416[arg0][arg1][arg2] = (Class4_Sub23.anIntArrayArrayArray2416[arg0
+							Class4_Sub23.intGroundArray[arg0][arg1][arg2] = (Class4_Sub23.intGroundArray[arg0
 									+ -1][arg1][arg2])
 									- i_0_ * 8;
 						break;
@@ -127,7 +127,7 @@ public class Class82 {
 						Class4_Sub20_Sub10.aByteArrayArrayArray3065[arg0][arg1][arg2] = (byte) Class59
 								.method1035(arg7 + (-2 + i), 3);
 					} else if (i <= 81)
-						Class46.landscapeData[arg0][arg1][arg2] = (byte) (-49 + i);
+						Class46.currentSceneTileFlags[arg0][arg1][arg2] = (byte) (-49 + i);
 					else
 						Class4_Sub20_Sub4.aByteArrayArrayArray2861[arg0][arg1][arg2] = (byte) (i + -81);
 				}

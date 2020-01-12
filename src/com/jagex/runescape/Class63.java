@@ -29,17 +29,17 @@ public class Class63 {
 				SceneGraph.anInt2502 = -1;
 			} else {
 				int i = -arg2
-						+ Class67.method1090(arg0, arg3, !arg1,
-								Class82.anInt1711);
-				int i_0_ = (Class4_Sub20_Sub12_Sub3.anIntArray3528[Class4_Sub20_Sub13.anInt3131]);
-				arg3 -= Class33.anInt708;
+						+ Class67.getFloorDrawHeight(arg0, arg3, Class82.plane
+				);
+				int i_0_ = (Class4_Sub20_Sub12_Sub3.COSINE[Class4_Sub20_Sub13.cameraVerticalRotation]);
+				arg3 -= Class33.cameraY;
 				if (arg1 == false) {
-					int i_1_ = (Class4_Sub20_Sub12_Sub3.anIntArray3524[Class4_Sub6.anInt1941]);
-					arg0 -= Class6.anInt209;
-					int i_2_ = (Class4_Sub20_Sub12_Sub3.anIntArray3528[Class4_Sub6.anInt1941]);
-					int i_3_ = (Class4_Sub20_Sub12_Sub3.anIntArray3524[Class4_Sub20_Sub13.anInt3131]);
+					int i_1_ = (Class4_Sub20_Sub12_Sub3.SINE[Class4_Sub6.cameraHorizontalRotation]);
+					arg0 -= Class6.cameraX;
+					int i_2_ = (Class4_Sub20_Sub12_Sub3.COSINE[Class4_Sub6.cameraHorizontalRotation]);
+					int i_3_ = (Class4_Sub20_Sub12_Sub3.SINE[Class4_Sub20_Sub13.cameraVerticalRotation]);
 					int i_4_ = arg0 * i_2_ + i_1_ * arg3 >> -284408944;
-					i -= RSInterface.anInt2176;
+					i -= RSInterface.cameraZ;
 					arg3 = -(arg0 * i_1_) + i_2_ * arg3 >> -476228752;
 					arg0 = i_4_;
 					i_4_ = -(arg3 * i_3_) + i * i_0_ >> -1457811312;

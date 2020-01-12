@@ -21,7 +21,7 @@ public class Class4_Sub6 extends RSFont {
 	public static int anInt1932;
 	public static int anInt1935;
 	public static int anInt1936;
-	public static int anInt1941;
+	public static int cameraHorizontalRotation;
 	public static int[] anIntArray1915 = new int[50];
 	public static int[] anIntArray1921 = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
 			11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27,
@@ -65,13 +65,13 @@ public class Class4_Sub6 extends RSFont {
 		try {
 			anInt1923++;
 			int i = 3;
-			if ((Class4_Sub20_Sub13.anInt3131 ^ 0xffffffff) > -311) {
-				int i_0_ = Class6.anInt209 >> -647756409;
-				int i_1_ = Class33.anInt708 >> -1345087897;
-				if (((Class46.landscapeData[Class82.anInt1711][i_0_][i_1_]) & 0x4 ^ 0xffffffff) != -1)
-					i = Class82.anInt1711;
-				int i_2_ = (Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3267 >> 173765767);
-				int i_3_ = (Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3270 >> -1374667641);
+			if ((Class4_Sub20_Sub13.cameraVerticalRotation ^ 0xffffffff) > -311) {
+				int i_0_ = Class6.cameraX >> -647756409;
+				int i_1_ = Class33.cameraY >> -1345087897;
+				if (((Class46.currentSceneTileFlags[Class82.plane][i_0_][i_1_]) & 0x4 ^ 0xffffffff) != -1)
+					i = Class82.plane;
+				int i_2_ = (Class4_Sub15.localPlayer.worldY >> 173765767);
+				int i_3_ = (Class4_Sub15.localPlayer.worldX >> -1374667641);
 				int i_4_;
 				if (i_0_ >= i_3_)
 					i_4_ = i_0_ - i_3_;
@@ -92,16 +92,16 @@ public class Class4_Sub6 extends RSFont {
 						} else
 							i_0_++;
 						i_7_ += i_6_;
-						if ((0x4 & (Class46.landscapeData[Class82.anInt1711][i_0_][i_1_]) ^ 0xffffffff) != -1)
-							i = Class82.anInt1711;
+						if ((0x4 & (Class46.currentSceneTileFlags[Class82.plane][i_0_][i_1_]) ^ 0xffffffff) != -1)
+							i = Class82.plane;
 						if (i_7_ >= 65536) {
 							i_7_ -= 65536;
 							if (i_1_ < i_2_)
 								i_1_++;
 							else if ((i_2_ ^ 0xffffffff) > (i_1_ ^ 0xffffffff))
 								i_1_--;
-							if ((0x4 & (Class46.landscapeData[Class82.anInt1711][i_0_][i_1_])) != 0)
-								i = Class82.anInt1711;
+							if ((0x4 & (Class46.currentSceneTileFlags[Class82.plane][i_0_][i_1_])) != 0)
+								i = Class82.plane;
 						}
 					}
 				} else {
@@ -114,16 +114,16 @@ public class Class4_Sub6 extends RSFont {
 								i_1_--;
 						} else
 							i_1_++;
-						if ((0x4 & (Class46.landscapeData[Class82.anInt1711][i_0_][i_1_]) ^ 0xffffffff) != -1)
-							i = Class82.anInt1711;
+						if ((0x4 & (Class46.currentSceneTileFlags[Class82.plane][i_0_][i_1_]) ^ 0xffffffff) != -1)
+							i = Class82.plane;
 						if (i_8_ >= 65536) {
 							if (i_3_ <= i_0_) {
 								if ((i_3_ ^ 0xffffffff) > (i_0_ ^ 0xffffffff))
 									i_0_--;
 							} else
 								i_0_++;
-							if (((Class46.landscapeData[Class82.anInt1711][i_0_][i_1_]) & 0x4) != 0)
-								i = Class82.anInt1711;
+							if (((Class46.currentSceneTileFlags[Class82.plane][i_0_][i_1_]) & 0x4) != 0)
+								i = Class82.plane;
 							i_8_ -= 65536;
 						}
 					}
@@ -131,8 +131,8 @@ public class Class4_Sub6 extends RSFont {
 			}
 			if (arg0 != 0)
 				return -79;
-			if (((Class46.landscapeData[Class82.anInt1711][(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3270 >> 1844525383)][(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3267 >> 1104867239)]) & 0x4 ^ 0xffffffff) != -1)
-				i = Class82.anInt1711;
+			if (((Class46.currentSceneTileFlags[Class82.plane][(Class4_Sub15.localPlayer.worldX >> 1844525383)][(Class4_Sub15.localPlayer.worldY >> 1104867239)]) & 0x4 ^ 0xffffffff) != -1)
+				i = Class82.plane;
 			return i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "fc.F("
@@ -253,7 +253,7 @@ public class Class4_Sub6 extends RSFont {
 				anInt1924++;
 				if (arg1 == 135)
 					break;
-				anInt1941 = -123;
+				cameraHorizontalRotation = -123;
 			} catch (RuntimeException runtimeexception) {
 				throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
 						("fc.E(" + arg0 + ',' + arg1 + ')'));

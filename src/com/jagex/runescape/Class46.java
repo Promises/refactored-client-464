@@ -6,7 +6,7 @@ import java.io.StringReader;
 import java.io.StringWriter;
 
 public class Class46 {
-	public static byte[][][] landscapeData;
+	public static byte[][][] currentSceneTileFlags;
 	public static JagexString aJagexString_928 = JagexString.getRs2PreparedString("Weiter"
     );
 	public static JagexString aJagexString_930 = JagexString.getRs2PreparedString("au"
@@ -39,7 +39,7 @@ public class Class46 {
 			}
 			anIntArray934[i] = i_6_;
 		}
-		landscapeData = new byte[4][104][104];
+		currentSceneTileFlags = new byte[4][104][104];
 		anInt936 = 0;
 		anIntArray939 = new int[5];
 		aJagexString_944 = JagexString.getRs2PreparedString("gleiten:");
@@ -120,7 +120,7 @@ public class Class46 {
 	public static void resetCache(int arg0) {
 		try {
 			anIntArray934 = null;
-			landscapeData = null;
+			currentSceneTileFlags = null;
 			anIntArray937 = null;
 			rsInterface = null;
 			aJagexString_930 = null;

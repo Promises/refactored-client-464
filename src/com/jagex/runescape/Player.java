@@ -2,7 +2,7 @@ package com.jagex.runescape;
 
 import com.jagex.runescape.net.StreamBuffer;
 
-public class Class4_Sub20_Sub7_Sub1_Sub1 extends Class4_Sub20_Sub7_Sub1 {
+public class Player extends Actor {
 	public static JagexString aJagexString_3589;
 	public static JagexString aJagexString_3592;
 	public static JagexString aJagexString_3595 = JagexString.getRs2PreparedString("Close"
@@ -127,7 +127,7 @@ public class Class4_Sub20_Sub7_Sub1_Sub1 extends Class4_Sub20_Sub7_Sub1 {
 
 	public int anInt3612;
 
-	public Class4_Sub20_Sub7_Sub1_Sub1() {
+	public Player() {
 		anInt3585 = -1;
 		anInt3597 = -1;
 		aBoolean3594 = false;
@@ -172,8 +172,8 @@ public class Class4_Sub20_Sub7_Sub1_Sub1 extends Class4_Sub20_Sub7_Sub1 {
 					aClass4_Sub20_Sub7_Sub7_3596 = null;
 				if (Region.anInt134 >= anInt3608 && anInt3601 > Region.anInt134) {
 					Class4_Sub20_Sub7_Sub7 class4_sub20_sub7_sub7_11_ = aClass4_Sub20_Sub7_Sub7_3596;
-					class4_sub20_sub7_sub7_11_.method445(anInt3602 - anInt3270,
-							(-anInt3604 + anInt3583), (-anInt3267 + anInt3598));
+					class4_sub20_sub7_sub7_11_.method445(anInt3602 - worldX,
+							(-anInt3604 + anInt3583), (-worldY + anInt3598));
 					Class4_Sub20_Sub7_Sub7[] class4_sub20_sub7_sub7s = {
 							class4_sub20_sub7_sub7, class4_sub20_sub7_sub7_11_ };
 					if ((anInt3217 ^ 0xffffffff) != -513) {
@@ -205,8 +205,8 @@ public class Class4_Sub20_Sub7_Sub1_Sub1 extends Class4_Sub20_Sub7_Sub1 {
 					} else
 						class4_sub20_sub7_sub7_11_.method444();
 					class4_sub20_sub7_sub7_11_.method445(
-							(-anInt3602 + anInt3270), anInt3604 - anInt3583,
-							(-anInt3598 + anInt3267));
+							(-anInt3602 + worldX), anInt3604 - anInt3583,
+							(-anInt3598 + worldY));
 				}
 			}
 			class4_sub20_sub7_sub7.aBoolean3454 = true;

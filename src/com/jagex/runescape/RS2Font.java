@@ -15,7 +15,7 @@ public class RS2Font extends Class4_Sub20 {
     public static JagexString aJagexString_2786;
     public static JagexString aJagexString_2787;
     public static RSInterface aClass4_Sub13_2763;
-    public static Class4_Sub20_Sub12_Sub2 aClass4_Sub20_Sub12_Sub2_2769;
+    public static ImageRGB minimapImage;
     public static int anInt2760;
     public static int anInt2761;
     public static int anInt2768;
@@ -116,7 +116,7 @@ public class RS2Font extends Class4_Sub20 {
             aJagexString_2786 = null;
             aJagexString_2770 = null;
             if (arg0 == false) {
-                aClass4_Sub20_Sub12_Sub2_2769 = null;
+                minimapImage = null;
                 aJagexString_2762 = null;
                 anIntArray2777 = null;
                 aJagexString_2787 = null;
@@ -182,12 +182,12 @@ public class RS2Font extends Class4_Sub20 {
                 class4_sub20_sub7_sub1_sub2.anInt3244 = (class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617.anInt2791);
                 class4_sub20_sub7_sub1_sub2
                         .method385(
-                                (Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0])
+                                (Class4_Sub15.localPlayer.anIntArray3248[0])
                                         + i_8_,
                                 (i_6_ ^ 0xffffffff) == -2,
                                 128,
                                 i_4_
-                                        + (Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]));
+                                        + (Class4_Sub15.localPlayer.anIntArray3247[0]));
             }
             anInt2789++;
             if (arg0 != -49)

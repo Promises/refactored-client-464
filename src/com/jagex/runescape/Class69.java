@@ -135,10 +135,10 @@ public class Class69 {
 		boolean[][][][] bools = new boolean[9][32][53][53];
 		for (int i = 128; i <= 384; i += 32) {
 			for (int i_56_ = 0; i_56_ < 2048; i_56_ += 64) {
-				anInt1399 = Class4_Sub20_Sub12_Sub3.anIntArray3524[i];
-				anInt1426 = Class4_Sub20_Sub12_Sub3.anIntArray3528[i];
-				anInt1390 = Class4_Sub20_Sub12_Sub3.anIntArray3524[i_56_];
-				anInt1410 = Class4_Sub20_Sub12_Sub3.anIntArray3528[i_56_];
+				anInt1399 = Class4_Sub20_Sub12_Sub3.SINE[i];
+				anInt1426 = Class4_Sub20_Sub12_Sub3.COSINE[i];
+				anInt1390 = Class4_Sub20_Sub12_Sub3.SINE[i_56_];
+				anInt1410 = Class4_Sub20_Sub12_Sub3.COSINE[i_56_];
 				int i_57_ = (i - 128) / 32;
 				int i_58_ = i_56_ / 64;
 				for (int i_59_ = -26; i_59_ <= 26; i_59_++) {
@@ -831,10 +831,10 @@ public class Class69 {
 		else if (arg2 >= regionSizeY * 128)
 			arg2 = regionSizeY * 128 - 1;
 		anInt1414++;
-		anInt1399 = Class4_Sub20_Sub12_Sub3.anIntArray3524[arg3];
-		anInt1426 = Class4_Sub20_Sub12_Sub3.anIntArray3528[arg3];
-		anInt1390 = Class4_Sub20_Sub12_Sub3.anIntArray3524[arg4];
-		anInt1410 = Class4_Sub20_Sub12_Sub3.anIntArray3528[arg4];
+		anInt1399 = Class4_Sub20_Sub12_Sub3.SINE[arg3];
+		anInt1426 = Class4_Sub20_Sub12_Sub3.COSINE[arg3];
+		anInt1390 = Class4_Sub20_Sub12_Sub3.SINE[arg4];
+		anInt1410 = Class4_Sub20_Sub12_Sub3.COSINE[arg4];
 		aBooleanArrayArray1439 = aBooleanArrayArrayArrayArray1438[(arg3 - 128) / 32][arg4 / 64];
 		anInt1395 = arg0;
 		anInt1429 = arg1;

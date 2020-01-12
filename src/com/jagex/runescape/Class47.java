@@ -119,25 +119,25 @@ public class Class47 {
 							class4_sub20_sub7_sub1_sub2.anIntArray3248[i_4_] -= i_2_;
 							class4_sub20_sub7_sub1_sub2.anIntArray3247[i_4_] -= i_1_;
 						}
-						class4_sub20_sub7_sub1_sub2.anInt3267 -= i_1_ * 128;
-						class4_sub20_sub7_sub1_sub2.anInt3270 -= 128 * i_2_;
+						class4_sub20_sub7_sub1_sub2.worldY -= i_1_ * 128;
+						class4_sub20_sub7_sub1_sub2.worldX -= 128 * i_2_;
 					}
 				}
 				for (int i_5_ = 0; (i_5_ ^ 0xffffffff) > -2049; i_5_++) {
-					Class4_Sub20_Sub7_Sub1_Sub1 class4_sub20_sub7_sub1_sub1 = (Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i_5_]);
-					if (class4_sub20_sub7_sub1_sub1 != null) {
+					Player player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_5_]);
+					if (player != null) {
 						for (int i_6_ = 0; i_6_ < 10; i_6_++) {
-							class4_sub20_sub7_sub1_sub1.anIntArray3248[i_6_] -= i_2_;
-							class4_sub20_sub7_sub1_sub1.anIntArray3247[i_6_] -= i_1_;
+							player.anIntArray3248[i_6_] -= i_2_;
+							player.anIntArray3247[i_6_] -= i_1_;
 						}
-						class4_sub20_sub7_sub1_sub1.anInt3270 -= i_2_ * 128;
-						class4_sub20_sub7_sub1_sub1.anInt3267 -= i_1_ * 128;
+						player.worldX -= i_2_ * 128;
+						player.worldY -= i_1_ * 128;
 					}
 				}
-				Class82.anInt1711 = arg3;
+				Class82.plane = arg3;
 				int i_7_ = 104;
 				int i_8_ = 0;
-				Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.method385(arg1,
+				Class4_Sub15.localPlayer.method385(arg1,
 						arg2, 128, arg4);
 				int i_9_ = 0;
 				int i_10_ = 104;
@@ -249,7 +249,7 @@ public class Class47 {
 								break;
 							int i_36_ = 1 << -i_34_ + 32;
 							if ((i_35_ & i_36_) == 0)
-								is[i_34_] = Class4_Sub20_Sub7_Sub1.method389(
+								is[i_34_] = Actor.method389(
 										i_35_, i_36_);
 							else {
 								is[i_34_] = is[i_34_ - 1];
@@ -314,7 +314,7 @@ public class Class47 {
 				int i_24_ = (-1 + i_21_ + i_23_ >> 1634935203) + i_22_;
 				i &= -i_23_ >> 1200394431;
 				i_23_ += 24;
-				arg0[i_22_] = (byte) (i = Class4_Sub20_Sub7_Sub1.method389(i,
+				arg0[i_22_] = (byte) (i = Actor.method389(i,
 						i_20_ >>> i_23_));
 				if ((i_22_ ^ 0xffffffff) > (i_24_ ^ 0xffffffff)) {
 					i_22_++;

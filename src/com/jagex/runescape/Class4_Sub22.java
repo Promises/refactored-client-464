@@ -52,12 +52,12 @@ public class Class4_Sub22 extends RSFont {
 			if (RSInterface.aBoolean2203) {
 				Class65.anIntArray1307 = null;
 				Class4_Sub20_Sub17.anIntArray3206 = null;
-				JagexException.aClass4_Sub20_Sub12_Sub2Array1732 = null;
+				JagexException.aImageRGBArray1732 = null;
 				Class31.aClass4_Sub20_Sub12_Sub1_676 = null;
 				Class28.aClass4_Sub20_Sub12_Sub1Array635 = null;
-				Class4_Sub20_Sub16.aClass4_Sub20_Sub12_Sub2_3177 = null;
+				Class4_Sub20_Sub16.aImageRGB_3177 = null;
 				Class59.aClass4_Sub20_Sub12_Sub1Array1174 = null;
-				Class4_Sub20_Sub7_Sub1.aClass4_Sub20_Sub12_Sub1_3288 = null;
+				Actor.aClass4_Sub20_Sub12_Sub1_3288 = null;
 				Class52.anIntArray1059 = null;
 				GameShell.aClass4_Sub20_Sub12_Sub1Array43 = null;
 				Class81.aClass4_Sub20_Sub12_Sub1Array1709 = null;
@@ -67,9 +67,9 @@ public class Class4_Sub22 extends RSFont {
 				Class4_Sub24.anIntArray2450 = null;
 				Class80.anIntArray1644 = null;
 				Class24.aClass4_Sub20_Sub12_Sub1_549 = null;
-				Class4_Sub20_Sub7_Sub1.aClass4_Sub20_Sub12_Sub1_3260 = null;
+				Actor.aClass4_Sub20_Sub12_Sub1_3260 = null;
 				Class2.anIntArray90 = null;
-				Class34.aClass4_Sub20_Sub12_Sub2_1760 = null;
+				Class34.aImageRGB_1760 = null;
 				Class32.method882(2, 106);
 				Class4_Sub20_Sub7_Sub5.method426(122, true);
 				RSInterface.aBoolean2203 = false;
@@ -85,7 +85,7 @@ public class Class4_Sub22 extends RSFont {
 			anInt2385++;
 			if (arg0 != -83)
 				aJagexString_2403 = null;
-			return Class4_Sub20_Sub7_Sub1_Sub1.method394(32767, arg1, false);
+			return Player.method394(32767, arg1, false);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("tf.F("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ')'));

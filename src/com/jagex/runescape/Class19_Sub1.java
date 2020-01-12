@@ -201,7 +201,7 @@ public class Class19_Sub1 extends Class19 {
 				return Class50.aJagexString_1016;
 			}
 			if ((i ^ 0xffffffff) < -7) {
-				return Class9.aJagexString_278;
+				return StringUtilities.aJagexString_278;
 			}
 			if ((i ^ 0xffffffff) < -4) {
 				return Class4_Sub20_Sub3.aJagexString_2803;
@@ -227,9 +227,9 @@ public class Class19_Sub1 extends Class19 {
 				int i_9_ = 999;
 				int i_10_ = 0;
 				for (int i_11_ = 0; (i_11_ ^ 0xffffffff) > -35; i_11_++) {
-					if ((Region.aClass4_Sub20_Sub12_Sub1_132.aByteArray3510[i_11_
+					if ((Region.minimapBackgroundImage.aByteArray3510[i_11_
 							+ i
-							* (Region.aClass4_Sub20_Sub12_Sub1_132.anInt3511)]) == 0) {
+							* (Region.minimapBackgroundImage.anInt3511)]) == 0) {
 						if (i_9_ == 999) {
 							i_9_ = i_11_;
 						}
@@ -248,8 +248,8 @@ public class Class19_Sub1 extends Class19 {
 				int i_12_ = 999;
 				int i_13_ = 0;
 				for (int i_14_ = 25; i_14_ < 172; i_14_++) {
-					if ((Region.aClass4_Sub20_Sub12_Sub1_132.aByteArray3510[(i
-							* Region.aClass4_Sub20_Sub12_Sub1_132.anInt3511 + i_14_)]) != 0
+					if ((Region.minimapBackgroundImage.aByteArray3510[(i
+							* Region.minimapBackgroundImage.anInt3511 + i_14_)]) != 0
 							|| ((i_14_ ^ 0xffffffff) >= -35 && (i ^ 0xffffffff) >= -35)) {
 						if ((i_12_ ^ 0xffffffff) != -1000) {
 							i_13_ = i_14_;

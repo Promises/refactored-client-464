@@ -27,7 +27,7 @@ public class Class25 {
             for (Class4_Sub20_Sub7_Sub3 class4_sub20_sub7_sub3 = ((Class4_Sub20_Sub7_Sub3) Class4_Sub20_Sub13.aClass65_3106
                     .method1071(-126)); class4_sub20_sub7_sub3 != null; class4_sub20_sub7_sub3 = ((Class4_Sub20_Sub7_Sub3) Class4_Sub20_Sub13.aClass65_3106
                     .method1075(arg0 ^ 0x4852))) {
-                if (((Class82.anInt1711 ^ 0xffffffff) != (class4_sub20_sub7_sub3.anInt3345 ^ 0xffffffff))
+                if (((Class82.plane ^ 0xffffffff) != (class4_sub20_sub7_sub3.anInt3345 ^ 0xffffffff))
                         || class4_sub20_sub7_sub3.aBoolean3338) {
                     class4_sub20_sub7_sub3.clear();
                 } else if (class4_sub20_sub7_sub3.anInt3341 <= Region.anInt134) {
@@ -74,7 +74,7 @@ public class Class25 {
         try {
             anInt589++;
             int i = Class4_Sub20_Sub7_Sub6.aClass69_3439.method1146(
-                    Class82.anInt1711, arg2, arg1, arg0);
+                    Class82.plane, arg2, arg1, arg0);
             int i_0_ = 0x7fff & arg0 >> -11557778;
             if ((i ^ 0xffffffff) == 0) {
                 return false;
@@ -101,7 +101,7 @@ public class Class25 {
                 Class4_Sub20
                         .method319(
                                 i_5_,
-                                (Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+                                (Class4_Sub15.localPlayer.anIntArray3247[0]),
                                 arg1,
                                 arg2,
                                 i_4_,
@@ -111,12 +111,12 @@ public class Class25 {
                                 0,
                                 arg3,
                                 i_3_,
-                                (Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]));
+                                (Class4_Sub15.localPlayer.anIntArray3248[0]));
             } else {
                 Class4_Sub20
                         .method319(
                                 0,
-                                (Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+                                (Class4_Sub15.localPlayer.anIntArray3247[0]),
                                 arg1,
                                 arg2,
                                 0,
@@ -126,7 +126,7 @@ public class Class25 {
                                 i_2_,
                                 0,
                                 0,
-                                (Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]));
+                                (Class4_Sub15.localPlayer.anIntArray3248[0]));
             }
             Class28.anInt640 = 2;
             Class11.anInt331 = arg3;
@@ -183,7 +183,6 @@ public class Class25 {
             Class47.anInt971 = 0;
             Class4_Sub24.anInt2441 = 0;
             Class4_Sub21.anInt2365 = 0;
-            Class4_Sub20_Sub7_Sub1.anInt3291 = 0;
             Class4_Sub20_Sub1.anInt2748 = 0;
             Class48.anInt978 = 0;
             Class46.anInt935 = 0;
@@ -218,16 +217,15 @@ public class Class25 {
             Class35.anInt745 = 0;
             Class4_Sub2_Sub1.anInt2582 = 0;
             Class4_Sub2_Sub4.anInt2642 = 0;
-            Class4_Sub20_Sub7_Sub1_Sub1.anInt3613 = 0;
+            Player.anInt3613 = 0;
             Class34.anInt1736 = 0;
             Class33.anInt720 = 0;
             Game.anInt1835 = 0;
-            Class4_Sub20_Sub7_Sub1.anInt3252 = 0;
             Class16.anInt438 = 0;
             Class4_Sub20_Sub8.anInt2956 = 0;
             Class14.anInt404 = 0;
             Class4_Sub11_Sub1.anInt2681 = 0;
-            Class4_Sub20_Sub7_Sub1_Sub1.anInt3599 = 0;
+            Player.anInt3599 = 0;
             Class13_Sub2.anInt2454 = 0;
             StreamBuffer.anInt2091 = 0;
             SceneGraph.anInt2498 = 0;
@@ -488,7 +486,7 @@ public class Class25 {
             Class65.anInt1311 = 0;
             StreamBuffer.anInt2097 = 0;
             StreamBuffer.anInt2069 = 0;
-            Class4_Sub20_Sub7_Sub1_Sub1.anInt3580 = 0;
+            Player.anInt3580 = 0;
             Class4_Sub20_Sub13.anInt3129 = 0;
             Class71.anInt1481 = 0;
             Class73.anInt1505 = 0;
@@ -534,7 +532,6 @@ public class Class25 {
             Class66.anInt1323 = 0;
 
             Class77.anInt1584 = 0;
-            Class4_Sub20_Sub7_Sub1.anInt3254 = 0;
             Class4_Sub2_Sub1.anInt2605 = 0;
             Class4_Sub8.anInt1978 = 0;
             JagexException.anInt1731 = 0;
@@ -554,7 +551,6 @@ public class Class25 {
             Class4_Sub14.anInt2277 = 0;
             Class4_Sub20_Sub11.anInt3079 = 0;
             Class18.anInt468 = 0;
-            Class4_Sub20_Sub7_Sub1.anInt3283 = 0;
             Class82.anInt1723 = 0;
             Class4_Sub20.anInt2350 = 0;
             StreamBuffer.anInt2082 = 0;
@@ -599,7 +595,7 @@ public class Class25 {
             Class4_Sub20_Sub8.anInt2960 = 0;
             Class4_Sub10.anInt2023 = 0;
             Game.anInt1841 = 0;
-            Class4_Sub20_Sub7_Sub1_Sub1.anInt3582 = 0;
+            Player.anInt3582 = 0;
             Class4_Sub2_Sub1.anInt2575 = 0;
             Class11.anInt314 = 0;
             Class4_Sub20_Sub16.anInt3167 = 0;
@@ -655,7 +651,7 @@ public class Class25 {
             Class76.anInt1549 = 0;
             Class71.anInt1469 = 0;
             Class4_Sub20_Sub7_Sub1_Sub2.anInt3614 = 0;
-            Class4_Sub20_Sub7_Sub1_Sub1.anInt3607 = 0;
+            Player.anInt3607 = 0;
             Class76.anInt1551 = 0;
             Class4_Sub20_Sub15.anInt3152 = 0;
             Class4_Sub20_Sub7_Sub5.anInt3407 = 0;
@@ -790,11 +786,9 @@ public class Class25 {
                 Class33.anInt706 = 0;
                 Class4_Sub20_Sub17.anInt3187 = 0;
 
-                Class24.anInt553 = 0;
                 RS2Font.anInt2788 = 0;
                 Class4_Sub20_Sub7_Sub4.anInt3365 = 0;
                 Class4_Sub11_Sub1.anInt2686 = 0;
-                Class4_Sub20_Sub7_Sub1.anInt3280 = 0;
                 Class12.anInt356 = 0;
                 Class5.anInt191 = 0;
                 StreamBuffer.anInt2107 = 0;
@@ -803,7 +797,6 @@ public class Class25 {
                 Class67.anInt1346 = 0;
                 Class27.anInt617 = 0;
                 Class4_Sub20_Sub7_Sub4.anInt3372 = 0;
-                Class4_Sub20_Sub7_Sub1.anInt3286 = 0;
                 Class4_Sub20_Sub17.anInt3192 = 0;
                 Class16.anInt442 = 0;
                 Class43.anInt873 = 0;
@@ -886,7 +879,7 @@ public class Class25 {
                 RS2Font.anInt2773 = 0;
                 Class4_Sub23.anInt2418 = 0;
                 Class4_Sub23.anInt2422 = 0;
-                Class4_Sub20_Sub7_Sub1_Sub1.anInt3588 = 0;
+                Player.anInt3588 = 0;
                 Class4_Sub20_Sub6.anInt2915 = 0;
                 Class68.anInt1379 = 0;
                 RSInterface.anInt2191 = 0;
@@ -955,7 +948,6 @@ public class Class25 {
                 Class4_Sub2_Sub1.anInt2568 = 0;
                 Class4_Sub20_Sub4.anInt2845 = 0;
                 Class68.anInt1385 = 0;
-                Class4_Sub20_Sub7_Sub1.anInt3261 = 0;
                 Class4_Sub20_Sub1.anInt2752 = 0;
                 Class81.anInt1688 = 0;
                 Class62.anInt1235 = 0;
@@ -1065,7 +1057,7 @@ public class Class25 {
                         + (int) (Math.random() * 30.0);
                 Class5.anInt175 = 0;
                 Class80.anInt1646 = 0;
-                Class49.anInt999 = 0x7ff & -10 + (int) (Math.random() * 20.0);
+                Class49.cameraHorizontalPosition = 0x7ff & -10 + (int) (Math.random() * 20.0);
                 Class4_Sub23.aBoolean2421 = false;
                 Class31.anInt680 = -60 + (int) (120.0 * Math.random());
                 Class4_Sub23.anInt2412 = (int) (100.0 * Math.random()) - 50;
@@ -1074,19 +1066,19 @@ public class Class25 {
                 Class18.anInt477 = -1;
                 Class4_Sub20_Sub1.anInt2734 = 0;
                 Class4_Sub16.anInt2318 = -40 + (int) (80.0 * Math.random());
-                Class4_Sub20_Sub9.anInt3051 = 0;
+                Class4_Sub20_Sub9.minimapState = 0;
                 Class4_Sub20_Sub7_Sub6.anInt3431 = 0;
                 GameShell.anInt12 = 0;
                 Class67.anInt1352 = 0;
                 Class1.anInt74 = 0;
                 for (int i = 0; (i ^ 0xffffffff) > -2049; i++) {
-                    Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i] = null;
+                    Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i] = null;
                     aClass4_Sub11Array575[i] = null;
                 }
                 for (int i = 0; (i ^ 0xffffffff) > -32769; i++) {
                     Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i] = null;
                 }
-                Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302 = Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[2047] = new Class4_Sub20_Sub7_Sub1_Sub1();
+                Class4_Sub15.localPlayer = Class4_Sub20_Sub7_Sub4.aPlayerArray3358[2047] = new Player();
                 Class4_Sub20_Sub11.aClass65_3075.method1070((byte) 112);
                 Class4_Sub20_Sub13.aClass65_3106.method1070((byte) -19);
                 for (int i = 0; (i ^ 0xffffffff) > -5; i++) {

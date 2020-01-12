@@ -97,6 +97,7 @@ public class Class31 {
                                  boolean arg3, int arg4, int arg5, JagexString arg6) {
 		try {
 			int i = arg2.method754(arg0, 1);
+			System.out.println(i);
 			anInt668++;
 			if (arg5 > -75) {
 				method877(-113);
@@ -160,7 +161,7 @@ public class Class31 {
 									&& i_11_ < 103) {
 								int i_12_ = arg6;
 								Region class3 = null;
-								if (((Class46.landscapeData[1][i_10_][i_11_]) & 0x2) == 2) {
+								if (((Class46.currentSceneTileFlags[1][i_10_][i_11_]) & 0x2) == 2) {
 									i_12_--;
 								}
 								if (i_12_ >= 0) {
@@ -195,7 +196,7 @@ public class Class31 {
 				return -28;
 			}
 			anInt670++;
-			return Class4_Sub21.anInt2379++;
+			return Class4_Sub21.idleTime++;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ja.A("
 					+ arg0 + ')');

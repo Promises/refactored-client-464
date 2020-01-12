@@ -180,15 +180,15 @@ public abstract class Class42 {
 		try {
 			anInt848++;
 			if (!Class59.aBoolean1189
-					|| (0x2 & Class46.landscapeData[0][localX][localY] ^ 0xffffffff) != -1
-					|| (((0x10 & Class46.landscapeData[zAbs][localX][localY]) == 0) && (Class4_Sub15
+					|| (0x2 & Class46.currentSceneTileFlags[0][localX][localY] ^ 0xffffffff) != -1
+					|| (((0x10 & Class46.currentSceneTileFlags[zAbs][localX][localY]) == 0) && (Class4_Sub15
 							.method301(localX, 0, zAbs, localY) == Class50.anInt1010))) {
 				if ((Class4_Sub6.anInt1918 ^ 0xffffffff) < (zAbs ^ 0xffffffff))
 					Class4_Sub6.anInt1918 = zAbs;
-				int i = (Class4_Sub23.anIntArrayArrayArray2416[zAbs][1 + localX][localY]);
-				int i_1_ = Class4_Sub23.anIntArrayArrayArray2416[zAbs][localX][localY];
-				int i_2_ = (Class4_Sub23.anIntArrayArrayArray2416[zAbs][localX][1 + localY]);
-				int i_3_ = (Class4_Sub23.anIntArrayArrayArray2416[zAbs][1 + localX][1 + localY]);
+				int i = (Class4_Sub23.intGroundArray[zAbs][1 + localX][localY]);
+				int i_1_ = Class4_Sub23.intGroundArray[zAbs][localX][localY];
+				int i_2_ = (Class4_Sub23.intGroundArray[zAbs][localX][1 + localY]);
+				int i_3_ = (Class4_Sub23.intGroundArray[zAbs][1 + localX][1 + localY]);
 				int i_4_ = i_2_ + (i_3_ + i_1_) - -i >> 1681185986;
 				Class4_Sub20_Sub1 class4_sub20_sub1 = Region.method56(true,
 						objectId);
@@ -287,7 +287,7 @@ public abstract class Class42 {
 							class4_sub20_sub7, 0, i_5_, i_6_);
 					if (type >= 12 && (type ^ 0xffffffff) >= -18 && type != 13
 							&& (zAbs ^ 0xffffffff) < -1)
-						SceneGraph.heightmap[zAbs][localX][localY] = (Class4_Sub20_Sub7_Sub1
+						SceneGraph.heightmap[zAbs][localX][localY] = (Actor
 								.method389(
 										(SceneGraph.heightmap[zAbs][localX][localY]),
 										2340));
@@ -319,7 +319,7 @@ public abstract class Class42 {
 										- -1] = (byte) 50;
 							}
 							if (class4_sub20_sub1.aBoolean2724)
-								SceneGraph.heightmap[zAbs][localX][localY + 1] = (Class4_Sub20_Sub7_Sub1
+								SceneGraph.heightmap[zAbs][localX][localY + 1] = (Actor
 										.method389(
 												(SceneGraph.heightmap[zAbs][localX][localY + 1]),
 												1170));
@@ -331,7 +331,7 @@ public abstract class Class42 {
 											- -1][localY] = (byte) 50;
 								}
 								if (class4_sub20_sub1.aBoolean2724)
-									SceneGraph.heightmap[zAbs][localX][localY] = (Class4_Sub20_Sub7_Sub1
+									SceneGraph.heightmap[zAbs][localX][localY] = (Actor
 											.method389(
 													(SceneGraph.heightmap[zAbs][localX][localY]),
 													1170));
@@ -343,7 +343,7 @@ public abstract class Class42 {
 										- -1][1 + localY] = (byte) 50;
 							}
 							if (class4_sub20_sub1.aBoolean2724)
-								SceneGraph.heightmap[zAbs][1 + localX][localY] = (Class4_Sub20_Sub7_Sub1
+								SceneGraph.heightmap[zAbs][1 + localX][localY] = (Actor
 										.method389(
 												(SceneGraph.heightmap[zAbs][1 + localX][localY]),
 												585));
@@ -355,7 +355,7 @@ public abstract class Class42 {
 									- -1] = (byte) 50;
 						}
 						if (class4_sub20_sub1.aBoolean2724)
-							SceneGraph.heightmap[zAbs][localX][localY] = (Class4_Sub20_Sub7_Sub1
+							SceneGraph.heightmap[zAbs][localX][localY] = (Actor
 									.method389(
 											(SceneGraph.heightmap[zAbs][localX][localY]),
 											585));
@@ -422,41 +422,41 @@ public abstract class Class42 {
 							if ((rotation ^ 0xffffffff) != -2) {
 								if ((rotation ^ 0xffffffff) != -3) {
 									if (rotation == 3) {
-										SceneGraph.heightmap[zAbs][localX][localY] = (Class4_Sub20_Sub7_Sub1
+										SceneGraph.heightmap[zAbs][localX][localY] = (Actor
 												.method389(
 														(SceneGraph.heightmap[zAbs][localX][localY]),
 														1170));
-										SceneGraph.heightmap[zAbs][localX][localY] = (Class4_Sub20_Sub7_Sub1
+										SceneGraph.heightmap[zAbs][localX][localY] = (Actor
 												.method389(
 														(SceneGraph.heightmap[zAbs][localX][localY]),
 														585));
 									}
 								} else {
-									SceneGraph.heightmap[zAbs][localX + 1][localY] = (Class4_Sub20_Sub7_Sub1
+									SceneGraph.heightmap[zAbs][localX + 1][localY] = (Actor
 											.method389(
 													(SceneGraph.heightmap[zAbs][localX + 1][localY]),
 													585));
-									SceneGraph.heightmap[zAbs][localX][localY] = (Class4_Sub20_Sub7_Sub1
+									SceneGraph.heightmap[zAbs][localX][localY] = (Actor
 											.method389(
 													(SceneGraph.heightmap[zAbs][localX][localY]),
 													1170));
 								}
 							} else {
-								SceneGraph.heightmap[zAbs][localX][localY + 1] = (Class4_Sub20_Sub7_Sub1
+								SceneGraph.heightmap[zAbs][localX][localY + 1] = (Actor
 										.method389(
 												(SceneGraph.heightmap[zAbs][localX][localY + 1]),
 												1170));
-								SceneGraph.heightmap[zAbs][1 + localX][localY] = (Class4_Sub20_Sub7_Sub1
+								SceneGraph.heightmap[zAbs][1 + localX][localY] = (Actor
 										.method389(
 												(SceneGraph.heightmap[zAbs][1 + localX][localY]),
 												585));
 							}
 						} else {
-							SceneGraph.heightmap[zAbs][localX][localY] = (Class4_Sub20_Sub7_Sub1
+							SceneGraph.heightmap[zAbs][localX][localY] = (Actor
 									.method389(
 											(SceneGraph.heightmap[zAbs][localX][localY]),
 											585));
-							SceneGraph.heightmap[zAbs][localX][1 + localY] = (Class4_Sub20_Sub7_Sub1
+							SceneGraph.heightmap[zAbs][localX][1 + localY] = (Actor
 									.method389(
 											(SceneGraph.heightmap[zAbs][localX][1 + localY]),
 											1170));
@@ -649,7 +649,7 @@ public abstract class Class42 {
                                                         jagexString,
 														(Class19_Sub1
 																.method765(
-																		(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3584),
+																		(Class4_Sub15.localPlayer.anInt3584),
 																		arg0.anInt2814,
 																		(byte) -45)),
 														Class4_Sub7.aJagexString_1957,
@@ -717,7 +717,7 @@ public abstract class Class42 {
 											Class4_Sub20_Sub3.anInt2808++;
 											int i_22_ = 0;
 											int i_23_ = 0;
-											if ((arg0.anInt2814 ^ 0xffffffff) < ((Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3584) ^ 0xffffffff))
+											if ((arg0.anInt2814 ^ 0xffffffff) < ((Class4_Sub15.localPlayer.anInt3584) ^ 0xffffffff))
 												i_22_ = 2000;
 											if ((i ^ 0xffffffff) == -1)
 												i_23_ = 43 - -i_22_;

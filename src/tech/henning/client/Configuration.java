@@ -2,6 +2,12 @@ package tech.henning.client;
 
 import java.math.BigInteger;
 
+/**
+ * This Client is revision 464
+ * Released: 17 July 2007
+ */
+
+
 public class Configuration {
     /**
      * IP Address or Hostname of the server to establish a connection.

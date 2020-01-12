@@ -25,7 +25,7 @@ public class Class43_Sub1 extends Class43 {
 	@Override
 	public void method956(Component arg0) throws Exception {
 		anInterface1_2542.method4(68, Class67.anInt1354,
-				Class4_Sub20_Sub7_Sub1.aBoolean3218, arg0);
+				Actor.aBoolean3218, arg0);
 	}
 
 	@Override

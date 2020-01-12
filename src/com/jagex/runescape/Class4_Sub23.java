@@ -20,7 +20,7 @@ public class Class4_Sub23 extends RSFont {
 	public static int anInt2425;
 	public static int[] anIntArray2411;
 	public static int[] anIntArray2432;
-	public static int[][][] anIntArrayArrayArray2416;
+	public static int[][][] intGroundArray;
 	static {
 		anInt2415 = 0;
 		aBoolean2419 = false;
@@ -31,7 +31,7 @@ public class Class4_Sub23 extends RSFont {
 		aBoolean2421 = false;
 		anIntArray2432 = new int[2048];
 		aJagexString_2433 = aJagexString_2429;
-		anIntArrayArrayArray2416 = new int[4][105][105];
+		intGroundArray = new int[4][105][105];
 	}
 
 	public static Class4_Sub20_Sub8 method633(int arg0, byte arg1) {
@@ -76,7 +76,7 @@ public class Class4_Sub23 extends RSFont {
 			aJagexString_2423 = null;
 			aJagexString_2417 = null;
 			aJagexString_2429 = null;
-			anIntArrayArrayArray2416 = null;
+			intGroundArray = null;
 			if (arg0 != false)
 				method635(true);
 			aJagexString_2433 = null;

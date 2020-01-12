@@ -72,8 +72,9 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 		aClass77_3020 = null;
 		aJagexStringArray2957 = null;
 		aJagexString_2967 = null;
-		if (arg0 != 0)
+		if (arg0 != 0) {
 			method462(-35);
+		}
 	}
 
 	public static void method464(byte arg0, Component arg1) {
@@ -88,8 +89,9 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 				}
 			}
 			arg1.addKeyListener(Class4_Sub14.aClass18_2272);
-			if (arg0 == 79)
+			if (arg0 == 79) {
 				arg1.addFocusListener(Class4_Sub14.aClass18_2272);
+			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("je.L("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ')'));
@@ -99,8 +101,9 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 	public static void method467(Class19 arg0, int arg1) {
 		try {
 			Class50.aClass19_1021 = arg0;
-			if (arg1 != 14531)
+			if (arg1 != 14531) {
 				method470(false, null, null);
+			}
 			anInt2962++;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("je.K("
@@ -114,8 +117,9 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 				Class16.aClass19_429 = arg2;
 				Class4_Sub11_Sub1.aClass19_2691 = arg1;
 				anInt3018++;
-				if (arg0 == true)
+				if (arg0 == true) {
 					break;
+				}
 				method470(true, null, null);
 			} catch (RuntimeException runtimeexception) {
 				throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
@@ -136,14 +140,16 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 			if (arg1 <= -23) {
 				for (;;) {
 					int incr = buffer.getSmart();
-					if (incr == 0)
+					if (incr == 0) {
 						break;
+					}
 					objectId += incr;
 					int location = 0;
 					for (;;) {
 						int incr2 = buffer.getSmart();
-						if (incr2 == 0)
+						if (incr2 == 0) {
 							break;
+						}
 						location += -1 + incr2;
 						int xAbsOffset = (0xfe1 & location) >> 774081286;
 						int zAbs = location >> 1804348492;
@@ -157,10 +163,12 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 								&& localX < 103 && (localY ^ 0xffffffff) > -104) {
 							int z = zAbs;
 							Region class3 = null;
-							if (((Class46.landscapeData[1][localX][localY]) & 0x2 ^ 0xffffffff) == -3)
+							if (((Class46.currentSceneTileFlags[1][localX][localY]) & 0x2 ^ 0xffffffff) == -3) {
 								z--;
-							if ((z ^ 0xffffffff) <= -1)
+							}
+							if ((z ^ 0xffffffff) <= -1) {
 								class3 = arg3[z];
+							}
 							Class42.method945(rotation, zAbs, localX, objectId,
 									localY, type, class3, arg2);
 						}
@@ -260,20 +268,24 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 			anInt2955++;
 			int i = anInt2975;
 			int i_0_ = anInt2972;
-			if (arg0 != -73)
+			if (arg0 != -73) {
 				method462(68);
+			}
 			if (arg1) {
 				i_0_ = anInt2971;
 				i = anInt2979;
 			}
-			if ((i ^ 0xffffffff) == 0)
+			if ((i ^ 0xffffffff) == 0) {
 				return true;
+			}
 			boolean bool = true;
-			if (!RSFont.aClass19_169.method739((byte) -4, i, 0))
+			if (!RSFont.aClass19_169.method739((byte) -4, i, 0)) {
 				bool = false;
+			}
 			if ((i_0_ ^ 0xffffffff) != 0
-					&& !RSFont.aClass19_169.method739((byte) -4, i_0_, 0))
+					&& !RSFont.aClass19_169.method739((byte) -4, i_0_, 0)) {
 				bool = false;
+			}
 			return bool;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("je.O("
@@ -292,17 +304,21 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 				i = anInt2999;
 				i_1_ = anInt3011;
 			}
-			if (i_1_ == arg0)
+			if (i_1_ == arg0) {
 				return true;
+			}
 			boolean bool = true;
-			if (!RSFont.aClass19_169.method739((byte) -4, i_1_, 0))
+			if (!RSFont.aClass19_169.method739((byte) -4, i_1_, 0)) {
 				bool = false;
+			}
 			if (i_2_ != -1
-					&& !RSFont.aClass19_169.method739((byte) -4, i_2_, 0))
+					&& !RSFont.aClass19_169.method739((byte) -4, i_2_, 0)) {
 				bool = false;
+			}
 			if ((i ^ 0xffffffff) != 0
-					&& !RSFont.aClass19_169.method739((byte) -4, i, 0))
+					&& !RSFont.aClass19_169.method739((byte) -4, i, 0)) {
 				bool = false;
+			}
 			return bool;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("je.N("
@@ -317,31 +333,38 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 				int i = -1;
 				for (int i_3_ = 0; (i_3_ ^ 0xffffffff) > -11; i_3_++) {
 					if (anIntArray2997[i_3_] <= arg1
-							&& anIntArray2997[i_3_] != 0)
+							&& anIntArray2997[i_3_] != 0) {
 						i = anIntArray2961[i_3_];
+					}
 				}
-				if ((i ^ 0xffffffff) != 0)
+				if ((i ^ 0xffffffff) != 0) {
 					return Class4_Sub23.method633(i, (byte) -124).method461(
 							-11, 1);
+				}
 			}
 			Class4_Sub20_Sub7_Sub7 class4_sub20_sub7_sub7 = ((Class4_Sub20_Sub7_Sub7) Class25.aClass66_592
 					.method1083(anInt2954, true));
-			if (class4_sub20_sub7_sub7 != null)
+			if (class4_sub20_sub7_sub7 != null) {
 				return class4_sub20_sub7_sub7;
+			}
 			Class4_Sub20_Sub7_Sub2 class4_sub20_sub7_sub2 = Class4_Sub20_Sub7_Sub2
 					.method399(RSFont.aClass19_169, anInt3007, 0);
-			if (arg0 != -11)
+			if (arg0 != -11) {
 				anInt2989 = -95;
-			if (class4_sub20_sub7_sub2 == null)
+			}
+			if (class4_sub20_sub7_sub2 == null) {
 				return null;
+			}
 			if (anInt3005 != 128 || (anInt2966 ^ 0xffffffff) != -129
-					|| anInt2951 != 128)
+					|| anInt2951 != 128) {
 				class4_sub20_sub7_sub2.method406(anInt3005, anInt2966,
 						anInt2951);
+			}
 			if (aShortArray2993 != null) {
-				for (int i = 0; (i ^ 0xffffffff) > (aShortArray2993.length ^ 0xffffffff); i++)
+				for (int i = 0; (i ^ 0xffffffff) > (aShortArray2993.length ^ 0xffffffff); i++) {
 					class4_sub20_sub7_sub2.method416(aShortArray2993[i],
 							aShortArray3009[i]);
+				}
 			}
 			class4_sub20_sub7_sub7 = class4_sub20_sub7_sub2.method411(
 					64 - -anInt2970, anInt2963 + 768, -50, -10, -50);
@@ -357,8 +380,9 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 
 	public void method463(int arg0) {
 		try {
-			if (arg0 == 4065)
+			if (arg0 == 4065) {
 				anInt2959++;
+			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "je.I("
 					+ arg0 + ')');
@@ -368,59 +392,62 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 	public void method465(byte arg0, StreamBuffer arg1, int arg2) {
 		try {
 			anInt2968++;
-			if (arg0 != -28)
+			if (arg0 != -28) {
 				method463(-55);
-			if (arg2 == 1)
+			}
+			if (arg2 == 1) {
 				anInt3007 = arg1.method209((byte) -99);
-			else if (arg2 != 2) {
-				if ((arg2 ^ 0xffffffff) == -5)
+			} else if (arg2 != 2) {
+				if ((arg2 ^ 0xffffffff) == -5) {
 					anInt2983 = arg1.method209((byte) -108);
-				else if (arg2 != 5) {
+				} else if (arg2 != 5) {
 					if (arg2 != 6) {
 						if (arg2 == 7) {
 							anInt2965 = arg1.method209((byte) -102);
-							if ((anInt2965 ^ 0xffffffff) < -32768)
+							if ((anInt2965 ^ 0xffffffff) < -32768) {
 								anInt2965 -= 65536;
+							}
 						} else if ((arg2 ^ 0xffffffff) == -9) {
 							anInt3010 = arg1.method209((byte) -102);
-							if ((anInt3010 ^ 0xffffffff) < -32768)
+							if ((anInt3010 ^ 0xffffffff) < -32768) {
 								anInt3010 -= 65536;
-						} else if (arg2 == 11)
+							}
+						} else if (arg2 == 11) {
 							anInt3012 = 1;
-						else if (arg2 != 12) {
+						} else if (arg2 != 12) {
 							if ((arg2 ^ 0xffffffff) != -17) {
 								if (arg2 == 23) {
 									anInt2964 = arg1.method209((byte) -122);
 									anInt2985 = arg1.get();
-								} else if ((arg2 ^ 0xffffffff) == -25)
+								} else if ((arg2 ^ 0xffffffff) == -25) {
 									anInt3006 = arg1.method209((byte) -120);
-								else if ((arg2 ^ 0xffffffff) != -26) {
-									if ((arg2 ^ 0xffffffff) == -27)
+								} else if ((arg2 ^ 0xffffffff) != -26) {
+									if ((arg2 ^ 0xffffffff) == -27) {
 										anInt2974 = arg1.method209((byte) -113);
-									else if (arg2 < 30 || arg2 >= 35) {
-										if (arg2 >= 35 && arg2 < 40)
+									} else if (arg2 < 30 || arg2 >= 35) {
+										if (arg2 >= 35 && arg2 < 40) {
 											aJagexStringArray2988[arg2 + -35] = arg1
 													.method212();
-										else if (arg2 != 40) {
+										} else if (arg2 != 40) {
 											if (arg2 != 78) {
-												if (arg2 == 79)
+												if (arg2 == 79) {
 													anInt2999 = (arg1
 															.method209((byte) -101));
-												else if ((arg2 ^ 0xffffffff) == -91)
+												} else if ((arg2 ^ 0xffffffff) == -91) {
 													anInt2975 = (arg1
 															.method209((byte) -116));
-												else if ((arg2 ^ 0xffffffff) == -92)
+												} else if ((arg2 ^ 0xffffffff) == -92) {
 													anInt2979 = (arg1
 															.method209((byte) -104));
-												else if (arg2 != 92) {
+												} else if (arg2 != 92) {
 													if ((arg2 ^ 0xffffffff) != -94) {
-														if ((arg2 ^ 0xffffffff) == -96)
+														if ((arg2 ^ 0xffffffff) == -96) {
 															anInt2976 = (arg1
 																	.method209((byte) -104));
-														else if (arg2 == 97)
+														} else if (arg2 == 97) {
 															anInt2977 = (arg1
 																	.method209((byte) -108));
-														else if (arg2 != 98) {
+														} else if (arg2 != 98) {
 															if (((arg2 ^ 0xffffffff) <= -101)
 																	&& (arg2 < 110)) {
 																if (anIntArray2961 == null) {
@@ -432,38 +459,46 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 																anIntArray2997[(arg2 - 100)] = (arg1
 																		.method209((byte) -102));
 															} else if ((arg2 ^ 0xffffffff) != -111) {
-																if (arg2 == 111)
+																if (arg2 == 111) {
 																	anInt2966 = (arg1
 																			.method209((byte) -125));
-																else if ((arg2 ^ 0xffffffff) != -113) {
-																	if ((arg2 ^ 0xffffffff) == -114)
+																} else if ((arg2 ^ 0xffffffff) != -113) {
+																	if ((arg2 ^ 0xffffffff) == -114) {
 																		anInt2970 = arg1
 																				.method229(104);
-																	else if (arg2 != 114) {
-																		if (arg2 == 115)
+																	} else if (arg2 != 114) {
+																		if (arg2 == 115) {
 																			anInt3000 = arg1
 																					.get();
-																	} else
+																		}
+																	} else {
 																		anInt2963 = arg1
 																				.method229(-114) * 5;
-																} else
+																	}
+																} else {
 																	anInt2951 = (arg1
 																			.method209((byte) -122));
-															} else
+																}
+															} else {
 																anInt3005 = (arg1
 																		.method209((byte) -111));
-														} else
+															}
+														} else {
 															anInt2986 = (arg1
 																	.method209((byte) -107));
-													} else
+														}
+													} else {
 														anInt2971 = (arg1
 																.method209((byte) -120));
-												} else
+													}
+												} else {
 													anInt2972 = (arg1
 															.method209((byte) -117));
-											} else
+												}
+											} else {
 												anInt2989 = (arg1
 														.method209((byte) -121));
+											}
 										} else {
 											int i = arg1.get();
 											aShortArray2993 = new short[i];
@@ -481,23 +516,29 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 										if (aJagexStringArray3008[arg2 + -30]
 												.method818(
 														StringUtilities.aJagexString_638,
-														(byte) -105))
+														(byte) -105)) {
 											aJagexStringArray3008[arg2 + -30] = null;
+										}
 									}
 								} else {
 									anInt3011 = arg1.method209((byte) -112);
 									anInt2984 = arg1.get();
 								}
-							} else
+							} else {
 								aBoolean3002 = true;
-						} else
+							}
+						} else {
 							anInt3017 = arg1.method219((byte) 73);
-					} else
+						}
+					} else {
 						anInt2995 = arg1.method209((byte) -111);
-				} else
+					}
+				} else {
 					anInt3003 = arg1.method209((byte) -117);
-			} else
+				}
+			} else {
 				aJagexString_2991 = arg1.method212();
+			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("je.D("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ','
@@ -509,8 +550,9 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 		try {
 			for (;;) {
 				int i = arg1.get();
-				if ((i ^ 0xffffffff) == -1)
+				if ((i ^ 0xffffffff) == -1) {
 					break;
+				}
 				method465((byte) -28, arg1, i);
 			}
 			anInt2956++;
@@ -529,8 +571,9 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 				i_5_ = anInt2971;
 				i = anInt2979;
 			}
-			if ((i ^ 0xffffffff) == arg1)
+			if ((i ^ 0xffffffff) == arg1) {
 				return null;
+			}
 			Class4_Sub20_Sub7_Sub2 class4_sub20_sub7_sub2 = Class4_Sub20_Sub7_Sub2
 					.method399(RSFont.aClass19_169, i, 0);
 			if (i_5_ != -1) {
@@ -542,9 +585,10 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 						class4_sub20_sub7_sub2s, 2);
 			}
 			if (aShortArray2993 != null) {
-				for (int i_7_ = 0; ((i_7_ ^ 0xffffffff) > (aShortArray2993.length ^ 0xffffffff)); i_7_++)
+				for (int i_7_ = 0; ((i_7_ ^ 0xffffffff) > (aShortArray2993.length ^ 0xffffffff)); i_7_++) {
 					class4_sub20_sub7_sub2.method416(aShortArray2993[i_7_],
 							aShortArray3009[i_7_]);
+				}
 			}
 			return class4_sub20_sub7_sub2;
 		} catch (RuntimeException runtimeexception) {
@@ -556,17 +600,20 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 	public Class4_Sub20_Sub8 method469(int arg0, int arg1) {
 		try {
 			anInt2994++;
-			if (arg0 != 0)
+			if (arg0 != 0) {
 				anInt3010 = 112;
+			}
 			if (anIntArray2961 != null && arg1 > 1) {
 				int i = -1;
 				for (int i_8_ = 0; (i_8_ ^ 0xffffffff) > -11; i_8_++) {
 					if (anIntArray2997[i_8_] <= arg1
-							&& anIntArray2997[i_8_] != 0)
+							&& anIntArray2997[i_8_] != 0) {
 						i = anIntArray2961[i_8_];
+					}
 				}
-				if ((i ^ 0xffffffff) != 0)
+				if ((i ^ 0xffffffff) != 0) {
 					return Class4_Sub23.method633(i, (byte) -118);
+				}
 			}
 			return this;
 		} catch (RuntimeException runtimeexception) {
@@ -591,8 +638,9 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 			anInt3010 = arg2.anInt3010;
 			aJagexString_2991 = arg1.aJagexString_2991;
 			aShortArray2993 = arg2.aShortArray2993;
-			if (arg0 >= 51)
+			if (arg0 >= 51) {
 				anInt2995 = arg2.anInt2995;
+			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("je.A("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ','
@@ -611,8 +659,9 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 				i_21_ = anInt2974;
 				i = anInt3011;
 			}
-			if ((i ^ 0xffffffff) == 0)
+			if ((i ^ 0xffffffff) == 0) {
 				return null;
+			}
 			Class4_Sub20_Sub7_Sub2 class4_sub20_sub7_sub2 = Class4_Sub20_Sub7_Sub2
 					.method399(RSFont.aClass19_169, i, 0);
 			if ((i_21_ ^ 0xffffffff) != 0) {
@@ -633,17 +682,21 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 							class4_sub20_sub7_sub2s, 2);
 				}
 			}
-			if (!arg0 && (anInt2985 ^ 0xffffffff) != -1)
+			if (!arg0 && (anInt2985 ^ 0xffffffff) != -1) {
 				class4_sub20_sub7_sub2.method410(0, anInt2985, 0);
-			if (arg0 && anInt2984 != 0)
+			}
+			if (arg0 && anInt2984 != 0) {
 				class4_sub20_sub7_sub2.method410(0, anInt2984, 0);
+			}
 			if (aShortArray2993 != null) {
-				for (int i_25_ = 0; ((aShortArray2993.length ^ 0xffffffff) < (i_25_ ^ 0xffffffff)); i_25_++)
+				for (int i_25_ = 0; ((aShortArray2993.length ^ 0xffffffff) < (i_25_ ^ 0xffffffff)); i_25_++) {
 					class4_sub20_sub7_sub2.method416(aShortArray2993[i_25_],
 							aShortArray3009[i_25_]);
+				}
 			}
-			if (arg1 != -25)
+			if (arg1 != -25) {
 				return null;
+			}
 			return class4_sub20_sub7_sub2;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("je.E("
@@ -653,32 +706,38 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 
 	public Class4_Sub20_Sub7_Sub2 method474(int arg0, int arg1) {
 		try {
-			if (arg0 != 10)
+			if (arg0 != 10) {
 				method464((byte) -26, null);
+			}
 			anInt2953++;
 			if (anIntArray2961 != null && arg1 > 1) {
 				int i = -1;
 				for (int i_26_ = 0; i_26_ < 10; i_26_++) {
 					if ((anIntArray2997[i_26_] ^ 0xffffffff) >= (arg1 ^ 0xffffffff)
-							&& (anIntArray2997[i_26_] ^ 0xffffffff) != -1)
+							&& (anIntArray2997[i_26_] ^ 0xffffffff) != -1) {
 						i = anIntArray2961[i_26_];
+					}
 				}
-				if ((i ^ 0xffffffff) != 0)
+				if ((i ^ 0xffffffff) != 0) {
 					return Class4_Sub23.method633(i, (byte) -105).method474(
 							arg0, 1);
+				}
 			}
 			Class4_Sub20_Sub7_Sub2 class4_sub20_sub7_sub2 = Class4_Sub20_Sub7_Sub2
 					.method399(RSFont.aClass19_169, anInt3007, 0);
-			if (class4_sub20_sub7_sub2 == null)
+			if (class4_sub20_sub7_sub2 == null) {
 				return null;
+			}
 			if (anInt3005 != 128 || (anInt2966 ^ 0xffffffff) != -129
-					|| (anInt2951 ^ 0xffffffff) != -129)
+					|| (anInt2951 ^ 0xffffffff) != -129) {
 				class4_sub20_sub7_sub2.method406(anInt3005, anInt2966,
 						anInt2951);
+			}
 			if (aShortArray2993 != null) {
-				for (int i = 0; i < aShortArray2993.length; i++)
+				for (int i = 0; i < aShortArray2993.length; i++) {
 					class4_sub20_sub7_sub2.method416(aShortArray2993[i],
 							aShortArray3009[i]);
+				}
 			}
 			return class4_sub20_sub7_sub2;
 		} catch (RuntimeException runtimeexception) {

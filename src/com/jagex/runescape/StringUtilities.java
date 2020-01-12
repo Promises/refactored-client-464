@@ -1,6 +1,7 @@
 package com.jagex.runescape;
 
 public class StringUtilities {
+    public static JagexString startupSongName = JagexString.getRs2PreparedString("barbarianism");
     // English
 
     // German
@@ -147,4 +148,5 @@ public class StringUtilities {
     public static JagexString aJagexString_922 = JagexString.getRs2PreparedString(" <col=ffff00>");
     public static JagexString aJagexString_924 = JagexString.getRs2PreparedString("Lade Sprites )2 ");
     public static JagexString aJagexString_925 = JagexString.getRs2PreparedString("<col=ff7000>");
+    public static JagexString aJagexString_278 = JagexString.getRs2PreparedString("<col=40ff00>");
 }

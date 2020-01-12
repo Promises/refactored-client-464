@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-public class Class4_Sub20_Sub7_Sub1_Sub2 extends Class4_Sub20_Sub7_Sub1 {
+public class Class4_Sub20_Sub7_Sub1_Sub2 extends Actor {
 	public static JagexString aJagexString_3620 = JagexString.getRs2PreparedString("ams"
     );
 	public static JagexString aJagexString_3622;
@@ -16,7 +16,6 @@ public class Class4_Sub20_Sub7_Sub1_Sub2 extends Class4_Sub20_Sub7_Sub1 {
 	public static int anInt3615;
 	public static int anInt3616;
 	public static int anInt3619;
-	public static int anInt3621;
 	public static int[] anIntArray3624;
 	static {
 		aClass65_3618 = new Class65();

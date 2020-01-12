@@ -34,8 +34,8 @@ public class Class43_Sub2 extends Class43 {
 	@Override
 	public void method956(Component arg0) {
 		anAudioFormat2545 = new AudioFormat(Class67.anInt1354, 16,
-				Class4_Sub20_Sub7_Sub1.aBoolean3218 ? 2 : 1, true, false);
-		aByteArray2546 = new byte[256 << (!Class4_Sub20_Sub7_Sub1.aBoolean3218 ? 1
+				Actor.aBoolean3218 ? 2 : 1, true, false);
+		aByteArray2546 = new byte[256 << (!Actor.aBoolean3218 ? 1
 				: 2)];
 	}
 
@@ -44,7 +44,7 @@ public class Class43_Sub2 extends Class43 {
 		int i;
 		try {
 			i = anInt2544
-					- (aSourceDataLine2543.available() >> (!Class4_Sub20_Sub7_Sub1.aBoolean3218 ? 1
+					- (aSourceDataLine2543.available() >> (!Actor.aBoolean3218 ? 1
 							: 2));
 		} catch (RuntimeException runtimeexception) {
 			throw runtimeexception;
@@ -66,7 +66,7 @@ public class Class43_Sub2 extends Class43 {
 			DataLine.Info info = (new DataLine.Info(
 					(aClass2547 == null ? (aClass2547 = method968("javax.sound.sampled.SourceDataLine"))
 							: aClass2547), anAudioFormat2545,
-					arg0 << (!Class4_Sub20_Sub7_Sub1.aBoolean3218 ? 1 : 2)));
+					arg0 << (!Actor.aBoolean3218 ? 1 : 2)));
 			aSourceDataLine2543 = (SourceDataLine) AudioSystem.getLine(info);
 			aSourceDataLine2543.open();
 			aSourceDataLine2543.start();
@@ -84,7 +84,7 @@ public class Class43_Sub2 extends Class43 {
 	@Override
 	public void method965() {
 		int i = 256;
-		if (Class4_Sub20_Sub7_Sub1.aBoolean3218)
+		if (Actor.aBoolean3218)
 			i <<= 1;
 		for (int i_0_ = 0; i_0_ < i; i_0_++) {
 			int i_1_ = anIntArray877[i_0_];

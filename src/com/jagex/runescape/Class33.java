@@ -9,7 +9,7 @@ public class Class33 {
 	public static int anInt705;
 	public static int anInt706;
 	public static int anInt707;
-	public static int anInt708;
+	public static int cameraY;
 	public static int anInt710;
 	public static int anInt712;
 	public static int anInt714 = -1;
@@ -21,16 +21,16 @@ public class Class33 {
 			Class4_Sub20_Sub10.anInt3057 = Class4_Sub20_Sub10.anInt3060;
 			if ((Class4_Sub20_Sub11.anInt3093 ^ 0xffffffff) > -1) {
 				for (int i = 0; (i ^ 0xffffffff) > -113; i++)
-					Class4_Sub17.aBooleanArray2320[i] = false;
+					Game.keyStatus[i] = false;
 				Class4_Sub20_Sub11.anInt3093 = Class4_Sub20_Sub13.anInt3111;
 			} else {
 				while ((Class4_Sub20_Sub13.anInt3111 ^ 0xffffffff) != (Class4_Sub20_Sub11.anInt3093 ^ 0xffffffff)) {
 					int i = Class80.anIntArray1645[Class4_Sub20_Sub13.anInt3111];
 					Class4_Sub20_Sub13.anInt3111 = 0x7f & Class4_Sub20_Sub13.anInt3111 + 1;
 					if (i >= 0)
-						Class4_Sub17.aBooleanArray2320[i] = true;
+						Game.keyStatus[i] = true;
 					else
-						Class4_Sub17.aBooleanArray2320[i ^ 0xffffffff] = false;
+						Game.keyStatus[i ^ 0xffffffff] = false;
 				}
 			}
 			Class4_Sub20_Sub10.anInt3060 = Class4_Sub21.anInt2380;

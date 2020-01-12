@@ -2,8 +2,7 @@ package com.jagex.runescape;
 
 public class Class4_Sub17 extends RSFont {
 	public static boolean aBoolean2319;
-	public static boolean[] aBooleanArray2320;
-	public static Class19 aClass19_2323;
+    public static Class19 aClass19_2323;
 	public static Class19_Sub1 aClass19_Sub1_2321;
 	public static Class19_Sub1 aClass19_Sub1_2327;
 	public static JagexString aJagexString_2322 = JagexString.getRs2PreparedString(
@@ -19,7 +18,7 @@ public class Class4_Sub17 extends RSFont {
 	public static int anInt2330;
 	public static int anInt2331;
 	static {
-		aBooleanArray2320 = new boolean[112];
+		Game.keyStatus = new boolean[112];
 		aBoolean2319 = false;
 		aJagexString_2333 = JagexString.getRs2PreparedString(
 				"button near the top of that page)3");
@@ -53,7 +52,7 @@ public class Class4_Sub17 extends RSFont {
 
 	public static void method307(int arg0) {
 		try {
-			aBooleanArray2320 = null;
+			Game.keyStatus = null;
 			aJagexString_2322 = null;
 			if (arg0 != 0)
 				anInt2329 = 93;

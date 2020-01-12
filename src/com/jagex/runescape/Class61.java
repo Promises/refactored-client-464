@@ -206,19 +206,19 @@ public class Class61 {
 				}
 				if ((Class40.anInt781 ^ 0xffffffff) < -1)
 					Class40.anInt781--;
-				if (Class4_Sub17.aBooleanArray2320[96]
-						|| Class4_Sub17.aBooleanArray2320[97]
-						|| Class4_Sub17.aBooleanArray2320[98]
-						|| Class4_Sub17.aBooleanArray2320[99])
+				if (Game.keyStatus[96]
+						|| Game.keyStatus[97]
+						|| Game.keyStatus[98]
+						|| Game.keyStatus[99])
 					RSFont.aBoolean152 = true;
 				if (RSFont.aBoolean152 && Class40.anInt781 <= 0) {
 					Class77.anInt1595++;
 					RSFont.aBoolean152 = false;
 					Class40.anInt781 = 20;
 					Class66.aClass4_Sub11_Sub1_1328.method264(128, -23);
-					Class66.aClass4_Sub11_Sub1_1328.method251(Class1.anInt70,
+					Class66.aClass4_Sub11_Sub1_1328.method251(Class1.cameraVerticalPosition,
 							(byte) 53);
-					Class66.aClass4_Sub11_Sub1_1328.method207(Class49.anInt999,
+					Class66.aClass4_Sub11_Sub1_1328.method207(Class49.cameraHorizontalPosition,
 							2018779304);
 				}
 				if (!Region.aBoolean126 != true
@@ -268,7 +268,7 @@ public class Class61 {
 									|| ((-5 + Class58.anInt1161 ^ 0xffffffff) < (Class4_Sub1.anInt1859 ^ 0xffffffff)))
 								Class4_Sub23.aBoolean2419 = true;
 							RSFont.anInt161++;
-							if (Class4_Sub20_Sub7_Sub1_Sub1.anInt3587 == 0) {
+							if (Player.anInt3587 == 0) {
 								if (Class4_Sub23.aBoolean2419
 										&& RSFont.anInt161 >= 5) {
 									if ((RS2Font.aClass4_Sub13_2763 == Class42.aClass4_Sub13_855)
@@ -421,7 +421,7 @@ public class Class61 {
 							boolean bool = (Class4_Sub20
 									.method319(
 											0,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+											(Class4_Sub15.localPlayer.anIntArray3247[0]),
 											i_23_,
 											i,
 											0,
@@ -431,7 +431,7 @@ public class Class61 {
 											0,
 											0,
 											0,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0])));
+											(Class4_Sub15.localPlayer.anIntArray3248[0])));
 							Class69.anInt1420 = -1;
 							if (bool) {
 								Class2.anInt96 = JagexException.anInt1729;
@@ -466,11 +466,11 @@ public class Class61 {
 							}
 						} else if ((Class78.anInt1598 ^ 0xffffffff) < -1)
 							Class78.anInt1598--;
-						Class24.method789((byte) 104);
+						Class24.method789();
 						if (Class25.aBoolean582)
-							Class78.method1196((byte) 108);
+							Class78.calculateCameraPosition();
 						for (int i = 0; i < 5; i++)
-							Class4_Sub15.anIntArray2295[i]++;
+							Class4_Sub15.quakeTimes[i]++;
 						int i = Class41.method941(arg0 ^ 0x9);
 						int i_24_ = Class31.method881(-10051);
 						if (i > 4500 && (i_24_ ^ 0xffffffff) < -4501) {
@@ -560,58 +560,58 @@ public class Class61 {
 		Class4_Sub20_Sub7_Sub6.method435(94, false);
 		Class38.method920(arg0, 12981);
 		anInt1213++;
-		Class4_Sub20_Sub7_Sub1.method381((byte) 10);
+		Actor.method381((byte) 10);
 		Class25.method796((byte) 103);
 		if (!Class25.aBoolean582) {
-			int i = Class1.anInt70;
-			if ((i ^ 0xffffffff) > (Class74.anInt1514 / 256 ^ 0xffffffff))
-				i = Class74.anInt1514 / 256;
-			int i_27_ = Class4_Sub16.anInt2318 + Class49.anInt999 & 0x7ff;
+			int i = Class1.cameraVerticalPosition;
+			if ((i ^ 0xffffffff) > (Class74.secondaryCameraVertical / 256 ^ 0xffffffff))
+				i = Class74.secondaryCameraVertical / 256;
+			int i_27_ = Class4_Sub16.anInt2318 + Class49.cameraHorizontalPosition & 0x7ff;
 			if (RS2Font.aBooleanArray2765[4]
 					&& 128 + SceneGraph.anIntArray2504[4] > i)
 				i = 128 + SceneGraph.anIntArray2504[4];
 			Class16.method718(
 					i,
-					Class4_Sub20_Sub7_Sub1_Sub2.anInt3621,
-					Class67.method1090(
-							(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3270),
-							(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3267),
-							true, Class82.anInt1711)
-							+ -50, 600 + 3 * i, RSCanvas.anInt57, i_27_,
+					Class24.currentCameraPositionH,
+					Class67.getFloorDrawHeight(
+							(Class4_Sub15.localPlayer.worldX),
+							(Class4_Sub15.localPlayer.worldY),
+                            Class82.plane)
+							+ -50, 600 + 3 * i, Class24.currentCameraPositionV, i_27_,
 					(byte) 76);
 		}
 		int i;
 		if (!Class25.aBoolean582)
 			i = Class4_Sub6.method180(0);
 		else
-			i = Class48.method987((byte) 123);
-		int i_28_ = Class4_Sub20_Sub13.anInt3131;
-		int i_29_ = Class6.anInt209;
-		int i_30_ = Class33.anInt708;
-		int i_31_ = RSInterface.anInt2176;
-		int i_32_ = Class4_Sub6.anInt1941;
+			i = Class48.getCameraPlaneCutscene();
+		int i_28_ = Class4_Sub20_Sub13.cameraVerticalRotation;
+		int i_29_ = Class6.cameraX;
+		int i_30_ = Class33.cameraY;
+		int i_31_ = RSInterface.cameraZ;
+		int i_32_ = Class4_Sub6.cameraHorizontalRotation;
 		for (int i_33_ = 0; i_33_ < 5; i_33_++) {
 			if (RS2Font.aBooleanArray2765[i_33_]) {
 				int i_34_ = (int) (-Class78.anIntArray1607[i_33_]
 						+ ((1 + Class78.anIntArray1607[i_33_] * 2) * Math
 								.random()) + (Math
-						.sin((Class4_Sub15.anIntArray2295[i_33_])
+						.sin((Class4_Sub15.quakeTimes[i_33_])
 								* ((Class58.anIntArray1163[i_33_]) / 100.0)) * (SceneGraph.anIntArray2504[i_33_])));
 				if (i_33_ == 0)
-					Class6.anInt209 += i_34_;
+					Class6.cameraX += i_34_;
 				if (i_33_ == 3)
-					Class4_Sub6.anInt1941 = Class4_Sub6.anInt1941 + i_34_
+					Class4_Sub6.cameraHorizontalRotation = Class4_Sub6.cameraHorizontalRotation + i_34_
 							& 0x7ff;
 				if (i_33_ == 2)
-					Class33.anInt708 += i_34_;
+					Class33.cameraY += i_34_;
 				if ((i_33_ ^ 0xffffffff) == -2)
-					RSInterface.anInt2176 += i_34_;
+					RSInterface.cameraZ += i_34_;
 				if (i_33_ == 4) {
-					Class4_Sub20_Sub13.anInt3131 += i_34_;
-					if ((Class4_Sub20_Sub13.anInt3131 ^ 0xffffffff) > -129)
-						Class4_Sub20_Sub13.anInt3131 = 128;
-					if ((Class4_Sub20_Sub13.anInt3131 ^ 0xffffffff) < -384)
-						Class4_Sub20_Sub13.anInt3131 = 383;
+					Class4_Sub20_Sub13.cameraVerticalRotation += i_34_;
+					if ((Class4_Sub20_Sub13.cameraVerticalRotation ^ 0xffffffff) > -129)
+						Class4_Sub20_Sub13.cameraVerticalRotation = 128;
+					if ((Class4_Sub20_Sub13.cameraVerticalRotation ^ 0xffffffff) < -384)
+						Class4_Sub20_Sub13.cameraVerticalRotation = 383;
 				}
 			}
 		}
@@ -631,9 +631,9 @@ public class Class61 {
 		Class41.method938((byte) 0);
 		Class4_Sub20_Sub12.method488(arg1, arg3, arg2, arg4, 0);
 		Class41.method938((byte) 0);
-		Class4_Sub20_Sub7_Sub6.aClass69_3439.method1121(Class6.anInt209,
-				RSInterface.anInt2176, Class33.anInt708,
-				Class4_Sub20_Sub13.anInt3131, Class4_Sub6.anInt1941, i);
+		Class4_Sub20_Sub7_Sub6.aClass69_3439.method1121(Class6.cameraX,
+				RSInterface.cameraZ, Class33.cameraY,
+				Class4_Sub20_Sub13.cameraVerticalRotation, Class4_Sub6.cameraHorizontalRotation, i);
 		Class41.method938((byte) 0);
 		Class4_Sub20_Sub7_Sub6.aClass69_3439.method1140();
 		Class4_Sub2_Sub1.method100(arg1, arg3, arg2, (byte) -78, arg4);
@@ -641,11 +641,11 @@ public class Class61 {
 		((Class34) Class4_Sub20_Sub12_Sub3.anInterface2_3530).method893(
 				Class4_Sub20_Sub6.anInt2906, (byte) -118);
 		Class24.method788(arg2, arg1, 20, arg3, arg4);
-		Class33.anInt708 = i_30_;
-		Class4_Sub6.anInt1941 = i_32_;
-		Class4_Sub20_Sub13.anInt3131 = i_28_;
-		RSInterface.anInt2176 = i_31_;
-		Class6.anInt209 = i_29_;
+		Class33.cameraY = i_30_;
+		Class4_Sub6.cameraHorizontalRotation = i_32_;
+		Class4_Sub20_Sub13.cameraVerticalRotation = i_28_;
+		RSInterface.cameraZ = i_31_;
+		Class6.cameraX = i_29_;
 		if (Class34.aBoolean1770 && Class14.method698(false, -104, true) == 0)
 			Class34.aBoolean1770 = false;
 		if (Class34.aBoolean1770) {

@@ -1,7 +1,7 @@
 package com.jagex.runescape;
 
 public abstract class Class14 {
-	public static Class4_Sub20_Sub12_Sub2[] aClass4_Sub20_Sub12_Sub2Array405;
+	public static ImageRGB[] aImageRGBArray405;
 	public static Class66 aClass66_408 = new Class66(64);
 	public static int anInt389;
 	public static int anInt391;
@@ -65,7 +65,7 @@ public abstract class Class14 {
 	public static int method700(int arg0, int arg1, int arg2, int arg3,
 			byte arg4) {
 		try {
-			int i = ((-Class4_Sub20_Sub12_Sub3.anIntArray3528[arg3 * 1024
+			int i = ((-Class4_Sub20_Sub12_Sub3.COSINE[arg3 * 1024
 					/ arg1] + 65536) >> 1072078657);
 			if (arg4 < 106)
 				StringUtilities.aJagexString_403 = null;
@@ -167,7 +167,7 @@ public abstract class Class14 {
 						i = i_11_;
 						if ((i_12_ ^ 0xffffffff) == -3
 								&& (Class4_Sub20_Sub7_Sub6.aClass69_3439
-										.method1146(Class82.anInt1711, i_14_,
+										.method1146(Class82.plane, i_14_,
 												i_15_, i_11_)) >= 0) {
 							Class4_Sub20_Sub1 class4_sub20_sub1 = Region
 									.method56(true, i_13_);
@@ -261,15 +261,15 @@ public abstract class Class14 {
 						if ((i_12_ ^ 0xffffffff) == -2) {
 							Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = (Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i_13_]);
 							if (((class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617.anInt2791) ^ 0xffffffff) == -2
-									&& ((0x7f & class4_sub20_sub7_sub1_sub2.anInt3270) ^ 0xffffffff) == -65
-									&& ((class4_sub20_sub7_sub1_sub2.anInt3267 & 0x7f) ^ 0xffffffff) == -65) {
+									&& ((0x7f & class4_sub20_sub7_sub1_sub2.worldX) ^ 0xffffffff) == -65
+									&& ((class4_sub20_sub7_sub1_sub2.worldY & 0x7f) ^ 0xffffffff) == -65) {
 								for (int i_18_ = 0; ((GameShell.anInt12 ^ 0xffffffff) < (i_18_ ^ 0xffffffff)); i_18_++) {
 									Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2_19_ = (Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[(Class4_Sub11_Sub1.anIntArray2695[i_18_])]);
 									if (class4_sub20_sub7_sub1_sub2_19_ != null
 											&& (class4_sub20_sub7_sub1_sub2_19_ != class4_sub20_sub7_sub1_sub2)
 											&& ((class4_sub20_sub7_sub1_sub2_19_.aClass4_Sub20_Sub3_3617.anInt2791) ^ 0xffffffff) == -2
-											&& ((class4_sub20_sub7_sub1_sub2.anInt3270) == (class4_sub20_sub7_sub1_sub2_19_.anInt3270))
-											&& ((class4_sub20_sub7_sub1_sub2.anInt3267) == (class4_sub20_sub7_sub1_sub2_19_.anInt3267)))
+											&& ((class4_sub20_sub7_sub1_sub2.worldX) == (class4_sub20_sub7_sub1_sub2_19_.worldX))
+											&& ((class4_sub20_sub7_sub1_sub2.worldY) == (class4_sub20_sub7_sub1_sub2_19_.worldY)))
 										Class42.method946(
 												(class4_sub20_sub7_sub1_sub2_19_.aClass4_Sub20_Sub3_3617),
 												i_14_,
@@ -278,13 +278,13 @@ public abstract class Class14 {
 												(Class4_Sub11_Sub1.anIntArray2695[i_18_]));
 								}
 								for (int i_20_ = 0; i_20_ < Class4_Sub20_Sub7_Sub6.anInt3431; i_20_++) {
-									Class4_Sub20_Sub7_Sub1_Sub1 class4_sub20_sub7_sub1_sub1 = (Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[(Class4_Sub23.anIntArray2432[i_20_])]);
-									if (class4_sub20_sub7_sub1_sub1 != null
-											&& (((class4_sub20_sub7_sub1_sub1.anInt3270) ^ 0xffffffff) == ((class4_sub20_sub7_sub1_sub2.anInt3270) ^ 0xffffffff))
-											&& (((class4_sub20_sub7_sub1_sub1.anInt3267) ^ 0xffffffff) == ((class4_sub20_sub7_sub1_sub2.anInt3267) ^ 0xffffffff)))
+									Player player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[(Class4_Sub23.anIntArray2432[i_20_])]);
+									if (player != null
+											&& (((player.worldX) ^ 0xffffffff) == ((class4_sub20_sub7_sub1_sub2.worldX) ^ 0xffffffff))
+											&& (((player.worldY) ^ 0xffffffff) == ((class4_sub20_sub7_sub1_sub2.worldY) ^ 0xffffffff)))
 										Class2.method42(
 												30345,
-												class4_sub20_sub7_sub1_sub1,
+												player,
 												i_14_,
 												i_15_,
 												(Class4_Sub23.anIntArray2432[i_20_]));
@@ -295,15 +295,15 @@ public abstract class Class14 {
 									i_14_, arg2 ^ 0x4d2, i_15_, i_13_);
 						}
 						if ((i_12_ ^ 0xffffffff) == -1) {
-							Class4_Sub20_Sub7_Sub1_Sub1 class4_sub20_sub7_sub1_sub1 = (Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i_13_]);
-							if ((class4_sub20_sub7_sub1_sub1.anInt3270 & 0x7f ^ 0xffffffff) == -65
-									&& (class4_sub20_sub7_sub1_sub1.anInt3267 & 0x7f) == 64) {
+							Player player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_13_]);
+							if ((player.worldX & 0x7f ^ 0xffffffff) == -65
+									&& (player.worldY & 0x7f) == 64) {
 								for (int i_21_ = 0; i_21_ < GameShell.anInt12; i_21_++) {
 									Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = (Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[(Class4_Sub11_Sub1.anIntArray2695[i_21_])]);
 									if (class4_sub20_sub7_sub1_sub2 != null
 											&& ((class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617.anInt2791) ^ 0xffffffff) == -2
-											&& (((class4_sub20_sub7_sub1_sub1.anInt3270) ^ 0xffffffff) == ((class4_sub20_sub7_sub1_sub2.anInt3270) ^ 0xffffffff))
-											&& ((class4_sub20_sub7_sub1_sub1.anInt3267) == (class4_sub20_sub7_sub1_sub2.anInt3267)))
+											&& (((player.worldX) ^ 0xffffffff) == ((class4_sub20_sub7_sub1_sub2.worldX) ^ 0xffffffff))
+											&& ((player.worldY) == (class4_sub20_sub7_sub1_sub2.worldY)))
 										Class42.method946(
 												(class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617),
 												i_14_,
@@ -312,24 +312,24 @@ public abstract class Class14 {
 												(Class4_Sub11_Sub1.anIntArray2695[i_21_]));
 								}
 								for (int i_22_ = 0; i_22_ < Class4_Sub20_Sub7_Sub6.anInt3431; i_22_++) {
-									Class4_Sub20_Sub7_Sub1_Sub1 class4_sub20_sub7_sub1_sub1_23_ = (Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[(Class4_Sub23.anIntArray2432[i_22_])]);
-									if (class4_sub20_sub7_sub1_sub1_23_ != null
-											&& (class4_sub20_sub7_sub1_sub1_23_ != class4_sub20_sub7_sub1_sub1)
-											&& ((class4_sub20_sub7_sub1_sub1.anInt3270) == (class4_sub20_sub7_sub1_sub1_23_.anInt3270))
-											&& ((class4_sub20_sub7_sub1_sub1.anInt3267) == (class4_sub20_sub7_sub1_sub1_23_.anInt3267)))
+									Player player_23_ = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[(Class4_Sub23.anIntArray2432[i_22_])]);
+									if (player_23_ != null
+											&& (player_23_ != player)
+											&& ((player.worldX) == (player_23_.worldX))
+											&& ((player.worldY) == (player_23_.worldY)))
 										Class2.method42(
 												30345,
-												class4_sub20_sub7_sub1_sub1_23_,
+												player_23_,
 												i_14_,
 												i_15_,
 												(Class4_Sub23.anIntArray2432[i_22_]));
 								}
 							}
-							Class2.method42(30345, class4_sub20_sub7_sub1_sub1,
+							Class2.method42(30345, player,
 									i_14_, i_15_, i_13_);
 						}
 						if ((i_12_ ^ 0xffffffff) == -4) {
-							Class65 class65 = (Class40.aClass65ArrayArrayArray787[Class82.anInt1711][i_14_][i_15_]);
+							Class65 class65 = (Class40.aClass65ArrayArrayArray787[Class82.plane][i_14_][i_15_]);
 							if (class65 != null) {
 								for (Class4_Sub20_Sub7_Sub4 class4_sub20_sub7_sub4 = ((Class4_Sub20_Sub7_Sub4) class65
 										.method1078(0)); class4_sub20_sub7_sub4 != null; class4_sub20_sub7_sub4 = ((Class4_Sub20_Sub7_Sub4) class65
@@ -479,7 +479,7 @@ public abstract class Class14 {
 			StringUtilities.aJagexString_400 = null;
 			StringUtilities.aJagexString_411 = null;
 			StringUtilities.aJagexString_403 = null;
-			aClass4_Sub20_Sub12_Sub2Array405 = null;
+			aImageRGBArray405 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "df.L("
 					+ arg0 + ')');

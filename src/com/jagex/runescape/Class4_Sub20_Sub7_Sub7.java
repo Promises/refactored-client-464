@@ -44,7 +44,7 @@ public class Class4_Sub20_Sub7_Sub7 extends Class4_Sub20_Sub7 {
 		anIntArray3475 = new int[4096];
 		anIntArray3482 = new int[4096];
 		anIntArrayArray3472 = new int[1600][512];
-		anIntArray3483 = Class4_Sub20_Sub12_Sub3.anIntArray3528;
+		anIntArray3483 = Class4_Sub20_Sub12_Sub3.COSINE;
 		anIntArray3488 = new int[4096];
 		anIntArray3487 = new int[12];
 		anIntArray3481 = Class4_Sub20_Sub12_Sub3.anIntArray3539;
@@ -57,7 +57,7 @@ public class Class4_Sub20_Sub7_Sub7 extends Class4_Sub20_Sub7 {
 		aBoolean3490 = false;
 		anInt3493 = 0;
 		anIntArray3502 = new int[12];
-		anIntArray3500 = Class4_Sub20_Sub12_Sub3.anIntArray3524;
+		anIntArray3500 = Class4_Sub20_Sub12_Sub3.SINE;
 		anIntArray3498 = new int[10];
 		anInt3495 = 0;
 		anIntArray3505 = new int[10];

@@ -50,25 +50,25 @@ public class Class10 {
 			Class4_Sub20_Sub7_Sub6.anInt3431 = arg0;
 			for (int i_7_ = 0; i_7_ < i; i_7_++) {
 				int i_8_ = Class4_Sub23.anIntArray2432[i_7_];
-				Class4_Sub20_Sub7_Sub1_Sub1 class4_sub20_sub7_sub1_sub1 = (Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i_8_]);
+				Player player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_8_]);
 				int i_9_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
 						-1432215741, 1);
 				if ((i_9_ ^ 0xffffffff) == -1) {
 					Class4_Sub23.anIntArray2432[Class4_Sub20_Sub7_Sub6.anInt3431++] = i_8_;
-					class4_sub20_sub7_sub1_sub1.anInt3256 = Region.anInt134;
+					player.anInt3256 = Region.anInt134;
 				} else {
 					int i_10_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.method266(-1432215741, 2);
 					if (i_10_ == 0) {
 						Class4_Sub23.anIntArray2432[Class4_Sub20_Sub7_Sub6.anInt3431++] = i_8_;
-						class4_sub20_sub7_sub1_sub1.anInt3256 = Region.anInt134;
+						player.anInt3256 = Region.anInt134;
 						Class48.anIntArray979[JagexException.anInt1726++] = i_8_;
 					} else if (i_10_ == 1) {
 						Class4_Sub23.anIntArray2432[Class4_Sub20_Sub7_Sub6.anInt3431++] = i_8_;
-						class4_sub20_sub7_sub1_sub1.anInt3256 = Region.anInt134;
+						player.anInt3256 = Region.anInt134;
 						int i_11_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 								.method266(-1432215741, 3);
-						class4_sub20_sub7_sub1_sub1.method386(false, false,
+						player.method386(false, false,
 								i_11_);
 						int i_12_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 								.method266(arg0 ^ ~0x555de0bc, 1);
@@ -76,14 +76,14 @@ public class Class10 {
 							Class48.anIntArray979[JagexException.anInt1726++] = i_8_;
 					} else if ((i_10_ ^ 0xffffffff) == -3) {
 						Class4_Sub23.anIntArray2432[Class4_Sub20_Sub7_Sub6.anInt3431++] = i_8_;
-						class4_sub20_sub7_sub1_sub1.anInt3256 = Region.anInt134;
+						player.anInt3256 = Region.anInt134;
 						int i_13_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 								.method266(-1432215741, 3);
-						class4_sub20_sub7_sub1_sub1.method386(false, true,
+						player.method386(false, true,
 								i_13_);
 						int i_14_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 								.method266(-1432215741, 3);
-						class4_sub20_sub7_sub1_sub1.method386(false, true,
+						player.method386(false, true,
 								i_14_);
 						int i_15_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 								.method266(-1432215741, 1);

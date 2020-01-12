@@ -37,7 +37,7 @@ public class AppletListener implements
     public static void method1149() {
         try {
             synchronized (GameShell.appletListener) {
-                Class4_Sub20_Sub7_Sub1_Sub1.anInt3587 = GameShell.mouseButtonPressed;
+                Player.anInt3587 = GameShell.mouseButtonPressed;
                 Class37.anInt767 = GameShell.mouseX;
                 Class4_Sub1.anInt1859 = GameShell.mouseY;
                 Class62.anInt1227 = GameShell.eventMouseButtonPressed;

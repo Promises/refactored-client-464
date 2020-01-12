@@ -30,8 +30,9 @@ public class Class18 implements KeyListener, FocusListener {
 			aLongArray483 = null;
 			StringUtilities.aJagexString_478 = null;
 			StringUtilities.aJagexString_472 = null;
-			if (arg0 > -73)
+			if (arg0 > -73) {
 				method733(4, (byte) 123, -124, 90);
+			}
 			StringUtilities.aJagexString_464 = null;
 			aClass65_463 = null;
 			StringUtilities.aJagexString_484 = null;
@@ -55,15 +56,19 @@ public class Class18 implements KeyListener, FocusListener {
 	public static int method733(int arg0, byte arg1, int arg2, int arg3) {
 		try {
 			anInt465++;
-			if (arg1 != 18)
+			if (arg1 != 18) {
 				return 67;
+			}
 			arg3 &= 0x3;
-			if (arg3 == 0)
+			if (arg3 == 0) {
 				return arg0;
-			if ((arg3 ^ 0xffffffff) == -2)
+			}
+			if ((arg3 ^ 0xffffffff) == -2) {
 				return arg2;
-			if (arg3 == 2)
+			}
+			if (arg3 == 2) {
 				return 7 + -arg0;
+			}
 			return 7 + -arg2;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ee.A("
@@ -75,24 +80,33 @@ public class Class18 implements KeyListener, FocusListener {
 			throws ClassNotFoundException {
 		try {
 			anInt467++;
-			if (arg1.equals("B"))
+			if (arg1.equals("B")) {
 				return Byte.TYPE;
-			if (arg1.equals("I"))
+			}
+			if (arg1.equals("I")) {
 				return Integer.TYPE;
-			if (arg1.equals("S"))
+			}
+			if (arg1.equals("S")) {
 				return Short.TYPE;
-			if (arg1.equals("J"))
+			}
+			if (arg1.equals("J")) {
 				return Long.TYPE;
-			if (arg1.equals("Z"))
+			}
+			if (arg1.equals("Z")) {
 				return Boolean.TYPE;
-			if (arg1.equals("F"))
+			}
+			if (arg1.equals("F")) {
 				return Float.TYPE;
-			if (arg0 != false)
+			}
+			if (arg0 != false) {
 				method731(30);
-			if (arg1.equals("D"))
+			}
+			if (arg1.equals("D")) {
 				return Double.TYPE;
-			if (arg1.equals("C"))
+			}
+			if (arg1.equals("C")) {
 				return Character.TYPE;
+			}
 			return Class.forName(arg1);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ee.C("
@@ -114,27 +128,31 @@ public class Class18 implements KeyListener, FocusListener {
 	@Override
 	public synchronized void focusLost(FocusEvent arg0) {
 		anInt480++;
-		if (Class4_Sub14.aClass18_2272 != null)
+		if (Class4_Sub14.aClass18_2272 != null) {
 			Class4_Sub20_Sub11.anInt3093 = -1;
+		}
 	}
 
 	@Override
 	public synchronized void keyPressed(KeyEvent arg0) {
 		try {
 			if (Class4_Sub14.aClass18_2272 != null) {
-				Class4_Sub21.anInt2379 = 0;
+				Class4_Sub21.idleTime = 0;
 				int i = arg0.getKeyCode();
 				if ((i ^ 0xffffffff) <= -1 && Class14.anIntArray392.length > i) {
 					i = Class14.anIntArray392[i];
-					if ((0x80 & i) != 0)
+					if ((0x80 & i) != 0) {
 						i = -1;
-				} else
+					}
+				} else {
 					i = -1;
+				}
 				if ((Class4_Sub20_Sub11.anInt3093 ^ 0xffffffff) <= -1 && i >= 0) {
 					Class80.anIntArray1645[Class4_Sub20_Sub11.anInt3093] = i;
 					Class4_Sub20_Sub11.anInt3093 = 0x7f & Class4_Sub20_Sub11.anInt3093 + 1;
-					if ((Class4_Sub20_Sub11.anInt3093 ^ 0xffffffff) == (Class4_Sub20_Sub13.anInt3111 ^ 0xffffffff))
+					if ((Class4_Sub20_Sub11.anInt3093 ^ 0xffffffff) == (Class4_Sub20_Sub13.anInt3111 ^ 0xffffffff)) {
 						Class4_Sub20_Sub11.anInt3093 = -1;
+					}
 				}
 				if (i >= 0) {
 					int i_0_ = 0x7f & Class4_Sub21.anInt2380 + 1;
@@ -145,8 +163,9 @@ public class Class18 implements KeyListener, FocusListener {
 					}
 				}
 				int i_1_ = arg0.getModifiers();
-				if ((i_1_ & 0xa ^ 0xffffffff) != -1 || i == 85 || i == 10)
+				if ((i_1_ & 0xa ^ 0xffffffff) != -1 || i == 85 || i == 10) {
 					arg0.consume();
+				}
 			}
 			anInt481++;
 		} catch (RuntimeException runtimeexception) {
@@ -161,19 +180,21 @@ public class Class18 implements KeyListener, FocusListener {
 		try {
 			anInt479++;
 			if (Class4_Sub14.aClass18_2272 != null) {
-				Class4_Sub21.anInt2379 = 0;
+				Class4_Sub21.idleTime = 0;
 				int i = arg0.getKeyCode();
 				if ((i ^ 0xffffffff) <= -1
-						&& ((Class14.anIntArray392.length ^ 0xffffffff) < (i ^ 0xffffffff)))
+						&& ((Class14.anIntArray392.length ^ 0xffffffff) < (i ^ 0xffffffff))) {
 					i = ~0x80 & Class14.anIntArray392[i];
-				else
+				} else {
 					i = -1;
+				}
 				if ((Class4_Sub20_Sub11.anInt3093 ^ 0xffffffff) <= -1
 						&& (i ^ 0xffffffff) <= -1) {
 					Class80.anIntArray1645[Class4_Sub20_Sub11.anInt3093] = i ^ 0xffffffff;
 					Class4_Sub20_Sub11.anInt3093 = 0x7f & 1 + Class4_Sub20_Sub11.anInt3093;
-					if (Class4_Sub20_Sub13.anInt3111 == Class4_Sub20_Sub11.anInt3093)
+					if (Class4_Sub20_Sub13.anInt3111 == Class4_Sub20_Sub11.anInt3093) {
 						Class4_Sub20_Sub11.anInt3093 = -1;
+					}
 				}
 			}
 			arg0.consume();

@@ -1,4 +1,6 @@
 package com.jagex.runescape;
+import com.jagex.runescape.audio.Filter;
+import com.jagex.runescape.audio.Instrument;
 import com.jagex.runescape.net.StreamBuffer;
 import tech.henning.client.Configuration;
 
@@ -34,8 +36,9 @@ public class Game extends GameShell {
 	public static int anInt1842;
 	public static int anInt1843;
 	public static int anInt1845;
+    public static boolean[] keyStatus;
 
-	static {
+    static {
 		aJagexString_1846 = JagexString.getRs2PreparedString(
 				"Your account is already logged in)3");
 		aJagexString_1850 = aJagexString_1848;
@@ -142,7 +145,7 @@ public class Game extends GameShell {
 		}
 	}
 
-	public static void method31(int arg0, int arg1, Class4_Sub20_Sub7_Sub1 arg2) {
+	public static void method31(int arg0, int arg1, Actor arg2) {
 		try {
 			anInt1845++;
 			if (Region.anInt134 >= arg2.anInt3224) {
@@ -154,29 +157,29 @@ public class Game extends GameShell {
 				Class4_Sub20_Sub7_Sub6.method434(arg2, false);
 			if (arg1 != 4)
 				aJagexString_1838 = null;
-			if (arg2.anInt3270 < 128 || arg2.anInt3267 < 128
-					|| (arg2.anInt3270 ^ 0xffffffff) <= -13185
-					|| (arg2.anInt3267 ^ 0xffffffff) <= -13185) {
+			if (arg2.worldX < 128 || arg2.worldY < 128
+					|| (arg2.worldX ^ 0xffffffff) <= -13185
+					|| (arg2.worldY ^ 0xffffffff) <= -13185) {
 				arg2.anInt3226 = -1;
 				arg2.anInt3224 = 0;
 				arg2.anInt3281 = 0;
-				arg2.anInt3270 = 128 * arg2.anIntArray3248[0]
+				arg2.worldX = 128 * arg2.anIntArray3248[0]
 						- -(64 * arg2.anInt3244);
-				arg2.anInt3267 = 64 * arg2.anInt3244 + arg2.anIntArray3247[0]
+				arg2.worldY = 64 * arg2.anInt3244 + arg2.anIntArray3247[0]
 						* 128;
 				arg2.anInt3277 = -1;
 				arg2.method382(true);
 			}
-			if (Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302 == arg2
-					&& (arg2.anInt3270 < 1536
-							|| (arg2.anInt3267 ^ 0xffffffff) > -1537
-							|| arg2.anInt3270 >= 11776 || (arg2.anInt3267 ^ 0xffffffff) <= -11777)) {
-				arg2.anInt3267 = 64 * arg2.anInt3244 + 128
+			if (Class4_Sub15.localPlayer == arg2
+					&& (arg2.worldX < 1536
+							|| (arg2.worldY ^ 0xffffffff) > -1537
+							|| arg2.worldX >= 11776 || (arg2.worldY ^ 0xffffffff) <= -11777)) {
+				arg2.worldY = 64 * arg2.anInt3244 + 128
 						* arg2.anIntArray3247[0];
 				arg2.anInt3224 = 0;
 				arg2.anInt3226 = -1;
 				arg2.anInt3281 = 0;
-				arg2.anInt3270 = arg2.anIntArray3248[0] * 128
+				arg2.worldX = arg2.anIntArray3248[0] * 128
 						- -(arg2.anInt3244 * 64);
 				arg2.anInt3277 = -1;
 				arg2.method382(true);
@@ -339,7 +342,7 @@ public class Game extends GameShell {
 											(byte) 96,
 											graphics,
 											Class24.anIntArray568[i_3_],
-											Class4_Sub20_Sub7_Sub1.anIntArray3268[i_3_],
+											Actor.anIntArray3268[i_3_],
 											Class42.anIntArray852[i_3_]);
 							Class16.aBooleanArray452[i_3_] = false;
 						}
@@ -373,7 +376,7 @@ public class Game extends GameShell {
 			Class69.method1106();
 			Region.method66(false);
 			RSInterface.method291(123);
-			Class4_Sub20_Sub7_Sub1_Sub1.method393(65535);
+			Player.method393(65535);
 			Class65.method1073(false);
 			Class16.method722(88);
 			Class42.method948(-122);
@@ -382,7 +385,7 @@ public class Game extends GameShell {
 			Class8.method659((byte) -5);
 			Class35.method907(-3);
 			Class4_Sub20_Sub17.method615((byte) -80);
-			Class4_Sub20_Sub7_Sub1.method388(-88);
+			Actor.method388(-88);
 			Class4_Sub7.method188(1);
 			Class4_Sub20_Sub3.method351(-23648);
 			Class4_Sub16.method305(true);
@@ -459,7 +462,7 @@ public class Game extends GameShell {
 				Class4_Sub14.method296(true);
 				Class11.method673(126);
 				Class59.method1036((byte) 34);
-				Class79.method1198();
+				Instrument.method1198();
 				Class4_Sub20_Sub7_Sub5.method427(false);
 				Class4_Sub20_Sub7_Sub3.method417((byte) -65);
 				Class4_Sub15.method299(87);
@@ -476,7 +479,7 @@ public class Game extends GameShell {
 				Class54.method1013(-57);
 				Class7.method656(false);
 				Class43_Sub1.method967();
-				Class56.method1019();
+				Filter.method1019();
 				Class30.method874(-1);
 				Class44.method969();
 				Class4_Sub24.method640((byte) -126);
@@ -764,4 +767,12 @@ public class Game extends GameShell {
 			Class54.anInt1109 = 1000;
 		}
 	}
+
+	void mouseWheelDragged(int i, int j) {
+		if (!mouseWheelDown)
+			return;
+		Class78.cameraVelocityHorizontal += i * 3;
+		Class4_Sub20_Sub13.cameraVelocityVertical += (j << 1);
+	}
+
 }

@@ -12,13 +12,13 @@ public class Class4_Sub8 extends RSFont {
 	public static Class66 aClass66_1972;
 	public static int anInt1967;
 	public static int anInt1978;
-	public static int[] anIntArray1979;
+	public static int[] minimapHintY;
 	public static int[] anIntArray1980;
 	static {
 		aJagexString_1966 = JagexString.getRs2PreparedString("Freie Welt");
 		aJagexString_1970 = JagexString.getRs2PreparedString("Username: ");
 		aJagexString_1971 = JagexString.getRs2PreparedString("<col=ffffff>");
-		anIntArray1979 = new int[1000];
+		minimapHintY = new int[1000];
 		aJagexString_1976 = JagexString.getRs2PreparedString("Hierhin gehen");
 		aJagexString_1974 = aJagexString_1968;
 		aJagexString_1977 = aJagexString_1970;
@@ -56,7 +56,7 @@ public class Class4_Sub8 extends RSFont {
 			aJagexString_1977 = null;
 			aJagexString_1968 = null;
 			aJagexString_1971 = null;
-			anIntArray1979 = null;
+			minimapHintY = null;
 			if (arg0 != 30)
 				method190(92);
 			aJagexString_1970 = null;

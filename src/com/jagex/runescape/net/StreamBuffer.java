@@ -112,14 +112,14 @@ public class StreamBuffer extends RSFont {
 			int i_2_ = Class4_Sub1.anIntArray1862[arg1];
 			int i_3_ = Class40.anIntArray789[arg1];
 			if ((i ^ 0xffffffff) == -58) {
-				Class4_Sub20_Sub7_Sub1_Sub1 class4_sub20_sub7_sub1_sub1 = (Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i_2_]);
-				if (class4_sub20_sub7_sub1_sub1 != null) {
+				Player player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_2_]);
+				if (player != null) {
 					Class4_Sub20
 							.method319(
 									1,
-									(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
-									class4_sub20_sub7_sub1_sub1.anIntArray3247[0],
-									class4_sub20_sub7_sub1_sub1.anIntArray3248[0],
+									(Class4_Sub15.localPlayer.anIntArray3247[0]),
+									player.anIntArray3247[0],
+									player.anIntArray3248[0],
 									1,
 									0,
 									false,
@@ -127,7 +127,7 @@ public class StreamBuffer extends RSFont {
 									0,
 									arg0,
 									0,
-									(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]));
+									(Class4_Sub15.localPlayer.anIntArray3248[0]));
 					Class28.anInt640 = 2;
 					Class57.anInt1155 = Class37.anInt758;
 					Class2.anInt96 = JagexException.anInt1729;
@@ -144,7 +144,7 @@ public class StreamBuffer extends RSFont {
 					Class4_Sub20
 							.method319(
 									1,
-									(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+									(Class4_Sub15.localPlayer.anIntArray3247[0]),
 									class4_sub20_sub7_sub1_sub2.anIntArray3247[0],
 									class4_sub20_sub7_sub1_sub2.anIntArray3248[0],
 									1,
@@ -154,7 +154,7 @@ public class StreamBuffer extends RSFont {
 									0,
 									arg0,
 									0,
-									(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]));
+									(Class4_Sub15.localPlayer.anIntArray3248[0]));
 					Class2.anInt96 = JagexException.anInt1729;
 					Class28.anInt640 = 2;
 					Class57.anInt1155 = Class37.anInt758;
@@ -195,14 +195,14 @@ public class StreamBuffer extends RSFont {
 				Class4_Sub20_Sub7_Sub6.anInt3443 = i_1_;
 			}
 			if (i == 26) {
-				Class4_Sub20_Sub7_Sub1_Sub1 class4_sub20_sub7_sub1_sub1 = (Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i_2_]);
-				if (class4_sub20_sub7_sub1_sub1 != null) {
+				Player player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_2_]);
+				if (player != null) {
 					Class4_Sub20
 							.method319(
 									1,
-									(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
-									class4_sub20_sub7_sub1_sub1.anIntArray3247[0],
-									class4_sub20_sub7_sub1_sub1.anIntArray3248[0],
+									(Class4_Sub15.localPlayer.anIntArray3247[0]),
+									player.anIntArray3247[0],
+									player.anIntArray3248[0],
 									1,
 									0,
 									false,
@@ -210,7 +210,7 @@ public class StreamBuffer extends RSFont {
 									0,
 									0,
 									0,
-									(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]));
+									(Class4_Sub15.localPlayer.anIntArray3248[0]));
 					Class2.anInt96 = JagexException.anInt1729;
 					Class28.anInt640 = 2;
 					Class57.anInt1155 = Class37.anInt758;
@@ -256,7 +256,7 @@ public class StreamBuffer extends RSFont {
 						Class4_Sub20
 								.method319(
 										1,
-										(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+										(Class4_Sub15.localPlayer.anIntArray3247[0]),
 										class4_sub20_sub7_sub1_sub2.anIntArray3247[0],
 										class4_sub20_sub7_sub1_sub2.anIntArray3248[0],
 										1,
@@ -266,7 +266,7 @@ public class StreamBuffer extends RSFont {
 										0,
 										0,
 										0,
-										(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]));
+										(Class4_Sub15.localPlayer.anIntArray3248[0]));
 						Class57.anInt1155 = Class37.anInt758;
 						Class11.anInt331 = 0;
 						Class28.anInt640 = 2;
@@ -285,7 +285,7 @@ public class StreamBuffer extends RSFont {
 						Class4_Sub20
 								.method319(
 										1,
-										(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+										(Class4_Sub15.localPlayer.anIntArray3247[0]),
 										class4_sub20_sub7_sub1_sub2.anIntArray3247[0],
 										class4_sub20_sub7_sub1_sub2.anIntArray3248[0],
 										1,
@@ -295,7 +295,7 @@ public class StreamBuffer extends RSFont {
 										0,
 										0,
 										0,
-										(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]));
+										(Class4_Sub15.localPlayer.anIntArray3248[0]));
 						Class28.anInt640 = 2;
 						Class57.anInt1155 = Class37.anInt758;
 						Class11.anInt331 = 0;
@@ -334,14 +334,14 @@ public class StreamBuffer extends RSFont {
 					Class4_Sub20_Sub7_Sub6.anInt3443 = i_1_;
 				}
 				if ((i ^ 0xffffffff) == -35) {
-					Class4_Sub20_Sub7_Sub1_Sub1 class4_sub20_sub7_sub1_sub1 = (Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i_2_]);
-					if (class4_sub20_sub7_sub1_sub1 != null) {
+					Player player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_2_]);
+					if (player != null) {
 						Class4_Sub20
 								.method319(
 										1,
-										(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
-										class4_sub20_sub7_sub1_sub1.anIntArray3247[0],
-										class4_sub20_sub7_sub1_sub1.anIntArray3248[0],
+										(Class4_Sub15.localPlayer.anIntArray3247[0]),
+										player.anIntArray3247[0],
+										player.anIntArray3248[0],
 										1,
 										0,
 										false,
@@ -349,7 +349,7 @@ public class StreamBuffer extends RSFont {
 										0,
 										0,
 										0,
-										(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]));
+										(Class4_Sub15.localPlayer.anIntArray3248[0]));
 						Class28.anInt640 = 2;
 						Class11.anInt331 = 0;
 						Class7.anInt233++;
@@ -364,7 +364,7 @@ public class StreamBuffer extends RSFont {
 					boolean bool = (Class4_Sub20
 							.method319(
 									0,
-									(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+									(Class4_Sub15.localPlayer.anIntArray3247[0]),
 									i_3_,
 									i_1_,
 									0,
@@ -374,12 +374,12 @@ public class StreamBuffer extends RSFont {
 									0,
 									0,
 									0,
-									(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0])));
+									(Class4_Sub15.localPlayer.anIntArray3248[0])));
 					if (!bool)
 						bool = (Class4_Sub20
 								.method319(
 										1,
-										(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+										(Class4_Sub15.localPlayer.anIntArray3247[0]),
 										i_3_,
 										i_1_,
 										1,
@@ -389,7 +389,7 @@ public class StreamBuffer extends RSFont {
 										0,
 										arg0,
 										0,
-										(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0])));
+										(Class4_Sub15.localPlayer.anIntArray3248[0])));
 					Class28.anInt640 = 2;
 					Class6.anInt200++;
 					Class2.anInt96 = JagexException.anInt1729;
@@ -418,7 +418,7 @@ public class StreamBuffer extends RSFont {
 					boolean bool = (Class4_Sub20
 							.method319(
 									0,
-									(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+									(Class4_Sub15.localPlayer.anIntArray3247[0]),
 									i_3_,
 									i_1_,
 									0,
@@ -428,12 +428,12 @@ public class StreamBuffer extends RSFont {
 									0,
 									0,
 									0,
-									(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0])));
+									(Class4_Sub15.localPlayer.anIntArray3248[0])));
 					if (!bool)
 						bool = (Class4_Sub20
 								.method319(
 										1,
-										(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+										(Class4_Sub15.localPlayer.anIntArray3247[0]),
 										i_3_,
 										i_1_,
 										1,
@@ -443,7 +443,7 @@ public class StreamBuffer extends RSFont {
 										0,
 										arg0,
 										0,
-										(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0])));
+										(Class4_Sub15.localPlayer.anIntArray3248[0])));
 					Class28.anInt640 = 2;
 					Class2.anInt96 = JagexException.anInt1729;
 					Class11.anInt331 = 0;
@@ -460,7 +460,7 @@ public class StreamBuffer extends RSFont {
 					boolean bool = (Class4_Sub20
 							.method319(
 									0,
-									(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+									(Class4_Sub15.localPlayer.anIntArray3247[0]),
 									i_3_,
 									i_1_,
 									0,
@@ -470,12 +470,12 @@ public class StreamBuffer extends RSFont {
 									0,
 									0,
 									0,
-									(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0])));
+									(Class4_Sub15.localPlayer.anIntArray3248[0])));
 					if (!bool)
 						bool = (Class4_Sub20
 								.method319(
 										1,
-										(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+										(Class4_Sub15.localPlayer.anIntArray3247[0]),
 										i_3_,
 										i_1_,
 										1,
@@ -485,7 +485,7 @@ public class StreamBuffer extends RSFont {
 										0,
 										0,
 										0,
-										(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0])));
+										(Class4_Sub15.localPlayer.anIntArray3248[0])));
 					Class57.anInt1155 = Class37.anInt758;
 					Class2.anInt96 = JagexException.anInt1729;
 					Class28.anInt640 = 2;
@@ -501,7 +501,7 @@ public class StreamBuffer extends RSFont {
 					boolean bool = (Class4_Sub20
 							.method319(
 									0,
-									(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+									(Class4_Sub15.localPlayer.anIntArray3247[0]),
 									i_3_,
 									i_1_,
 									0,
@@ -511,13 +511,13 @@ public class StreamBuffer extends RSFont {
 									0,
 									0,
 									0,
-									(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0])));
+									(Class4_Sub15.localPlayer.anIntArray3248[0])));
 					AppletListener.anInt1453++;
 					if (!bool)
 						bool = (Class4_Sub20
 								.method319(
 										1,
-										(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+										(Class4_Sub15.localPlayer.anIntArray3247[0]),
 										i_3_,
 										i_1_,
 										1,
@@ -527,7 +527,7 @@ public class StreamBuffer extends RSFont {
 										0,
 										0,
 										0,
-										(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0])));
+										(Class4_Sub15.localPlayer.anIntArray3248[0])));
 					Class2.anInt96 = JagexException.anInt1729;
 					Class57.anInt1155 = Class37.anInt758;
 					Class11.anInt331 = 0;
@@ -586,7 +586,7 @@ public class StreamBuffer extends RSFont {
 					}
 					if (i == 35)
 						Class4_Sub20_Sub7_Sub6.aClass69_3439.method1139(
-								Class82.anInt1711, i_1_, i_3_);
+								Class82.plane, i_1_, i_3_);
 					if ((i ^ 0xffffffff) == -1004) {
 						Class12.anInt356++;
 						Class25.method798(i_2_, i_3_, i_1_, 0);
@@ -605,7 +605,7 @@ public class StreamBuffer extends RSFont {
 							Class4_Sub20
 									.method319(
 											1,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+											(Class4_Sub15.localPlayer.anIntArray3247[0]),
 											class4_sub20_sub7_sub1_sub2.anIntArray3247[0],
 											class4_sub20_sub7_sub1_sub2.anIntArray3248[0],
 											1,
@@ -615,7 +615,7 @@ public class StreamBuffer extends RSFont {
 											0,
 											arg0,
 											0,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]));
+											(Class4_Sub15.localPlayer.anIntArray3248[0]));
 							Class2.anInt96 = JagexException.anInt1729;
 							Class11.anInt331 = 0;
 							Class28.anInt640 = 2;
@@ -633,7 +633,7 @@ public class StreamBuffer extends RSFont {
 						boolean bool = (Class4_Sub20
 								.method319(
 										0,
-										(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+										(Class4_Sub15.localPlayer.anIntArray3247[0]),
 										i_3_,
 										i_1_,
 										0,
@@ -643,12 +643,12 @@ public class StreamBuffer extends RSFont {
 										0,
 										0,
 										0,
-										(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0])));
+										(Class4_Sub15.localPlayer.anIntArray3248[0])));
 						if (!bool)
 							bool = (Class4_Sub20
 									.method319(
 											1,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+											(Class4_Sub15.localPlayer.anIntArray3247[0]),
 											i_3_,
 											i_1_,
 											1,
@@ -658,7 +658,7 @@ public class StreamBuffer extends RSFont {
 											0,
 											0,
 											0,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0])));
+											(Class4_Sub15.localPlayer.anIntArray3248[0])));
 						Class28.anInt640 = 2;
 						Class57.anInt1155 = Class37.anInt758;
 						Class4_Sub20_Sub17.anInt3203++;
@@ -683,14 +683,14 @@ public class StreamBuffer extends RSFont {
 								- -Class6.anInt217);
 					}
 					if ((i ^ 0xffffffff) == -31) {
-						Class4_Sub20_Sub7_Sub1_Sub1 class4_sub20_sub7_sub1_sub1 = (Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i_2_]);
-						if (class4_sub20_sub7_sub1_sub1 != null) {
+						Player player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_2_]);
+						if (player != null) {
 							Class4_Sub20
 									.method319(
 											1,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
-											class4_sub20_sub7_sub1_sub1.anIntArray3247[0],
-											class4_sub20_sub7_sub1_sub1.anIntArray3248[0],
+											(Class4_Sub15.localPlayer.anIntArray3247[0]),
+											player.anIntArray3247[0],
+											player.anIntArray3248[0],
 											1,
 											0,
 											false,
@@ -698,7 +698,7 @@ public class StreamBuffer extends RSFont {
 											0,
 											0,
 											0,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]));
+											(Class4_Sub15.localPlayer.anIntArray3248[0]));
 							Class28.anInt640 = 2;
 							Class2.anInt96 = JagexException.anInt1729;
 							Class57.anInt1155 = Class37.anInt758;
@@ -762,7 +762,7 @@ public class StreamBuffer extends RSFont {
 						boolean bool = (Class4_Sub20
 								.method319(
 										0,
-										(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+										(Class4_Sub15.localPlayer.anIntArray3247[0]),
 										i_3_,
 										i_1_,
 										0,
@@ -772,12 +772,12 @@ public class StreamBuffer extends RSFont {
 										0,
 										arg0,
 										0,
-										(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0])));
+										(Class4_Sub15.localPlayer.anIntArray3248[0])));
 						if (!bool)
 							bool = (Class4_Sub20
 									.method319(
 											1,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+											(Class4_Sub15.localPlayer.anIntArray3247[0]),
 											i_3_,
 											i_1_,
 											1,
@@ -787,7 +787,7 @@ public class StreamBuffer extends RSFont {
 											0,
 											0,
 											0,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0])));
+											(Class4_Sub15.localPlayer.anIntArray3248[0])));
 						Class11.anInt331 = 0;
 						Class28.anInt640 = 2;
 						Class2.anInt96 = JagexException.anInt1729;
@@ -807,14 +807,14 @@ public class StreamBuffer extends RSFont {
 								Class4_Sub20_Sub8.anInt2987 + i_3_, 2018779304);
 					}
 					if (i == 7) {
-						Class4_Sub20_Sub7_Sub1_Sub1 class4_sub20_sub7_sub1_sub1 = (Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i_2_]);
-						if (class4_sub20_sub7_sub1_sub1 != null) {
+						Player player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_2_]);
+						if (player != null) {
 							Class4_Sub20
 									.method319(
 											1,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
-											class4_sub20_sub7_sub1_sub1.anIntArray3247[0],
-											class4_sub20_sub7_sub1_sub1.anIntArray3248[0],
+											(Class4_Sub15.localPlayer.anIntArray3247[0]),
+											player.anIntArray3247[0],
+											player.anIntArray3248[0],
 											1,
 											0,
 											false,
@@ -822,7 +822,7 @@ public class StreamBuffer extends RSFont {
 											0,
 											0,
 											0,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]));
+											(Class4_Sub15.localPlayer.anIntArray3248[0]));
 							Class11.anInt331 = 0;
 							Class57.anInt1155 = Class37.anInt758;
 							Class2.anInt96 = JagexException.anInt1729;
@@ -887,7 +887,7 @@ public class StreamBuffer extends RSFont {
 							Class4_Sub20
 									.method319(
 											1,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+											(Class4_Sub15.localPlayer.anIntArray3247[0]),
 											class4_sub20_sub7_sub1_sub2.anIntArray3247[0],
 											class4_sub20_sub7_sub1_sub2.anIntArray3248[0],
 											1,
@@ -897,7 +897,7 @@ public class StreamBuffer extends RSFont {
 											0,
 											0,
 											0,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]));
+											(Class4_Sub15.localPlayer.anIntArray3248[0]));
 							Class2.anInt96 = JagexException.anInt1729;
 							Class11.anInt331 = 0;
 							Class28.anInt640 = 2;
@@ -943,7 +943,7 @@ public class StreamBuffer extends RSFont {
 						boolean bool = (Class4_Sub20
 								.method319(
 										0,
-										(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+										(Class4_Sub15.localPlayer.anIntArray3247[0]),
 										i_3_,
 										i_1_,
 										0,
@@ -953,13 +953,13 @@ public class StreamBuffer extends RSFont {
 										0,
 										0,
 										0,
-										(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0])));
+										(Class4_Sub15.localPlayer.anIntArray3248[0])));
 						Class4_Sub20_Sub7_Sub3.anInt3339++;
 						if (!bool)
 							bool = (Class4_Sub20
 									.method319(
 											1,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+											(Class4_Sub15.localPlayer.anIntArray3247[0]),
 											i_3_,
 											i_1_,
 											1,
@@ -969,7 +969,7 @@ public class StreamBuffer extends RSFont {
 											0,
 											0,
 											0,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0])));
+											(Class4_Sub15.localPlayer.anIntArray3248[0])));
 						Class11.anInt331 = 0;
 						Class57.anInt1155 = Class37.anInt758;
 						Class2.anInt96 = JagexException.anInt1729;
@@ -1034,14 +1034,14 @@ public class StreamBuffer extends RSFont {
 						Class4_Sub20_Sub7_Sub6.anInt3443 = i_1_;
 					}
 					if ((i ^ 0xffffffff) == -17) {
-						Class4_Sub20_Sub7_Sub1_Sub1 class4_sub20_sub7_sub1_sub1 = (Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i_2_]);
-						if (class4_sub20_sub7_sub1_sub1 != null) {
+						Player player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_2_]);
+						if (player != null) {
 							Class4_Sub20
 									.method319(
 											1,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
-											class4_sub20_sub7_sub1_sub1.anIntArray3247[0],
-											class4_sub20_sub7_sub1_sub1.anIntArray3248[0],
+											(Class4_Sub15.localPlayer.anIntArray3247[0]),
+											player.anIntArray3247[0],
+											player.anIntArray3248[0],
 											1,
 											0,
 											false,
@@ -1049,7 +1049,7 @@ public class StreamBuffer extends RSFont {
 											0,
 											0,
 											0,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]));
+											(Class4_Sub15.localPlayer.anIntArray3248[0]));
 							Class11.anInt331 = 0;
 							Class4_Sub20_Sub15.anInt3156++;
 							Class28.anInt640 = 2;
@@ -1097,14 +1097,14 @@ public class StreamBuffer extends RSFont {
 						}
 					}
 					if (i == 48) {
-						Class4_Sub20_Sub7_Sub1_Sub1 class4_sub20_sub7_sub1_sub1 = (Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i_2_]);
-						if (class4_sub20_sub7_sub1_sub1 != null) {
+						Player player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_2_]);
+						if (player != null) {
 							Class4_Sub20
 									.method319(
 											1,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
-											class4_sub20_sub7_sub1_sub1.anIntArray3247[0],
-											class4_sub20_sub7_sub1_sub1.anIntArray3248[0],
+											(Class4_Sub15.localPlayer.anIntArray3247[0]),
+											player.anIntArray3247[0],
+											player.anIntArray3248[0],
 											1,
 											0,
 											false,
@@ -1112,7 +1112,7 @@ public class StreamBuffer extends RSFont {
 											0,
 											0,
 											0,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]));
+											(Class4_Sub15.localPlayer.anIntArray3248[0]));
 							Class2.anInt96 = JagexException.anInt1729;
 							RSFont.anInt141++;
 							Class11.anInt331 = 0;
@@ -1125,14 +1125,14 @@ public class StreamBuffer extends RSFont {
 						}
 					}
 					if (i == 17) {
-						Class4_Sub20_Sub7_Sub1_Sub1 class4_sub20_sub7_sub1_sub1 = (Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i_2_]);
-						if (class4_sub20_sub7_sub1_sub1 != null) {
+						Player player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_2_]);
+						if (player != null) {
 							Class4_Sub20
 									.method319(
 											1,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
-											class4_sub20_sub7_sub1_sub1.anIntArray3247[0],
-											class4_sub20_sub7_sub1_sub1.anIntArray3248[0],
+											(Class4_Sub15.localPlayer.anIntArray3247[0]),
+											player.anIntArray3247[0],
+											player.anIntArray3248[0],
 											1,
 											0,
 											false,
@@ -1140,7 +1140,7 @@ public class StreamBuffer extends RSFont {
 											0,
 											0,
 											0,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]));
+											(Class4_Sub15.localPlayer.anIntArray3248[0]));
 							Class67.anInt1339++;
 							Class28.anInt640 = 2;
 							Class2.anInt96 = JagexException.anInt1729;
@@ -1169,15 +1169,15 @@ public class StreamBuffer extends RSFont {
 						Class4_Sub20_Sub7_Sub6.anInt3443 = i_1_;
 					}
 					if (i == 18) {
-						Class4_Sub20_Sub7_Sub1_Sub1 class4_sub20_sub7_sub1_sub1 = (Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i_2_]);
-						if (class4_sub20_sub7_sub1_sub1 != null) {
+						Player player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_2_]);
+						if (player != null) {
 							Class73.anInt1500++;
 							Class4_Sub20
 									.method319(
 											1,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
-											class4_sub20_sub7_sub1_sub1.anIntArray3247[0],
-											class4_sub20_sub7_sub1_sub1.anIntArray3248[0],
+											(Class4_Sub15.localPlayer.anIntArray3247[0]),
+											player.anIntArray3247[0],
+											player.anIntArray3248[0],
 											1,
 											0,
 											false,
@@ -1185,7 +1185,7 @@ public class StreamBuffer extends RSFont {
 											0,
 											arg0,
 											0,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]));
+											(Class4_Sub15.localPlayer.anIntArray3248[0]));
 							Class28.anInt640 = 2;
 							Class11.anInt331 = 0;
 							Class57.anInt1155 = Class37.anInt758;
@@ -1202,7 +1202,7 @@ public class StreamBuffer extends RSFont {
 							Class4_Sub20
 									.method319(
 											1,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+											(Class4_Sub15.localPlayer.anIntArray3247[0]),
 											class4_sub20_sub7_sub1_sub2.anIntArray3247[0],
 											class4_sub20_sub7_sub1_sub2.anIntArray3248[0],
 											1,
@@ -1212,7 +1212,7 @@ public class StreamBuffer extends RSFont {
 											0,
 											arg0,
 											0,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]));
+											(Class4_Sub15.localPlayer.anIntArray3248[0]));
 							Class11.anInt331 = 0;
 							Class28.anInt640 = 2;
 							Class27.anInt626++;
@@ -1256,7 +1256,7 @@ public class StreamBuffer extends RSFont {
 							Class4_Sub20
 									.method319(
 											1,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+											(Class4_Sub15.localPlayer.anIntArray3247[0]),
 											class4_sub20_sub7_sub1_sub2.anIntArray3247[0],
 											class4_sub20_sub7_sub1_sub2.anIntArray3248[0],
 											1,
@@ -1266,7 +1266,7 @@ public class StreamBuffer extends RSFont {
 											0,
 											0,
 											0,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]));
+											(Class4_Sub15.localPlayer.anIntArray3248[0]));
 							Class49.anInt996++;
 							Class2.anInt96 = JagexException.anInt1729;
 							Class28.anInt640 = 2;
@@ -1278,15 +1278,15 @@ public class StreamBuffer extends RSFont {
 						}
 					}
 					if ((i ^ 0xffffffff) == -3) {
-						Class4_Sub20_Sub7_Sub1_Sub1 class4_sub20_sub7_sub1_sub1 = (Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i_2_]);
-						if (class4_sub20_sub7_sub1_sub1 != null) {
+						Player player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_2_]);
+						if (player != null) {
 							Class4_Sub10.anInt2038++;
 							Class4_Sub20
 									.method319(
 											1,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
-											class4_sub20_sub7_sub1_sub1.anIntArray3247[0],
-											class4_sub20_sub7_sub1_sub1.anIntArray3248[0],
+											(Class4_Sub15.localPlayer.anIntArray3247[0]),
+											player.anIntArray3247[0],
+											player.anIntArray3248[0],
 											1,
 											0,
 											false,
@@ -1294,7 +1294,7 @@ public class StreamBuffer extends RSFont {
 											0,
 											arg0,
 											0,
-											(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]));
+											(Class4_Sub15.localPlayer.anIntArray3248[0]));
 							Class11.anInt331 = 0;
 							Class28.anInt640 = 2;
 							Class2.anInt96 = JagexException.anInt1729;
@@ -1353,16 +1353,16 @@ public class StreamBuffer extends RSFont {
 			if ((i ^ 0xffffffff) == -2048)
 				break;
 			boolean bool = false;
-			if (Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i] == null) {
+			if (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i] == null) {
 				bool = true;
-				Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i] = new Class4_Sub20_Sub7_Sub1_Sub1();
+				Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i] = new Player();
 				if (Class25.aClass4_Sub11Array575[i] != null)
-					Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i]
+					Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i]
 							.method391(1, Class25.aClass4_Sub11Array575[i]);
 			}
 			Class4_Sub23.anIntArray2432[Class4_Sub20_Sub7_Sub6.anInt3431++] = i;
-			Class4_Sub20_Sub7_Sub1_Sub1 class4_sub20_sub7_sub1_sub1 = (Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i]);
-			class4_sub20_sub7_sub1_sub1.anInt3256 = Region.anInt134;
+			Player player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i]);
+			player.anInt3256 = Region.anInt134;
 			int i_9_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
 					-1432215741, 5);
 			if ((i_9_ ^ 0xffffffff) < -16)
@@ -1370,7 +1370,7 @@ public class StreamBuffer extends RSFont {
 			int i_10_ = (Class34.anIntArray1763[Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 					.method266(-1432215741, 3)]);
 			if (bool)
-				class4_sub20_sub7_sub1_sub1.anInt3217 = class4_sub20_sub7_sub1_sub1.anInt3219 = i_10_;
+				player.anInt3217 = player.anInt3219 = i_10_;
 			int i_11_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
 					-1432215741, 1);
 			int i_12_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
@@ -1381,14 +1381,14 @@ public class StreamBuffer extends RSFont {
 					-1432215741, 5);
 			if ((i_13_ ^ 0xffffffff) < -16)
 				i_13_ -= 32;
-			class4_sub20_sub7_sub1_sub1
+			player
 					.method385(
-							(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0])
+							(Class4_Sub15.localPlayer.anIntArray3248[0])
 									- -i_13_,
 							i_11_ == 1,
 							128,
 							i_9_
-									+ (Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]));
+									+ (Class4_Sub15.localPlayer.anIntArray3247[0]));
 		}
 		Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method274((byte) 56);
 		if (arg0 <= 69)
@@ -1399,10 +1399,10 @@ public class StreamBuffer extends RSFont {
 			int arg4, int arg5, int arg6, int arg7, int arg8, Class69 arg9) {
 		try {
 			anInt2095++;
-			int i = Class4_Sub23.anIntArrayArrayArray2416[arg5][arg8][arg2];
-			int i_21_ = Class4_Sub23.anIntArrayArrayArray2416[arg5][arg8 - -1][arg2];
-			int i_22_ = (Class4_Sub23.anIntArrayArrayArray2416[arg5][arg8 - -1][1 + arg2]);
-			int i_23_ = Class4_Sub23.anIntArrayArrayArray2416[arg5][arg8][1 + arg2];
+			int i = Class4_Sub23.intGroundArray[arg5][arg8][arg2];
+			int i_21_ = Class4_Sub23.intGroundArray[arg5][arg8 - -1][arg2];
+			int i_22_ = (Class4_Sub23.intGroundArray[arg5][arg8 - -1][1 + arg2]);
+			int i_23_ = Class4_Sub23.intGroundArray[arg5][arg8][1 + arg2];
 			Class4_Sub20_Sub1 class4_sub20_sub1 = Region.method56(true, arg4);
 			int i_24_ = (1073741824 + ((arg2 << -2107600025) + arg8) + (arg4 << -1252001074));
 			if ((class4_sub20_sub1.anInt2726 ^ 0xffffffff) == -1)

@@ -109,7 +109,7 @@ public class Class50 implements Runnable {
 			if (Class4_Sub20_Sub16.aClass4_Sub13_3179.anInt2185 + i_0_ > (Class58.aClass4_Sub13_1159.anInt2185 + Class4_Sub20_Sub7.anInt2941))
 				i_0_ = (-Class4_Sub20_Sub16.aClass4_Sub13_3179.anInt2185
 						+ Class4_Sub20_Sub7.anInt2941 + Class58.aClass4_Sub13_1159.anInt2185);
-			int i_3_ = -Class4_Sub20_Sub7_Sub1.anInt3287 + i_0_;
+			int i_3_ = -Actor.anInt3287 + i_0_;
 			int i_4_ = Class4_Sub20_Sub16.aClass4_Sub13_3179.anInt2248;
 			int i_5_ = (Class58.aClass4_Sub13_1159.anInt2238
 					+ -Class4_Sub20_Sub7.anInt2941 + i_0_);
@@ -127,7 +127,7 @@ public class Class50 implements Runnable {
 				class4_sub14.anInt2268 = i_6_;
 				Class16.method721(1, class4_sub14);
 			}
-			if (Class4_Sub20_Sub7_Sub1_Sub1.anInt3587 == 0) {
+			if (Player.anInt3587 == 0) {
 				if (Class4_Sub6.aBoolean1922) {
 					if (Class4_Sub20_Sub16.aClass4_Sub13_3179.anObjectArray2164 != null) {
 						Class4_Sub14 class4_sub14 = new Class4_Sub14();
@@ -190,18 +190,18 @@ public class Class50 implements Runnable {
 	public static int method998(int arg0, int arg1, int arg2) {
 		try {
 			anInt1025++;
-			int i = (Class4_Sub20_Sub7_Sub1_Sub1.method392(arg2 - 1, -1 + arg1,
-					32315) - (-Class4_Sub20_Sub7_Sub1_Sub1.method392(1 + arg2,
-					arg1 - 1, arg0 ^ ~0x7e3b) - (Class4_Sub20_Sub7_Sub1_Sub1
-					.method392(arg2 - 1, arg1 - arg0, 32315) - -Class4_Sub20_Sub7_Sub1_Sub1
+			int i = (Player.method392(arg2 - 1, -1 + arg1,
+					32315) - (-Player.method392(1 + arg2,
+					arg1 - 1, arg0 ^ ~0x7e3b) - (Player
+					.method392(arg2 - 1, arg1 - arg0, 32315) - -Player
 					.method392(arg2 - -1, arg1 + 1, 32315))));
-			int i_7_ = (Class4_Sub20_Sub7_Sub1_Sub1.method392(-1 + arg2, arg1,
-					arg0 + 32316) - (-Class4_Sub20_Sub7_Sub1_Sub1.method392(
+			int i_7_ = (Player.method392(-1 + arg2, arg1,
+					arg0 + 32316) - (-Player.method392(
 					1 + arg2, arg1, 32315)
-					- Class4_Sub20_Sub7_Sub1_Sub1.method392(arg2, -1 + arg1,
-							32315) - Class4_Sub20_Sub7_Sub1_Sub1.method392(
+					- Player.method392(arg2, -1 + arg1,
+							32315) - Player.method392(
 					arg2, 1 + arg1, 32315)));
-			int i_8_ = Class4_Sub20_Sub7_Sub1_Sub1.method392(arg2, arg1, 32315);
+			int i_8_ = Player.method392(arg2, arg1, 32315);
 			return i_8_ / 4 + (i_7_ / 8 + i / 16);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("nd.A("

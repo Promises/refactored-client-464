@@ -76,7 +76,7 @@ public class Class4_Sub20_Sub14 extends Class4_Sub20 {
 			anInt3140 = -24;
 	}
 
-	public static void method596(boolean arg0, Class4_Sub20_Sub7_Sub1 arg1) {
+	public static void method596(boolean arg0, Actor arg1) {
 		anInt3143++;
 		arg1.anInt3257 = arg1.anInt3265;
 		if (arg1.anInt3228 == 0)
@@ -95,15 +95,15 @@ public class Class4_Sub20_Sub14 extends Class4_Sub20 {
 					return;
 				}
 			}
-			int i = arg1.anInt3270;
-			int i_0_ = arg1.anInt3267;
+			int i = arg1.worldX;
+			int i_0_ = arg1.worldY;
 			int i_1_ = (arg1.anInt3244 * 64 + arg1.anIntArray3247[arg1.anInt3228 - 1] * 128);
 			int i_2_ = (arg1.anInt3244 * 64 + 128 * arg1.anIntArray3248[arg1.anInt3228
 					+ -1]);
 			if (i_2_ + -i > 256 || (-i + i_2_ ^ 0xffffffff) > 255
 					|| i_1_ + -i_0_ > 256 || -i_0_ + i_1_ < -256) {
-				arg1.anInt3270 = i_2_;
-				arg1.anInt3267 = i_1_;
+				arg1.worldX = i_2_;
+				arg1.worldY = i_1_;
 			} else {
 				if (i_2_ <= i) {
 					if ((i ^ 0xffffffff) >= (i_2_ ^ 0xffffffff)) {
@@ -174,26 +174,26 @@ public class Class4_Sub20_Sub14 extends Class4_Sub20 {
 					arg1.anInt3257 = arg1.anInt3274;
 				if ((i_2_ ^ 0xffffffff) >= (i ^ 0xffffffff)) {
 					if ((i_2_ ^ 0xffffffff) > (i ^ 0xffffffff)) {
-						arg1.anInt3270 -= i_5_;
-						if (i_2_ > arg1.anInt3270)
-							arg1.anInt3270 = i_2_;
+						arg1.worldX -= i_5_;
+						if (i_2_ > arg1.worldX)
+							arg1.worldX = i_2_;
 					}
 				} else {
-					arg1.anInt3270 += i_5_;
-					if ((i_2_ ^ 0xffffffff) > (arg1.anInt3270 ^ 0xffffffff))
-						arg1.anInt3270 = i_2_;
+					arg1.worldX += i_5_;
+					if ((i_2_ ^ 0xffffffff) > (arg1.worldX ^ 0xffffffff))
+						arg1.worldX = i_2_;
 				}
 				if ((i_1_ ^ 0xffffffff) < (i_0_ ^ 0xffffffff)) {
-					arg1.anInt3267 += i_5_;
-					if (arg1.anInt3267 > i_1_)
-						arg1.anInt3267 = i_1_;
+					arg1.worldY += i_5_;
+					if (arg1.worldY > i_1_)
+						arg1.worldY = i_1_;
 				} else if (i_0_ > i_1_) {
-					arg1.anInt3267 -= i_5_;
-					if ((arg1.anInt3267 ^ 0xffffffff) > (i_1_ ^ 0xffffffff))
-						arg1.anInt3267 = i_1_;
+					arg1.worldY -= i_5_;
+					if ((arg1.worldY ^ 0xffffffff) > (i_1_ ^ 0xffffffff))
+						arg1.worldY = i_1_;
 				}
-				if ((i_2_ ^ 0xffffffff) == (arg1.anInt3270 ^ 0xffffffff)
-						&& (arg1.anInt3267 ^ 0xffffffff) == (i_1_ ^ 0xffffffff)) {
+				if ((i_2_ ^ 0xffffffff) == (arg1.worldX ^ 0xffffffff)
+						&& (arg1.worldY ^ 0xffffffff) == (i_1_ ^ 0xffffffff)) {
 					arg1.anInt3228--;
 					if ((arg1.anInt3236 ^ 0xffffffff) < -1)
 						arg1.anInt3236--;
@@ -294,9 +294,9 @@ public class Class4_Sub20_Sub14 extends Class4_Sub20 {
 			for (int i = 0; (i ^ 0xffffffff) > -5; i++) {
 				for (int i_11_ = 0; i_11_ < 104; i_11_++) {
 					for (int i_12_ = 0; i_12_ < 104; i_12_++) {
-						if ((0x1 & (Class46.landscapeData[i][i_11_][i_12_]) ^ 0xffffffff) == -2) {
+						if ((0x1 & (Class46.currentSceneTileFlags[i][i_11_][i_12_]) ^ 0xffffffff) == -2) {
 							int i_13_ = i;
-							if (((Class46.landscapeData[1][i_11_][i_12_]) & 0x2 ^ 0xffffffff) == -3)
+							if (((Class46.currentSceneTileFlags[1][i_11_][i_12_]) & 0x2 ^ 0xffffffff) == -3)
 								i_13_--;
 							if ((i_13_ ^ 0xffffffff) <= -1)
 								arg0[i_13_].method63(i_11_, i_12_, 2097152);
@@ -321,9 +321,9 @@ public class Class4_Sub20_Sub14 extends Class4_Sub20 {
 				int i_16_ = i_15_ * 768 >> 989591560;
 				for (int i_17_ = 1; i_17_ < 103; i_17_++) {
 					for (int i_18_ = 1; (i_18_ ^ 0xffffffff) > -104; i_18_++) {
-						int i_19_ = (-(Class4_Sub23.anIntArrayArrayArray2416[i_14_][i_18_
-								+ -1][i_17_]) + (Class4_Sub23.anIntArrayArrayArray2416[i_14_][1 + i_18_][i_17_]));
-						int i_20_ = (-(Class4_Sub23.anIntArrayArrayArray2416[i_14_][i_18_][i_17_ - 1]) + (Class4_Sub23.anIntArrayArrayArray2416[i_14_][i_18_][i_17_ + 1]));
+						int i_19_ = (-(Class4_Sub23.intGroundArray[i_14_][i_18_
+								+ -1][i_17_]) + (Class4_Sub23.intGroundArray[i_14_][1 + i_18_][i_17_]));
+						int i_20_ = (-(Class4_Sub23.intGroundArray[i_14_][i_18_][i_17_ - 1]) + (Class4_Sub23.intGroundArray[i_14_][i_18_][i_17_ + 1]));
 						int i_21_ = (int) Math
 								.sqrt((i_19_ * i_19_ + (65536 - -(i_20_ * i_20_))));
 						int i_22_ = (i_19_ << -1315670360) / i_21_;
@@ -399,18 +399,18 @@ public class Class4_Sub20_Sub14 extends Class4_Sub20 {
 							if ((i_39_ ^ 0xffffffff) <= -2
 									&& i_39_ < 103
 									&& (!Class59.aBoolean1189
-											|| (0x2 & (Class46.landscapeData[0][i_28_][i_39_]) ^ 0xffffffff) != -1 || (((Class46.landscapeData[i_14_][i_28_][i_39_]) & 0x10) == 0 && ((Class4_Sub15
+											|| (0x2 & (Class46.currentSceneTileFlags[0][i_28_][i_39_]) ^ 0xffffffff) != -1 || (((Class46.currentSceneTileFlags[i_14_][i_28_][i_39_]) & 0x10) == 0 && ((Class4_Sub15
 											.method301(i_28_, 0, i_14_, i_39_) ^ 0xffffffff) == (Class50.anInt1010 ^ 0xffffffff))))) {
 								if (i_14_ < Class4_Sub6.anInt1918)
 									Class4_Sub6.anInt1918 = i_14_;
 								int i_42_ = 0xff & (Class4_Sub20_Sub4.aByteArrayArrayArray2861[i_14_][i_28_][i_39_]);
 								int i_43_ = 0xff & (Class59.aByteArrayArrayArray1181[i_14_][i_28_][i_39_]);
 								if (i_42_ > 0 || i_43_ > 0) {
-									int i_44_ = (Class4_Sub23.anIntArrayArrayArray2416[i_14_][i_28_
+									int i_44_ = (Class4_Sub23.intGroundArray[i_14_][i_28_
 											- -1][i_39_]);
-									int i_45_ = (Class4_Sub23.anIntArrayArrayArray2416[i_14_][i_28_][i_39_]);
-									int i_46_ = (Class4_Sub23.anIntArrayArrayArray2416[i_14_][i_28_ + 1][1 + i_39_]);
-									int i_47_ = (Class4_Sub23.anIntArrayArrayArray2416[i_14_][i_28_][i_39_
+									int i_45_ = (Class4_Sub23.intGroundArray[i_14_][i_28_][i_39_]);
+									int i_46_ = (Class4_Sub23.intGroundArray[i_14_][i_28_ + 1][1 + i_39_]);
+									int i_47_ = (Class4_Sub23.intGroundArray[i_14_][i_28_][i_39_
 											- -1]);
 									int i_48_ = (Class4_Sub20_Sub7_Sub5.anIntArrayArray3390[i_28_][i_39_]);
 									int i_49_ = (Class4_Sub20_Sub7_Sub5.anIntArrayArray3390[1 + i_28_][i_39_]);
@@ -447,7 +447,7 @@ public class Class4_Sub20_Sub14 extends Class4_Sub20 {
 										if (bool && i_44_ == i_45_
 												&& i_45_ == i_46_
 												&& i_47_ == i_45_)
-											SceneGraph.heightmap[i_14_][i_28_][i_39_] = (Class4_Sub20_Sub7_Sub1
+											SceneGraph.heightmap[i_14_][i_28_][i_39_] = (Actor
 													.method389(
 															(SceneGraph.heightmap[i_14_][i_28_][i_39_]),
 															2340));
@@ -570,7 +570,7 @@ public class Class4_Sub20_Sub14 extends Class4_Sub20 {
 			arg1.method1125(-50, -10, -50);
 			for (int i_70_ = 0; i_70_ < 104; i_70_++) {
 				for (int i_71_ = 0; (i_71_ ^ 0xffffffff) > -105; i_71_++) {
-					if ((Class46.landscapeData[1][i_70_][i_71_] & 0x2 ^ 0xffffffff) == -3)
+					if ((Class46.currentSceneTileFlags[1][i_70_][i_71_] & 0x2 ^ 0xffffffff) == -3)
 						arg1.method1109(i_70_, i_71_);
 				}
 			}
@@ -619,8 +619,8 @@ public class Class4_Sub20_Sub14 extends Class4_Sub20 {
 								if ((i_85_ ^ 0xffffffff) <= -9) {
 									int i_86_ = 240;
 									int i_87_ = -i_86_
-											+ (Class4_Sub23.anIntArrayArrayArray2416[i_83_][i_78_][i_79_]);
-									int i_88_ = (Class4_Sub23.anIntArrayArrayArray2416[i_81_][i_78_][i_79_]);
+											+ (Class4_Sub23.intGroundArray[i_83_][i_78_][i_79_]);
+									int i_88_ = (Class4_Sub23.intGroundArray[i_81_][i_78_][i_79_]);
 									Class69.method1133(i_75_, 1, i_78_ * 128,
 											128 * i_78_, i_79_ * 128, 128
 													* i_80_ - -128, i_87_,
@@ -666,8 +666,8 @@ public class Class4_Sub20_Sub14 extends Class4_Sub20 {
 								int i_97_ = ((-i_92_ + i_93_ + 1) * (1 + i_94_ + -i_91_));
 								if (i_97_ >= 8) {
 									int i_98_ = 240;
-									int i_99_ = ((Class4_Sub23.anIntArrayArrayArray2416[i_93_][i_91_][i_77_]) + -i_98_);
-									int i_100_ = (Class4_Sub23.anIntArrayArrayArray2416[i_92_][i_91_][i_77_]);
+									int i_99_ = ((Class4_Sub23.intGroundArray[i_93_][i_91_][i_77_]) + -i_98_);
+									int i_100_ = (Class4_Sub23.intGroundArray[i_92_][i_91_][i_77_]);
 									Class69.method1133(i_75_, 2, i_91_ * 128,
 											128 + i_94_ * 128, 128 * i_77_,
 											128 * i_77_, i_99_, i_100_);
@@ -712,7 +712,7 @@ public class Class4_Sub20_Sub14 extends Class4_Sub20 {
 								}
 								if (((1 + -i_106_ + i_104_)
 										* (1 + (i_105_ + -i_103_)) ^ 0xffffffff) <= -5) {
-									int i_109_ = (Class4_Sub23.anIntArrayArrayArray2416[i_76_][i_103_][i_106_]);
+									int i_109_ = (Class4_Sub23.intGroundArray[i_76_][i_103_][i_106_]);
 									Class69.method1133(i_75_, 4, i_103_ * 128,
 											128 + 128 * i_105_, 128 * i_106_,
 											i_104_ * 128 + 128, i_109_, i_109_);

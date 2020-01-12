@@ -14,7 +14,7 @@ public class Region {
 					"Sie k-Onnen sich selbst nicht selbst auf Ihre Ignorieren)2Liste setzen(Q"
             ));
 	public static JagexString aJagexString_137;
-	public static Class4_Sub20_Sub12_Sub1 aClass4_Sub20_Sub12_Sub1_132;
+	public static Class4_Sub20_Sub12_Sub1 minimapBackgroundImage;
 	public static Class42 aClass42_130;
 	public static Class66 aClass66_131;
 	public static int anInt100;
@@ -122,7 +122,7 @@ public class Region {
 		} else {
 			Class4_Sub20_Sub7_Sub4.aClass4_Sub13Array3377 = null;
 			if (arg8 < 35)
-				aClass4_Sub20_Sub12_Sub1_132 = null;
+				minimapBackgroundImage = null;
 			Class9.method661(Class28.aClass4_Sub13ArrayArray632[arg7], arg0,
 					arg4, arg2, arg1, arg3, arg6, -1, arg5, -107);
 			if (Class4_Sub20_Sub7_Sub4.aClass4_Sub13Array3377 != null) {
@@ -318,7 +318,7 @@ public class Region {
 		try {
 			aJagexString_122 = null;
 			if (arg0 == false) {
-				aClass4_Sub20_Sub12_Sub1_132 = null;
+				minimapBackgroundImage = null;
 				aJagexString_120 = null;
 				aClass42_130 = null;
 				aClass1_103 = null;
@@ -613,7 +613,7 @@ public class Region {
 				anInt105++;
 				arg2 -= anInt125;
 				arg1 -= anInt101;
-				clippingData[arg2][arg1] = Class4_Sub20_Sub7_Sub1.method389(
+				clippingData[arg2][arg1] = Actor.method389(
 						clippingData[arg2][arg1], 262144);
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -625,7 +625,7 @@ public class Region {
 	public void method57(int arg0, int arg1, int arg2, int arg3) {
 		try {
 			if (arg0 >= 88) {
-				clippingData[arg1][arg2] = Class4_Sub20_Sub7_Sub1.method389(
+				clippingData[arg1][arg2] = Actor.method389(
 						clippingData[arg1][arg2], arg3);
 				anInt99++;
 			}
@@ -960,7 +960,7 @@ public class Region {
 			anInt107++;
 			arg0 -= anInt125;
 			arg1 -= anInt101;
-			clippingData[arg0][arg1] = Class4_Sub20_Sub7_Sub1.method389(
+			clippingData[arg0][arg1] = Actor.method389(
 					clippingData[arg0][arg1], arg2);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ac.K("

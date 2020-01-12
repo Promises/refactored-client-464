@@ -21,10 +21,10 @@ public class Class2 {
 			{ 4626, 11146, 6439, 12, 4758, 10270 },
 			{ 4550, 4537, 5681, 5673, 5790, 6806, 8076, 4574 } };
 
-	public static void method42(int arg0, Class4_Sub20_Sub7_Sub1_Sub1 arg1,
+	public static void method42(int arg0, Player arg1,
 			int arg2, int arg3, int arg4) {
 		anInt87++;
-		if (arg1 != Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302
+		if (arg1 != Class4_Sub15.localPlayer
 				&& Class4_Sub20_Sub8.anInt2980 < 400) {
 			JagexString jagexString;
 			if ((arg1.anInt3586 ^ 0xffffffff) != -1) {
@@ -41,7 +41,7 @@ public class Class2 {
 										arg1.aJagexString_3593,
 										(Class19_Sub1
 												.method765(
-														(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3584),
+														(Class4_Sub15.localPlayer.anInt3584),
 														arg1.anInt3584,
 														(byte) -45)),
 										Class4_Sub7.aJagexString_1957,
@@ -76,12 +76,12 @@ public class Class2 {
 								i_0_ = 2000;
 							}
 						} else {
-							if (((Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3584) ^ 0xffffffff) > (arg1.anInt3584 ^ 0xffffffff)) {
+							if (((Class4_Sub15.localPlayer.anInt3584) ^ 0xffffffff) > (arg1.anInt3584 ^ 0xffffffff)) {
 								i_0_ = 2000;
 							}
-							if ((Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3590) != 0
+							if ((Class4_Sub15.localPlayer.anInt3590) != 0
 									&& arg1.anInt3590 != 0) {
-								if (arg1.anInt3590 != (Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3590)) {
+								if (arg1.anInt3590 != (Class4_Sub15.localPlayer.anInt3590)) {
 									i_0_ = 0;
 								} else {
 									i_0_ = 2000;

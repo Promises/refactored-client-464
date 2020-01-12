@@ -11,7 +11,7 @@ public class Class74 {
 	public static JagexString aJagexString_1524;
 	public static StreamBuffer aClass4_Sub11_1516;
 	public static int anInt1513 = 0;
-	public static int anInt1514 = 0;
+	public static int secondaryCameraVertical = 0;
 	public static int anInt1515;
 	public static int anInt1522;
 	public static int[] anIntArray1518;
@@ -58,7 +58,7 @@ public class Class74 {
 		try {
 			anInt1522++;
 			if (arg0 < 40)
-				anInt1514 = 87;
+				secondaryCameraVertical = 87;
 			Class4_Sub20_Sub14 class4_sub20_sub14 = ((Class4_Sub20_Sub14) Class34.aClass66_1758
 					.method1083(arg1, true));
 			if (class4_sub20_sub14 != null)

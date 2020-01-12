@@ -83,12 +83,12 @@ public class Class53 implements Runnable {
 						int i_1_;
 						if (Class1.anIntArray78[i] != 0) {
 							int i_2_ = ((0xff7585 & Class1.anIntArray78[i]) >> -527486288);
-							int i_3_ = (-(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3270) + (128 * i_2_ - -64));
+							int i_3_ = (-(Class4_Sub15.localPlayer.worldX) + (128 * i_2_ - -64));
 							int i_4_ = 128 * (Class1.anIntArray78[i] & 0xff);
 							if (i_3_ < 0)
 								i_3_ = -i_3_;
 							int i_5_ = ((0xff34 & Class1.anIntArray78[i]) >> 237209480);
-							int i_6_ = (-(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3267)
+							int i_6_ = (-(Class4_Sub15.localPlayer.worldY)
 									+ i_5_ * 128 - -64);
 							if ((i_6_ ^ 0xffffffff) > -1)
 								i_6_ = -i_6_;

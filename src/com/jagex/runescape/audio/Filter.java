@@ -1,12 +1,13 @@
-package com.jagex.runescape;
+package com.jagex.runescape.audio;
 
+import com.jagex.runescape.audio.Envelope;
 import com.jagex.runescape.net.StreamBuffer;
 
-public class Class56 {
+public class Filter {
 	public static float aFloat1117;
 	public static float[][] aFloatArrayArray1119 = new float[2][8];
 	public static int anInt1120;
-	public static int[][] anIntArrayArray1114 = new int[2][8];
+	public static int[][] coef = new int[2][8];
 
 	public static float method1016(float arg0) {
 		float f = 32.703197F * (float) Math.pow(2.0, arg0);
@@ -15,7 +16,7 @@ public class Class56 {
 
 	public static void method1019() {
 		aFloatArrayArray1119 = null;
-		anIntArrayArray1114 = null;
+		coef = null;
 	}
 
 	public int[] anIntArray1116 = new int[2];
@@ -60,7 +61,7 @@ public class Class56 {
 				aFloatArrayArray1119[0][i] *= aFloat1117;
 		}
 		for (int i = 0; i < anIntArray1116[arg0] * 2; i++)
-			anIntArrayArray1114[arg0][i] = (int) (aFloatArrayArray1119[arg0][i] * 65536.0F);
+			coef[arg0][i] = (int) (aFloatArrayArray1119[arg0][i] * 65536.0F);
 		return anIntArray1116[arg0] * 2;
 	}
 
@@ -78,7 +79,7 @@ public class Class56 {
 		return 1.0F - (float) Math.pow(10.0, (-f / 20.0F));
 	}
 
-	public void method1018(StreamBuffer arg0, Class20 arg1) {
+	public void method1018(StreamBuffer arg0, Envelope arg1) {
 		int i = arg0.get();
 		anIntArray1116[0] = i >> 4;
 		anIntArray1116[1] = i & 0xf;

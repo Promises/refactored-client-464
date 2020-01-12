@@ -142,9 +142,9 @@ public class Class43 {
 					&& Class37.anInt758 <= 758
 					&& JagexException.anInt1729 <= 20) {
 				Class49.aBoolean990 = false;
-				Class4_Sub20_Sub16.aClass4_Sub20_Sub12_Sub2_3177
+				Class4_Sub20_Sub16.aImageRGB_3177
 						.method523(0, 0);
-				Class34.aClass4_Sub20_Sub12_Sub2_1760.method523(382, 0);
+				Class34.aImageRGB_1760.method523(382, 0);
 				Class31.aClass4_Sub20_Sub12_Sub1_676
 						.method507(
 								(-(Class31.aClass4_Sub20_Sub12_Sub1_676.anInt3511 / 2) + 382),
@@ -152,7 +152,7 @@ public class Class43 {
 				return;
 			}
 			if ((Class64.anInt1277 ^ 0xffffffff) != 0) {
-				Class9 class9 = (Class4_Sub20_Sub7_Sub1_Sub1.aClass9Array3579[Class64.anInt1277]);
+				Class9 class9 = (Player.aClass9Array3579[Class64.anInt1277]);
 				if (!Class77.aBoolean1590 != class9.aBoolean267) {
 					byte[] is = Class4_Sub24.method639(
 							new JagexString[] { class9.aJagexString_264,
@@ -166,9 +166,9 @@ public class Class43 {
 						Class12.anInt341 = 0;
 						Class4_Sub20_Sub7.anInt2934 = 443;
 					}
-					Class4_Sub20_Sub16.aClass4_Sub20_Sub12_Sub2_3177.method523(
+					Class4_Sub20_Sub16.aImageRGB_3177.method523(
 							0, 0);
-					Class34.aClass4_Sub20_Sub12_Sub2_1760.method523(382, 0);
+					Class34.aImageRGB_1760.method523(382, 0);
 					Class31.aClass4_Sub20_Sub12_Sub1_676
 							.method507(
 									(-(Class31.aClass4_Sub20_Sub12_Sub1_676.anInt3511 / 2) + 382),
@@ -453,7 +453,7 @@ public class Class43 {
 
 	public void method962(int[] arg0, int arg1) {
 		int i = arg1;
-		if (Class4_Sub20_Sub7_Sub1.aBoolean3218) {
+		if (Actor.aBoolean3218) {
 			i <<= 1;
 		}
 		Class21.method776(arg0, 0, i);

@@ -11,7 +11,7 @@ public class Class8 {
 	public static JagexString aJagexString_250;
 	public static JagexString aJagexString_256;
 	public static Class4_Sub20_Sub12_Sub1[] aClass4_Sub20_Sub12_Sub1Array262;
-	public static Class4_Sub20_Sub12_Sub2[] aClass4_Sub20_Sub12_Sub2Array253;
+	public static ImageRGB[] aImageRGBArray253;
 	public static Class4_Sub20_Sub7_Sub2[] aClass4_Sub20_Sub7_Sub2Array257;
 	public static Class65 aClass65_252;
 	public static Class66 aClass66_259;
@@ -54,7 +54,7 @@ public class Class8 {
 			aJagexString_243 = null;
 			aByteArray258 = null;
 			aJagexString_247 = null;
-			aClass4_Sub20_Sub12_Sub2Array253 = null;
+			aImageRGBArray253 = null;
 			aClass4_Sub20_Sub12_Sub1Array262 = null;
 			aJagexString_250 = null;
 		} catch (RuntimeException runtimeexception) {

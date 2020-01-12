@@ -119,7 +119,7 @@ public class Class57 {
 
 	public static void method1022(byte arg0) {
 		try {
-			Class4_Sub20_Sub9.anInt3051 = 0;
+			Class4_Sub20_Sub9.minimapState = 0;
 			Class1.anInt74 = 0;
 			Class41.anInt822 = -1;
 			Class66.aClass4_Sub11_Sub1_1328.pointion = 0;
@@ -135,9 +135,9 @@ public class Class57 {
 			Class4_Sub20_Sub16.aBoolean3169 = false;
 			AppletListener.anInt1448 = 0;
 			Class4_Sub20_Sub11.incomingPacket = -1;
-			for (int i = 0; ((i ^ 0xffffffff) > ((Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358).length ^ 0xffffffff)); i++) {
-				if ((Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i]) != null)
-					Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i].anInt3293 = -1;
+			for (int i = 0; ((i ^ 0xffffffff) > ((Class4_Sub20_Sub7_Sub4.aPlayerArray3358).length ^ 0xffffffff)); i++) {
+				if ((Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i]) != null)
+					Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i].anInt3293 = -1;
 			}
 			for (int i = 0; i < aClass4_Sub20_Sub7_Sub1_Sub2Array1151.length; i++) {
 				if (aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i] != null)
@@ -162,12 +162,12 @@ public class Class57 {
 					i_9_ = 2047;
 				else
 					i_9_ = Class4_Sub23.anIntArray2432[i];
-				Class4_Sub20_Sub7_Sub1_Sub1 class4_sub20_sub7_sub1_sub1 = (Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i_9_]);
-				if (class4_sub20_sub7_sub1_sub1 != null
-						&& ((class4_sub20_sub7_sub1_sub1.anInt3253 ^ 0xffffffff) < -1)) {
-					class4_sub20_sub7_sub1_sub1.anInt3253--;
-					if (class4_sub20_sub7_sub1_sub1.anInt3253 == 0)
-						class4_sub20_sub7_sub1_sub1.aJagexString_3271 = null;
+				Player player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_9_]);
+				if (player != null
+						&& ((player.anInt3253 ^ 0xffffffff) < -1)) {
+					player.anInt3253--;
+					if (player.anInt3253 == 0)
+						player.aJagexString_3271 = null;
 				}
 			}
 			for (int i = 0; (GameShell.anInt12 ^ 0xffffffff) < (i ^ 0xffffffff); i++) {
@@ -186,8 +186,8 @@ public class Class57 {
 		}
 	}
 
-	public static Class4_Sub20_Sub12_Sub2 method1024(int arg0, Class19 arg1,
-                                                     JagexString arg2, JagexString arg3) {
+	public static ImageRGB method1024(int arg0, Class19 arg1,
+									  JagexString arg2, JagexString arg3) {
 		try {
 			if (arg0 != 26149)
 				method1026(null, null, -27, null, null);
@@ -215,7 +215,7 @@ public class Class57 {
 			int i_14_ = arg4;
 			if ((i ^ 0xffffffff) < -1)
 				i_14_ = arg3;
-			int[] is = (RS2Font.aClass4_Sub20_Sub12_Sub2_2769.anIntArray3515);
+			int[] is = (RS2Font.minimapImage.anIntArray3515);
 			int i_15_ = i_12_ & 0x1f;
 			int i_16_ = 4 * (52736 - 512 * arg5) + (4 * arg2 + 24624);
 			int i_17_ = 0x7fff & i >> 2080712622;
@@ -306,7 +306,7 @@ public class Class57 {
 			if (class4_sub20_sub1.anInt2702 == -1) {
 				if ((i_22_ ^ 0xffffffff) == -10) {
 					int i_24_ = 15658734;
-					int[] is = (RS2Font.aClass4_Sub20_Sub12_Sub2_2769.anIntArray3515);
+					int[] is = (RS2Font.minimapImage.anIntArray3515);
 					if (i > 0)
 						i_24_ = 15597568;
 					int i_25_ = 2048 * (103 - arg5) + (24624 - -(arg2 * 4));

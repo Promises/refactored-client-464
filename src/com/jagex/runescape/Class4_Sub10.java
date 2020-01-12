@@ -12,7 +12,7 @@ public class Class4_Sub10 extends RSFont {
 	public static JagexString aJagexString_2050 = JagexString.getRs2PreparedString(
 			"The server is being updated)3");
 	public static JagexString aJagexString_2051;
-	public static Class4_Sub20_Sub12_Sub2[] aClass4_Sub20_Sub12_Sub2Array2022;
+	public static ImageRGB[] aImageRGBArray2022;
 	public static int anInt2020;
 	public static int anInt2021;
 	public static int anInt2023;
@@ -30,7 +30,7 @@ public class Class4_Sub10 extends RSFont {
 	}
 
 	public static void method202(int arg0) {
-		aClass4_Sub20_Sub12_Sub2Array2022 = null;
+		aImageRGBArray2022 = null;
 		aJagexString_2049 = null;
 		aJagexString_2050 = null;
 		aJagexString_2048 = null;

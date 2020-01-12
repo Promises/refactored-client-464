@@ -143,12 +143,12 @@ public class Class4_Sub20_Sub15 extends Class4_Sub20 {
 		try {
 			for (int i = 0; (i ^ 0xffffffff) > (JagexException.anInt1726 ^ 0xffffffff); i++) {
 				int i_9_ = Class48.anIntArray979[i];
-				Class4_Sub20_Sub7_Sub1_Sub1 class4_sub20_sub7_sub1_sub1 = (Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i_9_]);
+				Player player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_9_]);
 				int i_10_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get();
 				if ((0x10 & i_10_) != 0) {
 					i_10_ += Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get() << -1623439800;
 				}
-				Class73.method1166(i_9_, 17933, class4_sub20_sub7_sub1_sub1,
+				Class73.method1166(i_9_, 17933, player,
 						i_10_);
 			}
 			if (arg0 != false)

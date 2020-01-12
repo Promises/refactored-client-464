@@ -4,7 +4,7 @@ import com.jagex.runescape.net.StreamBuffer;
 
 public class Class35 {
 	public static boolean aBoolean744;
-	public static Class4_Sub20_Sub12_Sub2[] aClass4_Sub20_Sub12_Sub2Array749;
+	public static ImageRGB[] aImageRGBArray749;
 	public static int anInt723;
 	public static int anInt727;
 	public static int anInt729;
@@ -82,7 +82,7 @@ public class Class35 {
 			if (arg0 != -3) {
 				anIntArray726 = null;
 			}
-			aClass4_Sub20_Sub12_Sub2Array749 = null;
+			aImageRGBArray749 = null;
 			StringUtilities.aJagexString_753 = null;
 			StringUtilities.aJagexString_735 = null;
 			StringUtilities.aJagexString_728 = null;
@@ -92,23 +92,23 @@ public class Class35 {
 		}
 	}
 
-	public static Class4_Sub20_Sub12_Sub2[] method909(int arg0) {
+	public static ImageRGB[] method909(int arg0) {
 		try {
-			Class4_Sub20_Sub12_Sub2[] class4_sub20_sub12_sub2s = new Class4_Sub20_Sub12_Sub2[Class49.anInt991];
+			ImageRGB[] imageRGBS = new ImageRGB[Class49.anInt991];
 			anInt754++;
 			for (int i = 0; (Class49.anInt991 ^ 0xffffffff) < (i ^ 0xffffffff); i++) {
-				Class4_Sub20_Sub12_Sub2 class4_sub20_sub12_sub2 = (class4_sub20_sub12_sub2s[i] = new Class4_Sub20_Sub12_Sub2());
-				class4_sub20_sub12_sub2.anInt3519 = Class53.anInt1080;
-				class4_sub20_sub12_sub2.anInt3517 = Class32.anInt696;
-				class4_sub20_sub12_sub2.anInt3518 = anIntArray726[i];
-				class4_sub20_sub12_sub2.anInt3521 = Class4_Sub20_Sub7_Sub5.anIntArray3395[i];
-				class4_sub20_sub12_sub2.anInt3520 = Class30.anIntArray650[i];
-				class4_sub20_sub12_sub2.anInt3516 = Class13_Sub2.anIntArray2480[i];
-				int i_13_ = (class4_sub20_sub12_sub2.anInt3516 * class4_sub20_sub12_sub2.anInt3520);
+				ImageRGB imageRGB = (imageRGBS[i] = new ImageRGB());
+				imageRGB.maxWidth = Class53.anInt1080;
+				imageRGB.maxHeight = Class32.anInt696;
+				imageRGB.anInt3518 = anIntArray726[i];
+				imageRGB.anInt3521 = Class4_Sub20_Sub7_Sub5.anIntArray3395[i];
+				imageRGB.anInt3520 = Class30.anIntArray650[i];
+				imageRGB.anInt3516 = Class13_Sub2.anIntArray2480[i];
+				int i_13_ = (imageRGB.anInt3516 * imageRGB.anInt3520);
 				byte[] is = Class4_Sub23.aByteArrayArray2426[i];
-				class4_sub20_sub12_sub2.anIntArray3515 = new int[i_13_];
+				imageRGB.anIntArray3515 = new int[i_13_];
 				for (int i_14_ = 0; (i_14_ ^ 0xffffffff) > (i_13_ ^ 0xffffffff); i_14_++) {
-					class4_sub20_sub12_sub2.anIntArray3515[i_14_] = (Class67.anIntArray1367[Class59
+					imageRGB.anIntArray3515[i_14_] = (Class67.anIntArray1367[Class59
 							.method1035(255, is[i_14_])]);
 				}
 			}
@@ -116,7 +116,7 @@ public class Class35 {
 			if (arg0 != 255) {
 				return null;
 			}
-			return class4_sub20_sub12_sub2s;
+			return imageRGBS;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "jf.I("
 					+ arg0 + ')');

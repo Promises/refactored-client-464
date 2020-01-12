@@ -1,105 +1,87 @@
 package com.jagex.runescape;
 
-public abstract class Class4_Sub20_Sub7_Sub1 extends Class4_Sub20_Sub7 {
+public abstract class Actor extends Class4_Sub20_Sub7 {
 	public static boolean aBoolean3218;
-	public static JagexString aJagexString_3227 = JagexString.getRs2PreparedString(
-			"Checking for updates )2 ");
-	public static JagexString aJagexString_3234;
-	public static JagexString aJagexString_3238;
-	public static JagexString aJagexString_3243 = JagexString.getRs2PreparedString("lila:"
-    );
-	public static JagexString aJagexString_3284;
-	public static JagexString aJagexString_3285;
-	public static JagexString aJagexString_3294;
+	public static JagexString aJagexString_3227 = JagexString.getRs2PreparedString("Checking for updates )2 ");
+	public static JagexString aJagexString_3234 = aJagexString_3227;
+	public static JagexString aJagexString_3238 = JagexString.getRs2PreparedString("Ihr Spielkonto wird bereits benutzt)3");
+	public static JagexString aJagexString_3243 = JagexString.getRs2PreparedString("lila:");
+	public static JagexString aJagexString_3284 = JagexString.getRs2PreparedString("mapfunction");
+	public static JagexString aJagexString_3285 = JagexString.getRs2PreparedString(")4slr)3ws?order=LPWM");
+	public static JagexString aJagexString_3294 = JagexString.getRs2PreparedString("m");
 	public static Class4_Sub20_Sub12_Sub1 aClass4_Sub20_Sub12_Sub1_3260;
 	public static Class4_Sub20_Sub12_Sub1 aClass4_Sub20_Sub12_Sub1_3288;
-	public static int runEnergy;
-	public static int anInt3252;
-	public static int anInt3254;
+	public static int runEnergy = 0;
 	public static int anInt3255;
-	public static int anInt3261;
-	public static int anInt3280;
-	public static int anInt3283;
-	public static int anInt3286;
-	public static int anInt3287;
-	public static int anInt3291;
-	public static int[] anIntArray3268;
-	static {
-		aJagexString_3234 = aJagexString_3227;
-		runEnergy = 0;
-		aJagexString_3238 = JagexString.getRs2PreparedString(
-				"Ihr Spielkonto wird bereits benutzt)3");
-		aJagexString_3285 = JagexString.getRs2PreparedString(")4slr)3ws?order=LPWM"
-        );
-		anIntArray3268 = new int[100];
-		anInt3287 = -1;
-		aJagexString_3284 = JagexString.getRs2PreparedString("mapfunction");
-		aJagexString_3294 = JagexString.getRs2PreparedString("m");
-	}
+	public static int anInt3287 = -1;
+	public static int[] anIntArray3268 = new int[100];
 
 	public static void method381(byte arg0) {
 		try {
-			anInt3286++;
 			Class4_Sub20_Sub7_Sub5 class4_sub20_sub7_sub5 = ((Class4_Sub20_Sub7_Sub5) Class4_Sub20_Sub11.aClass65_3075
 					.method1071(-126));
-			if (arg0 != 10)
+			if (arg0 != 10) {
 				aJagexString_3227 = null;
+			}
 			for (/**/; class4_sub20_sub7_sub5 != null; class4_sub20_sub7_sub5 = ((Class4_Sub20_Sub7_Sub5) Class4_Sub20_Sub11.aClass65_3075
 					.method1075(18485))) {
-				if (class4_sub20_sub7_sub5.anInt3389 != Class82.anInt1711
-						|| ((Region.anInt134 ^ 0xffffffff) < (class4_sub20_sub7_sub5.anInt3424 ^ 0xffffffff)))
+				if (class4_sub20_sub7_sub5.anInt3389 != Class82.plane
+						|| ((Region.anInt134 ^ 0xffffffff) < (class4_sub20_sub7_sub5.anInt3424 ^ 0xffffffff))) {
 					class4_sub20_sub7_sub5.clear();
-				else if ((Region.anInt134 ^ 0xffffffff) <= (class4_sub20_sub7_sub5.anInt3388 ^ 0xffffffff)) {
+				} else if ((Region.anInt134 ^ 0xffffffff) <= (class4_sub20_sub7_sub5.anInt3388 ^ 0xffffffff)) {
 					if ((class4_sub20_sub7_sub5.anInt3400 ^ 0xffffffff) < -1) {
 						Class4_Sub20_Sub7_Sub1_Sub2 class4_sub20_sub7_sub1_sub2 = (Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[-1
 								+ class4_sub20_sub7_sub5.anInt3400]);
 						if (class4_sub20_sub7_sub1_sub2 != null
-								&& class4_sub20_sub7_sub1_sub2.anInt3270 >= 0
-								&& class4_sub20_sub7_sub1_sub2.anInt3270 < 13312
-								&& (class4_sub20_sub7_sub1_sub2.anInt3267 ^ 0xffffffff) <= -1
-								&& class4_sub20_sub7_sub1_sub2.anInt3267 < 13312)
+								&& class4_sub20_sub7_sub1_sub2.worldX >= 0
+								&& class4_sub20_sub7_sub1_sub2.worldX < 13312
+								&& (class4_sub20_sub7_sub1_sub2.worldY ^ 0xffffffff) <= -1
+								&& class4_sub20_sub7_sub1_sub2.worldY < 13312) {
 							class4_sub20_sub7_sub5
 									.method425(
-											class4_sub20_sub7_sub1_sub2.anInt3270,
+											class4_sub20_sub7_sub1_sub2.worldX,
 											((Class67
-													.method1090(
-															class4_sub20_sub7_sub1_sub2.anInt3270,
-															class4_sub20_sub7_sub1_sub2.anInt3267,
-															true,
-															class4_sub20_sub7_sub5.anInt3389)) + -class4_sub20_sub7_sub5.anInt3387),
+													.getFloorDrawHeight(
+															class4_sub20_sub7_sub1_sub2.worldX,
+															class4_sub20_sub7_sub1_sub2.worldY,
+															class4_sub20_sub7_sub5.anInt3389
+													)) + -class4_sub20_sub7_sub5.anInt3387),
 											Region.anInt134,
-											class4_sub20_sub7_sub1_sub2.anInt3267,
+											class4_sub20_sub7_sub1_sub2.worldY,
 											87);
+						}
 					}
 					if ((class4_sub20_sub7_sub5.anInt3400 ^ 0xffffffff) > -1) {
 						int i = -class4_sub20_sub7_sub5.anInt3400 - 1;
-						Class4_Sub20_Sub7_Sub1_Sub1 class4_sub20_sub7_sub1_sub1;
-						if (i == Region.anInt127)
-							class4_sub20_sub7_sub1_sub1 = (Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302);
-						else
-							class4_sub20_sub7_sub1_sub1 = (Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i]);
-						if (class4_sub20_sub7_sub1_sub1 != null
-								&& (class4_sub20_sub7_sub1_sub1.anInt3270 ^ 0xffffffff) <= -1
-								&& (class4_sub20_sub7_sub1_sub1.anInt3270 ^ 0xffffffff) > -13313
-								&& (class4_sub20_sub7_sub1_sub1.anInt3267 ^ 0xffffffff) <= -1
-								&& (class4_sub20_sub7_sub1_sub1.anInt3267 ^ 0xffffffff) > -13313)
+						Player player;
+						if (i == Region.anInt127) {
+							player = (Class4_Sub15.localPlayer);
+						} else {
+							player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i]);
+						}
+						if (player != null
+								&& (player.worldX ^ 0xffffffff) <= -1
+								&& (player.worldX ^ 0xffffffff) > -13313
+								&& (player.worldY ^ 0xffffffff) <= -1
+								&& (player.worldY ^ 0xffffffff) > -13313) {
 							class4_sub20_sub7_sub5
 									.method425(
-											class4_sub20_sub7_sub1_sub1.anInt3270,
+											player.worldX,
 											((Class67
-													.method1090(
-															class4_sub20_sub7_sub1_sub1.anInt3270,
-															class4_sub20_sub7_sub1_sub1.anInt3267,
-															true,
-															class4_sub20_sub7_sub5.anInt3389)) - class4_sub20_sub7_sub5.anInt3387),
+													.getFloorDrawHeight(
+															player.worldX,
+															player.worldY,
+															class4_sub20_sub7_sub5.anInt3389
+													)) - class4_sub20_sub7_sub5.anInt3387),
 											Region.anInt134,
-											class4_sub20_sub7_sub1_sub1.anInt3267,
+											player.worldY,
 											97);
+						}
 					}
 					class4_sub20_sub7_sub5.method431(
 							Class4_Sub20_Sub6.anInt2906, -4);
 					Class4_Sub20_Sub7_Sub6.aClass69_3439.method1132(
-							Class82.anInt1711,
+							Class82.plane,
 							(int) class4_sub20_sub7_sub5.aDouble3423,
 							(int) class4_sub20_sub7_sub5.aDouble3418,
 							(int) class4_sub20_sub7_sub5.aDouble3409, 60,
@@ -113,24 +95,24 @@ public abstract class Class4_Sub20_Sub7_Sub1 extends Class4_Sub20_Sub7 {
 		}
 	}
 
-	public static Class4_Sub20_Sub12_Sub2 method387(byte arg0) {
+	public static ImageRGB method387(byte arg0) {
 		try {
-			anInt3280++;
-			Class4_Sub20_Sub12_Sub2 class4_sub20_sub12_sub2 = new Class4_Sub20_Sub12_Sub2();
-			class4_sub20_sub12_sub2.anInt3516 = Class13_Sub2.anIntArray2480[0];
-			class4_sub20_sub12_sub2.anInt3518 = Class35.anIntArray726[0];
-			class4_sub20_sub12_sub2.anInt3521 = Class4_Sub20_Sub7_Sub5.anIntArray3395[0];
-			class4_sub20_sub12_sub2.anInt3517 = Class32.anInt696;
-			class4_sub20_sub12_sub2.anInt3520 = Class30.anIntArray650[0];
-			class4_sub20_sub12_sub2.anInt3519 = Class53.anInt1080;
-			int i = (class4_sub20_sub12_sub2.anInt3520 * class4_sub20_sub12_sub2.anInt3516);
-			class4_sub20_sub12_sub2.anIntArray3515 = new int[i];
+			ImageRGB imageRGB = new ImageRGB();
+			imageRGB.anInt3516 = Class13_Sub2.anIntArray2480[0];
+			imageRGB.anInt3518 = Class35.anIntArray726[0];
+			imageRGB.anInt3521 = Class4_Sub20_Sub7_Sub5.anIntArray3395[0];
+			imageRGB.maxHeight = Class32.anInt696;
+			imageRGB.anInt3520 = Class30.anIntArray650[0];
+			imageRGB.maxWidth = Class53.anInt1080;
+			int i = (imageRGB.anInt3520 * imageRGB.anInt3516);
+			imageRGB.anIntArray3515 = new int[i];
 			byte[] is = Class4_Sub23.aByteArrayArray2426[0];
-			for (int i_5_ = 0; (i ^ 0xffffffff) < (i_5_ ^ 0xffffffff); i_5_++)
-				class4_sub20_sub12_sub2.anIntArray3515[i_5_] = Class67.anIntArray1367[Class59
+			for (int i_5_ = 0; (i ^ 0xffffffff) < (i_5_ ^ 0xffffffff); i_5_++) {
+				imageRGB.anIntArray3515[i_5_] = Class67.anIntArray1367[Class59
 						.method1035(is[i_5_], 255)];
+			}
 			Class43.method953(true);
-			return class4_sub20_sub12_sub2;
+			return imageRGB;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "fb.H("
 					+ arg0 + ')');
@@ -204,9 +186,9 @@ public abstract class Class4_Sub20_Sub7_Sub1 extends Class4_Sub20_Sub7 {
 	public int anInt3263;
 	public int anInt3265;
 	public int anInt3266;
-	public int anInt3267;
+	public int worldY;
 	public int anInt3269;
-	public int anInt3270;
+	public int worldX;
 	public int anInt3272;
 	public int anInt3273;
 	public int anInt3274;
@@ -229,7 +211,7 @@ public abstract class Class4_Sub20_Sub7_Sub1 extends Class4_Sub20_Sub7 {
 
 	public int[] anIntArray3275;
 
-	public Class4_Sub20_Sub7_Sub1() {
+	public Actor() {
 		anInt3221 = 0;
 		anInt3237 = 32;
 		anInt3244 = 1;
@@ -277,7 +259,6 @@ public abstract class Class4_Sub20_Sub7_Sub1 extends Class4_Sub20_Sub7 {
 		try {
 			if (arg0 == true) {
 				anInt3236 = 0;
-				anInt3291++;
 				anInt3228 = 0;
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -288,7 +269,6 @@ public abstract class Class4_Sub20_Sub7_Sub1 extends Class4_Sub20_Sub7 {
 
 	public void method383(int arg0, boolean arg1, int arg2, int arg3) {
 		try {
-			anInt3254++;
 			int i = 0;
 			if (arg1 == false) {
 				for (/**/; i < 4; i++) {
@@ -308,9 +288,9 @@ public abstract class Class4_Sub20_Sub7_Sub1 extends Class4_Sub20_Sub7 {
 
 	public boolean method384(int arg0) {
 		try {
-			anInt3252++;
-			if (arg0 != -19456)
+			if (arg0 != -19456) {
 				anInt3220 = 45;
+			}
 			return false;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "fb.D("
@@ -320,17 +300,18 @@ public abstract class Class4_Sub20_Sub7_Sub1 extends Class4_Sub20_Sub7 {
 
 	public void method385(int arg0, boolean arg1, int arg2, int arg3) {
 		try {
-			anInt3283++;
 			if ((anInt3277 ^ 0xffffffff) != 0
-					&& Class68.method1093(anInt3277, (byte) -109).anInt3188 == 1)
+					&& Class68.method1093(anInt3277, (byte) -109).anInt3188 == 1) {
 				anInt3277 = -1;
+			}
 			if (!arg1) {
 				int i = -anIntArray3248[0] + arg0;
 				int i_0_ = arg3 + -anIntArray3247[0];
 				if ((i ^ 0xffffffff) <= 7 && i <= 8 && i_0_ >= -8
 						&& (i_0_ ^ 0xffffffff) >= -9) {
-					if ((anInt3228 ^ 0xffffffff) > -10)
+					if ((anInt3228 ^ 0xffffffff) > -10) {
 						anInt3228++;
+					}
 					for (int i_1_ = anInt3228; (i_1_ ^ 0xffffffff) < -1; i_1_--) {
 						anIntArray3248[i_1_] = anIntArray3248[-1 + i_1_];
 						anIntArray3247[i_1_] = anIntArray3247[-1 + i_1_];
@@ -347,8 +328,8 @@ public abstract class Class4_Sub20_Sub7_Sub1 extends Class4_Sub20_Sub7 {
 			anInt3236 = 0;
 			anIntArray3248[0] = arg0;
 			anIntArray3247[0] = arg3;
-			anInt3267 = anIntArray3247[0] * arg2 + anInt3244 * 64;
-			anInt3270 = 64 * anInt3244 + 128 * anIntArray3248[0];
+			worldY = anIntArray3247[0] * arg2 + anInt3244 * 64;
+			worldX = 64 * anInt3244 + 128 * anIntArray3248[0];
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("fb.B("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ')'));
@@ -359,13 +340,14 @@ public abstract class Class4_Sub20_Sub7_Sub1 extends Class4_Sub20_Sub7 {
 		try {
 			int i = anIntArray3248[0];
 			if (arg0 == false) {
-				anInt3261++;
 				int i_2_ = anIntArray3247[0];
 				if (anInt3277 != -1
-						&& (Class68.method1093(anInt3277, (byte) -113).anInt3188 ^ 0xffffffff) == -2)
+						&& (Class68.method1093(anInt3277, (byte) -113).anInt3188 ^ 0xffffffff) == -2) {
 					anInt3277 = -1;
-				if (anInt3228 < 9)
+				}
+				if (anInt3228 < 9) {
 					anInt3228++;
+				}
 				for (int i_3_ = anInt3228; i_3_ > 0; i_3_--) {
 					anIntArray3248[i_3_] = anIntArray3248[i_3_ - 1];
 					anIntArray3247[i_3_] = anIntArray3247[i_3_ - 1];
@@ -376,22 +358,26 @@ public abstract class Class4_Sub20_Sub7_Sub1 extends Class4_Sub20_Sub7 {
 					i--;
 					i_2_++;
 				}
-				if (arg2 == 1)
+				if (arg2 == 1) {
 					i_2_++;
+				}
 				if (arg2 == 2) {
 					i++;
 					i_2_++;
 				}
-				if ((arg2 ^ 0xffffffff) == -4)
+				if ((arg2 ^ 0xffffffff) == -4) {
 					i--;
-				if ((arg2 ^ 0xffffffff) == -5)
+				}
+				if ((arg2 ^ 0xffffffff) == -5) {
 					i++;
+				}
 				if ((arg2 ^ 0xffffffff) == -6) {
 					i_2_--;
 					i--;
 				}
-				if (arg2 == 6)
+				if (arg2 == 6) {
 					i_2_--;
+				}
 				if (arg2 == 7) {
 					i++;
 					i_2_--;

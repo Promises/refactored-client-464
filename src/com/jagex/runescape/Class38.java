@@ -52,13 +52,13 @@ public class Class38 {
 							&& !(class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617.aBoolean2826) == !arg0
 							&& class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617
 									.method355((byte) -43)) {
-						int i_1_ = (class4_sub20_sub7_sub1_sub2.anInt3267 >> -1116516633);
-						int i_2_ = (class4_sub20_sub7_sub1_sub2.anInt3270 >> 354464647);
+						int i_1_ = (class4_sub20_sub7_sub1_sub2.worldY >> -1116516633);
+						int i_2_ = (class4_sub20_sub7_sub1_sub2.worldX >> 354464647);
 						if (i_2_ >= 0 && (i_2_ ^ 0xffffffff) > -105
 								&& i_1_ >= 0 && i_1_ < 104) {
 							if ((class4_sub20_sub7_sub1_sub2.anInt3244 ^ 0xffffffff) == -2
-									&& ((0x7f & class4_sub20_sub7_sub1_sub2.anInt3270) ^ 0xffffffff) == -65
-									&& (class4_sub20_sub7_sub1_sub2.anInt3267 & 0x7f) == 64) {
+									&& ((0x7f & class4_sub20_sub7_sub1_sub2.worldX) ^ 0xffffffff) == -65
+									&& (class4_sub20_sub7_sub1_sub2.worldY & 0x7f) == 64) {
 								if (Class43.anInt860 == Class77.anIntArrayArray1592[i_2_][i_1_])
 									continue;
 								Class77.anIntArrayArray1592[i_2_][i_1_] = Class43.anInt860;
@@ -67,14 +67,14 @@ public class Class38 {
 								i_0_ += -2147483648;
 							Class4_Sub20_Sub7_Sub6.aClass69_3439
 									.method1132(
-											Class82.anInt1711,
-											class4_sub20_sub7_sub1_sub2.anInt3270,
-											class4_sub20_sub7_sub1_sub2.anInt3267,
-											(Class67.method1090(
-													(class4_sub20_sub7_sub1_sub2.anInt3270 - -(64 * ((class4_sub20_sub7_sub1_sub2.anInt3244) + -1))),
-													(class4_sub20_sub7_sub1_sub2.anInt3267
+											Class82.plane,
+											class4_sub20_sub7_sub1_sub2.worldX,
+											class4_sub20_sub7_sub1_sub2.worldY,
+											(Class67.getFloorDrawHeight(
+													(class4_sub20_sub7_sub1_sub2.worldX - -(64 * ((class4_sub20_sub7_sub1_sub2.anInt3244) + -1))),
+													(class4_sub20_sub7_sub1_sub2.worldY
 															- -(64 * (class4_sub20_sub7_sub1_sub2.anInt3244)) - 64),
-													true, Class82.anInt1711)),
+													Class82.plane)),
 											60 + (-64 + 64 * (class4_sub20_sub7_sub1_sub2.anInt3244)),
 											class4_sub20_sub7_sub1_sub2,
 											class4_sub20_sub7_sub1_sub2.anInt3219,

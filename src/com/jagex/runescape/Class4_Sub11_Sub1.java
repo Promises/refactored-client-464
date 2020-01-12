@@ -88,7 +88,7 @@ public class Class4_Sub11_Sub1 extends StreamBuffer {
 					if (jagexString
 							.method802(
 									arg1 + 315,
-									(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.aJagexString_3593)))
+									(Class4_Sub15.localPlayer.aJagexString_3593)))
 						Class43.method955(Class68.aJagexString_1383,
 								Class4_Sub3.aJagexString_1895, (byte) 112, 0);
 					else {

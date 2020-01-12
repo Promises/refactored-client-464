@@ -57,11 +57,11 @@ public class Class62 {
 
 	public static void method1049(int arg0, int arg1, int arg2) {
 		try {
-			Class65 class65 = (Class40.aClass65ArrayArrayArray787[Class82.anInt1711][arg1][arg0]);
+			Class65 class65 = (Class40.aClass65ArrayArrayArray787[Class82.plane][arg1][arg0]);
 			anInt1228++;
 			if (class65 == null)
 				Class4_Sub20_Sub7_Sub6.aClass69_3439.method1122(
-						Class82.anInt1711, arg1, arg0);
+						Class82.plane, arg1, arg0);
 			else {
 				int i = -99999999;
 				Class4_Sub20_Sub7_Sub4 class4_sub20_sub7_sub4 = null;
@@ -81,7 +81,7 @@ public class Class62 {
 				}
 				if (class4_sub20_sub7_sub4 == null)
 					Class4_Sub20_Sub7_Sub6.aClass69_3439.method1122(
-							Class82.anInt1711, arg1, arg0);
+							Class82.plane, arg1, arg0);
 				else {
 					class65.method1077(false, class4_sub20_sub7_sub4);
 					Class4_Sub20_Sub7_Sub4 class4_sub20_sub7_sub4_5_ = (Class4_Sub20_Sub7_Sub4) class65
@@ -100,11 +100,11 @@ public class Class62 {
 						}
 					}
 					Class4_Sub20_Sub7_Sub6.aClass69_3439.method1119(
-							Class82.anInt1711,
+							Class82.plane,
 							arg1,
 							arg0,
-							Class67.method1090(arg1 * 128 + arg2, arg0 * 128
-									- -64, true, Class82.anInt1711),
+							Class67.getFloorDrawHeight(arg1 * 128 + arg2, arg0 * 128
+									- -64, Class82.plane),
 							class4_sub20_sub7_sub4, i_7_,
 							class4_sub20_sub7_sub4_6_,
 							class4_sub20_sub7_sub4_8_);

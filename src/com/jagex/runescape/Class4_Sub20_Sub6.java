@@ -118,7 +118,7 @@ public class Class4_Sub20_Sub6 extends Class4_Sub20 {
 			method368(-111, 22, 94, (byte) -61, -47, 42, 71, -20);
 		if ((arg2 ^ 0xffffffff) <= -2 && (arg6 ^ 0xffffffff) <= -2
 				&& (arg2 ^ 0xffffffff) >= -103 && (arg6 ^ 0xffffffff) >= -103) {
-			if (!Class59.aBoolean1189 || arg1 == Class82.anInt1711) {
+			if (!Class59.aBoolean1189 || arg1 == Class82.plane) {
 				int i = 0;
 				int i_0_ = -1;
 				if (arg7 == 0)
@@ -179,7 +179,7 @@ public class Class4_Sub20_Sub6 extends Class4_Sub20 {
 				if (arg0 >= 0) {
 					int i_5_ = arg1;
 					if ((i_5_ ^ 0xffffffff) > -4
-							&& ((0x2 & Class46.landscapeData[1][arg2][arg6]) ^ 0xffffffff) == -3)
+							&& ((0x2 & Class46.currentSceneTileFlags[1][arg2][arg6]) ^ 0xffffffff) == -3)
 						i_5_++;
 					StreamBuffer.method257(arg4, Class57.regions[arg1], arg6,
 							arg1, arg0, i_5_, arg5, 531, arg2,

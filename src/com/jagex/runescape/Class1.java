@@ -10,7 +10,7 @@ public class Class1 {
 	public static int anInt62;
 	public static int anInt63;
 	public static int anInt68;
-	public static int anInt70 = 128;
+	public static int cameraVerticalPosition = 128;
 	public static int anInt71;
 	public static int anInt73;
 	public static int anInt74 = 0;

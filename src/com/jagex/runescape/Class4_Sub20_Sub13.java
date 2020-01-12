@@ -16,7 +16,7 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 	public static int anInt3107;
 	public static int anInt3110;
 	public static int anInt3111;
-	public static int anInt3112 = 0;
+	public static int cameraVelocityVertical = 0;
 	public static int anInt3113;
 	public static int anInt3115;
 	public static int anInt3118;
@@ -25,7 +25,7 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 	public static int anInt3123;
 	public static int anInt3128;
 	public static int anInt3129;
-	public static int anInt3131;
+	public static int cameraVerticalRotation;
 	public static int anInt3132;
 	public static int[] anIntArray3122;
 	public static int[] anIntArray3130;
@@ -135,7 +135,7 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 					if (i_3_ == 7)
 						i_5_ = 100 * Class31.anIntArray687[is[i_2_++]] / 46875;
 					if ((i_3_ ^ 0xffffffff) == -9)
-						i_5_ = (Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3584);
+						i_5_ = (Class4_Sub15.localPlayer.anInt3584);
 					if (i_3_ == 9) {
 						for (int i_9_ = 0; i_9_ < 25; i_9_++) {
 							if (aBooleanArray3124[i_9_])
@@ -160,7 +160,7 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 						}
 					}
 					if (i_3_ == 11)
-						i_5_ = Class4_Sub20_Sub7_Sub1.runEnergy;
+						i_5_ = Actor.runEnergy;
 					if ((i_3_ ^ 0xffffffff) == -13)
 						i_5_ = Class77.anInt1588;
 					if ((i_3_ ^ 0xffffffff) == -14) {
@@ -173,9 +173,9 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 						i_5_ = Class57.method1028(-1, i_15_);
 					}
 					if ((i_3_ ^ 0xffffffff) == -19)
-						i_5_ = (Class6.anInt217 + ((Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3270) >> -686491129));
+						i_5_ = (Class6.anInt217 + ((Class4_Sub15.localPlayer.worldX) >> -686491129));
 					if (i_3_ == 19)
-						i_5_ = (Class4_Sub20_Sub8.anInt2987 + ((Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3267) >> 1473326183));
+						i_5_ = (Class4_Sub20_Sub8.anInt2987 + ((Class4_Sub15.localPlayer.worldY) >> 1473326183));
 					if (i_3_ == 20)
 						i_5_ = is[i_2_++];
 					if (i_4_ == 0) {

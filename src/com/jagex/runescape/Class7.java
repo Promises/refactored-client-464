@@ -18,7 +18,7 @@ public class Class7 {
 	public static int anInt224;
 	public static int anInt233;
 	public static int anInt236;
-	public static int[] anIntArray221 = new int[1000];
+	public static int[] minimapHintX = new int[1000];
 	static {
 		aJagexString_225 = JagexString.getRs2PreparedString("Loading )2 please wait)3"
         );
@@ -40,7 +40,7 @@ public class Class7 {
 		}
 	}
 
-	public static void method654(int arg0, Class4_Sub20_Sub7_Sub1 arg1) {
+	public static void method654(int arg0, Actor arg1) {
 		try {
 			if (Region.anInt134 == arg1.anInt3281
 					|| (arg1.anInt3277 ^ 0xffffffff) == 0
@@ -53,8 +53,8 @@ public class Class7 {
 				int i_2_ = 64 * arg1.anInt3244 + arg1.anInt3279 * 128;
 				int i_3_ = arg1.anInt3278 * 128 + 64 * arg1.anInt3244;
 				int i_4_ = arg1.anInt3244 * 64 + arg1.anInt3232 * 128;
-				arg1.anInt3270 = (i_3_ * i + (-i + i_0_) * i_1_) / i_0_;
-				arg1.anInt3267 = ((-i + i_0_) * i_2_ + i * i_4_) / i_0_;
+				arg1.worldX = (i_3_ * i + (-i + i_0_) * i_1_) / i_0_;
+				arg1.worldY = ((-i + i_0_) * i_2_ + i * i_4_) / i_0_;
 			}
 			anInt220++;
 			if (arg1.anInt3245 == 0)
@@ -114,7 +114,7 @@ public class Class7 {
 			}
 			int i_8_ = 0;
 			Class4_Sub20_Sub12.method492(0, 9, 128, i - -7);
-			Class4_Sub20_Sub16.aClass4_Sub20_Sub12_Sub2_3177.method523(0, 0);
+			Class4_Sub20_Sub16.aImageRGB_3177.method523(0, 0);
 			Class4_Sub20_Sub12.method499();
 			int i_9_ = 6885;
 			for (int i_10_ = 1; i + -1 > i_10_; i_10_++) {
@@ -151,7 +151,7 @@ public class Class7 {
 			i_9_ = 7546;
 			i_8_ = 0;
 			Class4_Sub20_Sub12.method492(637, 9, 765, i + 7);
-			Class34.aClass4_Sub20_Sub12_Sub2_1760.method523(382, 0);
+			Class34.aImageRGB_1760.method523(382, 0);
 			Class4_Sub20_Sub12.method499();
 			if (arg0 != false)
 				aClass27_222 = null;
@@ -203,7 +203,7 @@ public class Class7 {
 				aClass19_234 = null;
 				aClass27_222 = null;
 				aJagexString_219 = null;
-				anIntArray221 = null;
+				minimapHintX = null;
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "bd.A("

@@ -33,7 +33,7 @@ public class Class40 {
 				Class43 class43 = (Class43) Class.forName("com.jagex.runescape.Class43_Sub2")
 						.newInstance();
 				class43.anInt896 = arg1;
-				class43.anIntArray877 = new int[256 * (Class4_Sub20_Sub7_Sub1.aBoolean3218 ? 2
+				class43.anIntArray877 = new int[256 * (Actor.aBoolean3218 ? 2
 						: 1)];
 				class43.method956(arg3);
 				class43.anInt902 = 1024 + (~0x3ff & arg1);
@@ -60,7 +60,7 @@ public class Class40 {
 			} catch (Throwable throwable) {
 				try {
 					Class43_Sub1 class43_sub1 = new Class43_Sub1(arg2, arg4);
-					class43_sub1.anIntArray877 = new int[(!Class4_Sub20_Sub7_Sub1.aBoolean3218 ? 1
+					class43_sub1.anIntArray877 = new int[(!Actor.aBoolean3218 ? 1
 							: 2) * 256];
 					class43_sub1.anInt896 = arg1;
 					class43_sub1.method956(arg3);
@@ -140,8 +140,8 @@ public class Class40 {
 
 	public static void method934(int arg0, int arg1, int arg2) {
 		anInt790++;
-		if ((Class4_Sub20_Sub9.anInt3051 ^ 0xffffffff) == -1
-				|| Class4_Sub20_Sub9.anInt3051 == 3) {
+		if ((Class4_Sub20_Sub9.minimapState ^ 0xffffffff) == -1
+				|| Class4_Sub20_Sub9.minimapState == 3) {
 			if (arg2 != 0) {
 				aClass65ArrayArrayArray787 = null;
 			}
@@ -152,21 +152,21 @@ public class Class40 {
 						&& i_1_ < 151) {
 					i -= 73;
 					i_1_ -= 75;
-					int i_2_ = 0x7ff & Class49.anInt999 + Class31.anInt680;
-					int i_3_ = Class4_Sub20_Sub12_Sub3.anIntArray3524[i_2_];
+					int i_2_ = 0x7ff & Class49.cameraHorizontalPosition + Class31.anInt680;
+					int i_3_ = Class4_Sub20_Sub12_Sub3.SINE[i_2_];
 					i_3_ = (i_3_ * (Class4_Sub20_Sub5.anInt2889 - -256) >> -1900486776);
-					int i_4_ = Class4_Sub20_Sub12_Sub3.anIntArray3528[i_2_];
+					int i_4_ = Class4_Sub20_Sub12_Sub3.COSINE[i_2_];
 					i_4_ = (i_4_ * (256 + Class4_Sub20_Sub5.anInt2889) >> 1857221832);
 					int i_5_ = i_4_ * i_1_ - i * i_3_ >> 1238261835;
 					int i_6_ = i_1_ * i_3_ - -(i * i_4_) >> 2082875563;
 					int i_7_ = (i_6_
-							+ (Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3270) >> 940282087);
+							+ (Class4_Sub15.localPlayer.worldX) >> 940282087);
 					int i_8_ = (-i_5_
-							+ (Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3267) >> -823395769);
+							+ (Class4_Sub15.localPlayer.worldY) >> -823395769);
 					boolean bool = (Class4_Sub20
 							.method319(
 									0,
-									(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]),
+									(Class4_Sub15.localPlayer.anIntArray3247[0]),
 									i_8_,
 									i_7_,
 									0,
@@ -176,14 +176,14 @@ public class Class40 {
 									0,
 									0,
 									0,
-									(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0])));
+									(Class4_Sub15.localPlayer.anIntArray3248[0])));
 					if (bool) {
 						Class66.aClass4_Sub11_Sub1_1328
 								.method227((byte) -27, i);
 						Class66.aClass4_Sub11_Sub1_1328.method227((byte) -27,
 								i_1_);
 						Class66.aClass4_Sub11_Sub1_1328.method207(
-								Class49.anInt999, 2018779304);
+								Class49.cameraHorizontalPosition, 2018779304);
 						Class66.aClass4_Sub11_Sub1_1328.method227((byte) -27,
 								57);
 						Class66.aClass4_Sub11_Sub1_1328.method227((byte) -27,
@@ -194,11 +194,11 @@ public class Class40 {
 								89);
 						Class66.aClass4_Sub11_Sub1_1328
 								.method207(
-										(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3270),
+										(Class4_Sub15.localPlayer.worldX),
 										2018779304);
 						Class66.aClass4_Sub11_Sub1_1328
 								.method207(
-										(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anInt3267),
+										(Class4_Sub15.localPlayer.worldY),
 										2018779304);
 						Class66.aClass4_Sub11_Sub1_1328.method227((byte) -27,
 								Class4_Sub20_Sub3.anInt2816);

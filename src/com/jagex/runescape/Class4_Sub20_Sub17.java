@@ -265,7 +265,7 @@ public class Class4_Sub20_Sub17 extends Class4_Sub20 {
 			for (int i = 0; (SceneGraph.anInt2493 ^ 0xffffffff) < (i ^ 0xffffffff); i++) {
 				if ((Class24.anIntArray568[i] - -Class77.anIntArray1585[i] > arg3)
 						&& (arg2 + arg3 ^ 0xffffffff) < (Class24.anIntArray568[i] ^ 0xffffffff)
-						&& ((arg0 ^ 0xffffffff) > ((Class4_Sub20_Sub7_Sub1.anIntArray3268[i] + Class42.anIntArray852[i]) ^ 0xffffffff))
+						&& ((arg0 ^ 0xffffffff) > ((Actor.anIntArray3268[i] + Class42.anIntArray852[i]) ^ 0xffffffff))
 						&& ((Class42.anIntArray852[i] ^ 0xffffffff) > (arg0
 								+ arg4 ^ 0xffffffff)))
 					Class4_Sub20_Sub11.aBooleanArray3083[i] = true;

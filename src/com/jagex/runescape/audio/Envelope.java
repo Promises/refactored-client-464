@@ -1,8 +1,8 @@
-package com.jagex.runescape;
+package com.jagex.runescape.audio;
 
 import com.jagex.runescape.net.StreamBuffer;
 
-public class Class20 {
+public class Envelope {
 	public int anInt531;
 	public int anInt532;
 	public int anInt533;
@@ -15,7 +15,7 @@ public class Class20 {
 	public int[] anIntArray529;
 	public int[] anIntArray530;
 
-	public Class20() {
+	public Envelope() {
 		anIntArray529 = new int[2];
 		anIntArray530 = new int[2];
 		anIntArray529[0] = 0;
@@ -31,7 +31,7 @@ public class Class20 {
 		method775(arg0);
 	}
 
-	public int method773(int arg0) {
+	public int step(int arg0) {
 		if (anInt535 >= anInt537) {
 			anInt536 = anIntArray530[anInt538++] << 15;
 			if (anInt538 >= anInt534)

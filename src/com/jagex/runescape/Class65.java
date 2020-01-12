@@ -10,7 +10,7 @@ public class Class65 {
 	public static JagexString aJagexString_1306;
 	public static JagexString aJagexString_1308;
 	public static JagexString aJagexString_1309;
-	public static Class4_Sub20_Sub12_Sub2[] aClass4_Sub20_Sub12_Sub2Array1290;
+	public static ImageRGB[] aImageRGBArray1290;
 	public static int anInt1287;
 	public static int anInt1288;
 	public static int anInt1292;
@@ -53,7 +53,7 @@ public class Class65 {
 			aJagexString_1308 = null;
 			aJagexString_1285 = null;
 			aClass19_1312 = null;
-			aClass4_Sub20_Sub12_Sub2Array1290 = null;
+			aImageRGBArray1290 = null;
 			anIntArray1304 = null;
 			aClass19_1291 = null;
 			aJagexString_1293 = null;

@@ -44,7 +44,7 @@ public class JagexString {
         }
     }
 
-    public static void method823(int arg0, Class4_Sub20_Sub7_Sub1 arg1) {
+    public static void method823(int arg0, Actor arg1) {
         arg1.aBoolean3290 = false;
         if (arg1.anInt3257 != -1) {
             Class4_Sub20_Sub17 class4_sub20_sub17 = Class68.method1093(
@@ -56,14 +56,14 @@ public class JagexString {
                         && (class4_sub20_sub17.anIntArray3200[arg1.anInt3258] < arg1.anInt3230)) {
                     arg1.anInt3230 = 1;
                     arg1.anInt3258++;
-                    Class24.method790(arg1.anInt3270, arg1.anInt3258,
-                            class4_sub20_sub17, arg1.anInt3267, 24);
+                    Class24.method790(arg1.worldX, arg1.anInt3258,
+                            class4_sub20_sub17, arg1.worldY, 24);
                 }
                 if (class4_sub20_sub17.anIntArray3211.length <= arg1.anInt3258) {
                     arg1.anInt3230 = 0;
                     arg1.anInt3258 = 0;
-                    Class24.method790(arg1.anInt3270, arg1.anInt3258,
-                            class4_sub20_sub17, arg1.anInt3267, 24);
+                    Class24.method790(arg1.worldX, arg1.anInt3258,
+                            class4_sub20_sub17, arg1.worldY, 24);
                 }
             } else {
                 arg1.anInt3257 = -1;
@@ -87,8 +87,8 @@ public class JagexString {
                             && (class4_sub20_sub17.anIntArray3200[arg1.anInt3242] < arg1.anInt3241)) {
                         arg1.anInt3241 = 1;
                         arg1.anInt3242++;
-                        Class24.method790(arg1.anInt3270, arg1.anInt3242,
-                                class4_sub20_sub17, arg1.anInt3267, 24);
+                        Class24.method790(arg1.worldX, arg1.anInt3242,
+                                class4_sub20_sub17, arg1.worldY, 24);
                     }
                     if ((class4_sub20_sub17.anIntArray3211.length <= arg1.anInt3242)
                             && (arg1.anInt3242 < 0 || ((arg1.anInt3242 ^ 0xffffffff) <= (class4_sub20_sub17.anIntArray3211.length ^ 0xffffffff)))) {
@@ -122,8 +122,8 @@ public class JagexString {
                         && (class4_sub20_sub17.anIntArray3200[arg1.anInt3239] < arg1.anInt3233)) {
                     arg1.anInt3233 = 1;
                     arg1.anInt3239++;
-                    Class24.method790(arg1.anInt3270, arg1.anInt3239,
-                            class4_sub20_sub17, arg1.anInt3267, 24);
+                    Class24.method790(arg1.worldX, arg1.anInt3239,
+                            class4_sub20_sub17, arg1.worldY, 24);
                 }
                 if ((class4_sub20_sub17.anIntArray3211.length ^ 0xffffffff) >= (arg1.anInt3239 ^ 0xffffffff)) {
                     arg1.anInt3276++;
@@ -134,8 +134,8 @@ public class JagexString {
                             || (arg1.anInt3239 >= class4_sub20_sub17.anIntArray3211.length)) {
                         arg1.anInt3277 = -1;
                     } else {
-                        Class24.method790(arg1.anInt3270, arg1.anInt3239,
-                                class4_sub20_sub17, arg1.anInt3267, 24);
+                        Class24.method790(arg1.worldX, arg1.anInt3239,
+                                class4_sub20_sub17, arg1.worldY, 24);
                     }
                 }
                 arg1.aBoolean3290 = class4_sub20_sub17.aBoolean3186;
@@ -158,7 +158,7 @@ public class JagexString {
                 }
             }
             if (arg1.method818(
-                    (Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.aJagexString_3593),
+                    (Class4_Sub15.localPlayer.aJagexString_3593),
                     (byte) -105)) {
                 return true;
             }

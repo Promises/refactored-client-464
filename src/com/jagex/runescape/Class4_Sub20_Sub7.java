@@ -62,10 +62,10 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             Class62.aJagexString_1238 = StringUtilities.aJagexString_560;
             Class81.aJagexString_1679 = Class61.aJagexString_1212;
             StringUtilities.aJagexString_581 = Class76.aJagexString_1560;
-            Class4_Sub20_Sub7_Sub1_Sub1.aJagexString_3592 = StringUtilities.aJagexString_921;
+            Player.aJagexString_3592 = StringUtilities.aJagexString_921;
             Class4_Sub20_Sub7_Sub5.aJagexString_3383 = StringUtilities.aJagexString_850;
             Class81.aJagexString_1669 = Class50.aJagexString_1018;
-            Class4_Sub20_Sub7_Sub1.aJagexString_3234 = Class4_Sub23.aJagexString_2417;
+            Actor.aJagexString_3234 = Class4_Sub23.aJagexString_2417;
             StringUtilities.aJagexString_765 = Class4_Sub20_Sub11.aJagexString_3078;
             Class4_Sub20_Sub7_Sub5.aJagexString_3410 = Class61.aJagexString_1212;
             StringUtilities.aJagexString_407 = Class4_Sub20_Sub4.aJagexString_2866;
@@ -94,7 +94,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             Class4_Sub20_Sub1.aJagexString_2731 = StringUtilities.aJagexString_843;
             Class4_Sub3.aJagexString_1907 = Class65.aJagexString_1294;
             Class72.aJagexString_1485 = Class81.aJagexString_1659;
-            Game.aJagexString_1852 = Class4_Sub20_Sub7_Sub1.aJagexString_3238;
+            Game.aJagexString_1852 = Actor.aJagexString_3238;
             StringUtilities.aJagexString_681 = Class80.aJagexString_1642;
             Class57.aJagexString_1154 = Class8.aJagexString_242;
             StringUtilities.aJagexString_586 = StringUtilities.aJagexString_310;
@@ -109,7 +109,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             Class4_Sub1.aJagexString_1869 = Class54.aJagexString_1095;
             Class53.aJagexString_1076 = RSCanvas.aJagexString_45;
             Class81.aJagexString_1703 = Class4_Sub2_Sub4.aJagexString_2650;
-            Class4_Sub20_Sub7_Sub1_Sub1.aJagexString_3600 = JagexString.aJagexString_1822;
+            Player.aJagexString_3600 = JagexString.aJagexString_1822;
             Class81.aJagexString_1652 = Class61.aJagexString_1212;
             StringUtilities.aJagexString_397 = Class50.aJagexString_1018;
             Class61.aJagexString_1221 = Class58.aJagexString_1168;
@@ -127,7 +127,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             Class81.aJagexString_1676 = Class61.aJagexString_1212;
             StringUtilities.aJagexString_839 = StringUtilities.aJagexString_695;
             StringUtilities.aJagexString_679 = Class80.aJagexString_1642;
-            Class4_Sub20_Sub4.aJagexString_2854 = Class4_Sub20_Sub7_Sub1.aJagexString_3243;
+            Class4_Sub20_Sub4.aJagexString_2854 = Actor.aJagexString_3243;
             Class71.aJagexString_1470 = Class4_Sub14.aJagexString_2287;
             Class61.aJagexString_1210 = Class58.aJagexString_1168;
             StringUtilities.aJagexString_2479 = Class76.aJagexString_1579;
@@ -181,7 +181,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             Class81.aJagexString_1704 = Class61.aJagexString_1212;
             Class4_Sub20_Sub8.aJagexString_2967 = Class46.aJagexString_928;
             Class81.aJagexString_1690 = Class4_Sub17.aJagexString_2334;
-            Class4_Sub20_Sub7_Sub1_Sub1.aJagexString_3610 = StringUtilities.aJagexString_700;
+            Player.aJagexString_3610 = StringUtilities.aJagexString_700;
             Class81.aJagexString_1694 = Class61.aJagexString_1212;
             Class4_Sub20_Sub10.aJagexString_3067 = StringUtilities.aJagexString_312;
             Class4_Sub16.aJagexString_2305 = StringUtilities.aJagexString_595;
@@ -300,8 +300,8 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
         }
     }
 
-    public static Class4_Sub20_Sub12_Sub2[] method376(int arg0, int arg1,
-                                                      Class19 arg2, int arg3) {
+    public static ImageRGB[] method376(int arg0, int arg1,
+                                       Class19 arg2, int arg3) {
         try {
             anInt2943++;
             if (!Class4_Sub20_Sub14.method594(arg3 ^ ~0x76af, arg1, arg0, arg2)) {
@@ -343,8 +343,8 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             Class4_Sub20_Sub15.method603(false); // done
             for (int i = 0; Class4_Sub20_Sub7_Sub5.anInt3386 > i; i++) {
                 int i_6_ = Class58.anIntArray1164[i];
-                if ((Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i_6_].anInt3256) != Region.anInt134) {
-                    Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i_6_] = null;
+                if ((Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_6_].anInt3256) != Region.anInt134) {
+                    Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_6_] = null;
                 }
             }
             if (arg0 != 28231) {
@@ -356,7 +356,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
                         + " P size:" + Class4_Sub20_Sub15.anInt3157);
             }
             for (int i = 0; Class4_Sub20_Sub7_Sub6.anInt3431 > i; i++) {
-                if ((Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[Class4_Sub23.anIntArray2432[i]]) == null) {
+                if ((Class4_Sub20_Sub7_Sub4.aPlayerArray3358[Class4_Sub23.anIntArray2432[i]]) == null) {
                     throw new RuntimeException("gpp2 pos:" + i + " size:"
                             + (Class4_Sub20_Sub7_Sub6.anInt3431));
                 }

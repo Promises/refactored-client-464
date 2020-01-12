@@ -149,12 +149,12 @@ public class Class72 {
                         i += 30;
                         int i_1_ = 302;
                         int i_2_ = 291;
-                        Class4_Sub20_Sub7_Sub1.aClass4_Sub20_Sub12_Sub1_3260
+                        Actor.aClass4_Sub20_Sub12_Sub1_3260
                                 .method507(-73 + i_1_, i_2_ - 20);
                         arg0.method566(Class63.aJagexString_1242, i_1_ + -73, -20
                                 + i_2_, 144, 40, 16777215, 0, 1, 1, 0);
                         i_1_ = 462;
-                        Class4_Sub20_Sub7_Sub1.aClass4_Sub20_Sub12_Sub1_3260
+                        Actor.aClass4_Sub20_Sub12_Sub1_3260
                                 .method507(-73 + i_1_, i_2_ + -20);
                         arg0.method566(StringUtilities.aJagexString_1463, i_1_ + -73, i_2_
                                 + -20, 144, 40, 16777215, 0, 1, 1, 0);
@@ -178,7 +178,7 @@ public class Class72 {
                                                 Class4_Sub8.aJagexString_1977,
                                                 Class4_Sub20_Sub12_Sub4
                                                         .method574(StringUtilities.aJagexString_1768),
-                                                (((Region.anInt134 % 40 ^ 0xffffffff) > -21 & (Class4_Sub20_Sub7_Sub1_Sub1.anInt3581 ^ 0xffffffff) == -1) ? Class59.aJagexString_1187
+                                                (((Region.anInt134 % 40 ^ 0xffffffff) > -21 & (Player.anInt3581 ^ 0xffffffff) == -1) ? Class59.aJagexString_1187
                                                         : StringUtilities.aJagexString_1767)}),
                                         -842)), 272, i, 16777215, 0);
                         i += 15;
@@ -188,15 +188,15 @@ public class Class72 {
                                                 Class4_Sub20_Sub9.aJagexString_3042,
                                                 StringUtilities.aJagexString_1764
                                                         .method809(-127),
-                                                (!(Region.anInt134 % 40 < 20 & ((Class4_Sub20_Sub7_Sub1_Sub1.anInt3581) ^ 0xffffffff) == -2) ? StringUtilities.aJagexString_1767
+                                                (!(Region.anInt134 % 40 < 20 & ((Player.anInt3581) ^ 0xffffffff) == -2) ? StringUtilities.aJagexString_1767
                                                         : Class59.aJagexString_1187)}),
                                         -842)), 274, i, 16777215, 0);
-                        Class4_Sub20_Sub7_Sub1.aClass4_Sub20_Sub12_Sub1_3260
+                        Actor.aClass4_Sub20_Sub12_Sub1_3260
                                 .method507(i_3_ - 73, -20 + i_4_);
                         arg0.method571(Class68.aJagexString_1368, i_3_, 5 + i_4_,
                                 16777215, 0);
                         i_3_ = 462;
-                        Class4_Sub20_Sub7_Sub1.aClass4_Sub20_Sub12_Sub1_3260
+                        Actor.aClass4_Sub20_Sub12_Sub1_3260
                                 .method507(i_3_ - 73, -20 + i_4_);
                         i += 15;
                         arg0.method571(Class82.aJagexString_1713, i_3_, i_4_ - -5,
@@ -218,7 +218,7 @@ public class Class72 {
                         i_5_ += 15;
                         arg0.method571(Class4_Sub17.aJagexString_2325, 382, i_5_,
                                 16777215, 0);
-                        Class4_Sub20_Sub7_Sub1.aClass4_Sub20_Sub12_Sub1_3260
+                        Actor.aClass4_Sub20_Sub12_Sub1_3260
                                 .method507(-73 + i, -20 + i_6_);
                         arg0.method571(Class82.aJagexString_1713, i, i_6_ - -5,
                                 16777215, 0);
@@ -239,12 +239,12 @@ public class Class72 {
                         : 0].method507(725, 463);
                 if ((Class54.anInt1109 ^ 0xffffffff) < -6
                         && Class25.anInt583 != 2 && Class19_Sub1.anInt2536 == 0) {
-                    if (Class4_Sub20_Sub7_Sub1.aClass4_Sub20_Sub12_Sub1_3288 != null) {
+                    if (Actor.aClass4_Sub20_Sub12_Sub1_3288 != null) {
                         int i = 100;
                         int i_7_ = 35;
                         int i_8_ = 5;
                         int i_9_ = 463;
-                        Class4_Sub20_Sub7_Sub1.aClass4_Sub20_Sub12_Sub1_3288
+                        Actor.aClass4_Sub20_Sub12_Sub1_3288
                                 .method507(i_8_, i_9_);
                         arg0.method571((Class4_Sub24.method639(
                                 (new JagexString[]{
@@ -263,7 +263,7 @@ public class Class72 {
                                     i_8_ + i / 2, i_7_ / 2 + i_9_ + 12,
                                     16777215, 0);
                     } else
-                        Class4_Sub20_Sub7_Sub1.aClass4_Sub20_Sub12_Sub1_3288 = Class2
+                        Actor.aClass4_Sub20_Sub12_Sub1_3288 = Class2
                                 .method44(24094, StringUtilities.aJagexString_1767,
                                         Class63.aJagexString_1250,
                                         Game.aClass19_Sub1_1849);

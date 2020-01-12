@@ -41,35 +41,35 @@ public class Class52 {
 			method1003(-113, 7);
 		for (int i = 0; (i ^ 0xffffffff) > -9; i++) {
 			for (int i_0_ = 0; (i_0_ ^ 0xffffffff) > -9; i_0_++)
-				Class4_Sub23.anIntArrayArrayArray2416[arg0][arg3 - -i][i_0_
+				Class4_Sub23.intGroundArray[arg0][arg3 - -i][i_0_
 						+ arg2] = 0;
 		}
 		if (arg3 > 0) {
 			for (int i = 1; i < 8; i++)
-				Class4_Sub23.anIntArrayArrayArray2416[arg0][arg3][i + arg2] = (Class4_Sub23.anIntArrayArrayArray2416[arg0][-1
+				Class4_Sub23.intGroundArray[arg0][arg3][i + arg2] = (Class4_Sub23.intGroundArray[arg0][-1
 						+ arg3][arg2 + i]);
 		}
 		anInt1062++;
 		if ((arg2 ^ 0xffffffff) < -1) {
 			for (int i = 1; (i ^ 0xffffffff) > -9; i++)
-				Class4_Sub23.anIntArrayArrayArray2416[arg0][i + arg3][arg2] = (Class4_Sub23.anIntArrayArrayArray2416[arg0][i
+				Class4_Sub23.intGroundArray[arg0][i + arg3][arg2] = (Class4_Sub23.intGroundArray[arg0][i
 						+ arg3][arg2 - 1]);
 		}
 		if ((arg3 ^ 0xffffffff) < -1
-				&& (Class4_Sub23.anIntArrayArrayArray2416[arg0][arg3 + -1][arg2] != 0))
-			Class4_Sub23.anIntArrayArrayArray2416[arg0][arg3][arg2] = Class4_Sub23.anIntArrayArrayArray2416[arg0][-1
+				&& (Class4_Sub23.intGroundArray[arg0][arg3 + -1][arg2] != 0))
+			Class4_Sub23.intGroundArray[arg0][arg3][arg2] = Class4_Sub23.intGroundArray[arg0][-1
 					+ arg3][arg2];
 		else if ((arg2 ^ 0xffffffff) >= -1
-				|| ((Class4_Sub23.anIntArrayArrayArray2416[arg0][arg3][arg2
+				|| ((Class4_Sub23.intGroundArray[arg0][arg3][arg2
 						+ -1]) ^ 0xffffffff) == -1) {
 			if ((arg3 ^ 0xffffffff) < -1
 					&& (arg2 ^ 0xffffffff) < -1
-					&& ((Class4_Sub23.anIntArrayArrayArray2416[arg0][-1 + arg3][arg2
+					&& ((Class4_Sub23.intGroundArray[arg0][-1 + arg3][arg2
 							+ -1]) ^ 0xffffffff) != -1)
-				Class4_Sub23.anIntArrayArrayArray2416[arg0][arg3][arg2] = (Class4_Sub23.anIntArrayArrayArray2416[arg0][arg3
+				Class4_Sub23.intGroundArray[arg0][arg3][arg2] = (Class4_Sub23.intGroundArray[arg0][arg3
 						+ -1][-1 + arg2]);
 		} else
-			Class4_Sub23.anIntArrayArrayArray2416[arg0][arg3][arg2] = Class4_Sub23.anIntArrayArrayArray2416[arg0][arg3][-1
+			Class4_Sub23.intGroundArray[arg0][arg3][arg2] = Class4_Sub23.intGroundArray[arg0][arg3][-1
 					+ arg2];
 	}
 

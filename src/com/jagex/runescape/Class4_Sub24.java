@@ -40,7 +40,7 @@ public class Class4_Sub24 extends RSFont {
 			else if ((i_0_ ^ 0xffffffff) == -2) {
 				int i_1_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
 						arg0 + -1432215783, 3);
-				Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.method386(false,
+				Class4_Sub15.localPlayer.method386(false,
 						false, i_1_);
 				int i_2_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
 						-1432215741, 1);
@@ -49,18 +49,18 @@ public class Class4_Sub24 extends RSFont {
 			} else if (i_0_ == 2) {
 				int i_3_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
 						arg0 + -1432215783, 3);
-				Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.method386(false,
+				Class4_Sub15.localPlayer.method386(false,
 						true, i_3_);
 				int i_4_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
 						-1432215741, 3);
-				Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.method386(false,
+				Class4_Sub15.localPlayer.method386(false,
 						true, i_4_);
 				int i_5_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
 						-1432215741, 1);
 				if (i_5_ == 1)
 					Class48.anIntArray979[JagexException.anInt1726++] = 2047;
 			} else if ((i_0_ ^ 0xffffffff) == -4) {
-				Class82.anInt1711 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
+				Class82.plane = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 						.method266(arg0 ^ ~0x555de096, 2);
 				int i_6_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method266(
 						-1432215741, 7);
@@ -72,7 +72,7 @@ public class Class4_Sub24 extends RSFont {
 						-1432215741, 1);
 				if ((i_9_ ^ 0xffffffff) == -2)
 					Class48.anIntArray979[JagexException.anInt1726++] = 2047;
-				Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.method385(i_6_,
+				Class4_Sub15.localPlayer.method385(i_6_,
 						(i_7_ ^ 0xffffffff) == -2, arg0 ^ 0xaa, i_8_);
 			}
 		}

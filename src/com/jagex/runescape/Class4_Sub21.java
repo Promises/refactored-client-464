@@ -14,12 +14,12 @@ public class Class4_Sub21 extends RSFont {
 	public static JagexString aJagexString_2375 = aJagexString_2371;
 	public static JagexString aJagexString_2376;
 	public static JagexString aJagexString_2377;
-	public static Class4_Sub20_Sub12_Sub2 aClass4_Sub20_Sub12_Sub2_2368;
-	public static Class4_Sub20_Sub12_Sub2[] aClass4_Sub20_Sub12_Sub2Array2378;
+	public static ImageRGB aImageRGB_2368;
+	public static ImageRGB[] aImageRGBArray2378;
 	public static int anInt2365;
 	public static int anInt2369;
 	public static int anInt2374;
-	public static volatile int anInt2379;
+	public static volatile int idleTime;
 	public static int anInt2380 = 0;
 	public static int anInt2381;
 	public static int anInt2382;
@@ -30,7 +30,7 @@ public class Class4_Sub21 extends RSFont {
 		aJagexString_2376 = (JagexString.getRs2PreparedString(
 				"Um ein neues Spielkonto zu erstellen)1 m-Ussen Sie"));
 		aJagexString_2372 = JagexString.getRs2PreparedString("null");
-		anInt2379 = 0;
+		idleTime = 0;
 	}
 
 	public static Object method623(byte[] arg0, boolean arg1, byte arg2) {
@@ -72,8 +72,8 @@ public class Class4_Sub21 extends RSFont {
 			if (arg0 == 95) {
 				aJagexString_2371 = null;
 				garbageCollection = null;
-				aClass4_Sub20_Sub12_Sub2Array2378 = null;
-				aClass4_Sub20_Sub12_Sub2_2368 = null;
+				aImageRGBArray2378 = null;
+				aImageRGB_2368 = null;
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "t.A("
@@ -81,8 +81,8 @@ public class Class4_Sub21 extends RSFont {
 		}
 	}
 
-	public static Class4_Sub20_Sub12_Sub2[] method625(JagexString arg0,
-                                                      Class19 arg1, JagexString arg2, boolean arg3) {
+	public static ImageRGB[] method625(JagexString arg0,
+                                       Class19 arg1, JagexString arg2, boolean arg3) {
 		try {
 			int i = arg1.method754(arg0, 1);
 			if (arg3 != true)

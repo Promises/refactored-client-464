@@ -1,15 +1,12 @@
 package com.jagex.runescape;
 
 public class Class9 {
-	public static byte aByte280;
+	public static byte aByte280 = (byte) 0;
 	public static Class19 aClass19_275;
-	public static JagexString aJagexString_269 = JagexString.getRs2PreparedString(
-			"scape main");
-	public static JagexString aJagexString_278;
 	public static RSInterface aClass4_Sub13_285;
-	public static Class66 aClass66_277;
-	public static volatile long aLong281;
-	public static long[] aLongArray284;
+	public static Class66 aClass66_277 = new Class66(100);
+	public static volatile long aLong281 = 0L;
+	public static long[] aLongArray284 = new long[100];
 	public static int anInt266;
 	public static int anInt268;
 	public static int anInt270;
@@ -17,16 +14,8 @@ public class Class9 {
 	public static int anInt276;
 	public static int anInt283;
 	public static int[][] anIntArrayArray274 = new int[104][104];
-	public static short[] aShortArray272;
-	static {
-		aShortArray272 = new short[] { -1, 9104, -1, -1, -1 };
-		GameShell.lastClick = 0L;
-		aJagexString_278 = JagexString.getRs2PreparedString("<col=40ff00>");
-		aLong281 = 0L;
-		aByte280 = (byte) 0;
-		aLongArray284 = new long[100];
-		aClass66_277 = new Class66(100);
-	}
+	public static short[] aShortArray272 = new short[] { -1, 9104, -1, -1, -1 };
+
 
 	public static void method661(RSInterface[] interfaces, int arg1, int arg2,
 			int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9) {
@@ -46,7 +35,7 @@ public class Class9 {
 					Class42.anIntArray852[SceneGraph.anInt2493] = rsInterface.anInt2212
 							- -arg2;
 					Class77.anIntArray1585[SceneGraph.anInt2493] = rsInterface.anInt2156;
-					Class4_Sub20_Sub7_Sub1.anIntArray3268[(SceneGraph.anInt2493)] = rsInterface.anInt2185;
+					Actor.anIntArray3268[(SceneGraph.anInt2493)] = rsInterface.anInt2185;
 					i_0_ = SceneGraph.anInt2493++;
 				}
 				rsInterface.anInt2193 = i_0_;
@@ -232,11 +221,11 @@ public class Class9 {
 														&& ((arg3 ^ 0xffffffff) < (i_23_ ^ 0xffffffff))
 														&& ((arg6 ^ 0xffffffff) > (32 + i_24_ ^ 0xffffffff)) && i_24_ < arg1)
 														|| (((RS2Font.aClass4_Sub13_2763) == rsInterface) && (i_20_ == (Class4_Sub20_Sub14.anInt3139)))) {
-													Class4_Sub20_Sub12_Sub2 class4_sub20_sub12_sub2;
+													ImageRGB imageRGB;
 													if ((Class4_Sub20_Sub1.anInt2734) != 1
 															|| ((i_20_ ^ 0xffffffff) != ((Class43.anInt887) ^ 0xffffffff))
 															|| ((Class57.anInt1142 ^ 0xffffffff) != ((rsInterface.anInt2172) ^ 0xffffffff)))
-														class4_sub20_sub12_sub2 = (Class4_Sub20_Sub7_Sub4
+														imageRGB = (Class4_Sub20_Sub7_Sub4
 																.method421(
 																		false,
 																		i_25_,
@@ -245,7 +234,7 @@ public class Class9 {
 																		(byte) -97,
 																		3153952));
 													else
-														class4_sub20_sub12_sub2 = (Class4_Sub20_Sub7_Sub4
+														imageRGB = (Class4_Sub20_Sub7_Sub4
 																.method421(
 																		false,
 																		i_25_,
@@ -253,19 +242,19 @@ public class Class9 {
 																		2,
 																		(byte) -97,
 																		0));
-													if (class4_sub20_sub12_sub2 == null)
+													if (imageRGB == null)
 														Class67.method1088(
 																rsInterface);
 													else if (((RS2Font.aClass4_Sub13_2763) != rsInterface)
 															|| ((Class4_Sub20_Sub14.anInt3139) != i_20_)) {
 														if (((Class46.rsInterface) != rsInterface)
 																|| (i_20_ != (Class4_Sub20_Sub7_Sub6.anInt3443)))
-															class4_sub20_sub12_sub2
-																	.method532(
+															imageRGB
+																	.drawImage(
 																			i_23_,
 																			i_24_);
 														else
-															class4_sub20_sub12_sub2
+															imageRGB
 																	.method515(
 																			i_23_,
 																			i_24_,
@@ -283,7 +272,7 @@ public class Class9 {
 															i_28_ = 0;
 															i_27_ = 0;
 														}
-														class4_sub20_sub12_sub2
+														imageRGB
 																.method515(
 																		i_27_
 																				+ i_23_,
@@ -328,12 +317,12 @@ public class Class9 {
 												}
 											} else if (((rsInterface.anIntArray2177) != null)
 													&& ((i_20_ ^ 0xffffffff) > -21)) {
-												Class4_Sub20_Sub12_Sub2 class4_sub20_sub12_sub2 = (rsInterface
+												ImageRGB imageRGB = (rsInterface
 														.method292(i_20_,
 																(byte) -107));
-												if (class4_sub20_sub12_sub2 != null)
-													class4_sub20_sub12_sub2
-															.method532(i_23_,
+												if (imageRGB != null)
+													imageRGB
+															.drawImage(i_23_,
 																	i_24_);
 												else if (Class4_Sub20_Sub13.aBoolean3116)
 													Class67.method1088(
@@ -443,23 +432,23 @@ public class Class9 {
 									}
 								} else if (rsInterface.anInt2258 == 5) {
 									if (!rsInterface.aBoolean2178) {
-										Class4_Sub20_Sub12_Sub2 class4_sub20_sub12_sub2 = (rsInterface
+										ImageRGB imageRGB = (rsInterface
 												.method286(
 														1,
 														Class35.method902(
 																rsInterface, 2)));
-										if (class4_sub20_sub12_sub2 != null)
-											class4_sub20_sub12_sub2.method532(
+										if (imageRGB != null)
+											imageRGB.drawImage(
 													i_1_, i_2_);
 										else if (Class4_Sub20_Sub13.aBoolean3116)
 											Class67.method1088(rsInterface);
 									} else {
-										Class4_Sub20_Sub12_Sub2 class4_sub20_sub12_sub2;
+										ImageRGB imageRGB;
 										if (rsInterface.anInt2226 == -1)
-											class4_sub20_sub12_sub2 = rsInterface
+											imageRGB = rsInterface
 													.method286(1, false);
 										else
-											class4_sub20_sub12_sub2 = (Class4_Sub20_Sub7_Sub4
+											imageRGB = (Class4_Sub20_Sub7_Sub4
 													.method421(
 															false,
 															rsInterface.anInt2226,
@@ -467,13 +456,13 @@ public class Class9 {
 															rsInterface.anInt2201,
 															(byte) -97,
 															rsInterface.anInt2162));
-										if (class4_sub20_sub12_sub2 == null) {
+										if (imageRGB == null) {
 											if (Class4_Sub20_Sub13.aBoolean3116)
 												Class67.method1088(
 														rsInterface);
 										} else {
-											int i_34_ = (class4_sub20_sub12_sub2.anInt3519);
-											int i_35_ = (class4_sub20_sub12_sub2.anInt3517);
+											int i_34_ = (imageRGB.maxWidth);
+											int i_35_ = (imageRGB.maxHeight);
 											if (rsInterface.aBoolean2253) {
 												Class4_Sub20_Sub12
 														.method503(
@@ -490,18 +479,18 @@ public class Class9 {
 													for (int i_39_ = 0; ((i_37_ ^ 0xffffffff) < (i_39_ ^ 0xffffffff)); i_39_++) {
 														if ((rsInterface.anInt2218) == 0) {
 															if ((i_3_ ^ 0xffffffff) == -1)
-																class4_sub20_sub12_sub2
-																		.method532(
+																imageRGB
+																		.drawImage(
 																				((i_34_ * i_38_) + i_1_),
 																				((i_35_ * i_39_) + i_2_));
 															else
-																class4_sub20_sub12_sub2
+																imageRGB
 																		.method515(
 																				(i_1_ - -(i_38_ * i_34_)),
 																				(i_2_ - -(i_35_ * i_39_)),
 																				(-(0xff & i_3_) + 256));
 														} else
-															class4_sub20_sub12_sub2
+															imageRGB
 																	.method519(
 																			(i_34_
 																					/ 2
@@ -518,7 +507,7 @@ public class Class9 {
 											} else {
 												int i_40_ = (4096 * rsInterface.anInt2156 / i_34_);
 												if ((rsInterface.anInt2218 ^ 0xffffffff) != -1)
-													class4_sub20_sub12_sub2
+													imageRGB
 															.method519(
 																	i_1_
 																			- -((rsInterface.anInt2156) / 2),
@@ -528,19 +517,19 @@ public class Class9 {
 												else if (i_3_ == 0) {
 													if ((rsInterface.anInt2156 == i_34_)
 															&& (((rsInterface.anInt2185) ^ 0xffffffff) == (i_35_ ^ 0xffffffff)))
-														class4_sub20_sub12_sub2
-																.method532(
+														imageRGB
+																.drawImage(
 																		i_1_,
 																		i_2_);
 													else
-														class4_sub20_sub12_sub2
+														imageRGB
 																.method521(
 																		i_1_,
 																		i_2_,
 																		(rsInterface.anInt2156),
 																		(rsInterface.anInt2185));
 												} else
-													class4_sub20_sub12_sub2
+													imageRGB
 															.method511(
 																	i_1_,
 																	i_2_,
@@ -587,7 +576,7 @@ public class Class9 {
 													.method904(-1, null, -1,
 															850, null));
 										else
-											class4_sub20_sub7_sub7 = Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302
+											class4_sub20_sub7_sub7 = Class4_Sub15.localPlayer
 													.method378(false);
 									} else if (i_41_ != -1) {
 										Class4_Sub20_Sub17 class4_sub20_sub17 = Class68
@@ -596,7 +585,7 @@ public class Class9 {
 												.method282(
 														(byte) -92,
 														class4_sub20_sub17,
-														(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.aClass35_3609),
+														(Class4_Sub15.localPlayer.aClass35_3609),
 														bool,
 														rsInterface.anInt2153));
 										if (class4_sub20_sub7_sub7 == null
@@ -607,7 +596,7 @@ public class Class9 {
 												.method282(
 														(byte) -113,
 														null,
-														(Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.aClass35_3609),
+														(Class4_Sub15.localPlayer.aClass35_3609),
 														bool, -1));
 										if (class4_sub20_sub7_sub7 == null
 												&& Class4_Sub20_Sub13.aBoolean3116)
@@ -619,8 +608,8 @@ public class Class9 {
 															+ i_1_,
 													i_2_
 															- -(rsInterface.anInt2185 / 2));
-									int i_43_ = ((rsInterface.anInt2168 * (Class4_Sub20_Sub12_Sub3.anIntArray3524[rsInterface.anInt2213])) >> -1637374736);
-									int i_44_ = (((Class4_Sub20_Sub12_Sub3.anIntArray3528[rsInterface.anInt2213]) * rsInterface.anInt2168) >> -758703024);
+									int i_43_ = ((rsInterface.anInt2168 * (Class4_Sub20_Sub12_Sub3.SINE[rsInterface.anInt2213])) >> -1637374736);
+									int i_44_ = (((Class4_Sub20_Sub12_Sub3.COSINE[rsInterface.anInt2213]) * rsInterface.anInt2168) >> -758703024);
 									if (class4_sub20_sub7_sub7 != null) {
 										if (!rsInterface.aBoolean2178)
 											class4_sub20_sub7_sub7.method437(0,
@@ -898,7 +887,7 @@ public class Class9 {
 					((-Class4_Sub20_Sub8.anInt2987 + Class76.anInt1550) << 588365671)
 							- -Class11.anInt320);
 			if (Class27.anInt604 > -1 && Region.anInt134 % 20 < 10)
-				Class14.aClass4_Sub20_Sub12_Sub2Array405[0].method532(-12
+				Class14.aImageRGBArray405[0].drawImage(-12
 						+ Class27.anInt604 + arg0, arg1
 						- -SceneGraph.anInt2502 - 28);
 		}
@@ -920,12 +909,12 @@ public class Class9 {
 		try {
 			anIntArrayArray274 = null;
 			aClass19_275 = null;
-			aJagexString_269 = null;
+			StringUtilities.startupSongName = null;
 			if (arg0 <= 7)
 				GameShell.lastClick = -112L;
 			aShortArray272 = null;
 			aClass66_277 = null;
-			aJagexString_278 = null;
+			StringUtilities.aJagexString_278 = null;
 			aClass4_Sub13_285 = null;
 			aLongArray284 = null;
 		} catch (RuntimeException runtimeexception) {

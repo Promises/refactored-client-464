@@ -92,7 +92,7 @@ public class Class4_Sub20 extends RSFont {
 			int i_4_ = arg9;
 			boolean bool = false;
 			int i_5_ = Class49.anIntArray1003.length;
-			int[][] is = (Class57.regions[Class82.anInt1711].clippingData);
+			int[][] is = (Class57.regions[Class82.plane].clippingData);
 			while (i_3_ != i_4_) {
 				i_2_ = Class30.anIntArray661[i_4_];
 				i = Class49.anIntArray1003[i_4_];
@@ -103,14 +103,14 @@ public class Class4_Sub20 extends RSFont {
 				}
 				if ((arg5 ^ 0xffffffff) != -1) {
 					if ((arg5 < 5 || arg5 == 10)
-							&& (Class57.regions[Class82.anInt1711].canMove(
+							&& (Class57.regions[Class82.plane].canMove(
 									arg2, (byte) 105, -1 + arg5, arg3, i, arg8,
 									i_2_))) {
 						bool = true;
 						break;
 					}
 					if ((arg5 ^ 0xffffffff) > -11
-							&& (Class57.regions[Class82.anInt1711].method48(
+							&& (Class57.regions[Class82.plane].method48(
 									arg2, arg9 + -97, -1 + arg5, arg3, i_2_,
 									arg8, i))) {
 						bool = true;
@@ -119,7 +119,7 @@ public class Class4_Sub20 extends RSFont {
 				}
 				if (arg4 != 0
 						&& (arg0 ^ 0xffffffff) != -1
-						&& (Class57.regions[Class82.anInt1711].method49(arg0,
+						&& (Class57.regions[Class82.plane].method49(arg0,
 								i_2_, arg4, i, arg3, true, arg2, arg10))) {
 					bool = true;
 					break;
@@ -302,7 +302,7 @@ public class Class4_Sub20 extends RSFont {
 					Class48.anInt987++;
 				}
 				Class66.aClass4_Sub11_Sub1_1328.method210(
-						(Class4_Sub17.aBooleanArray2320[82]) ? 1 : 0, 128);
+						(Game.keyStatus[82]) ? 1 : 0, 128);
 				Class66.aClass4_Sub11_Sub1_1328.method224(13421, i_18_
 						- -Class4_Sub20_Sub8.anInt2987);
 				Class66.aClass4_Sub11_Sub1_1328.method218(112, i_17_
@@ -329,15 +329,15 @@ public class Class4_Sub20 extends RSFont {
 		}
 	}
 
-	public static Class4_Sub20_Sub12_Sub2 method321(int arg0, int arg1,
-			int arg2, Class19 arg3) {
+	public static ImageRGB method321(int arg0, int arg1,
+									 int arg2, Class19 arg3) {
 		try {
 			anInt2351++;
 			if (!Class4_Sub20_Sub14.method594(-30384, arg0, arg1, arg3))
 				return null;
 			if (arg2 != -1)
 				return null;
-			return Class4_Sub20_Sub7_Sub1.method387((byte) -59);
+			return Actor.method387((byte) -59);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("rc.RB("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ','
@@ -365,27 +365,27 @@ public class Class4_Sub20 extends RSFont {
 		}
 	}
 
-	public static void method323(Class4_Sub20_Sub12_Sub2 arg0, int arg1,
-			int arg2, byte arg3, int arg4, int arg5) {
+	public static void method323(ImageRGB arg0, int arg1,
+								 int arg2, byte arg3, int arg4, int arg5) {
 		try {
 			anInt2360++;
 			int i = arg5 * arg5 - -(arg2 * arg2);
 			if (i > 4225 && (i ^ 0xffffffff) > -90001) {
-				int i_22_ = Class31.anInt680 + Class49.anInt999 & 0x7ff;
-				int i_23_ = Class4_Sub20_Sub12_Sub3.anIntArray3524[i_22_];
+				int i_22_ = Class31.anInt680 + Class49.cameraHorizontalPosition & 0x7ff;
+				int i_23_ = Class4_Sub20_Sub12_Sub3.SINE[i_22_];
 				i_23_ = i_23_ * 256 / (256 + Class4_Sub20_Sub5.anInt2889);
-				int i_24_ = Class4_Sub20_Sub12_Sub3.anIntArray3528[i_22_];
+				int i_24_ = Class4_Sub20_Sub12_Sub3.COSINE[i_22_];
 				i_24_ = i_24_ * 256 / (Class4_Sub20_Sub5.anInt2889 - -256);
 				int i_25_ = -(i_23_ * arg5) + i_24_ * arg2 >> -630159696;
 				int i_26_ = arg2 * i_23_ - -(arg5 * i_24_) >> -1413307024;
 				double d = Math.atan2(i_26_, i_25_);
 				int i_27_ = (int) (Math.sin(d) * 63.0);
 				int i_28_ = (int) (Math.cos(d) * 57.0);
-				Class4_Sub21.aClass4_Sub20_Sub12_Sub2_2368.method517(arg4
+				Class4_Sub21.aImageRGB_2368.method517(arg4
 						+ (94 + i_27_ + -6), -20 + -i_28_ + 83 + arg1, 20, 20,
 						15, 15, d, 256);
 			} else
-				Class4_Sub20_Sub9.method475(arg5, arg2, (byte) 118, arg0, arg1,
+				Class4_Sub20_Sub9.drawOnMinimap(arg0, arg5, arg2, arg1,
 						arg4);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("rc.BC("

@@ -88,7 +88,7 @@ public class Class71 {
 			Class8.anInt249++;
 			Class4_Sub20_Sub4.method359(Class4_Sub3.aJagexString_1895,
 					arg1.anInt2172, 0, 51, 0, (byte) 68,
-					(Class4_Sub20_Sub7_Sub1_Sub1.aJagexString_3592));
+					(Player.aJagexString_3592));
 		}
 		if (arg1.anInt2171 == 4) {
 			Class4_Sub20_Sub4.method359(Class4_Sub3.aJagexString_1895,

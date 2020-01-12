@@ -16,7 +16,7 @@ public class Class49 implements Runnable {
 	public static int anInt996;
 	public static int anInt997;
 	public static int anInt998;
-	public static int anInt999 = 0;
+	public static int cameraHorizontalPosition = 0;
 	public static int[] anIntArray1003;
 	public static int[] anIntArray995;
 
@@ -35,18 +35,22 @@ public class Class49 implements Runnable {
 	public static int method988(byte arg0, int arg1, int arg2) {
 		try {
 			anInt1000++;
-			if (arg0 <= 115)
+			if (arg0 <= 115) {
 				anInt991 = 74;
+			}
 			Class4_Sub1 class4_sub1 = ((Class4_Sub1) Class31.aClass16_671
 					.method725((byte) 117, arg1));
-			if (class4_sub1 == null)
+			if (class4_sub1 == null) {
 				return 0;
-			if ((arg2 ^ 0xffffffff) == 0)
+			}
+			if ((arg2 ^ 0xffffffff) == 0) {
 				return 0;
+			}
 			int i = 0;
 			for (int i_0_ = 0; ((class4_sub1.anIntArray1858.length ^ 0xffffffff) < (i_0_ ^ 0xffffffff)); i_0_++) {
-				if (arg2 == class4_sub1.anIntArray1866[i_0_])
+				if (arg2 == class4_sub1.anIntArray1866[i_0_]) {
 					i += class4_sub1.anIntArray1858[i_0_];
+				}
 			}
 			return i;
 		} catch (RuntimeException runtimeexception) {
@@ -73,11 +77,13 @@ public class Class49 implements Runnable {
 	public static Class4_Sub20_Sub12_Sub1 method990(Class19 arg0, int arg1,
 			int arg2) {
 		try {
-			if (arg2 != -1)
+			if (arg2 != -1) {
 				method989(-25);
+			}
 			anInt1002++;
-			if (!Class4_Sub20_Sub16.method607(true, arg0, arg1))
+			if (!Class4_Sub20_Sub16.method607(true, arg0, arg1)) {
 				return null;
+			}
 			return Class4_Sub17.method306(2640);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("na.C("
@@ -90,12 +96,14 @@ public class Class49 implements Runnable {
 		try {
 			anInt997++;
 
-			if (Class4_Sub20_Sub17.aClass76_3189 == null)
+			if (Class4_Sub20_Sub17.aClass76_3189 == null) {
 				return false;
+			}
 			try {
 				int i = Class4_Sub20_Sub17.aClass76_3189.method1189(true);
-				if ((i ^ 0xffffffff) == -1)
+				if ((i ^ 0xffffffff) == -1) {
 					return false;
+				}
 
 				if ((Class4_Sub20_Sub11.incomingPacket ^ 0xffffffff) == 0) {
 					Class4_Sub20_Sub17.aClass76_3189
@@ -116,8 +124,9 @@ public class Class49 implements Runnable {
 										(Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.byteBuffer),
 										25, 0, 1);
 						Class4_Sub20_Sub15.anInt3157 = 0xff & (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.byteBuffer[0]);
-					} else
+					} else {
 						return false;
+					}
 				}
 				if ((Class4_Sub20_Sub15.anInt3157 ^ 0xffffffff) == 1) {
 					if ((i ^ 0xffffffff) < -2) {
@@ -129,11 +138,13 @@ public class Class49 implements Runnable {
 						Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointion = 0;
 						Class4_Sub20_Sub15.anInt3157 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 								.method209((byte) -106);
-					} else
+					} else {
 						return false;
+					}
 				}
-				if (i < Class4_Sub20_Sub15.anInt3157)
+				if (i < Class4_Sub20_Sub15.anInt3157) {
 					return false;
+				}
 				Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointion = 0;
 				Class4_Sub20_Sub17.aClass76_3189.method1186(
 						Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.byteBuffer,
@@ -151,8 +162,9 @@ public class Class49 implements Runnable {
 					return true;
 				}
 				if ((Class4_Sub20_Sub11.incomingPacket ^ 0xffffffff) == -188) {
-					if ((Class4_Sub6.anInt1932 ^ 0xffffffff) != 0)
+					if ((Class4_Sub6.anInt1932 ^ 0xffffffff) != 0) {
 						Class58.method1032(0, 0, Class4_Sub6.anInt1932);
+					}
 					Class4_Sub20_Sub11.incomingPacket = -1;
 					return true;
 				}
@@ -166,8 +178,9 @@ public class Class49 implements Runnable {
 						Class4_Sub6.anInt1932 = i_2_;
 						Class66.method1080(Class4_Sub6.anInt1932, 0);
 						Class62.method1048(false, Class4_Sub6.anInt1932);
-						for (int i_4_ = 0; i_4_ < 100; i_4_++)
+						for (int i_4_ = 0; i_4_ < 100; i_4_++) {
 							Class4_Sub20_Sub11.aBooleanArray3083[i_4_] = true;
+						}
 					}
 					while (i_3_-- > 0) {
 						int i_5_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
@@ -184,19 +197,21 @@ public class Class49 implements Runnable {
 									class4_sub16);
 							class4_sub16 = null;
 						}
-						if (class4_sub16 == null)
+						if (class4_sub16 == null) {
 							class4_sub16 = Class24.method795((byte) 102, i_6_,
 									i_7_, i_5_);
+						}
 						class4_sub16.aBoolean2310 = true;
 					}
 					for (Class4_Sub16 class4_sub16 = ((Class4_Sub16) Class31.aClass16_677
 							.method724((byte) -117)); class4_sub16 != null; class4_sub16 = ((Class4_Sub16) Class31.aClass16_677
 							.method723((byte) -25))) {
-						if (!class4_sub16.aBoolean2310)
+						if (!class4_sub16.aBoolean2310) {
 							Class4_Sub20_Sub7_Sub3.method418(95, true,
 									class4_sub16);
-						else
+						} else {
 							class4_sub16.aBoolean2310 = false;
+						}
 					}
 					Class64.aClass16_1259 = new Class16(512);
 					while ((Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointion ^ 0xffffffff) > (i_1_ ^ 0xffffffff)) {
@@ -244,8 +259,9 @@ public class Class49 implements Runnable {
 					Class76.anIntArray1571[i_13_] = i_15_;
 					Class31.anIntArray693[i_13_] = 1;
 					for (int i_16_ = 0; i_16_ < 98; i_16_++) {
-						if (i_14_ >= Class34.anIntArray1751[i_16_])
+						if (i_14_ >= Class34.anIntArray1751[i_16_]) {
 							Class31.anIntArray693[i_13_] = 2 + i_16_;
+						}
 					}
 					Class42.anIntArray841[Class59.method1035(31,
 							Class73.anInt1502++)] = i_13_;
@@ -307,11 +323,11 @@ public class Class49 implements Runnable {
 												Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883)
 										.method801(false)));
 						if (i_20_ != 2 && i_20_ != 3) {
-							if ((i_20_ ^ 0xffffffff) != -2)
+							if ((i_20_ ^ 0xffffffff) != -2) {
 								Class43.method955(jagexString,
 										Class68.method1094(-5, l)
 												.method839(124), (byte) 119, 3);
-							else
+							} else {
 								Class43.method955(
                                         jagexString,
 										(Class4_Sub24
@@ -325,7 +341,8 @@ public class Class49 implements Runnable {
 																		.method839(
 																				106) }),
 														-842)), (byte) 122, 7);
-						} else
+							}
+						} else {
 							Class43.method955(
                                     jagexString,
 									(Class4_Sub24.method639((new JagexString[] {
@@ -333,6 +350,7 @@ public class Class49 implements Runnable {
 											Class68.method1094(-5, l)
 													.method839(104) }), -842)),
 									(byte) 123, 7);
+						}
 					}
 					Class4_Sub20_Sub11.incomingPacket = -1;
 					return true;
@@ -355,20 +373,23 @@ public class Class49 implements Runnable {
 							.method219((byte) 73); // int (interface)
 					int i_27_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.method213((byte) -14); // leshort (len)
-					if (i_27_ == 65535)
+					if (i_27_ == 65535) {
 						i_27_ = -1;
+					}
 					int i_28_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.method237(-86); // int2 (set)
 					int i_29_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.method223(arg0 + -50); // shorta (offset)
-					if (i_29_ == 65535)
+					if (i_29_ == 65535) {
 						i_29_ = -1;
+					}
 					for (int i_30_ = i_29_; i_30_ <= i_27_; i_30_++) {
 						long l = i_30_ + ((long) i_26_ << 1124469280);
 						RSFont class4 = Class64.aClass16_1259.method725(
 								(byte) 117, l);
-						if (class4 != null)
+						if (class4 != null) {
 							class4.clear();
+						}
 						Class64.aClass16_1259.method720(
 								new Class4_Sub15(i_28_), l, false);
 					}
@@ -398,7 +419,7 @@ public class Class49 implements Runnable {
 					RSInterface class4_sub13 = Class4_Sub20.method322(true,
 							i_33_);
 					class4_sub13.anInt2137 = 3;
-					class4_sub13.anInt2250 = Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.aClass35_3609
+					class4_sub13.anInt2250 = Class4_Sub15.localPlayer.aClass35_3609
 							.method898(-256);
 					Class67.method1088(class4_sub13);
 					Class4_Sub20_Sub11.incomingPacket = -1;
@@ -459,8 +480,9 @@ public class Class49 implements Runnable {
 					if ((i_40_ ^ 0xffffffff) <= -2
 							&& (i_40_ ^ 0xffffffff) >= -9) {
 						if (jagexString.method818(Class4_Sub24.aJagexString_2448,
-								(byte) -105))
+								(byte) -105)) {
 							jagexString = null;
+						}
 						Class4_Sub22.aJagexStringArray2387[-1 + i_40_] = jagexString;
 						Class4_Sub20_Sub7.aBooleanArray2946[i_40_ - 1] = (i_41_ ^ 0xffffffff) == -1;
 					}
@@ -469,7 +491,7 @@ public class Class49 implements Runnable {
 				}
 				if (Class4_Sub20_Sub11.incomingPacket == 82) {
 					Class25.aBoolean582 = true;
-					Class4_Sub20_Sub7_Sub1.anInt3255 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
+					Actor.anInt3255 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.get(); // readByte()
 					Class71.anInt1479 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.get(); // readByte()
@@ -480,12 +502,12 @@ public class Class49 implements Runnable {
 					Class4_Sub20_Sub17.anInt3216 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.get();
 					if (Class4_Sub20_Sub17.anInt3216 >= 100) {
-						Class33.anInt708 = 128 * Class71.anInt1479 - -64;
-						Class6.anInt209 = 128
-								* Class4_Sub20_Sub7_Sub1.anInt3255 - -64;
-						RSInterface.anInt2176 = (Class67.method1090(
-								Class6.anInt209, Class33.anInt708, true,
-								Class82.anInt1711) - Class4_Sub12.anInt2127);
+						Class33.cameraY = 128 * Class71.anInt1479 - -64;
+						Class6.cameraX = 128
+								* Actor.anInt3255 - -64;
+						RSInterface.cameraZ = (Class67.getFloorDrawHeight(
+								Class6.cameraX, Class33.cameraY, Class82.plane
+						) - Class4_Sub12.anInt2127);
 					}
 					Class4_Sub20_Sub11.incomingPacket = -1;
 					return true;
@@ -529,13 +551,15 @@ public class Class49 implements Runnable {
 					return true;
 				}
 				if (Class4_Sub20_Sub11.incomingPacket == 74) { // no data
-					for (int i_47_ = 0; ((Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358).length > i_47_); i_47_++) {
-						if ((Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i_47_]) != null)
-							Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i_47_].anInt3277 = -1;
+					for (int i_47_ = 0; ((Class4_Sub20_Sub7_Sub4.aPlayerArray3358).length > i_47_); i_47_++) {
+						if ((Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_47_]) != null) {
+							Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_47_].anInt3277 = -1;
+						}
 					}
 					for (int i_48_ = 0; ((i_48_ ^ 0xffffffff) > ((Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151).length ^ 0xffffffff)); i_48_++) {
-						if ((Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i_48_]) != null)
+						if ((Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i_48_]) != null) {
 							Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i_48_].anInt3277 = -1;
+						}
 					}
 					Class4_Sub20_Sub11.incomingPacket = -1;
 					return true;
@@ -555,13 +579,15 @@ public class Class49 implements Runnable {
 							.method219((byte) 73);
 					int i_50_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.method209((byte) -111);
-					if ((i_49_ ^ 0xffffffff) > 69999)
+					if ((i_49_ ^ 0xffffffff) > 69999) {
 						i_50_ += 32768;
+					}
 					RSInterface class4_sub13;
-					if (i_49_ < 0)
+					if (i_49_ < 0) {
 						class4_sub13 = null;
-					else
+					} else {
 						class4_sub13 = Class4_Sub20.method322(true, i_49_);
+					}
 					while (Class4_Sub20_Sub15.anInt3157 > (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointion)) {
 						int i_51_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 								.getSmart();
@@ -571,9 +597,10 @@ public class Class49 implements Runnable {
 						if (i_52_ != 0) {
 							i_53_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 									.get(); // readByte()
-							if ((i_53_ ^ 0xffffffff) == -256)
+							if ((i_53_ ^ 0xffffffff) == -256) {
 								i_53_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 										.method219((byte) 73);
+							}
 						}
 						if (class4_sub13 != null && i_51_ >= 0
 								&& i_51_ < class4_sub13.anIntArray2179.length) {
@@ -583,8 +610,9 @@ public class Class49 implements Runnable {
 						Class4_Sub22.method630(i_53_, -1 + i_52_, i_51_, arg0
 								^ ~0x7468, i_50_);
 					}
-					if (class4_sub13 != null)
+					if (class4_sub13 != null) {
 						Class67.method1088(class4_sub13);
+					}
 					Class4_Sub20_Sub7.method374();
 					Class2.anIntArray84[Class59.method1035(31,
 							Class10.anInt306++)] = Class59.method1035(i_50_,
@@ -601,10 +629,12 @@ public class Class49 implements Runnable {
 							i_55_);
 					if (class4_sub13 != null && class4_sub13.anInt2258 == 0) {
 						if ((i_54_ ^ 0xffffffff) < (class4_sub13.anInt2206
-								+ -class4_sub13.anInt2185 ^ 0xffffffff))
+								+ -class4_sub13.anInt2185 ^ 0xffffffff)) {
 							i_54_ = (-class4_sub13.anInt2185 + class4_sub13.anInt2206);
-						if ((i_54_ ^ 0xffffffff) > -1)
+						}
+						if ((i_54_ ^ 0xffffffff) > -1) {
 							i_54_ = 0;
+						}
 						if ((i_54_ ^ 0xffffffff) != (class4_sub13.anInt2238 ^ 0xffffffff)) {
 							class4_sub13.anInt2238 = i_54_;
 							Class67.method1088(class4_sub13);
@@ -663,21 +693,23 @@ public class Class49 implements Runnable {
 					if (Class52.anInt1058 >= 100) {
 						int i_63_ = Class12.anInt348 * 128 - -64;
 						int i_64_ = 64 + Class14.anInt399 * 128;
-						int i_65_ = (Class67.method1090(i_63_, i_64_, true,
-								Class82.anInt1711) + -Class8.anInt260);
-						int i_66_ = -Class6.anInt209 + i_63_;
-						int i_67_ = i_65_ - RSInterface.anInt2176;
-						int i_68_ = i_64_ - Class33.anInt708;
+						int i_65_ = (Class67.getFloorDrawHeight(i_63_, i_64_, Class82.plane
+						) + -Class8.anInt260);
+						int i_66_ = -Class6.cameraX + i_63_;
+						int i_67_ = i_65_ - RSInterface.cameraZ;
+						int i_68_ = i_64_ - Class33.cameraY;
 						int i_69_ = (int) Math
 								.sqrt((i_66_ * i_66_ - -(i_68_ * i_68_)));
-						Class4_Sub20_Sub13.anInt3131 = (int) (Math.atan2(i_67_,
+						Class4_Sub20_Sub13.cameraVerticalRotation = (int) (Math.atan2(i_67_,
 								i_69_) * 325.949) & 0x7ff;
-						Class4_Sub6.anInt1941 = 0x7ff & (int) (Math.atan2(
+						Class4_Sub6.cameraHorizontalRotation = 0x7ff & (int) (Math.atan2(
 								i_66_, i_68_) * -325.949);
-						if (Class4_Sub20_Sub13.anInt3131 < 128)
-							Class4_Sub20_Sub13.anInt3131 = 128;
-						if ((Class4_Sub20_Sub13.anInt3131 ^ 0xffffffff) < -384)
-							Class4_Sub20_Sub13.anInt3131 = 383;
+						if (Class4_Sub20_Sub13.cameraVerticalRotation < 128) {
+							Class4_Sub20_Sub13.cameraVerticalRotation = 128;
+						}
+						if ((Class4_Sub20_Sub13.cameraVerticalRotation ^ 0xffffffff) < -384) {
+							Class4_Sub20_Sub13.cameraVerticalRotation = 383;
+						}
 					}
 					Class4_Sub20_Sub11.incomingPacket = -1;
 					return true;
@@ -690,8 +722,8 @@ public class Class49 implements Runnable {
 					for (int i_70_ = Class4_Sub20_Sub7_Sub4.anInt3367; Class4_Sub20_Sub7_Sub4.anInt3367
 							- -8 > i_70_; i_70_++) {
 						for (int i_71_ = Class64.anInt1273; i_71_ < 8 + Class64.anInt1273; i_71_++) {
-							if ((Class40.aClass65ArrayArrayArray787[Class82.anInt1711][i_70_][i_71_]) != null) {
-								Class40.aClass65ArrayArrayArray787[Class82.anInt1711][i_70_][i_71_] = null;
+							if ((Class40.aClass65ArrayArrayArray787[Class82.plane][i_70_][i_71_]) != null) {
+								Class40.aClass65ArrayArrayArray787[Class82.plane][i_70_][i_71_] = null;
 								Class62.method1049(i_71_, i_70_, arg0 ^ 0x72);
 							}
 						}
@@ -703,8 +735,9 @@ public class Class49 implements Runnable {
 								&& (class4_sub7.anInt1953 < Class4_Sub20_Sub7_Sub4.anInt3367 + 8)
 								&& ((Class64.anInt1273 ^ 0xffffffff) >= (class4_sub7.anInt1950 ^ 0xffffffff))
 								&& ((Class64.anInt1273 - -8 ^ 0xffffffff) < (class4_sub7.anInt1950 ^ 0xffffffff))
-								&& Class82.anInt1711 == class4_sub7.anInt1961)
+								&& Class82.plane == class4_sub7.anInt1961) {
 							class4_sub7.anInt1954 = 0;
+						}
 					}
 					Class4_Sub20_Sub11.incomingPacket = -1;
 					return true;
@@ -720,8 +753,9 @@ public class Class49 implements Runnable {
 				}
 				if (Class4_Sub20_Sub11.incomingPacket == 99) { // no data
 					Class25.aBoolean582 = false;
-					for (int i_73_ = 0; (i_73_ ^ 0xffffffff) > -6; i_73_++)
+					for (int i_73_ = 0; (i_73_ ^ 0xffffffff) > -6; i_73_++) {
 						RS2Font.aBooleanArray2765[i_73_] = false;
+					}
 					Class4_Sub20_Sub11.incomingPacket = -1;
 					return true;
 				}
@@ -744,8 +778,8 @@ public class Class49 implements Runnable {
 							.method240(arg0 + 32717);
 					int i_76_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.method240(32767);
-					Class82.anInt1711 = i_74_ >> -513969663;
-					Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.method385(
+					Class82.plane = i_74_ >> -513969663;
+					Class4_Sub15.localPlayer.method385(
 							i_76_, (0x1 & i_74_) == 1, 128, i_75_);
 					Class4_Sub20_Sub11.incomingPacket = -1;
 					return true;
@@ -789,8 +823,9 @@ public class Class49 implements Runnable {
 								.method209((byte) -107);
 						class4_sub8s[i_79_].aByte1973 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 								.method229(79);
-						if ((Class25.aLong584 ^ 0xffffffffffffffffL) == (class4_sub8s[i_79_].aLong150 ^ 0xffffffffffffffffL))
+						if ((Class25.aLong584 ^ 0xffffffffffffffffL) == (class4_sub8s[i_79_].aLong150 ^ 0xffffffffffffffffL)) {
 							Class27.aByte613 = class4_sub8s[i_79_].aByte1973;
+						}
 					}
 					boolean bool = false;
 					int i_80_ = Class4_Sub10.anInt2021;
@@ -806,8 +841,9 @@ public class Class49 implements Runnable {
 								bool = false;
 							}
 						}
-						if (bool)
+						if (bool) {
 							break;
+						}
 					}
 					Class4_Sub20_Sub11.incomingPacket = -1;
 					Class13_Sub2.aClass4_Sub8Array2482 = class4_sub8s;
@@ -835,18 +871,20 @@ public class Class49 implements Runnable {
 							.getC(); // readByteC()
 					Class4_Sub16 class4_sub16 = ((Class4_Sub16) Class31.aClass16_677
 							.method725((byte) 117, i_82_));
-					if (class4_sub16 != null)
+					if (class4_sub16 != null) {
 						Class4_Sub20_Sub7_Sub3
 								.method418(
 										107,
 										(((class4_sub16.anInt2311) ^ 0xffffffff) != (i_83_ ^ 0xffffffff)),
 										class4_sub16);
+					}
 					Class24.method795((byte) 36, i_83_, i_84_, i_82_);
 					Class4_Sub20_Sub11.incomingPacket = -1;
 					return true;
 				}
-				if (arg0 != 50)
+				if (arg0 != 50) {
 					return true;
+				}
 				if (Class4_Sub20_Sub11.incomingPacket == 173) {
 					int i_85_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get(); // readByte()
 					int i_86_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get(); // readByte()
@@ -856,7 +894,7 @@ public class Class49 implements Runnable {
 					Class78.anIntArray1607[i_85_] = i_86_;
 					SceneGraph.anIntArray2504[i_85_] = i_87_;
 					Class58.anIntArray1163[i_85_] = i_88_;
-					Class4_Sub15.anIntArray2295[i_85_] = 0;
+					Class4_Sub15.quakeTimes[i_85_] = 0;
 					Class4_Sub20_Sub11.incomingPacket = -1;
 					return true;
 				}
@@ -871,9 +909,10 @@ public class Class49 implements Runnable {
 				if (Class4_Sub20_Sub11.incomingPacket == 160) {
 					Class57.anInt1141 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.get(); // readByte()
-					if (Class57.anInt1141 == 1)
+					if (Class57.anInt1141 == 1) {
 						Class10.anInt313 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 								.method209((byte) -125);
+					}
 					if ((Class57.anInt1141 ^ 0xffffffff) <= -3
 							&& (Class57.anInt1141 ^ 0xffffffff) >= -7) {
 						if (Class57.anInt1141 == 2) {
@@ -904,9 +943,10 @@ public class Class49 implements Runnable {
 						Class4_Sub17.anInt2329 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 								.get(); // readByte()
 					}
-					if (Class57.anInt1141 == 10)
+					if (Class57.anInt1141 == 10) {
 						Class16.anInt426 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 								.method209((byte) -119);
+					}
 					Class4_Sub20_Sub11.incomingPacket = -1;
 					return true;
 				}
@@ -916,8 +956,9 @@ public class Class49 implements Runnable {
 					Class4_Sub6.anInt1932 = i_89_;
 					Class66.method1080(i_89_, 0);
 					Class62.method1048(false, Class4_Sub6.anInt1932);
-					for (int i_90_ = 0; (i_90_ ^ 0xffffffff) > -101; i_90_++)
+					for (int i_90_ = 0; (i_90_ ^ 0xffffffff) > -101; i_90_++) {
 						Class4_Sub20_Sub11.aBooleanArray3083[i_90_] = true;
+					}
 					Class4_Sub20_Sub11.incomingPacket = -1;
 					return true;
 				}
@@ -946,7 +987,7 @@ public class Class49 implements Runnable {
 						if ((Class64.aLongArray1279[i_96_] ^ 0xffffffffffffffffL) == (l ^ 0xffffffffffffffffL)) {
 							if (Class50.anIntArray1005[i_96_] != i_94_) {
 								Class50.anIntArray1005[i_96_] = i_94_;
-								if ((i_94_ ^ 0xffffffff) < -1)
+								if ((i_94_ ^ 0xffffffff) < -1) {
 									Class43.method955(
 											(Class4_Sub24
 													.method639(
@@ -956,13 +997,15 @@ public class Class49 implements Runnable {
 															arg0 ^ ~0x37b)),
 											Class4_Sub3.aJagexString_1895,
 											(byte) 121, 5);
-								if ((i_94_ ^ 0xffffffff) == -1)
+								}
+								if ((i_94_ ^ 0xffffffff) == -1) {
 									Class43.method955((Class4_Sub24.method639(
 											(new JagexString[] {jagexString,
 													(Class54.aJagexString_1100) }),
 											-842)),
 											(Class4_Sub3.aJagexString_1895),
 											(byte) 112, 5);
+								}
 							}
 							Class34.anIntArray1743[i_96_] = i_95_;
 							jagexString = null;
@@ -1003,8 +1046,9 @@ public class Class49 implements Runnable {
 								Class34.anIntArray1743[1 + i_98_] = i_102_;
 							}
 						}
-						if (bool)
+						if (bool) {
 							break;
+						}
 					}
 					Class4_Sub20_Sub11.incomingPacket = -1;
 					return true;
@@ -1014,13 +1058,15 @@ public class Class49 implements Runnable {
 							.method219((byte) 73); // int
 					int i_104_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.method209((byte) -123); // short
-					if ((i_103_ ^ 0xffffffff) > 69999)
+					if ((i_103_ ^ 0xffffffff) > 69999) {
 						i_104_ += 32768;
+					}
 					RSInterface class4_sub13;
-					if ((i_103_ ^ 0xffffffff) <= -1)
+					if ((i_103_ ^ 0xffffffff) <= -1) {
 						class4_sub13 = Class4_Sub20.method322(true, i_103_);
-					else
+					} else {
 						class4_sub13 = null;
+					}
 					if (class4_sub13 != null) {
 						for (int i_105_ = 0; i_105_ < class4_sub13.anIntArray2179.length; i_105_++) {
 							class4_sub13.anIntArray2179[i_105_] = 0;
@@ -1033,9 +1079,10 @@ public class Class49 implements Runnable {
 					for (int i_107_ = 0; i_107_ < i_106_; i_107_++) {
 						int i_108_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 								.getC(); // readByteC(): //bytec
-						if (i_108_ == 255)
+						if (i_108_ == 255) {
 							i_108_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 									.method219((byte) 73); // int
+						}
 						int i_109_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 								.method213((byte) -113); // leshort
 						if (class4_sub13 != null
@@ -1046,8 +1093,9 @@ public class Class49 implements Runnable {
 						Class4_Sub22.method630(i_108_, i_109_ + -1, i_107_,
 								-29787, i_104_);
 					}
-					if (class4_sub13 != null)
+					if (class4_sub13 != null) {
 						Class67.method1088(class4_sub13);
+					}
 					Class4_Sub20_Sub7.method374();
 					Class2.anIntArray84[Class59.method1035(Class10.anInt306++,
 							31)] = Class59.method1035(32767, i_104_);
@@ -1059,8 +1107,9 @@ public class Class49 implements Runnable {
 							.method222(false);
 					int i_111_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.method209((byte) -125);
-					if ((i_111_ ^ 0xffffffff) == -65536)
+					if ((i_111_ ^ 0xffffffff) == -65536) {
 						i_111_ = -1;
+					}
 					int i_112_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.method222(false);
 					RSInterface class4_sub13 = Class4_Sub20.method322(true,
@@ -1088,8 +1137,9 @@ public class Class49 implements Runnable {
 						class4_sub13.anInt2151 = class4_sub20_sub8.anInt2976;
 						class4_sub13.anInt2236 = class4_sub20_sub8.anInt2995;
 						class4_sub13.anInt2168 = class4_sub20_sub8.anInt2983;
-						if ((class4_sub13.anInt2156 ^ 0xffffffff) < -1)
+						if ((class4_sub13.anInt2156 ^ 0xffffffff) < -1) {
 							class4_sub13.anInt2168 = (32 * class4_sub13.anInt2168 / class4_sub13.anInt2156);
+						}
 						class4_sub13.anInt2213 = class4_sub20_sub8.anInt3003;
 						class4_sub13.anInt2148 = class4_sub20_sub8.anInt3010;
 						class4_sub13.anInt2224 = class4_sub20_sub8.anInt2965;
@@ -1100,7 +1150,7 @@ public class Class49 implements Runnable {
 				}
 				if (Class4_Sub20_Sub11.incomingPacket == 163) { // Run Energy sent as byte
 					Class4_Sub20_Sub7.method374();
-					Class4_Sub20_Sub7_Sub1.runEnergy = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
+					Actor.runEnergy = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.get();
 					Class43.anInt868 = Class4_Sub20_Sub10.anInt3053;
 					Class4_Sub20_Sub11.incomingPacket = -1;
@@ -1121,9 +1171,10 @@ public class Class49 implements Runnable {
 								break;
 							}
 						}
-						if (!bool && Class81.anInt1695 == 0)
+						if (!bool && Class81.anInt1695 == 0) {
 							Class43.method955(GameShell.aJagexString_11,
                                     jagexString_113_, (byte) 108, 4);
+						}
 					} else if (jagexString.method826(Class47.aJagexString_962,
 							(byte) 127)) {
 						JagexString jagexString_115_ = (jagexString.method829((byte) 19, 0,
@@ -1137,9 +1188,10 @@ public class Class49 implements Runnable {
 								break;
 							}
 						}
-						if (!bool && Class81.anInt1695 == 0)
+						if (!bool && Class81.anInt1695 == 0) {
 							Class43.method955(Class4_Sub20_Sub3.aJagexString_2794,
                                     jagexString_115_, (byte) 122, 8);
+						}
 					} else if (jagexString.method826(StringUtilities.aJagexString_2518,
 							(byte) -6)) {
 						JagexString jagexString_117_ = (jagexString.method829((byte) 32, 0,
@@ -1163,10 +1215,10 @@ public class Class49 implements Runnable {
 									(byte) 125, 8);
 						}
 					} else if (!jagexString.method826(StringUtilities.aJagexString_565,
-							(byte) 123))
+							(byte) 123)) {
 						Class43.method955(jagexString, Class4_Sub3.aJagexString_1895,
 								(byte) 117, 0);
-					else {
+					} else {
 						JagexString jagexString_120_ = (jagexString
 								.method829((byte) -128, 0, jagexString.method803(
 										StringUtilities.aJagexString_2101, (byte) -74)));
@@ -1178,9 +1230,10 @@ public class Class49 implements Runnable {
 								break;
 							}
 						}
-						if (!bool && (Class81.anInt1695 ^ 0xffffffff) == -1)
+						if (!bool && (Class81.anInt1695 ^ 0xffffffff) == -1) {
 							Class43.method955(Class4_Sub3.aJagexString_1895,
                                     jagexString_120_, (byte) 116, 10);
+						}
 					}
 					Class4_Sub20_Sub11.incomingPacket = -1;
 					return true;
@@ -1212,9 +1265,10 @@ public class Class49 implements Runnable {
 							.method219((byte) 73); // readInt()
 					Class4_Sub16 class4_sub16 = ((Class4_Sub16) Class31.aClass16_677
 							.method725((byte) 117, i_123_));
-					if (class4_sub16 != null)
+					if (class4_sub16 != null) {
 						Class4_Sub20_Sub7_Sub3.method418(arg0 ^ ~0x73, true,
 								class4_sub16);
+					}
 					if (RSInterface.aClass4_Sub13_2141 != null) {
 						Class67.method1088(RSInterface.aClass4_Sub13_2141);
 						RSInterface.aClass4_Sub13_2141 = null;
@@ -1259,7 +1313,7 @@ public class Class49 implements Runnable {
 												(byte) -83,
 												Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883)
 										.method801(false)));
-						if (i_127_ == 2 || (i_127_ ^ 0xffffffff) == -4)
+						if (i_127_ == 2 || (i_127_ ^ 0xffffffff) == -4) {
 							Class61.method1047(
 									(Class4_Sub24.method639((new JagexString[] {
 											Class64.aJagexString_1268,
@@ -1267,7 +1321,7 @@ public class Class49 implements Runnable {
 													.method839(113) }), -842)),
 									false, 9, Class68.method1094(-5, l_124_),
                                     jagexString);
-						else if (i_127_ == 1)
+						} else if (i_127_ == 1) {
 							Class61.method1047(
 									(Class4_Sub24.method639((new JagexString[] {
 											Class48.aJagexString_986,
@@ -1276,19 +1330,22 @@ public class Class49 implements Runnable {
 											^ ~0x37b)), false, 9,
 									Class68.method1094(arg0 + -55, l_124_),
                                     jagexString);
-						else
+						} else {
 							Class61.method1047(Class68.method1094(-5, l)
 									.method839(arg0 + 43), false, 9, Class68
 									.method1094(arg0 ^ ~0x36, l_124_), jagexString);
+						}
 					}
 					Class4_Sub20_Sub11.incomingPacket = -1;
 					return true;
 				}
 				if (Class4_Sub20_Sub11.incomingPacket == 5) { // Play Music
-					int i_131_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-							.method213((byte) -93);
-					if (i_131_ == 65535)
+
+					int i_131_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method213((byte) -93);
+					if (i_131_ == 65535) {
 						i_131_ = -1;
+					}
+					System.out.println(i_131_);
 					Class4_Sub11_Sub1.method275((byte) 106, i_131_);
 					Class4_Sub20_Sub11.incomingPacket = -1;
 					return true;
@@ -1298,8 +1355,9 @@ public class Class49 implements Runnable {
 							.method248(false);
 					int i_133_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.method223(0);
-					if ((i_133_ ^ 0xffffffff) == -65536)
+					if ((i_133_ ^ 0xffffffff) == -65536) {
 						i_133_ = -1;
+					}
 					Class46.method973(false, i_133_, i_132_);
 					Class4_Sub20_Sub11.incomingPacket = -1;
 					return true;
@@ -1310,13 +1368,14 @@ public class Class49 implements Runnable {
 					Object[] objects = new Object[jagexString
 							.method825(arg0 + -159) - -1];
 					for (int i_134_ = jagexString.method825(-118) + -1; i_134_ >= 0; i_134_--) {
-						if (jagexString.method834(21340, i_134_) != 115)
+						if (jagexString.method834(21340, i_134_) != 115) {
 							objects[i_134_ + 1] = new Integer(
 									Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 											.method219((byte) 73));
-						else
+						} else {
 							objects[i_134_ + 1] = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 									.method212();
+						}
 					}
 					objects[0] = new Integer(
 							Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
@@ -1328,7 +1387,7 @@ public class Class49 implements Runnable {
 					return true;
 				}
 				if ((Class4_Sub20_Sub11.incomingPacket ^ 0xffffffff) == -144) {
-					Class4_Sub20_Sub9.anInt3051 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
+					Class4_Sub20_Sub9.minimapState = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.get(); // readByte()
 					Class4_Sub20_Sub11.incomingPacket = -1;
 					return true;
@@ -1367,9 +1426,10 @@ public class Class49 implements Runnable {
 				}
 				if ((Class4_Sub20_Sub11.incomingPacket ^ 0xffffffff) == -76) {
 					JagexString.anInt1827 = Class4_Sub20_Sub15.anInt3157 / 8;
-					for (int i_141_ = 0; ((JagexString.anInt1827 ^ 0xffffffff) < (i_141_ ^ 0xffffffff)); i_141_++)
+					for (int i_141_ = 0; ((JagexString.anInt1827 ^ 0xffffffff) < (i_141_ ^ 0xffffffff)); i_141_++) {
 						Class9.aLongArray284[i_141_] = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 								.readLong((byte) 33);
+					}
 					Class4_Sub20_Sub11.incomingPacket = -1;
 					Class4_Sub20_Sub1.anInt2718 = Class4_Sub20_Sub10.anInt3053;
 					return true;
@@ -1424,8 +1484,9 @@ public class Class49 implements Runnable {
 					int i_146_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.method209((byte) -119);
 					boolean bool = false;
-					if ((l & ~0x7fffffffffffffffL ^ 0xffffffffffffffffL) != -1L)
+					if ((l & ~0x7fffffffffffffffL ^ 0xffffffffffffffffL) != -1L) {
 						bool = true;
+					}
 					byte i_147_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.method229(30);
 					if (bool) {
@@ -1437,12 +1498,14 @@ public class Class49 implements Runnable {
 						int i_149_;
 						for (i_149_ = 0; ((Class4_Sub10.anInt2021 ^ 0xffffffff) < (i_149_ ^ 0xffffffff)); i_149_++) {
 							if ((Class13_Sub2.aClass4_Sub8Array2482[i_149_].aLong150) == l
-									&& i_146_ == (Class13_Sub2.aClass4_Sub8Array2482[i_149_].anInt1969))
+									&& i_146_ == (Class13_Sub2.aClass4_Sub8Array2482[i_149_].anInt1969)) {
 								break;
+							}
 						}
 						if ((i_149_ ^ 0xffffffff) > (Class4_Sub10.anInt2021 ^ 0xffffffff)) {
-							for (/**/; Class4_Sub10.anInt2021 - 1 > i_149_; i_149_++)
+							for (/**/; Class4_Sub10.anInt2021 - 1 > i_149_; i_149_++) {
 								Class13_Sub2.aClass4_Sub8Array2482[i_149_] = (Class13_Sub2.aClass4_Sub8Array2482[1 + i_149_]);
+							}
 							Class13_Sub2.aClass4_Sub8Array2482[(Class4_Sub10.anInt2021)] = null;
 							Class4_Sub10.anInt2021--;
 						}
@@ -1461,27 +1524,32 @@ public class Class49 implements Runnable {
 							if ((i_151_ ^ 0xffffffff) == -1) {
 								Class13_Sub2.aClass4_Sub8Array2482[i_150_].anInt1969 = i_146_;
 								Class13_Sub2.aClass4_Sub8Array2482[i_150_].aByte1973 = i_147_;
-								if (Class25.aLong584 == l)
+								if (Class25.aLong584 == l) {
 									Class27.aByte613 = i_147_;
+								}
 								Class4_Sub20_Sub11.incomingPacket = -1;
 								Class4_Sub20_Sub7.anInt2948 = Region.anInt134;
 								return true;
 							}
-							if ((i_151_ ^ 0xffffffff) > -1)
+							if ((i_151_ ^ 0xffffffff) > -1) {
 								break;
+							}
 						}
 						if ((Class13_Sub2.aClass4_Sub8Array2482.length ^ 0xffffffff) >= (Class4_Sub10.anInt2021 ^ 0xffffffff)) {
 							Class4_Sub20_Sub11.incomingPacket = -1;
 							return true;
 						}
-						for (int i_152_ = -1 + Class4_Sub10.anInt2021; i_150_ < i_152_; i_152_--)
+						for (int i_152_ = -1 + Class4_Sub10.anInt2021; i_150_ < i_152_; i_152_--) {
 							Class13_Sub2.aClass4_Sub8Array2482[i_152_ - -1] = Class13_Sub2.aClass4_Sub8Array2482[i_152_];
-						if (Class4_Sub10.anInt2021 == 0)
+						}
+						if (Class4_Sub10.anInt2021 == 0) {
 							Class13_Sub2.aClass4_Sub8Array2482 = new Class4_Sub8[100];
+						}
 						Class13_Sub2.aClass4_Sub8Array2482[i_150_ - -1] = class4_sub8;
 						Class4_Sub10.anInt2021++;
-						if (Class25.aLong584 == l)
+						if (Class25.aLong584 == l) {
 							Class27.aByte613 = i_147_;
+						}
 					}
 					Class4_Sub20_Sub11.incomingPacket = -1;
 					Class4_Sub20_Sub7.anInt2948 = Region.anInt134;
@@ -1509,12 +1577,13 @@ public class Class49 implements Runnable {
 						+ " - "
 						+ Class4_Sub20_Sub15.anInt3157
 						+ ","
-						+ ((Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]) + Class6.anInt217)
+						+ ((Class4_Sub15.localPlayer.anIntArray3248[0]) + Class6.anInt217)
 						+ ","
-						+ ((Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]) + Class4_Sub20_Sub8.anInt2987) + " - ");
-				for (int i = 0; (Class4_Sub20_Sub15.anInt3157 > i && (i ^ 0xffffffff) > -51); i++)
+						+ ((Class4_Sub15.localPlayer.anIntArray3247[0]) + Class4_Sub20_Sub8.anInt2987) + " - ");
+				for (int i = 0; (Class4_Sub20_Sub15.anInt3157 > i && (i ^ 0xffffffff) > -51); i++) {
 					string += (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.byteBuffer[i])
 							+ ",";
+				}
 				Class4_Sub20_Sub7_Sub4.method422(exception, -85, string);
 				Class40.method935(arg0 + -50);
 			}
@@ -1542,8 +1611,9 @@ public class Class49 implements Runnable {
 				}
 			}
 			anInt998++;
-			if (arg0 < 85)
+			if (arg0 < 85) {
 				anIntArray1003 = null;
+			}
 			StreamBuffer.aClass65_2073.method1070((byte) -97);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "na.B("

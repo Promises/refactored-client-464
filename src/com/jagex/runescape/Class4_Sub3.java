@@ -50,7 +50,7 @@ public class Class4_Sub3 extends RSFont {
 					Class4_Sub16 class4_sub16 = ((Class4_Sub16) (Class31.aClass16_677
 							.method725((byte) 117, class4_sub13.anInt2172)));
 					if (class4_sub16 != null)
-						Class4_Sub20_Sub7_Sub1_Sub1.method390(
+						Player.method390(
 								class4_sub16.anInt2311, arg1 ^ ~0x4f6d);
 				}
 				if (class4_sub13.anInt2258 == 6) {
@@ -135,7 +135,7 @@ public class Class4_Sub3 extends RSFont {
 					int i_4_ = class4_sub13.anInt2181 + arg0;
 					if (Class4_Sub20_Sub16.aClass4_Sub13_3179 == class4_sub13) {
 						Class33.anInt714 = i_4_;
-						Class4_Sub20_Sub7_Sub1.anInt3287 = i_3_;
+						Actor.anInt3287 = i_3_;
 						Class57.aBoolean1132 = true;
 					}
 					int i_5_;
@@ -231,7 +231,7 @@ public class Class4_Sub3 extends RSFont {
 										&& (JagexException.anInt1729 ^ 0xffffffff) > (i_6_ ^ 0xffffffff))
 									bool_17_ = true;
 								boolean bool_18_ = false;
-								if ((Class4_Sub20_Sub7_Sub1_Sub1.anInt3587 ^ 0xffffffff) == -2
+								if ((Player.anInt3587 ^ 0xffffffff) == -2
 										&& bool)
 									bool_18_ = true;
 								if (bool_17_)

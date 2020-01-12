@@ -8,7 +8,7 @@ public class Class34 implements Interface2 {
     public static boolean aBoolean1765 = false;
     public static boolean aBoolean1770 = true;
 
-    public static Class4_Sub20_Sub12_Sub2 aClass4_Sub20_Sub12_Sub2_1760;
+    public static ImageRGB aImageRGB_1760;
     public static Class66 aClass66_1758 = new Class66(100);
     public static int anInt1736;
     public static int anInt1737;
@@ -134,7 +134,7 @@ public class Class34 implements Interface2 {
             StringUtilities.aJagexString_1766 = null;
             aClass66_1758 = null;
             StringUtilities.aJagexString_1759 = null;
-            aClass4_Sub20_Sub12_Sub2_1760 = null;
+            aImageRGB_1760 = null;
             anIntArray1751 = null;
             StringUtilities.aJagexString_1769 = null;
             StringUtilities.aJagexString_1771 = null;

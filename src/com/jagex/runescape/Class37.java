@@ -1,7 +1,7 @@
 package com.jagex.runescape;
 
 public class Class37 {
-	public static Class4_Sub20_Sub12_Sub2 aClass4_Sub20_Sub12_Sub2_761;
+	public static ImageRGB aImageRGB_761;
 	public static Class65 aClass65_766 = new Class65();
 	public static int anInt758 = 0;
 	public static int anInt759;
@@ -17,7 +17,7 @@ public class Class37 {
 				method918(27);
 			}
 			aClass65_766 = null;
-			aClass4_Sub20_Sub12_Sub2_761 = null;
+			aImageRGB_761 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "kb.B("
 					+ arg0 + ')');

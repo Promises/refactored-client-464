@@ -650,7 +650,7 @@ public class Class4_Sub2_Sub3 extends Class4_Sub2 {
 				i = arg3;
 			anInt2628 += arg1;
 			if (anInt2637 == -256 && (anInt2633 & 0xff) == 0) {
-				if (Class4_Sub20_Sub7_Sub1.aBoolean3218)
+				if (Actor.aBoolean3218)
 					arg1 = method130(
 							0,
 							(((Class4_Sub4_Sub1) aClass4_Sub4_1873).aByteArray2661),
@@ -661,7 +661,7 @@ public class Class4_Sub2_Sub3 extends Class4_Sub2 {
 							(((Class4_Sub4_Sub1) aClass4_Sub4_1873).aByteArray2661),
 							arg0, anInt2633, arg1, anInt2640, anInt2630, 0, i,
 							arg2, this);
-			} else if (Class4_Sub20_Sub7_Sub1.aBoolean3218)
+			} else if (Actor.aBoolean3218)
 				arg1 = method134(
 						0,
 						0,
@@ -682,7 +682,7 @@ public class Class4_Sub2_Sub3 extends Class4_Sub2 {
 				return arg3;
 		}
 		if (anInt2637 == -256 && (anInt2633 & 0xff) == 0) {
-			if (Class4_Sub20_Sub7_Sub1.aBoolean3218)
+			if (Actor.aBoolean3218)
 				return method159(
 						0,
 						(((Class4_Sub4_Sub1) aClass4_Sub4_1873).aByteArray2661),
@@ -692,7 +692,7 @@ public class Class4_Sub2_Sub3 extends Class4_Sub2 {
 					(((Class4_Sub4_Sub1) aClass4_Sub4_1873).aByteArray2661),
 					arg0, anInt2633, arg1, anInt2640, 0, arg3, arg2, this);
 		}
-		if (Class4_Sub20_Sub7_Sub1.aBoolean3218)
+		if (Actor.aBoolean3218)
 			return method127(0, 0,
 					(((Class4_Sub4_Sub1) aClass4_Sub4_1873).aByteArray2661),
 					arg0, anInt2633, arg1, anInt2638, anInt2631, 0, arg3, arg2,
@@ -717,7 +717,7 @@ public class Class4_Sub2_Sub3 extends Class4_Sub2 {
 				i = arg3;
 			anInt2628 += arg1;
 			if (anInt2637 == 256 && (anInt2633 & 0xff) == 0) {
-				if (Class4_Sub20_Sub7_Sub1.aBoolean3218)
+				if (Actor.aBoolean3218)
 					arg1 = method133(
 							0,
 							(((Class4_Sub4_Sub1) aClass4_Sub4_1873).aByteArray2661),
@@ -728,7 +728,7 @@ public class Class4_Sub2_Sub3 extends Class4_Sub2 {
 							(((Class4_Sub4_Sub1) aClass4_Sub4_1873).aByteArray2661),
 							arg0, anInt2633, arg1, anInt2640, anInt2630, 0, i,
 							arg2, this);
-			} else if (Class4_Sub20_Sub7_Sub1.aBoolean3218)
+			} else if (Actor.aBoolean3218)
 				arg1 = method166(
 						0,
 						0,
@@ -749,7 +749,7 @@ public class Class4_Sub2_Sub3 extends Class4_Sub2 {
 				return arg3;
 		}
 		if (anInt2637 == 256 && (anInt2633 & 0xff) == 0) {
-			if (Class4_Sub20_Sub7_Sub1.aBoolean3218)
+			if (Actor.aBoolean3218)
 				return method154(
 						0,
 						(((Class4_Sub4_Sub1) aClass4_Sub4_1873).aByteArray2661),
@@ -759,7 +759,7 @@ public class Class4_Sub2_Sub3 extends Class4_Sub2 {
 					(((Class4_Sub4_Sub1) aClass4_Sub4_1873).aByteArray2661),
 					arg0, anInt2633, arg1, anInt2640, 0, arg3, arg2, this);
 		}
-		if (Class4_Sub20_Sub7_Sub1.aBoolean3218)
+		if (Actor.aBoolean3218)
 			return method138(0, 0,
 					(((Class4_Sub4_Sub1) aClass4_Sub4_1873).aByteArray2661),
 					arg0, anInt2633, arg1, anInt2638, anInt2631, 0, arg3, arg2,

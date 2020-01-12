@@ -193,7 +193,7 @@ public class Class64 {
 	}
 
 	public static void method1064(int arg0, byte arg1,
-			Class4_Sub20_Sub7_Sub1_Sub1 arg2, int arg3) {
+                                  Player arg2, int arg3) {
 		if (arg1 < 88)
 			method1066(-109, null, -20);
 		anInt1255++;

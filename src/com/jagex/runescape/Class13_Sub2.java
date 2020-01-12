@@ -32,7 +32,7 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
     public static int anInt2465;
     public static int anInt2466;
     public static int anInt2467;
-    public static int anInt2470 = 0;
+    public static int minimapHintCount = 0;
     public static int anInt2471;
     public static int anInt2472;
     public static int[] anIntArray2480;

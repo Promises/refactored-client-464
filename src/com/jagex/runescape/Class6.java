@@ -17,7 +17,7 @@ public class Class6 {
 	public static int anInt202 = 0;
 	public static int anInt204;
 	public static int anInt208;
-	public static int anInt209;
+	public static int cameraX;
 	public static int anInt212;
 	public static int anInt213;
 	public static int anInt216;
@@ -77,9 +77,9 @@ public class Class6 {
 					i_0_ = Class4_Sub23.anIntArray2432[i];
 				else
 					i_0_ = 2047;
-				Class4_Sub20_Sub7_Sub1_Sub1 class4_sub20_sub7_sub1_sub1 = (Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i_0_]);
-				if (class4_sub20_sub7_sub1_sub1 != null)
-					Game.method31(1, arg0 + 5, class4_sub20_sub7_sub1_sub1);
+				Player player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_0_]);
+				if (player != null)
+					Game.method31(1, arg0 + 5, player);
 			}
 			anInt213++;
 		} catch (RuntimeException runtimeexception) {

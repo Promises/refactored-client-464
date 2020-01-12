@@ -28,7 +28,7 @@ public class Class12 {
             int i_2_ = Class64.anInt1273 - -(i_0_ & 0x7);
             if (i_1_ >= 0 && i_2_ >= 0 && (i_1_ ^ 0xffffffff) > -105
                     && (i_2_ ^ 0xffffffff) > -105) {
-                Class65 class65 = (Class40.aClass65ArrayArrayArray787[Class82.anInt1711][i_1_][i_2_]);
+                Class65 class65 = (Class40.aClass65ArrayArrayArray787[Class82.plane][i_1_][i_2_]);
                 if (class65 != null) {
                     for (Class4_Sub20_Sub7_Sub4 class4_sub20_sub7_sub4 = ((Class4_Sub20_Sub7_Sub4) class65
                             .method1071(-127)); class4_sub20_sub7_sub4 != null; class4_sub20_sub7_sub4 = ((Class4_Sub20_Sub7_Sub4) class65
@@ -39,7 +39,7 @@ public class Class12 {
                         }
                     }
                     if (class65.method1071(-127) == null)
-                        Class40.aClass65ArrayArrayArray787[Class82.anInt1711][i_1_][i_2_] = null;
+                        Class40.aClass65ArrayArrayArray787[Class82.plane][i_1_][i_2_] = null;
                     Class62.method1049(i_2_, i_1_, arg0 ^ ~0x28);
                 }
             }
@@ -57,8 +57,8 @@ public class Class12 {
                 i_4_ = i_4_ * 128 + 64;
                 i_3_ = i_3_ * 128 - -64;
                 Class4_Sub20_Sub7_Sub3 class4_sub20_sub7_sub3 = (new Class4_Sub20_Sub7_Sub3(
-                        i_5_, Class82.anInt1711, i_4_, i_3_,
-                        Class67.method1090(i_4_, i_3_, true, Class82.anInt1711)
+                        i_5_, Class82.plane, i_4_, i_3_,
+                        Class67.getFloorDrawHeight(i_4_, i_3_, Class82.plane)
                                 + -i_6_, i_7_, Region.anInt134));
                 Class4_Sub20_Sub13.aClass65_3106.method1068(
                         class4_sub20_sub7_sub3, (byte) -115);
@@ -90,31 +90,31 @@ public class Class12 {
                         .method245(12605);
                 int i_21_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                         .method213((byte) -93);
-                Class4_Sub20_Sub7_Sub1_Sub1 class4_sub20_sub7_sub1_sub1;
+                Player player;
                 if (i != Region.anInt127)
-                    class4_sub20_sub7_sub1_sub1 = (Class4_Sub20_Sub7_Sub4.aClass4_Sub20_Sub7_Sub1_Sub1Array3358[i]);
+                    player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i]);
                 else
-                    class4_sub20_sub7_sub1_sub1 = Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302;
-                if (class4_sub20_sub7_sub1_sub1 != null) {
+                    player = Class4_Sub15.localPlayer;
+                if (player != null) {
                     Class4_Sub20_Sub1 class4_sub20_sub1 = Region.method56(true,
                             i_21_);
-                    int i_22_ = (Class4_Sub23.anIntArrayArrayArray2416[Class82.anInt1711][i_13_][i_12_]);
-                    int i_23_ = (Class4_Sub23.anIntArrayArrayArray2416[Class82.anInt1711][1 + i_13_][i_12_]);
-                    int i_24_ = (Class4_Sub23.anIntArrayArrayArray2416[Class82.anInt1711][i_13_
+                    int i_22_ = (Class4_Sub23.intGroundArray[Class82.plane][i_13_][i_12_]);
+                    int i_23_ = (Class4_Sub23.intGroundArray[Class82.plane][1 + i_13_][i_12_]);
+                    int i_24_ = (Class4_Sub23.intGroundArray[Class82.plane][i_13_
                             - -1][i_12_ - -1]);
-                    int i_25_ = (Class4_Sub23.anIntArrayArrayArray2416[Class82.anInt1711][i_13_][1 + i_12_]);
+                    int i_25_ = (Class4_Sub23.intGroundArray[Class82.plane][i_13_][1 + i_12_]);
                     Class4_Sub20_Sub7_Sub7 class4_sub20_sub7_sub7 = class4_sub20_sub1
                             .method326(i_23_, i_17_, i_18_, i_24_, i_25_,
                                     false, i_22_);
                     if (class4_sub20_sub7_sub7 != null) {
                         Class27.method847(-1, 0, i_13_, 0, i_19_, -1, i_8_ + 1,
-                                i_12_, 1 + i_15_, Class82.anInt1711);
-                        class4_sub20_sub7_sub1_sub1.anInt3601 = Region.anInt134
+                                i_12_, 1 + i_15_, Class82.plane);
+                        player.anInt3601 = Region.anInt134
                                 + i_15_;
                         int i_26_ = class4_sub20_sub1.anInt2725;
-                        class4_sub20_sub7_sub1_sub1.anInt3608 = i_8_
+                        player.anInt3608 = i_8_
                                 - -Region.anInt134;
-                        class4_sub20_sub7_sub1_sub1.aClass4_Sub20_Sub7_Sub7_3596 = class4_sub20_sub7_sub7;
+                        player.aClass4_Sub20_Sub7_Sub7_3596 = class4_sub20_sub7_sub7;
                         if (i_10_ > i_20_) {
                             int i_27_ = i_10_;
                             i_10_ = i_20_;
@@ -130,19 +130,19 @@ public class Class12 {
                             i_28_ = class4_sub20_sub1.anInt2725;
                             i_26_ = class4_sub20_sub1.anInt2744;
                         }
-                        class4_sub20_sub7_sub1_sub1.anInt3598 = 64 * i_28_
+                        player.anInt3598 = 64 * i_28_
                                 + 128 * i_12_;
-                        class4_sub20_sub7_sub1_sub1.anInt3602 = 64 * i_26_
+                        player.anInt3602 = 64 * i_26_
                                 + i_13_ * 128;
-                        class4_sub20_sub7_sub1_sub1.anInt3583 = Class67
-                                .method1090(
-                                        (class4_sub20_sub7_sub1_sub1.anInt3602),
-                                        (class4_sub20_sub7_sub1_sub1.anInt3598),
-                                        true, Class82.anInt1711);
-                        class4_sub20_sub7_sub1_sub1.anInt3591 = i_9_ + i_12_;
-                        class4_sub20_sub7_sub1_sub1.anInt3612 = i_20_ + i_13_;
-                        class4_sub20_sub7_sub1_sub1.anInt3611 = i_10_ + i_13_;
-                        class4_sub20_sub7_sub1_sub1.anInt3605 = i_14_ + i_12_;
+                        player.anInt3583 = Class67
+                                .getFloorDrawHeight(
+                                        (player.anInt3602),
+                                        (player.anInt3598),
+                                        Class82.plane);
+                        player.anInt3591 = i_9_ + i_12_;
+                        player.anInt3612 = i_20_ + i_13_;
+                        player.anInt3611 = i_10_ + i_13_;
+                        player.anInt3605 = i_14_ + i_12_;
                     }
                 }
             }
@@ -177,16 +177,16 @@ public class Class12 {
                     i_33_ = i_33_ * 128 - -64;
                     i_30_ = 128 * i_30_ + 64;
                     Class4_Sub20_Sub7_Sub5 class4_sub20_sub7_sub5 = (new Class4_Sub20_Sub7_Sub5(
-                            i_35_, Class82.anInt1711, i_30_, i_31_, -i_36_
-                            + Class67.method1090(i_30_, i_31_, true,
-                            Class82.anInt1711), Region.anInt134
+                            i_35_, Class82.plane, i_30_, i_31_, -i_36_
+                            + Class67.getFloorDrawHeight(i_30_, i_31_, Class82.plane
+                    ), Region.anInt134
                             + i_38_, Region.anInt134 + i_39_, i_40_,
                             i_41_, i_34_, i_37_));
                     class4_sub20_sub7_sub5.method425(
                             i_32_,
                             -i_37_
-                                    + Class67.method1090(i_32_, i_33_, true,
-                                    Class82.anInt1711), i_38_
+                                    + Class67.getFloorDrawHeight(i_32_, i_33_, Class82.plane
+                            ), i_38_
                                     - -Region.anInt134, i_33_, 121);
                     Class4_Sub20_Sub11.aClass65_3075.method1068(
                             class4_sub20_sub7_sub5, (byte) -117);
@@ -207,7 +207,7 @@ public class Class12 {
                     if (i_42_ >= 0 && (i_43_ ^ 0xffffffff) <= -1
                             && (i_42_ ^ 0xffffffff) > -105
                             && (i_43_ ^ 0xffffffff) > -105) {
-                        Class65 class65 = (Class40.aClass65ArrayArrayArray787[Class82.anInt1711][i_42_][i_43_]);
+                        Class65 class65 = (Class40.aClass65ArrayArrayArray787[Class82.plane][i_42_][i_43_]);
                         if (class65 != null) {
                             for (Class4_Sub20_Sub7_Sub4 class4_sub20_sub7_sub4 = ((Class4_Sub20_Sub7_Sub4) class65
                                     .method1071(-126)); class4_sub20_sub7_sub4 != null; class4_sub20_sub7_sub4 = ((Class4_Sub20_Sub7_Sub4) class65
@@ -238,12 +238,12 @@ public class Class12 {
                                 && (i_47_ ^ 0xffffffff) > -105
                                 && (i_48_ ^ 0xffffffff) > -105) {
                             int i_54_ = i_51_ - -1;
-                            if ((-i_54_ + i_47_ <= (Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]))
-                                    && (((Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3248[0]) ^ 0xffffffff) >= (i_47_
+                            if ((-i_54_ + i_47_ <= (Class4_Sub15.localPlayer.anIntArray3248[0]))
+                                    && (((Class4_Sub15.localPlayer.anIntArray3248[0]) ^ 0xffffffff) >= (i_47_
                                     - -i_54_ ^ 0xffffffff))
-                                    && (((Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]) ^ 0xffffffff) <= (-i_54_
+                                    && (((Class4_Sub15.localPlayer.anIntArray3247[0]) ^ 0xffffffff) <= (-i_54_
                                     + i_48_ ^ 0xffffffff))
-                                    && (((Class4_Sub15.aClass4_Sub20_Sub7_Sub1_Sub1_2302.anIntArray3247[0]) ^ 0xffffffff) >= (i_48_
+                                    && (((Class4_Sub15.localPlayer.anIntArray3247[0]) ^ 0xffffffff) >= (i_48_
                                     - -i_54_ ^ 0xffffffff))
                                     && (Class71.anInt1480 ^ 0xffffffff) != -1
                                     && i_52_ > 0
@@ -275,9 +275,9 @@ public class Class12 {
                             Class4_Sub20_Sub7_Sub4 class4_sub20_sub7_sub4 = new Class4_Sub20_Sub7_Sub4();
                             class4_sub20_sub7_sub4.anInt3379 = i_58_;
                             class4_sub20_sub7_sub4.anInt3378 = i_57_;
-                            if ((Class40.aClass65ArrayArrayArray787[Class82.anInt1711][i_56_][i_55_]) == null)
-                                Class40.aClass65ArrayArrayArray787[Class82.anInt1711][i_56_][i_55_] = new Class65();
-                            Class40.aClass65ArrayArrayArray787[Class82.anInt1711][i_56_][i_55_]
+                            if ((Class40.aClass65ArrayArrayArray787[Class82.plane][i_56_][i_55_]) == null)
+                                Class40.aClass65ArrayArrayArray787[Class82.plane][i_56_][i_55_] = new Class65();
+                            Class40.aClass65ArrayArrayArray787[Class82.plane][i_56_][i_55_]
                                     .method1068(class4_sub20_sub7_sub4,
                                             (byte) -123);
                             Class62.method1049(i_55_, i_56_, arg0 + 169);
@@ -296,7 +296,7 @@ public class Class12 {
                                 && (i_64_ ^ 0xffffffff) > -105
                                 && (i_65_ ^ 0xffffffff) > -105)
                             Class27.method847(-1, i_60_, i_64_, i_61_, i_62_,
-                                    -1, 0, i_65_, -1, Class82.anInt1711);
+                                    -1, 0, i_65_, -1, Class82.plane);
                     } else if (Class4_Sub20_Sub11.incomingPacket == 17) {
                         int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                                 .method239((byte) 45);
@@ -313,7 +313,7 @@ public class Class12 {
                                 && (i_66_ ^ 0xffffffff) > -105
                                 && (i_67_ ^ 0xffffffff) > -105)
                             Class27.method847(-1, i_70_, i_66_, i_71_, i_72_,
-                                    i_68_, 0, i_67_, -1, Class82.anInt1711);
+                                    i_68_, 0, i_67_, -1, Class82.plane);
                     } else if (Class4_Sub20_Sub11.incomingPacket == 140) {
                         int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                                 .method235((byte) -64);
@@ -328,14 +328,14 @@ public class Class12 {
                         int i_79_ = anIntArray357[i_78_];
                         if (i_74_ >= 0 && (i_75_ ^ 0xffffffff) <= -1
                                 && i_74_ < 103 && i_75_ < 103) {
-                            int i_80_ = (Class4_Sub23.anIntArrayArrayArray2416[Class82.anInt1711][i_74_
+                            int i_80_ = (Class4_Sub23.intGroundArray[Class82.plane][i_74_
                                     - -1][1 + i_75_]);
-                            int i_81_ = (Class4_Sub23.anIntArrayArrayArray2416[Class82.anInt1711][i_74_][1 + i_75_]);
-                            int i_82_ = (Class4_Sub23.anIntArrayArrayArray2416[Class82.anInt1711][1 + i_74_][i_75_]);
-                            int i_83_ = (Class4_Sub23.anIntArrayArrayArray2416[Class82.anInt1711][i_74_][i_75_]);
+                            int i_81_ = (Class4_Sub23.intGroundArray[Class82.plane][i_74_][1 + i_75_]);
+                            int i_82_ = (Class4_Sub23.intGroundArray[Class82.plane][1 + i_74_][i_75_]);
+                            int i_83_ = (Class4_Sub23.intGroundArray[Class82.plane][i_74_][i_75_]);
                             if (i_79_ == 0) {
                                 Class68 class68 = (Class4_Sub20_Sub7_Sub6.aClass69_3439
-                                        .method1142(Class82.anInt1711, i_74_,
+                                        .method1142(Class82.plane, i_74_,
                                                 i_75_));
                                 if (class68 != null) {
                                     int i_84_ = ((class68.anInt1371 & 0x1fffe56f) >> 622153774);
@@ -378,7 +378,7 @@ public class Class12 {
                             }
                             if (i_79_ == 1) {
                                 Class25 class25 = (Class4_Sub20_Sub7_Sub6.aClass69_3439
-                                        .method1111(Class82.anInt1711, i_74_,
+                                        .method1111(Class82.plane, i_74_,
                                                 i_75_));
                                 if (class25 != null)
                                     class25.aClass4_Sub20_Sub7_570 = (new Class4_Sub20_Sub7_Sub6(
@@ -391,7 +391,7 @@ public class Class12 {
                                 if ((i_78_ ^ 0xffffffff) == -12)
                                     i_78_ = 10;
                                 Class67 class67 = (Class4_Sub20_Sub7_Sub6.aClass69_3439
-                                        .method1115(Class82.anInt1711, i_74_,
+                                        .method1115(Class82.plane, i_74_,
                                                 i_75_));
                                 if (class67 != null)
                                     class67.aClass4_Sub20_Sub7_1366 = (new Class4_Sub20_Sub7_Sub6(
@@ -402,7 +402,7 @@ public class Class12 {
                             }
                             if (i_79_ == 3) {
                                 Class74 class74 = (Class4_Sub20_Sub7_Sub6.aClass69_3439
-                                        .method1108(Class82.anInt1711, i_74_,
+                                        .method1108(Class82.plane, i_74_,
                                                 i_75_));
                                 if (class74 != null)
                                     class74.aClass4_Sub20_Sub7_1512 = (new Class4_Sub20_Sub7_Sub6(
@@ -426,9 +426,9 @@ public class Class12 {
                             Class4_Sub20_Sub7_Sub4 class4_sub20_sub7_sub4 = new Class4_Sub20_Sub7_Sub4();
                             class4_sub20_sub7_sub4.anInt3378 = i_85_;
                             class4_sub20_sub7_sub4.anInt3379 = i;
-                            if ((Class40.aClass65ArrayArrayArray787[Class82.anInt1711][i_87_][i_88_]) == null)
-                                Class40.aClass65ArrayArrayArray787[Class82.anInt1711][i_87_][i_88_] = new Class65();
-                            Class40.aClass65ArrayArrayArray787[Class82.anInt1711][i_87_][i_88_]
+                            if ((Class40.aClass65ArrayArrayArray787[Class82.plane][i_87_][i_88_]) == null)
+                                Class40.aClass65ArrayArrayArray787[Class82.plane][i_87_][i_88_] = new Class65();
+                            Class40.aClass65ArrayArrayArray787[Class82.plane][i_87_][i_88_]
                                     .method1068(class4_sub20_sub7_sub4,
                                             (byte) -116);
                             Class62.method1049(i_88_, i_87_, arg0 + 169);
@@ -452,13 +452,13 @@ public class Class12 {
                         Class4_Sub14.aByteArrayArrayArray2275[0][i_89_][i] = (byte) 127;
                         if ((i_89_ ^ 0xffffffff) == (arg4 ^ 0xffffffff)
                                 && (i_89_ ^ 0xffffffff) < -1)
-                            Class4_Sub23.anIntArrayArrayArray2416[0][i_89_][i] = (Class4_Sub23.anIntArrayArrayArray2416[0][i_89_ - 1][i]);
+                            Class4_Sub23.intGroundArray[0][i_89_][i] = (Class4_Sub23.intGroundArray[0][i_89_ - 1][i]);
                         if (arg0 + arg4 == i_89_ && (i_89_ ^ 0xffffffff) > -104)
-                            Class4_Sub23.anIntArrayArrayArray2416[0][i_89_][i] = (Class4_Sub23.anIntArrayArrayArray2416[0][1 + i_89_][i]);
+                            Class4_Sub23.intGroundArray[0][i_89_][i] = (Class4_Sub23.intGroundArray[0][1 + i_89_][i]);
                         if ((i ^ 0xffffffff) == (arg1 ^ 0xffffffff) && i > 0)
-                            Class4_Sub23.anIntArrayArrayArray2416[0][i_89_][i] = (Class4_Sub23.anIntArrayArrayArray2416[0][i_89_][i - 1]);
+                            Class4_Sub23.intGroundArray[0][i_89_][i] = (Class4_Sub23.intGroundArray[0][i_89_][i - 1]);
                         if (i == arg3 + arg1 && (i ^ 0xffffffff) > -104)
-                            Class4_Sub23.anIntArrayArrayArray2416[0][i_89_][i] = (Class4_Sub23.anIntArrayArrayArray2416[0][i_89_][i
+                            Class4_Sub23.intGroundArray[0][i_89_][i] = (Class4_Sub23.intGroundArray[0][i_89_][i
                                     - -1]);
                     }
                 }

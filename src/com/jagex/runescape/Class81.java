@@ -121,9 +121,9 @@ public class Class81 {
 							StreamBuffer class4_sub11 = new StreamBuffer(is);
 							Class37.anInt760 = class4_sub11
 									.method209((byte) -126);
-							Class4_Sub20_Sub7_Sub1_Sub1.aClass9Array3579 = new Class9[Class37.anInt760];
+							Player.aClass9Array3579 = new Class9[Class37.anInt760];
 							for (int i = 0; ((Class37.anInt760 ^ 0xffffffff) < (i ^ 0xffffffff)); i++) {
-								Class9 class9 = (Class4_Sub20_Sub7_Sub1_Sub1.aClass9Array3579[i] = new Class9());
+								Class9 class9 = (Player.aClass9Array3579[i] = new Class9());
 								int i_0_ = class4_sub11.method209((byte) -121);
 								class9.anInt279 = i_0_ & 0x7fff;
 								class9.aBoolean267 = (i_0_ & 0x8000 ^ 0xffffffff) != -1;
@@ -139,10 +139,10 @@ public class Class81 {
 									.method601(
 											Class65.anIntArray1289,
 											-4,
-											(Class4_Sub20_Sub7_Sub1_Sub1.aClass9Array3579).length - 1,
+											(Player.aClass9Array3579).length - 1,
 											Class4_Sub7.anIntArray1947,
 											0,
-											Class4_Sub20_Sub7_Sub1_Sub1.aClass9Array3579);
+											Player.aClass9Array3579);
 							StreamBuffer.aClass64_2096 = null;
 							Class49.aBoolean990 = true;
 						}
@@ -154,7 +154,7 @@ public class Class81 {
 												(new JagexString[] {
 														Class80.aJagexString_1638,
 														Class4_Sub3.aJagexString_1903,
-														(Class4_Sub20_Sub7_Sub1.aJagexString_3285) }),
+														(Actor.aJagexString_3285) }),
 												-842).method814((byte) -91));
 				} catch (Exception exception) {
 					exception.printStackTrace();
@@ -179,7 +179,7 @@ public class Class81 {
 			if (arg0 < arg2 || (arg0 ^ 0xffffffff) < (i_3_ ^ 0xffffffff))
 				arg0 = 0;
 			i_3_ <<= i_2_;
-			Class31.anIntArray687[i] = (Class4_Sub20_Sub7_Sub1.method389(
+			Class31.anIntArray687[i] = (Actor.method389(
 					Class59.method1035(arg0 << i_2_, i_3_), Class59.method1035(
 							i_3_ ^ 0xffffffff, Class31.anIntArray687[i])));
 		} catch (RuntimeException runtimeexception) {

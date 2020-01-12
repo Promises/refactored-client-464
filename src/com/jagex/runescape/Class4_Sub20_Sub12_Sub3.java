@@ -2,43 +2,34 @@ package com.jagex.runescape;
 
 public class Class4_Sub20_Sub12_Sub3 extends Class4_Sub20_Sub12 {
 	public static boolean aBoolean3522 = false;
-	public static boolean aBoolean3527;
-	public static boolean aBoolean3537;
-	public static boolean aBoolean3541;
+	public static boolean aBoolean3527 = false;
+	public static boolean aBoolean3537 = true;
+	public static boolean aBoolean3541 = false;
 	public static int anInt3525;
 	public static int anInt3526;
 	public static int anInt3529;
-	public static int anInt3531;
+	public static int anInt3531 = 0;
 	public static int anInt3532;
 	public static int anInt3533;
 	public static int anInt3534;
 	public static int anInt3535;
 	public static int anInt3538;
-	public static int[] anIntArray3523;
-	public static int[] anIntArray3524;
-	public static int[] anIntArray3528 = new int[2048];
-	public static int[] anIntArray3536;
-	public static int[] anIntArray3539;
-	public static int[] anIntArray3540;
+	public static int[] anIntArray3523 = new int[65536];
+	public static int[] SINE = new int[2048];
+	public static int[] COSINE = new int[2048];
+	public static int[] anIntArray3536 = new int[1024];
+	public static int[] anIntArray3539 = new int[2048];
+	public static int[] anIntArray3540 = new int[512];
 	public static Interface2 anInterface2_3530;
 
 	static {
-		anIntArray3524 = new int[2048];
-		anIntArray3523 = new int[65536];
-		aBoolean3527 = false;
-		aBoolean3537 = true;
-		anIntArray3536 = new int[1024];
-		anInt3531 = 0;
-		anIntArray3539 = new int[2048];
-		aBoolean3541 = false;
-		anIntArray3540 = new int[512];
 		for (int i = 1; i < 512; i++)
 			anIntArray3540[i] = 32768 / i;
 		for (int i = 1; i < 2048; i++)
 			anIntArray3539[i] = 65536 / i;
 		for (int i = 0; i < 2048; i++) {
-			anIntArray3524[i] = (int) (65536.0 * Math.sin(i * 0.0030679615));
-			anIntArray3528[i] = (int) (65536.0 * Math.cos(i * 0.0030679615));
+			SINE[i] = (int) (65536.0 * Math.sin(i * 0.0030679615));
+			COSINE[i] = (int) (65536.0 * Math.cos(i * 0.0030679615));
 		}
 	}
 
@@ -65,8 +56,8 @@ public class Class4_Sub20_Sub12_Sub3 extends Class4_Sub20_Sub12 {
 		anInterface2_3530 = null;
 		anIntArray3540 = null;
 		anIntArray3539 = null;
-		anIntArray3524 = null;
-		anIntArray3528 = null;
+		SINE = null;
+		COSINE = null;
 	}
 
 	public static void method541(int arg0, int arg1, int arg2, int arg3,
