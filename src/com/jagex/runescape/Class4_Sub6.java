@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class4_Sub6 extends RSFont {
 	public static boolean aBoolean1922;
@@ -213,7 +213,7 @@ public class Class4_Sub6 extends RSFont {
 			if (arg1 != -112)
 				aJagexString_1917 = null;
 			if (is != null)
-				class4_sub20_sub9.method476(arg0, new StreamBuffer(is), 255);
+				class4_sub20_sub9.method476(arg0, new Buffer(is), 255);
 			class4_sub20_sub9.method480(arg1 ^ ~0x6f);
 			Class66.aClass66_1330.method1082(true, arg0, class4_sub20_sub9);
 			return class4_sub20_sub9;

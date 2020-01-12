@@ -222,7 +222,7 @@ public class Class24 {
                     int i_15_ = i & 0xf;
                     Class12.anIntArray342[Class5.anInt175] = i_14_;
                     Class25.anIntArray593[Class5.anInt175] = 0;
-                    Class48.aClass36Array974[Class5.anInt175] = null;
+                    Class48.aEffectArray974[Class5.anInt175] = null;
                     if (arg4 != 24) {
                         method794(-54, null, 78);
                     }

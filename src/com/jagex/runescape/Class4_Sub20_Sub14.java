@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class4_Sub20_Sub14 extends Class4_Sub20 {
 	public static Class19_Sub1 aClass19_Sub1_3146;
@@ -43,7 +43,7 @@ public class Class4_Sub20_Sub14 extends Class4_Sub20 {
 			class4_sub20_sub6 = new Class4_Sub20_Sub6();
 			class4_sub20_sub6.anInt2922 = arg1;
 			if (is != null)
-				class4_sub20_sub6.method369(-40, new StreamBuffer(is));
+				class4_sub20_sub6.method369(-40, new Buffer(is));
 			Class66.aClass66_1337.method1082(true, arg1, class4_sub20_sub6);
 			return class4_sub20_sub6;
 		} catch (RuntimeException runtimeexception) {
@@ -235,7 +235,7 @@ public class Class4_Sub20_Sub14 extends Class4_Sub20 {
 			Class4_Sub20_Sub9.aClass76_3047 = arg2;
 			if (arg1 == false) {
 				Class4_Sub20_Sub7_Sub5.method426(122, arg0);
-				Class74.aClass4_Sub11_1516.pointion = 0;
+				Class74.aClass4_Sub11_1516.pointer = 0;
 				Class40.aClass4_Sub11_783 = null;
 				Class71.anInt1477 = 0;
 				Class4_Sub20_Sub8.aClass4_Sub20_Sub10_2990 = null;
@@ -263,7 +263,7 @@ public class Class4_Sub20_Sub14 extends Class4_Sub20 {
 				}
 				if ((Class9.aByte280 ^ 0xffffffff) != -1) {
 					try {
-						StreamBuffer class4_sub11 = new StreamBuffer(4);
+						Buffer class4_sub11 = new Buffer(4);
 						class4_sub11.method227((byte) -27, 4);
 						class4_sub11.method227((byte) -27, Class9.aByte280);
 						class4_sub11.method207(0, 2018779304);

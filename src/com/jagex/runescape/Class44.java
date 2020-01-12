@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class44 {
 	public static int[] anIntArray907 = new int[500];
@@ -33,13 +33,13 @@ public class Class44 {
 		anInt910 = -1;
 		aClass4_Sub24_915 = null;
 		aClass4_Sub24_915 = arg1;
-		StreamBuffer class4_sub11 = new StreamBuffer(arg0);
-		StreamBuffer class4_sub11_0_ = new StreamBuffer(arg0);
-		class4_sub11.pointion = 2;
+		Buffer class4_sub11 = new Buffer(arg0);
+		Buffer class4_sub11_0_ = new Buffer(arg0);
+		class4_sub11.pointer = 2;
 		int i = class4_sub11.get();
 		int i_1_ = -1;
 		int i_2_ = 0;
-		class4_sub11_0_.pointion = class4_sub11.pointion + i;
+		class4_sub11_0_.pointer = class4_sub11.pointer + i;
 		for (int i_3_ = 0; i_3_ < i; i_3_++) {
 			int i_4_ = class4_sub11.get();
 			if (i_4_ > 0) {
@@ -60,15 +60,15 @@ public class Class44 {
 				if (aClass4_Sub24_915.anIntArray2444[i_3_] == 3)
 					i_6_ = 128;
 				if ((i_4_ & 0x1) != 0)
-					anIntArray914[i_2_] = class4_sub11_0_.method260(-59);
+					anIntArray914[i_2_] = class4_sub11_0_.readSmart(-59);
 				else
 					anIntArray914[i_2_] = i_6_;
 				if ((i_4_ & 0x2) != 0)
-					anIntArray907[i_2_] = class4_sub11_0_.method260(-84);
+					anIntArray907[i_2_] = class4_sub11_0_.readSmart(-84);
 				else
 					anIntArray907[i_2_] = i_6_;
 				if ((i_4_ & 0x4) != 0)
-					anIntArray916[i_2_] = class4_sub11_0_.method260(-80);
+					anIntArray916[i_2_] = class4_sub11_0_.readSmart(-80);
 				else
 					anIntArray916[i_2_] = i_6_;
 				i_1_ = i_3_;
@@ -77,7 +77,7 @@ public class Class44 {
 					aBoolean911 = true;
 			}
 		}
-		if (class4_sub11_0_.pointion != arg0.length)
+		if (class4_sub11_0_.pointer != arg0.length)
 			throw new RuntimeException();
 		anInt910 = i_2_;
 		anIntArray909 = new int[i_2_];

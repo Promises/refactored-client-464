@@ -1,11 +1,11 @@
 package com.jagex.runescape.audio;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Envelope {
-	public int anInt531;
-	public int anInt532;
-	public int anInt533;
+	public int form;
+	public int start;
+	public int end;
 	public int anInt534 = 2;
 	public int anInt535;
 	public int anInt536;
@@ -24,10 +24,10 @@ public class Envelope {
 		anIntArray530[1] = 65535;
 	}
 
-	public void method772(StreamBuffer arg0) {
-		anInt531 = arg0.get();
-		anInt532 = arg0.method219((byte) 73);
-		anInt533 = arg0.method219((byte) 73);
+	public void decode(Buffer arg0) {
+		form = arg0.get();
+		start = arg0.method219((byte) 73);
+		end = arg0.method219((byte) 73);
 		method775(arg0);
 	}
 
@@ -45,7 +45,7 @@ public class Envelope {
 		return anInt536 - anInt539 >> 15;
 	}
 
-	public void method774() {
+	public void reset() {
 		anInt537 = 0;
 		anInt538 = 0;
 		anInt539 = 0;
@@ -53,13 +53,13 @@ public class Envelope {
 		anInt535 = 0;
 	}
 
-	public void method775(StreamBuffer arg0) {
+	public void method775(Buffer arg0) {
 		anInt534 = arg0.get();
 		anIntArray529 = new int[anInt534];
 		anIntArray530 = new int[anInt534];
 		for (int i = 0; i < anInt534; i++) {
-			anIntArray529[i] = arg0.method209((byte) -108);
-			anIntArray530[i] = arg0.method209((byte) -109);
+			anIntArray529[i] = arg0.read_u16((byte) -108);
+			anIntArray530[i] = arg0.read_u16((byte) -109);
 		}
 	}
 }

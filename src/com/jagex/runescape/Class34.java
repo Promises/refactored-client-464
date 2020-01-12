@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 import java.awt.event.KeyEvent;
 
@@ -178,7 +178,7 @@ public class Class34 implements Interface2 {
             int i = is.length;
             aClass4_Sub19Array1738 = new Class4_Sub19[arg0.method741(0, true)];
             for (int i_1_ = 0; i > i_1_; i_1_++) {
-                StreamBuffer class4_sub11 = new StreamBuffer(arg0.method746(0,
+                Buffer class4_sub11 = new Buffer(arg0.method746(0,
                         (byte) 90, is[i_1_]));
                 aClass4_Sub19Array1738[is[i_1_]] = new Class4_Sub19(
                         class4_sub11);

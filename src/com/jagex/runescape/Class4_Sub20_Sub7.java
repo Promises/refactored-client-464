@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
     public static boolean[] aBooleanArray2946 = new boolean[8];
@@ -339,7 +339,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             Class4_Sub20_Sub7_Sub5.anInt3386 = 0;
             Class4_Sub24.method637((byte) 42); // done
             Class10.method669(0); // done
-            StreamBuffer.method246((byte) 83); // done
+            Buffer.method246((byte) 83); // done
             Class4_Sub20_Sub15.method603(false); // done
             for (int i = 0; Class4_Sub20_Sub7_Sub5.anInt3386 > i; i++) {
                 int i_6_ = Class58.anIntArray1164[i];
@@ -350,9 +350,9 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             if (arg0 != 28231) {
                 anInt2941 = -117;
             }
-            if (Class4_Sub20_Sub15.anInt3157 != Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointion) {
+            if (Class4_Sub20_Sub15.anInt3157 != Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer) {
                 throw new RuntimeException("Gpp1 pos:"
-                        + (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointion)
+                        + (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer)
                         + " P size:" + Class4_Sub20_Sub15.anInt3157);
             }
             for (int i = 0; Class4_Sub20_Sub7_Sub6.anInt3431 > i; i++) {

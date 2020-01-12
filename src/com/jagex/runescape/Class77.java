@@ -1,5 +1,5 @@
 package com.jagex.runescape;
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 import com.jagex.runescape.util.Signlink;
 
 import java.util.zip.Inflater;
@@ -55,7 +55,7 @@ public class Class77 {
 				Class25.anInt577 = arg0;
 				Class67.aClass19_1363 = arg2;
 				anInt1593++;
-				StreamBuffer.anInt2085 = 1;
+				Buffer.anInt2085 = 1;
 				Class4_Sub20_Sub6.aBoolean2914 = arg1;
 				Class4_Sub20_Sub9.anInt3050 = arg4;
 				Class4_Sub20_Sub5.anInt2888 = arg3;
@@ -93,17 +93,17 @@ public class Class77 {
 		/* empty */
 	}
 
-	public void method1190(byte arg0, byte[] arg1, StreamBuffer arg2) {
+	public void method1190(byte arg0, byte[] arg1, Buffer arg2) {
 		try {
 			anInt1594++;
-			if (arg2.byteBuffer[arg2.pointion] != 31
-					|| arg2.byteBuffer[1 + arg2.pointion] != -117)
+			if (arg2.byteBuffer[arg2.pointer] != 31
+					|| arg2.byteBuffer[1 + arg2.pointer] != -117)
 				throw new RuntimeException("Invalid GZIP header!");
 			if (anInflater1586 == null)
 				anInflater1586 = new Inflater(true);
 			try {
-				anInflater1586.setInput(arg2.byteBuffer, 10 + arg2.pointion,
-						(arg2.byteBuffer.length + (-arg2.pointion - 10 + -8)));
+				anInflater1586.setInput(arg2.byteBuffer, 10 + arg2.pointer,
+						(arg2.byteBuffer.length + (-arg2.pointer - 10 + -8)));
 				anInflater1586.inflate(arg1);
 			} catch (Exception exception) {
 				anInflater1586.reset();

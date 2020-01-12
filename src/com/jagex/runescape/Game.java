@@ -1,7 +1,7 @@
 package com.jagex.runescape;
 import com.jagex.runescape.audio.Filter;
 import com.jagex.runescape.audio.Instrument;
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 import tech.henning.client.Configuration;
 
 import java.awt.Graphics;
@@ -366,7 +366,7 @@ public class Game extends GameShell {
 			Class14.method706((byte) 116);
 			Class13.method683((byte) -128);
 			Class53.method1008(0);
-			StreamBuffer.method217(0);
+			Buffer.method217(0);
 			Class76.method1180(false);
 			Class19_Sub1.method771((byte) -82);
 			Class27.method850(77);
@@ -462,7 +462,7 @@ public class Game extends GameShell {
 				Class4_Sub14.method296(true);
 				Class11.method673(126);
 				Class59.method1036((byte) 34);
-				Instrument.method1198();
+				Instrument.initialize();
 				Class4_Sub20_Sub7_Sub5.method427(false);
 				Class4_Sub20_Sub7_Sub3.method417((byte) -65);
 				Class4_Sub15.method299(87);
@@ -679,7 +679,7 @@ public class Game extends GameShell {
 							Class1.aClass76_61 = new Class76(
 									(Socket) (Class4_Sub3.aClass22_1896.anObject543),
 									Class43.aClass75_872);
-							StreamBuffer class4_sub11 = new StreamBuffer(5);
+							Buffer class4_sub11 = new Buffer(5);
 							class4_sub11.method227((byte) -27, 15);
 							class4_sub11.method236(181, 464);
 							Class1.aClass76_61.method1183(5, 0, 121,

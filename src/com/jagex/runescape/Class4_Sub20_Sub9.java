@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class4_Sub20_Sub9 extends Class4_Sub20 {
     public static boolean aBoolean3048;
@@ -118,7 +118,7 @@ public class Class4_Sub20_Sub9 extends Class4_Sub20 {
         aBoolean3040 = true;
     }
 
-    public void method476(int arg0, StreamBuffer arg1, int arg2) {
+    public void method476(int arg0, Buffer arg1, int arg2) {
         try {
             anInt3037++;
             if (arg2 == 255) {
@@ -137,7 +137,7 @@ public class Class4_Sub20_Sub9 extends Class4_Sub20 {
         }
     }
 
-    public void method479(int arg0, int arg1, StreamBuffer arg2, int arg3) {
+    public void method479(int arg0, int arg1, Buffer arg2, int arg3) {
         try {
             if (arg3 != -27753) {
                 method477(null, 23, null, null);

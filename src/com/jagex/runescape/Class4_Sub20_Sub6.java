@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class4_Sub20_Sub6 extends Class4_Sub20 {
 	public static boolean aBoolean2895;
@@ -104,7 +104,7 @@ public class Class4_Sub20_Sub6 extends Class4_Sub20 {
 			if (Class4_Sub20_Sub8.aClass4_Sub20_Sub10_2990 == null
 					|| Class4_Sub20_Sub8.aClass4_Sub20_Sub10_2990.aLong150 != l)
 				return 0;
-			return 1 + (99 * Class40.aClass4_Sub11_783.pointion / (Class40.aClass4_Sub11_783.byteBuffer.length - (Class4_Sub20_Sub8.aClass4_Sub20_Sub10_2990.aByte3052)));
+			return 1 + (99 * Class40.aClass4_Sub11_783.pointer / (Class40.aClass4_Sub11_783.byteBuffer.length - (Class4_Sub20_Sub8.aClass4_Sub20_Sub10_2990.aByte3052)));
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("hc.A("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
@@ -181,7 +181,7 @@ public class Class4_Sub20_Sub6 extends Class4_Sub20 {
 					if ((i_5_ ^ 0xffffffff) > -4
 							&& ((0x2 & Class46.currentSceneTileFlags[1][arg2][arg6]) ^ 0xffffffff) == -3)
 						i_5_++;
-					StreamBuffer.method257(arg4, Class57.regions[arg1], arg6,
+					Buffer.method257(arg4, Class57.regions[arg1], arg6,
 							arg1, arg0, i_5_, arg5, 531, arg2,
 							(Class4_Sub20_Sub7_Sub6.aClass69_3439));
 				}
@@ -222,14 +222,14 @@ public class Class4_Sub20_Sub6 extends Class4_Sub20 {
 		aShortArray2910 = new short[6];
 	}
 
-	public void method365(int arg0, StreamBuffer arg1, int arg2) {
+	public void method365(int arg0, Buffer arg1, int arg2) {
 		anInt2924++;
 		if ((arg2 ^ 0xffffffff) != -2) {
 			if ((arg2 ^ 0xffffffff) == -3)
-				anInt2909 = arg1.method209((byte) -128);
+				anInt2909 = arg1.read_u16((byte) -128);
 			else if ((arg2 ^ 0xffffffff) != -5) {
 				if (arg2 == 5)
-					anInt2898 = arg1.method209((byte) -105);
+					anInt2898 = arg1.read_u16((byte) -105);
 				else if (arg2 != 6) {
 					if ((arg2 ^ 0xffffffff) != -8) {
 						if (arg2 == 8)
@@ -238,23 +238,23 @@ public class Class4_Sub20_Sub6 extends Class4_Sub20 {
 								|| (arg2 ^ 0xffffffff) <= -51) {
 							if ((arg2 ^ 0xffffffff) <= -51 && arg2 < 60)
 								aShortArray2925[-50 + arg2] = (short) arg1
-										.method209((byte) -122);
+										.read_u16((byte) -122);
 						} else
 							aShortArray2910[-40 + arg2] = (short) arg1
-									.method209((byte) -125);
+									.read_u16((byte) -125);
 					} else
 						anInt2912 = arg1.get();
 				} else
-					anInt2913 = arg1.method209((byte) -117);
+					anInt2913 = arg1.read_u16((byte) -117);
 			} else
-				anInt2901 = arg1.method209((byte) -104);
+				anInt2901 = arg1.read_u16((byte) -104);
 		} else
-			anInt2930 = arg1.method209((byte) -104);
+			anInt2930 = arg1.read_u16((byte) -104);
 		if (arg0 != 32767)
 			anInt2913 = -23;
 	}
 
-	public void method369(int arg0, StreamBuffer arg1) {
+	public void method369(int arg0, Buffer arg1) {
 		try {
 			anInt2918++;
 			if (arg0 == -40) {

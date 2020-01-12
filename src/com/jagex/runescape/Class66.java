@@ -1,5 +1,5 @@
 package com.jagex.runescape;
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 import java.awt.Image;
 
@@ -82,23 +82,23 @@ public class Class66 {
 				return null;
 			class4_sub20_sub16 = new Class4_Sub20_Sub16();
 			int i = 0;
-			StreamBuffer class4_sub11 = new StreamBuffer(is);
-			class4_sub11.pointion = -12 + class4_sub11.byteBuffer.length;
+			Buffer class4_sub11 = new Buffer(is);
+			class4_sub11.pointer = -12 + class4_sub11.byteBuffer.length;
 			int i_0_ = class4_sub11.method219((byte) 73);
-			class4_sub20_sub16.anInt3174 = class4_sub11.method209((byte) -103);
-			class4_sub20_sub16.anInt3163 = class4_sub11.method209((byte) -121);
-			class4_sub20_sub16.anInt3173 = class4_sub11.method209((byte) -119);
+			class4_sub20_sub16.anInt3174 = class4_sub11.read_u16((byte) -103);
+			class4_sub20_sub16.anInt3163 = class4_sub11.read_u16((byte) -121);
+			class4_sub20_sub16.anInt3173 = class4_sub11.read_u16((byte) -119);
 			if (arg0 != 39)
 				method1079((byte) 126);
-			class4_sub20_sub16.anInt3168 = class4_sub11.method209((byte) -111);
-			class4_sub11.pointion = 0;
+			class4_sub20_sub16.anInt3168 = class4_sub11.read_u16((byte) -111);
+			class4_sub11.pointer = 0;
 			class4_sub20_sub16.aJagexString_3172 = class4_sub11
 					.method226((byte) 76);
 			class4_sub20_sub16.anIntArray3171 = new int[i_0_];
 			class4_sub20_sub16.aJagexStringArray3178 = new JagexString[i_0_];
 			class4_sub20_sub16.anIntArray3182 = new int[i_0_];
-			while ((class4_sub11.byteBuffer.length - 12 ^ 0xffffffff) < (class4_sub11.pointion ^ 0xffffffff)) {
-				int i_1_ = class4_sub11.method209((byte) -104);
+			while ((class4_sub11.byteBuffer.length - 12 ^ 0xffffffff) < (class4_sub11.pointer ^ 0xffffffff)) {
+				int i_1_ = class4_sub11.read_u16((byte) -104);
 				if ((i_1_ ^ 0xffffffff) == -4)
 					class4_sub20_sub16.aJagexStringArray3178[i] = class4_sub11
 							.method212();

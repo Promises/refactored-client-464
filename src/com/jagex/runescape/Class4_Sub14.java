@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class4_Sub14 extends RSFont {
 	public static byte[][][] aByteArrayArrayArray2275;
@@ -132,7 +132,7 @@ public class Class4_Sub14 extends RSFont {
 						Class4_Sub20_Sub7_Sub5.runeCanvas, 0);
 				JagexException.aClass43_1728.method952(7,
 						class4_sub2_sub1);
-				StreamBuffer.method206(Class42.aClass19_Sub1_856, 44,
+				Buffer.method206(Class42.aClass19_Sub1_856, 44,
 						Class66.aClass19_Sub1_1336, class4_sub2_sub1,
 						Class4_Sub17.aClass19_Sub1_2327);
 				Class4_Sub20_Sub6.aClass43_2932 = Class40.method931(-79, 2048,

@@ -1,9 +1,9 @@
 package com.jagex.runescape;
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 import java.util.zip.CRC32;
 
-public class Class4_Sub11_Sub1 extends StreamBuffer {
+public class Class4_Sub11_Sub1 extends Buffer {
 	public static Class19 aClass19_2691;
 	public static JagexString aJagexString_2669;
 	public static JagexString aJagexString_2676;
@@ -173,17 +173,17 @@ public class Class4_Sub11_Sub1 extends StreamBuffer {
 		}
 	}
 
-	public static int method270(StreamBuffer arg0, int arg1, JagexString arg2) {
+	public static int method270(Buffer arg0, int arg1, JagexString arg2) {
 		try {
-			int i = arg0.pointion;
+			int i = arg0.pointer;
 			arg0.method243(13952, arg2.anInt1805);
-			arg0.pointion += Class10.aClass47_305.method979(arg0.byteBuffer,
-					arg2.aByteArray1803, arg0.pointion, arg2.anInt1805, 0, arg1
+			arg0.pointer += Class10.aClass47_305.method979(arg0.byteBuffer,
+					arg2.aByteArray1803, arg0.pointer, arg2.anInt1805, 0, arg1
 							^ ~0x1d7d);
 			if (arg1 != -7547)
 				method275((byte) -38, 54);
 			anInt2672++;
-			return -i + arg0.pointion;
+			return -i + arg0.pointer;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ib.L("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ','
@@ -245,7 +245,7 @@ public class Class4_Sub11_Sub1 extends StreamBuffer {
 
 	public void method264(int arg0, int arg1) {
 		try {
-			byteBuffer[pointion++] = (byte) (arg0 + aClass33_2685.method884(6));
+			byteBuffer[pointer++] = (byte) (arg0 + aClass33_2685.method884(6));
 			anInt2674++;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ib.M("
@@ -258,7 +258,7 @@ public class Class4_Sub11_Sub1 extends StreamBuffer {
 			anInt2689++;
 			if (arg0 != true)
 				anInt2682 = 25;
-			return 0xff & (byteBuffer[pointion++] + -aClass33_2685.method884(6));
+			return 0xff & (byteBuffer[pointer++] + -aClass33_2685.method884(6));
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ib.F("
 					+ arg0 + ')');
@@ -292,7 +292,7 @@ public class Class4_Sub11_Sub1 extends StreamBuffer {
 
 	public void method271(byte arg0) {
 		try {
-			anInt2665 = 8 * pointion;
+			anInt2665 = 8 * pointer;
 			if (arg0 >= -17)
 				aJagexString_2679 = null;
 			anInt2684++;
@@ -317,7 +317,7 @@ public class Class4_Sub11_Sub1 extends StreamBuffer {
 	public void method274(byte arg0) {
 		try {
 			anInt2666++;
-			pointion = (anInt2665 - -7) / 8;
+			pointer = (anInt2665 - -7) / 8;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ib.A("
 					+ arg0 + ')');

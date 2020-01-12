@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 	public static boolean aBoolean3116 = false;
@@ -203,10 +203,10 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 
 	public static void method592(boolean arg0) {
 		try {
-			Class4_Sub22 class4_sub22 = (Class4_Sub22) StreamBuffer.aClass65_2073
+			Class4_Sub22 class4_sub22 = (Class4_Sub22) Buffer.aClass65_2073
 					.method1071(-122);
 			if (arg0 == false) {
-				for (/**/; class4_sub22 != null; class4_sub22 = (Class4_Sub22) StreamBuffer.aClass65_2073
+				for (/**/; class4_sub22 != null; class4_sub22 = (Class4_Sub22) Buffer.aClass65_2073
 						.method1075(18485)) {
 					if (class4_sub22.aClass4_Sub20_Sub1_2399 != null)
 						class4_sub22.method626(false);
@@ -285,7 +285,7 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 		}
 	}
 
-	public void method585(int arg0, int arg1, StreamBuffer arg2) {
+	public void method585(int arg0, int arg1, Buffer arg2) {
 		anInt3123++;
 		if ((arg1 ^ 0xffffffff) == -2)
 			anInt3125 = arg2.get();
@@ -295,20 +295,20 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 					if (arg1 < 50 || (arg1 ^ 0xffffffff) <= -61) {
 						if (arg1 >= 60 && arg1 < 70)
 							anIntArray3105[arg1 - 60] = arg2
-									.method209((byte) -122);
+									.read_u16((byte) -122);
 					} else
 						aShortArray3109[-50 + arg1] = (short) arg2
-								.method209((byte) -114);
+								.read_u16((byte) -114);
 				} else
 					aShortArray3104[arg1 + -40] = (short) arg2
-							.method209((byte) -125);
+							.read_u16((byte) -125);
 			} else
 				aBoolean3117 = true;
 		} else {
 			int i = arg2.get();
 			anIntArray3114 = new int[i];
 			for (int i_0_ = 0; (i_0_ ^ 0xffffffff) > (i ^ 0xffffffff); i_0_++)
-				anIntArray3114[i_0_] = arg2.method209((byte) -122);
+				anIntArray3114[i_0_] = arg2.read_u16((byte) -122);
 		}
 		if (arg0 != 34)
 			method592(true);
@@ -334,7 +334,7 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 		}
 	}
 
-	public void method590(StreamBuffer arg0, int arg1) {
+	public void method590(Buffer arg0, int arg1) {
 		for (;;) {
 			int i = arg0.get();
 			if (i == 0)

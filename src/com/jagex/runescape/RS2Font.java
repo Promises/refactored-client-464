@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class RS2Font extends Class4_Sub20 {
     public static boolean[] aBooleanArray2765;
@@ -249,7 +249,7 @@ public class RS2Font extends Class4_Sub20 {
 
     public int anInt2785;
 
-    public void method339(int arg0, StreamBuffer arg1, int arg2) {
+    public void method339(int arg0, Buffer arg1, int arg2) {
         try {
             for (; ; ) {
                 int i = arg1.get();
@@ -324,7 +324,7 @@ public class RS2Font extends Class4_Sub20 {
         }
     }
 
-    public void method344(int arg0, int arg1, StreamBuffer arg2, int arg3) {
+    public void method344(int arg0, int arg1, Buffer arg2, int arg3) {
         try {
             if (arg0 > -112)
                 method343((byte) -44, -45);

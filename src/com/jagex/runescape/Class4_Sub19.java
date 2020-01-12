@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class4_Sub19 extends RSFont {
 	public static int[] anIntArray2346;
@@ -21,15 +21,15 @@ public class Class4_Sub19 extends RSFont {
 
 	public int[] anIntArray2347;
 
-	public Class4_Sub19(StreamBuffer arg0) {
-		anInt2337 = arg0.method209((byte) -117);
+	public Class4_Sub19(Buffer arg0) {
+		anInt2337 = arg0.read_u16((byte) -117);
 		aBoolean2343 = arg0.get() == 1;
 		int i = arg0.get();
 		if (i < 1 || i > 4)
 			throw new RuntimeException();
 		anIntArray2347 = new int[i];
 		for (int i_30_ = 0; i_30_ < i; i_30_++)
-			anIntArray2347[i_30_] = arg0.method209((byte) -101);
+			anIntArray2347[i_30_] = arg0.read_u16((byte) -101);
 		if (i > 1) {
 			anIntArray2338 = new int[i - 1];
 			for (int i_31_ = 0; i_31_ < i - 1; i_31_++)

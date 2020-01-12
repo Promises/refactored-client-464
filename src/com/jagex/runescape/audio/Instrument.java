@@ -1,6 +1,6 @@
 package com.jagex.runescape.audio;
 import com.jagex.runescape.Class21;
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 import java.util.Random;
 
@@ -11,11 +11,28 @@ public class Instrument {
 	public static int[] noise = new int[32768];
 	public static int[] output;
 	public static int[] sine;
-	public static int[] anIntArray1626;
-	public static int[] anIntArray1628;
-	public static int[] anIntArray1631;
-	public static int[] anIntArray1632;
-	public static int[] anIntArray1633;
+	public static int[] pitch_base_step = new int[5];
+	public static int[] vol_step = new int[5];
+	public static int[] delays = new int[5];
+	public static int[] pitch_step = new int[5];
+	public static int[] phases = new int[5];
+	public Envelope filter_env;
+	public Envelope vol_mod_amp_env;
+	public Envelope gating_attack_env;
+	public Envelope vol_env;
+	public Envelope pitch_mod_amp_env;
+	public Envelope pitch_env;
+	public Envelope gating_release_env;
+	public Envelope pitch_mod_env;
+	public Envelope vol_mod_env;
+	public Filter filter;
+	public int delay_feedback;
+	public int delay_time = 0;
+	public int begin;
+	public int duration;
+	public int[] oscill_vol;
+	public int[] oscill_delay;
+	public int[] oscill_pitch_delta;
 	static {
 		Random random = new Random(0L);
 		for (int i = 0; i < 32768; i++) {
@@ -26,51 +43,27 @@ public class Instrument {
 			sine[i] = (int) (Math.sin(i / 5215.1903) * 16384.0);
 		}
 		output = new int[220500];
-		anIntArray1626 = new int[5];
-		anIntArray1631 = new int[5];
-		anIntArray1628 = new int[5];
-		anIntArray1632 = new int[5];
-		anIntArray1633 = new int[5];
 	}
 
-	public static void method1198() {
+	public static void initialize() {
 		output = null;
 		noise = null;
 		sine = null;
-		anIntArray1633 = null;
-		anIntArray1631 = null;
-		anIntArray1628 = null;
-		anIntArray1632 = null;
-		anIntArray1626 = null;
+		phases = null;
+		delays = null;
+		vol_step = null;
+		pitch_step = null;
+		pitch_base_step = null;
 	}
 
-	public Envelope filter_env;
-	public Envelope aEnvelope_1613;
-	public Envelope aEnvelope_1617;
-	public Envelope aEnvelope_1618;
-	public Envelope aEnvelope_1619;
-	public Envelope aEnvelope_1620;
-	public Envelope aEnvelope_1622;
-	public Envelope aEnvelope_1625;
-	public Envelope aEnvelope_1627;
-	public Filter filter;
-	public int anInt1610;
-	public int anInt1612 = 0;
-	public int anInt1614;
-	public int anInt1624;
-	public int[] anIntArray1609;
-
-	public int[] anIntArray1623;
-
-	public int[] anIntArray1629;
 
 	public Instrument() {
-		anIntArray1609 = new int[5];
-		anInt1624 = 500;
-		anIntArray1623 = new int[5];
-		anIntArray1629 = new int[5];
-		anInt1614 = 0;
-		anInt1610 = 100;
+		oscill_vol = new int[5];
+		duration = 500;
+		oscill_delay = new int[5];
+		oscill_pitch_delta = new int[5];
+		begin = 0;
+		delay_feedback = 100;
 	}
 
 	public int evaluateWave(int phase, int amplitude, int table) {
@@ -92,158 +85,159 @@ public class Instrument {
 		return 0;
 	}
 
-	public void method1200(StreamBuffer arg0) {
-		aEnvelope_1620 = new Envelope();
-		aEnvelope_1620.method772(arg0);
-		aEnvelope_1618 = new Envelope();
-		aEnvelope_1618.method772(arg0);
-		int i = arg0.get();
-		if (i != 0) {
-			arg0.pointion--;
-			aEnvelope_1625 = new Envelope();
-			aEnvelope_1625.method772(arg0);
-			aEnvelope_1619 = new Envelope();
-			aEnvelope_1619.method772(arg0);
+	public void decode(Buffer data) {
+		pitch_env = new Envelope();
+		pitch_env.decode(data);
+		vol_env = new Envelope();
+		vol_env.decode(data);
+		int option = data.get();
+		if (option != 0) {
+			data.pointer--;
+			pitch_mod_env = new Envelope();
+			pitch_mod_env.decode(data);
+			pitch_mod_amp_env = new Envelope();
+			pitch_mod_amp_env.decode(data);
 		}
-		i = arg0.get();
-		if (i != 0) {
-			arg0.pointion--;
-			aEnvelope_1627 = new Envelope();
-			aEnvelope_1627.method772(arg0);
-			aEnvelope_1613 = new Envelope();
-			aEnvelope_1613.method772(arg0);
+		option = data.get();
+		if (option != 0) {
+			data.pointer--;
+			vol_mod_env = new Envelope();
+			vol_mod_env.decode(data);
+			vol_mod_amp_env = new Envelope();
+			vol_mod_amp_env.decode(data);
 		}
-		i = arg0.get();
-		if (i != 0) {
-			arg0.pointion--;
-			aEnvelope_1622 = new Envelope();
-			aEnvelope_1622.method772(arg0);
-			aEnvelope_1617 = new Envelope();
-			aEnvelope_1617.method772(arg0);
+		option = data.get();
+		if (option != 0) {
+			data.pointer--;
+			gating_release_env = new Envelope();
+			gating_release_env.decode(data);
+			gating_attack_env = new Envelope();
+			gating_attack_env.decode(data);
 		}
 		for (int i_0_ = 0; i_0_ < 10; i_0_++) {
-			int i_1_ = arg0.getSmart();
+			int i_1_ = data.readUnsignedSmart();
 			if (i_1_ == 0) {
 				break;
 			}
-			anIntArray1609[i_0_] = i_1_;
-			anIntArray1629[i_0_] = arg0.method260(-77);
-			anIntArray1623[i_0_] = arg0.getSmart();
+			oscill_vol[i_0_] = i_1_;
+			oscill_pitch_delta[i_0_] = data.readSmart(-77);
+			oscill_delay[i_0_] = data.readUnsignedSmart();
 		}
-		anInt1612 = arg0.getSmart();
-		anInt1610 = arg0.getSmart();
-		anInt1624 = arg0.method209((byte) -124);
-		anInt1614 = arg0.method209((byte) -112);
+		delay_time = data.readUnsignedSmart();
+		delay_feedback = data.readUnsignedSmart();
+		duration = data.read_u16((byte) -124);
+		begin = data.read_u16((byte) -112);
 		filter = new Filter();
 		filter_env = new Envelope();
-		filter.method1018(arg0, filter_env);
+		filter.method1018(data, filter_env);
 	}
 
-	public int[] synthesize(int n_s, int arg1) { // synthesize
+	public int[] synthesize(int n_s, int dt) { // synthesize
 		Class21.method776(output, 0, n_s);
-		if (arg1 < 10) {
+		if (dt < 10) {
 			return output;
 		}
-		double d = n_s / (arg1 + 0.0);
-		aEnvelope_1620.method774();
-		aEnvelope_1618.method774();
-		int i = 0;
-		int i_2_ = 0;
-		int i_3_ = 0;
-		if (aEnvelope_1625 != null) {
-			aEnvelope_1625.method774();
-			aEnvelope_1619.method774();
-			i = (int) ((aEnvelope_1625.anInt533 - aEnvelope_1625.anInt532) * 32.768 / d);
-			i_2_ = (int) (aEnvelope_1625.anInt532 * 32.768 / d);
+		double f_s = n_s / (dt + 0.0);
+		pitch_env.reset();
+		vol_env.reset();
+		int pitch_mod_step = 0;
+		int pitch_mod_base_step = 0;
+		int pitch_mod_phase = 0;
+		if (pitch_mod_env != null) {
+			pitch_mod_env.reset();
+			pitch_mod_amp_env.reset();
+			pitch_mod_step = (int) ((pitch_mod_env.end - pitch_mod_env.start) * 32.768 / f_s);
+			pitch_mod_base_step = (int) (pitch_mod_env.start * 32.768 / f_s);
 		}
-		int i_4_ = 0;
-		int i_5_ = 0;
-		int i_6_ = 0;
-		if (aEnvelope_1627 != null) {
-			aEnvelope_1627.method774();
-			aEnvelope_1613.method774();
-			i_4_ = (int) ((aEnvelope_1627.anInt533 - aEnvelope_1627.anInt532) * 32.768 / d);
-			i_5_ = (int) (aEnvelope_1627.anInt532 * 32.768 / d);
+		int vol_mod_step = 0;
+		int vol_mod_base_step = 0;
+		int vol_mod_phase = 0;
+		if (vol_mod_env != null) {
+			vol_mod_env.reset();
+			vol_mod_amp_env.reset();
+			vol_mod_step = (int) ((vol_mod_env.end - vol_mod_env.start) * 32.768 / f_s);
+			vol_mod_base_step = (int) (vol_mod_env.start * 32.768 / f_s);
 		}
-		for (int i_7_ = 0; i_7_ < 5; i_7_++) {
-			if (anIntArray1609[i_7_] != 0) {
-				anIntArray1633[i_7_] = 0;
-				anIntArray1631[i_7_] = (int) (anIntArray1623[i_7_] * d);
-				anIntArray1628[i_7_] = (anIntArray1609[i_7_] << 14) / 100;
-				anIntArray1632[i_7_] = (int) ((aEnvelope_1620.anInt533 - aEnvelope_1620.anInt532)
+		for (int j2 = 0; j2 < 5; j2++) {
+			if (oscill_vol[j2] != 0) {
+				phases[j2] = 0;
+				delays[j2] = (int) (oscill_delay[j2] * f_s);
+				vol_step[j2] = (oscill_vol[j2] << 14) / 100;
+				pitch_step[j2] = (int) ((pitch_env.end - pitch_env.start)
 						* 32.768
-						* Math.pow(1.0057929410678534, anIntArray1629[i_7_]) / d);
-				anIntArray1626[i_7_] = (int) (aEnvelope_1620.anInt532 * 32.768 / d);
+						* Math.pow(1.0057929410678534, oscill_pitch_delta[j2]) / f_s);
+				pitch_base_step[j2] = (int) (pitch_env.start * 32.768 / f_s);
 			}
 		}
 		for (int i_8_ = 0; i_8_ < n_s; i_8_++) {
-			int i_9_ = aEnvelope_1620.step(n_s);
-			int i_10_ = aEnvelope_1618.step(n_s);
-			if (aEnvelope_1625 != null) {
-				int i_11_ = aEnvelope_1625.step(n_s);
-				int i_12_ = aEnvelope_1619.step(n_s);
-				i_9_ += evaluateWave(i_3_, i_12_, aEnvelope_1625.anInt531) >> 1;
-				i_3_ += (i_11_ * i >> 16) + i_2_;
+			int pitch_change = pitch_env.step(n_s);
+			int vol_change = vol_env.step(n_s);
+			if (pitch_mod_env != null) {
+				int mod = pitch_mod_env.step(n_s);
+				int mod_amp = pitch_mod_amp_env.step(n_s);
+				pitch_change += evaluateWave(pitch_mod_phase, mod_amp, pitch_mod_env.form) >> 1;
+				pitch_mod_phase += (mod * pitch_mod_step >> 16) + pitch_mod_base_step;
 			}
-			if (aEnvelope_1627 != null) {
-				int i_13_ = aEnvelope_1627.step(n_s);
-				int i_14_ = aEnvelope_1613.step(n_s);
-				i_10_ = i_10_
-						* ((evaluateWave(i_6_, i_14_, aEnvelope_1627.anInt531) >> 1) + 32768) >> 15;
-				i_6_ += (i_13_ * i_4_ >> 16) + i_5_;
+			if (vol_mod_env != null) {
+				int mod = vol_mod_env.step(n_s);
+				int mod_amp = vol_mod_amp_env.step(n_s);
+				vol_change = vol_change
+						* ((evaluateWave(vol_mod_phase, mod_amp, vol_mod_env.form) >> 1) + 32768) >> 15;
+				vol_mod_phase += (mod * vol_mod_step >> 16) + vol_mod_base_step;
 			}
-			for (int i_15_ = 0; i_15_ < 5; i_15_++) {
-				if (anIntArray1609[i_15_] != 0) {
-					int i_16_ = i_8_ + anIntArray1631[i_15_];
-					if (i_16_ < n_s) {
-						output[i_16_] += evaluateWave(
-								anIntArray1633[i_15_], i_10_
-										* anIntArray1628[i_15_] >> 15,
-								aEnvelope_1620.anInt531);
-						anIntArray1633[i_15_] += ((i_9_ * anIntArray1632[i_15_] >> 16) + anIntArray1626[i_15_]);
+			for (int l5 = 0; l5 < 5; l5++) {
+				if (oscill_vol[l5] != 0) {
+					int l6 = i_8_ + delays[l5];
+					if (l6 < n_s) {
+						output[l6] += evaluateWave(
+								phases[l5], vol_change
+										* vol_step[l5] >> 15,
+								pitch_env.form);
+						phases[l5] += ((pitch_change * pitch_step[l5] >> 16) + pitch_base_step[l5]);
 					}
 				}
 			}
 		}
-		if (aEnvelope_1622 != null) {
-			aEnvelope_1622.method774();
-			aEnvelope_1617.method774();
-			int i_17_ = 0;
-			boolean bool_18_ = true;
-			for (int i_19_ = 0; i_19_ < n_s; i_19_++) {
-				int i_20_ = aEnvelope_1622.step(n_s);
-				int i_21_ = aEnvelope_1617.step(n_s);
-				int i_22_;
-				if (bool_18_) {
-					i_22_ = aEnvelope_1622.anInt532
-							+ (((aEnvelope_1622.anInt533 - aEnvelope_1622.anInt532) * i_20_) >> 8);
+		/* gating effect */
+		if (gating_release_env != null) {
+			gating_release_env.reset();
+			gating_attack_env.reset();
+			int counter = 0;
+			boolean muted = true;
+			for (int i7 = 0; i7 < n_s; i7++) {
+				int on_step = gating_release_env.step(n_s);
+				int off_step = gating_attack_env.step(n_s);
+				int threshold;
+				if (muted) {
+					threshold = gating_release_env.start
+							+ (((gating_release_env.end - gating_release_env.start) * on_step) >> 8);
 				} else {
-					i_22_ = aEnvelope_1622.anInt532
-							+ (((aEnvelope_1622.anInt533 - aEnvelope_1622.anInt532) * i_21_) >> 8);
+					threshold = gating_release_env.start
+							+ (((gating_release_env.end - gating_release_env.start) * off_step) >> 8);
 				}
-				i_17_ += 256;
-				if (i_17_ >= i_22_) {
-					i_17_ = 0;
-					bool_18_ = !bool_18_;
+				counter += 256;
+				if (counter >= threshold) {
+					counter = 0;
+					muted = !muted;
 				}
-				if (bool_18_) {
-					output[i_19_] = 0;
+				if (muted) {
+					output[i7] = 0;
 				}
 			}
 		}
-		if (anInt1612 > 0 && anInt1610 > 0) {
-			int i_23_ = (int) (anInt1612 * d);
-			for (int i_24_ = i_23_; i_24_ < n_s; i_24_++) {
-				output[i_24_] += output[i_24_ - i_23_]
-						* anInt1610 / 100;
+		/* delay effect */
+		if (delay_time > 0 && delay_feedback > 0) {
+			int delay = (int) (delay_time * f_s);
+			for (int i_24_ = delay; i_24_ < n_s; i_24_++) {
+				output[i_24_] += output[i_24_ - delay] * delay_feedback / 100;
 			}
 		}
-		if (filter.anIntArray1116[0] > 0
-				|| filter.anIntArray1116[1] > 0) {
-			filter_env.method774();
-			int i_25_ = filter_env.step(n_s + 1);
-			int M = filter.method1014(0, i_25_ / 65536.0F);
-			int N = filter.method1014(1, i_25_ / 65536.0F);
+		/* filter */
+		if (filter.num_pairs[0] > 0 || filter.num_pairs[1] > 0) {
+			filter_env.reset();
+			int t = filter_env.step(n_s + 1);
+			int M = filter.compute(0, t / 65536.0F);
+			int N = filter.compute(1, t / 65536.0F);
 			if (n_s >= M + N) {
 				int n = 0;
 				int delay = N;
@@ -251,7 +245,7 @@ public class Instrument {
 					delay = n_s - M;
 				}
 				for (/**/; n < delay; n++) {
-					int i_30_ = (int) (((long) output[n + M] * (long) Filter.anInt1120) >> 16);
+					int i_30_ = (int) (((long) output[n + M] * (long) Filter.inv_unity) >> 16);
 					for (int i_31_ = 0; i_31_ < M; i_31_++) {
 						i_30_ += (int) (((long) (output[n + M
 								- 1 - i_31_]) * (long) (Filter.coef[0][i_31_])) >> 16);
@@ -261,7 +255,7 @@ public class Instrument {
 								- i_32_] * (long) (Filter.coef[1][i_32_])) >> 16);
 					}
 					output[n] = i_30_;
-					i_25_ = filter_env.step(n_s + 1);
+					t = filter_env.step(n_s + 1);
 				}
 				delay = 128;
 				for (;;) {
@@ -269,7 +263,7 @@ public class Instrument {
 						delay = n_s - M;
 					}
 					for (/**/; n < delay; n++) {
-						int i_33_ = (int) (((long) output[n + M] * (long) Filter.anInt1120) >> 16);
+						int i_33_ = (int) (((long) output[n + M] * (long) Filter.inv_unity) >> 16);
 						for (int i_34_ = 0; i_34_ < M; i_34_++) {
 							i_33_ += (int) (((long) (output[n
 									+ M - 1 - i_34_]) * (long) (Filter.coef[0][i_34_])) >> 16);
@@ -279,13 +273,13 @@ public class Instrument {
 									- i_35_]) * (long) (Filter.coef[1][i_35_])) >> 16);
 						}
 						output[n] = i_33_;
-						i_25_ = filter_env.step(n_s + 1);
+						t = filter_env.step(n_s + 1);
 					}
 					if (n >= n_s - M) {
 						break;
 					}
-					M = filter.method1014(0, i_25_ / 65536.0F);
-					N = filter.method1014(1, i_25_ / 65536.0F);
+					M = filter.compute(0, t / 65536.0F);
+					N = filter.compute(1, t / 65536.0F);
 					delay += 128;
 				}
 				for (/**/; n < n_s; n++) {
@@ -299,7 +293,7 @@ public class Instrument {
 								- i_38_] * (long) (Filter.coef[1][i_38_])) >> 16);
 					}
 					output[n] = y;
-					i_25_ = filter_env.step(n_s + 1);
+					t = filter_env.step(n_s + 1);
 				}
 			}
 		}

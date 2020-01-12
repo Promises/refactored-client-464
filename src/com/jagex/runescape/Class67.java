@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class67 {
     public static Class19 aClass19_1363;
@@ -39,7 +39,7 @@ public class Class67 {
             if (!Class4_Sub22.aBoolean2400) {
                 int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method223(0); // shorta,
                 // regiony
-                int i_0_ = ((-Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointion + Class4_Sub20_Sub15.anInt3157) / 16);
+                int i_0_ = ((-Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer + Class4_Sub20_Sub15.anInt3157) / 16);
                 Class4_Sub20_Sub7_Sub4.anIntArrayArray3375 = new int[i_0_][4];
                 for (int i_1_ = 0; (i_0_ ^ 0xffffffff) < (i_1_ ^ 0xffffffff); i_1_++) {
                     for (int i_2_ = 0; (i_2_ ^ 0xffffffff) > -5; i_2_++) {
@@ -50,7 +50,7 @@ public class Class67 {
                 int i_3_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                         .method213((byte) -114); // leshort, regionx
                 int i_4_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                        .method209((byte) -103); // short
+                        .read_u16((byte) -103); // short
                 int i_5_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get(); // byte
                 boolean bool = false;
                 if (((i_3_ / 8 ^ 0xffffffff) == -49 || i_3_ / 8 == 49)
@@ -61,7 +61,7 @@ public class Class67 {
                     bool = true;
                 }
                 int i_6_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                        .method209((byte) -103); // short
+                        .read_u16((byte) -103); // short
                 Class4_Sub20_Sub5.aByteArrayArray2887 = new byte[i_0_][];
                 Class47.regionIds = new int[i_0_];
                 GameShell.regionsData = new byte[i_0_][];
@@ -130,7 +130,7 @@ public class Class67 {
                     }
                 }
                 Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method274((byte) 67);
-                int i_18_ = ((Class4_Sub20_Sub15.anInt3157 + -Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointion) / 16);
+                int i_18_ = ((Class4_Sub20_Sub15.anInt3157 + -Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer) / 16);
                 Class4_Sub20_Sub7_Sub4.anIntArrayArray3375 = new int[i_18_][4];
                 for (int i_19_ = 0; (i_18_ ^ 0xffffffff) < (i_19_ ^ 0xffffffff); i_19_++) {
                     for (int i_20_ = 0; (i_20_ ^ 0xffffffff) > -5; i_20_++) {
@@ -243,9 +243,9 @@ public class Class67 {
             anInt1348++;
             boolean bool = true;
             int i = -1;
-            StreamBuffer buffer = new StreamBuffer(arg3);
+            Buffer buffer = new Buffer(arg3);
             for (; ; ) {
-                int i_31_ = buffer.getSmart();
+                int i_31_ = buffer.readUnsignedSmart();
                 if (i_31_ == 0) {
                     break;
                 }
@@ -254,7 +254,7 @@ public class Class67 {
                 boolean bool_33_ = false;
                 for (; ; ) {
                     if (!bool_33_) {
-                        int i_34_ = buffer.getSmart();
+                        int i_34_ = buffer.readUnsignedSmart();
                         if ((i_34_ ^ 0xffffffff) == -1) {
                             break;
                         }
@@ -280,7 +280,7 @@ public class Class67 {
                             }
                         }
                     } else {
-                        int i_40_ = buffer.getSmart();
+                        int i_40_ = buffer.readUnsignedSmart();
                         if (i_40_ == 0) {
                             break;
                         }

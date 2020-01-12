@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class38 {
 	public static int anInt768;
@@ -116,7 +116,7 @@ public class Class38 {
 					arg0);
 			class4_sub20_sub5 = new Class4_Sub20_Sub5();
 			if (is != null)
-				class4_sub20_sub5.method363(new StreamBuffer(is), false);
+				class4_sub20_sub5.method363(new Buffer(is), false);
 			Class12.aClass66_367.method1082(true, arg0, class4_sub20_sub5);
 			return class4_sub20_sub5;
 		} catch (RuntimeException runtimeexception) {
@@ -149,7 +149,7 @@ public class Class38 {
 			byte[] is = Class50.aClass19_1021.method746(5, (byte) 107, arg1);
 			class4_sub20_sub11 = new Class4_Sub20_Sub11();
 			if (is != null)
-				class4_sub20_sub11.method485(new StreamBuffer(is), arg0
+				class4_sub20_sub11.method485(new Buffer(is), arg0
 						+ -536870799);
 			Class42.aClass66_853.method1082(true, arg1, class4_sub20_sub11);
 			return class4_sub20_sub11;

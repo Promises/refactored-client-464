@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class68 {
 	public static JagexString aJagexString_1368;
@@ -46,7 +46,7 @@ public class Class68 {
 					(byte) 99, arg0);
 			class4_sub20_sub17 = new Class4_Sub20_Sub17();
 			if (is != null)
-				class4_sub20_sub17.method620((byte) -59, new StreamBuffer(is));
+				class4_sub20_sub17.method620((byte) -59, new Buffer(is));
 			class4_sub20_sub17.method617(0);
 			Class4_Sub3.aClass66_1882
 					.method1082(true, arg0, class4_sub20_sub17);

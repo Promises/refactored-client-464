@@ -1,9 +1,9 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class41 {
-    public static StreamBuffer aClass4_Sub11_796 = new StreamBuffer(new byte[5000]);
+    public static Buffer aClass4_Sub11_796 = new Buffer(new byte[5000]);
 	public static int anInt803;
 	public static int anInt808;
 	public static int anInt817;
@@ -394,7 +394,7 @@ public class Class41 {
 										return;
 									}
 								}
-								if (StreamBuffer.aClass64_2096 != null) {
+								if (Buffer.aClass64_2096 != null) {
                                     Class81.method1206(32768);
                                 }
 							}

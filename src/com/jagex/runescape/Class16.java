@@ -1888,7 +1888,7 @@ public class Class16 {
                                                                                 .method227(
                                                                                         (byte) -27,
                                                                                         0);
-                                                                        int i_149_ = Class66.aClass4_Sub11_Sub1_1328.pointion;
+                                                                        int i_149_ = Class66.aClass4_Sub11_Sub1_1328.pointer;
                                                                         Class66.aClass4_Sub11_Sub1_1328
                                                                                 .method227(
                                                                                         (byte) -27,
@@ -1904,7 +1904,7 @@ public class Class16 {
                                                                                         jagexString);
                                                                         Class66.aClass4_Sub11_Sub1_1328
                                                                                 .method258(
-                                                                                        Class66.aClass4_Sub11_Sub1_1328.pointion
+                                                                                        Class66.aClass4_Sub11_Sub1_1328.pointer
                                                                                                 + -i_149_,
                                                                                         (byte) 90);
                                                                     }
@@ -1921,7 +1921,7 @@ public class Class16 {
                                                                             .method227(
                                                                                     (byte) -27,
                                                                                     0);
-                                                                    int i_151_ = (Class66.aClass4_Sub11_Sub1_1328.pointion);
+                                                                    int i_151_ = (Class66.aClass4_Sub11_Sub1_1328.pointer);
                                                                     Class66.aClass4_Sub11_Sub1_1328
                                                                             .method255(
                                                                                     189354448,
@@ -1933,7 +1933,7 @@ public class Class16 {
                                                                                     jagexString_150_);
                                                                     Class66.aClass4_Sub11_Sub1_1328
                                                                             .method258(
-                                                                                    (-i_151_ + (Class66.aClass4_Sub11_Sub1_1328.pointion)),
+                                                                                    (-i_151_ + (Class66.aClass4_Sub11_Sub1_1328.pointer)),
                                                                                     (byte) 93);
                                                                 } else if ((i_13_ ^ 0xffffffff) == -5011) {
                                                                     int i_152_ = (Class24.anIntArray557[--i_10_]);

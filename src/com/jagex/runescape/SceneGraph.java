@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class SceneGraph extends Class14 {
 	public static Class19 aClass19_2483;
@@ -91,7 +91,7 @@ public class SceneGraph extends Class14 {
 				}
 			}
 			anInt2486++;
-			StreamBuffer streamBuffer = new StreamBuffer(arg3);
+			Buffer buffer = new Buffer(arg3);
 			for (int i = 0; (i ^ 0xffffffff) > -5; i++) {
 				for (int i_9_ = 0; (i_9_ ^ 0xffffffff) > -65; i_9_++) {
 					for (int i_10_ = 0; (i_10_ ^ 0xffffffff) > -65; i_10_++) {
@@ -100,7 +100,7 @@ public class SceneGraph extends Class14 {
 								|| i_9_ >= arg0 - -8
 								|| (i_10_ ^ 0xffffffff) > (arg6 ^ 0xffffffff)
 								|| (8 + arg6 ^ 0xffffffff) >= (i_10_ ^ 0xffffffff))
-							Class82.method1217(0, -1, -1, streamBuffer, 0,
+							Class82.method1217(0, -1, -1, buffer, 0,
 									-105, 0, 0);
 						else
 							Class82.method1217(
@@ -113,7 +113,7 @@ public class SceneGraph extends Class14 {
 											+ Class4_Sub6.method185(
 													i_10_ & 0x7, arg4,
 													(byte) -70, i_9_ & 0x7),
-									streamBuffer, 0, -105, 0, arg4);
+                                    buffer, 0, -105, 0, arg4);
 					}
 				}
 			}

@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class29 {
 	public static byte[] aByteArray641 = { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
@@ -15,7 +15,7 @@ public class Class29 {
 		aByteArray641 = null;
 	}
 
-	public StreamBuffer aClass4_Sub11_642;
+	public Buffer aClass4_Sub11_642;
 	public long aLong644;
 	public int anInt645;
 	public int anInt646;
@@ -26,23 +26,23 @@ public class Class29 {
 	public int[] anIntArray649;
 
 	public Class29() {
-		aClass4_Sub11_642 = new StreamBuffer(null);
+		aClass4_Sub11_642 = new Buffer(null);
 	}
 
 	public Class29(byte[] arg0) {
-		aClass4_Sub11_642 = new StreamBuffer(null);
+		aClass4_Sub11_642 = new Buffer(null);
 		method857(arg0);
 	}
 
 	public void method856() {
-		aClass4_Sub11_642.pointion = -1;
+		aClass4_Sub11_642.pointer = -1;
 	}
 
 	public void method857(byte[] arg0) {
 		aClass4_Sub11_642.byteBuffer = arg0;
-		aClass4_Sub11_642.pointion = 10;
-		int i = aClass4_Sub11_642.method209((byte) -101);
-		anInt645 = aClass4_Sub11_642.method209((byte) -101);
+		aClass4_Sub11_642.pointer = 10;
+		int i = aClass4_Sub11_642.read_u16((byte) -101);
+		anInt645 = aClass4_Sub11_642.read_u16((byte) -101);
 		anInt646 = 500000;
 		anIntArray648 = new int[i];
 		int i_0_ = 0;
@@ -50,10 +50,10 @@ public class Class29 {
 			int i_1_ = aClass4_Sub11_642.method219((byte) 73);
 			int i_2_ = aClass4_Sub11_642.method219((byte) 73);
 			if (i_1_ == 1297379947) {
-				anIntArray648[i_0_] = aClass4_Sub11_642.pointion;
+				anIntArray648[i_0_] = aClass4_Sub11_642.pointer;
 				i_0_++;
 			}
-			aClass4_Sub11_642.pointion += i_2_;
+			aClass4_Sub11_642.pointer += i_2_;
 		}
 		aLong644 = 0L;
 		anIntArray649 = new int[i];
@@ -82,7 +82,7 @@ public class Class29 {
 	}
 
 	public void method861(int arg0) {
-		anIntArray649[arg0] = aClass4_Sub11_642.pointion;
+		anIntArray649[arg0] = aClass4_Sub11_642.pointer;
 	}
 
 	public void method862(long arg0) {
@@ -91,32 +91,32 @@ public class Class29 {
 		for (int i_5_ = 0; i_5_ < i; i_5_++) {
 			anIntArray647[i_5_] = 0;
 			anIntArray643[i_5_] = 0;
-			aClass4_Sub11_642.pointion = anIntArray648[i_5_];
+			aClass4_Sub11_642.pointer = anIntArray648[i_5_];
 			method860(i_5_);
-			anIntArray649[i_5_] = aClass4_Sub11_642.pointion;
+			anIntArray649[i_5_] = aClass4_Sub11_642.pointer;
 		}
 	}
 
 	public int method863(int arg0) {
-		int i = aClass4_Sub11_642.byteBuffer[aClass4_Sub11_642.pointion];
+		int i = aClass4_Sub11_642.byteBuffer[aClass4_Sub11_642.pointer];
 		if (i < 0) {
 			i &= 0xff;
 			anIntArray643[arg0] = i;
-			aClass4_Sub11_642.pointion++;
+			aClass4_Sub11_642.pointer++;
 		} else
 			i = anIntArray643[arg0];
 		if (i == 240 || i == 247) {
 			int i_6_ = aClass4_Sub11_642.method228(0);
 			if (i == 247 && i_6_ > 0) {
-				int i_7_ = ((aClass4_Sub11_642.byteBuffer[aClass4_Sub11_642.pointion]) & 0xff);
+				int i_7_ = ((aClass4_Sub11_642.byteBuffer[aClass4_Sub11_642.pointer]) & 0xff);
 				if (i_7_ >= 241 && i_7_ <= 243 || i_7_ == 246 || i_7_ == 248
 						|| i_7_ >= 250 && i_7_ <= 252 || i_7_ == 254) {
-					aClass4_Sub11_642.pointion++;
+					aClass4_Sub11_642.pointer++;
 					anIntArray643[arg0] = i_7_;
 					return method868(arg0, i_7_);
 				}
 			}
-			aClass4_Sub11_642.pointion += i_6_;
+			aClass4_Sub11_642.pointer += i_6_;
 			return 0;
 		}
 		return method868(arg0, i);
@@ -150,7 +150,7 @@ public class Class29 {
 			int i = aClass4_Sub11_642.get();
 			int i_11_ = aClass4_Sub11_642.method228(0);
 			if (i == 47) {
-				aClass4_Sub11_642.pointion += i_11_;
+				aClass4_Sub11_642.pointer += i_11_;
 				return 1;
 			}
 			if (i == 81) {
@@ -159,10 +159,10 @@ public class Class29 {
 				int i_13_ = anIntArray647[arg0];
 				aLong644 += (long) i_13_ * (long) (anInt646 - i_12_);
 				anInt646 = i_12_;
-				aClass4_Sub11_642.pointion += i_11_;
+				aClass4_Sub11_642.pointer += i_11_;
 				return 2;
 			}
-			aClass4_Sub11_642.pointion += i_11_;
+			aClass4_Sub11_642.pointer += i_11_;
 			return 3;
 		}
 		byte i = aByteArray641[arg1 - 128];
@@ -188,6 +188,6 @@ public class Class29 {
 	}
 
 	public void method871(int arg0) {
-		aClass4_Sub11_642.pointion = anIntArray649[arg0];
+		aClass4_Sub11_642.pointer = anIntArray649[arg0];
 	}
 }

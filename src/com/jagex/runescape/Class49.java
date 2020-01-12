@@ -1,5 +1,5 @@
 package com.jagex.runescape;
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 import java.math.BigInteger;
 
@@ -110,7 +110,7 @@ public class Class49 implements Runnable {
 							.method1186(
 									(Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.byteBuffer),
 									99, 0, 1);
-					Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointion = 0;
+					Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer = 0;
 					Class4_Sub20_Sub11.incomingPacket = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.method265(true);
 					Class4_Sub20_Sub15.anInt3157 = AppletListener.anIntArray1465[Class4_Sub20_Sub11.incomingPacket];
@@ -135,9 +135,9 @@ public class Class49 implements Runnable {
 										(Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.byteBuffer),
 										108, 0, 2);
 						i -= 2;
-						Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointion = 0;
+						Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer = 0;
 						Class4_Sub20_Sub15.anInt3157 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-								.method209((byte) -106);
+								.read_u16((byte) -106);
 					} else {
 						return false;
 					}
@@ -145,7 +145,7 @@ public class Class49 implements Runnable {
 				if (i < Class4_Sub20_Sub15.anInt3157) {
 					return false;
 				}
-				Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointion = 0;
+				Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer = 0;
 				Class4_Sub20_Sub17.aClass76_3189.method1186(
 						Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.byteBuffer,
 						98, 0, Class4_Sub20_Sub15.anInt3157);
@@ -156,7 +156,7 @@ public class Class49 implements Runnable {
 				System.out.printf("packet: %d, %d\n",Class4_Sub20_Sub11.incomingPacket, (Class4_Sub20_Sub11.incomingPacket ^ 0xffffffff));
 				if ((Class4_Sub20_Sub11.incomingPacket ^ 0xffffffff) == -31) {
 					Class57.anInt1130 = 30 * Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-							.method209((byte) -114);
+							.read_u16((byte) -114);
 					Class4_Sub20_Sub11.incomingPacket = -1;
 					Class43.anInt868 = Class4_Sub20_Sub10.anInt3053;
 					return true;
@@ -169,11 +169,11 @@ public class Class49 implements Runnable {
 					return true;
 				}
 				if (Class4_Sub20_Sub11.incomingPacket == 79) {
-					int i_1_ = (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointion - -Class4_Sub20_Sub15.anInt3157);
+					int i_1_ = (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer - -Class4_Sub20_Sub15.anInt3157);
 					int i_2_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-							.method209((byte) -99);
+							.read_u16((byte) -99);
 					int i_3_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-							.method209((byte) -104);
+							.read_u16((byte) -104);
 					if ((Class4_Sub6.anInt1932 ^ 0xffffffff) != (i_2_ ^ 0xffffffff)) {
 						Class4_Sub6.anInt1932 = i_2_;
 						Class66.method1080(Class4_Sub6.anInt1932, 0);
@@ -186,7 +186,7 @@ public class Class49 implements Runnable {
 						int i_5_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 								.method219((byte) 73);
 						int i_6_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-								.method209((byte) -101);
+								.read_u16((byte) -101);
 						int i_7_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 								.get(); // readByte()
 						Class4_Sub16 class4_sub16 = ((Class4_Sub16) Class31.aClass16_677
@@ -214,13 +214,13 @@ public class Class49 implements Runnable {
 						}
 					}
 					Class64.aClass16_1259 = new Class16(512);
-					while ((Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointion ^ 0xffffffff) > (i_1_ ^ 0xffffffff)) {
+					while ((Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer ^ 0xffffffff) > (i_1_ ^ 0xffffffff)) {
 						int i_8_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 								.method219((byte) 73);
 						int i_9_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-								.method209((byte) -122);
+								.read_u16((byte) -122);
 						int i_10_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-								.method209((byte) -117);
+								.read_u16((byte) -117);
 						int i_11_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 								.method219((byte) 73);
 						for (int i_12_ = i_9_; i_10_ >= i_12_; i_12_++) {
@@ -293,7 +293,7 @@ public class Class49 implements Runnable {
 					long l = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.readLong((byte) 33);
 					long l_18_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-							.method209((byte) -109);
+							.read_u16((byte) -109);
 					long l_19_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.method248(false);
 					int i_20_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get(); // readByte()
@@ -433,7 +433,7 @@ public class Class49 implements Runnable {
 					int i_36_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.method223(0);
 					int i_37_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-							.method209((byte) -127);
+							.read_u16((byte) -127);
 					RSInterface class4_sub13 = Class4_Sub20.method322(true,
 							i_34_);
 					if ((class4_sub13.anInt2213 ^ 0xffffffff) != (i_36_ ^ 0xffffffff)
@@ -496,7 +496,7 @@ public class Class49 implements Runnable {
 					Class71.anInt1479 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.get(); // readByte()
 					Class4_Sub12.anInt2127 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-							.method209((byte) -113);
+							.read_u16((byte) -113);
 					Class1.anInt60 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.get();
 					Class4_Sub20_Sub17.anInt3216 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
@@ -542,10 +542,10 @@ public class Class49 implements Runnable {
 				}
 				if (Class4_Sub20_Sub11.incomingPacket == 40) {
 					int i_44_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-							.method209((byte) -108);
+							.read_u16((byte) -108);
 					int i_45_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get(); // readByte()
 					int i_46_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-							.method209((byte) -123);
+							.read_u16((byte) -123);
 					Class35.method900(i_46_, i_44_, i_45_, 12644);
 					Class4_Sub20_Sub11.incomingPacket = -1;
 					return true;
@@ -578,7 +578,7 @@ public class Class49 implements Runnable {
 					int i_49_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.method219((byte) 73);
 					int i_50_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-							.method209((byte) -111);
+							.read_u16((byte) -111);
 					if ((i_49_ ^ 0xffffffff) > 69999) {
 						i_50_ += 32768;
 					}
@@ -588,11 +588,11 @@ public class Class49 implements Runnable {
 					} else {
 						class4_sub13 = Class4_Sub20.method322(true, i_49_);
 					}
-					while (Class4_Sub20_Sub15.anInt3157 > (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointion)) {
+					while (Class4_Sub20_Sub15.anInt3157 > (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer)) {
 						int i_51_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-								.getSmart();
+								.readUnsignedSmart();
 						int i_52_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-								.method209((byte) -110);
+								.read_u16((byte) -110);
 						int i_53_ = 0;
 						if (i_52_ != 0) {
 							i_53_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
@@ -622,7 +622,7 @@ public class Class49 implements Runnable {
 				}
 				if (Class4_Sub20_Sub11.incomingPacket == 166) {
 					int i_54_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-							.method209((byte) -100);
+							.read_u16((byte) -100);
 					int i_55_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.method222(false);
 					RSInterface class4_sub13 = Class4_Sub20.method322(true,
@@ -685,7 +685,7 @@ public class Class49 implements Runnable {
 					Class14.anInt399 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.get(); // readByte()
 					Class8.anInt260 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-							.method209((byte) -123);
+							.read_u16((byte) -123);
 					Class18.anInt471 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.get();
 					Class52.anInt1058 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
@@ -820,7 +820,7 @@ public class Class49 implements Runnable {
 						class4_sub8s[i_79_].aJagexString_1975 = Class68.method1094(
 								-5, class4_sub8s[i_79_].aLong150);
 						class4_sub8s[i_79_].anInt1969 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-								.method209((byte) -107);
+								.read_u16((byte) -107);
 						class4_sub8s[i_79_].aByte1973 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 								.method229(79);
 						if ((Class25.aLong584 ^ 0xffffffffffffffffL) == (class4_sub8s[i_79_].aLong150 ^ 0xffffffffffffffffL)) {
@@ -854,7 +854,7 @@ public class Class49 implements Runnable {
 							.get(); // readByte()
 					Class64.anInt1273 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.method239((byte) 79);
-					while (Class4_Sub20_Sub15.anInt3157 > (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointion)) {
+					while (Class4_Sub20_Sub15.anInt3157 > (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer)) {
 						Class4_Sub20_Sub11.incomingPacket = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 								.get(); // readByte()
 						Class12.method675(-105);
@@ -866,7 +866,7 @@ public class Class49 implements Runnable {
 					int i_82_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.method241(arg0 + -46); // int1
 					int i_83_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-							.method209((byte) -103); // short
+							.read_u16((byte) -103); // short
 					int i_84_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.getC(); // readByteC()
 					Class4_Sub16 class4_sub16 = ((Class4_Sub16) Class31.aClass16_677
@@ -911,7 +911,7 @@ public class Class49 implements Runnable {
 							.get(); // readByte()
 					if (Class57.anInt1141 == 1) {
 						Class10.anInt313 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-								.method209((byte) -125);
+								.read_u16((byte) -125);
 					}
 					if ((Class57.anInt1141 ^ 0xffffffff) <= -3
 							&& (Class57.anInt1141 ^ 0xffffffff) >= -7) {
@@ -937,15 +937,15 @@ public class Class49 implements Runnable {
 						}
 						Class57.anInt1141 = 2;
 						Class76.anInt1582 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-								.method209((byte) -105);
+								.read_u16((byte) -105);
 						Class76.anInt1550 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-								.method209((byte) -111);
+								.read_u16((byte) -111);
 						Class4_Sub17.anInt2329 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 								.get(); // readByte()
 					}
 					if (Class57.anInt1141 == 10) {
 						Class16.anInt426 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-								.method209((byte) -119);
+								.read_u16((byte) -119);
 					}
 					Class4_Sub20_Sub11.incomingPacket = -1;
 					return true;
@@ -979,7 +979,7 @@ public class Class49 implements Runnable {
 					long l = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.readLong((byte) 33);
 					int i_94_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-							.method209((byte) -119);
+							.read_u16((byte) -119);
 					int i_95_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get(); // readByte()
 					JagexString jagexString = Class68.method1094(arg0 + -55, l)
 							.method839(95);
@@ -1057,7 +1057,7 @@ public class Class49 implements Runnable {
 					int i_103_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.method219((byte) 73); // int
 					int i_104_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-							.method209((byte) -123); // short
+							.read_u16((byte) -123); // short
 					if ((i_103_ ^ 0xffffffff) > 69999) {
 						i_104_ += 32768;
 					}
@@ -1075,7 +1075,7 @@ public class Class49 implements Runnable {
 					}
 					Class76.method1187((byte) 115, i_104_);
 					int i_106_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-							.method209((byte) -113); // short
+							.read_u16((byte) -113); // short
 					for (int i_107_ = 0; i_107_ < i_106_; i_107_++) {
 						int i_108_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 								.getC(); // readByteC(): //bytec
@@ -1106,7 +1106,7 @@ public class Class49 implements Runnable {
 					int i_110_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.method222(false);
 					int i_111_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-							.method209((byte) -125);
+							.read_u16((byte) -125);
 					if ((i_111_ ^ 0xffffffff) == -65536) {
 						i_111_ = -1;
 					}
@@ -1283,7 +1283,7 @@ public class Class49 implements Runnable {
 					long l_124_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.readLong((byte) 33);
 					long l_125_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-							.method209((byte) -102);
+							.read_u16((byte) -102);
 					long l_126_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.method248(false);
 					int i_127_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
@@ -1482,7 +1482,7 @@ public class Class49 implements Runnable {
 					long l = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 							.readLong((byte) 33);
 					int i_146_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-							.method209((byte) -119);
+							.read_u16((byte) -119);
 					boolean bool = false;
 					if ((l & ~0x7fffffffffffffffL ^ 0xffffffffffffffffL) != -1L) {
 						bool = true;
@@ -1596,8 +1596,8 @@ public class Class49 implements Runnable {
 
 	public static void method992(byte arg0) {
 		try {
-			for (Class4_Sub22 class4_sub22 = ((Class4_Sub22) StreamBuffer.aClass65_2073
-					.method1071(-127)); class4_sub22 != null; class4_sub22 = (Class4_Sub22) StreamBuffer.aClass65_2073
+			for (Class4_Sub22 class4_sub22 = ((Class4_Sub22) Buffer.aClass65_2073
+					.method1071(-127)); class4_sub22 != null; class4_sub22 = (Class4_Sub22) Buffer.aClass65_2073
 					.method1075(18485)) {
 				if (class4_sub22.aClass4_Sub2_Sub3_2393 != null) {
 					RSFont.aClass4_Sub2_Sub2_139
@@ -1614,7 +1614,7 @@ public class Class49 implements Runnable {
 			if (arg0 < 85) {
 				anIntArray1003 = null;
 			}
-			StreamBuffer.aClass65_2073.method1070((byte) -97);
+			Buffer.aClass65_2073.method1070((byte) -97);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "na.B("
 					+ arg0 + ')');

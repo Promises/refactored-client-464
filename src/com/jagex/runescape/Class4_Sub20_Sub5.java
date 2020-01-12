@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class4_Sub20_Sub5 extends Class4_Sub20 {
 	public static byte[][] aByteArrayArray2887;
@@ -78,7 +78,7 @@ public class Class4_Sub20_Sub5 extends Class4_Sub20 {
 
 	public int[] anIntArray2872;
 
-	public void method361(int arg0, int arg1, StreamBuffer arg2) {
+	public void method361(int arg0, int arg1, Buffer arg2) {
 		anInt2869++;
 		if (arg0 != 1) {
 			if (arg0 != 2) {
@@ -86,7 +86,7 @@ public class Class4_Sub20_Sub5 extends Class4_Sub20 {
 					if (arg0 == 4)
 						anInt2881 = arg2.method219((byte) 73);
 					else if (arg0 == 5) {
-						anInt2875 = arg2.method209((byte) -123);
+						anInt2875 = arg2.read_u16((byte) -123);
 						anIntArray2870 = new int[anInt2875];
 						aJagexStringArray2877 = new JagexString[anInt2875];
 						for (int i = 0; (anInt2875 ^ 0xffffffff) < (i ^ 0xffffffff); i++) {
@@ -94,7 +94,7 @@ public class Class4_Sub20_Sub5 extends Class4_Sub20 {
 							aJagexStringArray2877[i] = arg2.method212();
 						}
 					} else if ((arg0 ^ 0xffffffff) == -7) {
-						anInt2875 = arg2.method209((byte) -110);
+						anInt2875 = arg2.read_u16((byte) -110);
 						anIntArray2870 = new int[anInt2875];
 						anIntArray2872 = new int[anInt2875];
 						for (int i = 0; (i ^ 0xffffffff) > (anInt2875 ^ 0xffffffff); i++) {
@@ -112,7 +112,7 @@ public class Class4_Sub20_Sub5 extends Class4_Sub20 {
 			anInt2879 = 99;
 	}
 
-	public void method363(StreamBuffer arg0, boolean arg1) {
+	public void method363(Buffer arg0, boolean arg1) {
 		anInt2867++;
 		for (;;) {
 			int i = arg0.get();

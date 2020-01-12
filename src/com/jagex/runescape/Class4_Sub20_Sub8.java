@@ -1,5 +1,5 @@
 package com.jagex.runescape;
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 import com.jagex.runescape.util.Signlink;
 
 import java.awt.Component;
@@ -136,17 +136,17 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 		try {
 			anInt2952++;
 			int objectId = -1;
-			StreamBuffer buffer = new StreamBuffer(arg0);
+			Buffer buffer = new Buffer(arg0);
 			if (arg1 <= -23) {
 				for (;;) {
-					int incr = buffer.getSmart();
+					int incr = buffer.readUnsignedSmart();
 					if (incr == 0) {
 						break;
 					}
 					objectId += incr;
 					int location = 0;
 					for (;;) {
-						int incr2 = buffer.getSmart();
+						int incr2 = buffer.readUnsignedSmart();
 						if (incr2 == 0) {
 							break;
 						}
@@ -389,26 +389,26 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 		}
 	}
 
-	public void method465(byte arg0, StreamBuffer arg1, int arg2) {
+	public void method465(byte arg0, Buffer arg1, int arg2) {
 		try {
 			anInt2968++;
 			if (arg0 != -28) {
 				method463(-55);
 			}
 			if (arg2 == 1) {
-				anInt3007 = arg1.method209((byte) -99);
+				anInt3007 = arg1.read_u16((byte) -99);
 			} else if (arg2 != 2) {
 				if ((arg2 ^ 0xffffffff) == -5) {
-					anInt2983 = arg1.method209((byte) -108);
+					anInt2983 = arg1.read_u16((byte) -108);
 				} else if (arg2 != 5) {
 					if (arg2 != 6) {
 						if (arg2 == 7) {
-							anInt2965 = arg1.method209((byte) -102);
+							anInt2965 = arg1.read_u16((byte) -102);
 							if ((anInt2965 ^ 0xffffffff) < -32768) {
 								anInt2965 -= 65536;
 							}
 						} else if ((arg2 ^ 0xffffffff) == -9) {
-							anInt3010 = arg1.method209((byte) -102);
+							anInt3010 = arg1.read_u16((byte) -102);
 							if ((anInt3010 ^ 0xffffffff) < -32768) {
 								anInt3010 -= 65536;
 							}
@@ -417,13 +417,13 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 						} else if (arg2 != 12) {
 							if ((arg2 ^ 0xffffffff) != -17) {
 								if (arg2 == 23) {
-									anInt2964 = arg1.method209((byte) -122);
+									anInt2964 = arg1.read_u16((byte) -122);
 									anInt2985 = arg1.get();
 								} else if ((arg2 ^ 0xffffffff) == -25) {
-									anInt3006 = arg1.method209((byte) -120);
+									anInt3006 = arg1.read_u16((byte) -120);
 								} else if ((arg2 ^ 0xffffffff) != -26) {
 									if ((arg2 ^ 0xffffffff) == -27) {
-										anInt2974 = arg1.method209((byte) -113);
+										anInt2974 = arg1.read_u16((byte) -113);
 									} else if (arg2 < 30 || arg2 >= 35) {
 										if (arg2 >= 35 && arg2 < 40) {
 											aJagexStringArray2988[arg2 + -35] = arg1
@@ -432,21 +432,21 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 											if (arg2 != 78) {
 												if (arg2 == 79) {
 													anInt2999 = (arg1
-															.method209((byte) -101));
+															.read_u16((byte) -101));
 												} else if ((arg2 ^ 0xffffffff) == -91) {
 													anInt2975 = (arg1
-															.method209((byte) -116));
+															.read_u16((byte) -116));
 												} else if ((arg2 ^ 0xffffffff) == -92) {
 													anInt2979 = (arg1
-															.method209((byte) -104));
+															.read_u16((byte) -104));
 												} else if (arg2 != 92) {
 													if ((arg2 ^ 0xffffffff) != -94) {
 														if ((arg2 ^ 0xffffffff) == -96) {
 															anInt2976 = (arg1
-																	.method209((byte) -104));
+																	.read_u16((byte) -104));
 														} else if (arg2 == 97) {
 															anInt2977 = (arg1
-																	.method209((byte) -108));
+																	.read_u16((byte) -108));
 														} else if (arg2 != 98) {
 															if (((arg2 ^ 0xffffffff) <= -101)
 																	&& (arg2 < 110)) {
@@ -455,13 +455,13 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 																	anIntArray2997 = (new int[10]);
 																}
 																anIntArray2961[(arg2 + -100)] = (arg1
-																		.method209((byte) -110));
+																		.read_u16((byte) -110));
 																anIntArray2997[(arg2 - 100)] = (arg1
-																		.method209((byte) -102));
+																		.read_u16((byte) -102));
 															} else if ((arg2 ^ 0xffffffff) != -111) {
 																if (arg2 == 111) {
 																	anInt2966 = (arg1
-																			.method209((byte) -125));
+																			.read_u16((byte) -125));
 																} else if ((arg2 ^ 0xffffffff) != -113) {
 																	if ((arg2 ^ 0xffffffff) == -114) {
 																		anInt2970 = arg1
@@ -477,27 +477,27 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 																	}
 																} else {
 																	anInt2951 = (arg1
-																			.method209((byte) -122));
+																			.read_u16((byte) -122));
 																}
 															} else {
 																anInt3005 = (arg1
-																		.method209((byte) -111));
+																		.read_u16((byte) -111));
 															}
 														} else {
 															anInt2986 = (arg1
-																	.method209((byte) -107));
+																	.read_u16((byte) -107));
 														}
 													} else {
 														anInt2971 = (arg1
-																.method209((byte) -120));
+																.read_u16((byte) -120));
 													}
 												} else {
 													anInt2972 = (arg1
-															.method209((byte) -117));
+															.read_u16((byte) -117));
 												}
 											} else {
 												anInt2989 = (arg1
-														.method209((byte) -121));
+														.read_u16((byte) -121));
 											}
 										} else {
 											int i = arg1.get();
@@ -505,9 +505,9 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 											aShortArray3009 = new short[i];
 											for (int i_4_ = 0; i > i_4_; i_4_++) {
 												aShortArray2993[i_4_] = (short) (arg1
-														.method209((byte) -103));
+														.read_u16((byte) -103));
 												aShortArray3009[i_4_] = (short) (arg1
-														.method209((byte) -105));
+														.read_u16((byte) -105));
 											}
 										}
 									} else {
@@ -521,7 +521,7 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 										}
 									}
 								} else {
-									anInt3011 = arg1.method209((byte) -112);
+									anInt3011 = arg1.read_u16((byte) -112);
 									anInt2984 = arg1.get();
 								}
 							} else {
@@ -531,10 +531,10 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 							anInt3017 = arg1.method219((byte) 73);
 						}
 					} else {
-						anInt2995 = arg1.method209((byte) -111);
+						anInt2995 = arg1.read_u16((byte) -111);
 					}
 				} else {
-					anInt3003 = arg1.method209((byte) -117);
+					anInt3003 = arg1.read_u16((byte) -117);
 				}
 			} else {
 				aJagexString_2991 = arg1.method212();
@@ -546,7 +546,7 @@ public class Class4_Sub20_Sub8 extends Class4_Sub20 {
 		}
 	}
 
-	public void method466(int arg0, StreamBuffer arg1) {
+	public void method466(int arg0, Buffer arg1) {
 		try {
 			for (;;) {
 				int i = arg1.get();

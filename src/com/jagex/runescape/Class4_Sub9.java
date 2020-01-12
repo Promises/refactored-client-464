@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class4_Sub9 extends RSFont {
 	public static boolean aBoolean1999 = false;
@@ -423,7 +423,7 @@ public class Class4_Sub9 extends RSFont {
 	}
 
 	public void method192(byte[] arg0) {
-		StreamBuffer class4_sub11 = new StreamBuffer(arg0);
+		Buffer class4_sub11 = new Buffer(arg0);
 		anInt1990 = class4_sub11.method219((byte) 73);
 		anInt2011 = class4_sub11.method219((byte) 73);
 		anInt2007 = class4_sub11.method219((byte) 73);

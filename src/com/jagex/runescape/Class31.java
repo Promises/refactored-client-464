@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class31 {
 	public static Class16 aClass16_671 = new Class16(32);
@@ -118,18 +118,18 @@ public class Class31 {
 			Class69 arg9, int arg10) {
 		do {
 			try {
-				StreamBuffer class4_sub11 = new StreamBuffer(arg3);
+				Buffer class4_sub11 = new Buffer(arg3);
 				int i = -1;
 				anInt666++;
 				for (;;) {
-					int i_1_ = class4_sub11.getSmart();
+					int i_1_ = class4_sub11.readUnsignedSmart();
 					if ((i_1_ ^ 0xffffffff) == -1) {
 						break;
 					}
 					i += i_1_;
 					int i_2_ = 0;
 					for (;;) {
-						int i_3_ = class4_sub11.getSmart();
+						int i_3_ = class4_sub11.readUnsignedSmart();
 						if (i_3_ == 0) {
 							break;
 						}

@@ -1,5 +1,5 @@
 package com.jagex.runescape;
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 import java.io.EOFException;
 import java.io.File;
@@ -90,7 +90,7 @@ public class Class27 {
 			if (arg0 != -1) {
 				method852(-41, null, null, false);
 			}
-			StreamBuffer.aBoolean2066 = arg3;
+			Buffer.aBoolean2066 = arg3;
 			anInt606++;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ia.I("

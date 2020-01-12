@@ -1,5 +1,5 @@
 package com.jagex.runescape;
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 import java.awt.Component;
 import java.awt.Graphics;
@@ -253,7 +253,7 @@ public abstract class Class13 {
 							i = 2;
 						if ((i ^ 0xffffffff) == -2
 								&& (Class4_Sub20_Sub8.anInt2980 ^ 0xffffffff) < -1)
-							StreamBuffer.method221(arg0 + -48,
+							Buffer.method221(arg0 + -48,
 									(Class4_Sub20_Sub8.anInt2980 - 1));
 						if (i == 2
 								&& (Class4_Sub20_Sub8.anInt2980 ^ 0xffffffff) < -1)
@@ -292,7 +292,7 @@ public abstract class Class13 {
 									i_39_ = i_40_;
 							}
 							if (i_39_ != -1)
-								StreamBuffer.method221(0, i_39_);
+								Buffer.method221(0, i_39_);
 							Class4_Sub20_Sub16.aBoolean3169 = false;
 							Class4_Sub20_Sub17.method621(Class4_Sub1.anInt1860,
 									16052, Class63.anInt1243,

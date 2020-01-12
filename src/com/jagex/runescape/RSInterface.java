@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class RSInterface extends RSFont {
 	public static boolean aBoolean2203;
@@ -453,23 +453,23 @@ public class RSInterface extends RSFont {
 		}
 	}
 
-	public void method283(int arg0, StreamBuffer arg1) {
+	public void method283(int arg0, Buffer arg1) {
 		anInt2254++;
 		aBoolean2178 = false;
 		anInt2258 = arg1.get();
 		anInt2171 = arg1.get();
-		anInt2227 = arg1.method209((byte) -116);
+		anInt2227 = arg1.read_u16((byte) -116);
 		anInt2192 = anInt2181 = arg1.method238((byte) -76);
 		anInt2229 = anInt2212 = arg1.method238((byte) -114);
-		anInt2156 = arg1.method209((byte) -118);
-		anInt2185 = arg1.method209((byte) -112);
+		anInt2156 = arg1.read_u16((byte) -118);
+		anInt2185 = arg1.read_u16((byte) -112);
 		anInt2266 = arg1.get();
-		anInt2183 = arg1.method209((byte) -125);
+		anInt2183 = arg1.read_u16((byte) -125);
 		if (anInt2183 == 65535)
 			anInt2183 = -1;
 		else
 			anInt2183 = (anInt2172 & ~0xffff) - -anInt2183;
-		anInt2136 = arg1.method209((byte) -114);
+		anInt2136 = arg1.read_u16((byte) -114);
 		if ((anInt2136 ^ 0xffffffff) == -65536)
 			anInt2136 = -1;
 		int i = arg1.get();
@@ -478,29 +478,29 @@ public class RSInterface extends RSFont {
 			anIntArray2166 = new int[i];
 			for (int i_27_ = 0; i_27_ < i; i_27_++) {
 				anIntArray2144[i_27_] = arg1.get();
-				anIntArray2166[i_27_] = arg1.method209((byte) -103);
+				anIntArray2166[i_27_] = arg1.read_u16((byte) -103);
 			}
 		}
 		int i_28_ = arg1.get();
 		if ((i_28_ ^ 0xffffffff) < -1) {
 			anIntArrayArray2134 = new int[i_28_][];
 			for (int i_29_ = 0; i_29_ < i_28_; i_29_++) {
-				int i_30_ = arg1.method209((byte) -124);
+				int i_30_ = arg1.read_u16((byte) -124);
 				anIntArrayArray2134[i_29_] = new int[i_30_];
 				for (int i_31_ = 0; (i_30_ ^ 0xffffffff) < (i_31_ ^ 0xffffffff); i_31_++) {
 					anIntArrayArray2134[i_29_][i_31_] = arg1
-							.method209((byte) -110);
+							.read_u16((byte) -110);
 					if (anIntArrayArray2134[i_29_][i_31_] == 65535)
 						anIntArrayArray2134[i_29_][i_31_] = -1;
 				}
 			}
 		}
 		if ((anInt2258 ^ 0xffffffff) == -1) {
-			anInt2206 = arg1.method209((byte) -111);
+			anInt2206 = arg1.read_u16((byte) -111);
 			aBoolean2225 = (arg1.get() ^ 0xffffffff) == -2;
 		}
 		if ((anInt2258 ^ 0xffffffff) == -2) {
-			arg1.method209((byte) -125);
+			arg1.read_u16((byte) -125);
 			arg1.get();
 		}
 		if ((anInt2258 ^ 0xffffffff) == -3) {
@@ -547,7 +547,7 @@ public class RSInterface extends RSFont {
 			anInt2214 = arg1.get();
 			anInt2262 = arg1.get();
 			anInt2161 = arg1.get();
-			anInt2170 = arg1.method209((byte) -126);
+			anInt2170 = arg1.read_u16((byte) -126);
 			if ((anInt2170 ^ 0xffffffff) == -65536)
 				anInt2170 = -1;
 			aBoolean2159 = (arg1.get() ^ 0xffffffff) == -2;
@@ -570,28 +570,28 @@ public class RSInterface extends RSFont {
 		}
 		if ((anInt2258 ^ 0xffffffff) == -7) {
 			anInt2137 = 1;
-			anInt2250 = arg1.method209((byte) -111);
+			anInt2250 = arg1.read_u16((byte) -111);
 			anInt2154 = 1;
 			if ((anInt2250 ^ 0xffffffff) == -65536)
 				anInt2250 = -1;
-			anInt2146 = arg1.method209((byte) -104);
+			anInt2146 = arg1.read_u16((byte) -104);
 			if (anInt2146 == 65535)
 				anInt2146 = -1;
-			anInt2210 = arg1.method209((byte) -107);
+			anInt2210 = arg1.read_u16((byte) -107);
 			if ((anInt2210 ^ 0xffffffff) == -65536)
 				anInt2210 = -1;
-			anInt2173 = arg1.method209((byte) -101);
+			anInt2173 = arg1.read_u16((byte) -101);
 			if (anInt2173 == 65535)
 				anInt2173 = -1;
-			anInt2168 = arg1.method209((byte) -104);
-			anInt2213 = arg1.method209((byte) -115);
-			anInt2236 = arg1.method209((byte) -123);
+			anInt2168 = arg1.read_u16((byte) -104);
+			anInt2213 = arg1.read_u16((byte) -115);
+			anInt2236 = arg1.read_u16((byte) -123);
 		}
 		if ((anInt2258 ^ 0xffffffff) == -8) {
 			anIntArray2216 = new int[anInt2185 * anInt2156];
 			anIntArray2179 = new int[anInt2185 * anInt2156];
 			anInt2214 = arg1.get();
-			anInt2170 = arg1.method209((byte) -116);
+			anInt2170 = arg1.read_u16((byte) -116);
 			if ((anInt2170 ^ 0xffffffff) == -65536)
 				anInt2170 = -1;
 			aBoolean2159 = arg1.get() == 1;
@@ -615,7 +615,7 @@ public class RSInterface extends RSFont {
 		if (anInt2171 == 2 || (anInt2258 ^ 0xffffffff) == -3) {
 			aJagexString_2174 = arg1.method212();
 			aJagexString_2202 = arg1.method212();
-			int i_41_ = 0x3f & arg1.method209((byte) -119);
+			int i_41_ = 0x3f & arg1.read_u16((byte) -119);
 			anInt2246 |= i_41_ << -340517109;
 		}
 		if ((anInt2171 ^ 0xffffffff) == -2 || (anInt2171 ^ 0xffffffff) == -5
@@ -638,7 +638,7 @@ public class RSInterface extends RSFont {
 			anInt2246 |= 0x1;
 	}
 
-	public int[] method284(boolean arg0, StreamBuffer arg1) {
+	public int[] method284(boolean arg0, Buffer arg1) {
 		try {
 			anInt2184++;
 			if (arg0 != false)
@@ -700,33 +700,33 @@ public class RSInterface extends RSFont {
 		}
 	}
 
-	public void method287(StreamBuffer arg0, byte arg1) {
+	public void method287(Buffer arg0, byte arg1) {
 		try {
 			arg0.get();
 			anInt2191++;
 			aBoolean2178 = true;
 			anInt2258 = arg0.get();
-			anInt2227 = arg0.method209((byte) -101);
+			anInt2227 = arg0.read_u16((byte) -101);
 			anInt2192 = anInt2181 = arg0.method238((byte) -47);
 			anInt2229 = anInt2212 = arg0.method238((byte) -49);
-			anInt2156 = arg0.method209((byte) -127);
+			anInt2156 = arg0.read_u16((byte) -127);
 			if (anInt2258 != 9)
-				anInt2185 = arg0.method209((byte) -117);
+				anInt2185 = arg0.read_u16((byte) -117);
 			else
 				anInt2185 = arg0.method238((byte) -56);
-			anInt2183 = arg0.method209((byte) -118);
+			anInt2183 = arg0.read_u16((byte) -118);
 			if ((anInt2183 ^ 0xffffffff) == -65536)
 				anInt2183 = -1;
 			else
 				anInt2183 = anInt2183 + (~0xffff & anInt2172);
 			aBoolean2225 = (arg0.get() ^ 0xffffffff) == -2;
 			if (anInt2258 == 0) {
-				anInt2208 = arg0.method209((byte) -116);
-				anInt2206 = arg0.method209((byte) -120);
+				anInt2208 = arg0.read_u16((byte) -116);
+				anInt2206 = arg0.read_u16((byte) -120);
 			}
 			if (anInt2258 == 5) {
 				anInt2147 = arg0.method219((byte) 73);
-				anInt2218 = arg0.method209((byte) -117);
+				anInt2218 = arg0.read_u16((byte) -117);
 				aBoolean2253 = (arg0.get() ^ 0xffffffff) == -2;
 				anInt2266 = arg0.get();
 				anInt2201 = arg0.get();
@@ -737,22 +737,22 @@ public class RSInterface extends RSFont {
 			if (arg1 >= 27) {
 				if ((anInt2258 ^ 0xffffffff) == -7) {
 					anInt2137 = 1;
-					anInt2250 = arg0.method209((byte) -128);
+					anInt2250 = arg0.read_u16((byte) -128);
 					if (anInt2250 == 65535)
 						anInt2250 = -1;
 					anInt2224 = arg0.method238((byte) -82);
 					anInt2148 = arg0.method238((byte) -84);
-					anInt2213 = arg0.method209((byte) -121);
-					anInt2236 = arg0.method209((byte) -100);
-					anInt2151 = arg0.method209((byte) -116);
-					anInt2168 = arg0.method209((byte) -105);
-					anInt2210 = arg0.method209((byte) -128);
+					anInt2213 = arg0.read_u16((byte) -121);
+					anInt2236 = arg0.read_u16((byte) -100);
+					anInt2151 = arg0.read_u16((byte) -116);
+					anInt2168 = arg0.read_u16((byte) -105);
+					anInt2210 = arg0.read_u16((byte) -128);
 					if (anInt2210 == 65535)
 						anInt2210 = -1;
 					aBoolean2263 = (arg0.get() ^ 0xffffffff) == -2;
 				}
 				if (anInt2258 == 4) {
-					anInt2170 = arg0.method209((byte) -104);
+					anInt2170 = arg0.read_u16((byte) -104);
 					if ((anInt2170 ^ 0xffffffff) == -65536)
 						anInt2170 = -1;
 					aJagexString_2150 = arg0.method212();
@@ -853,7 +853,7 @@ public class RSInterface extends RSFont {
 		}
 	}
 
-	public Object[] method290(StreamBuffer arg0, byte arg1) {
+	public Object[] method290(Buffer arg0, byte arg1) {
 		try {
 			anInt2219++;
 			int i = arg0.get();

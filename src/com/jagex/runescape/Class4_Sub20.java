@@ -1,13 +1,13 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class4_Sub20 extends RSFont {
 	public static JagexString aJagexString_2352 = JagexString.getRs2PreparedString("T"
     );
 	public static JagexString aJagexString_2356 = JagexString.getRs2PreparedString(
 			"Keine Antwort vom Anmelde)2Server)3");
-	public static StreamBuffer aClass4_Sub11_2363;
+	public static Buffer aClass4_Sub11_2363;
 	public static int anInt2348;
 	public static int anInt2349;
 	public static int anInt2350;

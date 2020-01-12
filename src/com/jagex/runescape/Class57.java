@@ -122,12 +122,12 @@ public class Class57 {
 			Class4_Sub20_Sub9.minimapState = 0;
 			Class1.anInt74 = 0;
 			Class41.anInt822 = -1;
-			Class66.aClass4_Sub11_Sub1_1328.pointion = 0;
+			Class66.aClass4_Sub11_Sub1_1328.pointer = 0;
 			if (arg0 > -86)
 				aJagexString_1154 = null;
 			RSCanvas.anInt56 = -1;
 			Class43.anInt874 = -1;
-			Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointion = 0;
+			Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer = 0;
 			anInt1134++;
 			anInt1130 = 0;
 			Class4_Sub20_Sub15.anInt3157 = 0;

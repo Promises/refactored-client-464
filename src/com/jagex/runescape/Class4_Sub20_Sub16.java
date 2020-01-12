@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class4_Sub20_Sub16 extends Class4_Sub20 {
 	public static boolean aBoolean3169;
@@ -37,7 +37,7 @@ public class Class4_Sub20_Sub16 extends Class4_Sub20 {
 			if (arg0 != 25651)
 				method611((byte) -7, -6, -84, null, -1, 100);
 			Class1.aClass4_Sub2_Sub1_64.method110((byte) -56);
-			StreamBuffer.anInt2085 = 1;
+			Buffer.anInt2085 = 1;
 			Class67.aClass19_1363 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ta.E("
@@ -76,7 +76,7 @@ public class Class4_Sub20_Sub16 extends Class4_Sub20 {
 		try {
 			if (arg0 > -3)
 				method609(-121, null);
-			StreamBuffer class4_sub11 = new StreamBuffer(arg1);
+			Buffer class4_sub11 = new Buffer(arg1);
 			anInt3167++;
 			int i = class4_sub11.get();
 			int i_0_ = class4_sub11.method219((byte) 73);
@@ -147,7 +147,7 @@ public class Class4_Sub20_Sub16 extends Class4_Sub20 {
 			class4_sub22.aClass4_Sub20_Sub1_2399 = arg3;
 			class4_sub22.method626(false);
 		}
-		StreamBuffer.aClass65_2073.method1068(class4_sub22, (byte) -117);
+		Buffer.aClass65_2073.method1068(class4_sub22, (byte) -117);
 		if (class4_sub22.anIntArray2383 != null)
 			class4_sub22.anInt2409 = (class4_sub22.anInt2384 - -(int) ((class4_sub22.anInt2388 + -class4_sub22.anInt2384) * Math
 					.random()));

@@ -48,10 +48,10 @@ public class Class12 {
             int i_3_ = (0x7 & i) + Class64.anInt1273;
             int i_4_ = (((0x7a & i) >> -1853807996) + Class4_Sub20_Sub7_Sub4.anInt3367);
             int i_5_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                    .method209((byte) -101);
+                    .read_u16((byte) -101);
             int i_6_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get();
             int i_7_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                    .method209((byte) -100);
+                    .read_u16((byte) -100);
             if ((i_4_ ^ 0xffffffff) <= -1 && i_3_ >= 0
                     && (i_4_ ^ 0xffffffff) > -105 && (i_3_ ^ 0xffffffff) > -105) {
                 i_4_ = i_4_ * 128 + 64;
@@ -66,7 +66,7 @@ public class Class12 {
         } else {
             if ((Class4_Sub20_Sub11.incomingPacket ^ 0xffffffff) == -240) {
                 int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                        .method209((byte) -105);
+                        .read_u16((byte) -105);
                 int i_8_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                         .method223(0);
                 int i_9_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
@@ -158,13 +158,13 @@ public class Class12 {
                 int i_34_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                         .method238((byte) -56);
                 int i_35_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                        .method209((byte) -107);
+                        .read_u16((byte) -107);
                 int i_36_ = 4 * Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get();
                 int i_37_ = 4 * Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get();
                 int i_38_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                        .method209((byte) -100);
+                        .read_u16((byte) -100);
                 int i_39_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                        .method209((byte) -105);
+                        .read_u16((byte) -105);
                 int i_40_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get();
                 int i_41_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get();
                 if ((i_30_ ^ 0xffffffff) <= -1 && (i_31_ ^ 0xffffffff) <= -1
@@ -199,11 +199,11 @@ public class Class12 {
                     int i_42_ = ((i >> -63049820 & 0x7) + Class4_Sub20_Sub7_Sub4.anInt3367);
                     int i_43_ = Class64.anInt1273 + (i & 0x7);
                     int i_44_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                            .method209((byte) -107);
+                            .read_u16((byte) -107);
                     int i_45_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                            .method209((byte) -119);
+                            .read_u16((byte) -119);
                     int i_46_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                            .method209((byte) -101);
+                            .read_u16((byte) -101);
                     if (i_42_ >= 0 && (i_43_ ^ 0xffffffff) <= -1
                             && (i_42_ ^ 0xffffffff) > -105
                             && (i_43_ ^ 0xffffffff) > -105) {
@@ -227,7 +227,7 @@ public class Class12 {
                         int i_47_ = (((0x74 & i) >> 1020323844) + Class4_Sub20_Sub7_Sub4.anInt3367);
                         int i_48_ = Class64.anInt1273 + (i & 0x7);
                         int i_49_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                                .method209((byte) -121);
+                                .read_u16((byte) -121);
                         int i_50_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                                 .get();
                         int i_51_ = (0xf0 & i_50_) >> -1244425436;
@@ -251,7 +251,7 @@ public class Class12 {
                                 Class4_Sub6.anIntArray1915[Class5.anInt175] = i_49_;
                                 anIntArray342[Class5.anInt175] = i_52_;
                                 Class25.anIntArray593[Class5.anInt175] = i_53_;
-                                Class48.aClass36Array974[Class5.anInt175] = null;
+                                Class48.aEffectArray974[Class5.anInt175] = null;
                                 Class1.anIntArray78[Class5.anInt175] = ((i_48_ << -486184920)
                                         + (i_47_ << 1508236464) + i_51_);
                                 Class5.anInt175++;
@@ -414,7 +414,7 @@ public class Class12 {
                         }
                     } else if ((Class4_Sub20_Sub11.incomingPacket ^ 0xffffffff) == -113) {
                         int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                                .method209((byte) -117);
+                                .read_u16((byte) -117);
                         int i_85_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                                 .method213((byte) -124);
                         int i_86_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883

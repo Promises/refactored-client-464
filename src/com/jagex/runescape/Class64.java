@@ -1,5 +1,5 @@
 package com.jagex.runescape;
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 import com.jagex.runescape.util.Signlink;
 
 import java.io.DataInputStream;
@@ -50,38 +50,38 @@ public class Class64 {
 	public static void method1060(byte[] arg0, int arg1) {
 		try {
 			anInt1256++;
-			StreamBuffer class4_sub11 = new StreamBuffer(arg0);
-			class4_sub11.pointion = arg0.length - 2;
-			Class49.anInt991 = class4_sub11.method209((byte) -106);
+			Buffer class4_sub11 = new Buffer(arg0);
+			class4_sub11.pointer = arg0.length - 2;
+			Class49.anInt991 = class4_sub11.read_u16((byte) -106);
 			Class30.anIntArray650 = new int[Class49.anInt991];
 			Class35.anIntArray726 = new int[Class49.anInt991];
 			Class13_Sub2.anIntArray2480 = new int[Class49.anInt991];
 			Class4_Sub23.aByteArrayArray2426 = new byte[Class49.anInt991][];
 			Class4_Sub20_Sub7_Sub5.anIntArray3395 = new int[Class49.anInt991];
-			class4_sub11.pointion = -7 + arg0.length + -(8 * Class49.anInt991);
-			Class53.anInt1080 = class4_sub11.method209((byte) -110);
-			Class32.anInt696 = class4_sub11.method209((byte) -123);
+			class4_sub11.pointer = -7 + arg0.length + -(8 * Class49.anInt991);
+			Class53.anInt1080 = class4_sub11.read_u16((byte) -110);
+			Class32.anInt696 = class4_sub11.read_u16((byte) -123);
 			int i_1_ = (class4_sub11.get() & 0xff) - -1;
 			for (int i_2_ = 0; i_2_ < Class49.anInt991; i_2_++)
 				Class35.anIntArray726[i_2_] = class4_sub11
-						.method209((byte) -118);
+						.read_u16((byte) -118);
 			for (int i_3_ = 0; i_3_ < Class49.anInt991; i_3_++)
 				Class4_Sub20_Sub7_Sub5.anIntArray3395[i_3_] = class4_sub11
-						.method209((byte) -111);
+						.read_u16((byte) -111);
 			for (int i_4_ = 0; i_4_ < Class49.anInt991; i_4_++)
 				Class30.anIntArray650[i_4_] = class4_sub11
-						.method209((byte) -128);
+						.read_u16((byte) -128);
 			for (int i_5_ = 0; (Class49.anInt991 ^ 0xffffffff) < (i_5_ ^ 0xffffffff); i_5_++)
 				Class13_Sub2.anIntArray2480[i_5_] = class4_sub11
-						.method209((byte) -110);
-			class4_sub11.pointion = (-(3 * (i_1_ + -1)) + (arg0.length + -7) - 8 * Class49.anInt991);
+						.read_u16((byte) -110);
+			class4_sub11.pointer = (-(3 * (i_1_ + -1)) + (arg0.length + -7) - 8 * Class49.anInt991);
 			Class67.anIntArray1367 = new int[i_1_];
 			for (int i_6_ = 1; (i_1_ ^ 0xffffffff) < (i_6_ ^ 0xffffffff); i_6_++) {
 				Class67.anIntArray1367[i_6_] = class4_sub11.method248(false);
 				if (Class67.anIntArray1367[i_6_] == 0)
 					Class67.anIntArray1367[i_6_] = 1;
 			}
-			class4_sub11.pointion = 0;
+			class4_sub11.pointer = 0;
 			for (int i_7_ = 0; (Class49.anInt991 ^ 0xffffffff) < (i_7_ ^ 0xffffffff); i_7_++) {
 				int i_8_ = Class30.anIntArray650[i_7_];
 				int i_9_ = Class13_Sub2.anIntArray2480[i_7_];
@@ -112,7 +112,7 @@ public class Class64 {
 			try {
 				if (arg0 != 90)
 					return false;
-				if ((StreamBuffer.anInt2085 ^ 0xffffffff) == -3) {
+				if ((Buffer.anInt2085 ^ 0xffffffff) == -3) {
 					if (Class4_Sub20_Sub1.aClass4_Sub18_2704 == null) {
 						Class4_Sub20_Sub1.aClass4_Sub18_2704 = Class4_Sub18
 								.method311(Class67.aClass19_1363,
@@ -137,7 +137,7 @@ public class Class64 {
 						Class4_Sub20_Sub1.aClass4_Sub18_2704 = null;
 						Class67.aClass19_1363 = null;
 						Class4_Sub20_Sub5.aClass81_2880 = null;
-						StreamBuffer.anInt2085 = 0;
+						Buffer.anInt2085 = 0;
 						return true;
 					}
 				}
@@ -146,7 +146,7 @@ public class Class64 {
 				Class1.aClass4_Sub2_Sub1_64.method110((byte) -127);
 				Class4_Sub20_Sub5.aClass81_2880 = null;
 				Class67.aClass19_1363 = null;
-				StreamBuffer.anInt2085 = 0;
+				Buffer.anInt2085 = 0;
 				Class4_Sub20_Sub1.aClass4_Sub18_2704 = null;
 			}
 			return false;
@@ -258,7 +258,7 @@ public class Class64 {
 		try {
 			anInt1272++;
 			if (Class4_Sub20.aClass4_Sub11_2363 != null) {
-				Class4_Sub20.aClass4_Sub11_2363.pointion = arg0 * 8 + 5;
+				Class4_Sub20.aClass4_Sub11_2363.pointer = arg0 * 8 + 5;
 				int i = Class4_Sub20.aClass4_Sub11_2363.method219((byte) 73);
 				int i_18_ = Class4_Sub20.aClass4_Sub11_2363
 						.method219((byte) 73);
@@ -325,7 +325,7 @@ public class Class64 {
 					anInt1275 += aDataInputStream1261.read(aByteArray1262,
 							anInt1275, i);
 					if ((anInt1275 ^ 0xffffffff) == -5) {
-						int i_0_ = new StreamBuffer(aByteArray1262)
+						int i_0_ = new Buffer(aByteArray1262)
 								.method219((byte) 73);
 						anInt1252 = 2;
 						aByteArray1274 = new byte[i_0_];

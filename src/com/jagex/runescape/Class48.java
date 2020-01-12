@@ -1,12 +1,14 @@
 package com.jagex.runescape;
 
+import com.jagex.runescape.audio.Effect;
+
 public class Class48 {
     public static JagexString aJagexString_977 = JagexString.getRs2PreparedString(
             "Please contact customer support)3");
     public static JagexString aJagexString_985;
     public static JagexString aJagexString_986;
     public static JagexString aJagexString_988;
-    public static Class36[] aClass36Array974;
+    public static Effect[] aEffectArray974;
     public static int anInt975;
     public static int anInt976;
     public static int anInt978;
@@ -20,7 +22,7 @@ public class Class48 {
     public static int[] anIntArray979;
 
     static {
-        aClass36Array974 = new Class36[50];
+        aEffectArray974 = new Effect[50];
         anInt976 = 1;
         anInt981 = 0;
         anIntArray979 = new int[2048];
@@ -156,7 +158,7 @@ public class Class48 {
                 anIntArray979 = null;
             }
             aJagexString_986 = null;
-            aClass36Array974 = null;
+            aEffectArray974 = null;
             anIntArray979 = null;
         } catch (RuntimeException runtimeexception) {
             throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "mf.A("

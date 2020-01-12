@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class35 {
 	public static boolean aBoolean744;
@@ -34,7 +34,7 @@ public class Class35 {
 			Class4_Sub6.anIntArray1915[Class5.anInt175] = arg1;
 			Class12.anIntArray342[Class5.anInt175] = arg2;
 			Class25.anIntArray593[Class5.anInt175] = arg0;
-			Class48.aClass36Array974[Class5.anInt175] = null;
+			Class48.aEffectArray974[Class5.anInt175] = null;
 			Class1.anIntArray78[Class5.anInt175] = 0;
 			Class5.anInt175++;
 		}
@@ -125,7 +125,7 @@ public class Class35 {
 
 	public static void method911(int arg0, int arg1) {
 		try {
-			if (StreamBuffer.anInt2085 == 0) {
+			if (Buffer.anInt2085 == 0) {
 				Class1.aClass4_Sub2_Sub1_64.method112(arg1, 98);
 			} else {
 				Class4_Sub20_Sub9.anInt3050 = arg1;
@@ -500,7 +500,7 @@ public class Class35 {
 		}
 	}
 
-	public void method908(StreamBuffer arg0, int arg1) {
+	public void method908(Buffer arg0, int arg1) {
 		try {
 			arg0.method227((byte) -27, aBoolean725 ? 1 : 0);
 			anInt731++;

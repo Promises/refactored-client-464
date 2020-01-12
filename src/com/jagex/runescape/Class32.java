@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class32 {
 	public static volatile boolean aBoolean702 = true;
@@ -18,7 +18,7 @@ public class Class32 {
 			Class4_Sub20_Sub9.anInt3050 = 0;
 			Class25.anInt577 = -1;
 			Class67.aClass19_1363 = null;
-			StreamBuffer.anInt2085 = 1;
+			Buffer.anInt2085 = 1;
 			Class4_Sub20_Sub5.anInt2888 = arg0;
 			if (arg1 <= 63)
 				method883(115);

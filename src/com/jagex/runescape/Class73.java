@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class73 {
 	public static volatile boolean aBoolean1495;
@@ -80,7 +80,7 @@ public class Class73 {
 		}
 		if ((0x200 & arg3) != 0) {
 			arg2.anInt3226 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-					.method209((byte) -110); // short
+					.read_u16((byte) -110); // short
 			int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method237(arg1
 					+ -18031); // int2
 			arg2.anInt3241 = 0;
@@ -116,7 +116,7 @@ public class Class73 {
 			arg2.anInt3224 = (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 					.method223(0) + Region.anInt134);
 			arg2.anInt3281 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-					.method209((byte) -114) + Region.anInt134;
+					.read_u16((byte) -114) + Region.anInt134;
 			arg2.anInt3245 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.getC();
 			arg2.anInt3236 = 0;
 			arg2.anInt3228 = 1;
@@ -150,7 +150,7 @@ public class Class73 {
 			int i_2_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 					.method239((byte) 34); // bytea
 			int i_3_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get(); // byte
-			int i_4_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointion;
+			int i_4_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer;
 			if (arg2.aJagexString_3593 != null && arg2.aClass35_3609 != null) {
 				long l = arg2.aJagexString_3593.method806((byte) -113);
 				boolean bool = false;
@@ -163,11 +163,11 @@ public class Class73 {
 					}
 				}
 				if (!bool && Class81.anInt1695 == 0) {
-					Class41.aClass4_Sub11_796.pointion = 0;
+					Class41.aClass4_Sub11_796.pointer = 0;
 					Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method220(
 							Class41.aClass4_Sub11_796.byteBuffer, 0,
 							arg1 + 960034779, i_3_);
-					Class41.aClass4_Sub11_796.pointion = 0;
+					Class41.aClass4_Sub11_796.pointer = 0;
 					JagexString jagexString = (Class4_Sub20_Sub12_Sub4
 							.method574(Class4_Sub22.method629((byte) -83,
 									Class41.aClass4_Sub11_796).method801(false)));
@@ -195,7 +195,7 @@ public class Class73 {
 								(byte) 122, 1);
 				}
 			}
-			Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointion = i_3_ + i_4_;
+			Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer = i_3_ + i_4_;
 		}
 		if ((0x2 & arg3) != 0) {
 			int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
@@ -213,7 +213,7 @@ public class Class73 {
 			int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 					.method239((byte) 108);
 			byte[] is = new byte[i];
-			StreamBuffer class4_sub11 = new StreamBuffer(is);
+			Buffer class4_sub11 = new Buffer(is);
 			Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method253(0, (byte) -75,
 					i, is);
 			Class25.aClass4_Sub11Array575[arg0] = class4_sub11;

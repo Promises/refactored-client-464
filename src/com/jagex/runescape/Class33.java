@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class33 {
 	public static boolean aBoolean711 = false;
@@ -56,7 +56,7 @@ public class Class33 {
 			byte[] is = Class61.aClass19_1218.method746(3, (byte) 102, arg1);
 			class4_sub20_sub13 = new Class4_Sub20_Sub13();
 			if (is != null)
-				class4_sub20_sub13.method590(new StreamBuffer(is), 0);
+				class4_sub20_sub13.method590(new Buffer(is), 0);
 			Class13_Sub2.aClass66_2468.method1082(true, arg1,
 					class4_sub20_sub13);
 			return class4_sub20_sub13;

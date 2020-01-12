@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 import java.awt.Graphics;
 
@@ -254,7 +254,7 @@ public class Class72 {
                                                 Class61.anInt1201)}), -842)),
                                 i / 2 + i_8_, i_9_ + (i_7_ / 2 - 2), 16777215,
                                 0);
-                        if (StreamBuffer.aClass64_2096 == null)
+                        if (Buffer.aClass64_2096 == null)
                             arg2.method571(Class4_Sub20_Sub6.aJagexString_2899,
                                     i_8_ - -(i / 2), 12 + (i_9_ + i_7_ / 2),
                                     16777215, 0);

@@ -1,10 +1,10 @@
-package com.jagex.runescape.net;
+package com.jagex.runescape.io;
 import com.jagex.runescape.*;
 
 import java.math.BigInteger;
 import java.util.zip.CRC32;
 
-public class StreamBuffer extends RSFont {
+public class Buffer extends RSFont {
 	public static boolean aBoolean2066 = false;
 	public static Class64 aClass64_2096;
 	public static Class65 aClass65_2073 = new Class65();
@@ -1677,11 +1677,11 @@ public class StreamBuffer extends RSFont {
 
 	public byte[] byteBuffer;
 
-	public int pointion;
+	public int pointer;
 
-	public StreamBuffer(byte[] data) {
+	public Buffer(byte[] data) {
 		try {
-			pointion = 0;
+			pointer = 0;
 			byteBuffer = data;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
@@ -1689,9 +1689,9 @@ public class StreamBuffer extends RSFont {
 		}
 	}
 
-	public StreamBuffer(int arg0) {
+	public Buffer(int arg0) {
 		try {
-			pointion = 0;
+			pointer = 0;
 			byteBuffer = Class72.method1160(-1, arg0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
@@ -1704,8 +1704,8 @@ public class StreamBuffer extends RSFont {
 			if (arg1 != 2018779304)
 				method242(-57);
 			anInt2111++;
-			byteBuffer[pointion++] = (byte) (arg0 >> 2018779304);
-			byteBuffer[pointion++] = (byte) arg0;
+			byteBuffer[pointer++] = (byte) (arg0 >> 2018779304);
+			byteBuffer[pointer++] = (byte) arg0;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.TB("
 					+ arg0 + ',' + arg1 + ')'));
@@ -1714,20 +1714,20 @@ public class StreamBuffer extends RSFont {
 
 	public int getC() {
 		try {
-			return -byteBuffer[pointion++] & 0xff;
+			return -byteBuffer[pointer++] & 0xff;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
-					"Error with getC in: " + StreamBuffer.class.getName());
+					"Error with getC in: " + Buffer.class.getName());
 		}
 	}
 
-	public int method209(byte arg0) {
+	public int read_u16(byte arg0) {
 		try {
 			if (arg0 >= -98)
 				method257(-47, null, 97, 16, 50, 40, -107, 76, 42, null);
 			anInt2072++;
-			pointion += 2;
-			return ((byteBuffer[-1 + pointion] & 0xff) + (byteBuffer[pointion
+			pointer += 2;
+			return ((byteBuffer[-1 + pointer] & 0xff) + (byteBuffer[pointer
 					+ -2] << -315536632 & 0xff00));
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.V("
@@ -1738,7 +1738,7 @@ public class StreamBuffer extends RSFont {
 	public void method210(int arg0, int arg1) {
 		try {
 			anInt2112++;
-			byteBuffer[pointion++] = (byte) (arg1 + -arg0);
+			byteBuffer[pointer++] = (byte) (arg1 + -arg0);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.UB("
 					+ arg0 + ',' + arg1 + ')'));
@@ -1747,13 +1747,13 @@ public class StreamBuffer extends RSFont {
 
 	public void method211(int arg0, int arg1) {
 		try {
-			byteBuffer[pointion++] = (byte) (arg0 >> 8);
+			byteBuffer[pointer++] = (byte) (arg0 >> 8);
 			anInt2069++;
-			byteBuffer[pointion++] = (byte) arg0;
-			byteBuffer[pointion++] = (byte) (arg0 >> 24);
+			byteBuffer[pointer++] = (byte) arg0;
+			byteBuffer[pointer++] = (byte) (arg0 >> 24);
 			if (arg1 != -1387540232)
 				aClass64_2096 = null;
-			byteBuffer[pointion++] = (byte) (arg0 >> 16);
+			byteBuffer[pointer++] = (byte) (arg0 >> 16);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.GC("
 					+ arg0 + ',' + arg1 + ')'));
@@ -1762,12 +1762,12 @@ public class StreamBuffer extends RSFont {
 
 	public JagexString method212() {
 		try {
-			int i = pointion;
+			int i = pointer;
 			anInt2100++;
-			while (byteBuffer[pointion++] != 0) {
+			while (byteBuffer[pointer++] != 0) {
 				/* empty */
 			}
-			return Class61.method1046(-1 + -i + pointion, (byte) 73, i,
+			return Class61.method1046(-1 + -i + pointer, (byte) 73, i,
 					byteBuffer);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.VA("
@@ -1779,26 +1779,26 @@ public class StreamBuffer extends RSFont {
 		try {
 			if (arg0 > -11)
 				method250(-118);
-			pointion += 2;
+			pointer += 2;
 			anInt2102++;
-			return ((byteBuffer[-1 + pointion] << -1801742808 & 0xff00) + (0xff & byteBuffer[-2
-					+ pointion]));
+			return ((byteBuffer[-1 + pointer] << -1801742808 & 0xff00) + (0xff & byteBuffer[-2
+					+ pointer]));
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.JA("
 					+ arg0 + ')');
 		}
 	}
 
-	public int getSmart() {
+	public int readUnsignedSmart() {
 		try {
-			int i = 0xff & byteBuffer[pointion];
+			int i = 0xff & byteBuffer[pointer];
 			anInt2113++;
 			if ((i ^ 0xffffffff) <= -129)
-				return -32768 + method209((byte) -102);
+				return -32768 + read_u16((byte) -102);
 			return get();
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
-					"Error with getSmart in: " + StreamBuffer.class.getName());
+					"Error with readUnsignedSmart in: " + Buffer.class.getName());
 		}
 	}
 
@@ -1819,18 +1819,18 @@ public class StreamBuffer extends RSFont {
 	public int get() {
 		try {
 			anInt2052++;
-			return byteBuffer[pointion++] & 0xff;
+			return byteBuffer[pointer++] & 0xff;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
-					"Error with get in: " + StreamBuffer.class.getName());
+					"Error with get in: " + Buffer.class.getName());
 		}
 	}
 
 	public void method218(int arg0, int arg1) {
 		try {
 			anInt2063++;
-			byteBuffer[pointion++] = (byte) (arg1 >> -508699864);
-			byteBuffer[pointion++] = (byte) (arg1 - -128);
+			byteBuffer[pointer++] = (byte) (arg1 >> -508699864);
+			byteBuffer[pointer++] = (byte) (arg1 - -128);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.EC("
 					+ arg0 + ',' + arg1 + ')'));
@@ -1839,13 +1839,13 @@ public class StreamBuffer extends RSFont {
 
 	public int method219(byte arg0) {
 		try {
-			pointion += 4;
+			pointer += 4;
 			anInt2087++;
 			if (arg0 != 73)
 				return -52;
-			return ((0xff0000 & byteBuffer[pointion - 3] << 189354448) + ((~0xffffff & byteBuffer[pointion - 4] << 1162396728)
-					+ ((0xff & byteBuffer[-2 + pointion]) << 716984520) + (byteBuffer[-1
-					+ pointion] & 0xff)));
+			return ((0xff0000 & byteBuffer[pointer - 3] << 189354448) + ((~0xffffff & byteBuffer[pointer - 4] << 1162396728)
+					+ ((0xff & byteBuffer[-2 + pointer]) << 716984520) + (byteBuffer[-1
+					+ pointer] & 0xff)));
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.QB("
 					+ arg0 + ')');
@@ -1856,7 +1856,7 @@ public class StreamBuffer extends RSFont {
 		try {
 			if (arg2 == 960052712) {
 				for (int i = arg1 + arg3 + -1; (arg1 ^ 0xffffffff) >= (i ^ 0xffffffff); i--)
-					arg0[i] = byteBuffer[pointion++];
+					arg0[i] = byteBuffer[pointer++];
 				anInt2084++;
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -1871,10 +1871,10 @@ public class StreamBuffer extends RSFont {
 			if (arg0 != false)
 				anInt2085 = -41;
 			anInt2067++;
-			pointion += 4;
-			return (((0xff & byteBuffer[-3 + pointion]) << -739116824) + ((0xff0000 & byteBuffer[-2
-					+ pointion] << -1421440464) + ((~0xffffff & byteBuffer[-1
-					+ pointion] << 2049339992) + (byteBuffer[pointion - 4] & 0xff))));
+			pointer += 4;
+			return (((0xff & byteBuffer[-3 + pointer]) << -739116824) + ((0xff0000 & byteBuffer[-2
+					+ pointer] << -1421440464) + ((~0xffffff & byteBuffer[-1
+					+ pointer] << 2049339992) + (byteBuffer[pointer - 4] & 0xff))));
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.UA("
 					+ arg0 + ')');
@@ -1886,9 +1886,9 @@ public class StreamBuffer extends RSFont {
 			if (arg0 != 0)
 				return -30;
 			anInt2091++;
-			pointion += 2;
-			return ((0xff & -128 + byteBuffer[pointion + -1]) + (0xff00 & byteBuffer[-2
-					+ pointion] << 37992360));
+			pointer += 2;
+			return ((0xff & -128 + byteBuffer[pointer + -1]) + (0xff00 & byteBuffer[-2
+					+ pointer] << 37992360));
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.CA("
 					+ arg0 + ')');
@@ -1899,9 +1899,9 @@ public class StreamBuffer extends RSFont {
 		try {
 			if (arg0 != 13421)
 				method238((byte) 125);
-			byteBuffer[pointion++] = (byte) arg1;
+			byteBuffer[pointer++] = (byte) arg1;
 			anInt2059++;
-			byteBuffer[pointion++] = (byte) (arg1 >> 1446702280);
+			byteBuffer[pointer++] = (byte) (arg1 >> 1446702280);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.WA("
 					+ arg0 + ',' + arg1 + ')'));
@@ -1910,7 +1910,7 @@ public class StreamBuffer extends RSFont {
 
 	public void method225(int arg0, byte arg1) {
 		try {
-			byteBuffer[pointion++] = (byte) (arg0 - -128);
+			byteBuffer[pointer++] = (byte) (arg0 - -128);
 			if (arg1 == 97)
 				anInt2055++;
 		} catch (RuntimeException runtimeexception) {
@@ -1924,8 +1924,8 @@ public class StreamBuffer extends RSFont {
 			if (arg0 != 76)
 				return null;
 			anInt2104++;
-			if ((byteBuffer[pointion] ^ 0xffffffff) == -1) {
-				pointion++;
+			if ((byteBuffer[pointer] ^ 0xffffffff) == -1) {
+				pointer++;
 				return null;
 			}
 			return method212();
@@ -1936,7 +1936,7 @@ public class StreamBuffer extends RSFont {
 	}
 
 	public void method227(byte arg0, int arg1) {
-		byteBuffer[pointion++] = (byte) arg1;
+		byteBuffer[pointer++] = (byte) arg1;
 		anInt2083++;
 		if (arg0 != -27)
 			readLong((byte) -64);
@@ -1945,9 +1945,9 @@ public class StreamBuffer extends RSFont {
 	public int method228(int arg0) {
 		try {
 			anInt2077++;
-			int i = byteBuffer[pointion++];
+			int i = byteBuffer[pointer++];
 			int i_6_ = arg0;
-			for (/**/; (i ^ 0xffffffff) > -1; i = byteBuffer[pointion++])
+			for (/**/; (i ^ 0xffffffff) > -1; i = byteBuffer[pointer++])
 				i_6_ = (0x7f & i | i_6_) << 432199079;
 			return i | i_6_;
 		} catch (RuntimeException runtimeexception) {
@@ -1959,7 +1959,7 @@ public class StreamBuffer extends RSFont {
 	public byte method229(int arg0) {
 		try {
 			anInt2105++;
-			return byteBuffer[pointion++];
+			return byteBuffer[pointer++];
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.S("
 					+ arg0 + ')');
@@ -1968,13 +1968,13 @@ public class StreamBuffer extends RSFont {
 
 	public void method230(boolean arg0, int arg1) {
 		try {
-			byteBuffer[pointion++] = (byte) (arg1 >> 1910008400);
-			byteBuffer[pointion++] = (byte) (arg1 >> 275834264);
-			byteBuffer[pointion++] = (byte) arg1;
+			byteBuffer[pointer++] = (byte) (arg1 >> 1910008400);
+			byteBuffer[pointer++] = (byte) (arg1 >> 275834264);
+			byteBuffer[pointer++] = (byte) arg1;
 			anInt2107++;
 			if (arg0 != false)
 				aCRC32_2116 = null;
-			byteBuffer[pointion++] = (byte) (arg1 >> -652404408);
+			byteBuffer[pointer++] = (byte) (arg1 >> -652404408);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.FA("
 					+ arg0 + ',' + arg1 + ')'));
@@ -1984,9 +1984,9 @@ public class StreamBuffer extends RSFont {
 	public void method231(int arg0, int arg1) {
 		try {
 			anInt2108++;
-			byteBuffer[pointion++] = (byte) (arg0 >> -653287184);
-			byteBuffer[pointion++] = (byte) (arg0 >> 972296968);
-			byteBuffer[pointion++] = (byte) arg0;
+			byteBuffer[pointer++] = (byte) (arg0 >> -653287184);
+			byteBuffer[pointer++] = (byte) (arg0 >> 972296968);
+			byteBuffer[pointer++] = (byte) arg0;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.OA("
 					+ arg0 + ',' + arg1 + ')'));
@@ -1999,7 +1999,7 @@ public class StreamBuffer extends RSFont {
 			int i = arg1;
 			if (arg2 == -104) {
 				for (/**/; (i ^ 0xffffffff) > (arg1 + arg3 ^ 0xffffffff); i++)
-					byteBuffer[pointion++] = arg0[i];
+					byteBuffer[pointer++] = arg0[i];
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.O("
@@ -2011,16 +2011,16 @@ public class StreamBuffer extends RSFont {
 	public void method233(BigInteger arg0, BigInteger arg1, int arg2) {
 		try {
 			if (arg2 != -25481)
-				pointion = 98;
+				pointer = 98;
 			anInt2093++;
-			int i = pointion;
+			int i = pointer;
 			byte[] is = new byte[i];
-			pointion = 0;
+			pointer = 0;
 			method253(0, (byte) -105, i, is);
 			BigInteger biginteger = new BigInteger(is);
 			BigInteger biginteger_7_ = biginteger;// .modPow(arg1, arg0);
 			byte[] is_8_ = biginteger_7_.toByteArray();
-			pointion = 0;
+			pointer = 0;
 			method227((byte) -27, is_8_.length);
 			method232(is_8_, 0, (byte) -104, is_8_.length);
 		} catch (RuntimeException runtimeexception) {
@@ -2033,7 +2033,7 @@ public class StreamBuffer extends RSFont {
 	public int method234(int arg0, int arg1) {
 		try {
 			anInt2065++;
-			int i = Class53.method1009((byte) -127, byteBuffer, arg0, pointion);
+			int i = Class53.method1009((byte) -127, byteBuffer, arg0, pointer);
 			if (arg1 != 1)
 				return 91;
 			method236(181, i);
@@ -2047,9 +2047,9 @@ public class StreamBuffer extends RSFont {
 	public int method235(byte arg0) {
 		try {
 			anInt2106++;
-			pointion += 2;
-			return (((0xff & byteBuffer[pointion - 1]) << 1159843944) + (0xff & byteBuffer[-2
-					+ pointion] - 128));
+			pointer += 2;
+			return (((0xff & byteBuffer[pointer - 1]) << 1159843944) + (0xff & byteBuffer[-2
+					+ pointer] - 128));
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.TA("
 					+ arg0 + ')');
@@ -2059,12 +2059,12 @@ public class StreamBuffer extends RSFont {
 	public void method236(int arg0, int arg1) {
 		try {
 			anInt2056++;
-			byteBuffer[pointion++] = (byte) (arg1 >> 622136184);
-			byteBuffer[pointion++] = (byte) (arg1 >> 550550928);
-			byteBuffer[pointion++] = (byte) (arg1 >> 545485064);
+			byteBuffer[pointer++] = (byte) (arg1 >> 622136184);
+			byteBuffer[pointer++] = (byte) (arg1 >> 550550928);
+			byteBuffer[pointer++] = (byte) (arg1 >> 545485064);
 			if (arg0 != 181)
 				method236(102, -54);
-			byteBuffer[pointion++] = (byte) arg1;
+			byteBuffer[pointer++] = (byte) arg1;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.QA("
 					+ arg0 + ',' + arg1 + ')'));
@@ -2074,10 +2074,10 @@ public class StreamBuffer extends RSFont {
 	public int method237(int arg0) {
 		try {
 			anInt2054++;
-			pointion += 4;
-			return ((byteBuffer[pointion + -2] & 0xff)
-					+ (((0xff & byteBuffer[-1 + pointion]) << 479365160) + ((byteBuffer[pointion - 3] & 0xff) << -1995013832)) + (0xff0000 & byteBuffer[-4
-					+ pointion] << 2021760848));
+			pointer += 4;
+			return ((byteBuffer[pointer + -2] & 0xff)
+					+ (((0xff & byteBuffer[-1 + pointer]) << 479365160) + ((byteBuffer[pointer - 3] & 0xff) << -1995013832)) + (0xff0000 & byteBuffer[-4
+					+ pointer] << 2021760848));
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.SA("
 					+ arg0 + ')');
@@ -2086,11 +2086,11 @@ public class StreamBuffer extends RSFont {
 
 	public int method238(byte arg0) {
 		try {
-			pointion += 2;
+			pointer += 2;
 			if (arg0 > -45)
 				method207(-7, -42);
 			anInt2103++;
-			int i = ((byteBuffer[-1 + pointion] & 0xff) + ((0xff & byteBuffer[pointion
+			int i = ((byteBuffer[-1 + pointer] & 0xff) + ((0xff & byteBuffer[pointer
 					+ -2]) << -1101684792));
 			if ((i ^ 0xffffffff) < -32768)
 				i -= 65536;
@@ -2106,7 +2106,7 @@ public class StreamBuffer extends RSFont {
 			if (arg0 < 28)
 				method236(30, -102);
 			anInt2060++;
-			return -128 + byteBuffer[pointion++] & 0xff;
+			return -128 + byteBuffer[pointer++] & 0xff;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.AB("
 					+ arg0 + ')');
@@ -2118,7 +2118,7 @@ public class StreamBuffer extends RSFont {
 			anInt2114++;
 			if (arg0 != 32767)
 				return -65;
-			return 0xff & 128 - byteBuffer[pointion++];
+			return 0xff & 128 - byteBuffer[pointer++];
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.KA("
 					+ arg0 + ')');
@@ -2127,12 +2127,12 @@ public class StreamBuffer extends RSFont {
 
 	public int method241(int arg0) {
 		try {
-			pointion += arg0;
+			pointer += arg0;
 			anInt2080++;
-			return (((byteBuffer[pointion - 2] & 0xff) << 2127599416)
-					- (-(byteBuffer[pointion + -1] << 967823088 & 0xff0000) - ((byteBuffer[-4
-							+ pointion] & 0xff) << -1687385432)) + (0xff & byteBuffer[-3
-					+ pointion]));
+			return (((byteBuffer[pointer - 2] & 0xff) << 2127599416)
+					- (-(byteBuffer[pointer + -1] << 967823088 & 0xff0000) - ((byteBuffer[-4
+							+ pointer] & 0xff) << -1687385432)) + (0xff & byteBuffer[-3
+					+ pointer]));
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.IA("
 					+ arg0 + ')');
@@ -2144,7 +2144,7 @@ public class StreamBuffer extends RSFont {
 			if (arg0 != 0)
 				return (byte) -114;
 			anInt2092++;
-			return (byte) -byteBuffer[pointion++];
+			return (byte) -byteBuffer[pointer++];
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.FC("
 					+ arg0 + ')');
@@ -2174,10 +2174,10 @@ public class StreamBuffer extends RSFont {
 			anInt2074++;
 			if (arg0 < 87)
 				method224(-114, -102);
-			byteBuffer[pointion++] = (byte) arg1;
-			byteBuffer[pointion++] = (byte) (arg1 >> -313779192);
-			byteBuffer[pointion++] = (byte) (arg1 >> -61734032);
-			byteBuffer[pointion++] = (byte) (arg1 >> -1178496840);
+			byteBuffer[pointer++] = (byte) arg1;
+			byteBuffer[pointer++] = (byte) (arg1 >> -313779192);
+			byteBuffer[pointer++] = (byte) (arg1 >> -61734032);
+			byteBuffer[pointer++] = (byte) (arg1 >> -1178496840);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.LB("
 					+ arg0 + ',' + arg1 + ')'));
@@ -2187,9 +2187,9 @@ public class StreamBuffer extends RSFont {
 	public byte method245(int arg0) {
 		try {
 			if (arg0 != 12605)
-				pointion = 125;
+				pointer = 125;
 			anInt2098++;
-			return (byte) (128 - byteBuffer[pointion++]);
+			return (byte) (128 - byteBuffer[pointer++]);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.AA("
 					+ arg0 + ')');
@@ -2198,10 +2198,10 @@ public class StreamBuffer extends RSFont {
 
 	public void method247(int arg0, int arg1, int[] arg2, int arg3) {
 		try {
-			int i = pointion;
+			int i = pointer;
 			int i_14_ = (arg3 - arg0) / 8;
 			anInt2094++;
-			pointion = arg0;
+			pointer = arg0;
 			for (int i_15_ = 0; i_14_ > i_15_; i_15_++) {
 				int i_16_ = method219((byte) 73);
 				int i_17_ = -957401312;
@@ -2216,13 +2216,13 @@ public class StreamBuffer extends RSFont {
 					i_16_ -= ((i_18_ << 1436977156 ^ i_18_ >>> -848638619) - -i_18_)
 							^ arg2[i_17_ & 0x3] + i_17_;
 				}
-				pointion -= 8;
+				pointer -= 8;
 				method236(181, i_16_);
 				method236(181, i_18_);
 			}
 			if (arg1 != 255)
 				byteBuffer = null;
-			pointion = i;
+			pointer = i;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.DA("
 					+ arg0 + ',' + arg1 + ','
@@ -2233,11 +2233,11 @@ public class StreamBuffer extends RSFont {
 	public int method248(boolean arg0) {
 		try {
 			anInt2058++;
-			pointion += 3;
+			pointer += 3;
 			if (arg0 != false)
 				StringUtilities.aJagexString_2101 = null;
-			return ((byteBuffer[pointion + -1] & 0xff) + ((0xff0000 & byteBuffer[-3
-					+ pointion] << 609314768) + ((0xff & byteBuffer[pointion - 2]) << -970674840)));
+			return ((byteBuffer[pointer + -1] & 0xff) + ((0xff0000 & byteBuffer[-3
+					+ pointer] << 609314768) + ((0xff & byteBuffer[pointer - 2]) << -970674840)));
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.MA("
 					+ arg0 + ')');
@@ -2247,12 +2247,12 @@ public class StreamBuffer extends RSFont {
 	public void method249(int arg0, int arg1) {
 		try {
 			if (arg1 != -22334)
-				method260(-29);
+				readSmart(-29);
 			anInt2086++;
-			byteBuffer[pointion - (arg0 + 4)] = (byte) (arg0 >> 785083640);
-			byteBuffer[pointion - (arg0 + 3)] = (byte) (arg0 >> -1508303056);
-			byteBuffer[-2 + pointion - arg0] = (byte) (arg0 >> -812178424);
-			byteBuffer[-1 + pointion - arg0] = (byte) arg0;
+			byteBuffer[pointer - (arg0 + 4)] = (byte) (arg0 >> 785083640);
+			byteBuffer[pointer - (arg0 + 3)] = (byte) (arg0 >> -1508303056);
+			byteBuffer[-2 + pointer - arg0] = (byte) (arg0 >> -812178424);
+			byteBuffer[-1 + pointer - arg0] = (byte) arg0;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.AC("
 					+ arg0 + ',' + arg1 + ')'));
@@ -2264,9 +2264,9 @@ public class StreamBuffer extends RSFont {
 			anInt2057++;
 			if (arg0 != 0)
 				return -61;
-			pointion += 2;
-			int i = (((0xff & byteBuffer[-1 + pointion]) << -1006873816) - -(0xff & byteBuffer[-2
-					+ pointion]));
+			pointer += 2;
+			int i = (((0xff & byteBuffer[-1 + pointer]) << -1006873816) - -(0xff & byteBuffer[-2
+					+ pointer]));
 			if (i > 32767)
 				i -= 65536;
 			return i;
@@ -2277,8 +2277,8 @@ public class StreamBuffer extends RSFont {
 	}
 
 	public void method251(int arg0, byte arg1) {
-		byteBuffer[pointion++] = (byte) (128 + arg0);
-		byteBuffer[pointion++] = (byte) (arg0 >> 970760744);
+		byteBuffer[pointer++] = (byte) (128 + arg0);
+		byteBuffer[pointer++] = (byte) (arg0 >> 970760744);
 		anInt2071++;
 		if (arg1 != 53)
 			StringUtilities.aJagexString_2101 = null;
@@ -2286,12 +2286,12 @@ public class StreamBuffer extends RSFont {
 
 	public int method252(int arg0) {
 		try {
-			pointion += 2;
+			pointer += 2;
 			anInt2097++;
 			if (arg0 != 23580)
-				pointion = 88;
-			int i = (((byteBuffer[-1 + pointion] & 0xff) << 1150759592) + (0xff & -128
-					+ byteBuffer[pointion - 2]));
+				pointer = 88;
+			int i = (((byteBuffer[-1 + pointer] & 0xff) << 1150759592) + (0xff & -128
+					+ byteBuffer[pointer - 2]));
 			if (i > 32767)
 				i -= 65536;
 			return i;
@@ -2304,7 +2304,7 @@ public class StreamBuffer extends RSFont {
 	public void method253(int arg0, byte arg1, int arg2, byte[] arg3) {
 		try {
 			for (int i = arg0; i < arg0 + arg2; i++)
-				arg3[i] = byteBuffer[pointion++];
+				arg3[i] = byteBuffer[pointer++];
 			if (arg1 >= -5)
 				method240(-98);
 			anInt2068++;
@@ -2336,16 +2336,16 @@ public class StreamBuffer extends RSFont {
 	public void method255(int arg0, long arg1) {
 		try {
 			anInt2090++;
-			byteBuffer[pointion++] = (byte) (int) (arg1 >> -810024136);
-			byteBuffer[pointion++] = (byte) (int) (arg1 >> -600474832);
-			byteBuffer[pointion++] = (byte) (int) (arg1 >> 832291176);
+			byteBuffer[pointer++] = (byte) (int) (arg1 >> -810024136);
+			byteBuffer[pointer++] = (byte) (int) (arg1 >> -600474832);
+			byteBuffer[pointer++] = (byte) (int) (arg1 >> 832291176);
 			if (arg0 != 189354448)
 				aBoolean2066 = true;
-			byteBuffer[pointion++] = (byte) (int) (arg1 >> 1902473824);
-			byteBuffer[pointion++] = (byte) (int) (arg1 >> 71101464);
-			byteBuffer[pointion++] = (byte) (int) (arg1 >> 1758569936);
-			byteBuffer[pointion++] = (byte) (int) (arg1 >> -1402663096);
-			byteBuffer[pointion++] = (byte) (int) arg1;
+			byteBuffer[pointer++] = (byte) (int) (arg1 >> 1902473824);
+			byteBuffer[pointer++] = (byte) (int) (arg1 >> 71101464);
+			byteBuffer[pointer++] = (byte) (int) (arg1 >> 1758569936);
+			byteBuffer[pointer++] = (byte) (int) (arg1 >> -1402663096);
+			byteBuffer[pointer++] = (byte) (int) arg1;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.OB("
 					+ arg0 + ',' + arg1 + ')'));
@@ -2370,7 +2370,7 @@ public class StreamBuffer extends RSFont {
 	}
 
 	public void method258(int arg0, byte arg1) {
-		byteBuffer[-arg0 + (pointion + -1)] = (byte) arg0;
+		byteBuffer[-arg0 + (pointer + -1)] = (byte) arg0;
 		anInt2062++;
 		if (arg1 <= 18)
 			method226((byte) -3);
@@ -2380,24 +2380,24 @@ public class StreamBuffer extends RSFont {
 		try {
 			anInt2076++;
 			if (arg1 != 18601)
-				pointion = -31;
-			pointion += arg0.method821(arg0.method825(-114), pointion, true, 0,
+				pointer = -31;
+			pointer += arg0.method821(arg0.method825(-114), pointer, true, 0,
 					byteBuffer);
-			byteBuffer[pointion++] = (byte) 0;
+			byteBuffer[pointer++] = (byte) 0;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.KB("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ')'));
 		}
 	}
 
-	public int method260(int arg0) {
+	public int readSmart(int arg0) {
 		try {
 			anInt2053++;
 			if (arg0 > -54)
 				method219((byte) 15);
-			int i = byteBuffer[pointion] & 0xff;
+			int i = byteBuffer[pointer] & 0xff;
 			if ((i ^ 0xffffffff) <= -129)
-				return -49152 + method209((byte) -114);
+				return -49152 + read_u16((byte) -114);
 			return get() - 64;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.Q("
@@ -2410,7 +2410,7 @@ public class StreamBuffer extends RSFont {
 			anInt2081++;
 			if (arg0 >= -62)
 				return (byte) -29;
-			return (byte) (-128 + byteBuffer[pointion++]);
+			return (byte) (-128 + byteBuffer[pointer++]);
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.HB("
 					+ arg0 + ')');

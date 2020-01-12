@@ -1,6 +1,7 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.audio.Effect;
+import com.jagex.runescape.io.Buffer;
 
 public class Class53 implements Runnable {
 	public static JagexString aJagexString_1068;
@@ -62,7 +63,7 @@ public class Class53 implements Runnable {
 					Class5.anInt175--;
 					for (int i_0_ = i; (i_0_ ^ 0xffffffff) > (Class5.anInt175 ^ 0xffffffff); i_0_++) {
 						Class4_Sub6.anIntArray1915[i_0_] = Class4_Sub6.anIntArray1915[1 + i_0_];
-						Class48.aClass36Array974[i_0_] = Class48.aClass36Array974[1 + i_0_];
+						Class48.aEffectArray974[i_0_] = Class48.aEffectArray974[1 + i_0_];
 						Class12.anIntArray342[i_0_] = Class12.anIntArray342[1 + i_0_];
 						Class25.anIntArray593[i_0_] = Class25.anIntArray593[i_0_
 								- -1];
@@ -70,14 +71,14 @@ public class Class53 implements Runnable {
 					}
 					i--;
 				} else {
-					Class36 class36 = Class48.aClass36Array974[i];
-					if (class36 == null) {
-						class36 = Class36.method913(Class66.aClass19_Sub1_1336,
+					Effect effect = Class48.aEffectArray974[i];
+					if (effect == null) {
+						effect = Effect.method913(Class66.aClass19_Sub1_1336,
 								Class4_Sub6.anIntArray1915[i], 0);
-						if (class36 == null)
+						if (effect == null)
 							continue;
-						Class25.anIntArray593[i] += class36.method914();
-						Class48.aClass36Array974[i] = class36;
+						Class25.anIntArray593[i] += effect.method914();
+						Class48.aEffectArray974[i] = effect;
 					}
 					if (Class25.anIntArray593[i] < 0) {
 						int i_1_;
@@ -103,7 +104,7 @@ public class Class53 implements Runnable {
 						} else
 							i_1_ = Class18.anInt476;
 						if (i_1_ > 0) {
-							Class4_Sub4_Sub1 class4_sub4_sub1 = class36
+							Class4_Sub4_Sub1 class4_sub4_sub1 = effect
 									.method916().method177(Class8.aClass8_251);
 							Class4_Sub2_Sub3 class4_sub2_sub3 = Class4_Sub2_Sub3
 									.method153(class4_sub4_sub1, 100, i_1_);
@@ -150,9 +151,9 @@ public class Class53 implements Runnable {
 					Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[i_8_] = null;
 				}
 			}
-			if (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointion != Class4_Sub20_Sub15.anInt3157)
+			if (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer != Class4_Sub20_Sub15.anInt3157)
 				throw new RuntimeException("gnp1 pos:"
-						+ (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointion)
+						+ (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer)
 						+ " psize:" + Class4_Sub20_Sub15.anInt3157);
 			for (int i = 0; (i ^ 0xffffffff) > (GameShell.anInt12 ^ 0xffffffff); i++) {
 				if ((Class57.aClass4_Sub20_Sub7_Sub1_Sub2Array1151[Class4_Sub11_Sub1.anIntArray2695[i]]) == null)
@@ -205,7 +206,7 @@ public class Class53 implements Runnable {
 	public static void method1010(int arg0) {
 		anInt1070++;
 		try {
-			if (StreamBuffer.anInt2085 == 1) {
+			if (Buffer.anInt2085 == 1) {
 				int i = Class1.aClass4_Sub2_Sub1_64.method106(true);
 				if ((i ^ 0xffffffff) < -1
 						&& Class1.aClass4_Sub2_Sub1_64.method119((byte) -25)) {
@@ -219,9 +220,9 @@ public class Class53 implements Runnable {
 				Class1.aClass4_Sub2_Sub1_64.method95(arg0 ^ 0x521e);
 				Class4_Sub20_Sub1.aClass4_Sub18_2704 = null;
 				if (Class67.aClass19_1363 == null)
-					StreamBuffer.anInt2085 = 0;
+					Buffer.anInt2085 = 0;
 				else
-					StreamBuffer.anInt2085 = 2;
+					Buffer.anInt2085 = 2;
 				Class4_Sub20_Sub5.aClass81_2880 = null;
 			}
 		} catch (Exception exception) {
@@ -230,7 +231,7 @@ public class Class53 implements Runnable {
 			Class67.aClass19_1363 = null;
 			Class4_Sub20_Sub5.aClass81_2880 = null;
 			Class4_Sub20_Sub1.aClass4_Sub18_2704 = null;
-			StreamBuffer.anInt2085 = 0;
+			Buffer.anInt2085 = 0;
 		}
 		if (arg0 != 0)
 			method1010(48);

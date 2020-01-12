@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class4_Sub20_Sub4 extends Class4_Sub20 {
 	public static volatile boolean aBoolean2849;
@@ -113,16 +113,16 @@ public class Class4_Sub20_Sub4 extends Class4_Sub20 {
 
 	public int anInt2865;
 
-	public void method356(int arg0, StreamBuffer arg1, int arg2) {
+	public void method356(int arg0, Buffer arg1, int arg2) {
 		anInt2856++;
 		if (arg2 == (arg0 ^ 0xffffffff)) {
-			anInt2862 = arg1.method209((byte) -113);
+			anInt2862 = arg1.read_u16((byte) -113);
 			anInt2865 = arg1.get();
 			anInt2846 = arg1.get();
 		}
 	}
 
-	public void method358(int arg0, StreamBuffer arg1) {
+	public void method358(int arg0, Buffer arg1) {
 		for (;;) {
 			int i = arg1.get();
 			if ((i ^ 0xffffffff) == -1)

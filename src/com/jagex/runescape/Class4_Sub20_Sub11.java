@@ -1,5 +1,5 @@
 package com.jagex.runescape;
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 import java.awt.Font;
 
@@ -160,7 +160,7 @@ public class Class4_Sub20_Sub11 extends Class4_Sub20 {
 
 	public int anInt3082 = 0;
 
-	public void method485(StreamBuffer arg0, int arg1) {
+	public void method485(Buffer arg0, int arg1) {
 		try {
 			anInt3077++;
 			if (arg1 < 106)
@@ -177,11 +177,11 @@ public class Class4_Sub20_Sub11 extends Class4_Sub20 {
 		}
 	}
 
-	public void method486(int arg0, StreamBuffer arg1, int arg2) {
+	public void method486(int arg0, Buffer arg1, int arg2) {
 		anInt3079++;
 		if (arg0 <= -40) {
 			if ((arg2 ^ 0xffffffff) == -3)
-				anInt3082 = arg1.method209((byte) -123);
+				anInt3082 = arg1.read_u16((byte) -123);
 		}
 	}
 }

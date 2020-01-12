@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class74 {
 	public static JagexString aJagexString_1517 = JagexString.getRs2PreparedString(
@@ -9,14 +9,14 @@ public class Class74 {
 	public static JagexString aJagexString_1521;
 	public static JagexString aJagexString_1523;
 	public static JagexString aJagexString_1524;
-	public static StreamBuffer aClass4_Sub11_1516;
+	public static Buffer aClass4_Sub11_1516;
 	public static int anInt1513 = 0;
 	public static int secondaryCameraVertical = 0;
 	public static int anInt1515;
 	public static int anInt1522;
 	public static int[] anIntArray1518;
 	static {
-		aClass4_Sub11_1516 = new StreamBuffer(8);
+		aClass4_Sub11_1516 = new Buffer(8);
 		aJagexString_1523 = JagexString.getRs2PreparedString("Prepared visibility map"
         );
 		aJagexString_1521 = aJagexString_1523;

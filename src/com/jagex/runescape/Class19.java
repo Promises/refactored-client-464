@@ -1,5 +1,5 @@
 package com.jagex.runescape;
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 import java.awt.Graphics;
 
@@ -184,7 +184,7 @@ public abstract class Class19 {
 			} else {
 				is_6_ = Class59.method1034(true, (byte) 101,
 						anObjectArray488[arg0]);
-				StreamBuffer class4_sub11 = new StreamBuffer(is_6_);
+				Buffer class4_sub11 = new Buffer(is_6_);
 				class4_sub11.method247(5, 255, arg2,
 						class4_sub11.byteBuffer.length);
 			}
@@ -216,9 +216,9 @@ public abstract class Class19 {
 				int i_8_ = is_7_.length;
 				int i_9_ = is_7_[--i_8_] & 0xff;
 				i_8_ -= i_9_ * (i * 4);
-				StreamBuffer class4_sub11 = new StreamBuffer(is_7_);
+				Buffer class4_sub11 = new Buffer(is_7_);
 				int[] is_10_ = new int[i];
-				class4_sub11.pointion = i_8_;
+				class4_sub11.pointer = i_8_;
 				for (int i_11_ = 0; (i_11_ ^ 0xffffffff) > (i_9_ ^ 0xffffffff); i_11_++) {
 					int i_12_ = 0;
 					for (int i_13_ = 0; (i ^ 0xffffffff) < (i_13_ ^ 0xffffffff); i_13_++) {
@@ -231,7 +231,7 @@ public abstract class Class19 {
 					is_14_[i_15_] = new byte[is_10_[i_15_]];
 					is_10_[i_15_] = 0;
 				}
-				class4_sub11.pointion = i_8_;
+				class4_sub11.pointer = i_8_;
 				int i_16_ = 0;
 				for (int i_17_ = 0; (i_9_ ^ 0xffffffff) < (i_17_ ^ 0xffffffff); i_17_++) {
 					int i_18_ = 0;
@@ -560,7 +560,7 @@ public abstract class Class19 {
 	public void method756(byte arg0, byte[] arg1) {
 		anInt506++;
 		anInt492 = Class6.method649(-968, arg1, arg1.length);
-		StreamBuffer class4_sub11 = new StreamBuffer(
+		Buffer class4_sub11 = new Buffer(
 				Class4_Sub20_Sub16.method609(-37, arg1));
 		int i = class4_sub11.get();
 		if ((i ^ 0xffffffff) != -6 && (i ^ 0xffffffff) != -7) {
@@ -572,10 +572,10 @@ public abstract class Class19 {
 		int i_25_ = class4_sub11.get();
 		int i_26_ = -1;
 		int i_27_ = 0;
-		anInt526 = class4_sub11.method209((byte) -111);
+		anInt526 = class4_sub11.read_u16((byte) -111);
 		anIntArray518 = new int[anInt526];
 		for (int i_28_ = 0; i_28_ < anInt526; i_28_++) {
-			anIntArray518[i_28_] = i_27_ += class4_sub11.method209((byte) -127);
+			anIntArray518[i_28_] = i_27_ += class4_sub11.read_u16((byte) -127);
 			if ((anIntArray518[i_28_] ^ 0xffffffff) < (i_26_ ^ 0xffffffff)) {
 				i_26_ = anIntArray518[i_28_];
 			}
@@ -607,7 +607,7 @@ public abstract class Class19 {
 		}
 		for (int i_32_ = 0; (i_32_ ^ 0xffffffff) > (anInt526 ^ 0xffffffff); i_32_++) {
 			anIntArray510[anIntArray518[i_32_]] = class4_sub11
-					.method209((byte) -101);
+					.read_u16((byte) -101);
 		}
 		for (int i_33_ = 0; anInt526 > i_33_; i_33_++) {
 			i_27_ = 0;
@@ -617,7 +617,7 @@ public abstract class Class19 {
 			anIntArrayArray493[i_34_] = new int[i_36_];
 			for (int i_37_ = 0; i_37_ < i_36_; i_37_++) {
 				int i_38_ = (anIntArrayArray493[i_34_][i_37_] = i_27_ += class4_sub11
-						.method209((byte) -119));
+						.read_u16((byte) -119));
 				if ((i_38_ ^ 0xffffffff) < (i_35_ ^ 0xffffffff)) {
 					i_35_ = i_38_;
 				}

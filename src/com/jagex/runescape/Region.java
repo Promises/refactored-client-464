@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Region {
 	public static boolean aBoolean126;
@@ -169,7 +169,7 @@ public class Region {
 			class4_sub20_sub1 = new Class4_Sub20_Sub1();
 			class4_sub20_sub1.anInt2700 = arg1;
 			if (is != null)
-				class4_sub20_sub1.method333(-1, new StreamBuffer(is));
+				class4_sub20_sub1.method333(-1, new Buffer(is));
 			class4_sub20_sub1.method332(61);
 			if (class4_sub20_sub1.aBoolean2754) {
 				class4_sub20_sub1.aBoolean2698 = false;

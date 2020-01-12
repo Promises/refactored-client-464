@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 import com.jagex.runescape.util.Signlink;
 
 public class Class50 implements Runnable {
@@ -164,7 +164,7 @@ public class Class50 implements Runnable {
 						&& Class4_Sub20_Sub8.anInt2980 > 2)
 					SceneGraph.method707(-21);
 				else if (Class4_Sub20_Sub8.anInt2980 > 0)
-					StreamBuffer.method221(0, Class4_Sub20_Sub8.anInt2980 + -1);
+					Buffer.method221(0, Class4_Sub20_Sub8.anInt2980 + -1);
 				Class4_Sub20_Sub16.aClass4_Sub13_3179 = null;
 			}
 		}

@@ -1,6 +1,7 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.audio.Effect;
+import com.jagex.runescape.io.Buffer;
 
 public class Class81 {
 	public static JagexString aJagexString_1651;
@@ -115,16 +116,16 @@ public class Class81 {
 			anInt1678++;
 			if (arg0 == 32768) {
 				try {
-					if (StreamBuffer.aClass64_2096 != null) {
-						byte[] is = StreamBuffer.aClass64_2096.method1059(true);
+					if (Buffer.aClass64_2096 != null) {
+						byte[] is = Buffer.aClass64_2096.method1059(true);
 						if (is != null) {
-							StreamBuffer class4_sub11 = new StreamBuffer(is);
+							Buffer class4_sub11 = new Buffer(is);
 							Class37.anInt760 = class4_sub11
-									.method209((byte) -126);
+									.read_u16((byte) -126);
 							Player.aClass9Array3579 = new Class9[Class37.anInt760];
 							for (int i = 0; ((Class37.anInt760 ^ 0xffffffff) < (i ^ 0xffffffff)); i++) {
 								Class9 class9 = (Player.aClass9Array3579[i] = new Class9());
-								int i_0_ = class4_sub11.method209((byte) -121);
+								int i_0_ = class4_sub11.read_u16((byte) -121);
 								class9.anInt279 = i_0_ & 0x7fff;
 								class9.aBoolean267 = (i_0_ & 0x8000 ^ 0xffffffff) != -1;
 								class9.aJagexString_264 = class4_sub11
@@ -143,11 +144,11 @@ public class Class81 {
 											Class4_Sub7.anIntArray1947,
 											0,
 											Player.aClass9Array3579);
-							StreamBuffer.aClass64_2096 = null;
+							Buffer.aClass64_2096 = null;
 							Class49.aBoolean990 = true;
 						}
 					} else
-						StreamBuffer.aClass64_2096 = new Class64(
+						Buffer.aClass64_2096 = new Class64(
 								Class43.aClass75_872,
 								Class4_Sub24
 										.method639(
@@ -158,7 +159,7 @@ public class Class81 {
 												-842).method814((byte) -91));
 				} catch (Exception exception) {
 					exception.printStackTrace();
-					StreamBuffer.aClass64_2096 = null;
+					Buffer.aClass64_2096 = null;
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -260,11 +261,11 @@ public class Class81 {
 						try {
 							Class4_Sub20_Sub17.aClass76_3189
 									.method1183(
-											Class66.aClass4_Sub11_Sub1_1328.pointion,
+											Class66.aClass4_Sub11_Sub1_1328.pointer,
 											0,
 											125,
 											(Class66.aClass4_Sub11_Sub1_1328.byteBuffer));
-							Class66.aClass4_Sub11_Sub1_1328.pointion = 0;
+							Class66.aClass4_Sub11_Sub1_1328.pointer = 0;
 						} catch (java.io.IOException ioexception) {
 							Region.aBoolean129 = true;
 							break;
@@ -309,10 +310,10 @@ public class Class81 {
 				return class4_sub4_sub1;
 			if (arg0 != null && (arg0[0] ^ 0xffffffff) >= -1)
 				return null;
-			Class36 class36 = Class36.method913(aClass19_1656, arg3, arg1);
-			if (class36 == null)
+			Effect effect = Effect.method913(aClass19_1656, arg3, arg1);
+			if (effect == null)
 				return null;
-			class4_sub4_sub1 = class36.method916();
+			class4_sub4_sub1 = effect.method916();
 			aClass16_1697.method720(class4_sub4_sub1, l, arg2);
 			if (arg0 != null)
 				arg0[0] -= class4_sub4_sub1.aByteArray2661.length;

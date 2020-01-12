@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class4_Sub20_Sub7_Sub2 extends Class4_Sub20_Sub7 {
 	public static int anInt3322;
@@ -194,24 +194,24 @@ public class Class4_Sub20_Sub7_Sub2 extends Class4_Sub20_Sub7 {
 		anInt3327 = 0;
 		boolean bool = false;
 		boolean bool_60_ = false;
-		StreamBuffer class4_sub11 = new StreamBuffer(arg0);
-		StreamBuffer class4_sub11_61_ = new StreamBuffer(arg0);
-		StreamBuffer class4_sub11_62_ = new StreamBuffer(arg0);
-		StreamBuffer class4_sub11_63_ = new StreamBuffer(arg0);
-		StreamBuffer class4_sub11_64_ = new StreamBuffer(arg0);
-		class4_sub11.pointion = arg0.length - 18;
-		int i = class4_sub11.method209((byte) -125);
-		int i_65_ = class4_sub11.method209((byte) -113);
+		Buffer class4_sub11 = new Buffer(arg0);
+		Buffer class4_sub11_61_ = new Buffer(arg0);
+		Buffer class4_sub11_62_ = new Buffer(arg0);
+		Buffer class4_sub11_63_ = new Buffer(arg0);
+		Buffer class4_sub11_64_ = new Buffer(arg0);
+		class4_sub11.pointer = arg0.length - 18;
+		int i = class4_sub11.read_u16((byte) -125);
+		int i_65_ = class4_sub11.read_u16((byte) -113);
 		int i_66_ = class4_sub11.get();
 		int i_67_ = class4_sub11.get();
 		int i_68_ = class4_sub11.get();
 		int i_69_ = class4_sub11.get();
 		int i_70_ = class4_sub11.get();
 		int i_71_ = class4_sub11.get();
-		int i_72_ = class4_sub11.method209((byte) -126);
-		int i_73_ = class4_sub11.method209((byte) -125);
-		int i_74_ = class4_sub11.method209((byte) -116);
-		int i_75_ = class4_sub11.method209((byte) -107);
+		int i_72_ = class4_sub11.read_u16((byte) -126);
+		int i_73_ = class4_sub11.read_u16((byte) -125);
+		int i_74_ = class4_sub11.read_u16((byte) -116);
+		int i_75_ = class4_sub11.read_u16((byte) -107);
 		int i_76_ = 0;
 		int i_77_ = i_76_;
 		i_76_ += i;
@@ -273,11 +273,11 @@ public class Class4_Sub20_Sub7_Sub2 extends Class4_Sub20_Sub7 {
 		if (i_70_ == 1)
 			anIntArray3330 = new int[i_65_];
 		aShortArray3318 = new short[i_65_];
-		class4_sub11.pointion = i_77_;
-		class4_sub11_61_.pointion = i_87_;
-		class4_sub11_62_.pointion = i_88_;
-		class4_sub11_63_.pointion = i_89_;
-		class4_sub11_64_.pointion = i_82_;
+		class4_sub11.pointer = i_77_;
+		class4_sub11_61_.pointer = i_87_;
+		class4_sub11_62_.pointer = i_88_;
+		class4_sub11_63_.pointer = i_89_;
+		class4_sub11_64_.pointer = i_82_;
 		int i_90_ = 0;
 		int i_91_ = 0;
 		int i_92_ = 0;
@@ -285,13 +285,13 @@ public class Class4_Sub20_Sub7_Sub2 extends Class4_Sub20_Sub7 {
 			int i_94_ = class4_sub11.get();
 			int i_95_ = 0;
 			if ((i_94_ & 0x1) != 0)
-				i_95_ = class4_sub11_61_.method260(-58);
+				i_95_ = class4_sub11_61_.readSmart(-58);
 			int i_96_ = 0;
 			if ((i_94_ & 0x2) != 0)
-				i_96_ = class4_sub11_62_.method260(-126);
+				i_96_ = class4_sub11_62_.readSmart(-126);
 			int i_97_ = 0;
 			if ((i_94_ & 0x4) != 0)
-				i_97_ = class4_sub11_63_.method260(-121);
+				i_97_ = class4_sub11_63_.readSmart(-121);
 			anIntArray3326[i_93_] = i_90_ + i_95_;
 			anIntArray3314[i_93_] = i_91_ + i_96_;
 			anIntArray3309[i_93_] = i_92_ + i_97_;
@@ -301,14 +301,14 @@ public class Class4_Sub20_Sub7_Sub2 extends Class4_Sub20_Sub7 {
 			if (i_71_ == 1)
 				anIntArray3323[i_93_] = class4_sub11_64_.get();
 		}
-		class4_sub11.pointion = i_85_;
-		class4_sub11_61_.pointion = i_81_;
-		class4_sub11_62_.pointion = i_79_;
-		class4_sub11_63_.pointion = i_83_;
-		class4_sub11_64_.pointion = i_80_;
+		class4_sub11.pointer = i_85_;
+		class4_sub11_61_.pointer = i_81_;
+		class4_sub11_62_.pointer = i_79_;
+		class4_sub11_63_.pointer = i_83_;
+		class4_sub11_64_.pointer = i_80_;
 		for (int i_98_ = 0; i_98_ < i_65_; i_98_++) {
 			aShortArray3318[i_98_] = (short) class4_sub11
-					.method209((byte) -105);
+					.read_u16((byte) -105);
 			if (i_67_ == 1) {
 				int i_99_ = class4_sub11_61_.get();
 				if ((i_99_ & 0x1) == 1) {
@@ -329,8 +329,8 @@ public class Class4_Sub20_Sub7_Sub2 extends Class4_Sub20_Sub7 {
 			if (i_70_ == 1)
 				anIntArray3330[i_98_] = class4_sub11_64_.get();
 		}
-		class4_sub11.pointion = i_84_;
-		class4_sub11_61_.pointion = i_78_;
+		class4_sub11.pointer = i_84_;
+		class4_sub11_61_.pointer = i_78_;
 		int i_100_ = 0;
 		int i_101_ = 0;
 		int i_102_ = 0;
@@ -338,11 +338,11 @@ public class Class4_Sub20_Sub7_Sub2 extends Class4_Sub20_Sub7 {
 		for (int i_104_ = 0; i_104_ < i_65_; i_104_++) {
 			int i_105_ = class4_sub11_61_.get();
 			if (i_105_ == 1) {
-				i_100_ = class4_sub11.method260(-125) + i_103_;
+				i_100_ = class4_sub11.readSmart(-125) + i_103_;
 				i_103_ = i_100_;
-				i_101_ = class4_sub11.method260(-74) + i_103_;
+				i_101_ = class4_sub11.readSmart(-74) + i_103_;
 				i_103_ = i_101_;
-				i_102_ = class4_sub11.method260(-116) + i_103_;
+				i_102_ = class4_sub11.readSmart(-116) + i_103_;
 				i_103_ = i_102_;
 				anIntArray3331[i_104_] = i_100_;
 				anIntArray3320[i_104_] = i_101_;
@@ -350,7 +350,7 @@ public class Class4_Sub20_Sub7_Sub2 extends Class4_Sub20_Sub7 {
 			}
 			if (i_105_ == 2) {
 				i_101_ = i_102_;
-				i_102_ = class4_sub11.method260(-115) + i_103_;
+				i_102_ = class4_sub11.readSmart(-115) + i_103_;
 				i_103_ = i_102_;
 				anIntArray3331[i_104_] = i_100_;
 				anIntArray3320[i_104_] = i_101_;
@@ -358,7 +358,7 @@ public class Class4_Sub20_Sub7_Sub2 extends Class4_Sub20_Sub7 {
 			}
 			if (i_105_ == 3) {
 				i_100_ = i_102_;
-				i_102_ = class4_sub11.method260(-77) + i_103_;
+				i_102_ = class4_sub11.readSmart(-77) + i_103_;
 				i_103_ = i_102_;
 				anIntArray3331[i_104_] = i_100_;
 				anIntArray3320[i_104_] = i_101_;
@@ -368,18 +368,18 @@ public class Class4_Sub20_Sub7_Sub2 extends Class4_Sub20_Sub7 {
 				int i_106_ = i_100_;
 				i_100_ = i_101_;
 				i_101_ = i_106_;
-				i_102_ = class4_sub11.method260(-98) + i_103_;
+				i_102_ = class4_sub11.readSmart(-98) + i_103_;
 				i_103_ = i_102_;
 				anIntArray3331[i_104_] = i_100_;
 				anIntArray3320[i_104_] = i_101_;
 				anIntArray3324[i_104_] = i_102_;
 			}
 		}
-		class4_sub11.pointion = i_86_;
+		class4_sub11.pointer = i_86_;
 		for (int i_107_ = 0; i_107_ < i_66_; i_107_++) {
-			anIntArray3321[i_107_] = class4_sub11.method209((byte) -109);
-			anIntArray3328[i_107_] = class4_sub11.method209((byte) -112);
-			anIntArray3296[i_107_] = class4_sub11.method209((byte) -122);
+			anIntArray3321[i_107_] = class4_sub11.read_u16((byte) -109);
+			anIntArray3328[i_107_] = class4_sub11.read_u16((byte) -112);
+			anIntArray3296[i_107_] = class4_sub11.read_u16((byte) -122);
 		}
 		if (!bool)
 			aByteArray3297 = null;

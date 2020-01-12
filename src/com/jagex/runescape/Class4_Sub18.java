@@ -1,25 +1,25 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class4_Sub18 extends RSFont {
 	public static Class4_Sub18 method311(Class19 arg0, int arg1, int arg2) {
 		byte[] is = arg0.method746(arg1, (byte) 105, arg2);
 		if (is == null)
 			return null;
-		return new Class4_Sub18(new StreamBuffer(is));
+		return new Class4_Sub18(new Buffer(is));
 	}
 
 	public byte[] aByteArray2335;
 
 	public Class16 aClass16_2336;
 
-	public Class4_Sub18(StreamBuffer arg0) {
-		arg0.pointion = arg0.byteBuffer.length - 3;
+	public Class4_Sub18(Buffer arg0) {
+		arg0.pointer = arg0.byteBuffer.length - 3;
 		int i = arg0.get();
-		int i_15_ = arg0.method209((byte) -126);
+		int i_15_ = arg0.read_u16((byte) -126);
 		int i_16_ = 14 + i * 10;
-		arg0.pointion = 0;
+		arg0.pointer = 0;
 		int i_17_ = 0;
 		int i_18_ = 0;
 		int i_19_ = 0;
@@ -62,12 +62,12 @@ public class Class4_Sub18 extends RSFont {
 		i_16_ += 5 * i_17_;
 		i_16_ += 2 * (i_19_ + i_20_ + i_18_ + i_21_ + i_23_);
 		i_16_ += i_22_ + i_24_;
-		int i_28_ = arg0.pointion;
+		int i_28_ = arg0.pointer;
 		int i_29_ = (i + i_17_ + i_18_ + i_19_ + i_20_ + i_21_ + i_22_ + i_23_ + i_24_);
 		for (int i_30_ = 0; i_30_ < i_29_; i_30_++)
 			arg0.method228(0);
-		i_16_ += arg0.pointion - i_28_;
-		int i_31_ = arg0.pointion;
+		i_16_ += arg0.pointer - i_28_;
+		int i_31_ = arg0.pointer;
 		int i_32_ = 0;
 		int i_33_ = 0;
 		int i_34_ = 0;
@@ -112,56 +112,56 @@ public class Class4_Sub18 extends RSFont {
 				i_43_++;
 		}
 		int i_46_ = 0;
-		int i_47_ = arg0.pointion;
-		arg0.pointion += i_42_;
-		int i_48_ = arg0.pointion;
-		arg0.pointion += i_23_;
-		int i_49_ = arg0.pointion;
-		arg0.pointion += i_22_;
-		int i_50_ = arg0.pointion;
-		arg0.pointion += i_21_;
-		int i_51_ = arg0.pointion;
-		arg0.pointion += i_32_;
-		int i_52_ = arg0.pointion;
-		arg0.pointion += i_34_;
-		int i_53_ = arg0.pointion;
-		arg0.pointion += i_36_;
-		int i_54_ = arg0.pointion;
-		arg0.pointion += i_19_ + i_20_ + i_23_;
-		int i_55_ = arg0.pointion;
-		arg0.pointion += i_19_;
-		int i_56_ = arg0.pointion;
-		arg0.pointion += i_43_;
-		int i_57_ = arg0.pointion;
-		arg0.pointion += i_20_;
-		int i_58_ = arg0.pointion;
-		arg0.pointion += i_33_;
-		int i_59_ = arg0.pointion;
-		arg0.pointion += i_35_;
-		int i_60_ = arg0.pointion;
-		arg0.pointion += i_37_;
-		int i_61_ = arg0.pointion;
-		arg0.pointion += i_24_;
-		int i_62_ = arg0.pointion;
-		arg0.pointion += i_21_;
-		int i_63_ = arg0.pointion;
-		arg0.pointion += i_38_;
-		int i_64_ = arg0.pointion;
-		arg0.pointion += i_39_;
-		int i_65_ = arg0.pointion;
-		arg0.pointion += i_40_;
-		int i_66_ = arg0.pointion;
-		arg0.pointion += i_41_;
-		int i_67_ = arg0.pointion;
-		arg0.pointion += i_17_ * 3;
+		int i_47_ = arg0.pointer;
+		arg0.pointer += i_42_;
+		int i_48_ = arg0.pointer;
+		arg0.pointer += i_23_;
+		int i_49_ = arg0.pointer;
+		arg0.pointer += i_22_;
+		int i_50_ = arg0.pointer;
+		arg0.pointer += i_21_;
+		int i_51_ = arg0.pointer;
+		arg0.pointer += i_32_;
+		int i_52_ = arg0.pointer;
+		arg0.pointer += i_34_;
+		int i_53_ = arg0.pointer;
+		arg0.pointer += i_36_;
+		int i_54_ = arg0.pointer;
+		arg0.pointer += i_19_ + i_20_ + i_23_;
+		int i_55_ = arg0.pointer;
+		arg0.pointer += i_19_;
+		int i_56_ = arg0.pointer;
+		arg0.pointer += i_43_;
+		int i_57_ = arg0.pointer;
+		arg0.pointer += i_20_;
+		int i_58_ = arg0.pointer;
+		arg0.pointer += i_33_;
+		int i_59_ = arg0.pointer;
+		arg0.pointer += i_35_;
+		int i_60_ = arg0.pointer;
+		arg0.pointer += i_37_;
+		int i_61_ = arg0.pointer;
+		arg0.pointer += i_24_;
+		int i_62_ = arg0.pointer;
+		arg0.pointer += i_21_;
+		int i_63_ = arg0.pointer;
+		arg0.pointer += i_38_;
+		int i_64_ = arg0.pointer;
+		arg0.pointer += i_39_;
+		int i_65_ = arg0.pointer;
+		arg0.pointer += i_40_;
+		int i_66_ = arg0.pointer;
+		arg0.pointer += i_41_;
+		int i_67_ = arg0.pointer;
+		arg0.pointer += i_17_ * 3;
 		aByteArray2335 = new byte[i_16_];
-		StreamBuffer class4_sub11 = new StreamBuffer(aByteArray2335);
+		Buffer class4_sub11 = new Buffer(aByteArray2335);
 		class4_sub11.method236(181, 1297377380);
 		class4_sub11.method236(181, 6);
 		class4_sub11.method207(i > 1 ? 1 : 0, 2018779304);
 		class4_sub11.method207(i, 2018779304);
 		class4_sub11.method207(i_15_, 2018779304);
-		arg0.pointion = i_28_;
+		arg0.pointer = i_28_;
 		int i_68_ = 0;
 		int i_69_ = 0;
 		int i_70_ = 0;
@@ -173,8 +173,8 @@ public class Class4_Sub18 extends RSFont {
 		i_44_ = 0;
 		for (int i_75_ = 0; i_75_ < i; i_75_++) {
 			class4_sub11.method236(181, 1297379947);
-			class4_sub11.pointion += 4;
-			int i_76_ = class4_sub11.pointion;
+			class4_sub11.pointer += 4;
+			int i_76_ = class4_sub11.pointer;
 			int i_77_ = -1;
 			while_2_: do {
 				for (;;) {
@@ -285,7 +285,7 @@ public class Class4_Sub18 extends RSFont {
 				}
 				throw new RuntimeException();
 			} while (false);
-			class4_sub11.method249(class4_sub11.pointion - i_76_, -22334);
+			class4_sub11.method249(class4_sub11.pointer - i_76_, -22334);
 		}
 	}
 

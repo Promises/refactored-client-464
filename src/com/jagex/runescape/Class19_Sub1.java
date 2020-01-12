@@ -1,6 +1,7 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.audio.Effect;
+import com.jagex.runescape.io.Buffer;
 
 public class Class19_Sub1 extends Class19 {
 	public static boolean aBoolean2538 = false;
@@ -84,8 +85,8 @@ public class Class19_Sub1 extends Class19 {
 			if (arg4 != -44) {
 				method765(41, -48, (byte) 87);
 			}
-			for (Class4_Sub22 class4_sub22 = ((Class4_Sub22) StreamBuffer.aClass65_2073
-					.method1071(arg4 + -81)); class4_sub22 != null; class4_sub22 = (Class4_Sub22) StreamBuffer.aClass65_2073
+			for (Class4_Sub22 class4_sub22 = ((Class4_Sub22) Buffer.aClass65_2073
+					.method1071(arg4 + -81)); class4_sub22 != null; class4_sub22 = (Class4_Sub22) Buffer.aClass65_2073
 					.method1075(18485)) {
 				if (class4_sub22.anInt2404 != -1
 						|| class4_sub22.anIntArray2383 != null) {
@@ -127,11 +128,11 @@ public class Class19_Sub1 extends Class19 {
 						if (class4_sub22.aClass4_Sub2_Sub3_2393 != null) {
 							class4_sub22.aClass4_Sub2_Sub3_2393.method143(i_7_);
 						} else if (class4_sub22.anInt2404 >= 0) {
-							Class36 class36 = Class36.method913(
+							Effect effect = Effect.method913(
 									Class66.aClass19_Sub1_1336,
 									class4_sub22.anInt2404, 0);
-							if (class36 != null) {
-								Class4_Sub4_Sub1 class4_sub4_sub1 = class36
+							if (effect != null) {
+								Class4_Sub4_Sub1 class4_sub4_sub1 = effect
 										.method916().method177(
 												Class8.aClass8_251);
 								Class4_Sub2_Sub3 class4_sub2_sub3 = (Class4_Sub2_Sub3
@@ -150,11 +151,11 @@ public class Class19_Sub1 extends Class19 {
 						} else if (class4_sub22.anIntArray2383 != null
 								&& (class4_sub22.anInt2409 -= arg1) <= 0) {
 							int i_8_ = (int) (Math.random() * (class4_sub22.anIntArray2383).length);
-							Class36 class36 = Class36.method913(
+							Effect effect = Effect.method913(
 									Class66.aClass19_Sub1_1336,
 									(class4_sub22.anIntArray2383[i_8_]), 0);
-							if (class36 != null) {
-								Class4_Sub4_Sub1 class4_sub4_sub1 = class36
+							if (effect != null) {
+								Class4_Sub4_Sub1 class4_sub4_sub1 = effect
 										.method916().method177(
 												Class8.aClass8_251);
 								Class4_Sub2_Sub3 class4_sub2_sub3 = (Class4_Sub2_Sub3
@@ -401,11 +402,11 @@ public class Class19_Sub1 extends Class19 {
 							Class11.method672(anInt2509, anInt2513, this,
 									(byte) 0, 255, true, (byte) 98);
 						} else {
-							StreamBuffer.aCRC32_2116.reset();
-							StreamBuffer.aCRC32_2116.update(arg2, 0,
+							Buffer.aCRC32_2116.reset();
+							Buffer.aCRC32_2116.update(arg2, 0,
 									arg2.length);
-							int i = (int) StreamBuffer.aCRC32_2116.getValue();
-							StreamBuffer class4_sub11 = new StreamBuffer(
+							int i = (int) Buffer.aCRC32_2116.getValue();
+							Buffer class4_sub11 = new Buffer(
 									Class4_Sub20_Sub16.method609(-38, arg2));
 							int i_3_ = class4_sub11.get();
 							if ((i_3_ ^ 0xffffffff) != -6 && i_3_ != 6) {
@@ -437,10 +438,10 @@ public class Class19_Sub1 extends Class19 {
 										(byte) -127);
 							}
 						} else {
-							StreamBuffer.aCRC32_2116.reset();
-							StreamBuffer.aCRC32_2116.update(arg2, 0, -2
+							Buffer.aCRC32_2116.reset();
+							Buffer.aCRC32_2116.update(arg2, 0, -2
 									+ arg2.length);
-							int i = (int) StreamBuffer.aCRC32_2116.getValue();
+							int i = (int) Buffer.aCRC32_2116.getValue();
 							int i_5_ = (((0xff & arg2[-2 + arg2.length]) << 793596392) + (arg2[-1
 									+ arg2.length] & 0xff));
 							if (anIntArray496[arg1] != i

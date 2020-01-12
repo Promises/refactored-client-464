@@ -1,11 +1,11 @@
 package com.jagex.runescape;
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 import com.jagex.runescape.util.Signlink;
 
 import java.awt.Component;
 
 public class Class40 {
-	public static StreamBuffer aClass4_Sub11_783;
+	public static Buffer aClass4_Sub11_783;
 	public static Class65[][][] aClass65ArrayArrayArray787 = new Class65[4][104][104];
 	public static int anInt780 = -1;
 	public static int anInt781 = 0;

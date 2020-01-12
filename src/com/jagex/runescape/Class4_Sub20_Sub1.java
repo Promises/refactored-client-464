@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 	public static JagexString aJagexString_2731;
@@ -246,7 +246,7 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 		}
 	}
 
-	public void method327(StreamBuffer arg0, int arg1, int arg2) {
+	public void method327(Buffer arg0, int arg1, int arg2) {
 		anInt2749++;
 		if (arg1 >= 91) {
 			if (arg2 != 1) {
@@ -256,14 +256,14 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 					int i = arg0.get();
 					if (i > 0) {
 						if (anIntArray2723 != null
-								&& !StreamBuffer.aBoolean2066)
-							arg0.pointion += 2 * i;
+								&& !Buffer.aBoolean2066)
+							arg0.pointer += 2 * i;
 						else {
 							anIntArray2723 = new int[i];
 							anIntArray2707 = null;
 							for (int i_1_ = 0; i > i_1_; i_1_++)
 								anIntArray2723[i_1_] = arg0
-										.method209((byte) -118);
+										.read_u16((byte) -118);
 						}
 					}
 				} else if (arg2 == 14)
@@ -295,12 +295,12 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 														aBoolean2712 = false;
 													else if ((arg2 ^ 0xffffffff) == -66)
 														anInt2717 = (arg0
-																.method209((byte) -112));
+																.read_u16((byte) -112));
 													else if (arg2 != 66) {
 														if (arg2 != 67) {
 															if (arg2 == 68)
 																anInt2702 = (arg0
-																		.method209((byte) -108));
+																		.read_u16((byte) -108));
 															else if (arg2 == 69)
 																anInt2758 = (arg0
 																		.get());
@@ -318,11 +318,11 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 																else if (arg2 != 75) {
 																	if (arg2 == 77) {
 																		anInt2745 = arg0
-																				.method209((byte) -115);
+																				.read_u16((byte) -115);
 																		if (anInt2745 == 65535)
 																			anInt2745 = -1;
 																		anInt2710 = arg0
-																				.method209((byte) -121);
+																				.read_u16((byte) -121);
 																		if ((anInt2710 ^ 0xffffffff) == -65536)
 																			anInt2710 = -1;
 																		int i = arg0
@@ -330,20 +330,20 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 																		anIntArray2732 = new int[i + 1];
 																		for (int i_2_ = 0; (i_2_ ^ 0xffffffff) >= (i ^ 0xffffffff); i_2_++) {
 																			anIntArray2732[i_2_] = arg0
-																					.method209((byte) -99);
+																					.read_u16((byte) -99);
 																			if ((anIntArray2732[i_2_] ^ 0xffffffff) == -65536)
 																				anIntArray2732[i_2_] = -1;
 																		}
 																	} else if (arg2 == 78) {
 																		anInt2756 = arg0
-																				.method209((byte) -111);
+																				.read_u16((byte) -111);
 																		anInt2743 = arg0
 																				.get();
 																	} else if ((arg2 ^ 0xffffffff) == -80) {
 																		anInt2727 = arg0
-																				.method209((byte) -107);
+																				.read_u16((byte) -107);
 																		anInt2721 = arg0
-																				.method209((byte) -120);
+																				.read_u16((byte) -120);
 																		anInt2743 = arg0
 																				.get();
 																		int i = arg0
@@ -351,7 +351,7 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 																		anIntArray2736 = new int[i];
 																		for (int i_3_ = 0; (i_3_ ^ 0xffffffff) > (i ^ 0xffffffff); i_3_++)
 																			anIntArray2736[i_3_] = arg0
-																					.method209((byte) -123);
+																					.read_u16((byte) -123);
 																	}
 																} else
 																	anInt2747 = (arg0
@@ -361,24 +361,24 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 																		.method238((byte) -67));
 														} else
 															anInt2699 = (arg0
-																	.method209((byte) -127));
+																	.read_u16((byte) -127));
 													} else
 														anInt2706 = (arg0
-																.method209((byte) -103));
+																.read_u16((byte) -103));
 												} else
 													aBoolean2696 = true;
 											} else
 												anInt2711 = (arg0
-														.method209((byte) -101));
+														.read_u16((byte) -101));
 										} else {
 											int i = arg0.get();
 											aShortArray2728 = new short[i];
 											aShortArray2737 = new short[i];
 											for (int i_4_ = 0; ((i_4_ ^ 0xffffffff) > (i ^ 0xffffffff)); i_4_++) {
 												aShortArray2737[i_4_] = (short) (arg0
-														.method209((byte) -113));
+														.read_u16((byte) -113));
 												aShortArray2728[i_4_] = (short) (arg0
-														.method209((byte) -116));
+														.read_u16((byte) -116));
 											}
 										}
 									} else {
@@ -395,7 +395,7 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 							} else
 								anInt2750 = arg0.get();
 						} else {
-							anInt2709 = arg0.method209((byte) -127);
+							anInt2709 = arg0.read_u16((byte) -127);
 							if (anInt2709 == 65535)
 								anInt2709 = -1;
 						}
@@ -408,13 +408,13 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 			} else {
 				int i = arg0.get();
 				if ((i ^ 0xffffffff) < -1) {
-					if (anIntArray2723 != null && !StreamBuffer.aBoolean2066)
-						arg0.pointion += 3 * i;
+					if (anIntArray2723 != null && !Buffer.aBoolean2066)
+						arg0.pointer += 3 * i;
 					else {
 						anIntArray2723 = new int[i];
 						anIntArray2707 = new int[i];
 						for (int i_5_ = 0; (i ^ 0xffffffff) < (i_5_ ^ 0xffffffff); i_5_++) {
-							anIntArray2723[i_5_] = arg0.method209((byte) -103);
+							anIntArray2723[i_5_] = arg0.read_u16((byte) -103);
 							anIntArray2707[i_5_] = arg0.get();
 						}
 					}
@@ -512,7 +512,7 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 			anInt2747 = anInt2741 != 0 ? 1 : 0;
 	}
 
-	public void method333(int arg0, StreamBuffer arg1) {
+	public void method333(int arg0, Buffer arg1) {
 		for (;;) {
 			int i = arg1.get();
 			if ((i ^ 0xffffffff) == -1)

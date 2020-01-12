@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class4_Sub24 extends RSFont {
 	public static Class19_Sub1 aClass19_Sub1_2451;
@@ -147,7 +147,7 @@ public class Class4_Sub24 extends RSFont {
 	public Class4_Sub24(int arg0, byte[] arg1) {
 		try {
 			anInt2436 = arg0;
-			StreamBuffer class4_sub11 = new StreamBuffer(arg1);
+			Buffer class4_sub11 = new Buffer(arg1);
 			anInt2447 = class4_sub11.get();
 			anIntArrayArray2443 = new int[anInt2447][];
 			anIntArray2444 = new int[anInt2447];

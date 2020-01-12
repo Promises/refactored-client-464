@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class61 {
 	public static Class19 aClass19_1202;
@@ -100,9 +100,9 @@ public class Class61 {
 								^ ~0x3b);
 						Class66.aClass4_Sub11_Sub1_1328
 								.method227((byte) -27, 0);
-						int i_0_ = Class66.aClass4_Sub11_Sub1_1328.pointion;
+						int i_0_ = Class66.aClass4_Sub11_Sub1_1328.pointer;
 						for (int i_1_ = 0; Class31.aClass53_690.anInt1089 > i_1_; i_1_++) {
-							if ((-i_0_ + Class66.aClass4_Sub11_Sub1_1328.pointion) >= 240)
+							if ((-i_0_ + Class66.aClass4_Sub11_Sub1_1328.pointer) >= 240)
 								break;
 							i++;
 							int i_2_ = Class31.aClass53_690.anIntArray1088[i_1_];
@@ -164,7 +164,7 @@ public class Class61 {
 						}
 						Class66.aClass4_Sub11_Sub1_1328
 								.method258(
-										Class66.aClass4_Sub11_Sub1_1328.pointion
+										Class66.aClass4_Sub11_Sub1_1328.pointer
 												- i_0_, (byte) 109);
 						if (Class31.aClass53_690.anInt1089 > i) {
 							Class31.aClass53_690.anInt1089 -= i;
@@ -337,7 +337,7 @@ public class Class61 {
 										&& (Class4_Sub20_Sub8.anInt2980 ^ 0xffffffff) < -3)
 									SceneGraph.method707(-21);
 								else if ((Class4_Sub20_Sub8.anInt2980 ^ 0xffffffff) < -1)
-									StreamBuffer.method221(0, -1
+									Buffer.method221(0, -1
 											+ Class4_Sub20_Sub8.anInt2980);
 								Class62.anInt1227 = 0;
 								Class18.anInt475 = 10;
@@ -528,16 +528,16 @@ public class Class61 {
 						do {
 							try {
 								if (Class4_Sub20_Sub17.aClass76_3189 == null
-										|| ((Class66.aClass4_Sub11_Sub1_1328.pointion) ^ 0xffffffff) >= -1)
+										|| ((Class66.aClass4_Sub11_Sub1_1328.pointer) ^ 0xffffffff) >= -1)
 									break;
 								Class4_Sub20_Sub17.aClass76_3189
 										.method1183(
-												Class66.aClass4_Sub11_Sub1_1328.pointion,
+												Class66.aClass4_Sub11_Sub1_1328.pointer,
 												0,
 												arg0 ^ 0x7d,
 												(Class66.aClass4_Sub11_Sub1_1328.byteBuffer));
 								Class4_Sub20_Sub6.anInt2903 = 0;
-								Class66.aClass4_Sub11_Sub1_1328.pointion = 0;
+								Class66.aClass4_Sub11_Sub1_1328.pointer = 0;
 							} catch (java.io.IOException ioexception) {
 								Class11.method674(-1);
 								break;

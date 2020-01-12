@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 public class Class82 {
 	public static JagexString aJagexString_1713;
@@ -89,7 +89,7 @@ public class Class82 {
 	}
 
 	public static void method1217(int arg0, int arg1, int arg2,
-                                  StreamBuffer arg3, int arg4, int arg5, int arg6, int arg7) {
+                                  Buffer arg3, int arg4, int arg5, int arg6, int arg7) {
 		try {
 			if (arg5 != -105)
 				method1217(-108, -72, -54, null, -111, 32, -17, 87);

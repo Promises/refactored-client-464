@@ -1,5 +1,5 @@
 package com.jagex.runescape;
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 
 import java.awt.Canvas;
 
@@ -38,7 +38,7 @@ public class Class4_Sub20_Sub7_Sub5 extends Class4_Sub20_Sub7 {
 			anInt3421++;
 			if (Class4_Sub20_Sub9.aClass76_3047 != null) {
 				try {
-					StreamBuffer class4_sub11 = new StreamBuffer(4);
+					Buffer class4_sub11 = new Buffer(4);
 					if (arg0 >= 26) {
 						class4_sub11.method227((byte) -27, arg1 ? 2 : 3);
 						class4_sub11.method231(0, -83);

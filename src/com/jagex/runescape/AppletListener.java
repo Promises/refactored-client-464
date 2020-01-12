@@ -1,6 +1,6 @@
 package com.jagex.runescape;
 
-import com.jagex.runescape.net.StreamBuffer;
+import com.jagex.runescape.io.Buffer;
 import com.jagex.runescape.util.Signlink;
 
 import java.awt.event.FocusEvent;
@@ -71,7 +71,7 @@ public class AppletListener implements
             anInt1452++;
             Class67.aClass19_1363 = arg2;
             Class4_Sub20_Sub6.aBoolean2914 = arg5;
-            StreamBuffer.anInt2085 = 1;
+            Buffer.anInt2085 = 1;
             Class25.anInt577 = arg3;
             if (arg1 != -2)
                 anIntArray1465 = null;
@@ -86,7 +86,7 @@ public class AppletListener implements
     }
 
     public static void method1152(int arg0, Signlink signlink, byte arg2,
-                                  StreamBuffer arg3) {
+                                  Buffer arg3) {
         try {
             anInt1462++;
             Class4_Sub6 class4_sub6 = new Class4_Sub6();
