@@ -50,7 +50,7 @@ public class Class67 {
                 int i_3_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                         .method213((byte) -114); // leshort, regionx
                 int i_4_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                        .read_u16((byte) -103); // short
+                        .read_u16(); // short
                 int i_5_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.get(); // byte
                 boolean bool = false;
                 if (((i_3_ / 8 ^ 0xffffffff) == -49 || i_3_ / 8 == 49)
@@ -61,7 +61,7 @@ public class Class67 {
                     bool = true;
                 }
                 int i_6_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                        .read_u16((byte) -103); // short
+                        .read_u16(); // short
                 Class4_Sub20_Sub5.aByteArrayArray2887 = new byte[i_0_][];
                 Class47.regionIds = new int[i_0_];
                 GameShell.regionsData = new byte[i_0_][];
@@ -135,7 +135,7 @@ public class Class67 {
                 for (int i_19_ = 0; (i_18_ ^ 0xffffffff) < (i_19_ ^ 0xffffffff); i_19_++) {
                     for (int i_20_ = 0; (i_20_ ^ 0xffffffff) > -5; i_20_++) {
                         Class4_Sub20_Sub7_Sub4.anIntArrayArray3375[i_19_][i_20_] = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                                .method219((byte) 73);
+                                .read_32((byte) 73);
                     }
                 }
                 Class47.regionIds = new int[i_18_];

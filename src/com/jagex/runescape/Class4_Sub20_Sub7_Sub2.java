@@ -200,18 +200,18 @@ public class Class4_Sub20_Sub7_Sub2 extends Class4_Sub20_Sub7 {
 		Buffer class4_sub11_63_ = new Buffer(arg0);
 		Buffer class4_sub11_64_ = new Buffer(arg0);
 		class4_sub11.pointer = arg0.length - 18;
-		int i = class4_sub11.read_u16((byte) -125);
-		int i_65_ = class4_sub11.read_u16((byte) -113);
+		int i = class4_sub11.read_u16();
+		int i_65_ = class4_sub11.read_u16();
 		int i_66_ = class4_sub11.get();
 		int i_67_ = class4_sub11.get();
 		int i_68_ = class4_sub11.get();
 		int i_69_ = class4_sub11.get();
 		int i_70_ = class4_sub11.get();
 		int i_71_ = class4_sub11.get();
-		int i_72_ = class4_sub11.read_u16((byte) -126);
-		int i_73_ = class4_sub11.read_u16((byte) -125);
-		int i_74_ = class4_sub11.read_u16((byte) -116);
-		int i_75_ = class4_sub11.read_u16((byte) -107);
+		int i_72_ = class4_sub11.read_u16();
+		int i_73_ = class4_sub11.read_u16();
+		int i_74_ = class4_sub11.read_u16();
+		int i_75_ = class4_sub11.read_u16();
 		int i_76_ = 0;
 		int i_77_ = i_76_;
 		i_76_ += i;
@@ -308,7 +308,7 @@ public class Class4_Sub20_Sub7_Sub2 extends Class4_Sub20_Sub7 {
 		class4_sub11_64_.pointer = i_80_;
 		for (int i_98_ = 0; i_98_ < i_65_; i_98_++) {
 			aShortArray3318[i_98_] = (short) class4_sub11
-					.read_u16((byte) -105);
+					.read_u16();
 			if (i_67_ == 1) {
 				int i_99_ = class4_sub11_61_.get();
 				if ((i_99_ & 0x1) == 1) {
@@ -377,9 +377,9 @@ public class Class4_Sub20_Sub7_Sub2 extends Class4_Sub20_Sub7 {
 		}
 		class4_sub11.pointer = i_86_;
 		for (int i_107_ = 0; i_107_ < i_66_; i_107_++) {
-			anIntArray3321[i_107_] = class4_sub11.read_u16((byte) -109);
-			anIntArray3328[i_107_] = class4_sub11.read_u16((byte) -112);
-			anIntArray3296[i_107_] = class4_sub11.read_u16((byte) -122);
+			anIntArray3321[i_107_] = class4_sub11.read_u16();
+			anIntArray3328[i_107_] = class4_sub11.read_u16();
+			anIntArray3296[i_107_] = class4_sub11.read_u16();
 		}
 		if (!bool)
 			aByteArray3297 = null;

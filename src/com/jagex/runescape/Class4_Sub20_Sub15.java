@@ -167,7 +167,7 @@ public class Class4_Sub20_Sub15 extends Class4_Sub20 {
 		if (arg1 != false)
 			anInt3157 = 115;
 		if ((arg0 ^ 0xffffffff) == -6)
-			anInt3151 = arg2.read_u16((byte) -118);
+			anInt3151 = arg2.read_u16();
 	}
 
 	public void method605(Buffer arg0, int arg1) {

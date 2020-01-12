@@ -181,7 +181,7 @@ public class Class4_Sub20_Sub11 extends Class4_Sub20 {
 		anInt3079++;
 		if (arg0 <= -40) {
 			if ((arg2 ^ 0xffffffff) == -3)
-				anInt3082 = arg1.read_u16((byte) -123);
+				anInt3082 = arg1.read_u16();
 		}
 	}
 }

@@ -17,7 +17,7 @@ public class Class4_Sub18 extends RSFont {
 	public Class4_Sub18(Buffer arg0) {
 		arg0.pointer = arg0.byteBuffer.length - 3;
 		int i = arg0.get();
-		int i_15_ = arg0.read_u16((byte) -126);
+		int i_15_ = arg0.read_u16();
 		int i_16_ = 14 + i * 10;
 		arg0.pointer = 0;
 		int i_17_ = 0;

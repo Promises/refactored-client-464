@@ -125,11 +125,11 @@ public class Instrument {
 		}
 		delay_time = data.readUnsignedSmart();
 		delay_feedback = data.readUnsignedSmart();
-		duration = data.read_u16((byte) -124);
-		begin = data.read_u16((byte) -112);
+		duration = data.read_u16();
+		begin = data.read_u16();
 		filter = new Filter();
 		filter_env = new Envelope();
-		filter.method1018(data, filter_env);
+		filter.decode(data, filter_env);
 	}
 
 	public int[] synthesize(int n_s, int dt) { // synthesize

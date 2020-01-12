@@ -80,7 +80,7 @@ public class Class73 {
 		}
 		if ((0x200 & arg3) != 0) {
 			arg2.anInt3226 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-					.read_u16((byte) -110); // short
+					.read_u16(); // short
 			int i = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method237(arg1
 					+ -18031); // int2
 			arg2.anInt3241 = 0;
@@ -116,7 +116,7 @@ public class Class73 {
 			arg2.anInt3224 = (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 					.method223(0) + Region.anInt134);
 			arg2.anInt3281 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-					.read_u16((byte) -114) + Region.anInt134;
+					.read_u16() + Region.anInt134;
 			arg2.anInt3245 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.getC();
 			arg2.anInt3236 = 0;
 			arg2.anInt3228 = 1;

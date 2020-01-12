@@ -295,20 +295,20 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 					if (arg1 < 50 || (arg1 ^ 0xffffffff) <= -61) {
 						if (arg1 >= 60 && arg1 < 70)
 							anIntArray3105[arg1 - 60] = arg2
-									.read_u16((byte) -122);
+									.read_u16();
 					} else
 						aShortArray3109[-50 + arg1] = (short) arg2
-								.read_u16((byte) -114);
+								.read_u16();
 				} else
 					aShortArray3104[arg1 + -40] = (short) arg2
-							.read_u16((byte) -125);
+							.read_u16();
 			} else
 				aBoolean3117 = true;
 		} else {
 			int i = arg2.get();
 			anIntArray3114 = new int[i];
 			for (int i_0_ = 0; (i_0_ ^ 0xffffffff) > (i ^ 0xffffffff); i_0_++)
-				anIntArray3114[i_0_] = arg2.read_u16((byte) -122);
+				anIntArray3114[i_0_] = arg2.read_u16();
 		}
 		if (arg0 != 34)
 			method592(true);

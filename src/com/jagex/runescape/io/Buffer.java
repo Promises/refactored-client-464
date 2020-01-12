@@ -1721,17 +1721,14 @@ public class Buffer extends RSFont {
 		}
 	}
 
-	public int read_u16(byte arg0) {
+	public int read_u16() {
 		try {
-			if (arg0 >= -98)
-				method257(-47, null, 97, 16, 50, 40, -107, 76, 42, null);
 			anInt2072++;
 			pointer += 2;
 			return ((byteBuffer[-1 + pointer] & 0xff) + (byteBuffer[pointer
 					+ -2] << -315536632 & 0xff00));
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.V("
-					+ arg0 + ')');
+			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.V()");
 		}
 	}
 
@@ -1794,7 +1791,7 @@ public class Buffer extends RSFont {
 			int i = 0xff & byteBuffer[pointer];
 			anInt2113++;
 			if ((i ^ 0xffffffff) <= -129)
-				return -32768 + read_u16((byte) -102);
+				return -32768 + read_u16();
 			return get();
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
@@ -1805,8 +1802,8 @@ public class Buffer extends RSFont {
 	public long readLong(byte arg0) {
 		try {
 			anInt2099++;
-			long l = method219((byte) 73) & 0xffffffffL;
-			long l_0_ = method219((byte) 73) & 0xffffffffL;
+			long l = read_32((byte) 73) & 0xffffffffL;
+			long l_0_ = read_32((byte) 73) & 0xffffffffL;
 			if (arg0 != 33)
 				StringUtilities.aJagexString_2115 = null;
 			return (l << -1181163488) - -l_0_;
@@ -1837,7 +1834,7 @@ public class Buffer extends RSFont {
 		}
 	}
 
-	public int method219(byte arg0) {
+	public int read_32(byte arg0) {
 		try {
 			pointer += 4;
 			anInt2087++;
@@ -2203,9 +2200,9 @@ public class Buffer extends RSFont {
 			anInt2094++;
 			pointer = arg0;
 			for (int i_15_ = 0; i_14_ > i_15_; i_15_++) {
-				int i_16_ = method219((byte) 73);
+				int i_16_ = read_32((byte) 73);
 				int i_17_ = -957401312;
-				int i_18_ = method219((byte) 73);
+				int i_18_ = read_32((byte) 73);
 				int i_19_ = -1640531527;
 				int i_20_ = 32;
 				while (i_20_-- > 0) {
@@ -2394,10 +2391,10 @@ public class Buffer extends RSFont {
 		try {
 			anInt2053++;
 			if (arg0 > -54)
-				method219((byte) 15);
+				read_32((byte) 15);
 			int i = byteBuffer[pointer] & 0xff;
 			if ((i ^ 0xffffffff) <= -129)
-				return -49152 + read_u16((byte) -114);
+				return -49152 + read_u16();
 			return get() - 64;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.Q("

@@ -22,14 +22,14 @@ public class Class4_Sub19 extends RSFont {
 	public int[] anIntArray2347;
 
 	public Class4_Sub19(Buffer arg0) {
-		anInt2337 = arg0.read_u16((byte) -117);
+		anInt2337 = arg0.read_u16();
 		aBoolean2343 = arg0.get() == 1;
 		int i = arg0.get();
 		if (i < 1 || i > 4)
 			throw new RuntimeException();
 		anIntArray2347 = new int[i];
 		for (int i_30_ = 0; i_30_ < i; i_30_++)
-			anIntArray2347[i_30_] = arg0.read_u16((byte) -101);
+			anIntArray2347[i_30_] = arg0.read_u16();
 		if (i > 1) {
 			anIntArray2338 = new int[i - 1];
 			for (int i_31_ = 0; i_31_ < i - 1; i_31_++)
@@ -42,7 +42,7 @@ public class Class4_Sub19 extends RSFont {
 		}
 		anIntArray2345 = new int[i];
 		for (int i_33_ = 0; i_33_ < i; i_33_++)
-			anIntArray2345[i_33_] = arg0.method219((byte) 73);
+			anIntArray2345[i_33_] = arg0.read_32((byte) 73);
 		anInt2342 = arg0.get();
 		anInt2341 = arg0.get();
 		anIntArray2344 = null;

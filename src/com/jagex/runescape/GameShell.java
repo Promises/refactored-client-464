@@ -291,7 +291,7 @@ public abstract class GameShell extends Applet implements Runnable,
         }
     }
 
-    public abstract void method16(int i);
+//    public abstract void method16(int i); // Disabled because i cannot find a reason this is ran at all
 
     public abstract void method17(int i);
 

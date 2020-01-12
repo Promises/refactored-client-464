@@ -128,10 +128,10 @@ public class Class4_Sub20_Sub17 extends Class4_Sub20 {
 							Class74.aClass4_Sub11_1516.pointer = 0;
 							int i_10_ = Class74.aClass4_Sub11_1516.get();
 							int i_11_ = Class74.aClass4_Sub11_1516
-									.read_u16((byte) -116);
+									.read_u16();
 							int i_12_ = Class74.aClass4_Sub11_1516.get();
 							int i_13_ = Class74.aClass4_Sub11_1516
-									.method219((byte) 73);
+									.read_32((byte) 73);
 							long l_14_ = (i_11_ + (i_10_ << 2045283280));
 							Class4_Sub20_Sub10 class4_sub20_sub10 = ((Class4_Sub20_Sub10) RSCanvas.aClass16_47
 									.method725((byte) 117, l_14_));
@@ -193,9 +193,9 @@ public class Class4_Sub20_Sub17 extends Class4_Sub20 {
 									if (class19_sub1 != null) {
 										Class4_Sub20.aClass4_Sub11_2363.pointer = 5 + i_19_ * 8;
 										int i_20_ = Class4_Sub20.aClass4_Sub11_2363
-												.method219((byte) 73);
+												.read_32((byte) 73);
 										int i_21_ = Class4_Sub20.aClass4_Sub11_2363
-												.method219((byte) 73);
+												.read_32((byte) 73);
 										class19_sub1.method760(i_21_, 255,
 												i_20_);
 									}
@@ -504,17 +504,17 @@ public class Class4_Sub20_Sub17 extends Class4_Sub20 {
 		try {
 			if (arg1 == false) {
 				if (arg0 == 1) {
-					int i = arg2.read_u16((byte) -110);
+					int i = arg2.read_u16();
 					anIntArray3200 = new int[i];
 					for (int i_23_ = 0; i_23_ < i; i_23_++)
-						anIntArray3200[i_23_] = arg2.read_u16((byte) -113);
+						anIntArray3200[i_23_] = arg2.read_u16();
 					anIntArray3211 = new int[i];
 					for (int i_24_ = 0; i > i_24_; i_24_++)
-						anIntArray3211[i_24_] = arg2.read_u16((byte) -104);
+						anIntArray3211[i_24_] = arg2.read_u16();
 					for (int i_25_ = 0; i > i_25_; i_25_++)
-						anIntArray3211[i_25_] = ((arg2.read_u16((byte) -103) << 96142256) + anIntArray3211[i_25_]);
+						anIntArray3211[i_25_] = ((arg2.read_u16() << 96142256) + anIntArray3211[i_25_]);
 				} else if ((arg0 ^ 0xffffffff) == -3)
-					anInt3202 = arg2.read_u16((byte) -109);
+					anInt3202 = arg2.read_u16();
 				else if (arg0 == 3) {
 					int i = arg2.get();
 					anIntArray3205 = new int[1 + i];
@@ -525,9 +525,9 @@ public class Class4_Sub20_Sub17 extends Class4_Sub20 {
 					aBoolean3186 = true;
 				else if ((arg0 ^ 0xffffffff) != -6) {
 					if (arg0 == 6)
-						anInt3196 = arg2.read_u16((byte) -108);
+						anInt3196 = arg2.read_u16();
 					else if ((arg0 ^ 0xffffffff) == -8)
-						anInt3201 = arg2.read_u16((byte) -100);
+						anInt3201 = arg2.read_u16();
 					else if ((arg0 ^ 0xffffffff) != -9) {
 						if (arg0 == 9)
 							anInt3183 = arg2.get();
@@ -539,10 +539,10 @@ public class Class4_Sub20_Sub17 extends Class4_Sub20 {
 								anIntArray3190 = new int[i];
 								for (int i_27_ = 0; (i ^ 0xffffffff) < (i_27_ ^ 0xffffffff); i_27_++)
 									anIntArray3190[i_27_] = arg2
-											.read_u16((byte) -118);
+											.read_u16();
 								for (int i_28_ = 0; (i ^ 0xffffffff) < (i_28_ ^ 0xffffffff); i_28_++)
 									anIntArray3190[i_28_] = ((arg2
-											.read_u16((byte) -110) << -1272687728) + anIntArray3190[i_28_]);
+											.read_u16() << -1272687728) + anIntArray3190[i_28_]);
 							} else if ((arg0 ^ 0xffffffff) == -14) {
 								int i = arg2.get();
 								anIntArray3199 = new int[i];

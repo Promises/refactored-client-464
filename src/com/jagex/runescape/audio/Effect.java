@@ -7,10 +7,32 @@ import com.jagex.runescape.io.Buffer;
 public class Effect {
 
 	public Instrument[] instruments;
-	public int anInt756;
+	public int loop_begin;
 
-	public int anInt757;
+	public int loop_end;
 
+
+    public int delay() {
+        int offset = 0x98967f;
+        for (int k = 0; k < 10; k++) {
+            if (instruments[k] != null
+                    && instruments[k].begin / 20 < offset)
+                offset = instruments[k].begin / 20;
+        }
+        if (loop_begin < loop_end && loop_begin / 20 < offset)
+            offset = loop_begin / 20;
+        if (offset == 0x98967f || offset == 0)
+            return 0;
+        for (int l = 0; l < 10; l++) {
+            if (instruments[l] != null)
+                instruments[l].begin -= offset * 20;
+        }
+        if (loop_begin < loop_end) {
+            loop_begin -= offset * 20;
+            loop_end -= offset * 20;
+        }
+        return offset;
+    }
 
 	public static Effect method913(Class19 arg0, int arg1, int arg2) {
 		byte[] is = arg0.method746(arg1, (byte) 102, arg2);
@@ -33,30 +55,8 @@ public class Effect {
 				instruments[i].decode(arg0);
 			}
 		}
-		anInt756 = arg0.read_u16((byte) -118);
-		anInt757 = arg0.read_u16((byte) -116);
-	}
-
-	public int method914() {
-		int i = 9999999;
-		for (int i_0_ = 0; i_0_ < 10; i_0_++) {
-			if (instruments[i_0_] != null
-					&& instruments[i_0_].begin / 20 < i)
-				i = instruments[i_0_].begin / 20;
-		}
-		if (anInt756 < anInt757 && anInt756 / 20 < i)
-			i = anInt756 / 20;
-		if (i == 9999999 || i == 0)
-			return 0;
-		for (int i_1_ = 0; i_1_ < 10; i_1_++) {
-			if (instruments[i_1_] != null)
-				instruments[i_1_].begin -= i * 20;
-		}
-		if (anInt756 < anInt757) {
-			anInt756 -= i * 20;
-			anInt757 -= i * 20;
-		}
-		return i;
+		loop_begin = arg0.read_u16();
+		loop_end = arg0.read_u16();
 	}
 
 	public byte[] method915() {
@@ -89,7 +89,7 @@ public class Effect {
 
 	public Class4_Sub4_Sub1 method916() {
 		byte[] is = method915();
-		return new Class4_Sub4_Sub1(22050, is, 22050 * anInt756 / 1000,
-				22050 * anInt757 / 1000);
+		return new Class4_Sub4_Sub1(22050, is, 22050 * loop_begin / 1000,
+				22050 * loop_end / 1000);
 	}
 }

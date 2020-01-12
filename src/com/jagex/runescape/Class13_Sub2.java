@@ -290,7 +290,7 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
                                     30, 0, 2);
                     Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.pointer = 0;
                     Class4_Sub20_Sub15.anInt3157 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                            .read_u16((byte) -108);
+                            .read_u16();
                     RSFont.anInt148 = 10;
                 }
                 if (RSFont.anInt148 == 10) {

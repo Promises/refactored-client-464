@@ -121,11 +121,11 @@ public class Class81 {
 						if (is != null) {
 							Buffer class4_sub11 = new Buffer(is);
 							Class37.anInt760 = class4_sub11
-									.read_u16((byte) -126);
+									.read_u16();
 							Player.aClass9Array3579 = new Class9[Class37.anInt760];
 							for (int i = 0; ((Class37.anInt760 ^ 0xffffffff) < (i ^ 0xffffffff)); i++) {
 								Class9 class9 = (Player.aClass9Array3579[i] = new Class9());
-								int i_0_ = class4_sub11.read_u16((byte) -121);
+								int i_0_ = class4_sub11.read_u16();
 								class9.anInt279 = i_0_ & 0x7fff;
 								class9.aBoolean267 = (i_0_ & 0x8000 ^ 0xffffffff) != -1;
 								class9.aJagexString_264 = class4_sub11

@@ -160,7 +160,7 @@ public class Class58 {
 						class4_sub20_sub7_sub1_sub2.anInt3292 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
 								.method223(0);
 						class4_sub20_sub7_sub1_sub2.anInt3231 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-								.read_u16((byte) -116);
+								.read_u16();
 					}
 					if ((i_5_ & 0x10 ^ 0xffffffff) != -1) {
 						int i_10_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
@@ -177,7 +177,7 @@ public class Class58 {
 					}
 					if ((0x4 & i_5_) != 0) {
 						class4_sub20_sub7_sub1_sub2.anInt3293 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-								.read_u16((byte) -99);
+								.read_u16();
 						if (class4_sub20_sub7_sub1_sub2.anInt3293 == 65535)
 							class4_sub20_sub7_sub1_sub2.anInt3293 = -1;
 					}
@@ -200,7 +200,7 @@ public class Class58 {
 								.method1155(
 										arg0 ^ 0x30,
 										Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-												.read_u16((byte) -119));
+												.read_u16());
 						class4_sub20_sub7_sub1_sub2.anInt3246 = (class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617.anInt2800);
 						class4_sub20_sub7_sub1_sub2.anInt3251 = (class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617.anInt2796);
 						class4_sub20_sub7_sub1_sub2.anInt3272 = (class4_sub20_sub7_sub1_sub2.aClass4_Sub20_Sub3_3617.anInt2801);

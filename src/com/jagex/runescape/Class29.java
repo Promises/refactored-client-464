@@ -41,14 +41,14 @@ public class Class29 {
 	public void method857(byte[] arg0) {
 		aClass4_Sub11_642.byteBuffer = arg0;
 		aClass4_Sub11_642.pointer = 10;
-		int i = aClass4_Sub11_642.read_u16((byte) -101);
-		anInt645 = aClass4_Sub11_642.read_u16((byte) -101);
+		int i = aClass4_Sub11_642.read_u16();
+		anInt645 = aClass4_Sub11_642.read_u16();
 		anInt646 = 500000;
 		anIntArray648 = new int[i];
 		int i_0_ = 0;
 		while (i_0_ < i) {
-			int i_1_ = aClass4_Sub11_642.method219((byte) 73);
-			int i_2_ = aClass4_Sub11_642.method219((byte) 73);
+			int i_1_ = aClass4_Sub11_642.read_32((byte) 73);
+			int i_2_ = aClass4_Sub11_642.read_32((byte) 73);
 			if (i_1_ == 1297379947) {
 				anIntArray648[i_0_] = aClass4_Sub11_642.pointer;
 				i_0_++;

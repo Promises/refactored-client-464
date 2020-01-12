@@ -222,7 +222,7 @@ public abstract class Class19 {
 				for (int i_11_ = 0; (i_11_ ^ 0xffffffff) > (i_9_ ^ 0xffffffff); i_11_++) {
 					int i_12_ = 0;
 					for (int i_13_ = 0; (i ^ 0xffffffff) < (i_13_ ^ 0xffffffff); i_13_++) {
-						i_12_ += class4_sub11.method219((byte) 73);
+						i_12_ += class4_sub11.read_32((byte) 73);
 						is_10_[i_13_] += i_12_;
 					}
 				}
@@ -236,7 +236,7 @@ public abstract class Class19 {
 				for (int i_17_ = 0; (i_9_ ^ 0xffffffff) < (i_17_ ^ 0xffffffff); i_17_++) {
 					int i_18_ = 0;
 					for (int i_19_ = 0; i > i_19_; i_19_++) {
-						i_18_ += class4_sub11.method219((byte) 73);
+						i_18_ += class4_sub11.read_32((byte) 73);
 						Class21.method777(is_7_, i_16_, is_14_[i_19_],
 								is_10_[i_19_], i_18_);
 						is_10_[i_19_] += i_18_;
@@ -567,15 +567,15 @@ public abstract class Class19 {
 			throw new RuntimeException("Incorrect JS5 protocol number: " + i);
 		}
 		if (i >= 6) {
-			class4_sub11.method219((byte) 73);
+			class4_sub11.read_32((byte) 73);
 		}
 		int i_25_ = class4_sub11.get();
 		int i_26_ = -1;
 		int i_27_ = 0;
-		anInt526 = class4_sub11.read_u16((byte) -111);
+		anInt526 = class4_sub11.read_u16();
 		anIntArray518 = new int[anInt526];
 		for (int i_28_ = 0; i_28_ < anInt526; i_28_++) {
-			anIntArray518[i_28_] = i_27_ += class4_sub11.read_u16((byte) -127);
+			anIntArray518[i_28_] = i_27_ += class4_sub11.read_u16();
 			if ((anIntArray518[i_28_] ^ 0xffffffff) < (i_26_ ^ 0xffffffff)) {
 				i_26_ = anIntArray518[i_28_];
 			}
@@ -593,21 +593,21 @@ public abstract class Class19 {
 			anIntArray512 = new int[1 + i_26_];
 			for (int i_29_ = 0; anInt526 > i_29_; i_29_++) {
 				anIntArray512[anIntArray518[i_29_]] = class4_sub11
-						.method219((byte) 73);
+						.read_32((byte) 73);
 			}
 			aClass62_521 = new Class62(anIntArray512);
 		}
 		for (int i_30_ = 0; (i_30_ ^ 0xffffffff) > (anInt526 ^ 0xffffffff); i_30_++) {
 			anIntArray496[anIntArray518[i_30_]] = class4_sub11
-					.method219((byte) 73);
+					.read_32((byte) 73);
 		}
 		for (int i_31_ = 0; i_31_ < anInt526; i_31_++) {
 			anIntArray528[anIntArray518[i_31_]] = class4_sub11
-					.method219((byte) 73);
+					.read_32((byte) 73);
 		}
 		for (int i_32_ = 0; (i_32_ ^ 0xffffffff) > (anInt526 ^ 0xffffffff); i_32_++) {
 			anIntArray510[anIntArray518[i_32_]] = class4_sub11
-					.read_u16((byte) -101);
+					.read_u16();
 		}
 		for (int i_33_ = 0; anInt526 > i_33_; i_33_++) {
 			i_27_ = 0;
@@ -617,7 +617,7 @@ public abstract class Class19 {
 			anIntArrayArray493[i_34_] = new int[i_36_];
 			for (int i_37_ = 0; i_37_ < i_36_; i_37_++) {
 				int i_38_ = (anIntArrayArray493[i_34_][i_37_] = i_27_ += class4_sub11
-						.read_u16((byte) -119));
+						.read_u16());
 				if ((i_38_ ^ 0xffffffff) < (i_35_ ^ 0xffffffff)) {
 					i_35_ = i_38_;
 				}
@@ -633,7 +633,7 @@ public abstract class Class19 {
 				anIntArrayArray527[i_40_] = new int[anObjectArrayArray487[i_40_].length];
 				for (int i_42_ = 0; (i_41_ ^ 0xffffffff) < (i_42_ ^ 0xffffffff); i_42_++) {
 					anIntArrayArray527[i_40_][anIntArrayArray493[i_40_][i_42_]] = class4_sub11
-							.method219((byte) 73);
+							.read_32((byte) 73);
 				}
 				aClass62Array523[i_40_] = new Class62(anIntArrayArray527[i_40_]);
 			}

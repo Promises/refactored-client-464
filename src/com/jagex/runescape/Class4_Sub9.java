@@ -424,15 +424,15 @@ public class Class4_Sub9 extends RSFont {
 
 	public void method192(byte[] arg0) {
 		Buffer class4_sub11 = new Buffer(arg0);
-		anInt1990 = class4_sub11.method219((byte) 73);
-		anInt2011 = class4_sub11.method219((byte) 73);
-		anInt2007 = class4_sub11.method219((byte) 73);
-		anInt1998 = class4_sub11.method219((byte) 73);
+		anInt1990 = class4_sub11.read_32((byte) 73);
+		anInt2011 = class4_sub11.read_32((byte) 73);
+		anInt2007 = class4_sub11.read_32((byte) 73);
+		anInt1998 = class4_sub11.read_32((byte) 73);
 		if (anInt1998 < 0) {
 			anInt1998 = anInt1998 ^ 0xffffffff;
 			aBoolean1985 = true;
 		}
-		int i = class4_sub11.method219((byte) 73);
+		int i = class4_sub11.read_32((byte) 73);
 		aByteArrayArray1987 = new byte[i][];
 		for (int i_76_ = 0; i_76_ < i; i_76_++) {
 			int i_77_ = 0;

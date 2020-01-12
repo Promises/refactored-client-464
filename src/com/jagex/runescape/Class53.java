@@ -77,7 +77,7 @@ public class Class53 implements Runnable {
 								Class4_Sub6.anIntArray1915[i], 0);
 						if (effect == null)
 							continue;
-						Class25.anIntArray593[i] += effect.method914();
+						Class25.anIntArray593[i] += effect.delay();
 						Class48.aEffectArray974[i] = effect;
 					}
 					if (Class25.anIntArray593[i] < 0) {

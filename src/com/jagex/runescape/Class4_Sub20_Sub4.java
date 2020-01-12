@@ -116,7 +116,7 @@ public class Class4_Sub20_Sub4 extends Class4_Sub20 {
 	public void method356(int arg0, Buffer arg1, int arg2) {
 		anInt2856++;
 		if (arg2 == (arg0 ^ 0xffffffff)) {
-			anInt2862 = arg1.read_u16((byte) -113);
+			anInt2862 = arg1.read_u16();
 			anInt2865 = arg1.get();
 			anInt2846 = arg1.get();
 		}

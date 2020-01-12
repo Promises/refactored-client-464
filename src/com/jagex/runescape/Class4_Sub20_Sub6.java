@@ -226,10 +226,10 @@ public class Class4_Sub20_Sub6 extends Class4_Sub20 {
 		anInt2924++;
 		if ((arg2 ^ 0xffffffff) != -2) {
 			if ((arg2 ^ 0xffffffff) == -3)
-				anInt2909 = arg1.read_u16((byte) -128);
+				anInt2909 = arg1.read_u16();
 			else if ((arg2 ^ 0xffffffff) != -5) {
 				if (arg2 == 5)
-					anInt2898 = arg1.read_u16((byte) -105);
+					anInt2898 = arg1.read_u16();
 				else if (arg2 != 6) {
 					if ((arg2 ^ 0xffffffff) != -8) {
 						if (arg2 == 8)
@@ -238,18 +238,18 @@ public class Class4_Sub20_Sub6 extends Class4_Sub20 {
 								|| (arg2 ^ 0xffffffff) <= -51) {
 							if ((arg2 ^ 0xffffffff) <= -51 && arg2 < 60)
 								aShortArray2925[-50 + arg2] = (short) arg1
-										.read_u16((byte) -122);
+										.read_u16();
 						} else
 							aShortArray2910[-40 + arg2] = (short) arg1
-									.read_u16((byte) -125);
+									.read_u16();
 					} else
 						anInt2912 = arg1.get();
 				} else
-					anInt2913 = arg1.read_u16((byte) -117);
+					anInt2913 = arg1.read_u16();
 			} else
-				anInt2901 = arg1.read_u16((byte) -104);
+				anInt2901 = arg1.read_u16();
 		} else
-			anInt2930 = arg1.read_u16((byte) -104);
+			anInt2930 = arg1.read_u16();
 		if (arg0 != 32767)
 			anInt2913 = -23;
 	}
