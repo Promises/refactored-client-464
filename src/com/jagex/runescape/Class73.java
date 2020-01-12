@@ -180,7 +180,7 @@ public class Class73 {
 							Class43.method955(
                                     jagexString,
 									(Class4_Sub24.method639((new JagexString[] {
-											Class48.aJagexString_986,
+											StringUtilities.aJagexString_986,
 											arg2.aJagexString_3593}), arg1
 											^ ~0x4544)), (byte) 126, 1);
 						else

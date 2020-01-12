@@ -4,37 +4,14 @@ public class Class4_Sub20_Sub10 extends Class4_Sub20 {
 	public static byte[][][] aByteArrayArrayArray3054;
 	public static byte[][][] aByteArrayArrayArray3065;
 	public static Class19 aClass19_3062;
-	public static JagexString aJagexString_3056;
-	public static JagexString aJagexString_3058;
-	public static JagexString aJagexString_3059;
-	public static JagexString aJagexString_3067;
-	public static JagexString aJagexString_3069;
-	public static JagexString aJagexString_3071;
-	public static JagexString aJagexString_3072;
 	public static RSInterface aClass4_Sub13_3064;
-	public static long aLong3063;
-	public static int anInt3053;
-	public static int anInt3055;
+	public static long aLong3063 = 0L;
+	public static int anInt3053 = 1;
+	public static int anInt3055 = 0;
 	public static int anInt3057 = 0;
-	public static int anInt3060;
-	public static int anInt3066;
+	public static int anInt3060 = 0;
+	public static int anInt3066 = 0;
 	public static int anInt3068;
-	static {
-		aJagexString_3056 = JagexString.getRs2PreparedString("mapedge");
-		anInt3055 = 0;
-		anInt3060 = 0;
-		aJagexString_3058 = JagexString.getRs2PreparedString("Welcome to RuneScape"
-        );
-		aJagexString_3059 = JagexString.getRs2PreparedString(
-				" is already on your ignore list");
-		aLong3063 = 0L;
-		anInt3066 = 0;
-		aJagexString_3067 = aJagexString_3059;
-		aJagexString_3069 = aJagexString_3058;
-		aJagexString_3071 = JagexString.getRs2PreparedString("event_opbase");
-		anInt3053 = 1;
-		aJagexString_3072 = JagexString.getRs2PreparedString("<)4col>");
-	}
 
 	public static void method482(boolean arg0, long arg1) {
 		do {
@@ -59,18 +36,16 @@ public class Class4_Sub20_Sub10 extends Class4_Sub20 {
 	public static void method483(byte arg0) {
 		try {
 			aClass19_3062 = null;
-			aJagexString_3058 = null;
-			aJagexString_3071 = null;
+			StringUtilities.aJagexString_3071 = null;
 			aByteArrayArrayArray3065 = null;
-			aJagexString_3069 = null;
-			aJagexString_3067 = null;
+			StringUtilities.aJagexString_3069 = null;
+			StringUtilities.aJagexString_3067 = null;
 			aClass4_Sub13_3064 = null;
 			if (arg0 >= -40)
 				method482(true, -36L);
-			aJagexString_3072 = null;
-			aJagexString_3056 = null;
+			StringUtilities.aJagexString_3072 = null;
+			StringUtilities.aJagexString_3056 = null;
 			aByteArrayArrayArray3054 = null;
-			aJagexString_3059 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ma.A("
 					+ arg0 + ')');

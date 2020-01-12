@@ -79,7 +79,7 @@ public class Class34 implements Interface2 {
             if (arg1.method808(RS2Font.aJagexString_2764, (byte) -95)) {
                 return 1;
             }
-            if (arg1.method808(Class4_Sub20_Sub4.aJagexString_2855, (byte) -95)) {
+            if (arg1.method808(StringUtilities.aJagexString_2855, (byte) -95)) {
                 return 1;
             }
             if (arg1.method808(Class78.aJagexString_1605, (byte) -95)) {
@@ -88,7 +88,7 @@ public class Class34 implements Interface2 {
             if (arg1.method808(StringUtilities.aJagexString_309, (byte) -95)) {
                 return 2;
             }
-            if (arg1.method808(Class46.aJagexString_930, (byte) -95)) {
+            if (arg1.method808(StringUtilities.aJagexString_930, (byte) -95)) {
                 return 3;
             }
             if (arg1.method808(Npc.aJagexString_3620,

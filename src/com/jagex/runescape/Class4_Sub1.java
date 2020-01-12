@@ -5,28 +5,15 @@ import com.jagex.runescape.io.Buffer;
 public class Class4_Sub1 extends RSFont {
 	public static Class19_Sub1 aClass19_Sub1_1861;
 	public static Class19_Sub1 aClass19_Sub1_1863;
-	public static JagexString aJagexString_1856;
-	public static JagexString aJagexString_1868;
-	public static JagexString aJagexString_1869;
-	public static JagexString aJagexString_1870;
-	public static Class4_Sub11_Sub1 aClass4_Sub11_Sub1_1854;
+	public static Class4_Sub11_Sub1 aClass4_Sub11_Sub1_1854 = new Class4_Sub11_Sub1(5000);
 	public static int anInt1855;
 	public static int anInt1857;
-	public static int anInt1859;
+	public static int anInt1859 = 0;
 	public static int anInt1860;
 	public static int anInt1864;
 	public static int anInt1865;
 	public static int anInt1867;
 	public static int[] anIntArray1862 = new int[500];
-	static {
-		anInt1859 = 0;
-		aJagexString_1856 = JagexString.getRs2PreparedString("<col=ff3000>");
-		aJagexString_1868 = JagexString.getRs2PreparedString(" )2> ");
-		aClass4_Sub11_Sub1_1854 = new Class4_Sub11_Sub1(5000);
-		aJagexString_1870 = JagexString.getRs2PreparedString(
-				"go back to the main RuneScape webpage");
-		aJagexString_1869 = aJagexString_1870;
-	}
 
 	public static void method75(int arg0, Class4_Sub2 arg1) {
 		anInt1855++;
@@ -43,13 +30,12 @@ public class Class4_Sub1 extends RSFont {
 	public static void method76(byte arg0) {
 		try {
 			aClass19_Sub1_1863 = null;
-			aJagexString_1869 = null;
+			StringUtilities.aJagexString_1869 = null;
 			aClass4_Sub11_Sub1_1854 = null;
 			if (arg0 != 95)
 				method76((byte) -93);
-			aJagexString_1868 = null;
-			aJagexString_1870 = null;
-			aJagexString_1856 = null;
+			StringUtilities.aJagexString_1868 = null;
+			StringUtilities.aJagexString_1856 = null;
 			aClass19_Sub1_1861 = null;
 			anIntArray1862 = null;
 		} catch (RuntimeException runtimeexception) {

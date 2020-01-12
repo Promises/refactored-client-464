@@ -133,7 +133,7 @@ public class Class65 {
 									-842));
 				}
 				for (;;) {
-					int i = arg0.method803(Class4_Sub20_Sub17.aJagexString_3197,
+					int i = arg0.method803(StringUtilities.aJagexString_3197,
 							(byte) 120);
 					if ((i ^ 0xffffffff) == 0)
 						break;

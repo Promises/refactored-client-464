@@ -2,13 +2,6 @@ package com.jagex.runescape;
 
 public abstract class Actor extends Class4_Sub20_Sub7 {
 	public static boolean aBoolean3218;
-	public static JagexString aJagexString_3227 = JagexString.getRs2PreparedString("Checking for updates )2 ");
-	public static JagexString aJagexString_3234 = aJagexString_3227;
-	public static JagexString aJagexString_3238 = JagexString.getRs2PreparedString("Ihr Spielkonto wird bereits benutzt)3");
-	public static JagexString aJagexString_3243 = JagexString.getRs2PreparedString("lila:");
-	public static JagexString aJagexString_3284 = JagexString.getRs2PreparedString("mapfunction");
-	public static JagexString aJagexString_3285 = JagexString.getRs2PreparedString(")4slr)3ws?order=LPWM");
-	public static JagexString aJagexString_3294 = JagexString.getRs2PreparedString("m");
 	public static Class4_Sub20_Sub12_Sub1 aClass4_Sub20_Sub12_Sub1_3260;
 	public static Class4_Sub20_Sub12_Sub1 aClass4_Sub20_Sub12_Sub1_3288;
 	public static int runEnergy = 0;
@@ -21,7 +14,6 @@ public abstract class Actor extends Class4_Sub20_Sub7 {
 			Class4_Sub20_Sub7_Sub5 class4_sub20_sub7_sub5 = ((Class4_Sub20_Sub7_Sub5) Class4_Sub20_Sub11.aClass65_3075
 					.method1071(-126));
 			if (arg0 != 10) {
-				aJagexString_3227 = null;
 			}
 			for (/**/; class4_sub20_sub7_sub5 != null; class4_sub20_sub7_sub5 = ((Class4_Sub20_Sub7_Sub5) Class4_Sub20_Sub11.aClass65_3075
 					.method1075(18485))) {
@@ -121,17 +113,16 @@ public abstract class Actor extends Class4_Sub20_Sub7 {
 
 	public static void method388(int arg0) {
 		try {
-			aJagexString_3285 = null;
+			StringUtilities.aJagexString_3285 = null;
 			aClass4_Sub20_Sub12_Sub1_3260 = null;
 			if (arg0 <= -51) {
-				aJagexString_3284 = null;
-				aJagexString_3234 = null;
-				aJagexString_3238 = null;
-				aJagexString_3227 = null;
+				StringUtilities.aJagexString_3284 = null;
+				StringUtilities.aJagexString_3234 = null;
+				StringUtilities.aJagexString_3238 = null;
 				aClass4_Sub20_Sub12_Sub1_3288 = null;
 				anIntArray3268 = null;
-				aJagexString_3294 = null;
-				aJagexString_3243 = null;
+				StringUtilities.aJagexString_3294 = null;
+				StringUtilities.aJagexString_3243 = null;
 			}
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "fb.E("

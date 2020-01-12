@@ -4,14 +4,7 @@ import com.jagex.runescape.io.Buffer;
 
 public class Class4_Sub20_Sub14 extends Class4_Sub20 {
 	public static Class19_Sub1 aClass19_Sub1_3146;
-	public static JagexString aJagexString_3135 = JagexString.getRs2PreparedString(
-			"Keine Antwort vom Server)3");
-	public static JagexString aJagexString_3136;
-	public static JagexString aJagexString_3137;
-	public static JagexString aJagexString_3145;
-	public static JagexString aJagexString_3147;
-	public static JagexString aJagexString_3148;
-	public static int anInt3134;
+    public static int anInt3134;
 	public static int anInt3139 = 0;
 	public static int anInt3140 = 0;
 	public static int anInt3141;
@@ -20,15 +13,6 @@ public class Class4_Sub20_Sub14 extends Class4_Sub20 {
 	public static int anInt3144;
 	public static int anInt3149;
 	public static int anInt3150;
-	static {
-		aJagexString_3137 = JagexString
-				.getRs2PreparedString("Wordpack geladen)3");
-		aJagexString_3145 = JagexString.getRs2PreparedString("Einloggen");
-		aJagexString_3148 = JagexString.getRs2PreparedString("Unable to connect)3"
-        );
-		aJagexString_3136 = aJagexString_3148;
-		aJagexString_3147 = aJagexString_3148;
-	}
 
 	public static Class4_Sub20_Sub6 method593(int arg0, int arg1) {
 		try {
@@ -56,7 +40,7 @@ public class Class4_Sub20_Sub14 extends Class4_Sub20 {
 		try {
 			anInt3149++;
 			if (arg0 != -30384)
-				aJagexString_3135 = null;
+				StringUtilities.aJagexString_3135 = null;
 			byte[] is = arg3.method746(arg2, (byte) 122, arg1);
 			if (is == null)
 				return false;
@@ -199,22 +183,21 @@ public class Class4_Sub20_Sub14 extends Class4_Sub20 {
 						arg1.anInt3236--;
 				}
 				if (arg0 != false)
-					aJagexString_3145 = null;
+					StringUtilities.aJagexString_3145 = null;
 			}
 		}
 	}
 
 	public static void method597(int arg0) {
 		try {
-			aJagexString_3137 = null;
-			aJagexString_3135 = null;
+			StringUtilities.aJagexString_3137 = null;
+			StringUtilities.aJagexString_3135 = null;
 			aClass19_Sub1_3146 = null;
-			aJagexString_3148 = null;
-			aJagexString_3145 = null;
+			StringUtilities.aJagexString_3145 = null;
 			if (arg0 <= 38)
-				aJagexString_3136 = null;
-			aJagexString_3136 = null;
-			aJagexString_3147 = null;
+				StringUtilities.aJagexString_3136 = null;
+			StringUtilities.aJagexString_3136 = null;
+			StringUtilities.aJagexString_3147 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "pc.G("
 					+ arg0 + ')');
@@ -778,7 +761,7 @@ public class Class4_Sub20_Sub14 extends Class4_Sub20 {
 	public boolean method598(byte arg0, int arg1) {
 		try {
 			if (arg0 != 74)
-				aJagexString_3136 = null;
+				StringUtilities.aJagexString_3136 = null;
 			anInt3141++;
 			return aClass44Array3138[arg1].aBoolean911;
 		} catch (RuntimeException runtimeexception) {

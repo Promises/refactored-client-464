@@ -3,33 +3,16 @@ package com.jagex.runescape;
 import com.jagex.runescape.io.Buffer;
 
 public class Class4_Sub20_Sub16 extends Class4_Sub20 {
-	public static boolean aBoolean3169;
-	public static JagexString aJagexString_3162;
-	public static JagexString aJagexString_3165;
-	public static JagexString aJagexString_3166 = JagexString.getRs2PreparedString(
-			"Invalid username or password)3");
-	public static JagexString aJagexString_3180;
-	public static JagexString aJagexString_3181;
-	public static RSInterface aClass4_Sub13_3179;
+	public static boolean aBoolean3169 = false;
+	public static RSInterface aClass4_Sub13_3179 = null;
 	public static ImageRGB aImageRGB_3177;
 	public static int anInt3160;
 	public static int anInt3161;
-	public static int anInt3164;
+	public static int anInt3164 = 0;
 	public static int anInt3167;
 	public static int anInt3170;
 	public static int anInt3175;
 	public static int anInt3176;
-	static {
-		aJagexString_3162 = (JagexString.getRs2PreparedString(
-				"Wir vermuten)1 dass jemand Ihr Passwort kennt)3"));
-		anInt3164 = 0;
-		aBoolean3169 = false;
-		aJagexString_3180 = JagexString.getRs2PreparedString(
-				"Verbindung mit Update)2Server)3)3)3");
-		aJagexString_3165 = aJagexString_3166;
-		aClass4_Sub13_3179 = null;
-		aJagexString_3181 = JagexString.getRs2PreparedString("<col=ffffff>");
-	}
 
 	public static void method606(int arg0) {
 		try {
@@ -106,15 +89,14 @@ public class Class4_Sub20_Sub16 extends Class4_Sub20 {
 
 	public static void method610(int arg0) {
 		try {
-			aJagexString_3181 = null;
+			StringUtilities.aJagexString_3181 = null;
 			if (arg0 < 95)
 				method609(25, null);
 			aClass4_Sub13_3179 = null;
-			aJagexString_3166 = null;
-			aJagexString_3180 = null;
+			StringUtilities.aJagexString_3180 = null;
 			aImageRGB_3177 = null;
-			aJagexString_3162 = null;
-			aJagexString_3165 = null;
+			StringUtilities.aJagexString_3162 = null;
+			StringUtilities.aJagexString_3165 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ta.A("
 					+ arg0 + ')');

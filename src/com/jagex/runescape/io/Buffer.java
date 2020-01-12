@@ -323,7 +323,7 @@ public class Buffer extends RSFont {
 												Class74.method1168(
 														arg0 ^ ~0x22,
 														(class4_sub13.itemAmounts[i_1_])),
-												Class4_Sub20_Sub1.aJagexString_2733,
+												StringUtilities.aJagexString_2733,
 												(Class4_Sub23.method633(i_2_,
 														(byte) -117).aJagexString_2991) }),
 										-842)), Class4_Sub3.aJagexString_1895,

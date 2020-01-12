@@ -71,13 +71,13 @@ public class Class80 {
 							(new JagexString[] {
 									Class74.method1168(-9,
 											arg0 >> -1815177096 & 0xff),
-									Class4_Sub20_Sub4.aJagexString_2864,
+									StringUtilities.aJagexString_2864,
 									Class74.method1168(-63,
 											(arg0 & 0xff9b81) >> -1321169712),
-									Class4_Sub20_Sub4.aJagexString_2864,
+									StringUtilities.aJagexString_2864,
 									Class74.method1168(-9,
 											(0xff47 & arg0) >> -86774776),
-									Class4_Sub20_Sub4.aJagexString_2864,
+									StringUtilities.aJagexString_2864,
 									Class74.method1168(-97, arg0 & 0xff) }),
 							-842));
 		} catch (RuntimeException runtimeexception) {

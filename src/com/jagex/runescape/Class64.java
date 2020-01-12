@@ -232,7 +232,7 @@ public class Class64 {
 			int i = 0;
 			for (int i_15_ = 0; (arg1 ^ 0xffffffff) < (i_15_ ^ 0xffffffff); i_15_++) {
 				if (arg3[arg2 - -i_15_] == null)
-					arg3[i_15_ + arg2] = Class4_Sub14.aJagexString_2288;
+					arg3[i_15_ + arg2] = StringUtilities.aJagexString_2288;
 				i += arg3[arg2 + i_15_].anInt1805;
 			}
 			byte[] is = new byte[i];

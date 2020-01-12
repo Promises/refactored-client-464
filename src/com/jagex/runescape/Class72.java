@@ -144,7 +144,7 @@ public class Class72 {
                     Class24.aClass4_Sub20_Sub12_Sub1_549.method507(202, 171);
                     if (Class4_Sub20_Sub14.anInt3140 == 0) {
                         int i = 251;
-                        arg0.method571(Class4_Sub20_Sub10.aJagexString_3069, 382,
+                        arg0.method571(StringUtilities.aJagexString_3069, 382,
                                 i, 16776960, 0);
                         i += 30;
                         int i_1_ = 302;
@@ -210,13 +210,13 @@ public class Class72 {
                                 382, i_5_, 16777215, 0);
                         i_5_ += 15;
                         int i_6_ = 321;
-                        arg0.method571(Class4_Sub1.aJagexString_1869, 382, i_5_,
+                        arg0.method571(StringUtilities.aJagexString_1869, 382, i_5_,
                                 16777215, 0);
                         i_5_ += 15;
                         arg0.method571(Class52.aJagexString_1054, 382, i_5_,
                                 16777215, 0);
                         i_5_ += 15;
-                        arg0.method571(Class4_Sub17.aJagexString_2325, 382, i_5_,
+                        arg0.method571(StringUtilities.aJagexString_2325, 382, i_5_,
                                 16777215, 0);
                         Actor.aClass4_Sub20_Sub12_Sub1_3260
                                 .method507(-73 + i, -20 + i_6_);
@@ -255,11 +255,11 @@ public class Class72 {
                                 i / 2 + i_8_, i_9_ + (i_7_ / 2 - 2), 16777215,
                                 0);
                         if (Buffer.aClass64_2096 == null)
-                            arg2.method571(Class4_Sub20_Sub6.aJagexString_2899,
+                            arg2.method571(StringUtilities.aJagexString_2899,
                                     i_8_ - -(i / 2), 12 + (i_9_ + i_7_ / 2),
                                     16777215, 0);
                         else
-                            arg2.method571(Class4_Sub20_Sub11.aJagexString_3074,
+                            arg2.method571(StringUtilities.aJagexString_3074,
                                     i_8_ + i / 2, i_7_ / 2 + i_9_ + 12,
                                     16777215, 0);
                     } else

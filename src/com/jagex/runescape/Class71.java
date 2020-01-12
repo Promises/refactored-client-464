@@ -329,7 +329,7 @@ public class Class71 {
 					Class4_Sub20_Sub4.method359(
 							Class4_Sub24.method639((new JagexString[] {
 									Class5.aJagexString_194,
-									Class4_Sub1.aJagexString_1868,
+									StringUtilities.aJagexString_1868,
 									arg1.aJagexString_2196}), -842),
 							arg1.anInt2172, arg1.anInt2163, 49, 0, (byte) 59,
 							Class82.aJagexString_1714);

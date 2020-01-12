@@ -5,10 +5,8 @@ import com.jagex.runescape.io.Buffer;
 import java.math.BigInteger;
 
 public class Class49 implements Runnable {
-    public static BigInteger aBigInteger994;
+    public static BigInteger aBigInteger994 = (new BigInteger("58778699976184461502525193738213253649000149147835990136706041084440742975821"));
     public static boolean aBoolean990 = false;
-    public static JagexString aJagexString_1001;
-    public static JagexString aJagexString_1004;
     public static int anInt1000;
     public static int anInt1002;
     public static int anInt991;
@@ -18,20 +16,8 @@ public class Class49 implements Runnable {
     public static int anInt997;
     public static int anInt998;
     public static int cameraHorizontalPosition = 0;
-    public static int[] anIntArray1003;
+    public static int[] anIntArray1003 = new int[4000];
     public static int[] anIntArray995;
-
-    static {
-        aBigInteger994 = (new BigInteger(
-                "58778699976184461502525193738213253649000149147835990136706041084440742975821"));
-        aJagexString_1001 = JagexString.getRs2PreparedString(
-                "Benutzeroberfl-=che geladen)3");
-        anIntArray1003 = new int[4000];
-        aJagexString_1004 = (JagexString
-                .getRs2PreparedString(
-                        "Bitte warten Sie )2 es wird versucht)1 die Verbindung wiederherzustellen)3"
-                ));
-    }
 
     public static int method988(byte arg0, int arg1, int arg2) {
         try {
@@ -62,11 +48,11 @@ public class Class49 implements Runnable {
 
     public static void method989(int arg0) {
         try {
-            aJagexString_1001 = null;
+            StringUtilities.aJagexString_1001 = null;
             anIntArray1003 = null;
             if (arg0 == 467836531) {
                 anIntArray995 = null;
-                aJagexString_1004 = null;
+                StringUtilities.aJagexString_1004 = null;
                 aBigInteger994 = null;
             }
         } catch (RuntimeException runtimeexception) {
@@ -331,7 +317,7 @@ public class Class49 implements Runnable {
                                         (Class4_Sub24
                                                 .method639(
                                                         (new JagexString[]{
-                                                                Class48.aJagexString_986,
+                                                                StringUtilities.aJagexString_986,
                                                                 Class68.method1094(
                                                                         arg0
                                                                                 + -55,
@@ -988,7 +974,7 @@ public class Class49 implements Runnable {
                                                     .method639(
                                                             (new JagexString[]{
                                                                     jagexString,
-                                                                    (Class4_Sub20_Sub7_Sub3.aJagexString_3343)}),
+                                                                    (StringUtilities.aJagexString_3343)}),
                                                             arg0 ^ ~0x37b)),
                                             Class4_Sub3.aJagexString_1895,
                                             (byte) 121, 5);
@@ -1011,7 +997,7 @@ public class Class49 implements Runnable {
                     if (jagexString != null
                             && (GameShell.anInt23 ^ 0xffffffff) > -201) {
                         Class64.aLongArray1279[GameShell.anInt23] = l;
-                        Class4_Sub20_Sub5.aJagexStringArray2893[(GameShell.anInt23)] = jagexString;
+                        StringUtilities.aJagexStringArray2893[(GameShell.anInt23)] = jagexString;
                         Class50.anIntArray1005[GameShell.anInt23] = i_94_;
                         Class34.anIntArray1743[GameShell.anInt23] = i_95_;
                         GameShell.anInt23++;
@@ -1028,9 +1014,9 @@ public class Class49 implements Runnable {
                                 Class50.anIntArray1005[i_98_] = Class50.anIntArray1005[1 + i_98_];
                                 Class50.anIntArray1005[1 + i_98_] = i_99_;
                                 bool = false;
-                                JagexString jagexString_100_ = (Class4_Sub20_Sub5.aJagexStringArray2893[i_98_]);
-                                Class4_Sub20_Sub5.aJagexStringArray2893[i_98_] = (Class4_Sub20_Sub5.aJagexStringArray2893[i_98_ + 1]);
-                                Class4_Sub20_Sub5.aJagexStringArray2893[i_98_ + 1] = jagexString_100_;
+                                JagexString jagexString_100_ = (StringUtilities.aJagexStringArray2893[i_98_]);
+                                StringUtilities.aJagexStringArray2893[i_98_] = (StringUtilities.aJagexStringArray2893[i_98_ + 1]);
+                                StringUtilities.aJagexStringArray2893[i_98_ + 1] = jagexString_100_;
                                 long l_101_ = Class64.aLongArray1279[i_98_];
                                 Class64.aLongArray1279[i_98_] = Class64.aLongArray1279[i_98_
                                         - -1];
@@ -1158,7 +1144,7 @@ public class Class49 implements Runnable {
                             Class43.method955(GameShell.aJagexString_11,
                                     jagexString_113_, (byte) 108, 4);
                         }
-                    } else if (jagexString.method826(Class47.aJagexString_962,
+                    } else if (jagexString.method826(StringUtilities.aJagexString_962,
                             (byte) 127)) {
                         JagexString jagexString_115_ = (jagexString.method829((byte) 19, 0,
                                 jagexString.method803(StringUtilities.aJagexString_2101,
@@ -1172,7 +1158,7 @@ public class Class49 implements Runnable {
                             }
                         }
                         if (!bool && Class81.anInt1695 == 0) {
-                            Class43.method955(Class4_Sub20_Sub3.aJagexString_2794,
+                            Class43.method955(StringUtilities.aJagexString_2794,
                                     jagexString_115_, (byte) 122, 8);
                         }
                     } else if (jagexString.method826(StringUtilities.aJagexString_2518,
@@ -1307,7 +1293,7 @@ public class Class49 implements Runnable {
                         } else if (i_127_ == 1) {
                             Class61.method1047(
                                     (Class4_Sub24.method639((new JagexString[]{
-                                            Class48.aJagexString_986,
+                                            StringUtilities.aJagexString_986,
                                             Class68.method1094(-5, l)
                                                     .method839(90)}), arg0
                                             ^ ~0x37b)), false, 9,

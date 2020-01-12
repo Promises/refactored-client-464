@@ -2,61 +2,17 @@ package com.jagex.runescape;
 import java.util.Random;
 
 public abstract class Class4_Sub20_Sub12_Sub4 extends Class4_Sub20_Sub12 {
-	public static JagexString aJagexString_3547 = JagexString.getRs2PreparedString(")4col"
-    );
-	public static JagexString aJagexString_3548;
-	public static JagexString aJagexString_3550;
-	public static JagexString aJagexString_3551 = JagexString.getRs2PreparedString(")4shad"
-    );
-	public static JagexString aJagexString_3552 = JagexString.getRs2PreparedString("br"
-    );
-	public static JagexString aJagexString_3554;
-	public static JagexString aJagexString_3557;
-	public static JagexString aJagexString_3560;
-	public static JagexString aJagexString_3563;
-	public static JagexString aJagexString_3564;
-	public static JagexString aJagexString_3565;
-	public static JagexString aJagexString_3568;
-	public static JagexString aJagexString_3569;
-	public static JagexString aJagexString_3574;
-	public static JagexString aJagexString_3576;
-	public static JagexString[] aJagexStringArray3578;
 	public static Class4_Sub20_Sub12_Sub1[] aClass4_Sub20_Sub12_Sub1Array3566;
-	public static int anInt3543;
-	public static int anInt3544;
-	public static int anInt3545;
-	public static int anInt3555;
-	public static int anInt3561;
-	public static int anInt3562;
-	public static int anInt3573;
-	public static int anInt3575;
-	public static int anInt3577;
-	public static Random aRandom3570;
-	static {
-		anInt3543 = 0;
-		anInt3544 = -1;
-		anInt3545 = -1;
-		aJagexString_3548 = JagexString.getRs2PreparedString("str");
-		aJagexString_3554 = JagexString.getRs2PreparedString("shad");
-		anInt3562 = 256;
-		aJagexString_3564 = JagexString.getRs2PreparedString(")4u");
-		aJagexString_3550 = JagexString.getRs2PreparedString(")4str");
-		aJagexString_3557 = JagexString.getRs2PreparedString("u=");
-		aJagexString_3569 = JagexString.getRs2PreparedString("str=");
-		aJagexString_3563 = JagexString.getRs2PreparedString("shad=");
-		aJagexString_3565 = JagexString.getRs2PreparedString("col=");
-		aJagexString_3568 = JagexString.getRs2PreparedString("gt");
-		anInt3555 = 0;
-		aJagexString_3560 = JagexString.getRs2PreparedString("lt");
-		anInt3573 = 0;
-		anInt3561 = -1;
-		aJagexString_3574 = JagexString.getRs2PreparedString("img=");
-		anInt3577 = 0;
-		aJagexString_3576 = JagexString.getRs2PreparedString("u");
-		anInt3575 = -1;
-		aRandom3570 = new Random();
-		aJagexStringArray3578 = new JagexString[100];
-	}
+	public static int anInt3543 = 0;
+	public static int anInt3544 = -1;
+	public static int anInt3545 = -1;
+	public static int anInt3555 = 0;
+	public static int anInt3561 = -1;
+	public static int anInt3562 = 256;
+	public static int anInt3573 = 0;
+	public static int anInt3575 = -1;
+	public static int anInt3577 = 0;
+	public static Random aRandom3570 = new Random();
 
 	public static void method555(byte[] arg0, int arg1, int arg2, int arg3,
 			int arg4, int arg5, int arg6) {
@@ -121,24 +77,24 @@ public abstract class Class4_Sub20_Sub12_Sub4 extends Class4_Sub20_Sub12 {
 	}
 
 	public static void method564() {
-		aJagexString_3560 = null;
-		aJagexString_3568 = null;
-		aJagexString_3574 = null;
-		aJagexString_3552 = null;
-		aJagexString_3565 = null;
-		aJagexString_3547 = null;
-		aJagexString_3557 = null;
-		aJagexString_3576 = null;
-		aJagexString_3564 = null;
-		aJagexString_3563 = null;
-		aJagexString_3554 = null;
-		aJagexString_3551 = null;
-		aJagexString_3569 = null;
-		aJagexString_3548 = null;
-		aJagexString_3550 = null;
+		StringUtilities.aJagexString_3560 = null;
+		StringUtilities.aJagexString_3568 = null;
+		StringUtilities.aJagexString_3574 = null;
+		StringUtilities.aJagexString_3552 = null;
+		StringUtilities.aJagexString_3565 = null;
+		StringUtilities.aJagexString_3547 = null;
+		StringUtilities.aJagexString_3557 = null;
+		StringUtilities.aJagexString_3576 = null;
+		StringUtilities.aJagexString_3564 = null;
+		StringUtilities.aJagexString_3563 = null;
+		StringUtilities.aJagexString_3554 = null;
+		StringUtilities.aJagexString_3551 = null;
+		StringUtilities.aJagexString_3569 = null;
+		StringUtilities.aJagexString_3548 = null;
+		StringUtilities.aJagexString_3550 = null;
 		aClass4_Sub20_Sub12_Sub1Array3566 = null;
 		aRandom3570 = null;
-		aJagexStringArray3578 = null;
+		StringUtilities.aJagexStringArray3578 = null;
 	}
 
 	public static void method565(byte[] arg0, int arg1, int arg2, int arg3,
@@ -317,12 +273,12 @@ public abstract class Class4_Sub20_Sub12_Sub4 extends Class4_Sub20_Sub12 {
 				if (i_8_ == 62 && i != -1) {
 					JagexString jagexString = arg0.method829((byte) -108, i + 1, i_7_);
 					i = -1;
-					if (jagexString.method802(1, aJagexString_3560))
+					if (jagexString.method802(1, StringUtilities.aJagexString_3560))
 						i_8_ = 60;
-					else if (jagexString.method802(1, aJagexString_3568))
+					else if (jagexString.method802(1, StringUtilities.aJagexString_3568))
 						i_8_ = 62;
 					else {
-						if (jagexString.method808(aJagexString_3574, (byte) -95)) {
+						if (jagexString.method808(StringUtilities.aJagexString_3574, (byte) -95)) {
 							try {
 								int i_9_ = jagexString.method805(4, 89).method804(
 										(byte) -83);
@@ -411,12 +367,12 @@ public abstract class Class4_Sub20_Sub12_Sub4 extends Class4_Sub20_Sub12 {
 				if (i_32_ == 62 && i != -1) {
 					JagexString jagexString = arg0.method829((byte) 13, i + 1, i_31_);
 					i = -1;
-					if (jagexString.method802(1, aJagexString_3560))
+					if (jagexString.method802(1, StringUtilities.aJagexString_3560))
 						i_32_ = 60;
-					else if (jagexString.method802(1, aJagexString_3568))
+					else if (jagexString.method802(1, StringUtilities.aJagexString_3568))
 						i_32_ = 62;
 					else {
-						if (jagexString.method808(aJagexString_3574, (byte) -95)) {
+						if (jagexString.method808(StringUtilities.aJagexString_3574, (byte) -95)) {
 							try {
 								int i_33_ = jagexString.method805(4, 107)
 										.method804((byte) -126);
@@ -465,24 +421,24 @@ public abstract class Class4_Sub20_Sub12_Sub4 extends Class4_Sub20_Sub12 {
 					jagexString.method824(60, 0);
 					jagexString.method832(jagexString_44_, (byte) -28);
 					jagexString.method824(62, 0);
-					if (jagexString_44_.method802(1, aJagexString_3552)) {
+					if (jagexString_44_.method802(1, StringUtilities.aJagexString_3552)) {
 						arg2[i_40_++] = jagexString.method829((byte) 76, i_34_,
 								jagexString.method825(-111));
 						i_34_ = jagexString.method825(-114);
 						i = 0;
 						i_35_ = -1;
 						i_39_ = -1;
-					} else if (jagexString_44_.method802(1, aJagexString_3560)) {
+					} else if (jagexString_44_.method802(1, StringUtilities.aJagexString_3560)) {
 						i += method579(60);
 						if (aByteArray3558 != null && i_39_ != -1)
 							i += aByteArray3558[(i_39_ << 8) + 60];
 						i_39_ = 60;
-					} else if (jagexString_44_.method802(1, aJagexString_3568)) {
+					} else if (jagexString_44_.method802(1, StringUtilities.aJagexString_3568)) {
 						i += method579(62);
 						if (aByteArray3558 != null && i_39_ != -1)
 							i += aByteArray3558[(i_39_ << 8) + 62];
 						i_39_ = 62;
-					} else if (jagexString_44_.method808(aJagexString_3574, (byte) -95)) {
+					} else if (jagexString_44_.method808(StringUtilities.aJagexString_3574, (byte) -95)) {
 						try {
 							int i_45_ = jagexString_44_.method805(4, -23)
 									.method804((byte) -88);
@@ -601,7 +557,7 @@ public abstract class Class4_Sub20_Sub12_Sub4 extends Class4_Sub20_Sub12 {
 		int[] is = { arg3 };
 		if (arg4 < anInt3542 + anInt3567 + arg9 && arg4 < arg9 + arg9)
 			is = null;
-		int i = method561(arg0, is, aJagexStringArray3578);
+		int i = method561(arg0, is, StringUtilities.aJagexStringArray3578);
 		if (arg8 == 3 && i == 1)
 			arg8 = 1;
 		int i_66_;
@@ -622,20 +578,20 @@ public abstract class Class4_Sub20_Sub12_Sub4 extends Class4_Sub20_Sub12 {
 		}
 		for (int i_68_ = 0; i_68_ < i; i_68_++) {
 			if (arg7 == 0)
-				method556(aJagexStringArray3578[i_68_], arg1, i_66_);
+				method556(StringUtilities.aJagexStringArray3578[i_68_], arg1, i_66_);
 			else if (arg7 == 1)
 				method556(
-						aJagexStringArray3578[i_68_],
-						(arg1 + (arg3 - method560(aJagexStringArray3578[i_68_])) / 2),
+						StringUtilities.aJagexStringArray3578[i_68_],
+						(arg1 + (arg3 - method560(StringUtilities.aJagexStringArray3578[i_68_])) / 2),
 						i_66_);
 			else if (arg7 == 2)
-				method556(aJagexStringArray3578[i_68_], arg1 + arg3
-						- method560(aJagexStringArray3578[i_68_]), i_66_);
+				method556(StringUtilities.aJagexStringArray3578[i_68_], arg1 + arg3
+						- method560(StringUtilities.aJagexStringArray3578[i_68_]), i_66_);
 			else if (i_68_ == i - 1)
-				method556(aJagexStringArray3578[i_68_], arg1, i_66_);
+				method556(StringUtilities.aJagexStringArray3578[i_68_], arg1, i_66_);
 			else {
-				method573(aJagexStringArray3578[i_68_], arg3);
-				method556(aJagexStringArray3578[i_68_], arg1, i_66_);
+				method573(StringUtilities.aJagexStringArray3578[i_68_], arg3);
+				method556(StringUtilities.aJagexStringArray3578[i_68_], arg1, i_66_);
 				anInt3573 = 0;
 			}
 			i_66_ += arg9;
@@ -658,10 +614,10 @@ public abstract class Class4_Sub20_Sub12_Sub4 extends Class4_Sub20_Sub12 {
 	}
 
 	public int method568(JagexString arg0, int arg1) {
-		int i = method561(arg0, new int[] { arg1 }, aJagexStringArray3578);
+		int i = method561(arg0, new int[] { arg1 }, StringUtilities.aJagexStringArray3578);
 		int i_69_ = 0;
 		for (int i_70_ = 0; i_70_ < i; i_70_++) {
-			int i_71_ = method560(aJagexStringArray3578[i_70_]);
+			int i_71_ = method560(StringUtilities.aJagexStringArray3578[i_70_]);
 			if (i_71_ > i_69_)
 				i_69_ = i_71_;
 		}
@@ -683,7 +639,7 @@ public abstract class Class4_Sub20_Sub12_Sub4 extends Class4_Sub20_Sub12 {
 	}
 
 	public int method570(JagexString arg0, int arg1) {
-		return method561(arg0, new int[] { arg1 }, aJagexStringArray3578);
+		return method561(arg0, new int[] { arg1 }, StringUtilities.aJagexStringArray3578);
 	}
 
 	public void method571(JagexString arg0, int arg1, int arg2, int arg3, int arg4) {
@@ -707,12 +663,12 @@ public abstract class Class4_Sub20_Sub12_Sub4 extends Class4_Sub20_Sub12 {
 				if (i_76_ == 62 && i != -1) {
 					JagexString jagexString = arg0.method829((byte) 110, i + 1, i_75_);
 					i = -1;
-					if (jagexString.method802(1, aJagexString_3560))
+					if (jagexString.method802(1, StringUtilities.aJagexString_3560))
 						i_76_ = 60;
-					else if (jagexString.method802(1, aJagexString_3568))
+					else if (jagexString.method802(1, StringUtilities.aJagexString_3568))
 						i_76_ = 62;
 					else {
-						if (jagexString.method808(aJagexString_3574, (byte) -95)) {
+						if (jagexString.method808(StringUtilities.aJagexString_3574, (byte) -95)) {
 							try {
 								int i_77_;
 								if (arg3 != null)
@@ -863,30 +819,30 @@ public abstract class Class4_Sub20_Sub12_Sub4 extends Class4_Sub20_Sub12 {
 	public void method580(JagexString arg0) {
 		do {
 			try {
-				if (arg0.method808(aJagexString_3565, (byte) -95))
+				if (arg0.method808(StringUtilities.aJagexString_3565, (byte) -95))
 					anInt3577 = arg0.method805(4, -23).method835(-9613, 16);
-				else if (arg0.method802(1, aJagexString_3547))
+				else if (arg0.method802(1, StringUtilities.aJagexString_3547))
 					anInt3577 = anInt3555;
-				else if (arg0.method808(aJagexString_3569, (byte) -95))
+				else if (arg0.method808(StringUtilities.aJagexString_3569, (byte) -95))
 					anInt3544 = arg0.method805(4, -88).method835(-9613, 16);
-				else if (arg0.method802(1, aJagexString_3548))
+				else if (arg0.method802(1, StringUtilities.aJagexString_3548))
 					anInt3544 = 8388608;
-				else if (arg0.method802(1, aJagexString_3550))
+				else if (arg0.method802(1, StringUtilities.aJagexString_3550))
 					anInt3544 = -1;
-				else if (arg0.method808(aJagexString_3557, (byte) -95))
+				else if (arg0.method808(StringUtilities.aJagexString_3557, (byte) -95))
 					anInt3561 = arg0.method805(2, -39).method835(-9613, 16);
-				else if (arg0.method802(1, aJagexString_3576))
+				else if (arg0.method802(1, StringUtilities.aJagexString_3576))
 					anInt3561 = 0;
-				else if (arg0.method802(1, aJagexString_3564))
+				else if (arg0.method802(1, StringUtilities.aJagexString_3564))
 					anInt3561 = -1;
-				else if (arg0.method808(aJagexString_3563, (byte) -95))
+				else if (arg0.method808(StringUtilities.aJagexString_3563, (byte) -95))
 					anInt3575 = arg0.method805(5, -61).method835(-9613, 16);
-				else if (arg0.method802(1, aJagexString_3554))
+				else if (arg0.method802(1, StringUtilities.aJagexString_3554))
 					anInt3575 = 0;
-				else if (arg0.method802(1, aJagexString_3551))
+				else if (arg0.method802(1, StringUtilities.aJagexString_3551))
 					anInt3575 = anInt3545;
 				else {
-					if (!arg0.method802(1, aJagexString_3552))
+					if (!arg0.method802(1, StringUtilities.aJagexString_3552))
 						break;
 					method576(anInt3555, anInt3545);
 				}

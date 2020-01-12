@@ -155,7 +155,7 @@ public class Class81 {
 												(new JagexString[] {
 														Class80.aJagexString_1638,
 														Class4_Sub3.aJagexString_1903,
-														(Actor.aJagexString_3285) }),
+														(StringUtilities.aJagexString_3285) }),
 												-842).method814((byte) -91));
 				} catch (Exception exception) {
 					exception.printStackTrace();

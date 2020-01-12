@@ -34,7 +34,7 @@ public class Game extends GameShell {
 	public static int anInt1842;
 	public static int anInt1843;
 	public static int anInt1845;
-    public static boolean[] keyStatus;
+    public static boolean[] keyStatus = new boolean[112];
 
     static {
 		aJagexString_1846 = JagexString.getRs2PreparedString(
@@ -281,7 +281,7 @@ public class Game extends GameShell {
 							false,
 							(Class4_Sub24.method639(
 									(new JagexString[] { Class7.aJagexString_228,
-											Class4_Sub20_Sub11.aJagexString_3081,
+											StringUtilities.aJagexString_3081,
 											Class74.method1168(-7, i_0_),
 											StringUtilities.aJagexString_684}), -842)),
 							(byte) -126);
@@ -295,7 +295,7 @@ public class Game extends GameShell {
 							false,
 							(Class4_Sub24.method639(
 									(new JagexString[] { Class7.aJagexString_228,
-											Class4_Sub20_Sub11.aJagexString_3081,
+											StringUtilities.aJagexString_3081,
 											Class74.method1168(-50, i_1_),
 											StringUtilities.aJagexString_684}), -842)),
 							(byte) -126);

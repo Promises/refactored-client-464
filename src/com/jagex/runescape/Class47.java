@@ -1,24 +1,7 @@
 package com.jagex.runescape;
 
 public class Class47 {
-	public static JagexString aJagexString_947 = JagexString.getRs2PreparedString("Jul"
-    );
-	public static JagexString aJagexString_948;
-	public static JagexString aJagexString_949;
-	public static JagexString aJagexString_950;
-	public static JagexString aJagexString_952 = JagexString.getRs2PreparedString("May"
-    );
-	public static JagexString aJagexString_956;
-	public static JagexString aJagexString_961;
-	public static JagexString aJagexString_962;
-	public static JagexString aJagexString_963;
-	public static JagexString aJagexString_965;
-	public static JagexString aJagexString_966;
-	public static JagexString aJagexString_967;
-	public static JagexString aJagexString_970;
-	public static JagexString aJagexString_972;
-	public static JagexString[] aJagexStringArray954;
-	public static Class50 aClass50_960;
+    public static Class50 aClass50_960;
 	public static int anInt951;
 	public static int anInt953;
 	public static int anInt955;
@@ -28,27 +11,8 @@ public class Class47 {
 	public static int anInt969;
 	public static int anInt971;
 	public static int[] regionIds;
-	static {
-		aJagexString_948 = JagexString.getRs2PreparedString("Mar");
-		aJagexString_950 = JagexString.getRs2PreparedString("Nov");
-		aJagexString_949 = JagexString.getRs2PreparedString("Jan");
-		aJagexString_961 = JagexString.getRs2PreparedString("Ung-Ultiger Benutzername"
-        );
-		aJagexString_962 = JagexString.getRs2PreparedString(":duelreq:");
-		aJagexString_963 = JagexString.getRs2PreparedString("Apr");
-		aJagexString_970 = JagexString.getRs2PreparedString("Feb");
-		aJagexString_967 = JagexString.getRs2PreparedString("Aug");
-		aJagexString_956 = JagexString.getRs2PreparedString("Sep");
-		aJagexString_972 = JagexString.getRs2PreparedString("Oct");
-		aJagexString_965 = JagexString.getRs2PreparedString("Dec");
-		aJagexString_966 = JagexString.getRs2PreparedString("Jun");
-		aJagexStringArray954 = new JagexString[] {aJagexString_949, aJagexString_970,
-                aJagexString_948, aJagexString_963, aJagexString_952, aJagexString_966,
-                aJagexString_947, aJagexString_967, aJagexString_956, aJagexString_972,
-                aJagexString_950, aJagexString_965};
-	}
 
-	public static void method976(byte arg0) {
+    public static void method976(byte arg0) {
 		try {
 			if (arg0 <= 46)
 				method978(-117, -18, false, 76, -117, 12);
@@ -68,22 +32,22 @@ public class Class47 {
 			regionIds = null;
 			if (arg0 != 0)
 				method976((byte) -126);
-			aJagexStringArray954 = null;
-			aJagexString_966 = null;
-			aJagexString_948 = null;
-			aJagexString_962 = null;
+			StringUtilities.aJagexStringArray954 = null;
+			StringUtilities.aJagexString_966 = null;
+			StringUtilities.aJagexString_948 = null;
+			StringUtilities.aJagexString_962 = null;
 			aClass50_960 = null;
-			aJagexString_950 = null;
-			aJagexString_947 = null;
-			aJagexString_956 = null;
-			aJagexString_972 = null;
-			aJagexString_970 = null;
-			aJagexString_952 = null;
-			aJagexString_963 = null;
-			aJagexString_961 = null;
-			aJagexString_967 = null;
-			aJagexString_949 = null;
-			aJagexString_965 = null;
+			StringUtilities.aJagexString_950 = null;
+			StringUtilities.aJagexString_947 = null;
+			StringUtilities.aJagexString_956 = null;
+			StringUtilities.aJagexString_972 = null;
+			StringUtilities.aJagexString_970 = null;
+			StringUtilities.aJagexString_952 = null;
+			StringUtilities.aJagexString_963 = null;
+			StringUtilities.aJagexString_961 = null;
+			StringUtilities.aJagexString_967 = null;
+			StringUtilities.aJagexString_949 = null;
+			StringUtilities.aJagexString_965 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "me.D("
 					+ arg0 + ')');
@@ -207,7 +171,7 @@ public class Class47 {
 	public static byte[] method982(int arg0, byte[] arg1) {
 		try {
 			if (arg0 != -24158)
-				aJagexString_948 = null;
+				StringUtilities.aJagexString_948 = null;
 			anInt969++;
 			int i = arg1.length;
 			byte[] is = new byte[i];
@@ -355,7 +319,7 @@ public class Class47 {
 			int i = 0;
 			arg1 += arg5;
 			if (arg4 != false)
-				aJagexString_952 = null;
+				StringUtilities.aJagexString_952 = null;
 			int i_25_ = arg2;
 			for (;;) {
 				byte i_26_ = arg0[i_25_];

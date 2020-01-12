@@ -6,14 +6,7 @@ import java.io.StringReader;
 import java.io.StringWriter;
 
 public class Class46 {
-	public static byte[][][] currentSceneTileFlags;
-	public static JagexString aJagexString_928 = JagexString.getRs2PreparedString("Weiter"
-    );
-	public static JagexString aJagexString_930 = JagexString.getRs2PreparedString("au"
-    );
-	public static JagexString aJagexString_941;
-	public static JagexString aJagexString_942;
-	public static JagexString aJagexString_944;
+	public static byte[][][] currentSceneTileFlags = new byte[4][104][104];
 	public static RSInterface rsInterface;
 	public static int anInt927;
 	public static int anInt929;
@@ -21,12 +14,12 @@ public class Class46 {
 	public static int anInt932;
 	public static int anInt933;
 	public static int anInt935;
-	public static int anInt936;
-	public static int anInt943;
+	public static int anInt936 = 0;
+	public static int anInt943 = -1;
 	public static int[] anIntArray934 = new int[256];
 	public static int[] anIntArray937;
-	public static int[] anIntArray939;
-	public static int[] skillExperience;
+	public static int[] anIntArray939 = new int[5];
+	public static int[] skillExperience = new int[25];
 
 	static {
 		for (int i = 0; (i ^ 0xffffffff) > -257; i++) {
@@ -39,14 +32,6 @@ public class Class46 {
 			}
 			anIntArray934[i] = i_6_;
 		}
-		currentSceneTileFlags = new byte[4][104][104];
-		anInt936 = 0;
-		anIntArray939 = new int[5];
-		aJagexString_944 = JagexString.getRs2PreparedString("gleiten:");
-		anInt943 = -1;
-		skillExperience = new int[25];
-		aJagexString_941 = JagexString.getRs2PreparedString(" ");
-		aJagexString_942 = aJagexString_941;
 	}
 
 	public static void method973(boolean arg0, int arg1, int arg2) {
@@ -123,12 +108,11 @@ public class Class46 {
 			currentSceneTileFlags = null;
 			anIntArray937 = null;
 			rsInterface = null;
-			aJagexString_930 = null;
-			aJagexString_928 = null;
-			aJagexString_941 = null;
-			aJagexString_942 = null;
+			StringUtilities.aJagexString_930 = null;
+			StringUtilities.aJagexString_928 = null;
+			StringUtilities.aJagexString_942 = null;
 			skillExperience = null;
-			aJagexString_944 = null;
+			StringUtilities.aJagexString_944 = null;
 			anIntArray939 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "md.C("

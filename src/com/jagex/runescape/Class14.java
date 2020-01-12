@@ -184,7 +184,7 @@ public abstract class Class14 {
 														.method639(
 																(new JagexString[] {
 																		Class62.aJagexString_1239,
-																		Class4_Sub20_Sub5.aJagexString_2891,
+																		StringUtilities.aJagexString_2891,
 																		class4_sub20_sub1.aJagexString_2713}),
 																arg2 + -906)),
 												i_15_, i_14_, 15, i_11_,
@@ -198,7 +198,7 @@ public abstract class Class14 {
 															.method639(
 																	(new JagexString[] {
 																			Class5.aJagexString_194,
-																			Class4_Sub20_Sub5.aJagexString_2891,
+																			StringUtilities.aJagexString_2891,
 																			(class4_sub20_sub1.aJagexString_2713) }),
 																	arg2 + -906)),
 													i_15_, i_14_, 25, i_11_,

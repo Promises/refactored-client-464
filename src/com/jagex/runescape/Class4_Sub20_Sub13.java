@@ -8,14 +8,11 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 			true, true, true, true, true, true, true, true, true, true, true,
 			true, true, true, true, true, true, true, false, false };
 	public static Class14 aClass14_3126;
-	public static JagexString aJagexString_3108;
-	public static JagexString aJagexString_3120 = JagexString.getRs2PreparedString(
-			"Fallen lassen");
 	public static Class27 aClass27_3127;
-	public static Class65 aClass65_3106;
+	public static Class65 aClass65_3106 = new Class65();
 	public static int anInt3107;
 	public static int anInt3110;
-	public static int anInt3111;
+	public static int anInt3111 = 0;
 	public static int cameraVelocityVertical = 0;
 	public static int anInt3113;
 	public static int anInt3115;
@@ -26,19 +23,10 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 	public static int anInt3128;
 	public static int anInt3129;
 	public static int cameraVerticalRotation;
-	public static int anInt3132;
-	public static int[] anIntArray3122;
-	public static int[] anIntArray3130;
-	public static int[] anIntArray3133;
-	static {
-		anIntArray3122 = new int[128];
-		aJagexString_3108 = JagexString.getRs2PreparedString("<col=c0ff00>");
-		anInt3111 = 0;
-		aClass65_3106 = new Class65();
-		anIntArray3130 = new int[] { 2, 26, 57, 17, 34, 16, 48, 18 };
-		anInt3132 = 0;
-		anIntArray3133 = new int[128];
-	}
+	public static int anInt3132 = 0;
+	public static int[] anIntArray3122 = new int[128];
+	public static int[] anIntArray3130 = new int[] { 2, 26, 57, 17, 34, 16, 48, 18 };
+	public static int[] anIntArray3133 = new int[128];
 
 	public static void method586(int arg0, int arg1, int arg2, int arg3) {
 		try {
@@ -71,10 +59,10 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 			anIntArray3122 = null;
 			aClass14_3126 = null;
 			aBooleanArray3124 = null;
-			aJagexString_3108 = null;
+			StringUtilities.aJagexString_3108 = null;
 			aClass65_3106 = null;
 			anIntArray3130 = null;
-			aJagexString_3120 = null;
+			StringUtilities.aJagexString_3120 = null;
 			anIntArray3133 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ne.I("

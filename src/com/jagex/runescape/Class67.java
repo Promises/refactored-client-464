@@ -80,7 +80,7 @@ public class Class67 {
                                             (Class4_Sub24
                                                     .method639(
                                                             (new JagexString[]{
-                                                                    Actor.aJagexString_3294,
+                                                                    StringUtilities.aJagexString_3294,
                                                                     Class74.method1168(
                                                                             -84,
                                                                             i_7_),
@@ -168,7 +168,7 @@ public class Class67 {
                                                     (Class4_Sub24
                                                             .method639(
                                                                     (new JagexString[]{
-                                                                            (Actor.aJagexString_3294),
+                                                                            (StringUtilities.aJagexString_3294),
                                                                             Class74.method1168(
                                                                                     -109,
                                                                                     i_30_),

@@ -71,7 +71,7 @@ public class Class2 {
 						Class4_Sub20_Sub16.anInt3170++;
 						int i_0_ = 0;
 						if (!Class4_Sub22.aJagexStringArray2387[i].method818(
-								Class4_Sub16.aJagexString_2305, (byte) -105)) {
+								StringUtilities.aJagexString_2305, (byte) -105)) {
 							if (Class4_Sub20_Sub7.aBooleanArray2946[i]) {
 								i_0_ = 2000;
 							}

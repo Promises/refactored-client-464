@@ -3,26 +3,13 @@ package com.jagex.runescape;
 import com.jagex.runescape.io.Buffer;
 
 public class Class4_Sub20_Sub6 extends Class4_Sub20 {
-	public static boolean aBoolean2895;
+	public static boolean aBoolean2895 = false;
 	public static boolean aBoolean2914;
 	public static Class19_Sub1 aClass19_Sub1_2911;
 	public static Class19_Sub1 aClass19_Sub1_2921;
-	public static JagexString aJagexString_2896 = JagexString.getRs2PreparedString(
-			"Lade Titelbild )2 ");
-	public static JagexString aJagexString_2897;
-	public static JagexString aJagexString_2899;
-	public static JagexString aJagexString_2904 = JagexString.getRs2PreparedString(
-			"p11_full");
-	public static JagexString aJagexString_2905;
-	public static JagexString aJagexString_2916;
-	public static JagexString aJagexString_2919;
-	public static JagexString aJagexString_2920;
-	public static JagexString aJagexString_2923;
-	public static JagexString aJagexString_2929;
-	public static JagexString aJagexString_2931;
 	public static Class43 aClass43_2932;
-	public static int anInt2903;
-	public static int anInt2906;
+	public static int anInt2903 = 0;
+	public static int anInt2906 = 0;
 	public static int anInt2907;
 	public static int anInt2908;
 	public static int anInt2915;
@@ -31,27 +18,9 @@ public class Class4_Sub20_Sub6 extends Class4_Sub20 {
 	public static int anInt2924;
 	public static int anInt2927;
 	public static int anInt2928;
-	public static int[] anIntArray2902;
+	public static int[] anIntArray2902 = new int[32];
 	public static String aString2900;
-	static {
-		aBoolean2895 = false;
-		anInt2906 = 0;
-		aJagexString_2920 = (JagexString.getRs2PreparedString(
-				"You can(Wt add yourself to your own ignore list"));
-		anIntArray2902 = new int[32];
-		aJagexString_2923 = JagexString.getRs2PreparedString(
-				"Please reload this page)3");
-		aJagexString_2916 = JagexString.getRs2PreparedString("Click to switch");
-		aJagexString_2905 = (JagexString.getRs2PreparedString(
-				"Fehler beim Laden Ihres Spielcharakters)3"));
-		aJagexString_2897 = aJagexString_2920;
-		anInt2903 = 0;
-		aJagexString_2929 = JagexString.getRs2PreparedString("Loaded input handler"
-        );
-		aJagexString_2919 = aJagexString_2929;
-		aJagexString_2931 = aJagexString_2923;
-		aJagexString_2899 = aJagexString_2916;
-	}
+
 
 	public static Class4_Sub20_Sub12_Sub1[] method364(Class19 arg0, int arg1,
 			int arg2, byte arg3) {
@@ -71,23 +40,19 @@ public class Class4_Sub20_Sub6 extends Class4_Sub20 {
 
 	public static void method366(boolean arg0) {
 		try {
-			aJagexString_2919 = null;
-			aJagexString_2923 = null;
-			aJagexString_2904 = null;
+			StringUtilities.aJagexString_2919 = null;
+			StringUtilities.aJagexString_2904 = null;
 			aString2900 = null;
-			aJagexString_2899 = null;
-			aJagexString_2916 = null;
-			aJagexString_2896 = null;
-			aJagexString_2905 = null;
-			aJagexString_2897 = null;
+			StringUtilities.aJagexString_2899 = null;
+			StringUtilities.aJagexString_2896 = null;
+			StringUtilities.aJagexString_2905 = null;
+			StringUtilities.aJagexString_2897 = null;
 			if (arg0 != false)
 				method370(125);
 			aClass43_2932 = null;
-			aJagexString_2931 = null;
+			StringUtilities.aJagexString_2931 = null;
 			anIntArray2902 = null;
 			aClass19_Sub1_2921 = null;
-			aJagexString_2920 = null;
-			aJagexString_2929 = null;
 			aClass19_Sub1_2911 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "hc.G("

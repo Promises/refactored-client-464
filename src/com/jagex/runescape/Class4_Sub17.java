@@ -1,32 +1,15 @@
 package com.jagex.runescape;
 
 public class Class4_Sub17 extends RSFont {
-	public static boolean aBoolean2319;
+	public static boolean aBoolean2319 = false;
     public static Class19 aClass19_2323;
 	public static Class19_Sub1 aClass19_Sub1_2321;
 	public static Class19_Sub1 aClass19_Sub1_2327;
-	public static JagexString aJagexString_2322 = JagexString.getRs2PreparedString(
-			"Mitglieder)2Welt");
-	public static JagexString aJagexString_2325;
-	public static JagexString aJagexString_2328 = JagexString.getRs2PreparedString(
-			"Lade Wordpack )2 ");
-	public static JagexString aJagexString_2333;
-	public static JagexString aJagexString_2334;
 	public static int anInt2324;
 	public static int anInt2326;
-	public static int anInt2329;
+	public static int anInt2329 = 0;
 	public static int anInt2330;
 	public static int anInt2331;
-	static {
-		Game.keyStatus = new boolean[112];
-		aBoolean2319 = false;
-		aJagexString_2333 = JagexString.getRs2PreparedString(
-				"button near the top of that page)3");
-		anInt2329 = 0;
-		aJagexString_2334 = JagexString.getRs2PreparedString("Regeln versto-8en hat)3"
-        );
-		aJagexString_2325 = aJagexString_2333;
-	}
 
 	public static Class4_Sub20_Sub12_Sub1 method306(int arg0) {
 		try {
@@ -53,15 +36,14 @@ public class Class4_Sub17 extends RSFont {
 	public static void method307(int arg0) {
 		try {
 			Game.keyStatus = null;
-			aJagexString_2322 = null;
+			StringUtilities.aJagexString_2322 = null;
 			if (arg0 != 0)
 				anInt2329 = 93;
-			aJagexString_2334 = null;
+			StringUtilities.aJagexString_2334 = null;
 			aClass19_2323 = null;
-			aJagexString_2325 = null;
+			StringUtilities.aJagexString_2325 = null;
 			aClass19_Sub1_2321 = null;
-			aJagexString_2333 = null;
-			aJagexString_2328 = null;
+			StringUtilities.aJagexString_2328 = null;
 			aClass19_Sub1_2327 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "qc.C("

@@ -3,19 +3,9 @@ package com.jagex.runescape;
 import com.jagex.runescape.io.Buffer;
 
 public class Class4_Sub20_Sub4 extends Class4_Sub20 {
-	public static volatile boolean aBoolean2849;
+	public static volatile boolean aBoolean2849 = true;
 	public static boolean aBoolean2857;
 	public static byte[][][] aByteArrayArrayArray2861;
-	public static JagexString aJagexString_2851 = JagexString.getRs2PreparedString(
-			"scroll:");
-	public static JagexString aJagexString_2852;
-	public static JagexString aJagexString_2853;
-	public static JagexString aJagexString_2854;
-	public static JagexString aJagexString_2855;
-	public static JagexString aJagexString_2860;
-	public static JagexString aJagexString_2863;
-	public static JagexString aJagexString_2864;
-	public static JagexString aJagexString_2866;
 	public static Class66 aClass66_2848 = new Class66(50);
 	public static int anInt2843;
 	public static int anInt2844;
@@ -25,17 +15,7 @@ public class Class4_Sub20_Sub4 extends Class4_Sub20 {
 	public static int anInt2856;
 	public static int anInt2858 = 1;
 	public static short[] aShortArray2859 = { 6798, 8741, 25238, 4626, 4550 };
-	static {
-		aJagexString_2855 = JagexString.getRs2PreparedString("jolt");
-		aJagexString_2860 = aJagexString_2851;
-		aJagexString_2863 = JagexString.getRs2PreparedString("purple:");
-		aJagexString_2852 = aJagexString_2851;
-		aJagexString_2854 = aJagexString_2863;
-		aBoolean2849 = true;
-		aJagexString_2864 = JagexString.getRs2PreparedString(")3");
-		aJagexString_2853 = aJagexString_2863;
-		aJagexString_2866 = JagexString.getRs2PreparedString("weiss:");
-	}
+
 
 	public static Class4_Sub20_Sub12_Sub4_Sub1 method357(Class19 arg0,
 			int arg1, Class19 arg2, int arg3, int arg4) {
@@ -88,19 +68,17 @@ public class Class4_Sub20_Sub4 extends Class4_Sub20 {
 	public static void method360(int arg0) {
 		try {
 			aClass66_2848 = null;
-			aJagexString_2853 = null;
+			StringUtilities.aJagexString_2853 = null;
 			aShortArray2859 = null;
-			aJagexString_2863 = null;
-			aJagexString_2860 = null;
-			aJagexString_2854 = null;
+			StringUtilities.aJagexString_2860 = null;
+			StringUtilities.aJagexString_2854 = null;
 			aByteArrayArrayArray2861 = null;
-			aJagexString_2852 = null;
-			aJagexString_2864 = null;
-			aJagexString_2851 = null;
-			aJagexString_2855 = null;
+			StringUtilities.aJagexString_2852 = null;
+			StringUtilities.aJagexString_2864 = null;
+			StringUtilities.aJagexString_2855 = null;
 			if (arg0 > -117)
 				method359(null, -107, -22, -53, -121, (byte) -80, null);
-			aJagexString_2866 = null;
+			StringUtilities.aJagexString_2866 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "de.A("
 					+ arg0 + ')');

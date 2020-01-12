@@ -1,11 +1,7 @@
 package com.jagex.runescape;
 
 public class Class4_Sub15 extends RSFont {
-	public static JagexString aJagexString_2291;
-	public static JagexString aJagexString_2292 = JagexString.getRs2PreparedString(
-			"oder ung-Ultiges Passwort)3");
-	public static JagexString aJagexString_2294;
-	public static RSInterface aClass4_Sub13_2301;
+	public static RSInterface aClass4_Sub13_2301 = null;
 	public static Class4_Sub20_Sub12_Sub4_Sub1 aClass4_Sub20_Sub12_Sub4_Sub1_2289;
 	public static Player localPlayer;
 	public static int anInt2293;
@@ -15,14 +11,7 @@ public class Class4_Sub15 extends RSFont {
 	public static int anInt2300;
 	public static int anInt2303;
 	public static int[] anIntArray2290;
-	public static int[] quakeTimes;
-	static {
-		aJagexString_2291 = JagexString.getRs2PreparedString("Verbindung abgebrochen)3"
-        );
-		quakeTimes = new int[5];
-		aJagexString_2294 = JagexString.getRs2PreparedString("Fertigkeit)2");
-		aClass4_Sub13_2301 = null;
-	}
+	public static int[] quakeTimes = new int[5];
 
 	public static JagexString method298(int arg0, boolean arg1) {
 		try {
@@ -33,7 +22,7 @@ public class Class4_Sub15 extends RSFont {
 				return Class4_Sub24.method639(
 						(new JagexString[] {
 								(Class4_Sub20_Sub8.aJagexStringArray2957[arg0]),
-								Class46.aJagexString_942,
+								StringUtilities.aJagexString_942,
 								(Class18.aJagexStringArray462[arg0]) }), -842);
 			return Class4_Sub20_Sub8.aJagexStringArray2957[arg0];
 		} catch (RuntimeException runtimeexception) {
@@ -48,12 +37,12 @@ public class Class4_Sub15 extends RSFont {
 				localPlayer = null;
 			aClass4_Sub20_Sub12_Sub4_Sub1_2289 = null;
 			quakeTimes = null;
-			aJagexString_2292 = null;
-			aJagexString_2291 = null;
+			StringUtilities.aJagexString_2292 = null;
+			StringUtilities.aJagexString_2291 = null;
 			aClass4_Sub13_2301 = null;
 			anIntArray2290 = null;
 			localPlayer = null;
-			aJagexString_2294 = null;
+			StringUtilities.aJagexString_2294 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "pd.B("
 					+ arg0 + ')');

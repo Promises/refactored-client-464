@@ -152,7 +152,7 @@ public class JagexString {
                 return false;
             }
             for (int i = 0; GameShell.anInt23 > i; i++) {
-                if (arg1.method818(Class4_Sub20_Sub5.aJagexStringArray2893[i],
+                if (arg1.method818(StringUtilities.aJagexStringArray2893[i],
                         (byte) -105)) {
                     return true;
                 }

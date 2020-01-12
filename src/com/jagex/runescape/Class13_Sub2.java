@@ -254,7 +254,7 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
                         .method477(
                                 RSFont.aJagexString_163,
                                 106,
-                                Class4_Sub16.aJagexString_2317,
+                                StringUtilities.aJagexString_2317,
                                 (Class4_Sub24.method639(
                                         (new JagexString[]{
                                                 Class74.method1168(

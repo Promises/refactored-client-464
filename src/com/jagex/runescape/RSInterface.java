@@ -296,24 +296,24 @@ public class RSInterface extends RSFont {
 	public Object[] anObjectArray2265;
 
 	public RSInterface() {
-		aJagexString_2150 = Class4_Sub20_Sub7_Sub3.aJagexString_3334;
+		aJagexString_2150 = StringUtilities.aJagexString_3334;
 		anInt2140 = 0;
 		anInt2137 = 1;
 		anInt2170 = -1;
 		anInt2168 = 100;
 		anInt2171 = 0;
 		anInt2185 = 0;
-		aJagexString_2149 = Class4_Sub20_Sub7_Sub3.aJagexString_3334;
+		aJagexString_2149 = StringUtilities.aJagexString_3334;
 		anInt2161 = 0;
 		anInt2192 = 0;
 		anInt2190 = 0;
 		aBoolean2178 = false;
-		aJagexString_2174 = Class4_Sub20_Sub7_Sub3.aJagexString_3334;
+		aJagexString_2174 = StringUtilities.aJagexString_3334;
 		aBoolean2165 = false;
 		anInt2193 = -1;
 		anInt2173 = -1;
-		aJagexString_2202 = Class4_Sub20_Sub7_Sub3.aJagexString_3334;
-		aJagexString_2196 = Class4_Sub20_Sub7_Sub3.aJagexString_3334;
+		aJagexString_2202 = StringUtilities.aJagexString_3334;
+		aJagexString_2196 = StringUtilities.aJagexString_3334;
 		anInt2147 = -1;
 		anInt2201 = 0;
 		anInt2210 = -1;

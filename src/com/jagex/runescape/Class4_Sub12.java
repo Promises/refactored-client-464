@@ -3,8 +3,6 @@ package com.jagex.runescape;
 import com.jagex.runescape.io.Buffer;
 
 public class Class4_Sub12 extends RSFont {
-	public static JagexString aJagexString_2129 = JagexString.getRs2PreparedString(
-			"scrollen:");
 	public static Class66 aClass66_2123 = new Class66(64);
 	public static int anInt2118;
 	public static int anInt2119;
@@ -18,7 +16,7 @@ public class Class4_Sub12 extends RSFont {
 		try {
 			anInt2119++;
 			try {
-				return (Class14) Class.forName("com.jagex.runescape.Class14_Sub2").newInstance();
+				return new Class14_Sub2();
 			} catch (Throwable throwable) {
 				return new SceneGraph();
 			}
@@ -97,7 +95,7 @@ public class Class4_Sub12 extends RSFont {
 
 	public static void method280(byte arg0) {
 		aClass66_2123 = null;
-		aJagexString_2129 = null;
+		StringUtilities.aJagexString_2129 = null;
 		if (arg0 >= -28)
 			anInt2125 = -93;
 	}

@@ -4,29 +4,12 @@ import com.jagex.runescape.io.Buffer;
 
 public class Class4_Sub14 extends RSFont {
 	public static byte[][][] aByteArrayArrayArray2275;
-	public static Class18 aClass18_2272;
-	public static JagexString aJagexString_2271;
-	public static JagexString aJagexString_2274 = (JagexString.getRs2PreparedString(
-			"sind fehlgeschlagen)3 Bitte warten Sie 5 Minuten)1"));
-	public static JagexString aJagexString_2278;
-	public static JagexString aJagexString_2285;
-	public static JagexString aJagexString_2287;
-	public static JagexString aJagexString_2288;
-	public static Class66 aClass66_2286;
+	public static Class18 aClass18_2272 = new Class18();
+	public static Class66 aClass66_2286 = new Class66(128);
 	public static int anInt2277;
 	public static int anInt2279;
 	public static int anInt2283;
 	public static short[][] aShortArrayArray2284;
-	static {
-		aJagexString_2271 = JagexString.getRs2PreparedString(" )2> <col=ffff00>");
-		aJagexString_2278 = JagexString.getRs2PreparedString("Lade)3)3)3");
-		aClass18_2272 = new Class18();
-		aJagexString_2285 = JagexString.getRs2PreparedString("<br>(X100(U(Y");
-		aClass66_2286 = new Class66(128);
-		aJagexString_2287 = JagexString.getRs2PreparedString("Bitte warten Sie)3)3)3"
-		);
-		aJagexString_2288 = JagexString.getRs2PreparedString("null");
-	}
 
 	public static void method295(boolean arg0) {
 		if (arg0 == false) {
@@ -113,7 +96,7 @@ public class Class4_Sub14 extends RSFont {
 						StringUtilities.aJagexString_1762 = (Class4_Sub24
 								.method639(
 										(new JagexString[] {
-												Actor.aJagexString_3234,
+												StringUtilities.aJagexString_3234,
 												Class74.method1168(-47, i),
 												(Npc.aJagexString_3627) }),
 										-842));
@@ -149,7 +132,7 @@ public class Class4_Sub14 extends RSFont {
 				int i = 0;
 				if (Class33.aClass4_Sub20_Sub12_Sub4_Sub1_717 == null)
 					Class33.aClass4_Sub20_Sub12_Sub4_Sub1_717 = Class57
-							.method1026(Class4_Sub20_Sub6.aJagexString_2904,
+							.method1026(StringUtilities.aJagexString_2904,
 									Game.aClass19_Sub1_1849, -107,
 									Class4_Sub3.aJagexString_1895,
 									(Class4_Sub20_Sub6.aClass19_Sub1_2921));
@@ -175,7 +158,7 @@ public class Class4_Sub14 extends RSFont {
 					StringUtilities.aJagexString_1762 = (Class4_Sub24
 							.method639(
 									(new JagexString[] {
-											Class4_Sub20_Sub5.aJagexString_2884,
+											StringUtilities.aJagexString_2884,
 											Class74.method1168(-90, i * 100 / 3),
 											Npc.aJagexString_3627}),
 									-842));
@@ -200,7 +183,7 @@ public class Class4_Sub14 extends RSFont {
 									-842));
 					Region.anInt135 = 50;
 				} else {
-					StringUtilities.aJagexString_1762 = Class4_Sub20_Sub3.aJagexString_2841;
+					StringUtilities.aJagexString_1762 = StringUtilities.aJagexString_2841;
 					Region.anInt135 = 50;
 					Region.method50(5, 1);
 					Class48.anInt989 = 70;
@@ -265,7 +248,7 @@ public class Class4_Sub14 extends RSFont {
 				if (Class4_Sub21.aImageRGB_2368 == null)
 					Class4_Sub21.aImageRGB_2368 = Class57
 							.method1024(26149, Game.aClass19_Sub1_1849,
-									Class4_Sub20_Sub10.aJagexString_3056,
+									StringUtilities.aJagexString_3056,
 									Class4_Sub3.aJagexString_1895);
 				else
 					i++;
@@ -280,7 +263,7 @@ public class Class4_Sub14 extends RSFont {
 					i++;
 				else
 					Class19.aImageRGBArray504 = Class4_Sub21
-							.method625((Actor.aJagexString_3284),
+							.method625((StringUtilities.aJagexString_3284),
 									Game.aClass19_Sub1_1849,
 									Class4_Sub3.aJagexString_1895, true);
 				if (Class65.aImageRGBArray1290 == null)
@@ -301,7 +284,7 @@ public class Class4_Sub14 extends RSFont {
 					i++;
 				else
 					Class4_Sub21.aImageRGBArray2378 = Class4_Sub21
-							.method625((Class4_Sub20_Sub5.aJagexString_2868),
+							.method625((StringUtilities.aJagexString_2868),
 									Game.aClass19_Sub1_1849,
 									Class4_Sub3.aJagexString_1895, true);
 				if (Class14.aImageRGBArray405 != null)
@@ -408,7 +391,7 @@ public class Class4_Sub14 extends RSFont {
 				Class43.aClass75_872.method1172(Class31.aClass53_690, 10, 119);
 				Region.anInt135 = 94;
 				Class48.anInt989 = 120;
-				StringUtilities.aJagexString_1762 = Class4_Sub20_Sub6.aJagexString_2919;
+				StringUtilities.aJagexString_1762 = StringUtilities.aJagexString_2919;
 			} else if (Class48.anInt989 == 120) {
 				if (!Class77.aClass19_Sub1_1589.method744((byte) 126,
 						StringUtilities.aJagexString_840, (Class4_Sub3.aJagexString_1895))) {
@@ -478,16 +461,16 @@ public class Class4_Sub14 extends RSFont {
 	public static void method296(boolean arg0) {
 		try {
 			aClass66_2286 = null;
-			aJagexString_2288 = null;
+			StringUtilities.aJagexString_2288 = null;
 			aShortArrayArray2284 = null;
-			aJagexString_2274 = null;
-			aJagexString_2285 = null;
-			aJagexString_2287 = null;
-			aJagexString_2278 = null;
+			StringUtilities.aJagexString_2274 = null;
+			StringUtilities.aJagexString_2285 = null;
+			StringUtilities.aJagexString_2287 = null;
+			StringUtilities.aJagexString_2278 = null;
 			if (arg0 != true)
 				aClass18_2272 = null;
 			aClass18_2272 = null;
-			aJagexString_2271 = null;
+			StringUtilities.aJagexString_2271 = null;
 			aByteArrayArrayArray2275 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "oc.A("
@@ -498,7 +481,7 @@ public class Class4_Sub14 extends RSFont {
 	public static void method297(byte arg0) {
 		anInt2279++;
 		if (arg0 != 8)
-			aJagexString_2274 = null;
+			StringUtilities.aJagexString_2274 = null;
 		if (Class4_Sub20_Sub9.aClass76_3047 != null)
 			Class4_Sub20_Sub9.aClass76_3047.method1181(-31709);
 	}

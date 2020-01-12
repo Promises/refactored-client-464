@@ -4,50 +4,17 @@ import com.jagex.runescape.io.Buffer;
 import java.awt.Font;
 
 public class Class4_Sub20_Sub11 extends Class4_Sub20 {
-	public static boolean[] aBooleanArray3083;
-	public static JagexString aJagexString_3074;
-	public static JagexString aJagexString_3078;
-	public static JagexString aJagexString_3080 = JagexString.getRs2PreparedString(
-			"Loading)3)3)3");
-	public static JagexString aJagexString_3081;
-	public static JagexString aJagexString_3085;
-	public static JagexString aJagexString_3086;
-	public static JagexString aJagexString_3089;
-	public static JagexString aJagexString_3090;
-	public static JagexString aJagexString_3091;
-	public static JagexString aJagexString_3094;
-	public static JagexString aJagexString_3095;
-	public static JagexString aJagexString_3096;
-	public static Class65 aClass65_3075;
+	public static boolean[] aBooleanArray3083 = new boolean[100];
+	public static Class65 aClass65_3075 = new Class65();
 	public static Font aFont3087;
 	public static int anInt3073;
 	public static int anInt3077;
 	public static int anInt3079;
 	public static int anInt3084;
-	public static int anInt3088;
-	public static int incomingPacket;
-	public static int anInt3093;
+	public static int anInt3088 = -1;
+	public static int incomingPacket = 0;
+	public static int anInt3093 = 0;
 	public static int[] anIntArray3076 = { 16, 32, 64, 128 };
-	static {
-		aJagexString_3078 = JagexString.getRs2PreparedString(
-				"Bitte starten Sie eine Mitgliedschaft");
-		aJagexString_3074 = aJagexString_3080;
-		aJagexString_3081 = JagexString.getRs2PreparedString("<br>(X");
-		aBooleanArray3083 = new boolean[100];
-		aClass65_3075 = new Class65();
-		aJagexString_3085 = JagexString.getRs2PreparedString("Members object");
-		anInt3088 = -1;
-		aJagexString_3086 = JagexString.getRs2PreparedString("glow1:");
-		anInt3093 = 0;
-		aJagexString_3095 = aJagexString_3086;
-		incomingPacket = 0;
-		aJagexString_3094 = aJagexString_3086;
-		aJagexString_3091 = JagexString.getRs2PreparedString(
-				"Unexpected loginserver response)3");
-		aJagexString_3090 = JagexString.getRs2PreparedString("titlebutton");
-		aJagexString_3089 = aJagexString_3091;
-		aJagexString_3096 = aJagexString_3085;
-	}
 
 	public static void method484(byte arg0, JagexString arg1, int arg2, int arg3,
                                  int arg4) {
@@ -134,22 +101,18 @@ public class Class4_Sub20_Sub11 extends Class4_Sub20 {
 
 	public static void method487(boolean arg0) {
 		try {
-			aJagexString_3085 = null;
-			aJagexString_3074 = null;
-			aJagexString_3094 = null;
-			aJagexString_3091 = null;
-			aJagexString_3096 = null;
+			StringUtilities.aJagexString_3074 = null;
+			StringUtilities.aJagexString_3094 = null;
+			StringUtilities.aJagexString_3096 = null;
 			aFont3087 = null;
-			aJagexString_3090 = null;
-			aJagexString_3078 = null;
-			aJagexString_3081 = null;
+			StringUtilities.aJagexString_3090 = null;
+			StringUtilities.aJagexString_3078 = null;
+			StringUtilities.aJagexString_3081 = null;
 			anIntArray3076 = null;
 			if (arg0 == true) {
 				aBooleanArray3083 = null;
-				aJagexString_3086 = null;
-				aJagexString_3089 = null;
-				aJagexString_3095 = null;
-				aJagexString_3080 = null;
+				StringUtilities.aJagexString_3089 = null;
+				StringUtilities.aJagexString_3095 = null;
 				aClass65_3075 = null;
 			}
 		} catch (RuntimeException runtimeexception) {
@@ -163,8 +126,6 @@ public class Class4_Sub20_Sub11 extends Class4_Sub20 {
 	public void method485(Buffer arg0, int arg1) {
 		try {
 			anInt3077++;
-			if (arg1 < 106)
-				aJagexString_3091 = null;
 			for (;;) {
 				int i = arg0.get();
 				if (i == 0)

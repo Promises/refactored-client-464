@@ -1,35 +1,15 @@
 package com.jagex.runescape;
 
 public class Class4_Sub16 extends RSFont {
-	public static JagexString aJagexString_2305;
-	public static JagexString aJagexString_2307;
-	public static JagexString aJagexString_2312;
-	public static JagexString aJagexString_2314;
-	public static JagexString aJagexString_2315;
-	public static JagexString aJagexString_2317;
-	public static Class66 aClass66_2316;
+	public static Class66 aClass66_2316 = new Class66(64);
 	public static int anInt2304;
 	public static int anInt2308;
 	public static int anInt2309 = -16 + (int) (Math.random() * 33.0);
 	public static int anInt2313;
-	public static int anInt2318;
-	static {
-		aJagexString_2307 = JagexString.getRs2PreparedString(
-				"You have only just left another world)3");
-		aJagexString_2315 = JagexString.getRs2PreparedString("Attack");
-		aJagexString_2314 = (JagexString.getRs2PreparedString(
-				"Account locked as we suspect it has been stolen)3"));
-		aJagexString_2312 = aJagexString_2314;
-		aJagexString_2305 = aJagexString_2315;
-		anInt2318 = 0;
-		aJagexString_2317 = aJagexString_2307;
-		aClass66_2316 = new Class66(64);
-	}
+	public static int anInt2318 = 0;
 
 	public static void method302(int arg0) {
 		try {
-			if (arg0 != 25947)
-				aJagexString_2314 = null;
 			Class4_Sub20_Sub8.aClass66_3014.method1084(0);
 			anInt2313++;
 		} catch (RuntimeException runtimeexception) {
@@ -59,7 +39,7 @@ public class Class4_Sub16 extends RSFont {
 				arg1.method762(arg3, arg2, is, true, false);
 			else {
 				if (arg0 != -6207)
-					aJagexString_2317 = null;
+					StringUtilities.aJagexString_2317 = null;
 				byte[] is_0_ = arg3.method670(arg2, 255);
 				arg1.method762(arg3, arg2, is_0_, true, false);
 			}
@@ -87,14 +67,10 @@ public class Class4_Sub16 extends RSFont {
 	public static void method305(boolean arg0) {
 		try {
 			if (arg0 != true)
-				aJagexString_2305 = null;
-			aJagexString_2305 = null;
-			aJagexString_2315 = null;
-			aJagexString_2314 = null;
-			aJagexString_2312 = null;
-			aJagexString_2317 = null;
-			aClass66_2316 = null;
-			aJagexString_2307 = null;
+				StringUtilities.aJagexString_2305 = null;
+			StringUtilities.aJagexString_2305 = null;
+			StringUtilities.aJagexString_2312 = null;
+			StringUtilities.aJagexString_2317 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "qa.A("
 					+ arg0 + ')');

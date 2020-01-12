@@ -54,13 +54,13 @@ public class JagexException extends RuntimeException {
                         StringUtilities.aJagexString_1767, StringUtilities.aJagexString_92, arg0);
                 Actor.aClass4_Sub20_Sub12_Sub1_3260 = Class2
                         .method44(24094, StringUtilities.aJagexString_1767,
-                                Class4_Sub20_Sub11.aJagexString_3090, arg0);
+                                StringUtilities.aJagexString_3090, arg0);
                 Class81.aClass4_Sub20_Sub12_Sub1Array1709 = Class63.method1055(
                         StringUtilities.aJagexString_1767, arg0, 92,
-                        Class4_Sub20_Sub17.aJagexString_3214);
+                        StringUtilities.aJagexString_3214);
                 GameShell.aClass4_Sub20_Sub12_Sub1Array43 = Class63.method1055(
                         StringUtilities.aJagexString_1767, arg0, 11,
-                        Class4_Sub20_Sub7_Sub3.aJagexString_3337);
+                        StringUtilities.aJagexString_3337);
                 Class65.anIntArray1307 = new int[256];
                 for (int i = 0; (i ^ 0xffffffff) > -65; i++) {
                     Class65.anIntArray1307[i] = 262144 * i;

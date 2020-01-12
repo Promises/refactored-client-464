@@ -386,7 +386,7 @@ public abstract class Class13 {
 				if (Class4_Sub20_Sub1.anInt2734 == 1
 						&& (Class4_Sub20_Sub8.anInt2980 ^ 0xffffffff) > -3)
 					jagexString = Class4_Sub24.method639((new JagexString[] {
-							Class57.aJagexString_1154, Class46.aJagexString_942,
+							Class57.aJagexString_1154, StringUtilities.aJagexString_942,
 							Class62.aJagexString_1239, StringUtilities.aJagexString_791}),
 							-842);
 				else if (!Class4_Sub23.aBoolean2421
@@ -395,7 +395,7 @@ public abstract class Class13 {
 							+ (Class4_Sub20_Sub8.anInt2980), true);
 				else
 					jagexString = Class4_Sub24.method639((new JagexString[] {
-							Class82.aJagexString_1714, Class46.aJagexString_942,
+							Class82.aJagexString_1714, StringUtilities.aJagexString_942,
 							Class5.aJagexString_194, StringUtilities.aJagexString_791}), -842);
 				if (Class4_Sub20_Sub8.anInt2980 > 2)
 					jagexString = (Class4_Sub24

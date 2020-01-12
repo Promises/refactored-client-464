@@ -937,7 +937,7 @@ public class Class9 {
 			else if ((arg1 ^ 0xffffffff) != 0) {
 				if ((arg1 ^ 0xffffffff) == -4)
 					Class4_Sub20_Sub9.method477(
-							(Class4_Sub20_Sub16.aJagexString_3165), 62,
+							(StringUtilities.aJagexString_3165), 62,
 							Class81.aJagexString_1699, Class81.aJagexString_1702);
 				else if (arg1 == 4)
 					Class4_Sub20_Sub9.method477(
@@ -949,7 +949,7 @@ public class Class9 {
 							if ((arg1 ^ 0xffffffff) == -9)
 								Class4_Sub20_Sub9.method477(
 										StringUtilities.aJagexString_905, 110,
-										Class4_Sub20_Sub14.aJagexString_3147,
+										StringUtilities.aJagexString_3147,
 										Class81.aJagexString_1706);
 							else if (arg1 == 9)
 								Class4_Sub20_Sub9.method477(
@@ -959,7 +959,7 @@ public class Class9 {
 							else if (arg1 == 10)
 								Class4_Sub20_Sub9.method477(
 										StringUtilities.aJagexString_692, 75,
-										Class4_Sub20_Sub14.aJagexString_3136,
+										StringUtilities.aJagexString_3136,
 										Class81.aJagexString_1662);
 							else if (arg1 != 11) {
 								if (arg1 == 12)
@@ -975,7 +975,7 @@ public class Class9 {
 								else if ((arg1 ^ 0xffffffff) == -15)
 									Class4_Sub20_Sub9.method477(
 											Class61.aJagexString_1210, 45,
-											Class4_Sub10.aJagexString_2049,
+											StringUtilities.aJagexString_2049,
 											Class81.aJagexString_1684);
 								else if (arg1 == 16)
 									Class4_Sub20_Sub9.method477(
@@ -986,7 +986,7 @@ public class Class9 {
 									if (arg1 == 18)
 										Class4_Sub20_Sub9.method477(
 												Class72.aJagexString_1485, 87,
-												Class4_Sub16.aJagexString_2312,
+												StringUtilities.aJagexString_2312,
 												Class81.aJagexString_1703);
 									else if ((arg1 ^ 0xffffffff) != -20) {
 										if ((arg1 ^ 0xffffffff) != -21) {
@@ -1027,12 +1027,12 @@ public class Class9 {
 																.method477(
 																		(StringUtilities.aJagexString_411),
 																		110,
-																		(Class4_Sub20_Sub11.aJagexString_3089),
+																		(StringUtilities.aJagexString_3089),
 																		(Class81.aJagexString_1663));
 												} else
 													Class4_Sub20_Sub9
 															.method477(
-																	Class48.aJagexString_985,
+																	StringUtilities.aJagexString_985,
 																	18,
 																	StringUtilities.aJagexString_370,
 																	(Class81.aJagexString_1696));
@@ -1052,7 +1052,7 @@ public class Class9 {
 												.method477(
 														StringUtilities.aJagexString_753,
 														68,
-														Class4_Sub20_Sub1.aJagexString_2731,
+														StringUtilities.aJagexString_2731,
 														(Class4_Sub20_Sub7_Sub5.aJagexString_3410));
 								} else
 									Class4_Sub20_Sub9.method477(
@@ -1070,7 +1070,7 @@ public class Class9 {
 									Class7.aJagexString_235, Class81.aJagexString_1676);
 					} else
 						Class4_Sub20_Sub9.method477(
-								(Class4_Sub20_Sub6.aJagexString_2931), 93,
+								(StringUtilities.aJagexString_2931), 93,
 								SceneGraph.aJagexString_2497,
 								Class81.aJagexString_1708);
 				} else

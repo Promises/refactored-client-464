@@ -239,7 +239,7 @@ public class Class4_Sub20_Sub7_Sub5 extends Class4_Sub20_Sub7 {
 		}
 		if (!bool)
 			Class43.method955(Class4_Sub24.method639((new JagexString[] {
-					(Class4_Sub20_Sub3.aJagexString_2813), jagexString}), -842),
+					(StringUtilities.aJagexString_2813), jagexString}), -842),
 					Class4_Sub3.aJagexString_1895, (byte) 122, 0);
 	}
 

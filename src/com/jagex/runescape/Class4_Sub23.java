@@ -57,7 +57,7 @@ public class Class4_Sub23 extends RSFont {
 			if (!Class35.aBoolean744 && class4_sub20_sub8.aBoolean3002) {
 				class4_sub20_sub8.anInt3000 = 0;
 				class4_sub20_sub8.aJagexStringArray2988 = null;
-				class4_sub20_sub8.aJagexString_2991 = Class4_Sub20_Sub11.aJagexString_3096;
+				class4_sub20_sub8.aJagexString_2991 = StringUtilities.aJagexString_3096;
 				class4_sub20_sub8.aJagexStringArray3008 = null;
 			}
 			Class14.aClass66_408.method1082(true, arg0, class4_sub20_sub8);

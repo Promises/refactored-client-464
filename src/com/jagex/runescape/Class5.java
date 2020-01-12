@@ -46,7 +46,7 @@ public class Class5 {
 					if ((arg0 ^ 0xffffffffffffffffL) == (Class64.aLongArray1279[i] ^ 0xffffffffffffffffL)) {
 						GameShell.anInt23--;
 						for (int i_0_ = i; ((GameShell.anInt23 ^ 0xffffffff) < (i_0_ ^ 0xffffffff)); i_0_++) {
-							Class4_Sub20_Sub5.aJagexStringArray2893[i_0_] = (Class4_Sub20_Sub5.aJagexStringArray2893[1 + i_0_]);
+							StringUtilities.aJagexStringArray2893[i_0_] = (StringUtilities.aJagexStringArray2893[1 + i_0_]);
 							Class50.anIntArray1005[i_0_] = Class50.anIntArray1005[1 + i_0_];
 							Class64.aLongArray1279[i_0_] = Class64.aLongArray1279[1 + i_0_];
 							Class34.anIntArray1743[i_0_] = Class34.anIntArray1743[1 + i_0_];
@@ -81,7 +81,7 @@ public class Class5 {
 				if (arg0.method818(StringUtilities.aJagexString_622, (byte) -105)) {
 					Class11.method674(-1);
 				}
-				if (arg0.method818(Class4_Sub20_Sub5.aJagexString_2886, (byte) -105)) {
+				if (arg0.method818(StringUtilities.aJagexString_2886, (byte) -105)) {
 					Class4_Sub20_Sub9.aBoolean3048 = true;
 				}
 				if (arg0.method818(JagexString.getRs2PreparedString("::test"), (byte) -105)) {

@@ -5,11 +5,6 @@ import java.io.IOException;
 
 public class Class4_Sub20_Sub17 extends Class4_Sub20 {
 	public static byte aByte3194;
-	public static JagexString aJagexString_3197 = JagexString.getRs2PreparedString("(U5"
-    );
-	public static JagexString aJagexString_3210;
-	public static JagexString aJagexString_3214 = JagexString.getRs2PreparedString("runes"
-    );
 	public static Class76 aClass76_3189;
 	public static int anInt3185;
 	public static int anInt3187;
@@ -26,18 +21,15 @@ public class Class4_Sub20_Sub17 extends Class4_Sub20 {
 	public static int anInt3215;
 	public static int anInt3216;
 	public static int[] anIntArray3206;
-	static {
-		aJagexString_3210 = JagexString.getRs2PreparedString("<img=1>");
-	}
 
 	public static void method615(byte arg0) {
 		try {
-			aJagexString_3197 = null;
-			aJagexString_3210 = null;
-			aJagexString_3214 = null;
+			StringUtilities.aJagexString_3197 = null;
+			StringUtilities.aJagexString_3210 = null;
+			StringUtilities.aJagexString_3214 = null;
 			aClass76_3189 = null;
 			if (arg0 != -80)
-				aJagexString_3210 = null;
+				StringUtilities.aJagexString_3210 = null;
 			anIntArray3206 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "uc.B("

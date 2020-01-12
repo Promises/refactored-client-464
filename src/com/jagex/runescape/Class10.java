@@ -105,7 +105,7 @@ public class Class10 {
 			for (int i = 0; (i ^ 0xffffffff) > -6; i++) {
 				jagexStrings[i] = Class4_Sub24.method639(
 						(new JagexString[] { Class74.method1168(-96, i),
-								Class4_Sub10.aJagexString_2047}), -842);
+								StringUtilities.aJagexString_2047}), -842);
 				if (arg1 != null && arg1[i] != null)
 					jagexStrings[i] = Class4_Sub24.method639(new JagexString[] {
 							jagexStrings[i], arg1[i] }, -842);

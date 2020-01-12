@@ -190,7 +190,7 @@ public class Class19_Sub1 extends Class19 {
 				StringUtilities.aJagexString_2518 = null;
 			}
 			if ((i ^ 0xffffffff) > 5) {
-				return Class4_Sub1.aJagexString_1856;
+				return StringUtilities.aJagexString_1856;
 			}
 			if ((i ^ 0xffffffff) > 2) {
 				return StringUtilities.aJagexString_925;
@@ -205,10 +205,10 @@ public class Class19_Sub1 extends Class19 {
 				return StringUtilities.aJagexString_278;
 			}
 			if ((i ^ 0xffffffff) < -4) {
-				return Class4_Sub20_Sub3.aJagexString_2803;
+				return StringUtilities.aJagexString_2803;
 			}
 			if ((i ^ 0xffffffff) < -1) {
-				return Class4_Sub20_Sub13.aJagexString_3108;
+				return StringUtilities.aJagexString_3108;
 			}
 			return Class80.aJagexString_1641;
 		} catch (RuntimeException runtimeexception) {

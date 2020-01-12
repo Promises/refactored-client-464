@@ -18,18 +18,18 @@ public class Class30 {
 				return Class4_Sub24.method639(
 						(new JagexString[] { Class82.aJagexString_1724,
 								Class74.method1168(arg1 + -11, arg0),
-								(Class4_Sub20_Sub10.aJagexString_3072) }), -842);
+								(StringUtilities.aJagexString_3072) }), -842);
 			if (arg0 < 10000000)
 				return (Class4_Sub24.method639(
-						new JagexString[] { Class4_Sub20_Sub16.aJagexString_3181,
+						new JagexString[] { StringUtilities.aJagexString_3181,
 								Class74.method1168(-16, arg0 / 1000),
 								Class73.aJagexString_1501,
-								Class4_Sub20_Sub10.aJagexString_3072}, -842));
+								StringUtilities.aJagexString_3072}, -842));
 			return (Class4_Sub24.method639(
 					new JagexString[] { StringUtilities.aJagexString_445,
 							Class74.method1168(-76, arg0 / 1000000),
 							StringUtilities.aJagexString_681,
-							Class4_Sub20_Sub10.aJagexString_3072}, -842));
+							StringUtilities.aJagexString_3072}, -842));
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("j.B("
 					+ arg0 + ',' + arg1 + ')'));

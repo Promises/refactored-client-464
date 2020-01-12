@@ -153,7 +153,7 @@ public class Class35 {
 			if ((jagexString.method825(-114) ^ 0xffffffff) < -10) {
 				return (Class4_Sub24.method639(
 						(new JagexString[] {
-								Class4_Sub11_Sub1.aJagexString_2693,
+								StringUtilities.aJagexString_2693,
 								jagexString.method829((byte) 6, 0,
 										-8 + jagexString.method825(-111)),
 								StringUtilities.aJagexString_679,

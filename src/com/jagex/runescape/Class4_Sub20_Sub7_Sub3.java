@@ -1,45 +1,27 @@
 package com.jagex.runescape;
 
 public class Class4_Sub20_Sub7_Sub3 extends Class4_Sub20_Sub7 {
-	public static boolean[] aBooleanArray3342;
-	public static JagexString aJagexString_3332;
-	public static JagexString aJagexString_3334;
-	public static JagexString aJagexString_3337 = JagexString.getRs2PreparedString(
-			"title_mute");
-	public static JagexString aJagexString_3343;
-	public static JagexString aJagexString_3351;
-	public static JagexString aJagexString_3355;
+	public static boolean[] aBooleanArray3342 = new boolean[100];
 	public static long aLong3335;
 	public static int anInt3333;
 	public static int anInt3339;
 	public static int anInt3340;
 	public static int anInt3346;
 	public static int anInt3347;
-	public static int anInt3354;
+	public static int anInt3354 = 0;
 	public static int anInt3356;
-	static {
-		aJagexString_3334 = JagexString.getRs2PreparedString("");
-		aJagexString_3332 = JagexString.getRs2PreparedString("auf der Hautpseite)3"
-        );
-		aJagexString_3351 = JagexString.getRs2PreparedString(" has logged in)3");
-		aJagexString_3343 = aJagexString_3351;
-		aBooleanArray3342 = new boolean[100];
-		anInt3354 = 0;
-		aJagexString_3355 = (JagexString.getRs2PreparedString(
-				"RuneScape wird geladen )2 bitte warten)3)3)3"));
-	}
+
 
 	public static void method417(byte arg0) {
 		try {
-			aJagexString_3337 = null;
-			aJagexString_3355 = null;
-			aJagexString_3343 = null;
-			aJagexString_3351 = null;
+			StringUtilities.aJagexString_3337 = null;
+			StringUtilities.aJagexString_3355 = null;
+			StringUtilities.aJagexString_3343 = null;
 			if (arg0 >= -40)
 				method417((byte) 39);
 			aBooleanArray3342 = null;
-			aJagexString_3334 = null;
-			aJagexString_3332 = null;
+			StringUtilities.aJagexString_3334 = null;
+			StringUtilities.aJagexString_3332 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ga.C("
 					+ arg0 + ')');

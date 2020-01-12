@@ -663,7 +663,7 @@ public abstract class Class42 {
 								Class4_Sub20_Sub4.method359(
 										(Class4_Sub24.method639((new JagexString[] {
 												Class62.aJagexString_1239,
-												Class4_Sub14.aJagexString_2271,
+												StringUtilities.aJagexString_2271,
                                                 jagexString}), -842)), arg3, arg1,
 										46, arg4, (byte) 38,
 										Class57.aJagexString_1154);
@@ -679,7 +679,7 @@ public abstract class Class42 {
 										if (jagexStrings[i] != null
 												&& !(jagexStrings[i]
 														.method818(
-																Class4_Sub16.aJagexString_2305,
+																StringUtilities.aJagexString_2305,
 																(byte) -105))) {
 											RSCanvas.anInt49++;
 											int i_21_ = 0;
@@ -712,7 +712,7 @@ public abstract class Class42 {
 										if (jagexStrings[i] != null
 												&& (jagexStrings[i]
 														.method818(
-																Class4_Sub16.aJagexString_2305,
+																StringUtilities.aJagexString_2305,
 																(byte) -105))) {
 											Class4_Sub20_Sub3.anInt2808++;
 											int i_22_ = 0;
@@ -757,7 +757,7 @@ public abstract class Class42 {
 								Class4_Sub20_Sub4.method359(
 										(Class4_Sub24.method639((new JagexString[] {
 												Class5.aJagexString_194,
-												Class4_Sub14.aJagexString_2271,
+												StringUtilities.aJagexString_2271,
                                                 jagexString}), -842)), arg3, arg1,
 										38, arg4, (byte) 120,
 										Class82.aJagexString_1714);

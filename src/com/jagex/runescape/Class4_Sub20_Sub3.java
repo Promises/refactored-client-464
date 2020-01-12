@@ -3,19 +3,6 @@ package com.jagex.runescape;
 import com.jagex.runescape.io.Buffer;
 
 public class Class4_Sub20_Sub3 extends Class4_Sub20 {
-	public static JagexString aJagexString_2794;
-	public static JagexString aJagexString_2795 = JagexString.getRs2PreparedString(
-			"Titelbild geladen)3");
-	public static JagexString aJagexString_2803;
-	public static JagexString aJagexString_2806 = JagexString.getRs2PreparedString(
-			"Loaded title screen");
-	public static JagexString aJagexString_2813;
-	public static JagexString aJagexString_2817;
-	public static JagexString aJagexString_2824;
-	public static JagexString aJagexString_2830;
-	public static JagexString aJagexString_2831;
-	public static JagexString aJagexString_2840;
-	public static JagexString aJagexString_2841;
 	public static Class76 aClass76_2798;
 	public static int anInt2802;
 	public static int anInt2805;
@@ -23,30 +10,13 @@ public class Class4_Sub20_Sub3 extends Class4_Sub20 {
 	public static int anInt2810;
 	public static int anInt2811;
 	public static int anInt2815;
-	public static int anInt2816;
+	public static int anInt2816 = 0;
 	public static int anInt2818;
 	public static int anInt2819;
 	public static int anInt2823;
 	public static int anInt2842;
-	public static int[] anIntArray2799;
-	static {
-		anIntArray2799 = new int[] { 1, 2, 4, 8 };
-		anInt2816 = 0;
-		aJagexString_2824 = JagexString.getRs2PreparedString("Unable to find ");
-		aJagexString_2813 = aJagexString_2824;
-		aJagexString_2803 = JagexString.getRs2PreparedString("<col=80ff00>");
-		aJagexString_2817 = (JagexString
-				.getRs2PreparedString(
-						"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789(Q(R+R(T(U^(V(Z(X(Y)2_=)0[*U]*W;:(W@(S*X)1<)3>)4?*6*V "
-				));
-		aJagexString_2831 = JagexString.getRs2PreparedString(
-				"wishes to duel with you)3");
-		aJagexString_2830 = JagexString.getRs2PreparedString("Registrierter Benutzer"
-		);
-		aJagexString_2794 = aJagexString_2831;
-		aJagexString_2840 = aJagexString_2817;
-		aJagexString_2841 = aJagexString_2806;
-	}
+	public static int[] anIntArray2799 = new int[] { 1, 2, 4, 8 };
+
 
 	public static void method350(int arg0, int arg1, int arg2, int arg3,
 			int arg4, int arg5, int arg6, int arg7) {
@@ -54,7 +24,7 @@ public class Class4_Sub20_Sub3 extends Class4_Sub20 {
 			anInt2818++;
 			if (Class4_Sub12.method277((byte) 114, arg3)) {
 				if (arg2 != 0)
-					aJagexString_2830 = null;
+					StringUtilities.aJagexString_2830 = null;
 				Class4_Sub3.method175(arg0, arg4, arg6,
 						Class28.aClass4_Sub13ArrayArray632[arg3], arg2 ^ 0x76,
 						arg1, arg5, arg7, -1);
@@ -68,21 +38,17 @@ public class Class4_Sub20_Sub3 extends Class4_Sub20 {
 
 	public static void method351(int arg0) {
 		try {
-			aJagexString_2840 = null;
-			aJagexString_2841 = null;
-			aJagexString_2794 = null;
-			aJagexString_2830 = null;
+			StringUtilities.aJagexString_2840 = null;
+			StringUtilities.aJagexString_2841 = null;
+			StringUtilities.aJagexString_2794 = null;
+			StringUtilities.aJagexString_2830 = null;
 			aClass76_2798 = null;
-			aJagexString_2813 = null;
-			aJagexString_2795 = null;
+			StringUtilities.aJagexString_2813 = null;
+			StringUtilities.aJagexString_2795 = null;
 			if (arg0 != -23648)
 				method350(5, -126, -52, -113, -46, 37, 91, 115);
-			aJagexString_2806 = null;
 			anIntArray2799 = null;
-			aJagexString_2831 = null;
-			aJagexString_2824 = null;
-			aJagexString_2803 = null;
-			aJagexString_2817 = null;
+			StringUtilities.aJagexString_2803 = null;
 		} catch (RuntimeException runtimeexception) {
 			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ba.D("
 					+ arg0 + ')');
@@ -149,8 +115,6 @@ public class Class4_Sub20_Sub3 extends Class4_Sub20 {
 	public Class4_Sub20_Sub7_Sub7 method347(int arg0, Class4_Sub20_Sub17 arg1,
 			Class4_Sub20_Sub17 arg2, int arg3, int arg4) {
 		try {
-			if (arg0 != 0)
-				aJagexString_2817 = null;
 			anInt2815++;
 			if (anIntArray2832 != null) {
 				Class4_Sub20_Sub3 class4_sub20_sub3 = method354((byte) 123);

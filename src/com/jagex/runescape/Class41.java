@@ -70,7 +70,7 @@ public class Class41 {
                                 true,
                                 (Class4_Sub24.method639((new JagexString[] {
                                         Class7.aJagexString_228,
-                                        Class4_Sub14.aJagexString_2285}), -842)),
+                                        StringUtilities.aJagexString_2285}), -842)),
                                 (byte) -126);
                     }
 					method938((byte) 0);
@@ -265,7 +265,7 @@ public class Class41 {
 													(Class4_Sub24
 															.method639(
 																	(new JagexString[] {
-																			(Actor.aJagexString_3294),
+																			(StringUtilities.aJagexString_3294),
 																			Class74.method1168(
 																					-90,
 																					i_45_),
@@ -492,9 +492,9 @@ public class Class41 {
 									}
 									while (RSCanvas.method34(127)) {
 										boolean bool = false;
-										for (int i_59_ = 0; ((i_59_ ^ 0xffffffff) > (Class4_Sub20_Sub3.aJagexString_2840
+										for (int i_59_ = 0; ((i_59_ ^ 0xffffffff) > (StringUtilities.aJagexString_2840
 												.method825(-101) ^ 0xffffffff)); i_59_++) {
-											if ((Class48.anInt980 ^ 0xffffffff) == ((Class4_Sub20_Sub3.aJagexString_2840
+											if ((Class48.anInt980 ^ 0xffffffff) == ((StringUtilities.aJagexString_2840
 													.method834(21340, i_59_)) ^ 0xffffffff)) {
 												bool = true;
 												break;

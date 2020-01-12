@@ -28,16 +28,16 @@ public class Class28 {
 					StringUtilities.aJagexString_1767)) {
 				i++;
 			}
-			if (arg2.method744((byte) 127, Class4_Sub20_Sub11.aJagexString_3090,
+			if (arg2.method744((byte) 127, StringUtilities.aJagexString_3090,
 					StringUtilities.aJagexString_1767)) {
 				i++;
 			}
-			if (arg2.method744((byte) 126, Class4_Sub20_Sub17.aJagexString_3214,
+			if (arg2.method744((byte) 126, StringUtilities.aJagexString_3214,
 					StringUtilities.aJagexString_1767)) {
 				i++;
 			}
 			if (arg2.method744((byte) 124,
-					Class4_Sub20_Sub7_Sub3.aJagexString_3337, StringUtilities.aJagexString_1767)) {
+					StringUtilities.aJagexString_3337, StringUtilities.aJagexString_1767)) {
 				i++;
 			}
 			arg2.method744((byte) -1, StringUtilities.aJagexString_678,

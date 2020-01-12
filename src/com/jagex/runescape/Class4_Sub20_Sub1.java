@@ -3,13 +3,7 @@ package com.jagex.runescape;
 import com.jagex.runescape.io.Buffer;
 
 public class Class4_Sub20_Sub1 extends Class4_Sub20 {
-	public static JagexString aJagexString_2731;
-	public static JagexString aJagexString_2733 = JagexString.getRs2PreparedString(" x "
-	);
-	public static JagexString aJagexString_2738 = JagexString.getRs2PreparedString("");
-	public static JagexString aJagexString_2746 = JagexString.getRs2PreparedString(
-			"This world is running a closed Beta)3");
-	public static Class4_Sub18 aClass4_Sub18_2704;
+    public static Class4_Sub18 aClass4_Sub18_2704;
 	public static Class4_Sub20_Sub12_Sub4_Sub1 aClass4_Sub20_Sub12_Sub4_Sub1_2708;
 	public static int anInt2701;
 	public static int anInt2714;
@@ -26,9 +20,7 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 	public static int anInt2752;
 	public static int anInt2753;
 	public static int anInt2755;
-	static {
-		aJagexString_2731 = aJagexString_2746;
-	}
+
 
 	public static void method328(byte arg0, Class10 arg1, Class19_Sub1 arg2,
 			int arg3) {
@@ -55,10 +47,9 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 	public static void method335(byte arg0) {
 		try {
 			aClass4_Sub18_2704 = null;
-			aJagexString_2731 = null;
-			aJagexString_2746 = null;
-			aJagexString_2733 = null;
-			aJagexString_2738 = null;
+			StringUtilities.aJagexString_2731 = null;
+			StringUtilities.aJagexString_2733 = null;
+			StringUtilities.aJagexString_2738 = null;
 			if (arg0 == 74)
 				aClass4_Sub20_Sub12_Sub4_Sub1_2708 = null;
 		} catch (RuntimeException runtimeexception) {

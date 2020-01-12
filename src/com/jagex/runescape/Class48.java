@@ -3,36 +3,18 @@ package com.jagex.runescape;
 import com.jagex.runescape.audio.Effect;
 
 public class Class48 {
-    public static JagexString aJagexString_977 = JagexString.getRs2PreparedString(
-            "Please contact customer support)3");
-    public static JagexString aJagexString_985;
-    public static JagexString aJagexString_986;
-    public static JagexString aJagexString_988;
-    public static Effect[] aEffectArray974;
+    public static Effect[] aEffectArray974 = new Effect[50];
     public static int anInt975;
-    public static int anInt976;
+    public static int anInt976 = 1;
     public static int anInt978;
     public static int anInt980;
-    public static int anInt981;
+    public static int anInt981 = 0;
     public static int anInt982;
     public static int anInt983;
-    public static int anInt984;
+    public static int anInt984 = 0;
     public static int anInt987;
-    public static int anInt989;
-    public static int[] anIntArray979;
-
-    static {
-        aEffectArray974 = new Effect[50];
-        anInt976 = 1;
-        anInt981 = 0;
-        anIntArray979 = new int[2048];
-        anInt984 = 0;
-        aJagexString_986 = JagexString.getRs2PreparedString("<img=0>");
-        aJagexString_985 = aJagexString_977;
-        aJagexString_988 = JagexString.getRs2PreparedString(
-                "oberen Rand der Webseite ausw-=hlen)3");
-        anInt989 = 0;
-    }
+    public static int anInt989 = 0;
+    public static int[] anIntArray979 = new int[2048];
 
     public static void method983(int arg0, int arg1, int arg2) {
         try {
@@ -81,7 +63,7 @@ public class Class48 {
                                             .method639(
                                                     (new JagexString[]{
                                                             jagexString,
-                                                            (Class4_Sub20_Sub10.aJagexString_3067)}),
+                                                            (StringUtilities.aJagexString_3067)}),
                                                     -842),
                                     Class4_Sub3.aJagexString_1895, (byte) 113, 0);
                             return;
@@ -105,7 +87,7 @@ public class Class48 {
                             .method802(
                                     1,
                                     (Class4_Sub15.localPlayer.aJagexString_3593))) {
-                        Class43.method955(Class4_Sub20_Sub6.aJagexString_2897,
+                        Class43.method955(StringUtilities.aJagexString_2897,
                                 Class4_Sub3.aJagexString_1895, (byte) 115, 0);
                     } else {
                         Class9.aLongArray284[JagexString.anInt1827++] = arg0;
@@ -151,13 +133,12 @@ public class Class48 {
 
     public static void method986(byte arg0) {
         try {
-            aJagexString_985 = null;
-            aJagexString_988 = null;
-            aJagexString_977 = null;
+            StringUtilities.aJagexString_985 = null;
+            StringUtilities.aJagexString_988 = null;
             if (arg0 > -32) {
                 anIntArray979 = null;
             }
-            aJagexString_986 = null;
+            StringUtilities.aJagexString_986 = null;
             aEffectArray974 = null;
             anIntArray979 = null;
         } catch (RuntimeException runtimeexception) {
