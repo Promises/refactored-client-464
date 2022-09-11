@@ -42,7 +42,7 @@ public class Class4_Sub19 extends RSFont {
 		}
 		anIntArray2345 = new int[i];
 		for (int i_33_ = 0; i_33_ < i; i_33_++)
-			anIntArray2345[i_33_] = arg0.readInt((byte) 73);
+			anIntArray2345[i_33_] = arg0.readInt();
 		anInt2342 = arg0.get();
 		anInt2341 = arg0.get();
 		anIntArray2344 = null;

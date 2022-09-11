@@ -34,36 +34,36 @@ public class Class4_Sub23 extends RSFont {
 		intGroundArray = new int[4][105][105];
 	}
 
-	public static Class4_Sub20_Sub8 method633(int arg0, byte arg1) {
+	public static ItemDefinition method633(int arg0, byte arg1) {
 		try {
 			anInt2414++;
-			Class4_Sub20_Sub8 class4_sub20_sub8 = ((Class4_Sub20_Sub8) Class14.aClass66_408
+			ItemDefinition itemDefinition = ((ItemDefinition) Class14.aClass66_408
 					.method1083(arg0, true));
 			if (arg1 >= -103)
 				anInt2415 = -49;
-			if (class4_sub20_sub8 != null)
-				return class4_sub20_sub8;
+			if (itemDefinition != null)
+				return itemDefinition;
 			byte[] is = Class4_Sub17.aClass19_2323.method746(10, (byte) 110,
 					arg0);
-			class4_sub20_sub8 = new Class4_Sub20_Sub8();
-			class4_sub20_sub8.anInt2954 = arg0;
+			itemDefinition = new ItemDefinition();
+			itemDefinition.anInt2954 = arg0;
 			if (is != null)
-				class4_sub20_sub8.method466(122, new Buffer(is));
-			class4_sub20_sub8.method463(4065);
-			if (class4_sub20_sub8.anInt2986 != -1)
-				class4_sub20_sub8.method472(99,
-						method633(class4_sub20_sub8.anInt2977, (byte) -107),
-						method633(class4_sub20_sub8.anInt2986, (byte) -124));
-			if (!Class35.aBoolean744 && class4_sub20_sub8.aBoolean3002) {
-				class4_sub20_sub8.anInt3000 = 0;
-				class4_sub20_sub8.aJagexStringArray2988 = null;
-				class4_sub20_sub8.aJagexString_2991 = StringUtilities.aJagexString_3096;
-				class4_sub20_sub8.aJagexStringArray3008 = null;
+				itemDefinition.readFileData(new Buffer(is));
+			itemDefinition.method463(4065);
+			if (itemDefinition.certTemplate != -1)
+				itemDefinition.method472(99,
+						method633(itemDefinition.certLink, (byte) -107),
+						method633(itemDefinition.certTemplate, (byte) -124));
+			if (!Class35.aBoolean744 && itemDefinition.members) {
+				itemDefinition.team = 0;
+				itemDefinition.iops = null;
+				itemDefinition.name = StringUtilities.aJagexString_3096;
+				itemDefinition.ops = null;
 			}
-			Class14.aClass66_408.method1082(true, arg0, class4_sub20_sub8);
-			return class4_sub20_sub8;
+			Class14.aClass66_408.method1082(true, arg0, itemDefinition);
+			return itemDefinition;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ub.B("
+			throw JagexException.create(runtimeexception, ("ub.B("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -81,7 +81,7 @@ public class Class4_Sub23 extends RSFont {
 				method635(true);
 			aJagexString_2433 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ub.C("
+			throw JagexException.create(runtimeexception, "ub.C("
 					+ arg0 + ')');
 		}
 	}
@@ -105,7 +105,7 @@ public class Class4_Sub23 extends RSFont {
 						class4_sub12.aByteArray2122, false, false);
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ub.E("
+			throw JagexException.create(runtimeexception, "ub.E("
 					+ arg0 + ')');
 		}
 	}
@@ -446,7 +446,7 @@ public class Class4_Sub23 extends RSFont {
 					class57_82_.anInt1123 = class4_sub11.get();
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					("ub.<init>(" + (arg0 != null ? "{...}" : "null") + ')'));
 		}
 	}
@@ -484,7 +484,7 @@ public class Class4_Sub23 extends RSFont {
 			}
 			return bool;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ub.A("
+			throw JagexException.create(runtimeexception, ("ub.A("
 					+ (arg0 != null ? "{...}" : "null") + ','
 					+ (arg1 != null ? "{...}" : "null") + ','
 					+ (arg2 != null ? "{...}" : "null") + ',' + arg3 + ')'));

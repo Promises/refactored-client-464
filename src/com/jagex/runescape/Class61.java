@@ -50,7 +50,7 @@ public class Class61 {
                 aJagexString_1206 = null;
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "re.D("
+            throw JagexException.create(runtimeexception, "re.D("
                     + arg0 + ')');
         }
     }
@@ -71,7 +71,7 @@ public class Class61 {
             }
             return (arg1 & 0xff80) - -arg0;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("re.B("
+            throw JagexException.create(runtimeexception, ("re.B("
                     + arg0 + ',' + arg1 + ',' + arg2 + ')'));
         }
     }
@@ -357,12 +357,12 @@ public class Class61 {
                                     }
                                 } else if ((Class81.anInt1681 == 1 || (Class42
                                         .method942(-86, -1
-                                                + (Class4_Sub20_Sub8.anInt2980))))
-                                        && (Class4_Sub20_Sub8.anInt2980 ^ 0xffffffff) < -3) {
+                                                + (ItemDefinition.anInt2980))))
+                                        && (ItemDefinition.anInt2980 ^ 0xffffffff) < -3) {
                                     SceneGraph.method707(-21);
-                                } else if ((Class4_Sub20_Sub8.anInt2980 ^ 0xffffffff) < -1) {
+                                } else if ((ItemDefinition.anInt2980 ^ 0xffffffff) < -1) {
                                     Buffer.method221(0, -1
-                                            + Class4_Sub20_Sub8.anInt2980);
+                                            + ItemDefinition.anInt2980);
                                 }
                                 Class62.anInt1227 = 0;
                                 Class18.anInt475 = 10;
@@ -736,7 +736,7 @@ public class Class61 {
             }
             return jagexString;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("re.F("
+            throw JagexException.create(runtimeexception, ("re.F("
                     + arg0 + ',' + arg1 + ',' + arg2 + ','
                     + (arg3 != null ? "{...}" : "null") + ')'));
         }
@@ -763,7 +763,7 @@ public class Class61 {
             Class67.anInt1341 = Class4_Sub20_Sub10.anInt3053;
             Class80.anInt1646++;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("re.A("
+            throw JagexException.create(runtimeexception, ("re.A("
                     + (arg0 != null ? "{...}" : "null") + ',' + arg1 + ','
                     + arg2 + ',' + (arg3 != null ? "{...}" : "null") + ','
                     + (arg4 != null ? "{...}" : "null") + ')'));

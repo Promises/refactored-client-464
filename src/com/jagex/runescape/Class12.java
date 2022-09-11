@@ -465,7 +465,7 @@ public class Class12 {
             }
             anInt345++;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+            throw JagexException.create(runtimeexception,
                     ("cd.C(" + arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3
                             + ',' + arg4 + ')'));
         }
@@ -483,7 +483,7 @@ public class Class12 {
             arg1 |= arg1 >>> -940770512;
             return 1 + arg1;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("cd.A("
+            throw JagexException.create(runtimeexception, ("cd.A("
                     + arg0 + ',' + arg1 + ')'));
         }
     }
@@ -502,7 +502,7 @@ public class Class12 {
             rsaModulus = null;
             anIntArray357 = null;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "cd.B("
+            throw JagexException.create(runtimeexception, "cd.B("
                     + arg0 + ')');
         }
     }

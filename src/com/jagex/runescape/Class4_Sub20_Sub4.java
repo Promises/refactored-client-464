@@ -28,7 +28,7 @@ public class Class4_Sub20_Sub4 extends Class4_Sub20 {
 			return Class4_Sub2_Sub4.method170(-21408,
 					arg0.method746(arg3, (byte) 126, arg4));
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("de.B("
+			throw JagexException.create(runtimeexception, ("de.B("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ','
 					+ (arg2 != null ? "{...}" : "null") + ',' + arg3 + ','
 					+ arg4 + ')'));
@@ -41,21 +41,21 @@ public class Class4_Sub20_Sub4 extends Class4_Sub20 {
 			try {
 				anInt2843++;
 				if (!Class4_Sub20_Sub16.aBoolean3169) {
-					if ((Class4_Sub20_Sub8.anInt2980 ^ 0xffffffff) > -501) {
-						Class4_Sub20_Sub8.aJagexStringArray2957[(Class4_Sub20_Sub8.anInt2980)] = arg6;
-						Class18.aJagexStringArray462[Class4_Sub20_Sub8.anInt2980] = arg0;
-						Class82.anIntArray1712[Class4_Sub20_Sub8.anInt2980] = arg3;
-						Class4_Sub1.anIntArray1862[Class4_Sub20_Sub8.anInt2980] = arg4;
-						Class43.anIntArray885[Class4_Sub20_Sub8.anInt2980] = arg2;
-						Class40.anIntArray789[Class4_Sub20_Sub8.anInt2980] = arg1;
-						Class4_Sub20_Sub8.anInt2980++;
+					if ((ItemDefinition.anInt2980 ^ 0xffffffff) > -501) {
+						ItemDefinition.aJagexStringArray2957[(ItemDefinition.anInt2980)] = arg6;
+						Class18.aJagexStringArray462[ItemDefinition.anInt2980] = arg0;
+						Class82.anIntArray1712[ItemDefinition.anInt2980] = arg3;
+						Class4_Sub1.anIntArray1862[ItemDefinition.anInt2980] = arg4;
+						Class43.anIntArray885[ItemDefinition.anInt2980] = arg2;
+						Class40.anIntArray789[ItemDefinition.anInt2980] = arg1;
+						ItemDefinition.anInt2980++;
 					}
 					if (arg5 > 16)
 						break;
 					aBoolean2849 = true;
 				}
 			} catch (RuntimeException runtimeexception) {
-				throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+				throw JagexException.create(runtimeexception,
 						("de.C(" + (arg0 != null ? "{...}" : "null") + ','
 								+ arg1 + ',' + arg2 + ',' + arg3 + ',' + arg4
 								+ ',' + arg5 + ','
@@ -80,7 +80,7 @@ public class Class4_Sub20_Sub4 extends Class4_Sub20 {
 				method359(null, -107, -22, -53, -121, (byte) -80, null);
 			StringUtilities.aJagexString_2866 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "de.A("
+			throw JagexException.create(runtimeexception, "de.A("
 					+ arg0 + ')');
 		}
 	}

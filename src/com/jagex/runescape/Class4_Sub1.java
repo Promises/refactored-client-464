@@ -39,7 +39,7 @@ public class Class4_Sub1 extends RSFont {
 			aClass19_Sub1_1861 = null;
 			anIntArray1862 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "af.A("
+			throw JagexException.create(runtimeexception, "af.A("
 					+ arg0 + ')');
 		}
 	}
@@ -51,7 +51,7 @@ public class Class4_Sub1 extends RSFont {
 				return true;
 			return Class1.aClass4_Sub2_Sub1_64.method119((byte) -25);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "af.B("
+			throw JagexException.create(runtimeexception, "af.B("
 					+ arg0 + ')');
 		}
 	}

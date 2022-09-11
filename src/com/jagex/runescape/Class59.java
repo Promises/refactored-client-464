@@ -41,7 +41,7 @@ public class Class59 {
 			}
 			throw new IllegalArgumentException();
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("r.C("
+			throw JagexException.create(runtimeexception, ("r.C("
 					+ arg0 + ',' + arg1 + ','
 					+ (arg2 != null ? "{...}" : "null") + ')'));
 		}
@@ -51,7 +51,7 @@ public class Class59 {
 		try {
 			return arg0 & arg1;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("r.A("
+			throw JagexException.create(runtimeexception, ("r.A("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -66,7 +66,7 @@ public class Class59 {
 			aClass22_1185 = null;
 			aJagexString_1180 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "r.B("
+			throw JagexException.create(runtimeexception, "r.B("
 					+ arg0 + ')');
 		}
 	}
@@ -76,17 +76,17 @@ public class Class59 {
 		boolean bool = false;
 		while (!bool) {
 			bool = true;
-			for (int i = 0; i < Class4_Sub20_Sub8.anInt2980 - 1; i++) {
+			for (int i = 0; i < ItemDefinition.anInt2980 - 1; i++) {
 				if (Class82.anIntArray1712[i] < 1000
 						&& Class82.anIntArray1712[1 + i] > 1000) {
 					bool = false;
 					JagexString jagexString = Class18.aJagexStringArray462[i];
 					Class18.aJagexStringArray462[i] = Class18.aJagexStringArray462[1 + i];
 					Class18.aJagexStringArray462[i + 1] = jagexString;
-					JagexString jagexString_0_ = Class4_Sub20_Sub8.aJagexStringArray2957[i];
-					Class4_Sub20_Sub8.aJagexStringArray2957[i] = Class4_Sub20_Sub8.aJagexStringArray2957[i
+					JagexString jagexString_0_ = ItemDefinition.aJagexStringArray2957[i];
+					ItemDefinition.aJagexStringArray2957[i] = ItemDefinition.aJagexStringArray2957[i
 							- -1];
-					Class4_Sub20_Sub8.aJagexStringArray2957[1 + i] = jagexString_0_;
+					ItemDefinition.aJagexStringArray2957[1 + i] = jagexString_0_;
 					int i_1_ = Class82.anIntArray1712[i];
 					Class82.anIntArray1712[i] = Class82.anIntArray1712[i + 1];
 					Class82.anIntArray1712[i - -1] = i_1_;

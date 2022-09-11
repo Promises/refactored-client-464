@@ -82,7 +82,7 @@ public abstract class Actor extends Class4_Sub20_Sub7 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "fb.A("
+			throw JagexException.create(runtimeexception, "fb.A("
 					+ arg0 + ')');
 		}
 	}
@@ -106,7 +106,7 @@ public abstract class Actor extends Class4_Sub20_Sub7 {
 			Class43.method953(true);
 			return imageRGB;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "fb.H("
+			throw JagexException.create(runtimeexception, "fb.H("
 					+ arg0 + ')');
 		}
 	}
@@ -125,7 +125,7 @@ public abstract class Actor extends Class4_Sub20_Sub7 {
 				StringUtilities.aJagexString_3243 = null;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "fb.E("
+			throw JagexException.create(runtimeexception, "fb.E("
 					+ arg0 + ')');
 		}
 	}
@@ -134,7 +134,7 @@ public abstract class Actor extends Class4_Sub20_Sub7 {
 		try {
 			return arg0 | arg1;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("fb.F("
+			throw JagexException.create(runtimeexception, ("fb.F("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -253,7 +253,7 @@ public abstract class Actor extends Class4_Sub20_Sub7 {
 				anInt3228 = 0;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "fb.G("
+			throw JagexException.create(runtimeexception, "fb.G("
 					+ arg0 + ')');
 		}
 	}
@@ -272,7 +272,7 @@ public abstract class Actor extends Class4_Sub20_Sub7 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("fb.I("
+			throw JagexException.create(runtimeexception, ("fb.I("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ')'));
 		}
 	}
@@ -284,7 +284,7 @@ public abstract class Actor extends Class4_Sub20_Sub7 {
 			}
 			return false;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "fb.D("
+			throw JagexException.create(runtimeexception, "fb.D("
 					+ arg0 + ')');
 		}
 	}
@@ -322,7 +322,7 @@ public abstract class Actor extends Class4_Sub20_Sub7 {
 			worldY = anIntArray3247[0] * arg2 + anInt3244 * 64;
 			worldX = 64 * anInt3244 + 128 * anIntArray3248[0];
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("fb.B("
+			throw JagexException.create(runtimeexception, ("fb.B("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ')'));
 		}
 	}
@@ -377,7 +377,7 @@ public abstract class Actor extends Class4_Sub20_Sub7 {
 				anIntArray3247[0] = i_2_;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("fb.C("
+			throw JagexException.create(runtimeexception, ("fb.C("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
 		}
 	}

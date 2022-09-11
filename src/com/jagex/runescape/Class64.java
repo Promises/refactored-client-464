@@ -101,7 +101,7 @@ public class Class64 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("sd.E("
+			throw JagexException.create(runtimeexception, ("sd.E("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ')'));
 		}
 	}
@@ -151,7 +151,7 @@ public class Class64 {
 			}
 			return false;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "sd.D("
+			throw JagexException.create(runtimeexception, "sd.D("
 					+ arg0 + ')');
 		}
 	}
@@ -171,7 +171,7 @@ public class Class64 {
 				aJagexString_1283 = null;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "sd.B("
+			throw JagexException.create(runtimeexception, "sd.B("
 					+ arg0 + ')');
 		}
 	}
@@ -187,7 +187,7 @@ public class Class64 {
 			}
 			anInt1267++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "sd.C("
+			throw JagexException.create(runtimeexception, "sd.C("
 					+ arg0 + ')');
 		}
 	}
@@ -248,7 +248,7 @@ public class Class64 {
 			jagexString.aByteArray1803 = is;
 			return jagexString;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("sd.F("
+			throw JagexException.create(runtimeexception, ("sd.F("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ','
 					+ (arg3 != null ? "{...}" : "null") + ')'));
 		}
@@ -259,9 +259,9 @@ public class Class64 {
 			anInt1272++;
 			if (Class4_Sub20.aClass4_Sub11_2363 != null) {
 				Class4_Sub20.aClass4_Sub11_2363.currentPosition = arg0 * 8 + 5;
-				int i = Class4_Sub20.aClass4_Sub11_2363.readInt((byte) 73);
+				int i = Class4_Sub20.aClass4_Sub11_2363.readInt();
 				int i_18_ = Class4_Sub20.aClass4_Sub11_2363
-						.readInt((byte) 73);
+						.readInt();
 				arg1.method760(i_18_, 255, i);
 			} else {
 				Class11.method672(0, 255, null, (byte) 0, arg2, true,
@@ -269,7 +269,7 @@ public class Class64 {
 				SceneGraph.aClass19_Sub1Array2492[arg0] = arg1;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("sd.H("
+			throw JagexException.create(runtimeexception, ("sd.H("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ','
 					+ arg2 + ')'));
 		}
@@ -297,7 +297,7 @@ public class Class64 {
 			anInt1252 = 0;
 			aLong1280 = 30000L + Class52.method1002((byte) -42);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					("sd.<init>(" + (arg0 != null ? "{...}" : "null") + ','
 							+ (arg1 != null ? "{...}" : "null") + ')'));
 		}
@@ -326,7 +326,7 @@ public class Class64 {
 							anInt1275, i);
 					if ((anInt1275 ^ 0xffffffff) == -5) {
 						int i_0_ = new Buffer(aByteArray1262)
-								.readInt((byte) 73);
+								.readInt();
 						anInt1252 = 2;
 						aByteArray1274 = new byte[i_0_];
 					}
@@ -348,7 +348,7 @@ public class Class64 {
 			}
 			return null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "sd.G("
+			throw JagexException.create(runtimeexception, "sd.G("
 					+ arg0 + ')');
 		}
 	}

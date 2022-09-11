@@ -58,7 +58,7 @@ public class Class8 {
 			aClass4_Sub20_Sub12_Sub1Array262 = null;
 			aJagexString_250 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "be.B("
+			throw JagexException.create(runtimeexception, "be.B("
 					+ arg0 + ')');
 		}
 	}
@@ -99,7 +99,7 @@ public class Class8 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					("be.<init>(" + arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -137,7 +137,7 @@ public class Class8 {
 			anInt239++;
 			return arg0;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("be.C("
+			throw JagexException.create(runtimeexception, ("be.C("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ')'));
 		}
 	}
@@ -151,7 +151,7 @@ public class Class8 {
 			anInt241++;
 			return arg1;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("be.A("
+			throw JagexException.create(runtimeexception, ("be.A("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -165,7 +165,7 @@ public class Class8 {
 				arg1 = 6 + (int) ((long) arg1 * (long) anInt238 / anInt255);
 			return arg1;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("be.D("
+			throw JagexException.create(runtimeexception, ("be.D("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}

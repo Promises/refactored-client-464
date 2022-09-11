@@ -26,7 +26,7 @@ public class Class4_Sub20_Sub10 extends Class4_Sub20 {
 					anInt3053 = -61;
 				}
 			} catch (RuntimeException runtimeexception) {
-				throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+				throw JagexException.create(runtimeexception,
 						("ma.B(" + arg0 + ',' + arg1 + ')'));
 			}
 			break;
@@ -47,7 +47,7 @@ public class Class4_Sub20_Sub10 extends Class4_Sub20 {
 			StringUtilities.aJagexString_3056 = null;
 			aByteArrayArrayArray3054 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ma.A("
+			throw JagexException.create(runtimeexception, "ma.A("
 					+ arg0 + ')');
 		}
 	}

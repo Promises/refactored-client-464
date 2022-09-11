@@ -23,7 +23,7 @@ public class Class4_Sub20_Sub16 extends Class4_Sub20 {
 			Buffer.anInt2085 = 1;
 			Class67.aClass19_1363 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ta.E("
+			throw JagexException.create(runtimeexception, "ta.E("
 					+ arg0 + ')');
 		}
 	}
@@ -37,7 +37,7 @@ public class Class4_Sub20_Sub16 extends Class4_Sub20 {
 			Class64.method1060(is, 53);
 			return true;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ta.B("
+			throw JagexException.create(runtimeexception, ("ta.B("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ','
 					+ arg2 + ')'));
 		}
@@ -50,7 +50,7 @@ public class Class4_Sub20_Sub16 extends Class4_Sub20 {
 				return -115;
 			return 6;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ta.D("
+			throw JagexException.create(runtimeexception, "ta.D("
 					+ arg0 + ')');
 		}
 	}
@@ -62,11 +62,11 @@ public class Class4_Sub20_Sub16 extends Class4_Sub20 {
 			Buffer class4_sub11 = new Buffer(arg1);
 			anInt3167++;
 			int i = class4_sub11.get();
-			int i_0_ = class4_sub11.readInt((byte) 73);
+			int i_0_ = class4_sub11.readInt();
 			if (i_0_ < 0 || Class31.anInt689 != 0 && Class31.anInt689 < i_0_)
 				throw new RuntimeException();
 			if (i != 0) {
-				int i_1_ = class4_sub11.readInt((byte) 73);
+				int i_1_ = class4_sub11.readInt();
 				if ((i_1_ ^ 0xffffffff) > -1
 						|| ((Class31.anInt689 ^ 0xffffffff) != -1 && (i_1_ ^ 0xffffffff) < (Class31.anInt689 ^ 0xffffffff)))
 					throw new RuntimeException();
@@ -74,7 +74,7 @@ public class Class4_Sub20_Sub16 extends Class4_Sub20 {
 				if ((i ^ 0xffffffff) == -2)
 					Class23.method780(is, i_1_, arg1, i_0_, 9);
 				else
-					Class4_Sub20_Sub8.aClass77_3020.method1190((byte) -84, is,
+					ItemDefinition.aClass77_3020.method1190((byte) -84, is,
 							class4_sub11);
 				return is;
 			}
@@ -82,7 +82,7 @@ public class Class4_Sub20_Sub16 extends Class4_Sub20 {
 			class4_sub11.method253(0, (byte) -15, i_0_, is);
 			return is;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ta.C("
+			throw JagexException.create(runtimeexception, ("ta.C("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ')'));
 		}
 	}
@@ -98,7 +98,7 @@ public class Class4_Sub20_Sub16 extends Class4_Sub20 {
 			StringUtilities.aJagexString_3162 = null;
 			StringUtilities.aJagexString_3165 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ta.A("
+			throw JagexException.create(runtimeexception, "ta.A("
 					+ arg0 + ')');
 		}
 	}

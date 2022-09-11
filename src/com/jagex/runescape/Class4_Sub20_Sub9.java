@@ -72,7 +72,7 @@ public class Class4_Sub20_Sub9 extends Class4_Sub20 {
                 anInt3030++;
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("kf.E("
+            throw JagexException.create(runtimeexception, ("kf.E("
                     + (arg0 != null ? "{...}" : "null") + ',' + arg1 + ','
                     + (arg2 != null ? "{...}" : "null") + ','
                     + (arg3 != null ? "{...}" : "null") + ')'));
@@ -93,7 +93,7 @@ public class Class4_Sub20_Sub9 extends Class4_Sub20 {
                 aClass16_3038 = null;
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "kf.D("
+            throw JagexException.create(runtimeexception, "kf.D("
                     + arg0 + ')');
         }
     }
@@ -131,7 +131,7 @@ public class Class4_Sub20_Sub9 extends Class4_Sub20 {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("kf.C("
+            throw JagexException.create(runtimeexception, ("kf.C("
                     + arg0 + ',' + (arg1 != null ? "{...}" : "null") + ','
                     + arg2 + ')'));
         }
@@ -153,7 +153,7 @@ public class Class4_Sub20_Sub9 extends Class4_Sub20 {
             }
             anInt3026++;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("kf.F("
+            throw JagexException.create(runtimeexception, ("kf.F("
                     + arg0 + ',' + arg1 + ','
                     + (arg2 != null ? "{...}" : "null") + ',' + arg3 + ')'));
         }
@@ -170,7 +170,7 @@ public class Class4_Sub20_Sub9 extends Class4_Sub20 {
             }
             method481(true, anInt3025);
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "kf.G("
+            throw JagexException.create(runtimeexception, "kf.G("
                     + arg0 + ')');
         }
     }

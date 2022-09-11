@@ -90,7 +90,7 @@ public class Region {
 				Class54.anInt1109 = arg0;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ac.B("
+			throw JagexException.create(runtimeexception, ("ac.B("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -105,7 +105,7 @@ public class Region {
 				Class43.aLongArray881[i] = 0L;
 			Class4_Sub10.anInt2024 = 0;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ac.Q("
+			throw JagexException.create(runtimeexception, "ac.Q("
 					+ arg0 + ')');
 		}
 	}
@@ -151,7 +151,7 @@ public class Region {
 				Class72.anInt1494 = arg1;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ac.A("
+			throw JagexException.create(runtimeexception, ("ac.A("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ','
 					+ (arg3 != null ? "{...}" : "null") + ')'));
 		}
@@ -178,7 +178,7 @@ public class Region {
 			Class57.aClass66_1131.method1082(arg0, arg1, class4_sub20_sub1);
 			return class4_sub20_sub1;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ac.O("
+			throw JagexException.create(runtimeexception, ("ac.O("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -264,8 +264,8 @@ public class Region {
 					i_20_ = 64;
 				if (i_19_ == 4)
 					i_20_ = 0;
-				if (i_20_ != Class4_Sub20_Sub8.anInt3021) {
-					if (Class4_Sub20_Sub8.anInt3021 != 0
+				if (i_20_ != ItemDefinition.anInt3021) {
+					if (ItemDefinition.anInt3021 != 0
 							|| (anInt136 ^ 0xffffffff) == 0) {
 						if (i_20_ != 0)
 							Class35.method911(23245, i_20_);
@@ -278,7 +278,7 @@ public class Region {
 								Class54.aClass19_Sub1_1107, 0, anInt136, false);
 						Class4_Sub20_Sub6.aBoolean2895 = false;
 					}
-					Class4_Sub20_Sub8.anInt3021 = i_20_;
+					ItemDefinition.anInt3021 = i_20_;
 				}
 			}
 			if ((i ^ 0xffffffff) == -5) {
@@ -327,7 +327,7 @@ public class Region {
 				aJagexString_137 = null;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ac.U("
+			throw JagexException.create(runtimeexception, "ac.U("
 					+ arg0 + ')');
 		}
 	}
@@ -351,7 +351,7 @@ public class Region {
 			anInt101 = 0;
 			method68(true);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					("ac.<init>(" + arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -430,7 +430,7 @@ public class Region {
 			}
 			return false;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ac.M("
+			throw JagexException.create(runtimeexception, ("ac.M("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ',' + arg4
 					+ ',' + arg5 + ',' + arg6 + ')'));
 		}
@@ -474,7 +474,7 @@ public class Region {
 				return true;
 			return false;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ac.T("
+			throw JagexException.create(runtimeexception, ("ac.T("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ',' + arg4
 					+ ',' + arg5 + ',' + arg6 + ',' + arg7 + ')'));
 		}
@@ -617,7 +617,7 @@ public class Region {
 						clippingData[arg2][arg1], 262144);
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ac.E("
+			throw JagexException.create(runtimeexception, ("ac.E("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
 		}
 	}
@@ -630,7 +630,7 @@ public class Region {
 				anInt99++;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ac.J("
+			throw JagexException.create(runtimeexception, ("ac.J("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ')'));
 		}
 	}
@@ -787,7 +787,7 @@ public class Region {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ac.R("
+			throw JagexException.create(runtimeexception, ("ac.R("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ',' + arg4
 					+ ',' + arg5 + ',' + arg6 + ')'));
 		}
@@ -949,7 +949,7 @@ public class Region {
 			}
 			return false;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ac.H("
+			throw JagexException.create(runtimeexception, ("ac.H("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ',' + arg4
 					+ ',' + arg5 + ',' + arg6 + ')'));
 		}
@@ -963,7 +963,7 @@ public class Region {
 			clippingData[arg0][arg1] = Actor.method389(
 					clippingData[arg0][arg1], arg2);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ac.K("
+			throw JagexException.create(runtimeexception, ("ac.K("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
 		}
 	}
@@ -1018,7 +1018,7 @@ public class Region {
 			if (arg0 == true)
 				anInt124++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ac.I("
+			throw JagexException.create(runtimeexception, "ac.I("
 					+ arg0 + ')');
 		}
 	}

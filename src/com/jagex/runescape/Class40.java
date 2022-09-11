@@ -84,7 +84,7 @@ public class Class40 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("la.D("
+			throw JagexException.create(runtimeexception, ("la.D("
 					+ arg0 + ',' + arg1 + ','
 					+ (arg2 != null ? "{...}" : "null") + ','
 					+ (arg3 != null ? "{...}" : "null") + ',' + arg4 + ')'));
@@ -102,7 +102,7 @@ public class Class40 {
 			StringUtilities.aJagexString_791 = null;
 			aClass4_Sub11_783 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "la.A("
+			throw JagexException.create(runtimeexception, "la.A("
 					+ arg0 + ')');
 		}
 	}
@@ -131,7 +131,7 @@ public class Class40 {
 			}
 			return arg4;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("la.C("
+			throw JagexException.create(runtimeexception, ("la.C("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ',' + arg4
 					+ ',' + arg5 + ',' + arg6 + ')'));
 		}
@@ -228,7 +228,7 @@ public class Class40 {
 			Class49.method992((byte) 93);
 			Region.method50(10, 1);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "la.B("
+			throw JagexException.create(runtimeexception, "la.B("
 					+ arg0 + ')');
 		}
 	}
@@ -242,7 +242,7 @@ public class Class40 {
 			Class66.aClass4_Sub11_Sub1_1328.method256(1918583904,
 					arg2.method806((byte) -111));
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("la.F("
+			throw JagexException.create(runtimeexception, ("la.F("
 					+ arg0 + ',' + arg1 + ','
 					+ (arg2 != null ? "{...}" : "null") + ')'));
 		}

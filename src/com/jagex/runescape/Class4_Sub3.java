@@ -108,7 +108,7 @@ public class Class4_Sub3 extends RSFont {
 					class4_sub15.clear();
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("db.A("
+			throw JagexException.create(runtimeexception, ("db.A("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -531,7 +531,7 @@ public class Class4_Sub3 extends RSFont {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("db.D("
+			throw JagexException.create(runtimeexception, ("db.D("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ','
 					+ (arg3 != null ? "{...}" : "null") + ',' + arg4 + ','
 					+ arg5 + ',' + arg6 + ',' + arg7 + ',' + arg8 + ')'));
@@ -554,7 +554,7 @@ public class Class4_Sub3 extends RSFont {
 			aJagexString_1911 = null;
 			aJagexString_1912 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "db.B("
+			throw JagexException.create(runtimeexception, "db.B("
 					+ arg0 + ')');
 		}
 	}
@@ -594,7 +594,7 @@ public class Class4_Sub3 extends RSFont {
 			anInt1894 = arg1;
 			anInt1906 = anInt1901 = arg0;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					("db.<init>(" + arg0 + ',' + arg1 + ',' + arg2 + ')'));
 		}
 	}

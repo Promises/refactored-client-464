@@ -26,13 +26,13 @@ public class SceneGraph extends Class14 {
 			anInt2487++;
 			int i = Class68.aClass4_Sub20_Sub12_Sub4_Sub1_1384
 					.method560(StringUtilities.aJagexString_563);
-			for (int i_3_ = 0; ((Class4_Sub20_Sub8.anInt2980 ^ 0xffffffff) < (i_3_ ^ 0xffffffff)); i_3_++) {
+			for (int i_3_ = 0; ((ItemDefinition.anInt2980 ^ 0xffffffff) < (i_3_ ^ 0xffffffff)); i_3_++) {
 				int i_4_ = Class68.aClass4_Sub20_Sub12_Sub4_Sub1_1384
 						.method560(Class4_Sub15.method298(i_3_, true));
 				if ((i_4_ ^ 0xffffffff) < (i ^ 0xffffffff))
 					i = i_4_;
 			}
-			Class45.anInt926 = Class4_Sub20_Sub8.anInt2980 * 15 + 22;
+			Class45.anInt926 = ItemDefinition.anInt2980 * 15 + 22;
 			Class4_Sub20_Sub16.aBoolean3169 = true;
 			i += 8;
 			int i_5_ = Class37.anInt758 - i / 2;
@@ -40,7 +40,7 @@ public class SceneGraph extends Class14 {
 			if ((i_5_ + i ^ 0xffffffff) < -766)
 				i_5_ = -i + 765;
 			int i_6_ = JagexException.anInt1729;
-			int i_7_ = Class4_Sub20_Sub8.anInt2980 * 15 - arg0;
+			int i_7_ = ItemDefinition.anInt2980 * 15 - arg0;
 			if (i_5_ < 0)
 				i_5_ = 0;
 			if (i_6_ + i_7_ > 503)
@@ -50,7 +50,7 @@ public class SceneGraph extends Class14 {
 				i_6_ = 0;
 			Class4_Sub1.anInt1860 = i_6_;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ca.E("
+			throw JagexException.create(runtimeexception, "ca.E("
 					+ arg0 + ')');
 		}
 	}
@@ -67,7 +67,7 @@ public class SceneGraph extends Class14 {
 			aJagexString_2488 = null;
 			aClass19_Sub1Array2492 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ca.B("
+			throw JagexException.create(runtimeexception, "ca.B("
 					+ arg0 + ')');
 		}
 	}
@@ -118,7 +118,7 @@ public class SceneGraph extends Class14 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					("ca.A(" + arg0 + ',' + arg1 + ','
 							+ (arg2 != null ? "{...}" : "null") + ','
 							+ (arg3 != null ? "{...}" : "null") + ',' + arg4
@@ -147,7 +147,7 @@ public class SceneGraph extends Class14 {
 			for (int i = 0; i < 10; i++)
 				aLongArray2499[i] = aLong2495;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					"ca.<init>(" + ')');
 		}
 	}
@@ -162,7 +162,7 @@ public class SceneGraph extends Class14 {
 			for (/**/; (i ^ 0xffffffff) > -11; i++)
 				aLongArray2499[i] = 0L;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ca.D("
+			throw JagexException.create(runtimeexception, "ca.D("
 					+ arg0 + ')');
 		}
 	}
@@ -212,7 +212,7 @@ public class SceneGraph extends Class14 {
 			anInt2501 &= 0xff;
 			return i_2_;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ca.C("
+			throw JagexException.create(runtimeexception, ("ca.C("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
 		}
 	}

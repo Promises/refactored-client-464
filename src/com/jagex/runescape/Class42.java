@@ -170,7 +170,7 @@ public abstract class Class42 {
 				return true;
 			return false;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("lc.F("
+			throw JagexException.create(runtimeexception, ("lc.F("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -621,7 +621,7 @@ public abstract class Class42 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("lc.B("
+			throw JagexException.create(runtimeexception, ("lc.B("
 					+ rotation + ',' + zAbs + ',' + localX + ',' + objectId
 					+ ',' + localY + ',' + type + ','
 					+ (arg7 != null ? "{...}" : "null") + ','
@@ -634,7 +634,7 @@ public abstract class Class42 {
 		do {
 			try {
 				anInt845++;
-				if (Class4_Sub20_Sub8.anInt2980 < 400) {
+				if (ItemDefinition.anInt2980 < 400) {
 					if (arg0.anIntArray2832 != null)
 						arg0 = arg0.method354((byte) 123);
 					if (arg0 != null) {
@@ -678,9 +678,9 @@ public abstract class Class42 {
 									for (int i = 4; (i ^ 0xffffffff) <= -1; i--) {
 										if (jagexStrings[i] != null
 												&& !(jagexStrings[i]
-														.method818(
-																StringUtilities.aJagexString_2305,
-																(byte) -105))) {
+														.stringEquals(
+																StringUtilities.aJagexString_2305
+                                                        ))) {
 											RSCanvas.anInt49++;
 											int i_21_ = 0;
 											if (i == 0)
@@ -711,9 +711,9 @@ public abstract class Class42 {
 									for (int i = 4; (i ^ 0xffffffff) <= -1; i--) {
 										if (jagexStrings[i] != null
 												&& (jagexStrings[i]
-														.method818(
-																StringUtilities.aJagexString_2305,
-																(byte) -105))) {
+														.stringEquals(
+																StringUtilities.aJagexString_2305
+                                                        ))) {
 											Class4_Sub20_Sub3.anInt2808++;
 											int i_22_ = 0;
 											int i_23_ = 0;
@@ -767,8 +767,8 @@ public abstract class Class42 {
 					}
 				}
 			} catch (RuntimeException runtimeexception) {
-				throw Class4_Sub20_Sub7_Sub4
-						.method423(runtimeexception,
+				throw JagexException
+						.create(runtimeexception,
 								("lc.C(" + (arg0 != null ? "{...}" : "null")
 										+ ',' + arg1 + ',' + arg2 + ',' + arg3
 										+ ',' + arg4 + ')'));
@@ -793,7 +793,7 @@ public abstract class Class42 {
 			StringUtilities.aJagexString_842 = null;
 			StringUtilities.aJagexString_840 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "lc.A("
+			throw JagexException.create(runtimeexception, "lc.A("
 					+ arg0 + ')');
 		}
 	}

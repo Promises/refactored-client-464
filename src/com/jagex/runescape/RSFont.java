@@ -73,7 +73,7 @@ public class RSFont {
             aJagexString_142 = null;
             aJagexString_146 = null;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ad.DB("
+            throw JagexException.create(runtimeexception, "ad.DB("
                     + arg0 + ')');
         }
     }
@@ -112,7 +112,7 @@ public class RSFont {
             }
             return false;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ad.GB("
+            throw JagexException.create(runtimeexception, ("ad.GB("
                     + arg0 + ',' + (rsInterface != null ? "{...}" : "null") + ')'));
         }
     }
@@ -133,7 +133,7 @@ public class RSFont {
             int i = (arg1 / 2 + ((arg2 / 32 << 1644991495) + (arg3 / 4 << -990288854)));
             return i;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ad.FB("
+            throw JagexException.create(runtimeexception, ("ad.FB("
                     + arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ')'));
         }
     }

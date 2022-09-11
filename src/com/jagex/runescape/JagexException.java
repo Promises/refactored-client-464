@@ -108,7 +108,7 @@ public class JagexException extends RuntimeException {
                 Class65.anIntArray1284 = new int[32768];
                 Region.method58((byte) 127, null);
                 Class4_Sub20_Sub17.anIntArray3206 = new int[32768];
-                if (Class4_Sub20_Sub8.anInt3021 != 0) {
+                if (ItemDefinition.anInt3021 != 0) {
                     Class34.aBoolean1765 = false;
                 } else {
                     Class34.aBoolean1765 = true;
@@ -137,7 +137,7 @@ public class JagexException extends RuntimeException {
                                 18);
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("cf.A("
+            throw create(runtimeexception, ("cf.A("
                     + (arg0 != null ? "{...}" : "null") + ','
                     + (arg1 != null ? "{...}" : "null") + ',' + arg2 + ','
                     + (arg3 != null ? "{...}" : "null") + ')'));
@@ -154,6 +154,21 @@ public class JagexException extends RuntimeException {
             errorMessage = err;
         } catch (RuntimeException runtimeexception) {
             throw runtimeexception;
+        }
+    }
+
+    public static JagexException create(Throwable throwable, String errorMessage) {
+        try {
+            JagexException exception;
+            if (throwable instanceof JagexException) {
+                exception = (JagexException) throwable;
+                exception.errorMessage += ' ' + errorMessage;
+            } else
+                exception = new JagexException(throwable, errorMessage);
+            Class4_Sub20_Sub7_Sub4.anInt3360++;
+            return exception;
+        } catch (RuntimeException runtimeException) {
+            throw runtimeException;
         }
     }
 }

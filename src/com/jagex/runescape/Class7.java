@@ -35,7 +35,7 @@ public class Class7 {
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("bd.C("
+			throw JagexException.create(runtimeexception, ("bd.C("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -68,7 +68,7 @@ public class Class7 {
 				arg1.anInt3217 = 512;
 			arg1.anInt3219 = arg1.anInt3217;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("bd.D("
+			throw JagexException.create(runtimeexception, ("bd.D("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ')'));
 		}
 	}
@@ -185,7 +185,7 @@ public class Class7 {
 				i_9_ += -i_19_ + 765 + -i_20_;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "bd.B("
+			throw JagexException.create(runtimeexception, "bd.B("
 					+ arg0 + ')');
 		}
 	}
@@ -206,7 +206,7 @@ public class Class7 {
 				minimapHintX = null;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "bd.A("
+			throw JagexException.create(runtimeexception, "bd.A("
 					+ arg0 + ')');
 		}
 	}
@@ -230,7 +230,7 @@ public class Class7 {
 			anInt231 = arg0.anInt231;
 			anInt227 = arg0.anInt227;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					("bd.<init>(" + (arg0 != null ? "{...}" : "null") + ')'));
 		}
 	}

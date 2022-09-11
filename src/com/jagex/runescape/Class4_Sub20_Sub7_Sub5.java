@@ -56,7 +56,7 @@ public class Class4_Sub20_Sub7_Sub5 extends Class4_Sub20_Sub7 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ka.E("
+			throw JagexException.create(runtimeexception, ("ka.E("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -73,7 +73,7 @@ public class Class4_Sub20_Sub7_Sub5 extends Class4_Sub20_Sub7 {
 				removePlayerCount = -82;
 			aJagexString_3404 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ka.C("
+			throw JagexException.create(runtimeexception, "ka.C("
 					+ arg0 + ')');
 		}
 	}
@@ -85,7 +85,7 @@ public class Class4_Sub20_Sub7_Sub5 extends Class4_Sub20_Sub7 {
 			anInt3398++;
 			Class8.aClass66_259.method1084(0);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ka.F("
+			throw JagexException.create(runtimeexception, "ka.F("
 					+ arg0 + ')');
 		}
 	}
@@ -181,7 +181,7 @@ public class Class4_Sub20_Sub7_Sub5 extends Class4_Sub20_Sub7 {
 			}
 			Class62.aClass13_1225.method689(-119);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ka.D("
+			throw JagexException.create(runtimeexception, ("ka.D("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -194,8 +194,8 @@ public class Class4_Sub20_Sub7_Sub5 extends Class4_Sub20_Sub7 {
 			Player player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[Class4_Sub23.anIntArray2432[i_19_]]);
 			if (player != null
 					&& player.aJagexString_3593 != null
-					&& player.aJagexString_3593.method818(
-                    jagexString, (byte) -105)) {
+					&& player.aJagexString_3593.stringEquals(
+                    jagexString)) {
 				Class4_Sub20
 						.method319(
 								1,
@@ -261,7 +261,7 @@ public class Class4_Sub20_Sub7_Sub5 extends Class4_Sub20_Sub7 {
 				Class67.method1088(class4_sub13);
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ka.G("
+			throw JagexException.create(runtimeexception, "ka.G("
 					+ arg0 + ')');
 		}
 	}
@@ -321,7 +321,7 @@ public class Class4_Sub20_Sub7_Sub5 extends Class4_Sub20_Sub7 {
 			else
 				aClass4_Sub20_Sub17_3381 = Class68.method1093(i, (byte) -123);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					("ka.<init>(" + arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3
 							+ ',' + arg4 + ',' + arg5 + ',' + arg6 + ',' + arg7
 							+ ',' + arg8 + ',' + arg9 + ',' + arg10 + ')'));
@@ -343,7 +343,7 @@ public class Class4_Sub20_Sub7_Sub5 extends Class4_Sub20_Sub7 {
 			class4_sub20_sub7_sub7.method455(anInt3411);
 			return class4_sub20_sub7_sub7;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ka.V("
+			throw JagexException.create(runtimeexception, "ka.V("
 					+ arg0 + ')');
 		}
 	}
@@ -370,7 +370,7 @@ public class Class4_Sub20_Sub7_Sub5 extends Class4_Sub20_Sub7 {
 				aDouble3414 = 1.981091349703998;
 			aDouble3420 = ((-(d * aDouble3414) + (arg1 - aDouble3409)) * 2.0 / (d * d));
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					("ka.B(" + arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3
 							+ ',' + arg4 + ')'));
 		}

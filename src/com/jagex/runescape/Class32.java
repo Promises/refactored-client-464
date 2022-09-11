@@ -24,7 +24,7 @@ public class Class32 {
 				method883(115);
 			anInt694++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("jb.A("
+			throw JagexException.create(runtimeexception, ("jb.A("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -39,7 +39,7 @@ public class Class32 {
 			if (arg0 == 1)
 				aLongArray699 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "jb.B("
+			throw JagexException.create(runtimeexception, "jb.B("
 					+ arg0 + ')');
 		}
 	}

@@ -34,7 +34,7 @@ public class Class4_Sub20_Sub5 extends Class4_Sub20 {
 			StringUtilities.aJagexString_2885 = null;
 			aClass81_2880 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "fd.B("
+			throw JagexException.create(runtimeexception, "fd.B("
 					+ arg0 + ')');
 		}
 	}
@@ -56,26 +56,26 @@ public class Class4_Sub20_Sub5 extends Class4_Sub20 {
 			if (arg0 != 2) {
 				if (arg0 != 3) {
 					if (arg0 == 4)
-						anInt2881 = arg2.readInt((byte) 73);
+						anInt2881 = arg2.readInt();
 					else if (arg0 == 5) {
 						anInt2875 = arg2.readShort();
 						anIntArray2870 = new int[anInt2875];
 						aJagexStringArray2877 = new JagexString[anInt2875];
 						for (int i = 0; (anInt2875 ^ 0xffffffff) < (i ^ 0xffffffff); i++) {
-							anIntArray2870[i] = arg2.readInt((byte) 73);
-							aJagexStringArray2877[i] = arg2.method212();
+							anIntArray2870[i] = arg2.readInt();
+							aJagexStringArray2877[i] = arg2.readString();
 						}
 					} else if ((arg0 ^ 0xffffffff) == -7) {
 						anInt2875 = arg2.readShort();
 						anIntArray2870 = new int[anInt2875];
 						anIntArray2872 = new int[anInt2875];
 						for (int i = 0; (i ^ 0xffffffff) > (anInt2875 ^ 0xffffffff); i++) {
-							anIntArray2870[i] = arg2.readInt((byte) 73);
-							anIntArray2872[i] = arg2.readInt((byte) 73);
+							anIntArray2870[i] = arg2.readInt();
+							anIntArray2872[i] = arg2.readInt();
 						}
 					}
 				} else
-					aJagexString_2878 = arg2.method212();
+					aJagexString_2878 = arg2.readString();
 			} else
 				anInt2876 = arg2.get();
 		} else

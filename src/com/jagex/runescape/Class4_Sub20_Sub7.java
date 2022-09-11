@@ -23,7 +23,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
         try {
             Class4_Sub20_Sub9.aJagexString_3049 = StringUtilities.aJagexString_653;
             Class81.aJagexString_1699 = StringUtilities.aJagexString_961;
-            Class4_Sub6.aJagexString_1933 = Class82.aJagexString_1719;
+            Class4_Sub6.localizedTake = Class82.aJagexString_1719;
             Class81.aJagexString_1657 = StringUtilities.aJagexString_3332;
             StringUtilities.aJagexString_297 = StringUtilities.aJagexString_315;
             Class81.aJagexString_1682 = Game.aJagexString_1838;
@@ -43,7 +43,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             Class66.aJagexString_1320 = StringUtilities.aJagexString_2291;
             Class52.aJagexString_1054 = GameShell.aJagexString_20;
             StringUtilities.aJagexString_398 = StringUtilities.aJagexString_594;
-            StringUtilities.aJagexString_564 = StringUtilities.aJagexString_3120;
+            StringUtilities.drop = StringUtilities.aJagexString_3120;
             StringUtilities.aJagexString_675 = Class65.aJagexString_1293;
             Class81.aJagexString_1705 = Class61.aJagexString_1212;
             Class52.aJagexString_1055 = Class4_Sub21.aJagexString_2366;
@@ -103,7 +103,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             Class54.aJagexString_1093 = Class4_Sub3.aJagexString_1888;
             Class6.aJagexString_215 = Class58.aJagexString_1162;
             StringUtilities.aJagexString_563 = Class76.aJagexString_1557;
-            Class4_Sub20_Sub8.aJagexString_2982 = StringUtilities.aJagexString_2328;
+            ItemDefinition.aJagexString_2982 = StringUtilities.aJagexString_2328;
             Class4_Sub20_Sub7_Sub4.aJagexString_3376 = SceneGraph.aJagexString_2485;
             Class4_Sub21.aJagexString_2377 = StringUtilities.aJagexString_386;
             StringUtilities.aJagexString_1869 = Class54.aJagexString_1095;
@@ -136,7 +136,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             StringUtilities.aJagexString_2852 = StringUtilities.aJagexString_2129;
             Class81.aJagexString_1651 = Class61.aJagexString_1212;
             JagexString.aJagexString_1775 = StringUtilities.aJagexString_2356;
-            Class4_Sub20_Sub8.aJagexString_2996 = StringUtilities.aJagexString_1753;
+            ItemDefinition.aJagexString_2996 = StringUtilities.aJagexString_1753;
             StringUtilities.aJagexString_2049 = StringUtilities.aJagexString_302;
             Class6.aJagexString_206 = StringUtilities.aJagexString_300;
             StringUtilities.aJagexString_2317 = Class61.aJagexString_1198;
@@ -179,7 +179,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             RSFont.aJagexString_166 = StringUtilities.aJagexString_3355;
             Class81.aJagexString_1706 = Class61.aJagexString_1212;
             Class81.aJagexString_1704 = Class61.aJagexString_1212;
-            Class4_Sub20_Sub8.aJagexString_2967 = StringUtilities.aJagexString_928;
+            ItemDefinition.aJagexString_2967 = StringUtilities.aJagexString_928;
             Class81.aJagexString_1690 = StringUtilities.aJagexString_2334;
             Player.aJagexString_3610 = StringUtilities.aJagexString_700;
             Class81.aJagexString_1694 = Class61.aJagexString_1212;
@@ -188,7 +188,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             Class4_Sub7.aJagexString_1948 = StringUtilities.aJagexString_2294;
             StringUtilities.aJagexString_2046 = Class59.aJagexString_1176;
             Class6.aJagexString_199 = StringUtilities.aJagexString_1001;
-            Class4_Sub20_Sub8.aJagexString_2973 = StringUtilities.aJagexString_924;
+            ItemDefinition.aJagexString_2973 = StringUtilities.aJagexString_924;
             RSFont.aJagexString_163 = Class5.aJagexString_179;
             Class7.aJagexString_235 = StringUtilities.aJagexString_685;
             Class4_Sub23.aJagexString_2433 = StringUtilities.aJagexString_2475;
@@ -206,7 +206,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
                 Class54.aJagexString_1100 = Class76.aJagexString_1564;
                 Region.aJagexString_120 = Class81.aJagexString_1672;
                 StringUtilities.aJagexString_728 = StringUtilities.aJagexString_72;
-                StringUtilities.aJagexString_638 = Class74.aJagexString_1517;
+                StringUtilities.hidden = Class74.aJagexString_1517;
                 StringUtilities.aJagexString_651 = StringUtilities.aJagexString_2885;
                 StringUtilities.aJagexString_665 = Class4_Sub3.aJagexString_1899;
                 StringUtilities.aJagexString_2919 = Class4_Sub23.aJagexString_2423;
@@ -221,7 +221,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
                 Class50.aJagexString_1015 = Class54.aJagexString_1102;
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "hd.MB("
+            throw JagexException.create(runtimeexception, "hd.MB("
                     + arg0 + ')');
         }
     }
@@ -253,7 +253,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             }
             anInt2940++;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "hd.LB("
+            throw JagexException.create(runtimeexception, "hd.LB("
                     + "-78" + ')');
         }
     }
@@ -295,7 +295,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             arg0.anInt1958 = i_2_;
             arg0.anInt1962 = i_4_;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("hd.PB("
+            throw JagexException.create(runtimeexception, ("hd.PB("
                     + (arg0 != null ? "{...}" : "null") + ',' + arg1 + ')'));
         }
     }
@@ -312,7 +312,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             }
             return Class35.method909(arg3 + 255);
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("hd.QB("
+            throw JagexException.create(runtimeexception, ("hd.QB("
                     + arg0 + ',' + arg1 + ','
                     + (arg2 != null ? "{...}" : "null") + ',' + arg3 + ')'));
         }
@@ -327,7 +327,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
                 StringUtilities.aJagexString_2936 = null;
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "hd.NB("
+            throw JagexException.create(runtimeexception, "hd.NB("
                     + arg0 + ')');
         }
     }
@@ -362,7 +362,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "hd.KB("
+            throw JagexException.create(runtimeexception, "hd.KB("
                     + arg0 + ')');
         }
     }
@@ -388,7 +388,7 @@ public abstract class Class4_Sub20_Sub7 extends Class4_Sub20 {
             }
             return null;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "hd.V("
+            throw JagexException.create(runtimeexception, "hd.V("
                     + arg0 + ')');
         }
     }

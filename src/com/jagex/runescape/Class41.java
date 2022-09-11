@@ -53,7 +53,7 @@ public class Class41 {
 					if (is != null) {
 						System.out
 								.println("com.jagex.runescape.Region Id: " + Class47.regionIds[i]);
-						int yAbs = (64 * (0xff & Class47.regionIds[i]) + -Class4_Sub20_Sub8.anInt2987);
+						int yAbs = (64 * (0xff & Class47.regionIds[i]) + -ItemDefinition.anInt2987);
 						int xAbs = ((Class47.regionIds[i] >> -446537272) * 64 + -Class6.anInt217);
 						if (Class4_Sub22.aBoolean2400) {
 							yAbs = 10;
@@ -97,7 +97,7 @@ public class Class41 {
 					if (!Class4_Sub22.aBoolean2400) {
 						for (int i_5_ = 0; i_5_ < i_4_; i_5_++) {
 							int xAbs = (-Class6.anInt217 + (Class47.regionIds[i_5_] >> -1839099960) * 64);
-							int yAbs = ((0xff & Class47.regionIds[i_5_]) * 64 + -Class4_Sub20_Sub8.anInt2987);
+							int yAbs = ((0xff & Class47.regionIds[i_5_]) * 64 + -ItemDefinition.anInt2987);
 							byte[] is = GameShell.regionsData[i_5_];
 							if (is != null) {
 								method938((byte) 0);
@@ -108,7 +108,7 @@ public class Class41 {
 						}
 						for (int i_8_ = 0; i_8_ < i_4_; i_8_++) {
 							int i_9_ = (64 * (Class47.regionIds[i_8_] >> 960249192) - Class6.anInt217);
-							int i_10_ = (-Class4_Sub20_Sub8.anInt2987 + ((0xff & Class47.regionIds[i_8_]) * 64));
+							int i_10_ = (-ItemDefinition.anInt2987 + ((0xff & Class47.regionIds[i_8_]) * 64));
 							byte[] is = GameShell.regionsData[i_8_];
 							if (is == null
 									&& (Class4_Sub17.anInt2324 ^ 0xffffffff) > -801) {
@@ -123,9 +123,9 @@ public class Class41 {
 								System.out.println("Loading region: "
 										+ Class47.regionIds[i_11_]);
 								int i_12_ = (-Class6.anInt217 + 64 * (Class47.regionIds[i_11_] >> 815146440));
-								int i_13_ = (64 * (0xff & Class47.regionIds[i_11_]) + -Class4_Sub20_Sub8.anInt2987);
+								int i_13_ = (64 * (0xff & Class47.regionIds[i_11_]) + -ItemDefinition.anInt2987);
 								method938((byte) 0);
-								Class4_Sub20_Sub8.method471(is, (byte) -30,
+								ItemDefinition.method471(is, (byte) -30,
 										Class4_Sub20_Sub7_Sub6.aClass69_3439,
 										Class57.regions, i_13_, i_12_);
 							}
@@ -320,7 +320,7 @@ public class Class41 {
 			 * //System.out.println("Size : "+size); } }
 			 */
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "lb.C("
+			throw JagexException.create(runtimeexception, "lb.C("
 					+ arg0 + ')');
 		}
 	}
@@ -351,7 +351,7 @@ public class Class41 {
 			aClass4_Sub11_796 = null;
 			StringUtilities.aJagexString_804 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "lb.E("
+			throw JagexException.create(runtimeexception, "lb.E("
 					+ arg0 + ')');
 		}
 	}
@@ -591,7 +591,7 @@ public class Class41 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("lb.A("
+			throw JagexException.create(runtimeexception, ("lb.A("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ')'));
 		}
 	}
@@ -601,7 +601,7 @@ public class Class41 {
 			anInt828++;
 			return GameShell.idleTime++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "lb.B("
+			throw JagexException.create(runtimeexception, "lb.B("
 					+ arg0 + ')');
 		}
 	}

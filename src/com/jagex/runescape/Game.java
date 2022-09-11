@@ -113,7 +113,7 @@ public class Game extends GameShell {
             }
             anInt1836++;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+            throw JagexException.create(runtimeexception,
                     ("client.main(" + (arg0 != null ? "{...}" : "null") + ')'));
         }
     }
@@ -126,7 +126,7 @@ public class Game extends GameShell {
             anInt1834++;
             Class65.aClass19_1312 = arg1;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+            throw JagexException.create(runtimeexception,
                     ("client.R(" + arg0 + ','
                             + (arg1 != null ? "{...}" : "null") + ')'));
         }
@@ -147,7 +147,7 @@ public class Game extends GameShell {
             aJagexString_1838 = null;
             aClass66_1844 = null;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+            throw JagexException.create(runtimeexception,
                     "client.U(" + arg0 + ')');
         }
     }
@@ -197,7 +197,7 @@ public class Game extends GameShell {
             Class16.method729(arg2, (byte) -109);
             JagexString.method823(arg1 + -42, arg2);
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+            throw JagexException.create(runtimeexception,
                     ("client.Q(" + arg0 + ',' + arg1 + ','
                             + (arg2 != null ? "{...}" : "null") + ')'));
         }
@@ -220,7 +220,7 @@ public class Game extends GameShell {
                         Class4_Sub20_Sub7_Sub5.runeCanvas);
             }
             this.method11(-56);
-            Class4_Sub20_Sub8.method464((byte) 79,
+            ItemDefinition.method464((byte) 79,
                     Class4_Sub20_Sub7_Sub5.runeCanvas);
             GameShell.method380(true,
                     Class4_Sub20_Sub7_Sub5.runeCanvas, this);
@@ -489,7 +489,7 @@ public class Game extends GameShell {
         anInt1843++;
         Class64.anInt1253 = RSInterface.anInt2139;
         Class52.method1001((byte) -66);
-        Class4_Sub20_Sub8.method464((byte) 79,
+        ItemDefinition.method464((byte) 79,
                 Class4_Sub20_Sub7_Sub5.runeCanvas);
         GameShell.method380(true, Class4_Sub20_Sub7_Sub5.runeCanvas, this);
         if (arg0 != 0) {
@@ -618,7 +618,7 @@ public class Game extends GameShell {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+            throw JagexException.create(runtimeexception,
                     "client.M(" + -19134 + ')');
         }
     }
@@ -717,7 +717,7 @@ public class Game extends GameShell {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+            throw JagexException.create(runtimeexception,
                     "client.T(" + arg0 + ')');
         }
     }

@@ -70,7 +70,7 @@ public class Class35 {
 			}
 			return true;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("jf.F("
+			throw JagexException.create(runtimeexception, ("jf.F("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ')'));
 		}
 	}
@@ -87,7 +87,7 @@ public class Class35 {
 			StringUtilities.aJagexString_735 = null;
 			StringUtilities.aJagexString_728 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "jf.E("
+			throw JagexException.create(runtimeexception, "jf.E("
 					+ arg0 + ')');
 		}
 	}
@@ -118,7 +118,7 @@ public class Class35 {
 			}
 			return imageRGBS;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "jf.I("
+			throw JagexException.create(runtimeexception, "jf.I("
 					+ arg0 + ')');
 		}
 	}
@@ -132,7 +132,7 @@ public class Class35 {
 			}
 			anInt742++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("jf.G("
+			throw JagexException.create(runtimeexception, ("jf.G("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -174,7 +174,7 @@ public class Class35 {
 					.method639((new JagexString[] { StringUtilities.aJagexString_922, jagexString,
 							Class8.aJagexString_240}), -842);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("jf.N("
+			throw JagexException.create(runtimeexception, ("jf.N("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -203,7 +203,7 @@ public class Class35 {
 			return (anIntArray751[1] + ((anIntArray751[0] << -1453261649) + ((anIntArray750[4] << 1838644244)
 					+ ((anIntArray750[0] << -1760859751) - -(anIntArray751[8] << -613566870)) - -(anIntArray751[11] << -365586267))));
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "jf.C("
+			throw JagexException.create(runtimeexception, "jf.C("
 					+ arg0 + ')');
 		}
 	}
@@ -262,7 +262,7 @@ public class Class35 {
 			anIntArray751 = arg1;
 			method910((byte) 11);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("jf.H("
+			throw JagexException.create(runtimeexception, ("jf.H("
 					+ (arg0 != null ? "{...}" : "null") + ','
 					+ (arg1 != null ? "{...}" : "null") + ',' + arg2 + ','
 					+ arg3 + ',' + arg4 + ')'));
@@ -331,7 +331,7 @@ public class Class35 {
 			}
 			return class4_sub20_sub7_sub2;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "jf.J("
+			throw JagexException.create(runtimeexception, "jf.J("
 					+ arg0 + ')');
 		}
 	}
@@ -457,7 +457,7 @@ public class Class35 {
 			}
 			return class4_sub20_sub7_sub7_11_;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("jf.B("
+			throw JagexException.create(runtimeexception, ("jf.B("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ','
 					+ arg2 + ',' + arg3 + ','
 					+ (arg4 != null ? "{...}" : "null") + ')'));
@@ -473,7 +473,7 @@ public class Class35 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("jf.D("
+			throw JagexException.create(runtimeexception, ("jf.D("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -495,7 +495,7 @@ public class Class35 {
 			anIntArray750[arg1] = i;
 			method910((byte) 11);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("jf.M("
+			throw JagexException.create(runtimeexception, ("jf.M("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
 		}
 	}
@@ -519,7 +519,7 @@ public class Class35 {
 				arg0.method227((byte) -27, anIntArray750[i]);
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("jf.O("
+			throw JagexException.create(runtimeexception, ("jf.O("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ')'));
 		}
 	}

@@ -37,7 +37,7 @@ public class Class54 {
 				return class4_sub15.anInt2299;
 			return arg0.anInt2246;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("pa.A("
+			throw JagexException.create(runtimeexception, ("pa.A("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ')'));
 		}
 	}
@@ -54,7 +54,7 @@ public class Class54 {
 				return null;
 			return class4_sub13.aClass4_Sub13Array2215[arg2];
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("pa.C("
+			throw JagexException.create(runtimeexception, ("pa.C("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
 		}
 	}
@@ -72,7 +72,7 @@ public class Class54 {
 			aJagexString_1102 = null;
 			aJagexString_1105 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "pa.B("
+			throw JagexException.create(runtimeexception, "pa.B("
 					+ arg0 + ')');
 		}
 	}

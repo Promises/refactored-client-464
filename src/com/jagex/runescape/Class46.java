@@ -36,8 +36,8 @@ public class Class46 {
 
 	public static void method973(boolean arg0, int arg1, int arg2) {
 		try {
-			if (Class4_Sub20_Sub8.anInt3021 != 0 && arg1 != -1) {
-				AppletListener.method1151(Class4_Sub20_Sub8.anInt3021, -2,
+			if (ItemDefinition.anInt3021 != 0 && arg1 != -1) {
+				AppletListener.method1151(ItemDefinition.anInt3021, -2,
 						Class24.aClass19_Sub1_562, 0, arg1, false);
 				Class4_Sub20_Sub6.aBoolean2895 = true;
 			}
@@ -45,7 +45,7 @@ public class Class46 {
 				resetCache(-56);
 			anInt935++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("md.B("
+			throw JagexException.create(runtimeexception, ("md.B("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
 		}
 	}
@@ -115,7 +115,7 @@ public class Class46 {
 			StringUtilities.aJagexString_944 = null;
 			anIntArray939 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "md.C("
+			throw JagexException.create(runtimeexception, "md.C("
 					+ arg0 + ')');
 		}
 	}

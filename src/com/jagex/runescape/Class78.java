@@ -37,7 +37,7 @@ public class Class78 {
             anIntArray1607 = null;
             aJagexString_1603 = null;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ve.D("
+            throw JagexException.create(runtimeexception, "ve.D("
                     + arg0 + ')');
         }
     }
@@ -53,7 +53,7 @@ public class Class78 {
                 System.out.println("arg1: " + arg1 + " arg0: " + arg0);
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ve.A("
+            throw JagexException.create(runtimeexception, ("ve.A("
                     + arg0 + ',' + arg1 + ',' + arg2 + ')'));
         }
     }
@@ -287,7 +287,7 @@ public class Class78 {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ve.C("
+            throw JagexException.create(runtimeexception, ("ve.C("
                     + arg0 + ',' + arg1 + ','
                     + (arg2 != null ? "{...}" : "null") + ')'));
         }

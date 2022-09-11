@@ -31,7 +31,7 @@ public class Class30 {
 							StringUtilities.aJagexString_681,
 							StringUtilities.aJagexString_3072}, -842));
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("j.B("
+			throw JagexException.create(runtimeexception, ("j.B("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -55,7 +55,7 @@ public class Class30 {
 			StringUtilities.aJagexString_662 = null;
 			StringUtilities.aJagexString_653 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "j.C("
+			throw JagexException.create(runtimeexception, "j.C("
 					+ arg0 + ')');
 		}
 	}

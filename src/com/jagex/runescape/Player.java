@@ -39,7 +39,7 @@ public class Player extends Actor {
 				Class4_Sub3.method173(-1, arg1 ^ ~0x4f6d,
 						(Class28.aClass4_Sub13ArrayArray632[arg0]));
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("d.AA("
+			throw JagexException.create(runtimeexception, ("d.AA("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -54,7 +54,7 @@ public class Player extends Actor {
 			int i_8_ = i * (789221 + i * i * 15731) - -1376312589 & 0x7fffffff;
 			return i_8_ >> -317691917 & 0xff;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("d.CA("
+			throw JagexException.create(runtimeexception, ("d.CA("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
 		}
 	}
@@ -72,7 +72,7 @@ public class Player extends Actor {
 			aJagexString_3606 = null;
 			aJagexString_3610 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "d.W("
+			throw JagexException.create(runtimeexception, "d.W("
 					+ arg0 + ')');
 		}
 	}
@@ -96,7 +96,7 @@ public class Player extends Actor {
 				return StringUtilities.aJagexString_2936;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("d.U("
+			throw JagexException.create(runtimeexception, ("d.U("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ','
 					+ arg2 + ')'));
 		}
@@ -212,7 +212,7 @@ public class Player extends Actor {
 			class4_sub20_sub7_sub7.aBoolean3454 = true;
 			return class4_sub20_sub7_sub7;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "d.V("
+			throw JagexException.create(runtimeexception, "d.V("
 					+ arg0 + ')');
 		}
 	}
@@ -227,7 +227,7 @@ public class Player extends Actor {
 				aJagexString_3589 = null;
 			return true;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "d.D("
+			throw JagexException.create(runtimeexception, "d.D("
 					+ arg0 + ')');
 		}
 	}
@@ -255,7 +255,7 @@ public class Player extends Actor {
 					}
 					if (is[i_1_] >= 512) {
 						int i_4_ = (Class4_Sub23.method633(-512 + is[i_1_],
-								(byte) -118).anInt3000);
+								(byte) -118).team);
 						if (i_4_ != 0)
 							anInt3590 = i_4_;
 					}
@@ -300,7 +300,7 @@ public class Player extends Actor {
 				aClass35_3609 = new Class35();
 			aClass35_3609.method901(is_5_, is, i_0_, (byte) -79, i == 1);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("d.BA("
+			throw JagexException.create(runtimeexception, ("d.BA("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ')'));
 		}
 	}

@@ -78,7 +78,7 @@ public class StringUtilities {
     public static JagexString aJagexString_558 = JagexString.getRs2PreparedString("0(U");
     public static JagexString aJagexString_560 = JagexString.getRs2PreparedString("AUS");
     public static JagexString aJagexString_563 = JagexString.getRs2PreparedString("Choose Option");
-    public static JagexString aJagexString_564 = JagexString.getRs2PreparedString("Drop");
+    public static JagexString drop = JagexString.getRs2PreparedString("Drop");
     public static JagexString aJagexString_565 = JagexString.getRs2PreparedString(":assistreq:");
     public static JagexString aJagexString_551 = JagexString.getRs2PreparedString("Hidden)2");
     public static JagexString aJagexString_581 = JagexString.getRs2PreparedString(" is already on your friend list");
@@ -90,7 +90,7 @@ public class StringUtilities {
     public static JagexString aJagexString_623 = JagexString.getRs2PreparedString("Bitte versuchen Sie es in ");
     public static JagexString aJagexString_624 = JagexString.getRs2PreparedString("Your friend list is full)3 Max of 100 for free users)1 and 200 for members");
     public static JagexString aJagexString_629 = JagexString.getRs2PreparedString("Members only world");
-    public static JagexString aJagexString_638 = JagexString.getRs2PreparedString("Hidden");
+    public static JagexString hidden = JagexString.getRs2PreparedString("Hidden");
     public static JagexString aJagexString_651 = JagexString.getRs2PreparedString("Invalid loginserver requested)3");
     public static JagexString aJagexString_652 = JagexString.getRs2PreparedString("(Y");
     public static JagexString aJagexString_653 = JagexString.getRs2PreparedString(" zuerst von Ihrer Freunde)2Liste(Q");

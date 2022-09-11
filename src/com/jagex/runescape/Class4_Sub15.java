@@ -21,12 +21,12 @@ public class Class4_Sub15 extends RSFont {
 			if ((Class18.aJagexStringArray462[arg0].method825(-100) ^ 0xffffffff) < -1)
 				return Class4_Sub24.method639(
 						(new JagexString[] {
-								(Class4_Sub20_Sub8.aJagexStringArray2957[arg0]),
+								(ItemDefinition.aJagexStringArray2957[arg0]),
 								StringUtilities.aJagexString_942,
 								(Class18.aJagexStringArray462[arg0]) }), -842);
-			return Class4_Sub20_Sub8.aJagexStringArray2957[arg0];
+			return ItemDefinition.aJagexStringArray2957[arg0];
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("pd.C("
+			throw JagexException.create(runtimeexception, ("pd.C("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -44,7 +44,7 @@ public class Class4_Sub15 extends RSFont {
 			localPlayer = null;
 			StringUtilities.aJagexString_2294 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "pd.B("
+			throw JagexException.create(runtimeexception, "pd.B("
 					+ arg0 + ')');
 		}
 	}
@@ -73,7 +73,7 @@ public class Class4_Sub15 extends RSFont {
 				arg2 = 2;
 			return arg2 + (arg0 & 0xff80);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("pd.D("
+			throw JagexException.create(runtimeexception, ("pd.D("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
 		}
 	}
@@ -88,7 +88,7 @@ public class Class4_Sub15 extends RSFont {
 				return arg2 + -1;
 			return arg2;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("pd.A("
+			throw JagexException.create(runtimeexception, ("pd.A("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ')'));
 		}
 	}
@@ -103,7 +103,7 @@ public class Class4_Sub15 extends RSFont {
 		try {
 			anInt2299 = arg0;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					"pd.<init>(" + arg0 + ')');
 		}
 	}

@@ -81,7 +81,7 @@ public class Class4_Sub11_Sub1 extends Buffer {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ib.C("
+			throw JagexException.create(runtimeexception, ("ib.C("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -103,7 +103,7 @@ public class Class4_Sub11_Sub1 extends Buffer {
 					break;
 				}
 			} catch (RuntimeException runtimeexception) {
-				throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+				throw JagexException.create(runtimeexception,
 						("ib.B(" + arg0 + ','
 								+ (arg1 != null ? "{...}" : "null") + ','
 								+ (arg2 != null ? "{...}" : "null") + ','
@@ -120,7 +120,7 @@ public class Class4_Sub11_Sub1 extends Buffer {
 			Class4_Sub3.aClass66_1882.method1084(arg0 ^ 0x6e9d);
 			Class34.aClass66_1758.method1084(arg0 ^ arg0);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ib.K("
+			throw JagexException.create(runtimeexception, "ib.K("
 					+ arg0 + ')');
 		}
 	}
@@ -143,7 +143,7 @@ public class Class4_Sub11_Sub1 extends Buffer {
 			StringUtilities.aJagexStringArray2671 = null;
 			StringUtilities.aJagexString_2678 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ib.G("
+			throw JagexException.create(runtimeexception, "ib.G("
 					+ arg0 + ')');
 		}
 	}
@@ -161,7 +161,7 @@ public class Class4_Sub11_Sub1 extends Buffer {
 			anInt2672++;
 			return -i + arg0.currentPosition;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ib.L("
+			throw JagexException.create(runtimeexception, ("ib.L("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ','
 					+ (arg2 != null ? "{...}" : "null") + ')'));
 		}
@@ -189,10 +189,10 @@ public class Class4_Sub11_Sub1 extends Buffer {
 		if (arg1 != -1 || Class4_Sub20_Sub6.aBoolean2895) {
 			if ((arg1 ^ 0xffffffff) != 0
 					&& (arg1 ^ 0xffffffff) != (Region.anInt136 ^ 0xffffffff)
-					&& (Class4_Sub20_Sub8.anInt3021 ^ 0xffffffff) != -1
+					&& (ItemDefinition.anInt3021 ^ 0xffffffff) != -1
 					&& !Class4_Sub20_Sub6.aBoolean2895) {
 				Class77.method1192(0, false, Class54.aClass19_Sub1_1107, 2,
-						Class4_Sub20_Sub8.anInt3021, arg1, 0);
+						ItemDefinition.anInt3021, arg1, 0);
 			}
 		} else {
 			Class4_Sub20_Sub16.method606(25651);
@@ -219,7 +219,7 @@ public class Class4_Sub11_Sub1 extends Buffer {
 			}
 			return -anInt2665 + 8 * arg1;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ib.E("
+			throw JagexException.create(runtimeexception, ("ib.E("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -229,7 +229,7 @@ public class Class4_Sub11_Sub1 extends Buffer {
 			byteBuffer[currentPosition++] = (byte) (arg0 + aClass33_2685.method884(6));
 			anInt2674++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ib.M("
+			throw JagexException.create(runtimeexception, ("ib.M("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -242,7 +242,7 @@ public class Class4_Sub11_Sub1 extends Buffer {
 			}
 			return 0xff & (byteBuffer[currentPosition++] + -aClass33_2685.method884(6));
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ib.F("
+			throw JagexException.create(runtimeexception, "ib.F("
 					+ arg0 + ')');
 		}
 	}
@@ -266,7 +266,7 @@ public class Class4_Sub11_Sub1 extends Buffer {
 			}
 			return i_0_;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ib.N(" + arg1 + ')'));
+			throw JagexException.create(runtimeexception, ("ib.N(" + arg1 + ')'));
 		}
 	}
 
@@ -278,7 +278,7 @@ public class Class4_Sub11_Sub1 extends Buffer {
 			}
 			anInt2684++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ib.I("
+			throw JagexException.create(runtimeexception, "ib.I("
 					+ arg0 + ')');
 		}
 	}
@@ -291,7 +291,7 @@ public class Class4_Sub11_Sub1 extends Buffer {
 			}
 			aClass33_2685 = new Class33(arg0);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ib.H("
+			throw JagexException.create(runtimeexception, ("ib.H("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ')'));
 		}
 	}
@@ -301,7 +301,7 @@ public class Class4_Sub11_Sub1 extends Buffer {
 			anInt2666++;
 			currentPosition = (anInt2665 - -7) / 8;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ib.A("
+			throw JagexException.create(runtimeexception, "ib.A("
 					+ arg0 + ')');
 		}
 	}

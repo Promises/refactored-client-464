@@ -41,7 +41,7 @@ public class Class49 implements Runnable {
             }
             return i;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("na.E("
+            throw JagexException.create(runtimeexception, ("na.E("
                     + arg0 + ',' + arg1 + ',' + arg2 + ')'));
         }
     }
@@ -56,7 +56,7 @@ public class Class49 implements Runnable {
                 aBigInteger994 = null;
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "na.A("
+            throw JagexException.create(runtimeexception, "na.A("
                     + arg0 + ')');
         }
     }
@@ -73,7 +73,7 @@ public class Class49 implements Runnable {
             }
             return Class4_Sub17.method306(2640);
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("na.C("
+            throw JagexException.create(runtimeexception, ("na.C("
                     + (arg0 != null ? "{...}" : "null") + ',' + arg1 + ','
                     + arg2 + ')'));
         }
@@ -171,7 +171,7 @@ public class Class49 implements Runnable {
                     }
                     while (i_3_-- > 0) {
                         int i_5_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                                .readInt((byte) 73);
+                                .readInt();
                         int i_6_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                                 .readShort();
                         int i_7_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
@@ -203,13 +203,13 @@ public class Class49 implements Runnable {
                     Class64.aClass16_1259 = new Class16(512);
                     while ((Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.currentPosition ^ 0xffffffff) > (i_1_ ^ 0xffffffff)) {
                         int i_8_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                                .readInt((byte) 73);
+                                .readInt();
                         int i_9_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                                 .readShort();
                         int i_10_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                                 .readShort();
                         int i_11_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                                .readInt((byte) 73);
+                                .readInt();
                         for (int i_12_ = i_9_; i_10_ >= i_12_; i_12_++) {
                             long l = i_12_ + ((long) i_8_ << -1449009248);
                             Class64.aClass16_1259.method720(new Class4_Sub15(
@@ -354,7 +354,7 @@ public class Class49 implements Runnable {
                 }
                 if ((Class4_Sub20_Sub11.incomingPacket ^ 0xffffffff) == -255) {
                     int i_26_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                            .readInt((byte) 73); // int (interface)
+                            .readInt(); // int (interface)
                     int i_27_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                             .method213((byte) -14); // leshort (len)
                     if (i_27_ == 65535) {
@@ -456,15 +456,15 @@ public class Class49 implements Runnable {
                 }
                 if ((Class4_Sub20_Sub11.incomingPacket ^ 0xffffffff) == -73) {
                     JagexString jagexString = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                            .method212();// string
+                            .readString();// string
                     int i_40_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                             .readByteSubtracted(32767);// bytes
                     int i_41_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                             .getC(); // readByteC()://bytec
                     if ((i_40_ ^ 0xffffffff) <= -2
                             && (i_40_ ^ 0xffffffff) >= -9) {
-                        if (jagexString.method818(Class4_Sub24.aJagexString_2448,
-                                (byte) -105)) {
+                        if (jagexString.stringEquals(Class4_Sub24.aJagexString_2448
+                        )) {
                             jagexString = null;
                         }
                         Class4_Sub22.aJagexStringArray2387[-1 + i_40_] = jagexString;
@@ -500,7 +500,7 @@ public class Class49 implements Runnable {
                     int i_42_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                             .method241(4); // int1
                     JagexString jagexString = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                            .method212();
+                            .readString();
                     RSInterface class4_sub13 = RSInterface.forId(
                             i_42_);
                     if (!jagexString.method802(1, class4_sub13.aJagexString_2150)) {
@@ -557,7 +557,7 @@ public class Class49 implements Runnable {
                 }
                 if ((Class4_Sub20_Sub11.incomingPacket ^ 0xffffffff) == -121) {
                     int i_49_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                            .readInt((byte) 73);
+                            .readInt();
                     int i_50_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                             .readShort();
                     if ((i_49_ ^ 0xffffffff) > 69999) {
@@ -580,7 +580,7 @@ public class Class49 implements Runnable {
                                     .get(); // readByte()
                             if ((i_53_ ^ 0xffffffff) == -256) {
                                 i_53_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                                        .readInt((byte) 73);
+                                        .readInt();
                             }
                         }
                         if (class4_sub13 != null && i_51_ >= 0
@@ -1035,7 +1035,7 @@ public class Class49 implements Runnable {
                     return true;
                 }
                 if (Class4_Sub20_Sub11.incomingPacket == 92) {
-                    int interfaceId = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.readInt((byte) 73); // InterfaceId | Child
+                    int interfaceId = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.readInt(); // InterfaceId | Child
                     int type = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.readShort(); // Type
                     if ((interfaceId ^ 0xffffffff) > 69999) {
                         type += 32768;
@@ -1057,7 +1057,7 @@ public class Class49 implements Runnable {
                     for (int itemIndex = 0; itemIndex < itemCount; itemIndex++) {
                         int amount = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.getC(); // readByteC(): //bytec
                         if (amount == 255) { // Item amount does not fit in byte if over 255
-                            amount = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.readInt((byte) 73); // int
+                            amount = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.readInt(); // int
                         }
                         int itemId = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method213((byte) -113); // leshort
                         if (rsInterface != null && ((itemIndex ^ 0xffffffff) > (rsInterface.items.length ^ 0xffffffff))) {
@@ -1089,29 +1089,29 @@ public class Class49 implements Runnable {
                             Class4_Sub20_Sub11.incomingPacket = -1;
                             return true;
                         }
-                        Class4_Sub20_Sub8 class4_sub20_sub8 = Class4_Sub23
+                        ItemDefinition itemDefinition = Class4_Sub23
                                 .method633(itemId, (byte) -115);
                         inter.anInt2137 = 4;
-                        inter.anInt2213 = class4_sub20_sub8.anInt3003;
+                        inter.anInt2213 = itemDefinition.xan2d;
                         inter.anInt2250 = itemId;
-                        inter.anInt2236 = class4_sub20_sub8.anInt2995;
-                        inter.anInt2168 = class4_sub20_sub8.anInt2983
+                        inter.anInt2236 = itemDefinition.yan2d;
+                        inter.anInt2168 = itemDefinition.zoom2d
                                 * 100 / size;
                         Class67.method1088(inter);
                     } else {
                         inter.anInt2143 = size;
                         inter.anInt2226 = itemId;
-                        Class4_Sub20_Sub8 class4_sub20_sub8 = Class4_Sub23
+                        ItemDefinition itemDefinition = Class4_Sub23
                                 .method633(itemId, (byte) -117);
-                        inter.anInt2151 = class4_sub20_sub8.anInt2976;
-                        inter.anInt2236 = class4_sub20_sub8.anInt2995;
-                        inter.anInt2168 = class4_sub20_sub8.anInt2983;
+                        inter.anInt2151 = itemDefinition.zan2d;
+                        inter.anInt2236 = itemDefinition.yan2d;
+                        inter.anInt2168 = itemDefinition.zoom2d;
                         if ((inter.anInt2156 ^ 0xffffffff) < -1) {
                             inter.anInt2168 = (32 * inter.anInt2168 / inter.anInt2156);
                         }
-                        inter.anInt2213 = class4_sub20_sub8.anInt3003;
-                        inter.anInt2148 = class4_sub20_sub8.anInt3010;
-                        inter.anInt2224 = class4_sub20_sub8.anInt2965;
+                        inter.anInt2213 = itemDefinition.xan2d;
+                        inter.anInt2148 = itemDefinition.yof2d;
+                        inter.anInt2224 = itemDefinition.xof2d;
                         Class67.method1088(inter);
                     }
                     Class4_Sub20_Sub11.incomingPacket = -1;
@@ -1127,7 +1127,7 @@ public class Class49 implements Runnable {
                 }
                 if (Class4_Sub20_Sub11.incomingPacket == 108) { // Server message, sendmessage 128 in 317
                     JagexString jagexString = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                            .method212();
+                            .readString();
                     if (jagexString.method826(StringUtilities.aJagexString_478, (byte) 126)) {
                         JagexString jagexString_113_ = (jagexString
                                 .method829((byte) -122, 0, jagexString.method803(
@@ -1231,7 +1231,7 @@ public class Class49 implements Runnable {
                 }
                 if (Class4_Sub20_Sub11.incomingPacket == 137) { // maybe send player
                     int i_123_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                            .readInt((byte) 73); // readInt()
+                            .readInt(); // readInt()
                     Class4_Sub16 class4_sub16 = ((Class4_Sub16) Class31.aClass16_677
                             .method725((byte) 117, i_123_));
                     if (class4_sub16 != null) {
@@ -1333,20 +1333,20 @@ public class Class49 implements Runnable {
                 }
                 if (Class4_Sub20_Sub11.incomingPacket == 69) {
                     JagexString jagexString = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                            .method212();
+                            .readString();
                     Object[] objects = new Object[jagexString
                             .method825(arg0 + -159) - -1];
                     for (int i_134_ = jagexString.method825(-118) + -1; i_134_ >= 0; i_134_--) {
                         if (jagexString.method834(21340, i_134_) != 115) {
                             objects[i_134_ + 1] = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                                    .readInt((byte) 73);
+                                    .readInt();
                         } else {
                             objects[i_134_ + 1] = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                                    .method212();
+                                    .readString();
                         }
                     }
                     objects[0] = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                            .readInt((byte) 73);
+                            .readInt();
                     Class4_Sub14 class4_sub14 = new Class4_Sub14();
                     class4_sub14.anObjectArray2267 = objects;
                     Class16.method721(1, class4_sub14);
@@ -1374,7 +1374,7 @@ public class Class49 implements Runnable {
                 }
                 if (Class4_Sub20_Sub11.incomingPacket == 244) { // interface child colour
                     int i_135_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                            .readInt((byte) 73);
+                            .readInt();
                     int i_136_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                             .method223(arg0 ^ 0x32);
                     int i_137_ = (i_136_ & 0x7c6d) >> 198761418;
@@ -1420,7 +1420,7 @@ public class Class49 implements Runnable {
                     int i_144_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
                             .method235((byte) -81); // readLEShortA() id
                     int i_145_ = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-                            .readInt((byte) 73); // readInt() inter
+                            .readInt(); // readInt() inter
                     RSInterface class4_sub13 = RSInterface.forId(
                             i_145_);
                     if ((class4_sub13.anInt2137 ^ 0xffffffff) != -3
@@ -1546,7 +1546,7 @@ public class Class49 implements Runnable {
                         + ","
                         + ((Class4_Sub15.localPlayer.anIntArray3248[0]) + Class6.anInt217)
                         + ","
-                        + ((Class4_Sub15.localPlayer.anIntArray3247[0]) + Class4_Sub20_Sub8.anInt2987) + " - ");
+                        + ((Class4_Sub15.localPlayer.anIntArray3247[0]) + ItemDefinition.anInt2987) + " - ");
                 for (int i = 0; (Class4_Sub20_Sub15.packetSize > i && (i ^ 0xffffffff) > -51); i++) {
                     string += (Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.byteBuffer[i])
                             + ",";
@@ -1556,7 +1556,7 @@ public class Class49 implements Runnable {
             }
             return true;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "na.D("
+            throw JagexException.create(runtimeexception, "na.D("
                     + arg0 + ')');
         }
     }
@@ -1583,7 +1583,7 @@ public class Class49 implements Runnable {
             }
             Buffer.aClass65_2073.method1070((byte) -97);
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "na.B("
+            throw JagexException.create(runtimeexception, "na.B("
                     + arg0 + ')');
         }
     }
@@ -1643,7 +1643,7 @@ public class Class49 implements Runnable {
                 Class4_Sub20_Sub7_Sub4.method422(exception, -101, null);
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+            throw JagexException.create(runtimeexception,
                     "na.run(" + ')');
         }
     }

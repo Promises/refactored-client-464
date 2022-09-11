@@ -56,7 +56,7 @@ public class Class80 {
 			aJagexString_1647 = null;
 			aJagexString_1640 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "wb.B("
+			throw JagexException.create(runtimeexception, "wb.B("
 					+ arg0 + ')');
 		}
 	}
@@ -81,7 +81,7 @@ public class Class80 {
 									Class74.method1168(-97, arg0 & 0xff) }),
 							-842));
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("wb.C("
+			throw JagexException.create(runtimeexception, ("wb.C("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -95,7 +95,7 @@ public class Class80 {
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("wb.A("
+			throw JagexException.create(runtimeexception, ("wb.A("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}

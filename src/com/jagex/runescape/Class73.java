@@ -35,7 +35,7 @@ public class Class73 {
 			aClass19_Sub1_1504 = null;
 			aJagexString_1501 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "v.C("
+			throw JagexException.create(runtimeexception, "v.C("
 					+ arg0 + ')');
 		}
 	}
@@ -57,7 +57,7 @@ public class Class73 {
 			Class46.anIntArray937 = new int[104];
 			Class4_Sub20_Sub7_Sub5.anIntArrayArray3390 = new int[105][105];
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "v.A("
+			throw JagexException.create(runtimeexception, "v.A("
 					+ arg0 + ')');
 		}
 	}
@@ -123,7 +123,7 @@ public class Class73 {
 		}
 		if ((0x80 & arg3) != 0) {
 			arg2.aJagexString_3271 = Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883
-					.method212();
+					.readString();
 			if (arg2.aJagexString_3271.method834(21340, 0) == 126) {
 				arg2.aJagexString_3271 = arg2.aJagexString_3271.method805(1, arg1
 						^ ~0x466a);

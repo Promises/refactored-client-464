@@ -31,7 +31,7 @@ public class Class31 {
 			}
 			Class66.anInt1313 = Class61.aClass19_1218.method741(3, true);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ja.G("
+			throw JagexException.create(runtimeexception, ("ja.G("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ','
 					+ (arg2 != null ? "{...}" : "null") + ')'));
 		}
@@ -50,7 +50,7 @@ public class Class31 {
 			}
 			Class4_Sub20_Sub1.aClass4_Sub20_Sub12_Sub4_Sub1_2708 = arg0;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ja.B("
+			throw JagexException.create(runtimeexception, ("ja.B("
 					+ (arg0 != null ? "{...}" : "null") + ','
 					+ (arg1 != null ? "{...}" : "null") + ',' + arg2 + ','
 					+ (arg3 != null ? "{...}" : "null") + ',' + arg4 + ')'));
@@ -78,7 +78,7 @@ public class Class31 {
 			StringUtilities.aJagexString_685 = null;
 			anIntArray687 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ja.D("
+			throw JagexException.create(runtimeexception, "ja.D("
 					+ arg0 + ')');
 		}
 	}
@@ -88,7 +88,7 @@ public class Class31 {
 			anInt673++;
 			SceneGraph.aClass19_2483 = arg1;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ja.E("
+			throw JagexException.create(runtimeexception, ("ja.E("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ')'));
 		}
 	}
@@ -105,7 +105,7 @@ public class Class31 {
 			int i_0_ = arg2.method747(false, arg6, i);
 			Class77.method1192(i_0_, arg3, arg2, arg1, arg4, i, 0);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ja.F("
+			throw JagexException.create(runtimeexception, ("ja.F("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ','
 					+ (arg2 != null ? "{...}" : "null") + ',' + arg3 + ','
 					+ arg4 + ',' + arg5 + ','
@@ -178,7 +178,7 @@ public class Class31 {
 				}
 				StringUtilities.aJagexString_684 = null;
 			} catch (RuntimeException runtimeexception) {
-				throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+				throw JagexException.create(runtimeexception,
 						("ja.C(" + arg0 + ',' + arg1 + ',' + arg2 + ','
 								+ (arg3 != null ? "{...}" : "null") + ','
 								+ arg4 + ',' + arg5 + ',' + arg6 + ',' + arg7
@@ -198,7 +198,7 @@ public class Class31 {
 			anInt670++;
 			return Class4_Sub21.idleTime++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ja.A("
+			throw JagexException.create(runtimeexception, "ja.A("
 					+ arg0 + ')');
 		}
 	}

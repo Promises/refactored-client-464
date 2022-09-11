@@ -29,7 +29,7 @@ public class Class4_Sub10 extends RSFont {
 	public static Class4_Sub20_Sub15 method203(int arg0, int arg1) {
 		try {
 			anInt2020++;
-			Class4_Sub20_Sub15 class4_sub20_sub15 = ((Class4_Sub20_Sub15) Class4_Sub20_Sub8.aClass66_3014
+			Class4_Sub20_Sub15 class4_sub20_sub15 = ((Class4_Sub20_Sub15) ItemDefinition.aClass66_3014
 					.method1083(arg1, true));
 			if (class4_sub20_sub15 != null) {
 				return class4_sub20_sub15;
@@ -39,11 +39,11 @@ public class Class4_Sub10 extends RSFont {
 			if (is != null) {
 				class4_sub20_sub15.method605(new Buffer(is), 4606);
 			}
-			Class4_Sub20_Sub8.aClass66_3014.method1082(true, arg1,
+			ItemDefinition.aClass66_3014.method1082(true, arg1,
 					class4_sub20_sub15);
 			return class4_sub20_sub15;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("kc.C("
+			throw JagexException.create(runtimeexception, ("kc.C("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -59,7 +59,7 @@ public class Class4_Sub10 extends RSFont {
 			}
 			return jagexString;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("kc.B("
+			throw JagexException.create(runtimeexception, ("kc.B("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -101,7 +101,7 @@ public class Class4_Sub10 extends RSFont {
 			aClass4_Sub2_Sub3_2028 = null;
 			aClass4_Sub23_2035 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "kc.D("
+			throw JagexException.create(runtimeexception, "kc.D("
 					+ arg0 + ')');
 		}
 	}

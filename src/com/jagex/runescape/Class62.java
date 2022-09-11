@@ -50,7 +50,7 @@ public class Class62 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("rf.C("
+			throw JagexException.create(runtimeexception, ("rf.C("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -68,11 +68,11 @@ public class Class62 {
 				for (Class4_Sub20_Sub7_Sub4 class4_sub20_sub7_sub4_3_ = ((Class4_Sub20_Sub7_Sub4) class65
 						.method1071(arg2 ^ ~0x3a)); class4_sub20_sub7_sub4_3_ != null; class4_sub20_sub7_sub4_3_ = ((Class4_Sub20_Sub7_Sub4) class65
 						.method1075(arg2 + 18421))) {
-					Class4_Sub20_Sub8 class4_sub20_sub8 = Class4_Sub23
+					ItemDefinition itemDefinition = Class4_Sub23
 							.method633((class4_sub20_sub7_sub4_3_.anInt3379),
 									(byte) -124);
-					int i_4_ = class4_sub20_sub8.anInt3017;
-					if (class4_sub20_sub8.anInt3012 == 1)
+					int i_4_ = itemDefinition.cost;
+					if (itemDefinition.stackable == 1)
 						i_4_ *= class4_sub20_sub7_sub4_3_.anInt3378 - -1;
 					if (i < i_4_) {
 						class4_sub20_sub7_sub4 = class4_sub20_sub7_sub4_3_;
@@ -111,7 +111,7 @@ public class Class62 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("rf.E("
+			throw JagexException.create(runtimeexception, ("rf.E("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
 		}
 	}
@@ -148,7 +148,7 @@ public class Class62 {
 			Class24.aClass19_Sub1_562.method736(0);
 			Class4_Sub20_Sub14.aClass19_Sub1_3146.method736(0);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "rf.A("
+			throw JagexException.create(runtimeexception, "rf.A("
 					+ arg0 + ')');
 		}
 	}
@@ -169,7 +169,7 @@ public class Class62 {
 				aJagexString_1238 = null;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "rf.B("
+			throw JagexException.create(runtimeexception, "rf.B("
 					+ arg0 + ')');
 		}
 	}
@@ -195,7 +195,7 @@ public class Class62 {
 				anIntArray1223[1 + i_2_ + i_2_] = i_1_;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					("rf.<init>(" + (arg0 != null ? "{...}" : "null") + ')'));
 		}
 	}
@@ -216,7 +216,7 @@ public class Class62 {
 				i_9_ = i & i_9_ - -2;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("rf.D("
+			throw JagexException.create(runtimeexception, ("rf.D("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}

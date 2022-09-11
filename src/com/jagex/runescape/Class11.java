@@ -58,7 +58,7 @@ public class Class11 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("cc.A("
+			throw JagexException.create(runtimeexception, ("cc.A("
 					+ arg0 + ',' + arg1 + ','
 					+ (arg2 != null ? "{...}" : "null") + ',' + arg3 + ','
 					+ arg4 + ',' + arg5 + ',' + arg6 + ')'));
@@ -78,7 +78,7 @@ public class Class11 {
 				StringUtilities.aJagexString_328 = null;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "cc.C("
+			throw JagexException.create(runtimeexception, "cc.C("
 					+ arg0 + ')');
 		}
 	}
@@ -94,7 +94,7 @@ public class Class11 {
 				Class4_Sub20_Sub17.aClass76_3189 = null;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "cc.B("
+			throw JagexException.create(runtimeexception, "cc.B("
 					+ arg0 + ')');
 		}
 	}

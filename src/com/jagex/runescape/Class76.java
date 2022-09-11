@@ -75,7 +75,7 @@ public class Class76 implements Runnable {
 			aJagexString_1560 = null;
 			aJagexString_1566 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "vc.G("
+			throw JagexException.create(runtimeexception, "vc.G("
 					+ arg0 + ')');
 		}
 	}
@@ -122,7 +122,7 @@ public class Class76 implements Runnable {
 			jagexString.aByteArray1803 = is;
 			return jagexString;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("vc.D("
+			throw JagexException.create(runtimeexception, ("vc.D("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ')'));
 		}
 	}
@@ -141,7 +141,7 @@ public class Class76 implements Runnable {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("vc.F("
+			throw JagexException.create(runtimeexception, ("vc.F("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -153,7 +153,7 @@ public class Class76 implements Runnable {
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("vc.E("
+			throw JagexException.create(runtimeexception, ("vc.E("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -185,7 +185,7 @@ public class Class76 implements Runnable {
 			anInputStream1554 = aSocket1558.getInputStream();
 			anOutputStream1553 = aSocket1558.getOutputStream();
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					("vc.<init>(" + (arg0 != null ? "{...}" : "null") + ','
 							+ (arg1 != null ? "{...}" : "null") + ')'));
 		}
@@ -242,7 +242,7 @@ public class Class76 implements Runnable {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("vc.I("
+			throw JagexException.create(runtimeexception, ("vc.I("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ','
 					+ (arg3 != null ? "{...}" : "null") + ')'));
 		}
@@ -255,7 +255,7 @@ public class Class76 implements Runnable {
 				return 0;
 			return anInputStream1554.read();
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "vc.J("
+			throw JagexException.create(runtimeexception, "vc.J("
 					+ arg0 + ')');
 		}
 	}
@@ -285,7 +285,7 @@ public class Class76 implements Runnable {
 				return 0;
 			return anInputStream1554.available();
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "vc.C("
+			throw JagexException.create(runtimeexception, "vc.C("
 					+ arg0 + ')');
 		}
 	}
@@ -344,7 +344,7 @@ public class Class76 implements Runnable {
 				Class4_Sub20_Sub7_Sub4.method422(exception, -91, null);
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					"vc.run(" + ')');
 		}
 	}

@@ -48,7 +48,7 @@ public class Class16 {
             Class4_Sub20_Sub13.cameraVerticalRotation = pitch;
             Class4_Sub6.cameraHorizontalRotation = yaw;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ec.K("
+            throw JagexException.create(runtimeexception, ("ec.K("
                     + pitch + ',' + x + ',' + z + ',' + arg3 + ',' + y
                     + ',' + yaw + ')'));
         }
@@ -64,7 +64,7 @@ public class Class16 {
                 Region.aClass1_103.method38(class4_sub20_sub10, 1);
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ec.L("
+            throw JagexException.create(runtimeexception, ("ec.L("
                     + arg0 + ',' + arg1 + ',' + arg2 + ')'));
         }
     }
@@ -572,14 +572,14 @@ public class Class16 {
                                     int i_49_ = Class24.anIntArray557[1 + i_10_];
                                     class4_sub13.anInt2226 = i_48_;
                                     class4_sub13.anInt2143 = i_49_;
-                                    Class4_Sub20_Sub8 class4_sub20_sub8 = Class4_Sub23
+                                    ItemDefinition itemDefinition = Class4_Sub23
                                             .method633(i_48_, (byte) -107);
-                                    class4_sub13.anInt2224 = class4_sub20_sub8.anInt2965;
-                                    class4_sub13.anInt2213 = class4_sub20_sub8.anInt3003;
-                                    class4_sub13.anInt2151 = class4_sub20_sub8.anInt2976;
-                                    class4_sub13.anInt2236 = class4_sub20_sub8.anInt2995;
-                                    class4_sub13.anInt2168 = class4_sub20_sub8.anInt2983;
-                                    class4_sub13.anInt2148 = class4_sub20_sub8.anInt3010;
+                                    class4_sub13.anInt2224 = itemDefinition.xof2d;
+                                    class4_sub13.anInt2213 = itemDefinition.xan2d;
+                                    class4_sub13.anInt2151 = itemDefinition.zan2d;
+                                    class4_sub13.anInt2236 = itemDefinition.yan2d;
+                                    class4_sub13.anInt2168 = itemDefinition.zoom2d;
+                                    class4_sub13.anInt2148 = itemDefinition.yof2d;
                                     if (class4_sub13.anInt2156 > 0) {
                                         class4_sub13.anInt2168 = (32 * class4_sub13.anInt2168 / class4_sub13.anInt2156);
                                     }
@@ -892,7 +892,7 @@ public class Class16 {
                                                             } else if ((i_13_ ^ 0xffffffff) == -3309) {
                                                                 int i_69_ = (Class82.plane);
                                                                 int i_70_ = ((Class6.anInt217) + ((Class4_Sub15.localPlayer.worldX) >> 1922140999));
-                                                                int i_71_ = ((Class4_Sub20_Sub8.anInt2987) + ((Class4_Sub15.localPlayer.worldY) >> 2023477031));
+                                                                int i_71_ = ((ItemDefinition.anInt2987) + ((Class4_Sub15.localPlayer.worldY) >> 2023477031));
                                                                 Class24.anIntArray557[i_10_++] = ((i_69_ << -603115332)
                                                                         + (i_70_ << -1841350386) + i_71_);
                                                             } else if (i_13_ == 3309) {
@@ -1310,20 +1310,20 @@ public class Class16 {
                                                                     StringUtilities.aJagexStringArray2673[i_11_++] = (Class4_Sub23
                                                                             .method633(
                                                                                     i_131_,
-                                                                                    (byte) -121).aJagexString_2991);
+                                                                                    (byte) -121).name);
                                                                 } else if ((i_13_ ^ 0xffffffff) == -4202) {
                                                                     i_10_ -= 2;
                                                                     int i_132_ = (Class24.anIntArray557[i_10_]);
                                                                     int i_133_ = (Class24.anIntArray557[1 + i_10_]);
-                                                                    Class4_Sub20_Sub8 class4_sub20_sub8 = (Class4_Sub23
+                                                                    ItemDefinition itemDefinition = (Class4_Sub23
                                                                             .method633(
                                                                                     i_132_,
                                                                                     (byte) -123));
                                                                     if ((i_133_ >= 1)
                                                                             && (i_133_ <= 5)
-                                                                            && (class4_sub20_sub8.aJagexStringArray3008[-1
+                                                                            && (itemDefinition.ops[-1
                                                                             + i_133_]) != null) {
-                                                                        StringUtilities.aJagexStringArray2673[i_11_++] = class4_sub20_sub8.aJagexStringArray3008[-1
+                                                                        StringUtilities.aJagexStringArray2673[i_11_++] = itemDefinition.ops[-1
                                                                                 + i_133_];
                                                                     } else {
                                                                         StringUtilities.aJagexStringArray2673[i_11_++] = StringUtilities.aJagexString_2738;
@@ -1332,15 +1332,15 @@ public class Class16 {
                                                                     i_10_ -= 2;
                                                                     int i_134_ = (Class24.anIntArray557[i_10_]);
                                                                     int i_135_ = (Class24.anIntArray557[(i_10_ + 1)]);
-                                                                    Class4_Sub20_Sub8 class4_sub20_sub8 = (Class4_Sub23
+                                                                    ItemDefinition itemDefinition = (Class4_Sub23
                                                                             .method633(
                                                                                     i_134_,
                                                                                     (byte) -107));
                                                                     if (((i_135_ ^ 0xffffffff) <= -2)
                                                                             && (i_135_ <= 5)
-                                                                            && (class4_sub20_sub8.aJagexStringArray2988[-1
+                                                                            && (itemDefinition.iops[-1
                                                                             + i_135_]) != null) {
-                                                                        StringUtilities.aJagexStringArray2673[i_11_++] = class4_sub20_sub8.aJagexStringArray2988[i_135_
+                                                                        StringUtilities.aJagexStringArray2673[i_11_++] = itemDefinition.iops[i_135_
                                                                                 + -1];
                                                                     } else {
                                                                         StringUtilities.aJagexStringArray2673[i_11_++] = StringUtilities.aJagexString_2738;
@@ -1350,35 +1350,35 @@ public class Class16 {
                                                                     Class24.anIntArray557[i_10_++] = (Class4_Sub23
                                                                             .method633(
                                                                                     i_136_,
-                                                                                    (byte) -108).anInt3017);
+                                                                                    (byte) -108).cost);
                                                                 } else if (i_13_ == 4204) {
                                                                     int i_137_ = (Class24.anIntArray557[--i_10_]);
                                                                     Class24.anIntArray557[i_10_++] = (((Class4_Sub23
                                                                             .method633(
                                                                                     i_137_,
-                                                                                    (byte) -107).anInt3012) ^ 0xffffffff) == -2 ? 1
+                                                                                    (byte) -107).stackable) ^ 0xffffffff) == -2 ? 1
                                                                             : 0);
                                                                 } else if ((i_13_ ^ 0xffffffff) == -4206) {
                                                                     int i_138_ = (Class24.anIntArray557[--i_10_]);
-                                                                    Class4_Sub20_Sub8 class4_sub20_sub8 = (Class4_Sub23
+                                                                    ItemDefinition itemDefinition = (Class4_Sub23
                                                                             .method633(
                                                                                     i_138_,
                                                                                     (byte) -128));
-                                                                    if ((((class4_sub20_sub8.anInt2986) ^ 0xffffffff) == 0)
-                                                                            && ((class4_sub20_sub8.anInt2977 ^ 0xffffffff) <= -1)) {
-                                                                        Class24.anIntArray557[i_10_++] = class4_sub20_sub8.anInt2977;
+                                                                    if ((((itemDefinition.certTemplate) ^ 0xffffffff) == 0)
+                                                                            && ((itemDefinition.certLink ^ 0xffffffff) <= -1)) {
+                                                                        Class24.anIntArray557[i_10_++] = itemDefinition.certLink;
                                                                     } else {
                                                                         Class24.anIntArray557[i_10_++] = i_138_;
                                                                     }
                                                                 } else if (i_13_ == 4206) {
                                                                     int i_139_ = (Class24.anIntArray557[--i_10_]);
-                                                                    Class4_Sub20_Sub8 class4_sub20_sub8 = (Class4_Sub23
+                                                                    ItemDefinition itemDefinition = (Class4_Sub23
                                                                             .method633(
                                                                                     i_139_,
                                                                                     (byte) -116));
-                                                                    if ((((class4_sub20_sub8.anInt2986) ^ 0xffffffff) <= -1)
-                                                                            && ((class4_sub20_sub8.anInt2977 ^ 0xffffffff) <= -1)) {
-                                                                        Class24.anIntArray557[i_10_++] = class4_sub20_sub8.anInt2977;
+                                                                    if ((((itemDefinition.certTemplate) ^ 0xffffffff) <= -1)
+                                                                            && ((itemDefinition.certLink ^ 0xffffffff) <= -1)) {
+                                                                        Class24.anIntArray557[i_10_++] = itemDefinition.certLink;
                                                                     } else {
                                                                         Class24.anIntArray557[i_10_++] = i_139_;
                                                                     }
@@ -1390,7 +1390,7 @@ public class Class16 {
                                                                     Class24.anIntArray557[i_10_++] = (!(Class4_Sub23
                                                                             .method633(
                                                                                     i_140_,
-                                                                                    (byte) -105).aBoolean3002) ? 0
+                                                                                    (byte) -105).members) ? 0
                                                                             : 1);
                                                                 }
                                                             } else {
@@ -2499,7 +2499,7 @@ public class Class16 {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ec.D("
+            throw JagexException.create(runtimeexception, ("ec.D("
                     + arg0 + ',' + (arg1 != null ? "{...}" : "null") + ')'));
         }
     }
@@ -2516,7 +2516,7 @@ public class Class16 {
                 aShortArray448 = null;
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ec.G("
+            throw JagexException.create(runtimeexception, "ec.G("
                     + arg0 + ')');
         }
     }
@@ -2529,7 +2529,7 @@ public class Class16 {
             }
             Class10.aClass47_305 = arg1;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ec.I("
+            throw JagexException.create(runtimeexception, ("ec.I("
                     + arg0 + ',' + (arg1 != null ? "{...}" : "null") + ')'));
         }
     }
@@ -2546,7 +2546,7 @@ public class Class16 {
                 class4_sub1.clear();
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ec.F("
+            throw JagexException.create(runtimeexception, ("ec.F("
                     + arg0 + ',' + arg1 + ')'));
         }
     }
@@ -2585,8 +2585,8 @@ public class Class16 {
                 if (((arg0.anInt3292 ^ 0xffffffff) != -1 || (arg0.anInt3231 ^ 0xffffffff) != -1)
                         && ((arg0.anInt3228 ^ 0xffffffff) == -1 || (arg0.anInt3266 ^ 0xffffffff) < -1)) {
                     int i_201_ = (-(64 * (-Class6.anInt217 + (-Class6.anInt217 + arg0.anInt3292))) + arg0.worldX);
-                    int i_202_ = (arg0.worldY - (-Class4_Sub20_Sub8.anInt2987
-                            + arg0.anInt3231 - Class4_Sub20_Sub8.anInt2987) * 64);
+                    int i_202_ = (arg0.worldY - (-ItemDefinition.anInt2987
+                            + arg0.anInt3231 - ItemDefinition.anInt2987) * 64);
                     if ((i_201_ ^ 0xffffffff) != -1 || i_202_ != 0) {
                         arg0.anInt3217 = 0x7ff & (int) (325.949 * Math.atan2(
                                 i_201_, i_202_));
@@ -2636,7 +2636,7 @@ public class Class16 {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ec.A("
+            throw JagexException.create(runtimeexception, ("ec.A("
                     + (arg0 != null ? "{...}" : "null") + ',' + arg1 + ')'));
         }
     }
@@ -2663,7 +2663,7 @@ public class Class16 {
                 class4.prev = class4;
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+            throw JagexException.create(runtimeexception,
                     "ec.<init>(" + arg0 + ')');
         }
     }
@@ -2684,7 +2684,7 @@ public class Class16 {
             arg0.prev.next = arg0;
             arg0.next.prev = arg0;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ec.H("
+            throw JagexException.create(runtimeexception, ("ec.H("
                     + (arg0 != null ? "{...}" : "null") + ',' + arg1 + ','
                     + arg2 + ')'));
         }
@@ -2710,7 +2710,7 @@ public class Class16 {
             }
             return null;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ec.C("
+            throw JagexException.create(runtimeexception, "ec.C("
                     + arg0 + ')');
         }
     }
@@ -2721,7 +2721,7 @@ public class Class16 {
             anInt442++;
             return method723((byte) -25);
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ec.E("
+            throw JagexException.create(runtimeexception, "ec.E("
                     + arg0 + ')');
         }
     }
@@ -2744,7 +2744,7 @@ public class Class16 {
             aClass4_443 = null;
             return null;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ec.J("
+            throw JagexException.create(runtimeexception, ("ec.J("
                     + arg0 + ',' + arg1 + ')'));
         }
     }
@@ -2768,7 +2768,7 @@ public class Class16 {
             aClass4_443 = null;
             return null;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ec.B("
+            throw JagexException.create(runtimeexception, "ec.B("
                     + arg0 + ')');
         }
     }

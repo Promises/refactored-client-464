@@ -47,8 +47,8 @@ public class Class29 {
 		anIntArray648 = new int[i];
 		int i_0_ = 0;
 		while (i_0_ < i) {
-			int i_1_ = aClass4_Sub11_642.readInt((byte) 73);
-			int i_2_ = aClass4_Sub11_642.readInt((byte) 73);
+			int i_1_ = aClass4_Sub11_642.readInt();
+			int i_2_ = aClass4_Sub11_642.readInt();
 			if (i_1_ == 1297379947) {
 				anIntArray648[i_0_] = aClass4_Sub11_642.currentPosition;
 				i_0_++;

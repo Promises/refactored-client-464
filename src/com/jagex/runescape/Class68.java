@@ -30,7 +30,7 @@ public class Class68 {
 				method1093(66, (byte) -6);
 			return 0x3f & arg1 >> 202896363;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("tc.E("
+			throw JagexException.create(runtimeexception, ("tc.E("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -54,7 +54,7 @@ public class Class68 {
 				method1094(-35, -38L);
 			return class4_sub20_sub17;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("tc.D("
+			throw JagexException.create(runtimeexception, ("tc.D("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -84,7 +84,7 @@ public class Class68 {
 			jagexString.anInt1805 = is.length;
 			return jagexString;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("tc.C("
+			throw JagexException.create(runtimeexception, ("tc.C("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -124,7 +124,7 @@ public class Class68 {
 			}
 			return arg0 + i;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("tc.B("
+			throw JagexException.create(runtimeexception, ("tc.B("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}

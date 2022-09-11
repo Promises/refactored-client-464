@@ -31,7 +31,7 @@ public class Class10 {
 				StringUtilities.aJagexString_311 = null;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "cb.A("
+			throw JagexException.create(runtimeexception, "cb.A("
 					+ arg0 + ')');
 		}
 	}
@@ -94,7 +94,7 @@ public class Class10 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "cb.F("
+			throw JagexException.create(runtimeexception, "cb.F("
 					+ arg0 + ')');
 		}
 	}
@@ -115,7 +115,7 @@ public class Class10 {
 			anInt292++;
 			return jagexStrings;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("cb.C("
+			throw JagexException.create(runtimeexception, ("cb.C("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ')'));
 		}
 	}
@@ -136,8 +136,8 @@ public class Class10 {
 			aClass27_289 = arg2;
 			anInt288 = arg0;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4
-					.method423(runtimeexception,
+			throw JagexException
+					.create(runtimeexception,
 							("cb.<init>(" + arg0 + ','
 									+ (arg1 != null ? "{...}" : "null") + ','
 									+ (arg2 != null ? "{...}" : "null") + ','
@@ -159,7 +159,7 @@ public class Class10 {
 				return bool;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("cb.D("
+			throw JagexException.create(runtimeexception, ("cb.D("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ','
 					+ (arg3 != null ? "{...}" : "null") + ')'));
 		}
@@ -255,7 +255,7 @@ public class Class10 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("cb.B("
+			throw JagexException.create(runtimeexception, ("cb.B("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ','
 					+ (arg4 != null ? "{...}" : "null") + ')'));
 		}
@@ -313,7 +313,7 @@ public class Class10 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("cb.E("
+			throw JagexException.create(runtimeexception, ("cb.E("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -324,7 +324,7 @@ public class Class10 {
 			anInt293++;
 			return "Cache:" + anInt288;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					"cb.toString(" + ')');
 		}
 	}

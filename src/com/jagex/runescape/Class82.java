@@ -35,7 +35,7 @@ public class Class82 {
 			anInt1720++;
 			Class8.aClass65_252 = new Class65();
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "wd.A("
+			throw JagexException.create(runtimeexception, "wd.A("
 					+ arg0 + ')');
 		}
 	}
@@ -52,7 +52,7 @@ public class Class82 {
 			aJagexString_1721 = null;
 			aJagexString_1713 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "wd.D("
+			throw JagexException.create(runtimeexception, "wd.D("
 					+ arg0 + ')');
 		}
 	}
@@ -70,7 +70,7 @@ public class Class82 {
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("wd.C("
+			throw JagexException.create(runtimeexception, ("wd.C("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -83,7 +83,7 @@ public class Class82 {
 			int i = arg0 >>> -2143271329;
 			return (i + arg0) / arg2 - i;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("wd.E("
+			throw JagexException.create(runtimeexception, ("wd.E("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
 		}
 	}
@@ -146,7 +146,7 @@ public class Class82 {
 			}
 			anInt1716++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("wd.B("
+			throw JagexException.create(runtimeexception, ("wd.B("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ','
 					+ (arg3 != null ? "{...}" : "null") + ',' + arg4 + ','
 					+ arg5 + ',' + arg6 + ',' + arg7 + ')'));

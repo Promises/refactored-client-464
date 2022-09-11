@@ -38,7 +38,7 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 			}
 			Class64.method1063((byte) 127);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ab.L("
+			throw JagexException.create(runtimeexception, ("ab.L("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ','
 					+ (arg2 != null ? "{...}" : "null") + ',' + arg3 + ')'));
 		}
@@ -53,7 +53,7 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 			if (arg0 == 74)
 				aClass4_Sub20_Sub12_Sub4_Sub1_2708 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ab.B("
+			throw JagexException.create(runtimeexception, "ab.B("
 					+ arg0 + ')');
 		}
 	}
@@ -177,7 +177,7 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 			}
 			return class4_sub20_sub7;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ab.D("
+			throw JagexException.create(runtimeexception, ("ab.D("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ',' + arg4
 					+ ',' + arg5 + ',' + arg6 + ')'));
 		}
@@ -198,7 +198,7 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 				return null;
 			return Region.method56(true, anIntArray2732[i]);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ab.G("
+			throw JagexException.create(runtimeexception, "ab.G("
 					+ arg0 + ')');
 		}
 	}
@@ -231,7 +231,7 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 				method334(null, 89, (byte) 62, -54, 110, 26, 113, 99, -113);
 			return class4_sub20_sub7_sub7;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ab.A("
+			throw JagexException.create(runtimeexception, ("ab.A("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ',' + arg4
 					+ ',' + arg5 + ',' + arg6 + ')'));
 		}
@@ -242,7 +242,7 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 		if (arg1 >= 91) {
 			if (arg2 != 1) {
 				if ((arg2 ^ 0xffffffff) == -3)
-					aJagexString_2713 = arg0.method212();
+					aJagexString_2713 = arg0.readString();
 				else if (arg2 == 5) {
 					int i = arg0.get();
 					if (i > 0) {
@@ -374,11 +374,11 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 										}
 									} else {
 										aJagexStringArray2716[-30 + arg2] = arg0
-												.method212();
+												.readString();
 										if (aJagexStringArray2716[-30 + arg2]
-												.method818(
-														StringUtilities.aJagexString_638,
-														(byte) -105))
+												.stringEquals(
+														StringUtilities.hidden
+												))
 											aJagexStringArray2716[arg2 + -30] = null;
 									}
 								} else
@@ -437,7 +437,7 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 			}
 			return true;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ab.K("
+			throw JagexException.create(runtimeexception, ("ab.K("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -455,7 +455,7 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 						(0xffff & anIntArray2723[i]), 0);
 			return bool;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ab.M("
+			throw JagexException.create(runtimeexception, "ab.M("
 					+ arg0 + ')');
 		}
 	}
@@ -482,7 +482,7 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 			}
 			return false;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ab.J("
+			throw JagexException.create(runtimeexception, "ab.J("
 					+ arg0 + ')');
 		}
 	}
@@ -548,7 +548,7 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 				class4_sub20_sub7_sub7.method442(arg5, arg4, arg6, arg1, false);
 			return class4_sub20_sub7_sub7;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ab.F("
+			throw JagexException.create(runtimeexception, ("ab.F("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ','
 					+ arg2 + ',' + arg3 + ',' + arg4 + ',' + arg5 + ',' + arg6
 					+ ',' + arg7 + ',' + arg8 + ')'));
@@ -653,7 +653,7 @@ public class Class4_Sub20_Sub1 extends Class4_Sub20 {
 						anInt2705);
 			return class4_sub20_sub7_sub2_14_;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ab.I("
+			throw JagexException.create(runtimeexception, ("ab.I("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
 		}
 	}

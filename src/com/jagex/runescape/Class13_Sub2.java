@@ -51,7 +51,7 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
             arg0.removeFocusListener(GameShell.appletListener);
             GameShell.mouseButtonPressed = arg1;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("i.C("
+            throw JagexException.create(runtimeexception, ("i.C("
                     + (arg0 != null ? "{...}" : "null") + ',' + arg1 + ')'));
         }
     }
@@ -347,7 +347,7 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
                 aShortArrayArray2476 = null;
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "i.F("
+            throw JagexException.create(runtimeexception, "i.F("
                     + arg0 + ')');
         }
     }
@@ -378,7 +378,7 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
                 return null;
             return class4_sub20_sub2;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("i.K("
+            throw JagexException.create(runtimeexception, ("i.K("
                     + arg0 + ',' + arg1 + ')'));
         }
     }
@@ -397,8 +397,8 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
             arg0.setColorModel(aColorModel2473);
             arg0.setHints(14);
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4
-                    .method423(runtimeexception, ("i.addConsumer("
+            throw JagexException
+                    .create(runtimeexception, ("i.addConsumer("
                             + (arg0 != null ? "{...}" : "null") + ')'));
         }
     }
@@ -410,7 +410,7 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
             anInt2456++;
             return true;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+            throw JagexException.create(runtimeexception,
                     ("i.imageUpdate(" + (arg0 != null ? "{...}" : "null") + ','
                             + arg1 + ',' + arg2 + ',' + arg3 + ',' + arg4 + ','
                             + arg5 + ')'));
@@ -425,8 +425,8 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
                 return false;
             return true;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4
-                    .method423(runtimeexception, ("i.isConsumer("
+            throw JagexException
+                    .create(runtimeexception, ("i.isConsumer("
                             + (arg0 != null ? "{...}" : "null") + ')'));
         }
     }
@@ -442,7 +442,7 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
             arg2.drawImage(anImage378, 0, 0, this);
             arg2.setClip(shape);
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("i.D("
+            throw JagexException.create(runtimeexception, ("i.D("
                     + arg0 + ',' + arg1 + ','
                     + (arg2 != null ? "{...}" : "null") + ',' + arg3 + ','
                     + arg4 + ',' + arg5 + ')'));
@@ -477,7 +477,7 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
             anInt2454++;
             arg0.drawImage(anImage378, arg1, arg2, this);
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("i.I("
+            throw JagexException.create(runtimeexception, ("i.I("
                     + (arg0 != null ? "{...}" : "null") + ',' + arg1 + ','
                     + arg2 + ',' + arg3 + ')'));
         }
@@ -496,7 +496,7 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
                 anImageConsumer2453.imageComplete(2);
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+            throw JagexException.create(runtimeexception,
                     ("i.G(" + arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ','
                             + arg4 + ')'));
         }
@@ -511,7 +511,7 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
                 anImageConsumer2453.imageComplete(2);
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "i.E("
+            throw JagexException.create(runtimeexception, "i.E("
                     + arg0 + ')');
         }
     }
@@ -523,8 +523,8 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
                 anImageConsumer2453 = null;
             anInt2465++;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4
-                    .method423(runtimeexception, ("i.removeConsumer("
+            throw JagexException
+                    .create(runtimeexception, ("i.removeConsumer("
                             + (arg0 != null ? "{...}" : "null") + ')'));
         }
     }
@@ -534,7 +534,7 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
         try {
             anInt2459++;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+            throw JagexException.create(runtimeexception,
                     ("i.requestTopDownLeftRightResend("
                             + (arg0 != null ? "{...}" : "null") + ')'));
         }
@@ -546,8 +546,8 @@ public class Class13_Sub2 extends Class13 implements ImageProducer,
             anInt2462++;
             addConsumer(arg0);
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4
-                    .method423(runtimeexception, ("i.startProduction("
+            throw JagexException
+                    .create(runtimeexception, ("i.startProduction("
                             + (arg0 != null ? "{...}" : "null") + ')'));
         }
     }

@@ -37,7 +37,7 @@ public class Class74 {
 				aJagexString_1521 = null;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "va.B("
+			throw JagexException.create(runtimeexception, "va.B("
 					+ arg0 + ')');
 		}
 	}
@@ -49,7 +49,7 @@ public class Class74 {
 			anInt1515++;
 			return Class76.method1185(10, -9, false, arg1);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("va.A("
+			throw JagexException.create(runtimeexception, ("va.A("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -71,7 +71,7 @@ public class Class74 {
 						.method1082(true, arg1, class4_sub20_sub14);
 			return class4_sub20_sub14;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("va.C("
+			throw JagexException.create(runtimeexception, ("va.C("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}

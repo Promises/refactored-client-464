@@ -52,7 +52,7 @@ public class Class28 {
 					StringUtilities.aJagexString_1767);
 			return i;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ic.B("
+			throw JagexException.create(runtimeexception, ("ic.B("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ','
 					+ (arg2 != null ? "{...}" : "null") + ')'));
 		}
@@ -60,7 +60,7 @@ public class Class28 {
 
 	public static void method855(int arg0) {
 		try {
-			StringUtilities.aJagexString_638 = null;
+			StringUtilities.hidden = null;
 			if (arg0 != 16589) {
 				method855(28);
 			}
@@ -68,7 +68,7 @@ public class Class28 {
 			aClass4_Sub13ArrayArray632 = null;
 			aClass4_Sub20_Sub12_Sub1Array635 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ic.A("
+			throw JagexException.create(runtimeexception, "ic.A("
 					+ arg0 + ')');
 		}
 	}

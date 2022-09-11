@@ -4,7 +4,7 @@ import com.jagex.runescape.io.Buffer;
 
 public class Class4_Sub22 extends RSFont {
 	public static boolean aBoolean2400 = false;
-	public static JagexString aJagexString_2395 = JagexString.getRs2PreparedString("null"
+	public static JagexString localizedNull = JagexString.getRs2PreparedString("null"
     );
 	public static JagexString aJagexString_2396;
 	public static JagexString aJagexString_2403;
@@ -41,7 +41,7 @@ public class Class4_Sub22 extends RSFont {
 				anApplet_Sub1_2401 = null;
 			return i;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("tf.E("
+			throw JagexException.create(runtimeexception, ("tf.E("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
 		}
 	}
@@ -75,7 +75,7 @@ public class Class4_Sub22 extends RSFont {
 				RSInterface.aBoolean2203 = false;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "tf.B("
+			throw JagexException.create(runtimeexception, "tf.B("
 					+ arg0 + ')');
 		}
 	}
@@ -87,7 +87,7 @@ public class Class4_Sub22 extends RSFont {
 				aJagexString_2403 = null;
 			return Player.method394(32767, arg1, false);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("tf.F("
+			throw JagexException.create(runtimeexception, ("tf.F("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ')'));
 		}
 	}
@@ -121,7 +121,7 @@ public class Class4_Sub22 extends RSFont {
 			class4_sub1.anIntArray1866[arg2] = arg1;
 			class4_sub1.anIntArray1858[arg2] = arg0;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					("tf.D(" + arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3
 							+ ',' + arg4 + ')'));
 		}
@@ -130,7 +130,7 @@ public class Class4_Sub22 extends RSFont {
 	public static void method631(boolean arg0) {
 		aJagexString_2396 = null;
 		aJagexString_2403 = null;
-		aJagexString_2395 = null;
+		localizedNull = null;
 		aJagexStringArray2387 = null;
 		if (arg0 != true)
 			method629((byte) 67, null);

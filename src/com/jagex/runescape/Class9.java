@@ -180,9 +180,9 @@ public class Class9 {
 										&& Class4_Sub1.anInt1859 < i_8_
 										&& !Class4_Sub20_Sub16.aBoolean3169
 										&& !Class19_Sub1.aBoolean2538) {
-									Class4_Sub20_Sub8.anInt2980 = 1;
+									ItemDefinition.anInt2980 = 1;
 									Class82.anIntArray1712[0] = 1007;
-									Class4_Sub20_Sub8.aJagexStringArray2957[0] = Class82.aJagexString_1713;
+									ItemDefinition.aJagexStringArray2957[0] = Class82.aJagexString_1713;
 									Class18.aJagexStringArray462[0] = Class4_Sub3.aJagexString_1895;
 								}
 								Region.method53(i_8_, i_1_, i_9_, i_0_, i_2_,
@@ -392,14 +392,14 @@ public class Class9 {
 										}
 										if (rsInterface.aBoolean2178
 												&& rsInterface.anInt2226 != -1) {
-											Class4_Sub20_Sub8 class4_sub20_sub8 = (Class4_Sub23
+											ItemDefinition itemDefinition = (Class4_Sub23
 													.method633(
 															rsInterface.anInt2226,
 															(byte) -105));
-											jagexString = (class4_sub20_sub8.aJagexString_2991);
+											jagexString = (itemDefinition.name);
 											if (jagexString == null)
 												jagexString = (Class4_Sub24.aJagexString_2448);
-											if (((class4_sub20_sub8.anInt3012 == 1) || (rsInterface.anInt2143 != 1))
+											if (((itemDefinition.stackable == 1) || (rsInterface.anInt2143 != 1))
 													&& (rsInterface.anInt2143 != -1))
 												jagexString = (Class4_Sub24
 														.method639(
@@ -550,16 +550,16 @@ public class Class9 {
 									int i_42_ = 0;
 									Class4_Sub20_Sub7_Sub7 class4_sub20_sub7_sub7 = null;
 									if (rsInterface.anInt2226 != -1) {
-										Class4_Sub20_Sub8 class4_sub20_sub8 = (Class4_Sub23
+										ItemDefinition itemDefinition = (Class4_Sub23
 												.method633(
 														rsInterface.anInt2226,
 														(byte) -105));
-										if (class4_sub20_sub8 != null) {
-											class4_sub20_sub8 = (class4_sub20_sub8
+										if (itemDefinition != null) {
+											itemDefinition = (itemDefinition
 													.method469(
 															0,
 															rsInterface.anInt2143));
-											class4_sub20_sub7_sub7 = class4_sub20_sub8
+											class4_sub20_sub7_sub7 = itemDefinition
 													.method461(-11, 1);
 											if (class4_sub20_sub7_sub7 == null)
 												Class67.method1088(
@@ -659,18 +659,18 @@ public class Class9 {
 										for (int i_46_ = 0; ((i_46_ ^ 0xffffffff) > (rsInterface.anInt2185 ^ 0xffffffff)); i_46_++) {
 											for (int i_47_ = 0; ((rsInterface.anInt2156 ^ 0xffffffff) < (i_47_ ^ 0xffffffff)); i_47_++) {
 												if (((rsInterface.items[i_45_]) ^ 0xffffffff) < -1) {
-													Class4_Sub20_Sub8 class4_sub20_sub8 = (Class4_Sub23
+													ItemDefinition itemDefinition = (Class4_Sub23
 															.method633(
 																	(rsInterface.items[i_45_]) - 1,
 																	(byte) -123));
 													JagexString jagexString;
-													if ((class4_sub20_sub8.anInt3012) == 1
+													if ((itemDefinition.stackable) == 1
 															|| (((rsInterface.itemAmounts[i_45_]) ^ 0xffffffff) != -2))
 														jagexString = (Class4_Sub24
 																.method639(
 																		(new JagexString[] {
 																				(Class62.aJagexString_1230),
-																				(class4_sub20_sub8.aJagexString_2991),
+																				(itemDefinition.name),
 																				(StringUtilities.aJagexString_484),
 																				(Class35.method912(
 																						(byte) 83,
@@ -681,7 +681,7 @@ public class Class9 {
 																.method639(
 																		(new JagexString[] {
 																				(Class62.aJagexString_1230),
-																				(class4_sub20_sub8.aJagexString_2991),
+																				(itemDefinition.name),
 																				(Class8.aJagexString_240) }),
 																		-842));
 													int i_48_ = ((i_47_ * ((rsInterface.anInt2190) + 115)) + i_1_);
@@ -884,7 +884,7 @@ public class Class9 {
 					(Class11.anInt329 + (-Class6.anInt217 + Class76.anInt1582 << -1544118329)),
 					false,
 					2 * Class4_Sub17.anInt2329,
-					((-Class4_Sub20_Sub8.anInt2987 + Class76.anInt1550) << 588365671)
+					((-ItemDefinition.anInt2987 + Class76.anInt1550) << 588365671)
 							- -Class11.anInt320);
 			if (Class27.anInt604 > -1 && Region.pulseCycle % 20 < 10)
 				Class14.aImageRGBArray405[0].drawImage(-12
@@ -900,7 +900,7 @@ public class Class9 {
 			Class13_Sub2.aClass66_2468.method1084(0);
 			anInt273++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "c.D("
+			throw JagexException.create(runtimeexception, "c.D("
 					+ arg0 + ')');
 		}
 	}
@@ -918,7 +918,7 @@ public class Class9 {
 			aClass4_Sub13_285 = null;
 			aLongArray284 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "c.B("
+			throw JagexException.create(runtimeexception, "c.B("
 					+ arg0 + ')');
 		}
 	}
@@ -993,7 +993,7 @@ public class Class9 {
 											if (arg1 == 22)
 												Class4_Sub20_Sub9
 														.method477(
-																(Class4_Sub20_Sub8.aJagexString_2996),
+																(ItemDefinition.aJagexString_2996),
 																7,
 																StringUtilities.aJagexString_346,
 																Class81.aJagexString_1677);
@@ -1081,7 +1081,7 @@ public class Class9 {
 						StringUtilities.aJagexString_93, Class81.aJagexString_1674);
 			Region.method50(10, 1);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("c.C("
+			throw JagexException.create(runtimeexception, ("c.C("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}

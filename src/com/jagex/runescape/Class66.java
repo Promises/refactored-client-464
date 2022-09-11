@@ -64,7 +64,7 @@ public class Class66 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("sf.A("
+			throw JagexException.create(runtimeexception, ("sf.A("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -84,7 +84,7 @@ public class Class66 {
 			int i = 0;
 			Buffer class4_sub11 = new Buffer(is);
 			class4_sub11.currentPosition = -12 + class4_sub11.byteBuffer.length;
-			int i_0_ = class4_sub11.readInt((byte) 73);
+			int i_0_ = class4_sub11.readInt();
 			class4_sub20_sub16.anInt3174 = class4_sub11.readShort();
 			class4_sub20_sub16.anInt3163 = class4_sub11.readShort();
 			class4_sub20_sub16.anInt3173 = class4_sub11.readShort();
@@ -101,10 +101,10 @@ public class Class66 {
 				int i_1_ = class4_sub11.readShort();
 				if ((i_1_ ^ 0xffffffff) == -4)
 					class4_sub20_sub16.aJagexStringArray3178[i] = class4_sub11
-							.method212();
+							.readString();
 				else if (i_1_ < 100 && i_1_ != 21 && i_1_ != 38 && i_1_ != 39)
 					class4_sub20_sub16.anIntArray3171[i] = class4_sub11
-							.readInt((byte) 73);
+							.readInt();
 				else
 					class4_sub20_sub16.anIntArray3171[i] = class4_sub11.get();
 				class4_sub20_sub16.anIntArray3182[i++] = i_1_;
@@ -113,7 +113,7 @@ public class Class66 {
 					class4_sub20_sub16);
 			return class4_sub20_sub16;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("sf.E("
+			throw JagexException.create(runtimeexception, ("sf.E("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -138,7 +138,7 @@ public class Class66 {
 			}
 			aClass16_1335 = new Class16(i);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					"sf.<init>(" + arg0 + ')');
 		}
 	}
@@ -157,7 +157,7 @@ public class Class66 {
 				class4_sub20.method320(-1);
 				anInt1333++;
 			} catch (RuntimeException runtimeexception) {
-				throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+				throw JagexException.create(runtimeexception,
 						("sf.D(" + arg0 + ',' + arg1 + ')'));
 			}
 			break;
@@ -183,7 +183,7 @@ public class Class66 {
 				aClass1_1332.method36(arg2, 3);
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("sf.G("
+			throw JagexException.create(runtimeexception, ("sf.G("
 					+ arg0 + ',' + arg1 + ','
 					+ (arg2 != null ? "{...}" : "null") + ')'));
 		}
@@ -200,7 +200,7 @@ public class Class66 {
 				aClass1_1332.method36(class4_sub20, 3);
 			return class4_sub20;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("sf.B("
+			throw JagexException.create(runtimeexception, ("sf.B("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -219,7 +219,7 @@ public class Class66 {
 			anInt1316++;
 			anInt1333 = anInt1331;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "sf.F("
+			throw JagexException.create(runtimeexception, "sf.F("
 					+ arg0 + ')');
 		}
 	}

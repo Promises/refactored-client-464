@@ -79,7 +79,7 @@ public class Buffer extends RSFont {
 			anInt2064++;
 			return true;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.JB("
+			throw JagexException.create(runtimeexception, ("m.JB("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ','
 					+ (arg2 != null ? "{...}" : "null") + ','
 					+ (arg3 != null ? "{...}" : "null") + ','
@@ -97,7 +97,7 @@ public class Buffer extends RSFont {
 				aCRC32_2116 = null;
 			aClass65_2073 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.T("
+			throw JagexException.create(runtimeexception, "m.T("
 					+ arg0 + ')');
 		}
 	}
@@ -325,7 +325,7 @@ public class Buffer extends RSFont {
 														(class4_sub13.itemAmounts[i_1_])),
 												StringUtilities.aJagexString_2733,
 												(Class4_Sub23.method633(i_2_,
-														(byte) -117).aJagexString_2991) }),
+														(byte) -117).name) }),
 										-842)), Class4_Sub3.aJagexString_1895,
 								(byte) 110, 0);
 					Class18.anInt475 = 0;
@@ -401,7 +401,7 @@ public class Buffer extends RSFont {
 					Class66.aClass4_Sub11_Sub1_1328.method207(i_2_,
 							arg0 ^ 0x785420a8);
 					Class66.aClass4_Sub11_Sub1_1328.method224(arg0 + 13421,
-							Class4_Sub20_Sub8.anInt2987 + i_3_);
+							ItemDefinition.anInt2987 + i_3_);
 				}
 				if (i == 1005) {
 					Class2.anInt96 = JagexException.anInt1729;
@@ -451,7 +451,7 @@ public class Buffer extends RSFont {
 					Class66.aClass4_Sub11_Sub1_1328.method264(216, -47);
 					Class66.aClass4_Sub11_Sub1_1328.method207(i_2_, 2018779304);
 					Class66.aClass4_Sub11_Sub1_1328.method218(60,
-							Class4_Sub20_Sub8.anInt2987 + i_3_);
+							ItemDefinition.anInt2987 + i_3_);
 					Class66.aClass4_Sub11_Sub1_1328.method251(Class6.anInt217
 							+ i_1_, (byte) 53);
 				}
@@ -495,7 +495,7 @@ public class Buffer extends RSFont {
 							+ Class6.anInt217, arg0 ^ 0x785420a8);
 					Class66.aClass4_Sub11_Sub1_1328.method207(i_2_, 2018779304);
 					Class66.aClass4_Sub11_Sub1_1328.method218(55, i_3_
-							- -Class4_Sub20_Sub8.anInt2987);
+							- -ItemDefinition.anInt2987);
 				}
 				if ((i ^ 0xffffffff) == -7) {
 					boolean bool = (Class4_Sub20
@@ -537,7 +537,7 @@ public class Buffer extends RSFont {
 					Class66.aClass4_Sub11_Sub1_1328.method224(13421,
 							Class6.anInt217 + i_1_);
 					Class66.aClass4_Sub11_Sub1_1328.method207(
-							Class4_Sub20_Sub8.anInt2987 + i_3_,
+							ItemDefinition.anInt2987 + i_3_,
 							arg0 ^ 0x785420a8);
 				}
 				if ((i ^ 0xffffffff) == -51) {
@@ -554,14 +554,14 @@ public class Buffer extends RSFont {
 									(new JagexString[] {
 											Class62.aJagexString_1230,
 											(Class4_Sub23.method633(i_2_,
-													(byte) -109).aJagexString_2991),
+													(byte) -109).name),
 											(Class4_Sub8.aJagexString_1971) }),
 									arg0 + -842);
 					if (Class62.aJagexString_1239 == null)
 						Class62.aJagexString_1239 = Class4_Sub24.aJagexString_2448;
 				} else {
 					if (i == 12) {
-						Class4_Sub20_Sub8.anInt2960++;
+						ItemDefinition.anInt2960++;
 						Class25.method798(i_2_, i_3_, i_1_, 0);
 						Class66.aClass4_Sub11_Sub1_1328.method264(44, -46);
 						Class66.aClass4_Sub11_Sub1_1328.method224(13421,
@@ -569,7 +569,7 @@ public class Buffer extends RSFont {
 						Class66.aClass4_Sub11_Sub1_1328.method207(
 								Class6.anInt217 + i_1_, 2018779304);
 						Class66.aClass4_Sub11_Sub1_1328.method224(
-								arg0 ^ 0x346d, Class4_Sub20_Sub8.anInt2987
+								arg0 ^ 0x346d, ItemDefinition.anInt2987
 										+ i_3_);
 					}
 					if (i == 28) {
@@ -592,7 +592,7 @@ public class Buffer extends RSFont {
 						Class25.method798(i_2_, i_3_, i_1_, 0);
 						Class66.aClass4_Sub11_Sub1_1328.method264(250, 108);
 						Class66.aClass4_Sub11_Sub1_1328.method218(-107, i_3_
-								- -Class4_Sub20_Sub8.anInt2987);
+								- -ItemDefinition.anInt2987);
 						Class66.aClass4_Sub11_Sub1_1328.method207(
 								(0x1fffc6b3 & i_2_) >> 551356174, 2018779304);
 						Class66.aClass4_Sub11_Sub1_1328.method207(i_1_
@@ -667,7 +667,7 @@ public class Buffer extends RSFont {
 						Class66.aClass4_Sub11_Sub1_1328.method264(221, 126);
 						Class66.aClass4_Sub11_Sub1_1328.method224(13421, i_2_);
 						Class66.aClass4_Sub11_Sub1_1328.method224(arg0 + 13421,
-								Class4_Sub20_Sub8.anInt2987 + i_3_);
+								ItemDefinition.anInt2987 + i_3_);
 						Class66.aClass4_Sub11_Sub1_1328.method251(
 								Class6.anInt217 + i_1_, (byte) 53);
 					}
@@ -676,7 +676,7 @@ public class Buffer extends RSFont {
 						Class66.anInt1327++;
 						Class66.aClass4_Sub11_Sub1_1328.method264(120, -99);
 						Class66.aClass4_Sub11_Sub1_1328.method207(i_3_
-								- -Class4_Sub20_Sub8.anInt2987, 2018779304);
+								- -ItemDefinition.anInt2987, 2018779304);
 						Class66.aClass4_Sub11_Sub1_1328.method218(-8,
 								i_2_ >> 618647726 & 0x7fff);
 						Class66.aClass4_Sub11_Sub1_1328.method218(56, i_1_
@@ -804,7 +804,7 @@ public class Buffer extends RSFont {
 						Class66.aClass4_Sub11_Sub1_1328.method218(-99,
 								Class35.anInt730);
 						Class66.aClass4_Sub11_Sub1_1328.method207(
-								Class4_Sub20_Sub8.anInt2987 + i_3_, 2018779304);
+								ItemDefinition.anInt2987 + i_3_, 2018779304);
 					}
 					if (i == 7) {
 						Player player = (Class4_Sub20_Sub7_Sub4.aPlayerArray3358[i_2_]);
@@ -857,7 +857,7 @@ public class Buffer extends RSFont {
 							&& Class25.method798(i_2_, i_3_, i_1_, 0)) {
 						Class66.aClass4_Sub11_Sub1_1328.method264(103, -25);
 						Class66.aClass4_Sub11_Sub1_1328.method218(74,
-								Class4_Sub20_Sub8.anInt2987 + i_3_);
+								ItemDefinition.anInt2987 + i_3_);
 						Class66.aClass4_Sub11_Sub1_1328.method207(
 								Class43.anInt887, 2018779304);
 						Class66.aClass4_Sub11_Sub1_1328.method251(i_1_
@@ -928,7 +928,7 @@ public class Buffer extends RSFont {
 						Class67.method1088(RSInterface.aClass4_Sub13_2141);
 					}
 					if ((i ^ 0xffffffff) == -50) {
-						Class4_Sub20_Sub8.anInt3004++;
+						ItemDefinition.anInt3004++;
 						Class66.aClass4_Sub11_Sub1_1328.method264(142, -109);
 						Class66.aClass4_Sub11_Sub1_1328.method207(
 								Class4_Sub20_Sub11.anInt3088, 2018779304);
@@ -980,7 +980,7 @@ public class Buffer extends RSFont {
 						Class66.aClass4_Sub11_Sub1_1328.method236(arg0 ^ 0xb5,
 								Class4_Sub20.anInt2357);
 						Class66.aClass4_Sub11_Sub1_1328.method224(13421, i_3_
-								+ Class4_Sub20_Sub8.anInt2987);
+								+ ItemDefinition.anInt2987);
 						Class66.aClass4_Sub11_Sub1_1328.method218(-111,
 								Class6.anInt217 + i_1_);
 						Class66.aClass4_Sub11_Sub1_1328.method207(i_2_,
@@ -991,7 +991,7 @@ public class Buffer extends RSFont {
 						Class25.anInt580++;
 						Class66.aClass4_Sub11_Sub1_1328.method264(207, 3);
 						Class66.aClass4_Sub11_Sub1_1328.method251(i_3_
-								+ Class4_Sub20_Sub8.anInt2987, (byte) 53);
+								+ ItemDefinition.anInt2987, (byte) 53);
 						Class66.aClass4_Sub11_Sub1_1328.method251(
 								Class6.anInt217 + i_1_, (byte) 53);
 						Class66.aClass4_Sub11_Sub1_1328.method244(96,
@@ -1314,7 +1314,7 @@ public class Buffer extends RSFont {
 						Class66.aClass4_Sub11_Sub1_1328.method251(
 								(i_2_ & 0x1fffd509) >> 1268673358, (byte) 53);
 						Class66.aClass4_Sub11_Sub1_1328.method251(i_3_
-								- -Class4_Sub20_Sub8.anInt2987, (byte) 53);
+								- -ItemDefinition.anInt2987, (byte) 53);
 					}
 					if ((i ^ 0xffffffff) == -14) {
 						Class25.method798(i_2_, i_3_, i_1_, 0);
@@ -1324,7 +1324,7 @@ public class Buffer extends RSFont {
 						Class66.aClass4_Sub11_Sub1_1328.method218(-108,
 								0x7fff & i_2_ >> -977817042);
 						Class66.aClass4_Sub11_Sub1_1328.method218(arg0 + 51,
-								i_3_ + Class4_Sub20_Sub8.anInt2987);
+								i_3_ + ItemDefinition.anInt2987);
 						Class66.aClass4_Sub11_Sub1_1328.method224(13421, i_1_
 								- -Class6.anInt217);
 					}
@@ -1667,7 +1667,7 @@ public class Buffer extends RSFont {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.BC("
+			throw JagexException.create(runtimeexception, ("m.BC("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ','
 					+ arg2 + ',' + arg3 + ',' + arg4 + ',' + arg5 + ',' + arg6
 					+ ',' + arg7 + ',' + arg8 + ','
@@ -1684,7 +1684,7 @@ public class Buffer extends RSFont {
 			currentPosition = 0;
 			byteBuffer = data;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					("m.<init>(" + (data != null ? "{...}" : "null") + ')'));
 		}
 	}
@@ -1694,7 +1694,7 @@ public class Buffer extends RSFont {
 			currentPosition = 0;
 			byteBuffer = Class72.method1160(-1, arg0);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					"m.<init>(" + arg0 + ')');
 		}
 	}
@@ -1707,7 +1707,7 @@ public class Buffer extends RSFont {
 			byteBuffer[currentPosition++] = (byte) (arg0 >> 2018779304);
 			byteBuffer[currentPosition++] = (byte) arg0;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.TB("
+			throw JagexException.create(runtimeexception, ("m.TB("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -1716,7 +1716,7 @@ public class Buffer extends RSFont {
 		try {
 			return -byteBuffer[currentPosition++] & 0xff;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					"Error with getC in: " + Buffer.class.getName());
 		}
 	}
@@ -1728,7 +1728,7 @@ public class Buffer extends RSFont {
 			return ((byteBuffer[-1 + currentPosition] & 0xff) + (byteBuffer[currentPosition
 					+ -2] << -315536632 & 0xff00));
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.V()");
+			throw JagexException.create(runtimeexception, "m.V()");
 		}
 	}
 
@@ -1737,7 +1737,7 @@ public class Buffer extends RSFont {
 			anInt2112++;
 			byteBuffer[currentPosition++] = (byte) (arg1 + -arg0);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.UB("
+			throw JagexException.create(runtimeexception, ("m.UB("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -1752,12 +1752,12 @@ public class Buffer extends RSFont {
 				aClass64_2096 = null;
 			byteBuffer[currentPosition++] = (byte) (arg0 >> 16);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.GC("
+			throw JagexException.create(runtimeexception, ("m.GC("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
 
-	public JagexString method212() {
+	public JagexString readString() {
 		try {
 			int i = currentPosition;
 			anInt2100++;
@@ -1767,7 +1767,7 @@ public class Buffer extends RSFont {
 			return Class61.method1046(-1 + -i + currentPosition, (byte) 73, i,
 					byteBuffer);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.VA("
+			throw JagexException.create(runtimeexception, "m.VA("
 					+ 70 + ')');
 		}
 	}
@@ -1781,7 +1781,7 @@ public class Buffer extends RSFont {
 			return ((byteBuffer[-1 + currentPosition] << -1801742808 & 0xff00) + (0xff & byteBuffer[-2
 					+ currentPosition]));
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.JA("
+			throw JagexException.create(runtimeexception, "m.JA("
 					+ arg0 + ')');
 		}
 	}
@@ -1794,7 +1794,7 @@ public class Buffer extends RSFont {
 				return -32768 + readShort();
 			return get();
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					"Error with readUnsignedSmart in: " + Buffer.class.getName());
 		}
 	}
@@ -1802,13 +1802,13 @@ public class Buffer extends RSFont {
 	public long readLong(byte arg0) {
 		try {
 			anInt2099++;
-			long l = readInt((byte) 73) & 0xffffffffL;
-			long l_0_ = readInt((byte) 73) & 0xffffffffL;
+			long l = readInt() & 0xffffffffL;
+			long l_0_ = readInt() & 0xffffffffL;
 			if (arg0 != 33)
 				StringUtilities.aJagexString_2115 = null;
 			return (l << -1181163488) - -l_0_;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.CC("
+			throw JagexException.create(runtimeexception, "m.CC("
 					+ arg0 + ')');
 		}
 	}
@@ -1818,7 +1818,7 @@ public class Buffer extends RSFont {
 			anInt2052++;
 			return byteBuffer[currentPosition++] & 0xff;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					"Error with get in: " + Buffer.class.getName());
 		}
 	}
@@ -1829,23 +1829,20 @@ public class Buffer extends RSFont {
 			byteBuffer[currentPosition++] = (byte) (arg1 >> -508699864);
 			byteBuffer[currentPosition++] = (byte) (arg1 - -128);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.EC("
+			throw JagexException.create(runtimeexception, ("m.EC("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
 
-	public int readInt(byte arg0) {
+	public int readInt() {
 		try {
 			currentPosition += 4;
 			anInt2087++;
-			if (arg0 != 73)
-				return -52;
 			return ((0xff0000 & byteBuffer[currentPosition - 3] << 189354448) + ((~0xffffff & byteBuffer[currentPosition - 4] << 1162396728)
 					+ ((0xff & byteBuffer[-2 + currentPosition]) << 716984520) + (byteBuffer[-1
 					+ currentPosition] & 0xff)));
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.QB("
-					+ arg0 + ')');
+			throw JagexException.create(runtimeexception, "Buffer.readInt()");
 		}
 	}
 
@@ -1857,7 +1854,7 @@ public class Buffer extends RSFont {
 				anInt2084++;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.WB("
+			throw JagexException.create(runtimeexception, ("m.WB("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ','
 					+ arg2 + ',' + arg3 + ')'));
 		}
@@ -1873,7 +1870,7 @@ public class Buffer extends RSFont {
 					+ currentPosition] << -1421440464) + ((~0xffffff & byteBuffer[-1
 					+ currentPosition] << 2049339992) + (byteBuffer[currentPosition - 4] & 0xff))));
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.UA("
+			throw JagexException.create(runtimeexception, "m.UA("
 					+ arg0 + ')');
 		}
 	}
@@ -1887,7 +1884,7 @@ public class Buffer extends RSFont {
 			return ((0xff & -128 + byteBuffer[currentPosition + -1]) + (0xff00 & byteBuffer[-2
 					+ currentPosition] << 37992360));
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.CA("
+			throw JagexException.create(runtimeexception, "m.CA("
 					+ arg0 + ')');
 		}
 	}
@@ -1900,7 +1897,7 @@ public class Buffer extends RSFont {
 			anInt2059++;
 			byteBuffer[currentPosition++] = (byte) (arg1 >> 1446702280);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.WA("
+			throw JagexException.create(runtimeexception, ("m.WA("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -1911,7 +1908,7 @@ public class Buffer extends RSFont {
 			if (arg1 == 97)
 				anInt2055++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.BA("
+			throw JagexException.create(runtimeexception, ("m.BA("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -1925,9 +1922,9 @@ public class Buffer extends RSFont {
 				currentPosition++;
 				return null;
 			}
-			return method212();
+			return readString();
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.U("
+			throw JagexException.create(runtimeexception, "m.U("
 					+ arg0 + ')');
 		}
 	}
@@ -1948,7 +1945,7 @@ public class Buffer extends RSFont {
 				i_6_ = (0x7f & i | i_6_) << 432199079;
 			return i | i_6_;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.NA("
+			throw JagexException.create(runtimeexception, "m.NA("
 					+ arg0 + ')');
 		}
 	}
@@ -1958,7 +1955,7 @@ public class Buffer extends RSFont {
 			anInt2105++;
 			return byteBuffer[currentPosition++];
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.S("
+			throw JagexException.create(runtimeexception, "m.S("
 					+ arg0 + ')');
 		}
 	}
@@ -1973,7 +1970,7 @@ public class Buffer extends RSFont {
 				aCRC32_2116 = null;
 			byteBuffer[currentPosition++] = (byte) (arg1 >> -652404408);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.FA("
+			throw JagexException.create(runtimeexception, ("m.FA("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -1985,7 +1982,7 @@ public class Buffer extends RSFont {
 			byteBuffer[currentPosition++] = (byte) (arg0 >> 972296968);
 			byteBuffer[currentPosition++] = (byte) arg0;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.OA("
+			throw JagexException.create(runtimeexception, ("m.OA("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -1999,7 +1996,7 @@ public class Buffer extends RSFont {
 					byteBuffer[currentPosition++] = arg0[i];
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.O("
+			throw JagexException.create(runtimeexception, ("m.O("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ','
 					+ arg2 + ',' + arg3 + ')'));
 		}
@@ -2021,7 +2018,7 @@ public class Buffer extends RSFont {
 			method227((byte) -27, is_8_.length);
 			method232(is_8_, 0, (byte) -104, is_8_.length);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.EA("
+			throw JagexException.create(runtimeexception, ("m.EA("
 					+ (arg0 != null ? "{...}" : "null") + ','
 					+ (arg1 != null ? "{...}" : "null") + ',' + arg2 + ')'));
 		}
@@ -2036,7 +2033,7 @@ public class Buffer extends RSFont {
 			method236(181, i);
 			return i;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.VB("
+			throw JagexException.create(runtimeexception, ("m.VB("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -2048,7 +2045,7 @@ public class Buffer extends RSFont {
 			return (((0xff & byteBuffer[currentPosition - 1]) << 1159843944) + (0xff & byteBuffer[-2
 					+ currentPosition] - 128));
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.TA("
+			throw JagexException.create(runtimeexception, "m.TA("
 					+ arg0 + ')');
 		}
 	}
@@ -2063,7 +2060,7 @@ public class Buffer extends RSFont {
 				method236(102, -54);
 			byteBuffer[currentPosition++] = (byte) arg1;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.QA("
+			throw JagexException.create(runtimeexception, ("m.QA("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -2076,7 +2073,7 @@ public class Buffer extends RSFont {
 					+ (((0xff & byteBuffer[-1 + currentPosition]) << 479365160) + ((byteBuffer[currentPosition - 3] & 0xff) << -1995013832)) + (0xff0000 & byteBuffer[-4
 					+ currentPosition] << 2021760848));
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.SA("
+			throw JagexException.create(runtimeexception, "m.SA("
 					+ arg0 + ')');
 		}
 	}
@@ -2093,7 +2090,7 @@ public class Buffer extends RSFont {
 				i -= 65536;
 			return i;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.HA("
+			throw JagexException.create(runtimeexception, "m.HA("
 					+ arg0 + ')');
 		}
 	}
@@ -2105,7 +2102,7 @@ public class Buffer extends RSFont {
 			anInt2060++;
 			return -128 + byteBuffer[currentPosition++] & 0xff;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.AB("
+			throw JagexException.create(runtimeexception, "m.AB("
 					+ arg0 + ')');
 		}
 	}
@@ -2117,7 +2114,7 @@ public class Buffer extends RSFont {
 				return -65;
 			return 0xff & 128 - byteBuffer[currentPosition++];
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.KA("
+			throw JagexException.create(runtimeexception, "m.KA("
 					+ arg0 + ')');
 		}
 	}
@@ -2131,7 +2128,7 @@ public class Buffer extends RSFont {
 							+ currentPosition] & 0xff) << -1687385432)) + (0xff & byteBuffer[-3
 					+ currentPosition]));
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.IA("
+			throw JagexException.create(runtimeexception, "m.IA("
 					+ arg0 + ')');
 		}
 	}
@@ -2143,7 +2140,7 @@ public class Buffer extends RSFont {
 			anInt2092++;
 			return (byte) -byteBuffer[currentPosition++];
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.FC("
+			throw JagexException.create(runtimeexception, "m.FC("
 					+ arg0 + ')');
 		}
 	}
@@ -2161,7 +2158,7 @@ public class Buffer extends RSFont {
 				throw new IllegalArgumentException();
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.NB("
+			throw JagexException.create(runtimeexception, ("m.NB("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -2176,7 +2173,7 @@ public class Buffer extends RSFont {
 			byteBuffer[currentPosition++] = (byte) (arg1 >> -61734032);
 			byteBuffer[currentPosition++] = (byte) (arg1 >> -1178496840);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.LB("
+			throw JagexException.create(runtimeexception, ("m.LB("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -2188,7 +2185,7 @@ public class Buffer extends RSFont {
 			anInt2098++;
 			return (byte) (128 - byteBuffer[currentPosition++]);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.AA("
+			throw JagexException.create(runtimeexception, "m.AA("
 					+ arg0 + ')');
 		}
 	}
@@ -2200,9 +2197,9 @@ public class Buffer extends RSFont {
 			anInt2094++;
 			currentPosition = arg0;
 			for (int i_15_ = 0; i_14_ > i_15_; i_15_++) {
-				int i_16_ = readInt((byte) 73);
+				int i_16_ = readInt();
 				int i_17_ = -957401312;
-				int i_18_ = readInt((byte) 73);
+				int i_18_ = readInt();
 				int i_19_ = -1640531527;
 				int i_20_ = 32;
 				while (i_20_-- > 0) {
@@ -2221,7 +2218,7 @@ public class Buffer extends RSFont {
 				byteBuffer = null;
 			currentPosition = i;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.DA("
+			throw JagexException.create(runtimeexception, ("m.DA("
 					+ arg0 + ',' + arg1 + ','
 					+ (arg2 != null ? "{...}" : "null") + ',' + arg3 + ')'));
 		}
@@ -2236,7 +2233,7 @@ public class Buffer extends RSFont {
 			return ((byteBuffer[currentPosition + -1] & 0xff) + ((0xff0000 & byteBuffer[-3
 					+ currentPosition] << 609314768) + ((0xff & byteBuffer[currentPosition - 2]) << -970674840)));
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.MA("
+			throw JagexException.create(runtimeexception, "m.MA("
 					+ arg0 + ')');
 		}
 	}
@@ -2251,7 +2248,7 @@ public class Buffer extends RSFont {
 			byteBuffer[-2 + currentPosition - arg0] = (byte) (arg0 >> -812178424);
 			byteBuffer[-1 + currentPosition - arg0] = (byte) arg0;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.AC("
+			throw JagexException.create(runtimeexception, ("m.AC("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -2268,7 +2265,7 @@ public class Buffer extends RSFont {
 				i -= 65536;
 			return i;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.RB("
+			throw JagexException.create(runtimeexception, "m.RB("
 					+ arg0 + ')');
 		}
 	}
@@ -2293,7 +2290,7 @@ public class Buffer extends RSFont {
 				i -= 65536;
 			return i;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.SB("
+			throw JagexException.create(runtimeexception, "m.SB("
 					+ arg0 + ')');
 		}
 	}
@@ -2306,7 +2303,7 @@ public class Buffer extends RSFont {
 				readByteSubtracted(-98);
 			anInt2068++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.R("
+			throw JagexException.create(runtimeexception, ("m.R("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ','
 					+ (arg3 != null ? "{...}" : "null") + ')'));
 		}
@@ -2344,7 +2341,7 @@ public class Buffer extends RSFont {
 			byteBuffer[currentPosition++] = (byte) (int) (arg1 >> -1402663096);
 			byteBuffer[currentPosition++] = (byte) (int) arg1;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.OB("
+			throw JagexException.create(runtimeexception, ("m.OB("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -2359,7 +2356,7 @@ public class Buffer extends RSFont {
 					break;
 				method218(-24, -60);
 			} catch (RuntimeException runtimeexception) {
-				throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+				throw JagexException.create(runtimeexception,
 						("m.PB(" + arg0 + ',' + arg1 + ')'));
 			}
 			break;
@@ -2382,7 +2379,7 @@ public class Buffer extends RSFont {
 					byteBuffer);
 			byteBuffer[currentPosition++] = (byte) 0;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("m.KB("
+			throw JagexException.create(runtimeexception, ("m.KB("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ')'));
 		}
 	}
@@ -2391,13 +2388,13 @@ public class Buffer extends RSFont {
 		try {
 			anInt2053++;
 			if (arg0 > -54)
-				readInt((byte) 15);
+				readInt();
 			int i = byteBuffer[currentPosition] & 0xff;
 			if ((i ^ 0xffffffff) <= -129)
 				return -49152 + readShort();
 			return get() - 64;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.Q("
+			throw JagexException.create(runtimeexception, "m.Q("
 					+ arg0 + ')');
 		}
 	}
@@ -2409,7 +2406,7 @@ public class Buffer extends RSFont {
 				return (byte) -29;
 			return (byte) (-128 + byteBuffer[currentPosition++]);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "m.HB("
+			throw JagexException.create(runtimeexception, "m.HB("
 					+ arg0 + ')');
 		}
 	}

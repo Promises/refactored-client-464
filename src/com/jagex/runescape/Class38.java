@@ -33,7 +33,7 @@ public class Class38 {
 			}
 			return arg1.aJagexStringArray2247[arg2];
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("kd.A("
+			throw JagexException.create(runtimeexception, ("kd.A("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ','
 					+ arg2 + ')'));
 		}
@@ -85,7 +85,7 @@ public class Class38 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("kd.F("
+			throw JagexException.create(runtimeexception, ("kd.F("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -98,7 +98,7 @@ public class Class38 {
 			Class4_Sub20_Sub4.aClass66_2848.method1084(0);
 			anInt773++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "kd.E("
+			throw JagexException.create(runtimeexception, "kd.E("
 					+ arg0 + ')');
 		}
 	}
@@ -120,7 +120,7 @@ public class Class38 {
 			Class12.aClass66_367.method1082(true, arg0, class4_sub20_sub5);
 			return class4_sub20_sub5;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("kd.B("
+			throw JagexException.create(runtimeexception, ("kd.B("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -132,7 +132,7 @@ public class Class38 {
 			StringUtilities.aJagexString_772 = null;
 			StringUtilities.aJagexString_769 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "kd.C("
+			throw JagexException.create(runtimeexception, "kd.C("
 					+ arg0 + ')');
 		}
 	}
@@ -154,7 +154,7 @@ public class Class38 {
 			Class42.aClass66_853.method1082(true, arg1, class4_sub20_sub11);
 			return class4_sub20_sub11;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("kd.D("
+			throw JagexException.create(runtimeexception, ("kd.D("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
