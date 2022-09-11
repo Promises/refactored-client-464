@@ -33,7 +33,7 @@ public class Class1 {
 			anIntArray78 = null;
 			StringUtilities.aJagexString_72 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "a.A("
+			throw JagexException.create(runtimeexception, "a.A("
 					+ arg0 + ')');
 		}
 	}
@@ -101,7 +101,7 @@ public class Class1 {
 			aClass4_Sub20_65.aClass4_Sub20_2355 = aClass4_Sub20_65;
 			aClass4_Sub20_65.aClass4_Sub20_2359 = aClass4_Sub20_65;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					"a.<init>(" + ')');
 		}
 	}
@@ -118,7 +118,7 @@ public class Class1 {
 			arg0.aClass4_Sub20_2355.aClass4_Sub20_2359 = arg0;
 			arg0.aClass4_Sub20_2359.aClass4_Sub20_2355 = arg0;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("a.F("
+			throw JagexException.create(runtimeexception, ("a.F("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ')'));
 		}
 	}
@@ -133,7 +133,7 @@ public class Class1 {
 				return null;
 			return class4_sub20;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "a.C("
+			throw JagexException.create(runtimeexception, "a.C("
 					+ arg0 + ')');
 		}
 	}
@@ -150,7 +150,7 @@ public class Class1 {
 			arg0.aClass4_Sub20_2355.aClass4_Sub20_2359 = arg0;
 			arg0.aClass4_Sub20_2359.aClass4_Sub20_2355 = arg0;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("a.B("
+			throw JagexException.create(runtimeexception, ("a.B("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ')'));
 		}
 	}
@@ -164,7 +164,7 @@ public class Class1 {
 			class4_sub20.method320(-1);
 			return class4_sub20;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "a.D("
+			throw JagexException.create(runtimeexception, "a.D("
 					+ arg0 + ')');
 		}
 	}

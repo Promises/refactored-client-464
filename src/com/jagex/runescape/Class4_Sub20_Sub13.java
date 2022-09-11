@@ -46,7 +46,7 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 			Class35.anInt740 = arg0;
 			Class67.method1088(class4_sub13);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ne.J("
+			throw JagexException.create(runtimeexception, ("ne.J("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ')'));
 		}
 	}
@@ -65,7 +65,7 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 			StringUtilities.aJagexString_3120 = null;
 			anIntArray3133 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ne.I("
+			throw JagexException.create(runtimeexception, "ne.I("
 					+ arg0 + ')');
 		}
 	}
@@ -108,7 +108,7 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 								i_6_);
 						int i_7_ = is[i_2_++];
 						if (i_7_ != -1
-								&& (!(Class4_Sub23.method633(i_7_, (byte) -106).aBoolean3002) || Class77.members)) {
+								&& (!(Class4_Sub23.method633(i_7_, (byte) -106).members) || Class77.members)) {
 							for (int i_8_ = 0; i_8_ < class4_sub13.items.length; i_8_++) {
 								if (class4_sub13.items[i_8_] == 1 + i_7_)
 									i_5_ += class4_sub13.itemAmounts[i_8_];
@@ -138,7 +138,7 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 						int i_11_ = is[i_2_++];
 						if ((i_11_ ^ 0xffffffff) != 0
 								&& (!(Class4_Sub23
-										.method633(i_11_, (byte) -127).aBoolean3002) || Class77.members)) {
+										.method633(i_11_, (byte) -127).members) || Class77.members)) {
 							for (int i_12_ = 0; i_12_ < class4_sub13.items.length; i_12_++) {
 								if (class4_sub13.items[i_12_] == 1 + i_11_) {
 									i_5_ = 999999999;
@@ -163,7 +163,7 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 					if ((i_3_ ^ 0xffffffff) == -19)
 						i_5_ = (Class6.anInt217 + ((Class4_Sub15.localPlayer.worldX) >> -686491129));
 					if (i_3_ == 19)
-						i_5_ = (Class4_Sub20_Sub8.anInt2987 + ((Class4_Sub15.localPlayer.worldY) >> 1473326183));
+						i_5_ = (ItemDefinition.anInt2987 + ((Class4_Sub15.localPlayer.worldY) >> 1473326183));
 					if (i_3_ == 20)
 						i_5_ = is[i_2_++];
 					if (i_4_ == 0) {
@@ -183,7 +183,7 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 				return -1;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ne.C("
+			throw JagexException.create(runtimeexception, ("ne.C("
 					+ arg0 + ',' + arg1 + ','
 					+ (arg2 != null ? "{...}" : "null") + ')'));
 		}
@@ -202,7 +202,7 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 				anInt3121++;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ne.B("
+			throw JagexException.create(runtimeexception, "ne.B("
 					+ arg0 + ')');
 		}
 	}
@@ -251,7 +251,7 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 			}
 			return class4_sub20_sub7_sub2;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ne.H("
+			throw JagexException.create(runtimeexception, "ne.H("
 					+ arg0 + ')');
 		}
 	}
@@ -268,7 +268,7 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 			}
 			return bool;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ne.A("
+			throw JagexException.create(runtimeexception, "ne.A("
 					+ arg0 + ')');
 		}
 	}
@@ -317,7 +317,7 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 			}
 			return bool;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ne.F("
+			throw JagexException.create(runtimeexception, "ne.F("
 					+ arg0 + ')');
 		}
 	}
@@ -357,7 +357,7 @@ public class Class4_Sub20_Sub13 extends Class4_Sub20 {
 			}
 			return class4_sub20_sub7_sub2;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ne.D("
+			throw JagexException.create(runtimeexception, "ne.D("
 					+ arg0 + ')');
 		}
 	}

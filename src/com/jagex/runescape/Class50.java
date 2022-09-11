@@ -48,7 +48,7 @@ public class Class50 implements Runnable {
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("nd.F("
+			throw JagexException.create(runtimeexception, ("nd.F("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -67,7 +67,7 @@ public class Class50 implements Runnable {
 			aJagexString_1026 = null;
 			aJagexString_1019 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "nd.B("
+			throw JagexException.create(runtimeexception, "nd.B("
 					+ arg0 + ')');
 		}
 	}
@@ -80,7 +80,7 @@ public class Class50 implements Runnable {
 				Class67.aClass66_1357.method1084(0);
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "nd.E("
+			throw JagexException.create(runtimeexception, "nd.E("
 					+ arg0 + ')');
 		}
 	}
@@ -160,11 +160,11 @@ public class Class50 implements Runnable {
 								-1387540232);
 					}
 				} else if (((Class81.anInt1681 ^ 0xffffffff) == -2 || Class42
-						.method942(-56, (Class4_Sub20_Sub8.anInt2980 + -1)))
-						&& Class4_Sub20_Sub8.anInt2980 > 2)
+						.method942(-56, (ItemDefinition.anInt2980 + -1)))
+						&& ItemDefinition.anInt2980 > 2)
 					SceneGraph.method707(-21);
-				else if (Class4_Sub20_Sub8.anInt2980 > 0)
-					Buffer.method221(0, Class4_Sub20_Sub8.anInt2980 + -1);
+				else if (ItemDefinition.anInt2980 > 0)
+					Buffer.method221(0, ItemDefinition.anInt2980 + -1);
 				Class4_Sub20_Sub16.aClass4_Sub13_3179 = null;
 			}
 		}
@@ -182,7 +182,7 @@ public class Class50 implements Runnable {
 				return -1;
 			return class4_sub1.anIntArray1866[arg1];
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("nd.D("
+			throw JagexException.create(runtimeexception, ("nd.D("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
 		}
 	}
@@ -204,7 +204,7 @@ public class Class50 implements Runnable {
 			int i_8_ = Player.method392(arg2, arg1, 32315);
 			return i_8_ / 4 + (i_7_ / 8 + i / 16);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("nd.A("
+			throw JagexException.create(runtimeexception, ("nd.A("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
 		}
 	}
@@ -244,7 +244,7 @@ public class Class50 implements Runnable {
 			}
 			anInt1022++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					"nd.run(" + ')');
 		}
 	}

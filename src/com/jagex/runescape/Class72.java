@@ -60,7 +60,7 @@ public class Class72 {
             }
             return new byte[arg1];
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ua.E("
+            throw JagexException.create(runtimeexception, ("ua.E("
                     + arg0 + ',' + arg1 + ')'));
         }
     }
@@ -74,7 +74,7 @@ public class Class72 {
                 return false;
             return true;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ua.C("
+            throw JagexException.create(runtimeexception, ("ua.C("
                     + arg0 + ',' + arg1 + ')'));
         }
     }
@@ -279,7 +279,7 @@ public class Class72 {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ua.B("
+            throw JagexException.create(runtimeexception, ("ua.B("
                     + (arg0 != null ? "{...}" : "null") + ',' + arg1 + ','
                     + (arg2 != null ? "{...}" : "null") + ')'));
         }

@@ -46,7 +46,7 @@ public class Class25 {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ha.D("
+            throw JagexException.create(runtimeexception, "ha.D("
                     + arg0 + ')');
         }
     }
@@ -65,7 +65,7 @@ public class Class25 {
                 anIntArray587 = null;
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ha.E("
+            throw JagexException.create(runtimeexception, "ha.E("
                     + arg0 + ')');
         }
     }
@@ -134,7 +134,7 @@ public class Class25 {
             Class57.anInt1155 = Class37.anInt758;
             return true;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ha.C("
+            throw JagexException.create(runtimeexception, ("ha.C("
                     + arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ')'));
         }
     }
@@ -151,7 +151,7 @@ public class Class25 {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ha.B("
+            throw JagexException.create(runtimeexception, ("ha.B("
                     + arg0 + ',' + arg1 + ')'));
         }
     }
@@ -212,7 +212,7 @@ public class Class25 {
             RSInterface.anInt2157 = 0;
             RSFont.anInt141 = 0;
             Class4_Sub20_Sub7.anInt2949 = 0;
-            Class4_Sub20_Sub8.anInt3016 = 0;
+            ItemDefinition.anInt3016 = 0;
             Class10.anInt292 = 0;
             Class35.anInt745 = 0;
             Class4_Sub2_Sub1.anInt2582 = 0;
@@ -222,7 +222,7 @@ public class Class25 {
             Class33.anInt720 = 0;
             Game.anInt1835 = 0;
             Class16.anInt438 = 0;
-            Class4_Sub20_Sub8.anInt2956 = 0;
+            ItemDefinition.anInt2956 = 0;
             Class14.anInt404 = 0;
             Class4_Sub11_Sub1.anInt2681 = 0;
             Player.anInt3599 = 0;
@@ -256,7 +256,7 @@ public class Class25 {
             Class19.anInt505 = 0;
             Class4_Sub14.anInt2283 = 0;
             Class4_Sub20_Sub15.anInt3158 = 0;
-            Class4_Sub20_Sub8.anInt2992 = 0;
+            ItemDefinition.anInt2992 = 0;
             Class35.anInt752 = 0;
             Class4_Sub20_Sub7_Sub4.anInt3360 = 0;
             Class4_Sub2_Sub4.anInt2647 = 0;
@@ -269,7 +269,7 @@ public class Class25 {
             Region.anInt107 = 0;
             RSInterface.anInt2131 = 0;
             Buffer.anInt2087 = 0;
-            Class4_Sub20_Sub8.anInt2978 = 0;
+            ItemDefinition.anInt2978 = 0;
             Class57.anInt1146 = 0;
             Class4_Sub20_Sub7.anInt2945 = 0;
             Class4_Sub17.anInt2331 = 0;
@@ -289,7 +289,7 @@ public class Class25 {
             Class4_Sub20_Sub6.anInt2927 = 0;
             Class4_Sub15.anInt2303 = 0;
             Class2.anInt89 = 0;
-            Class4_Sub20_Sub8.anInt3004 = 0;
+            ItemDefinition.anInt3004 = 0;
             Class4_Sub20_Sub7_Sub5.anInt3399 = 0;
             Buffer.anInt2080 = 0;
             Class73.anInt1508 = 0;
@@ -319,7 +319,7 @@ public class Class25 {
             Class42.anInt851 = 0;
             Class81.anInt1673 = 0;
             Region.anInt98 = 0;
-            Class4_Sub20_Sub8.anInt3018 = 0;
+            ItemDefinition.anInt3018 = 0;
             Class52.anInt1056 = 0;
             Class4_Sub2_Sub1.anInt2614 = 0;
             Class27.anInt600 = 0;
@@ -391,7 +391,7 @@ public class Class25 {
             Class77.anInt1594 = 0;
             Class4_Sub1.anInt1864 = 0;
             Class61.anInt1215 = 0;
-            Class4_Sub20_Sub8.anInt2952 = 0;
+            ItemDefinition.anInt2952 = 0;
             Class4_Sub2_Sub1.anInt2562 = 0;
             RSInterface.anInt2219 = 0;
             Class78.anInt1602 = 0;
@@ -440,7 +440,7 @@ public class Class25 {
             Class4_Sub20_Sub13.anInt3119 = 0;
             Class46.anInt929 = 0;
             Class4_Sub20_Sub6.anInt2907 = 0;
-            Class4_Sub20_Sub8.anInt2959 = 0;
+            ItemDefinition.anInt2959 = 0;
             Class13_Sub2.anInt2466 = 0;
             Game.anInt1842 = 0;
             Class4_Sub20_Sub7_Sub3.anInt3339 = 0;
@@ -523,7 +523,7 @@ public class Class25 {
 
             Class4_Sub20_Sub6.anInt2917 = 0;
             Class12.anInt338 = 0;
-            Class4_Sub20_Sub8.anInt2962 = 0;
+            ItemDefinition.anInt2962 = 0;
             Class63.anInt1248 = 0;
             Class46.anInt931 = 0;
             Class66.anInt1323 = 0;
@@ -540,7 +540,7 @@ public class Class25 {
             Class19.anInt494 = 0;
             Class4_Sub21.anInt2382 = 0;
             Buffer.anInt2067 = 0;
-            Class4_Sub20_Sub8.anInt3001 = 0;
+            ItemDefinition.anInt3001 = 0;
             Class4_Sub2_Sub1.anInt2559 = 0;
             Class4_Sub24.anInt2439 = 0;
             Class4_Sub20_Sub1.anInt2742 = 0;
@@ -574,7 +574,7 @@ public class Class25 {
             Class72.anInt1486 = 0;
             Class65.anInt1287 = 0;
             Class37.anInt763 = 0;
-            Class4_Sub20_Sub8.anInt2955 = 0;
+            ItemDefinition.anInt2955 = 0;
 
             Class4_Sub23.anInt2425 = 0;
             Class4_Sub15.anInt2296 = 0;
@@ -589,7 +589,7 @@ public class Class25 {
             RSFont.anInt157 = 0;
             Class35.anInt754 = 0;
             Class65.anInt1300 = 0;
-            Class4_Sub20_Sub8.anInt2960 = 0;
+            ItemDefinition.anInt2960 = 0;
             Class4_Sub10.anInt2023 = 0;
             Game.anInt1841 = 0;
             Player.anInt3582 = 0;
@@ -719,7 +719,7 @@ public class Class25 {
                 Class4_Sub20_Sub14.anInt3149 = 0;
                 Class4_Sub20_Sub6.anInt2918 = 0;
                 Class4_Sub2_Sub1.anInt2578 = 0;
-                Class4_Sub20_Sub8.anInt2968 = 0;
+                ItemDefinition.anInt2968 = 0;
                 Game.anInt1845 = 0;
                 Class12.anInt344 = 0;
 
@@ -845,7 +845,7 @@ public class Class25 {
                 Class43.anInt880 = 0;
                 Class50.anInt1022 = 0;
                 Class4_Sub20_Sub3.anInt2802 = 0;
-                Class4_Sub20_Sub8.anInt2953 = 0;
+                ItemDefinition.anInt2953 = 0;
                 AppletListener.anInt1462 = 0;
                 Class41.anInt808 = 0;
                 RS2Font.anInt2761 = 0;
@@ -899,7 +899,7 @@ public class Class25 {
                 Class78.anInt1600 = 0;
                 Buffer.anInt2102 = 0;
                 Class1.anInt63 = 0;
-                Class4_Sub20_Sub8.anInt2969 = 0;
+                ItemDefinition.anInt2969 = 0;
                 Class35.anInt731 = 0;
                 Class4_Sub20_Sub3.anInt2819 = 0;
                 Class57.anInt1150 = 0;
@@ -923,7 +923,7 @@ public class Class25 {
                 Class4_Sub20_Sub17.anInt3198 = 0;
                 Class11.anInt330 = 0;
                 Class4_Sub6.anInt1935 = 0;
-                Class4_Sub20_Sub8.anInt2994 = 0;
+                ItemDefinition.anInt2994 = 0;
                 Class19_Sub1.anInt2534 = 0;
                 Game.anInt1836 = 0;
                 Class19_Sub1.anInt2506 = 0;
@@ -1026,7 +1026,7 @@ public class Class25 {
                 Class4_Sub24.anInt2437 = 0;
                 Class4_Sub2_Sub1.anInt2566 = 0;
                 RS2Font.anInt2775 = 0;
-                Class4_Sub20_Sub8.anInt3019 = 0;
+                ItemDefinition.anInt3019 = 0;
                 Class13.anInt380 = 0;
                 SceneGraph.anInt2503 = 0;
                 Buffer.anInt2052 = 0;
@@ -1036,7 +1036,7 @@ public class Class25 {
                 Class82.method1213((byte) -117);
                 Class66.aClass4_Sub11_Sub1_1328.currentPosition = 0;
                 Class57.anInt1130 = 0;
-                Class4_Sub20_Sub8.anInt2980 = 0;
+                ItemDefinition.anInt2980 = 0;
                 Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.currentPosition = 0;
                 RSCanvas.anInt56 = -1;
                 Class57.anInt1141 = 0;
@@ -1112,7 +1112,7 @@ public class Class25 {
                 Class31.aClass16_677 = new Class16(8);
                 Class4_Sub20_Sub16.aBoolean3169 = false;
                 RSInterface.aClass4_Sub13_2141 = null;
-                Class4_Sub20_Sub8.anInt2980 = 0;
+                ItemDefinition.anInt2980 = 0;
                 Class4_Sub24.aClass35_2438.method901(new int[5], null, -1,
                         (byte) -79, false);
                 for (int i = 0; (i ^ 0xffffffff) > -9; i++) {
@@ -1129,7 +1129,7 @@ public class Class25 {
                 Class13_Sub2.aClass4_Sub8Array2482 = null;
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ha.A("
+            throw JagexException.create(runtimeexception, "ha.A("
                     + arg0 + ')');
         }
     }

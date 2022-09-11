@@ -65,7 +65,7 @@ public class Class6 {
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("bc.B("
+			throw JagexException.create(runtimeexception, ("bc.B("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -84,7 +84,7 @@ public class Class6 {
 			}
 			anInt213++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "bc.A("
+			throw JagexException.create(runtimeexception, "bc.A("
 					+ arg0 + ')');
 		}
 	}
@@ -96,7 +96,7 @@ public class Class6 {
 				return -105;
 			return Class53.method1009((byte) -120, arg1, 0, arg2);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("bc.E("
+			throw JagexException.create(runtimeexception, ("bc.E("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ','
 					+ arg2 + ')'));
 		}
@@ -163,7 +163,7 @@ public class Class6 {
 				Class4_Sub20_Sub7_Sub5.runeCanvas.repaint();
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("bc.G("
+			throw JagexException.create(runtimeexception, ("bc.G("
 					+ (arg0 != null ? "{...}" : "null") + ','
 					+ (arg1 != null ? "{...}" : "null") + ',' + arg2 + ','
 					+ arg3 + ')'));

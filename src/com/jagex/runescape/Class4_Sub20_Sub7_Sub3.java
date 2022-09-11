@@ -23,7 +23,7 @@ public class Class4_Sub20_Sub7_Sub3 extends Class4_Sub20_Sub7 {
 			StringUtilities.aJagexString_3334 = null;
 			StringUtilities.aJagexString_3332 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ga.C("
+			throw JagexException.create(runtimeexception, "ga.C("
 					+ arg0 + ')');
 		}
 	}
@@ -39,7 +39,7 @@ public class Class4_Sub20_Sub7_Sub3 extends Class4_Sub20_Sub7 {
 		RSInterface class4_sub13 = RSInterface.forId(i_0_);
 		if (class4_sub13 != null)
 			Class67.method1088(class4_sub13);
-		Class4_Sub20_Sub8.anInt2980 = 0;
+		ItemDefinition.anInt2980 = 0;
 		Class4_Sub20_Sub16.aBoolean3169 = false;
 		Class4_Sub20_Sub17.method621(Class4_Sub1.anInt1860, 16052,
 				Class63.anInt1243, Class4_Sub20_Sub17.anInt3195,
@@ -79,7 +79,7 @@ public class Class4_Sub20_Sub7_Sub3 extends Class4_Sub20_Sub7 {
 				aClass4_Sub20_Sub17_3350 = Class68.method1093(i, (byte) -116);
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					("ga.<init>(" + arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3
 							+ ',' + arg4 + ',' + arg5 + ',' + arg6 + ')'));
 		}
@@ -103,7 +103,7 @@ public class Class4_Sub20_Sub7_Sub3 extends Class4_Sub20_Sub7 {
 				return null;
 			return class4_sub20_sub7_sub7;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ga.V("
+			throw JagexException.create(runtimeexception, "ga.V("
 					+ arg0 + ')');
 		}
 	}
@@ -123,7 +123,7 @@ public class Class4_Sub20_Sub7_Sub3 extends Class4_Sub20_Sub7 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ga.A("
+			throw JagexException.create(runtimeexception, ("ga.A("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}

@@ -41,7 +41,7 @@ public class Class48 {
                     Class4_Sub7.anIntArray1947, 0,
                     (Player.aClass9Array3579));
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("mf.C("
+            throw JagexException.create(runtimeexception, ("mf.C("
                     + arg0 + ',' + arg1 + ',' + arg2 + ')'));
         }
     }
@@ -100,7 +100,7 @@ public class Class48 {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("mf.B("
+            throw JagexException.create(runtimeexception, ("mf.B("
                     + arg0 + ',' + arg1 + ')'));
         }
     }
@@ -126,7 +126,7 @@ public class Class48 {
             Class43.method953(true);
             return class4_sub20_sub12_sub1s;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "mf.E("
+            throw JagexException.create(runtimeexception, "mf.E("
                     + arg0 + ')');
         }
     }
@@ -142,7 +142,7 @@ public class Class48 {
             aEffectArray974 = null;
             anIntArray979 = null;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "mf.A("
+            throw JagexException.create(runtimeexception, "mf.A("
                     + arg0 + ')');
         }
     }

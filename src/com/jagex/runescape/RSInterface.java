@@ -142,7 +142,7 @@ public class RSInterface extends RSFont {
 				return null;
 			return new Class4_Sub23(is);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("nc.A("
+			throw JagexException.create(runtimeexception, ("nc.A("
 					+ arg0 + ',' + arg1 + ','
 					+ (arg2 != null ? "{...}" : "null") + ')'));
 		}
@@ -153,7 +153,7 @@ public class RSInterface extends RSFont {
 			aJagexString_2249 = null;
 			aClass4_Sub13_2141 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "nc.F("
+			throw JagexException.create(runtimeexception, "nc.F("
 					+ arg0 + ')');
 		}
 	}
@@ -167,7 +167,7 @@ public class RSInterface extends RSFont {
 			return (((0xff0000 & (arg3 & 0xff00) * arg1 + (0xff00 & arg0) * i) + (i
 					* (arg0 & 0xff00ff) - -((arg3 & 0xff00ff) * arg1) & ~0xff00ff)) >> 1427931656);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("nc.I("
+			throw JagexException.create(runtimeexception, ("nc.I("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ')'));
 		}
 	}
@@ -382,7 +382,7 @@ public class RSInterface extends RSFont {
             }
             return Class28.aClass4_Sub13ArrayArray632[i][i_20_];
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("RSInterface.forId(" + id + ')'));
+            throw JagexException.create(runtimeexception, ("RSInterface.forId(" + id + ')'));
         }
     }
 
@@ -440,17 +440,17 @@ public class RSInterface extends RSFont {
 							64, 768, -50, -10, -50);
 				}
 				if ((i_25_ ^ 0xffffffff) == -5) {
-					Class4_Sub20_Sub8 class4_sub20_sub8 = Class4_Sub23
+					ItemDefinition itemDefinition = Class4_Sub23
 							.method633(i_26_, (byte) -118);
-					Class4_Sub20_Sub7_Sub2 class4_sub20_sub7_sub2 = class4_sub20_sub8
+					Class4_Sub20_Sub7_Sub2 class4_sub20_sub7_sub2 = itemDefinition
 							.method474(10, 10);
 					if (class4_sub20_sub7_sub2 == null) {
 						Class4_Sub20_Sub13.aBoolean3116 = true;
 						return null;
 					}
 					class4_sub20_sub7_sub7 = (class4_sub20_sub7_sub2.method411(
-							64 + class4_sub20_sub8.anInt2970,
-							class4_sub20_sub8.anInt2963 + 768, -50, -10, -50));
+							64 + itemDefinition.ambient,
+							itemDefinition.contrast + 768, -50, -10, -50));
 				}
 				Region.aClass66_131.method1082(true,
 						((i_25_ << 1760011184) - -i_26_),
@@ -461,7 +461,7 @@ public class RSInterface extends RSFont {
 						arg4, (byte) 114);
 			return class4_sub20_sub7_sub7;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("nc.K("
+			throw JagexException.create(runtimeexception, ("nc.K("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ','
 					+ (arg2 != null ? "{...}" : "null") + ',' + arg3 + ','
 					+ arg4 + ')'));
@@ -543,13 +543,13 @@ public class RSInterface extends RSFont {
 				if (i_37_ == 1) {
 					anIntArray2223[i_36_] = arg1.method238((byte) -65);
 					anIntArray2257[i_36_] = arg1.method238((byte) -117);
-					anIntArray2177[i_36_] = arg1.readInt((byte) 73);
+					anIntArray2177[i_36_] = arg1.readInt();
 				} else
 					anIntArray2177[i_36_] = -1;
 			}
 			aJagexStringArray2233 = new JagexString[5];
 			for (int i_38_ = 0; i_38_ < 5; i_38_++) {
-				JagexString jagexString = arg1.method212();
+				JagexString jagexString = arg1.readString();
 				if (jagexString.method825(arg0 ^ ~0x70) > 0) {
 					aJagexStringArray2233[i_38_] = jagexString;
 					anInt2246 |= 1 << i_38_ + 23;
@@ -568,20 +568,20 @@ public class RSInterface extends RSFont {
 			aBoolean2159 = (arg1.get() ^ 0xffffffff) == -2;
 		}
 		if (anInt2258 == 4) {
-			aJagexString_2150 = arg1.method212();
-			aJagexString_2149 = arg1.method212();
+			aJagexString_2150 = arg1.readString();
+			aJagexString_2149 = arg1.readString();
 		}
 		if ((anInt2258 ^ 0xffffffff) == -2 || anInt2258 == 3
 				|| (anInt2258 ^ 0xffffffff) == -5)
-			anInt2195 = arg1.readInt((byte) 73);
+			anInt2195 = arg1.readInt();
 		if (anInt2258 == 3 || (anInt2258 ^ 0xffffffff) == -5) {
-			anInt2256 = arg1.readInt((byte) 73);
-			anInt2197 = arg1.readInt((byte) 73);
-			anInt2142 = arg1.readInt((byte) 73);
+			anInt2256 = arg1.readInt();
+			anInt2197 = arg1.readInt();
+			anInt2142 = arg1.readInt();
 		}
 		if (anInt2258 == 5) {
-			anInt2147 = arg1.readInt((byte) 73);
-			anInt2228 = arg1.readInt((byte) 73);
+			anInt2147 = arg1.readInt();
+			anInt2228 = arg1.readInt();
 		}
 		if ((anInt2258 ^ 0xffffffff) == -7) {
 			anInt2137 = 1;
@@ -610,7 +610,7 @@ public class RSInterface extends RSFont {
 			if ((anInt2170 ^ 0xffffffff) == -65536)
 				anInt2170 = -1;
 			aBoolean2159 = arg1.get() == 1;
-			anInt2195 = arg1.readInt((byte) 73);
+			anInt2195 = arg1.readInt();
 			anInt2190 = arg1.method238((byte) -97);
 			anInt2232 = arg1.method238((byte) -53);
 			int i_39_ = arg1.get();
@@ -618,7 +618,7 @@ public class RSInterface extends RSFont {
 				anInt2246 |= 0x40000000;
 			aJagexStringArray2233 = new JagexString[5];
 			for (int i_40_ = 0; i_40_ < 5; i_40_++) {
-				JagexString jagexString = arg1.method212();
+				JagexString jagexString = arg1.readString();
 				if ((jagexString.method825(-114) ^ 0xffffffff) < -1) {
 					aJagexStringArray2233[i_40_] = jagexString;
 					anInt2246 |= 1 << 23 - -i_40_;
@@ -626,16 +626,16 @@ public class RSInterface extends RSFont {
 			}
 		}
 		if (anInt2258 == 8)
-			aJagexString_2150 = arg1.method212();
+			aJagexString_2150 = arg1.readString();
 		if (anInt2171 == 2 || (anInt2258 ^ 0xffffffff) == -3) {
-			aJagexString_2174 = arg1.method212();
-			aJagexString_2202 = arg1.method212();
+			aJagexString_2174 = arg1.readString();
+			aJagexString_2202 = arg1.readString();
 			int i_41_ = 0x3f & arg1.readShort();
 			anInt2246 |= i_41_ << -340517109;
 		}
 		if ((anInt2171 ^ 0xffffffff) == -2 || (anInt2171 ^ 0xffffffff) == -5
 				|| (anInt2171 ^ 0xffffffff) == -6 || anInt2171 == 6) {
-			aJagexString_2264 = arg1.method212();
+			aJagexString_2264 = arg1.readString();
 			if ((aJagexString_2264.method825(-112) ^ 0xffffffff) == -1) {
 				if ((anInt2171 ^ 0xffffffff) == -2)
 					aJagexString_2264 = Class50.aJagexString_1011;
@@ -644,7 +644,7 @@ public class RSInterface extends RSFont {
 				if ((anInt2171 ^ 0xffffffff) == -6)
 					aJagexString_2264 = StringUtilities.aJagexString_586;
 				if ((anInt2171 ^ 0xffffffff) == -7)
-					aJagexString_2264 = Class4_Sub20_Sub8.aJagexString_2967;
+					aJagexString_2264 = ItemDefinition.aJagexString_2967;
 			}
 		}
 		if (arg0 == anInt2171 || anInt2171 == 4 || anInt2171 == 5)
@@ -663,10 +663,10 @@ public class RSInterface extends RSFont {
 				return null;
 			int[] is = new int[i];
 			for (int i_42_ = 0; i_42_ < i; i_42_++)
-				is[i_42_] = arg1.readInt((byte) 73);
+				is[i_42_] = arg1.readInt();
 			return is;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("nc.M("
+			throw JagexException.create(runtimeexception, ("nc.M("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ')'));
 		}
 	}
@@ -710,7 +710,7 @@ public class RSInterface extends RSFont {
 			Class62.aClass66_1231.method1082(true, l, imageRGB);
 			return imageRGB;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("nc.H("
+			throw JagexException.create(runtimeexception, ("nc.H("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -740,12 +740,12 @@ public class RSInterface extends RSFont {
 				anInt2206 = arg0.readShort();
 			}
 			if (anInt2258 == 5) {
-				anInt2147 = arg0.readInt((byte) 73);
+				anInt2147 = arg0.readInt();
 				anInt2218 = arg0.readShort();
 				aBoolean2253 = (arg0.get() ^ 0xffffffff) == -2;
 				anInt2266 = arg0.get();
 				anInt2201 = arg0.get();
-				anInt2162 = arg0.readInt((byte) 73);
+				anInt2162 = arg0.readInt();
 				aBoolean2187 = (arg0.get() ^ 0xffffffff) == -2;
 				aBoolean2194 = (arg0.get() ^ 0xffffffff) == -2;
 			}
@@ -770,34 +770,34 @@ public class RSInterface extends RSFont {
 					anInt2170 = arg0.readShort();
 					if ((anInt2170 ^ 0xffffffff) == -65536)
 						anInt2170 = -1;
-					aJagexString_2150 = arg0.method212();
+					aJagexString_2150 = arg0.readString();
 					anInt2161 = arg0.get();
 					anInt2214 = arg0.get();
 					anInt2262 = arg0.get();
 					aBoolean2159 = (arg0.get() ^ 0xffffffff) == -2;
-					anInt2195 = arg0.readInt((byte) 73);
+					anInt2195 = arg0.readInt();
 				}
 				if (anInt2258 == 3) {
-					anInt2195 = arg0.readInt((byte) 73);
+					anInt2195 = arg0.readInt();
 					aBoolean2165 = (arg0.get() ^ 0xffffffff) == -2;
 					anInt2266 = arg0.get();
 				}
 				if (anInt2258 == 9) {
 					anInt2199 = arg0.get();
-					anInt2195 = arg0.readInt((byte) 73);
+					anInt2195 = arg0.readInt();
 				}
 				anInt2246 = arg0.method248(false);
-				aJagexString_2196 = arg0.method212();
+				aJagexString_2196 = arg0.readString();
 				int i = arg0.get();
 				if ((i ^ 0xffffffff) < -1) {
 					aJagexStringArray2247 = new JagexString[i];
 					for (int i_43_ = 0; (i_43_ ^ 0xffffffff) > (i ^ 0xffffffff); i_43_++)
-						aJagexStringArray2247[i_43_] = arg0.method212();
+						aJagexStringArray2247[i_43_] = arg0.readString();
 				}
 				anInt2248 = arg0.get();
 				anInt2198 = arg0.get();
 				aBoolean2160 = (arg0.get() ^ 0xffffffff) == -2;
-				aJagexString_2174 = arg0.method212();
+				aJagexString_2174 = arg0.readString();
 				anObjectArray2242 = method290(arg0, (byte) 115);
 				anObjectArray2265 = method290(arg0, (byte) 115);
 				anObjectArray2182 = method290(arg0, (byte) 115);
@@ -821,7 +821,7 @@ public class RSInterface extends RSFont {
 				anIntArray2230 = method284(false, arg0);
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("nc.C("
+			throw JagexException.create(runtimeexception, ("nc.C("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ')'));
 		}
 	}
@@ -838,7 +838,7 @@ public class RSInterface extends RSFont {
 			itemAmounts[arg2] = itemAmounts[arg0];
 			itemAmounts[arg0] = i;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("nc.L("
+			throw JagexException.create(runtimeexception, ("nc.L("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
 		}
 	}
@@ -863,7 +863,7 @@ public class RSInterface extends RSFont {
 						class4_sub20_sub12_sub4_sub1);
 			return class4_sub20_sub12_sub4_sub1;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "nc.N("
+			throw JagexException.create(runtimeexception, "nc.N("
 					+ arg0 + ')');
 		}
 	}
@@ -880,14 +880,14 @@ public class RSInterface extends RSFont {
 			for (int i_44_ = 0; (i_44_ ^ 0xffffffff) > (i ^ 0xffffffff); i_44_++) {
 				int i_45_ = arg0.get();
 				if ((i_45_ ^ 0xffffffff) == -1)
-					objects[i_44_] = arg0.readInt((byte) 73);
+					objects[i_44_] = arg0.readInt();
 				else if ((i_45_ ^ 0xffffffff) == -2)
-					objects[i_44_] = arg0.method212();
+					objects[i_44_] = arg0.readString();
 			}
 			aBoolean2237 = true;
 			return objects;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("nc.E("
+			throw JagexException.create(runtimeexception, ("nc.E("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ')'));
 		}
 	}
@@ -917,7 +917,7 @@ public class RSInterface extends RSFont {
 				Class4_Sub20_Sub13.aBoolean3116 = true;
 			return imageRGB;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("nc.B("
+			throw JagexException.create(runtimeexception, ("nc.B("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -938,7 +938,7 @@ public class RSInterface extends RSFont {
 				method284(false, null);
 			aJagexStringArray2247[arg1] = arg2;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("nc.J("
+			throw JagexException.create(runtimeexception, ("nc.J("
 					+ arg0 + ',' + arg1 + ','
 					+ (arg2 != null ? "{...}" : "null") + ')'));
 		}

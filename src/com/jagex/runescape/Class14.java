@@ -57,7 +57,7 @@ public abstract class Class14 {
 			anInt394++;
 			return i;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("df.F("
+			throw JagexException.create(runtimeexception, ("df.F("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
 		}
 	}
@@ -72,7 +72,7 @@ public abstract class Class14 {
 			anInt389++;
 			return ((arg0 * i >> -551652816) + ((-i + 65536) * arg2 >> -49237744));
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					("df.H(" + arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3
 							+ ',' + arg4 + ')'));
 		}
@@ -85,7 +85,7 @@ public abstract class Class14 {
 			anInt395++;
 			Class66.aClass66_1330.method1084(0);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "df.G("
+			throw JagexException.create(runtimeexception, "df.G("
 					+ arg0 + ')');
 		}
 	}
@@ -107,8 +107,8 @@ public abstract class Class14 {
 						StringUtilities.aJagexString_563, i - -3, i_1_ + 14, i_4_, -1);
 				int i_5_ = Class37.anInt767;
 				int i_6_ = Class4_Sub1.anInt1859;
-				for (int i_7_ = 0; Class4_Sub20_Sub8.anInt2980 > i_7_; i_7_++) {
-					int i_8_ = (15 * (-i_7_ + Class4_Sub20_Sub8.anInt2980 + -1)
+				for (int i_7_ = 0; ItemDefinition.anInt2980 > i_7_; i_7_++) {
+					int i_8_ = (15 * (-i_7_ + ItemDefinition.anInt2980 + -1)
 							+ i_1_ + 31);
 					int i_9_ = 16777215;
 					if (i < i_5_ && i_5_ < i - -i_2_
@@ -124,7 +124,7 @@ public abstract class Class14 {
 						Class4_Sub1.anInt1860);
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "df.J("
+			throw JagexException.create(runtimeexception, "df.J("
 					+ arg0 + ')');
 		}
 	}
@@ -139,7 +139,7 @@ public abstract class Class14 {
 			arg1 += arg1 >>> -937050608;
 			return arg1 & 0xff;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("df.K("
+			throw JagexException.create(runtimeexception, ("df.K("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -334,7 +334,7 @@ public abstract class Class14 {
 								for (Class4_Sub20_Sub7_Sub4 class4_sub20_sub7_sub4 = ((Class4_Sub20_Sub7_Sub4) class65
 										.method1078(0)); class4_sub20_sub7_sub4 != null; class4_sub20_sub7_sub4 = ((Class4_Sub20_Sub7_Sub4) class65
 										.method1067(false))) {
-									Class4_Sub20_Sub8 class4_sub20_sub8 = (Class4_Sub23
+									ItemDefinition itemDefinition = (Class4_Sub23
 											.method633(
 													class4_sub20_sub7_sub4.anInt3379,
 													(byte) -112));
@@ -349,7 +349,7 @@ public abstract class Class14 {
 																				(new JagexString[] {
 																						Class5.aJagexString_194,
 																						StringUtilities.aJagexString_842,
-																						(class4_sub20_sub8.aJagexString_2991) }),
+																						(itemDefinition.name) }),
 																				-842)),
 																i_15_,
 																i_14_,
@@ -360,7 +360,7 @@ public abstract class Class14 {
 											}
 										} else {
 											Class43.anInt883++;
-											JagexString[] jagexStrings = (class4_sub20_sub8.aJagexStringArray3008);
+											JagexString[] jagexStrings = (itemDefinition.ops);
 											if (Class4_Sub17.aBoolean2319)
 												jagexStrings = (Class10.method671(
 														false, jagexStrings));
@@ -384,7 +384,7 @@ public abstract class Class14 {
 																			.method639(
 																					(new JagexString[] {
 																							(Class62.aJagexString_1230),
-																							(class4_sub20_sub8.aJagexString_2991) }),
+																							(itemDefinition.name) }),
 																					arg2
 																							^ ~0x309)),
 																	i_15_,
@@ -401,7 +401,7 @@ public abstract class Class14 {
 																			.method639(
 																					(new JagexString[] {
 																							(Class62.aJagexString_1230),
-																							(class4_sub20_sub8.aJagexString_2991) }),
+																							(itemDefinition.name) }),
 																					arg2
 																							^ ~0x309)),
 																	i_15_,
@@ -409,7 +409,7 @@ public abstract class Class14 {
 																	32,
 																	(class4_sub20_sub7_sub4.anInt3379),
 																	(byte) 34,
-																	(Class4_Sub6.aJagexString_1933));
+																	(Class4_Sub6.localizedTake));
 												}
 											}
 											Class4_Sub20_Sub4
@@ -418,7 +418,7 @@ public abstract class Class14 {
 																	.method639(
 																			(new JagexString[] {
 																					Class62.aJagexString_1230,
-																					(class4_sub20_sub8.aJagexString_2991) }),
+																					(itemDefinition.name) }),
 																			arg2
 																					+ -906)),
 															i_15_,
@@ -436,7 +436,7 @@ public abstract class Class14 {
 																		(new JagexString[] {
 																				Class62.aJagexString_1239,
 																				StringUtilities.aJagexString_842,
-																				(class4_sub20_sub8.aJagexString_2991) }),
+																				(itemDefinition.name) }),
 																		-842)),
 														i_15_,
 														i_14_,
@@ -454,7 +454,7 @@ public abstract class Class14 {
 				if (arg2 == 64)
 					break;
 			} catch (RuntimeException runtimeexception) {
-				throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+				throw JagexException.create(runtimeexception,
 						("df.I(" + arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3
 								+ ',' + arg4 + ')'));
 			}
@@ -481,7 +481,7 @@ public abstract class Class14 {
 			StringUtilities.aJagexString_403 = null;
 			aImageRGBArray405 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "df.L("
+			throw JagexException.create(runtimeexception, "df.L("
 					+ arg0 + ')');
 		}
 	}

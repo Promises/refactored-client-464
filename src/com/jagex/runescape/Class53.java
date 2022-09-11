@@ -50,7 +50,7 @@ public class Class53 implements Runnable {
 				return true;
 			return arg1.aBoolean2225;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("of.F("
+			throw JagexException.create(runtimeexception, ("of.F("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ')'));
 		}
 	}
@@ -118,9 +118,9 @@ public class Class53 implements Runnable {
 				}
 			}
 			if (Class4_Sub20_Sub6.aBoolean2895 && !Class4_Sub1.method77(91)) {
-				if ((Class4_Sub20_Sub8.anInt3021 ^ 0xffffffff) != -1
+				if ((ItemDefinition.anInt3021 ^ 0xffffffff) != -1
 						&& (Region.anInt136 ^ 0xffffffff) != 0)
-					AppletListener.method1151(Class4_Sub20_Sub8.anInt3021, -2,
+					AppletListener.method1151(ItemDefinition.anInt3021, -2,
 							Class54.aClass19_Sub1_1107, 0, Region.anInt136,
 							false);
 				Class4_Sub20_Sub6.aBoolean2895 = false;
@@ -129,7 +129,7 @@ public class Class53 implements Runnable {
 				method1006((byte) -79);
 			anInt1067++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "of.E("
+			throw JagexException.create(runtimeexception, "of.E("
 					+ arg0 + ')');
 		}
 	}
@@ -158,7 +158,7 @@ public class Class53 implements Runnable {
 							+ GameShell.anInt12);
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "of.D()");
+			throw JagexException.create(runtimeexception, "of.D()");
 		}
 	}
 
@@ -177,7 +177,7 @@ public class Class53 implements Runnable {
 			aJagexString_1074 = null;
 			aJagexString_1077 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "of.B("
+			throw JagexException.create(runtimeexception, "of.B("
 					+ arg0 + ')');
 		}
 	}
@@ -193,7 +193,7 @@ public class Class53 implements Runnable {
 			i ^= 0xffffffff;
 			return i;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("of.C("
+			throw JagexException.create(runtimeexception, ("of.C("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ','
 					+ arg2 + ',' + arg3 + ')'));
 		}
@@ -262,7 +262,7 @@ public class Class53 implements Runnable {
 			}
 			anInt1073++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					"of.run(" + ')');
 		}
 	}

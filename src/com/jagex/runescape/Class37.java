@@ -19,7 +19,7 @@ public class Class37 {
 			aClass65_766 = null;
 			aImageRGB_761 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "kb.B("
+			throw JagexException.create(runtimeexception, "kb.B("
 					+ arg0 + ')');
 		}
 	}
@@ -31,7 +31,7 @@ public class Class37 {
 			Class66.aClass4_Sub11_Sub1_1328.method255(189354448, 0L);
 			Class43.anInt859++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "kb.A("
+			throw JagexException.create(runtimeexception, "kb.A("
 					+ arg0 + ')');
 		}
 	}

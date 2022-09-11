@@ -210,7 +210,7 @@ public class Class4_Sub14 extends RSFont {
 					Class27.method852(-1, Class4_Sub24.aClass19_Sub1_2451,
 							Class4_Sub1.aClass19_Sub1_1863,
 							Class59.aBoolean1189);
-					Class4_Sub20_Sub8.method470(true,
+					ItemDefinition.method470(true,
 							Class4_Sub1.aClass19_Sub1_1863,
 							(Class4_Sub24.aClass19_Sub1_2451));
 					Class31.method876(
@@ -229,7 +229,7 @@ public class Class4_Sub14 extends RSFont {
 							Class4_Sub20_Sub6.aClass19_Sub1_2921,
 							Class4_Sub17.aClass19_Sub1_2321,
 							Class4_Sub24.aClass19_Sub1_2451);
-					Class4_Sub20_Sub8.method467(Class4_Sub1.aClass19_Sub1_1863,
+					ItemDefinition.method467(Class4_Sub1.aClass19_Sub1_1863,
 							14531);
 					Class4_Sub20_Sub14.method595((byte) 26,
 							Class4_Sub1.aClass19_Sub1_1863);
@@ -305,7 +305,7 @@ public class Class4_Sub14 extends RSFont {
 					i++;
 				else
 					Class8.aImageRGBArray253 = Class4_Sub21
-							.method625((Class4_Sub20_Sub8.aJagexString_3013),
+							.method625((ItemDefinition.aJagexString_3013),
 									Game.aClass19_Sub1_1849,
 									Class4_Sub3.aJagexString_1895, !arg0);
 				if (Class35.aImageRGBArray749 != null)
@@ -339,7 +339,7 @@ public class Class4_Sub14 extends RSFont {
 					StringUtilities.aJagexString_1762 = (Class4_Sub24
 							.method639(
 									(new JagexString[] {
-											Class4_Sub20_Sub8.aJagexString_2973,
+											ItemDefinition.aJagexString_2973,
 											Class74.method1168(-14,
 													i * 100 / 14),
 											Npc.aJagexString_3627}),
@@ -396,7 +396,7 @@ public class Class4_Sub14 extends RSFont {
 				if (!Class77.aClass19_Sub1_1589.method744((byte) 126,
 						StringUtilities.aJagexString_840, (Class4_Sub3.aJagexString_1895))) {
 					StringUtilities.aJagexString_1762 = Class4_Sub24.method639(
-							(new JagexString[] { (Class4_Sub20_Sub8.aJagexString_2982),
+							(new JagexString[] { (ItemDefinition.aJagexString_2982),
 									StringUtilities.aJagexString_558}), -842);
 					Region.anInt135 = 96;
 				} else {
@@ -473,7 +473,7 @@ public class Class4_Sub14 extends RSFont {
 			StringUtilities.aJagexString_2271 = null;
 			aByteArrayArrayArray2275 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "oc.A("
+			throw JagexException.create(runtimeexception, "oc.A("
 					+ arg0 + ')');
 		}
 	}

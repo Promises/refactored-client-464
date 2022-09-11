@@ -122,7 +122,7 @@ public abstract class Class13 {
 						}
 					}
 					if ((Class57.anInt1141 ^ 0xffffffff) == -3) {
-						int i_19_ = (-((Class4_Sub15.localPlayer.worldY) / 32) + 2 + (-Class4_Sub20_Sub8.anInt2987 + Class76.anInt1550) * 4);
+						int i_19_ = (-((Class4_Sub15.localPlayer.worldY) / 32) + 2 + (-ItemDefinition.anInt2987 + Class76.anInt1550) * 4);
 						int i_20_ = (-((Class4_Sub15.localPlayer.worldX) / 32) + (2 + 4 * (Class76.anInt1582 - Class6.anInt217)));
 						Class4_Sub20
 								.method323(
@@ -165,7 +165,7 @@ public abstract class Class13 {
 				Region.minimapBackgroundImage.method507(arg0, arg3);
 			Class16.aBooleanArray452[arg1] = arg2;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("dd.S("
+			throw JagexException.create(runtimeexception, ("dd.S("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ')'));
 		}
 	}
@@ -188,7 +188,7 @@ public abstract class Class13 {
 			JagexString.anIntArray1798 = null;
 			Class4_Sub20_Sub10.aByteArrayArrayArray3065 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "dd.M("
+			throw JagexException.create(runtimeexception, "dd.M("
 					+ arg0 + ')');
 		}
 	}
@@ -202,8 +202,8 @@ public abstract class Class13 {
 					int i = Class62.anInt1227;
 					if (!Class4_Sub20_Sub16.aBoolean3169) {
 						if (i == 1
-								&& (Class4_Sub20_Sub8.anInt2980 ^ 0xffffffff) < -1) {
-							int i_29_ = (Class82.anIntArray1712[Class4_Sub20_Sub8.anInt2980
+								&& (ItemDefinition.anInt2980 ^ 0xffffffff) < -1) {
+							int i_29_ = (Class82.anIntArray1712[ItemDefinition.anInt2980
 									+ -1]);
 							if ((i_29_ ^ 0xffffffff) == -30
 									|| (i_29_ ^ 0xffffffff) == -40
@@ -218,9 +218,9 @@ public abstract class Class13 {
 									|| (i_29_ ^ 0xffffffff) == -51
 									|| (i_29_ ^ 0xffffffff) == -1003) {
 								int i_30_ = (Class40.anIntArray789[-1
-										+ Class4_Sub20_Sub8.anInt2980]);
+										+ ItemDefinition.anInt2980]);
 								int i_31_ = (Class43.anIntArray885[-1
-										+ Class4_Sub20_Sub8.anInt2980]);
+										+ ItemDefinition.anInt2980]);
 								RSInterface class4_sub13 = RSInterface
 										.forId(i_30_);
 								if ((Class2.method47(Class54.method1011(
@@ -247,16 +247,16 @@ public abstract class Class13 {
 							}
 						}
 						if ((i ^ 0xffffffff) == -2
-								&& ((Class81.anInt1681 == 1 && Class4_Sub20_Sub8.anInt2980 > 2) || Class42
+								&& ((Class81.anInt1681 == 1 && ItemDefinition.anInt2980 > 2) || Class42
 										.method942(80, -1
-												+ (Class4_Sub20_Sub8.anInt2980))))
+												+ (ItemDefinition.anInt2980))))
 							i = 2;
 						if ((i ^ 0xffffffff) == -2
-								&& (Class4_Sub20_Sub8.anInt2980 ^ 0xffffffff) < -1)
+								&& (ItemDefinition.anInt2980 ^ 0xffffffff) < -1)
 							Buffer.method221(arg0 + -48,
-									(Class4_Sub20_Sub8.anInt2980 - 1));
+									(ItemDefinition.anInt2980 - 1));
 						if (i == 2
-								&& (Class4_Sub20_Sub8.anInt2980 ^ 0xffffffff) < -1)
+								&& (ItemDefinition.anInt2980 ^ 0xffffffff) < -1)
 							SceneGraph.method707(-21);
 					} else {
 						if ((i ^ 0xffffffff) != -2) {
@@ -283,8 +283,8 @@ public abstract class Class13 {
 							int i_37_ = Class37.anInt758;
 							int i_38_ = JagexException.anInt1729;
 							int i_39_ = -1;
-							for (int i_40_ = 0; ((i_40_ ^ 0xffffffff) > (Class4_Sub20_Sub8.anInt2980 ^ 0xffffffff)); i_40_++) {
-								int i_41_ = (((-i_40_ + (-1 + Class4_Sub20_Sub8.anInt2980)) * 15) + (i_35_ - -31));
+							for (int i_40_ = 0; ((i_40_ ^ 0xffffffff) > (ItemDefinition.anInt2980 ^ 0xffffffff)); i_40_++) {
+								int i_41_ = (((-i_40_ + (-1 + ItemDefinition.anInt2980)) * 15) + (i_35_ - -31));
 								if (i_34_ < i_37_
 										&& ((i_36_ + i_34_ ^ 0xffffffff) < (i_37_ ^ 0xffffffff))
 										&& (i_38_ ^ 0xffffffff) < (i_41_ + -13 ^ 0xffffffff)
@@ -305,7 +305,7 @@ public abstract class Class13 {
 					method681(-93);
 				}
 			} catch (RuntimeException runtimeexception) {
-				throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+				throw JagexException.create(runtimeexception,
 						"dd.Q(" + arg0 + ')');
 			}
 			break;
@@ -322,7 +322,7 @@ public abstract class Class13 {
 			StringUtilities.aJagexString_373 = null;
 			aJagexStringArray385 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "dd.R("
+			throw JagexException.create(runtimeexception, "dd.R("
 					+ arg0 + ')');
 		}
 	}
@@ -333,7 +333,7 @@ public abstract class Class13 {
 				Class81.anInt1695 = 0;
 				int i = (Class6.anInt217 + ((Class4_Sub15.localPlayer.worldX) >> 158975591));
 				anInt388++;
-				int i_43_ = (Class4_Sub20_Sub8.anInt2987 + ((Class4_Sub15.localPlayer.worldY) >> -903569625));
+				int i_43_ = (ItemDefinition.anInt2987 + ((Class4_Sub15.localPlayer.worldY) >> -903569625));
 				if (i >= 3053 && (i ^ 0xffffffff) >= -3157
 						&& (i_43_ ^ 0xffffffff) <= -3057
 						&& (i_43_ ^ 0xffffffff) >= -3137)
@@ -347,7 +347,7 @@ public abstract class Class13 {
 					break;
 				Class81.anInt1695 = 0;
 			} catch (RuntimeException runtimeexception) {
-				throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+				throw JagexException.create(runtimeexception,
 						"dd.L(" + arg0 + ')');
 			}
 			break;
@@ -371,7 +371,7 @@ public abstract class Class13 {
 			anInt382++;
 			return arg2;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("dd.P("
+			throw JagexException.create(runtimeexception, ("dd.P("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
 		}
 	}
@@ -379,25 +379,25 @@ public abstract class Class13 {
 	public static void method688(int arg0, int arg1, int arg2) {
 		try {
 			anInt377++;
-			if ((Class4_Sub20_Sub8.anInt2980 ^ 0xffffffff) <= -3
+			if ((ItemDefinition.anInt2980 ^ 0xffffffff) <= -3
 					|| (Class4_Sub20_Sub1.anInt2734 ^ 0xffffffff) != -1
 					|| Class4_Sub23.aBoolean2421) {
 				JagexString jagexString;
 				if (Class4_Sub20_Sub1.anInt2734 == 1
-						&& (Class4_Sub20_Sub8.anInt2980 ^ 0xffffffff) > -3)
+						&& (ItemDefinition.anInt2980 ^ 0xffffffff) > -3)
 					jagexString = Class4_Sub24.method639((new JagexString[] {
 							Class57.aJagexString_1154, StringUtilities.aJagexString_942,
 							Class62.aJagexString_1239, StringUtilities.aJagexString_791}),
 							-842);
 				else if (!Class4_Sub23.aBoolean2421
-						|| Class4_Sub20_Sub8.anInt2980 >= 2)
+						|| ItemDefinition.anInt2980 >= 2)
 					jagexString = Class4_Sub15.method298(-1
-							+ (Class4_Sub20_Sub8.anInt2980), true);
+							+ (ItemDefinition.anInt2980), true);
 				else
 					jagexString = Class4_Sub24.method639((new JagexString[] {
 							Class82.aJagexString_1714, StringUtilities.aJagexString_942,
 							Class5.aJagexString_194, StringUtilities.aJagexString_791}), -842);
-				if (Class4_Sub20_Sub8.anInt2980 > 2)
+				if (ItemDefinition.anInt2980 > 2)
 					jagexString = (Class4_Sub24
 							.method639(
 									(new JagexString[] {
@@ -405,7 +405,7 @@ public abstract class Class13 {
 											StringUtilities.aJagexString_517,
 											Class74.method1168(
 													-41,
-													(Class4_Sub20_Sub8.anInt2980)
+													(ItemDefinition.anInt2980)
 															+ -2),
 											Class65.aJagexString_1308}), -842));
 				Class68.aClass4_Sub20_Sub12_Sub4_Sub1_1384.method575(jagexString,
@@ -413,7 +413,7 @@ public abstract class Class13 {
 						Region.pulseCycle / 1000);
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("dd.O("
+			throw JagexException.create(runtimeexception, ("dd.O("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
 		}
 	}
@@ -440,7 +440,7 @@ public abstract class Class13 {
 			Class4_Sub20_Sub12.method493(anIntArray384, anInt376, anInt371);
 			anInt372++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "dd.N("
+			throw JagexException.create(runtimeexception, "dd.N("
 					+ arg0 + ')');
 		}
 	}

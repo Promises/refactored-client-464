@@ -64,7 +64,7 @@ public abstract class GameShell extends Canvas implements Runnable,
             arg1.addMouseMotionListener(applet);
             arg1.addFocusListener(applet);
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("hd.OB("
+            throw JagexException.create(runtimeexception, ("hd.OB("
                     + arg0 + ',' + (arg1 != null ? "{...}" : "null") + ')'));
         }
     }
@@ -78,7 +78,7 @@ public abstract class GameShell extends Canvas implements Runnable,
                 AppletListener.method1151(arg0, -2, arg5, i_1_, i, arg2);
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("we.N("
+            throw JagexException.create(runtimeexception, ("we.N("
                     + arg0 + ',' + (arg1 != null ? "{...}" : "null") + ','
                     + arg2 + ',' + arg3 + ','
                     + (arg4 != null ? "{...}" : "null") + ','
@@ -90,8 +90,8 @@ public abstract class GameShell extends Canvas implements Runnable,
         try {
             Class77.aClass75_1597 = Class43.aClass75_872 = arg0;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4
-                    .method423(runtimeexception, ("we.providesignlink("
+            throw JagexException
+                    .create(runtimeexception, ("we.providesignlink("
                             + (arg0 != null ? "{...}" : "null") + ')'));
         }
     }
@@ -108,7 +108,7 @@ public abstract class GameShell extends Canvas implements Runnable,
                 method18(1000);
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+            throw JagexException.create(runtimeexception,
                     "we.destroy(" + ')');
         }
     }
@@ -119,8 +119,8 @@ public abstract class GameShell extends Canvas implements Runnable,
             Class32.aBoolean702 = true;
             Class4_Sub20_Sub4.aBoolean2849 = true;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4
-                    .method423(runtimeexception, ("we.focusGained("
+            throw JagexException
+                    .create(runtimeexception, ("we.focusGained("
                             + (arg0 != null ? "{...}" : "null") + ')'));
         }
     }
@@ -130,8 +130,8 @@ public abstract class GameShell extends Canvas implements Runnable,
         try {
             Class32.aBoolean702 = false;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4
-                    .method423(runtimeexception, ("we.focusLost("
+            throw JagexException
+                    .create(runtimeexception, ("we.focusLost("
                             + (arg0 != null ? "{...}" : "null") + ')'));
         }
     }
@@ -224,7 +224,7 @@ public abstract class GameShell extends Canvas implements Runnable,
             Class73.aBoolean1495 = false;
             Class9.aLong281 = Class52.method1002((byte) -42);
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "we.H("
+            throw JagexException.create(runtimeexception, "we.H("
                     + arg0 + ')');
         }
     }
@@ -258,7 +258,7 @@ public abstract class GameShell extends Canvas implements Runnable,
             }
             method13((byte) -103);
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "we.O("
+            throw JagexException.create(runtimeexception, "we.O("
                     + arg0 + ')');
         }
     }
@@ -281,7 +281,7 @@ public abstract class GameShell extends Canvas implements Runnable,
                 Class4_Sub20_Sub7_Sub4.method422(exception, -77, null);
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("we.I("
+            throw JagexException.create(runtimeexception, ("we.I("
                     + arg0 + ',' + width + ',' + height + ',' + revision + ','
                     + (arg4 != null ? "{...}" : "null") + ',' + arg5 + ','
                     + arg6 + ')'));
@@ -324,7 +324,7 @@ public abstract class GameShell extends Canvas implements Runnable,
 //                method16(-107);
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "we.C("
+            throw JagexException.create(runtimeexception, "we.C("
                     + arg0 + ')');
         }
     }
@@ -341,7 +341,7 @@ public abstract class GameShell extends Canvas implements Runnable,
 //                }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("we.F("
+            throw JagexException.create(runtimeexception, ("we.F("
                     + arg0 + ',' + (arg1 != null ? "{...}" : "null") + ')'));
         }
     }
@@ -365,7 +365,7 @@ public abstract class GameShell extends Canvas implements Runnable,
             }
             method25(-19134);
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "we.E("
+            throw JagexException.create(runtimeexception, "we.E("
                     + arg0 + ')');
         }
     }
@@ -396,7 +396,7 @@ public abstract class GameShell extends Canvas implements Runnable,
                 method19((byte) 40, "crash");
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+            throw JagexException.create(runtimeexception,
                     ("we.B(" + arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3
                             + ',' + arg4 + ')'));
         }
@@ -429,7 +429,7 @@ public abstract class GameShell extends Canvas implements Runnable,
             method19((byte) -87, "invalidhost");
             return false;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "we.L("
+            throw JagexException.create(runtimeexception, "we.L("
                     + arg0 + ')');
         }
     }
@@ -455,8 +455,8 @@ public abstract class GameShell extends Canvas implements Runnable,
                     }
                 }
             } catch (RuntimeException runtimeexception) {
-                throw Class4_Sub20_Sub7_Sub4
-                        .method423(runtimeexception, ("we.paint("
+                throw JagexException
+                        .create(runtimeexception, ("we.paint("
                                 + (arg0 != null ? "{...}" : "null") + ')'));
             }
             break;
@@ -529,7 +529,7 @@ public abstract class GameShell extends Canvas implements Runnable,
             }
             method18(1000);
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+            throw JagexException.create(runtimeexception,
                     "we.run(" + ')');
         }
     }
@@ -540,7 +540,7 @@ public abstract class GameShell extends Canvas implements Runnable,
                 Class50.aLong1027 = 0L;
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+            throw JagexException.create(runtimeexception,
                     "we.start(" + ')');
         }
     }
@@ -551,7 +551,7 @@ public abstract class GameShell extends Canvas implements Runnable,
                 Class50.aLong1027 = Class52.method1002((byte) -42) + 4000L;
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+            throw JagexException.create(runtimeexception,
                     "we.stop(" + ')');
         }
     }
@@ -560,7 +560,7 @@ public abstract class GameShell extends Canvas implements Runnable,
         try {
             paint(graphics);
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+            throw JagexException.create(runtimeexception,
                     ("we.update(" + (graphics != null ? "{...}" : "null") + ')'));
         }
     }
@@ -576,8 +576,8 @@ public abstract class GameShell extends Canvas implements Runnable,
         try {
             destroy();
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4
-                    .method423(runtimeexception, ("we.windowClosing("
+            throw JagexException
+                    .create(runtimeexception, ("we.windowClosing("
                             + (arg0 != null ? "{...}" : "null") + ')'));
         }
     }
@@ -614,8 +614,8 @@ public abstract class GameShell extends Canvas implements Runnable,
                 mouseWheelY = mouseEvent.getY();
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4
-                    .method423(runtimeexception, ("te.mouseDragged("
+            throw JagexException
+                    .create(runtimeexception, ("te.mouseDragged("
                             + (mouseEvent != null ? "{...}" : "null") + ')'));
         }
     }

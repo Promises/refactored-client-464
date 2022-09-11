@@ -99,7 +99,7 @@ public class Class4_Sub24 extends RSFont {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ud.C("
+			throw JagexException.create(runtimeexception, ("ud.C("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -113,7 +113,7 @@ public class Class4_Sub24 extends RSFont {
 				return null;
 			return Class64.method1065(arg1 ^ ~0x32a, arg0.length, 0, arg0);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ud.B("
+			throw JagexException.create(runtimeexception, ("ud.B("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ')'));
 		}
 	}
@@ -131,7 +131,7 @@ public class Class4_Sub24 extends RSFont {
 				aJagexString_2448 = null;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ud.A("
+			throw JagexException.create(runtimeexception, "ud.A("
 					+ arg0 + ')');
 		}
 	}
@@ -160,7 +160,7 @@ public class Class4_Sub24 extends RSFont {
 					anIntArrayArray2443[i][i_11_] = class4_sub11.get();
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					("ud.<init>(" + arg0 + ','
 							+ (arg1 != null ? "{...}" : "null") + ')'));
 		}

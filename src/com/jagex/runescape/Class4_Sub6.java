@@ -7,7 +7,7 @@ public class Class4_Sub6 extends RSFont {
 	public static Class19 aClass19_1930;
 	public static JagexString aJagexString_1917;
 	public static JagexString aJagexString_1928;
-	public static JagexString aJagexString_1933;
+	public static JagexString localizedTake;
 	public static JagexString aJagexString_1934;
 	public static JagexString aJagexString_1938;
 	public static JagexString aJagexString_1939;
@@ -50,7 +50,7 @@ public class Class4_Sub6 extends RSFont {
 		aJagexString_1939 = JagexString.getRs2PreparedString("Take");
 		aJagexString_1934 = JagexString.getRs2PreparedString("Connection timed out)3"
         );
-		aJagexString_1933 = aJagexString_1939;
+		localizedTake = aJagexString_1939;
 		aJagexString_1928 = JagexString.getRs2PreparedString("Spieler");
 		aJagexString_1942 = aJagexString_1934;
 		aJagexString_1938 = JagexString.getRs2PreparedString(
@@ -135,7 +135,7 @@ public class Class4_Sub6 extends RSFont {
 				i = Class82.plane;
 			return i;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "fc.F("
+			throw JagexException.create(runtimeexception, "fc.F("
 					+ arg0 + ')');
 		}
 	}
@@ -152,11 +152,11 @@ public class Class4_Sub6 extends RSFont {
 				anIntArray1915 = null;
 				aClass19_1930 = null;
 				aJagexString_1939 = null;
-				aJagexString_1933 = null;
+				localizedTake = null;
 				aJagexString_1917 = null;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "fc.C("
+			throw JagexException.create(runtimeexception, "fc.C("
 					+ arg0 + ')');
 		}
 	}
@@ -176,7 +176,7 @@ public class Class4_Sub6 extends RSFont {
 			}
 			Class64.method1063((byte) 121);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("fc.G("
+			throw JagexException.create(runtimeexception, ("fc.G("
 					+ arg0 + ',' + arg1 + ','
 					+ (arg2 != null ? "{...}" : "null") + ','
 					+ (arg3 != null ? "{...}" : "null") + ')'));
@@ -196,7 +196,7 @@ public class Class4_Sub6 extends RSFont {
 				return 0;
 			return class4_sub1.anIntArray1858[arg2];
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("fc.D("
+			throw JagexException.create(runtimeexception, ("fc.D("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
 		}
 	}
@@ -218,7 +218,7 @@ public class Class4_Sub6 extends RSFont {
 			Class66.aClass66_1330.method1082(true, arg0, class4_sub20_sub9);
 			return class4_sub20_sub9;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("fc.B("
+			throw JagexException.create(runtimeexception, ("fc.B("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -237,7 +237,7 @@ public class Class4_Sub6 extends RSFont {
 				return 7 - arg0;
 			return arg3;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("fc.A("
+			throw JagexException.create(runtimeexception, ("fc.A("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ')'));
 		}
 	}
@@ -255,7 +255,7 @@ public class Class4_Sub6 extends RSFont {
 					break;
 				cameraHorizontalRotation = -123;
 			} catch (RuntimeException runtimeexception) {
-				throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+				throw JagexException.create(runtimeexception,
 						("fc.E(" + arg0 + ',' + arg1 + ')'));
 			}
 			break;

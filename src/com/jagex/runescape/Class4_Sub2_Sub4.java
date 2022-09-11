@@ -34,7 +34,7 @@ public class Class4_Sub2_Sub4 extends Class4_Sub2 {
 			}
 			return arg1.aJagexString_2174;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ue.D("
+			throw JagexException.create(runtimeexception, ("ue.D("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ')'));
 		}
 	}
@@ -45,7 +45,7 @@ public class Class4_Sub2_Sub4 extends Class4_Sub2 {
 			aJagexString_2650 = null;
 			aClass19_2648 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ue.C("
+			throw JagexException.create(runtimeexception, "ue.C("
 					+ arg0 + ')');
 		}
 	}
@@ -65,7 +65,7 @@ public class Class4_Sub2_Sub4 extends Class4_Sub2 {
 			Class43.method953(true);
 			return class4_sub20_sub12_sub4_sub1;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ue.B("
+			throw JagexException.create(runtimeexception, ("ue.B("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ')'));
 		}
 	}
@@ -81,7 +81,7 @@ public class Class4_Sub2_Sub4 extends Class4_Sub2 {
 				return null;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ue.F("
+			throw JagexException.create(runtimeexception, "ue.F("
 					+ arg0 + ')');
 		}
 	}
@@ -96,7 +96,7 @@ public class Class4_Sub2_Sub4 extends Class4_Sub2 {
 		try {
 			aClass4_Sub2_Sub1_2644 = arg0;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					("ue.<init>(" + (arg0 != null ? "{...}" : "null") + ')'));
 		}
 	}
@@ -137,7 +137,7 @@ public class Class4_Sub2_Sub4 extends Class4_Sub2 {
 			}
 			arg2.aClass4_Sub2_Sub3_2028.method82(arg0);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ue.E("
+			throw JagexException.create(runtimeexception, ("ue.E("
 					+ arg0 + ',' + arg1 + ','
 					+ (arg2 != null ? "{...}" : "null") + ')'));
 		}
@@ -193,7 +193,7 @@ public class Class4_Sub2_Sub4 extends Class4_Sub2 {
 				anInt2651++;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ue.A("
+			throw JagexException.create(runtimeexception, ("ue.A("
 					+ arg0 + ',' + arg1 + ','
 					+ (arg2 != null ? "{...}" : "null") + ',' + arg3 + ','
 					+ (arg4 != null ? "{...}" : "null") + ',' + arg5 + ')'));
@@ -206,7 +206,7 @@ public class Class4_Sub2_Sub4 extends Class4_Sub2 {
 			anInt2652++;
 			return 0;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					"ue.QA(" + ')');
 		}
 	}
@@ -223,7 +223,7 @@ public class Class4_Sub2_Sub4 extends Class4_Sub2 {
 				return class4_sub10.aClass4_Sub2_Sub3_2028;
 			return method81();
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					"ue.BA(" + ')');
 		}
 	}
@@ -254,7 +254,7 @@ public class Class4_Sub2_Sub4 extends Class4_Sub2 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ue.Q("
+			throw JagexException.create(runtimeexception, ("ue.Q("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ','
 					+ arg2 + ')'));
 		}
@@ -272,7 +272,7 @@ public class Class4_Sub2_Sub4 extends Class4_Sub2 {
 			} while (class4_sub10.aClass4_Sub2_Sub3_2028 == null);
 			return class4_sub10.aClass4_Sub2_Sub3_2028;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					"ue.TA(" + ')');
 		}
 	}
@@ -301,7 +301,7 @@ public class Class4_Sub2_Sub4 extends Class4_Sub2 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ue.T("
+			throw JagexException.create(runtimeexception, "ue.T("
 					+ arg0 + ')');
 		}
 	}

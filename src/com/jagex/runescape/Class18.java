@@ -39,7 +39,7 @@ public class Class18 implements KeyListener, FocusListener {
 			StringUtilities.aJagexString_470 = null;
 			anIntArray473 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ee.B("
+			throw JagexException.create(runtimeexception, "ee.B("
 					+ arg0 + ')');
 		}
 	}
@@ -48,7 +48,7 @@ public class Class18 implements KeyListener, FocusListener {
 		try {
 			return arg0 ^ arg1;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ee.D("
+			throw JagexException.create(runtimeexception, ("ee.D("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -71,7 +71,7 @@ public class Class18 implements KeyListener, FocusListener {
 			}
 			return 7 + -arg2;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ee.A("
+			throw JagexException.create(runtimeexception, ("ee.A("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ')'));
 		}
 	}
@@ -109,7 +109,7 @@ public class Class18 implements KeyListener, FocusListener {
 			}
 			return Class.forName(arg1);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ee.C("
+			throw JagexException.create(runtimeexception, ("ee.C("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ')'));
 		}
 	}
@@ -119,8 +119,8 @@ public class Class18 implements KeyListener, FocusListener {
 		try {
 			anInt466++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4
-					.method423(runtimeexception, ("ee.focusGained("
+			throw JagexException
+					.create(runtimeexception, ("ee.focusGained("
 							+ (arg0 != null ? "{...}" : "null") + ')'));
 		}
 	}
@@ -169,8 +169,8 @@ public class Class18 implements KeyListener, FocusListener {
 			}
 			anInt481++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4
-					.method423(runtimeexception, ("ee.keyPressed("
+			throw JagexException
+					.create(runtimeexception, ("ee.keyPressed("
 							+ (arg0 != null ? "{...}" : "null") + ')'));
 		}
 	}
@@ -199,8 +199,8 @@ public class Class18 implements KeyListener, FocusListener {
 			}
 			arg0.consume();
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4
-					.method423(runtimeexception, ("ee.keyReleased("
+			throw JagexException
+					.create(runtimeexception, ("ee.keyReleased("
 							+ (arg0 != null ? "{...}" : "null") + ')'));
 		}
 	}
@@ -220,7 +220,7 @@ public class Class18 implements KeyListener, FocusListener {
 			anInt468++;
 			arg0.consume();
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					("ee.keyTyped(" + (arg0 != null ? "{...}" : "null") + ')'));
 		}
 	}

@@ -59,7 +59,7 @@ public class Class65 {
 			aJagexString_1293 = null;
 			anIntArray1297 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "se.A("
+			throw JagexException.create(runtimeexception, "se.A("
 					+ arg0 + ')');
 		}
 	}
@@ -181,7 +181,7 @@ public class Class65 {
 			anInt1287++;
 			return arg0;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("se.B("
+			throw JagexException.create(runtimeexception, ("se.B("
 					+ (arg0 != null ? "{...}" : "null") + ','
 					+ (arg1 != null ? "{...}" : "null") + ',' + arg2 + ')'));
 		}
@@ -196,7 +196,7 @@ public class Class65 {
 			aClass4_1286.prev = aClass4_1286;
 			aClass4_1286.next = aClass4_1286;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					"se.<init>(" + ')');
 		}
 	}
@@ -214,7 +214,7 @@ public class Class65 {
 				method1077(false, null);
 			return class4;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "se.E("
+			throw JagexException.create(runtimeexception, "se.E("
 					+ arg0 + ')');
 		}
 	}
@@ -231,7 +231,7 @@ public class Class65 {
 				arg0.next.prev = arg0;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("se.D("
+			throw JagexException.create(runtimeexception, ("se.D("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ')'));
 		}
 	}
@@ -247,7 +247,7 @@ public class Class65 {
 			class4.clear();
 			return class4;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "se.G("
+			throw JagexException.create(runtimeexception, "se.G("
 					+ arg0 + ')');
 		}
 	}
@@ -262,7 +262,7 @@ public class Class65 {
 				class4.clear();
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "se.C("
+			throw JagexException.create(runtimeexception, "se.C("
 					+ arg0 + ')');
 		}
 	}
@@ -280,7 +280,7 @@ public class Class65 {
 			aClass4_1305 = class4.next;
 			return class4;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "se.F("
+			throw JagexException.create(runtimeexception, "se.F("
 					+ arg0 + ')');
 		}
 	}
@@ -296,7 +296,7 @@ public class Class65 {
 				method1073(false);
 			return class4;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "se.J("
+			throw JagexException.create(runtimeexception, "se.J("
 					+ arg0 + ')');
 		}
 	}
@@ -313,7 +313,7 @@ public class Class65 {
 			arg0.prev.next = arg0;
 			arg0.next.prev = arg0;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("se.I("
+			throw JagexException.create(runtimeexception, ("se.I("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ','
 					+ (arg2 != null ? "{...}" : "null") + ')'));
 		}
@@ -332,7 +332,7 @@ public class Class65 {
 				anIntArray1289 = null;
 			return class4;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "se.K("
+			throw JagexException.create(runtimeexception, "se.K("
 					+ arg0 + ')');
 		}
 	}
@@ -349,7 +349,7 @@ public class Class65 {
 				arg1.next.prev = arg1;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("se.H("
+			throw JagexException.create(runtimeexception, ("se.H("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ')'));
 		}
 	}
@@ -367,7 +367,7 @@ public class Class65 {
 			aClass4_1305 = class4.prev;
 			return class4;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "se.L("
+			throw JagexException.create(runtimeexception, "se.L("
 					+ arg0 + ')');
 		}
 	}

@@ -41,7 +41,7 @@ public class Class4_Sub8 extends RSFont {
 						Class13_Sub2.aClass4_Sub8Array2482[arg1].aLong150);
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("hb.A("
+			throw JagexException.create(runtimeexception, ("hb.A("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -61,7 +61,7 @@ public class Class4_Sub8 extends RSFont {
 				method190(92);
 			aJagexString_1970 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "hb.B("
+			throw JagexException.create(runtimeexception, "hb.B("
 					+ arg0 + ')');
 		}
 	}

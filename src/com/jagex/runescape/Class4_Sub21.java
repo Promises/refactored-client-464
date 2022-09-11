@@ -53,7 +53,7 @@ public class Class4_Sub21 extends RSFont {
 				return Class47.method982(-24158, arg0);
 			return arg0;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("t.C("
+			throw JagexException.create(runtimeexception, ("t.C("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ','
 					+ arg2 + ')'));
 		}
@@ -75,7 +75,7 @@ public class Class4_Sub21 extends RSFont {
 				aImageRGB_2368 = null;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "t.A("
+			throw JagexException.create(runtimeexception, "t.A("
 					+ arg0 + ')');
 		}
 	}
@@ -90,7 +90,7 @@ public class Class4_Sub21 extends RSFont {
 			int i_0_ = arg1.method747(!arg3, arg2, i);
 			return Class4_Sub20_Sub7.method376(i, i_0_, arg1, 0);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("t.B("
+			throw JagexException.create(runtimeexception, ("t.B("
 					+ (arg0 != null ? "{...}" : "null") + ','
 					+ (arg1 != null ? "{...}" : "null") + ','
 					+ (arg2 != null ? "{...}" : "null") + ',' + arg3 + ')'));

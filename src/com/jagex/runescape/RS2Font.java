@@ -80,7 +80,7 @@ public class RS2Font extends Class4_Sub20 {
                 return null;
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ae.I("
+            throw JagexException.create(runtimeexception, ("ae.I("
                     + arg0 + ',' + arg1 + ',' + arg2 + ','
                     + (arg3 != null ? "{...}" : "null") + ','
                     + (arg4 != null ? "{...}" : "null") + ')'));
@@ -102,7 +102,7 @@ public class RS2Font extends Class4_Sub20 {
                 aJagexString_2770 = null;
             return arg0;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ae.A("
+            throw JagexException.create(runtimeexception, ("ae.A("
                     + (arg0 != null ? "{...}" : "null") + ',' + arg1 + ')'));
         }
     }
@@ -126,7 +126,7 @@ public class RS2Font extends Class4_Sub20 {
                 anIntArray2771 = null;
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ae.E("
+            throw JagexException.create(runtimeexception, "ae.E("
                     + arg0 + ')');
         }
     }
@@ -194,7 +194,7 @@ public class RS2Font extends Class4_Sub20 {
                 aJagexString_2764 = null;
             Class4_Sub20_Sub5.aClass4_Sub11_Sub1_2883.method274((byte) -68);
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ae.F("
+            throw JagexException.create(runtimeexception, "ae.F("
                     + arg0 + ')');
         }
     }
@@ -233,7 +233,7 @@ public class RS2Font extends Class4_Sub20 {
                         15, Class4_Sub2_Sub1.anInt2593);
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ae.G("
+            throw JagexException.create(runtimeexception, ("ae.G("
                     + arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ',' + arg4
                     + ',' + arg5 + ')'));
         }
@@ -260,7 +260,7 @@ public class RS2Font extends Class4_Sub20 {
             if (arg2 == -13998)
                 anInt2783++;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ae.J("
+            throw JagexException.create(runtimeexception, ("ae.J("
                     + arg0 + ',' + (arg1 != null ? "{...}" : "null") + ','
                     + arg2 + ')'));
         }
@@ -319,7 +319,7 @@ public class RS2Font extends Class4_Sub20 {
             else if (anInt2766 > 255)
                 anInt2766 = 255;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ae.C("
+            throw JagexException.create(runtimeexception, ("ae.C("
                     + arg0 + ',' + arg1 + ')'));
         }
     }
@@ -332,7 +332,7 @@ public class RS2Font extends Class4_Sub20 {
                 anInt2776 = arg2.method248(false);
             anInt2780++;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ae.D("
+            throw JagexException.create(runtimeexception, ("ae.D("
                     + arg0 + ',' + arg1 + ','
                     + (arg2 != null ? "{...}" : "null") + ',' + arg3 + ')'));
         }
@@ -345,7 +345,7 @@ public class RS2Font extends Class4_Sub20 {
                 method344(-4, 56, null, 56);
             anInt2760++;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ae.B("
+            throw JagexException.create(runtimeexception, "ae.B("
                     + arg0 + ')');
         }
     }

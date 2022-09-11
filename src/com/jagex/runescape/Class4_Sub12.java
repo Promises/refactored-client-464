@@ -21,7 +21,7 @@ public class Class4_Sub12 extends RSFont {
 				return new SceneGraph();
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "mc.A("
+			throw JagexException.create(runtimeexception, "mc.A("
 					+ arg0 + ')');
 		}
 	}
@@ -62,7 +62,7 @@ public class Class4_Sub12 extends RSFont {
 			Class72.aBooleanArray1487[arg1] = true;
 			return true;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("mc.C("
+			throw JagexException.create(runtimeexception, ("mc.C("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -76,7 +76,7 @@ public class Class4_Sub12 extends RSFont {
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("mc.D("
+			throw JagexException.create(runtimeexception, ("mc.D("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
 		}
 	}
@@ -88,7 +88,7 @@ public class Class4_Sub12 extends RSFont {
 			anInt2118++;
 			System.exit(arg0);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "mc.B("
+			throw JagexException.create(runtimeexception, "mc.B("
 					+ arg0 + ')');
 		}
 	}

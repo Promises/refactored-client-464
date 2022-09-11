@@ -48,7 +48,7 @@ public class AppletListener implements
             }
             anInt1449++;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "com.jagex.runescape.AppletListener.method1149("
+            throw JagexException.create(runtimeexception, "com.jagex.runescape.AppletListener.method1149("
                     + "72" + ')');
         }
     }
@@ -59,7 +59,7 @@ public class AppletListener implements
             StringUtilities.aJagexString_1458 = null;
             StringUtilities.aJagexString_1463 = null;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "te.D("
+            throw JagexException.create(runtimeexception, "te.D("
                     + arg0 + ')');
         }
     }
@@ -78,7 +78,7 @@ public class AppletListener implements
             Class4_Sub20_Sub9.anInt3050 = arg0;
             Class4_Sub20_Sub5.anInt2888 = 10000;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("te.A("
+            throw JagexException.create(runtimeexception, ("te.A("
                     + arg0 + ',' + arg1 + ','
                     + (arg2 != null ? "{...}" : "null") + ',' + arg3 + ','
                     + arg4 + ',' + arg5 + ')'));
@@ -91,7 +91,7 @@ public class AppletListener implements
             anInt1462++;
             Class4_Sub6 class4_sub6 = new Class4_Sub6();
             class4_sub6.anInt1916 = arg3.get();
-            class4_sub6.anInt1937 = arg3.readInt((byte) 73);
+            class4_sub6.anInt1937 = arg3.readInt();
             class4_sub6.aClass22Array1940 = new Class22[class4_sub6.anInt1916];
             class4_sub6.anIntArray1926 = new int[class4_sub6.anInt1916];
             class4_sub6.aClass22Array1927 = new Class22[class4_sub6.anInt1916];
@@ -106,19 +106,19 @@ public class AppletListener implements
                                 && (i_0_ ^ 0xffffffff) != -3) {
                             if ((i_0_ ^ 0xffffffff) == -4
                                     || (i_0_ ^ 0xffffffff) == -5) {
-                                String string = new String(arg3.method212(
+                                String string = new String(arg3.readString(
                                 ).method836(-10650));
-                                String string_1_ = new String(arg3.method212(
+                                String string_1_ = new String(arg3.readString(
                                 ).method836(-10650));
                                 int i_2_ = arg3.get();
                                 String[] strings = new String[i_2_];
                                 for (int i_3_ = 0; (i_3_ ^ 0xffffffff) > (i_2_ ^ 0xffffffff); i_3_++)
-                                    strings[i_3_] = new String(arg3.method212(
+                                    strings[i_3_] = new String(arg3.readString(
                                     ).method836(arg2 + -10670));
                                 byte[][] is = new byte[i_2_][];
                                 if (i_0_ == 3) {
                                     for (int i_4_ = 0; i_4_ < i_2_; i_4_++) {
-                                        int i_5_ = arg3.readInt((byte) 73);
+                                        int i_5_ = arg3.readInt();
                                         is[i_4_] = new byte[i_5_];
                                         arg3.method253(0, (byte) -121, i_5_,
                                                 is[i_4_]);
@@ -137,12 +137,12 @@ public class AppletListener implements
                             }
                         } else {
                             String string = new String(arg3
-                                    .method212().method836(-10650));
-                            String string_7_ = new String(arg3.method212()
+                                    .readString().method836(-10650));
+                            String string_7_ = new String(arg3.readString()
                                     .method836(arg2 + -10670));
                             int i_8_ = 0;
                             if ((i_0_ ^ 0xffffffff) == -2)
-                                i_8_ = arg3.readInt((byte) 73);
+                                i_8_ = arg3.readInt();
                             class4_sub6.anIntArray1920[i] = i_0_;
                             class4_sub6.anIntArray1929[i] = i_8_;
                             class4_sub6.aClass22Array1940[i] = signlink
@@ -165,7 +165,7 @@ public class AppletListener implements
                 Class8.aClass65_252.method1068(class4_sub6, (byte) -125);
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("te.C("
+            throw JagexException.create(runtimeexception, ("te.C("
                     + arg0 + ',' + (signlink != null ? "{...}" : "null") + ','
                     + arg2 + ',' + (arg3 != null ? "{...}" : "null") + ')'));
         }
@@ -176,8 +176,8 @@ public class AppletListener implements
         try {
             anInt1455++;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4
-                    .method423(runtimeexception, ("te.focusGained("
+            throw JagexException
+                    .create(runtimeexception, ("te.focusGained("
                             + (arg0 != null ? "{...}" : "null") + ')'));
         }
     }
@@ -189,8 +189,8 @@ public class AppletListener implements
                 GameShell.mouseButtonPressed = 0;
             anInt1466++;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4
-                    .method423(runtimeexception, ("te.focusLost("
+            throw JagexException
+                    .create(runtimeexception, ("te.focusLost("
                             + (arg0 != null ? "{...}" : "null") + ')'));
         }
     }

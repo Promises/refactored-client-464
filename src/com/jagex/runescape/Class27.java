@@ -60,7 +60,7 @@ public class Class27 {
 				class4_sub7_1_.anInt1954 = arg8;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ia.A("
+			throw JagexException.create(runtimeexception, ("ia.A("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ',' + arg3 + ',' + arg4
 					+ ',' + arg5 + ',' + arg6 + ',' + arg7 + ',' + arg8 + ','
 					+ arg9 + ')'));
@@ -77,7 +77,7 @@ public class Class27 {
 			StringUtilities.aJagexString_629 = null;
 			StringUtilities.aJagexString_624 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ia.F("
+			throw JagexException.create(runtimeexception, "ia.F("
 					+ arg0 + ')');
 		}
 	}
@@ -93,7 +93,7 @@ public class Class27 {
 			Buffer.aBoolean2066 = arg3;
 			anInt606++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ia.I("
+			throw JagexException.create(runtimeexception, ("ia.I("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ','
 					+ (arg2 != null ? "{...}" : "null") + ',' + arg3 + ')'));
 		}
@@ -125,7 +125,7 @@ public class Class27 {
 			aByteArray602 = new byte[arg2];
 			aByteArray601 = new byte[arg1];
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					("ia.<init>(" + (arg0 != null ? "{...}" : "null") + ','
 							+ arg1 + ',' + arg2 + ')'));
 		}
@@ -191,7 +191,7 @@ public class Class27 {
 			anInt620++;
 			return aClass39_599.method926((byte) 79);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ia.K("
+			throw JagexException.create(runtimeexception, "ia.K("
 					+ arg0 + ')');
 		}
 	}
@@ -204,7 +204,7 @@ public class Class27 {
 			anInt621++;
 			return aLong619;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ia.J("
+			throw JagexException.create(runtimeexception, "ia.J("
 					+ arg0 + ')');
 		}
 	}
@@ -344,7 +344,7 @@ public class Class27 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ia.H("
+			throw JagexException.create(runtimeexception, "ia.H("
 					+ arg0 + ')');
 		}
 	}
@@ -438,7 +438,7 @@ public class Class27 {
 				aLong611 = arg1;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ia.C("
+			throw JagexException.create(runtimeexception, ("ia.C("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}

@@ -26,8 +26,8 @@ public class Envelope {
 
 	public void decode(Buffer data) {
 		form = data.get();
-		start = data.readInt((byte) 73);
-		end = data.readInt((byte) 73);
+		start = data.readInt();
+		end = data.readInt();
 		decode_shape(data);
 	}
 

@@ -116,7 +116,7 @@ public class Class4_Sub20_Sub11 extends Class4_Sub20 {
 				aClass65_3075 = null;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "mb.C("
+			throw JagexException.create(runtimeexception, "mb.C("
 					+ arg0 + ')');
 		}
 	}
@@ -133,7 +133,7 @@ public class Class4_Sub20_Sub11 extends Class4_Sub20 {
 				method486(-126, arg0, i);
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("mb.A("
+			throw JagexException.create(runtimeexception, ("mb.A("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ')'));
 		}
 	}

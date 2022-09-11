@@ -111,7 +111,7 @@ public class Class52 {
 				Class14.anIntArray392[187] = 27;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "oe.D("
+			throw JagexException.create(runtimeexception, "oe.D("
 					+ arg0 + ')');
 		}
 	}
@@ -127,7 +127,7 @@ public class Class52 {
 			Class4_Sub20_Sub7_Sub3.aLong3335 = l;
 			return l + Class2.aLong82;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "oe.B("
+			throw JagexException.create(runtimeexception, "oe.B("
 					+ arg0 + ')');
 		}
 	}
@@ -155,7 +155,7 @@ public class Class52 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("oe.C("
+			throw JagexException.create(runtimeexception, ("oe.C("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -175,7 +175,7 @@ public class Class52 {
 				aJagexString_1057 = null;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "oe.A("
+			throw JagexException.create(runtimeexception, "oe.A("
 					+ arg0 + ')');
 		}
 	}

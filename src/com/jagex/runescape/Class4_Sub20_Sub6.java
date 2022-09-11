@@ -32,7 +32,7 @@ public class Class4_Sub20_Sub6 extends Class4_Sub20 {
 				return null;
 			return Class48.method985(-31783);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("hc.E("
+			throw JagexException.create(runtimeexception, ("hc.E("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ','
 					+ arg2 + ',' + arg3 + ')'));
 		}
@@ -55,7 +55,7 @@ public class Class4_Sub20_Sub6 extends Class4_Sub20 {
 			aClass19_Sub1_2921 = null;
 			aClass19_Sub1_2911 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "hc.G("
+			throw JagexException.create(runtimeexception, "hc.G("
 					+ arg0 + ')');
 		}
 	}
@@ -66,12 +66,12 @@ public class Class4_Sub20_Sub6 extends Class4_Sub20 {
 			anInt2907++;
 			if (arg1 != 0)
 				return -36;
-			if (Class4_Sub20_Sub8.aClass4_Sub20_Sub10_2990 == null
-					|| Class4_Sub20_Sub8.aClass4_Sub20_Sub10_2990.aLong150 != l)
+			if (ItemDefinition.aClass4_Sub20_Sub10_2990 == null
+					|| ItemDefinition.aClass4_Sub20_Sub10_2990.aLong150 != l)
 				return 0;
-			return 1 + (99 * Class40.aClass4_Sub11_783.currentPosition / (Class40.aClass4_Sub11_783.byteBuffer.length - (Class4_Sub20_Sub8.aClass4_Sub20_Sub10_2990.aByte3052)));
+			return 1 + (99 * Class40.aClass4_Sub11_783.currentPosition / (Class40.aClass4_Sub11_783.byteBuffer.length - (ItemDefinition.aClass4_Sub20_Sub10_2990.aByte3052)));
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("hc.A("
+			throw JagexException.create(runtimeexception, ("hc.A("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
 		}
 	}
@@ -231,7 +231,7 @@ public class Class4_Sub20_Sub6 extends Class4_Sub20 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("hc.D("
+			throw JagexException.create(runtimeexception, ("hc.D("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ')'));
 		}
 	}
@@ -282,7 +282,7 @@ public class Class4_Sub20_Sub6 extends Class4_Sub20 {
 			}
 			return class4_sub20_sub7_sub7_7_;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("hc.F("
+			throw JagexException.create(runtimeexception, ("hc.F("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}

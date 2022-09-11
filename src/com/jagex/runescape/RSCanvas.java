@@ -37,7 +37,7 @@ public class RSCanvas extends Canvas {
 				return 122;
 			return (arg1 & 0xfaf52) >> -715614287;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ob.D("
+			throw JagexException.create(runtimeexception, ("ob.D("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -50,7 +50,7 @@ public class RSCanvas extends Canvas {
 			Class4_Sub20_Sub7_Sub4.aClass19_3371 = arg1;
 			Class4_Sub20_Sub5.aClass19_2892 = arg3;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ob.C("
+			throw JagexException.create(runtimeexception, ("ob.C("
 					+ (arg0 != null ? "{...}" : "null") + ','
 					+ (arg1 != null ? "{...}" : "null") + ',' + arg2 + ','
 					+ (arg3 != null ? "{...}" : "null") + ')'));
@@ -70,7 +70,7 @@ public class RSCanvas extends Canvas {
 				return true;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ob.B("
+			throw JagexException.create(runtimeexception, "ob.B("
 					+ arg0 + ')');
 		}
 	}
@@ -89,7 +89,7 @@ public class RSCanvas extends Canvas {
 		try {
 			this.component = comp;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					("ob.<init>(" + (comp != null ? "{...}" : "null") + ')'));
 		}
 	}
@@ -100,7 +100,7 @@ public class RSCanvas extends Canvas {
 			anInt46++;
 			component.paint(g);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					("ob.paint(" + (g != null ? "{...}" : "null") + ')'));
 		}
 	}
@@ -111,7 +111,7 @@ public class RSCanvas extends Canvas {
 			anInt51++;
 			component.update(g);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					("ob.update(" + (g != null ? "{...}" : "null") + ')'));
 		}
 	}

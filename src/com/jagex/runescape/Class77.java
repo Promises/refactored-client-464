@@ -62,7 +62,7 @@ public class Class77 {
 				Class4_Sub21.anInt2374 = arg5;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("vd.A("
+			throw JagexException.create(runtimeexception, ("vd.A("
 					+ arg0 + ',' + arg1 + ','
 					+ (arg2 != null ? "{...}" : "null") + ',' + arg3 + ','
 					+ arg4 + ',' + arg5 + ',' + arg6 + ')'));
@@ -78,7 +78,7 @@ public class Class77 {
 			anIntArray1585 = null;
 			aClass75_1597 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "vd.D("
+			throw JagexException.create(runtimeexception, "vd.D("
 					+ arg0 + ')');
 		}
 	}
@@ -111,7 +111,7 @@ public class Class77 {
 			}
 			anInflater1586.reset();
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("vd.C("
+			throw JagexException.create(runtimeexception, ("vd.C("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ','
 					+ (arg2 != null ? "{...}" : "null") + ')'));
 		}

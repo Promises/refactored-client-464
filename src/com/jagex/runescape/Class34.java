@@ -54,7 +54,7 @@ public class Class34 implements Interface2 {
             }
             return i;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("jd.K("
+            throw JagexException.create(runtimeexception, ("jd.K("
                     + (arg0 != null ? "{...}" : "null") + ',' + arg1 + ')'));
         }
     }
@@ -65,7 +65,7 @@ public class Class34 implements Interface2 {
             RSFont.aClass19_158 = arg0;
             Class82.anInt1715 = RSFont.aClass19_158.method741(16, true);
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("jd.L("
+            throw JagexException.create(runtimeexception, ("jd.L("
                     + (arg0 != null ? "{...}" : "null") + ',' + arg1 + ')'));
         }
     }
@@ -109,7 +109,7 @@ public class Class34 implements Interface2 {
             }
             return 0;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("jd.E("
+            throw JagexException.create(runtimeexception, ("jd.E("
                     + arg0 + ',' + (arg1 != null ? "{...}" : "null") + ')'));
         }
     }
@@ -122,7 +122,7 @@ public class Class34 implements Interface2 {
             }
             return Class76.method1185(10, -106, arg0, arg1);
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("jd.J("
+            throw JagexException.create(runtimeexception, ("jd.J("
                     + arg0 + ',' + arg1 + ',' + arg2 + ')'));
         }
     }
@@ -146,7 +146,7 @@ public class Class34 implements Interface2 {
             StringUtilities.aJagexString_1762 = null;
             anIntArray1743 = null;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "jd.F("
+            throw JagexException.create(runtimeexception, "jd.F("
                     + arg0 + ')');
         }
     }
@@ -184,7 +184,7 @@ public class Class34 implements Interface2 {
                         class4_sub11);
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+            throw JagexException.create(runtimeexception,
                     ("jd.<init>(" + (arg0 != null ? "{...}" : "null") + ','
                             + (arg1 != null ? "{...}" : "null") + ',' + arg2
                             + ',' + arg3 + ',' + arg4 + ')'));
@@ -197,7 +197,7 @@ public class Class34 implements Interface2 {
             anInt1741++;
             return aClass4_Sub19Array1738[arg1].aBoolean2343;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("jd.D("
+            throw JagexException.create(runtimeexception, ("jd.D("
                     + arg0 + ',' + arg1 + ')'));
         }
     }
@@ -214,7 +214,7 @@ public class Class34 implements Interface2 {
             }
             return true;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("jd.A("
+            throw JagexException.create(runtimeexception, ("jd.A("
                     + arg0 + ',' + arg1 + ')'));
         }
     }
@@ -231,7 +231,7 @@ public class Class34 implements Interface2 {
             }
             return aClass4_Sub19Array1738[arg1].anInt2337;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("jd.B("
+            throw JagexException.create(runtimeexception, ("jd.B("
                     + arg0 + ',' + arg1 + ')'));
         }
     }
@@ -247,7 +247,7 @@ public class Class34 implements Interface2 {
             aClass65_1744 = new Class65();
             anInt1752 = anInt1754;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "jd.G("
+            throw JagexException.create(runtimeexception, "jd.G("
                     + arg0 + ')');
         }
     }
@@ -258,7 +258,7 @@ public class Class34 implements Interface2 {
             aDouble1750 = arg1;
             method890(arg0 ^ arg0);
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("jd.H("
+            throw JagexException.create(runtimeexception, ("jd.H("
                     + arg0 + ',' + arg1 + ')'));
         }
     }
@@ -276,7 +276,7 @@ public class Class34 implements Interface2 {
                 }
             }
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("jd.I("
+            throw JagexException.create(runtimeexception, ("jd.I("
                     + arg0 + ',' + arg1 + ')'));
         }
     }
@@ -309,7 +309,7 @@ public class Class34 implements Interface2 {
             }
             return null;
         } catch (RuntimeException runtimeexception) {
-            throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("jd.C("
+            throw JagexException.create(runtimeexception, ("jd.C("
                     + arg0 + ',' + arg1 + ')'));
         }
     }

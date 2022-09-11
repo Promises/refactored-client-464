@@ -61,7 +61,7 @@ public class Class33 {
 					class4_sub20_sub13);
 			return class4_sub20_sub13;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("jc.C("
+			throw JagexException.create(runtimeexception, ("jc.C("
 					+ arg0 + ',' + arg1 + ')'));
 		}
 	}
@@ -84,7 +84,7 @@ public class Class33 {
 				anIntArray719[i] = arg0[i];
 			method885(true);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					("jc.<init>(" + (arg0 != null ? "{...}" : "null") + ')'));
 		}
 	}
@@ -101,7 +101,7 @@ public class Class33 {
 			return 0;
 			// return anIntArray719[anInt713];
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "jc.E("
+			throw JagexException.create(runtimeexception, "jc.E("
 					+ arg0 + ')');
 		}
 	}
@@ -230,7 +230,7 @@ public class Class33 {
 			method887(arg0);
 			anInt713 = 256;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "jc.A("
+			throw JagexException.create(runtimeexception, "jc.A("
 					+ arg0 + ')');
 		}
 	}
@@ -261,7 +261,7 @@ public class Class33 {
 								i_11_ >> 349102440) >> 967568802)]);
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "jc.F("
+			throw JagexException.create(runtimeexception, "jc.F("
 					+ arg0 + ')');
 		}
 	}

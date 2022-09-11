@@ -112,7 +112,7 @@ public class Class4_Sub20_Sub15 extends Class4_Sub20 {
 					break;
 				packetSize = -76;
 			} catch (RuntimeException runtimeexception) {
-				throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+				throw JagexException.create(runtimeexception,
 						("sc.C(" + (arg0 != null ? "{...}" : "null") + ','
 								+ arg1 + ',' + arg2 + ','
 								+ (arg3 != null ? "{...}" : "null") + ','
@@ -133,7 +133,7 @@ public class Class4_Sub20_Sub15 extends Class4_Sub20 {
 				method603(true);
 			return Class4_Sub17.method306(2640);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("sc.A("
+			throw JagexException.create(runtimeexception, ("sc.A("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ','
 					+ arg2 + ',' + arg3 + ')'));
 		}
@@ -155,7 +155,7 @@ public class Class4_Sub20_Sub15 extends Class4_Sub20 {
 				packetSize = 9;
 			anInt3155++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "sc.D("
+			throw JagexException.create(runtimeexception, "sc.D("
 					+ arg0 + ')');
 		}
 	}
@@ -182,7 +182,7 @@ public class Class4_Sub20_Sub15 extends Class4_Sub20 {
 				packetSize = -93;
 			anInt3154++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("sc.E("
+			throw JagexException.create(runtimeexception, ("sc.E("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ')'));
 		}
 	}

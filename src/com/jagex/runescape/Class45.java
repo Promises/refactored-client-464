@@ -20,7 +20,7 @@ public abstract class Class45 {
 					break;
 				method972(102);
 			} catch (RuntimeException runtimeexception) {
-				throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+				throw JagexException.create(runtimeexception,
 						"lf.C(" + arg0 + ')');
 			}
 			break;

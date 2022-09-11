@@ -129,7 +129,7 @@ public class Class81 {
 								class9.anInt279 = i_0_ & 0x7fff;
 								class9.aBoolean267 = (i_0_ & 0x8000 ^ 0xffffffff) != -1;
 								class9.aJagexString_264 = class4_sub11
-										.method212();
+										.readString();
 								class9.anInt265 = class4_sub11
 										.method238((byte) -80);
 								class9.anInt263 = i;
@@ -163,7 +163,7 @@ public class Class81 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "wc.G("
+			throw JagexException.create(runtimeexception, "wc.G("
 					+ arg0 + ')');
 		}
 	}
@@ -184,7 +184,7 @@ public class Class81 {
 					Class59.method1035(arg0 << i_2_, i_3_), Class59.method1035(
 							i_3_ ^ 0xffffffff, Class31.anIntArray687[i])));
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("wc.F("
+			throw JagexException.create(runtimeexception, ("wc.F("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
 		}
 	}
@@ -241,7 +241,7 @@ public class Class81 {
 				aClass4_Sub20_Sub12_Sub1Array1709 = null;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "wc.E("
+			throw JagexException.create(runtimeexception, "wc.E("
 					+ arg0 + ')');
 		}
 	}
@@ -290,7 +290,7 @@ public class Class81 {
 			aClass19_1656 = arg0;
 			aClass19_1660 = arg1;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					("wc.<init>(" + (arg0 != null ? "{...}" : "null") + ','
 							+ (arg1 != null ? "{...}" : "null") + ')'));
 		}
@@ -319,7 +319,7 @@ public class Class81 {
 				arg0[0] -= class4_sub4_sub1.aByteArray2661.length;
 			return class4_sub4_sub1;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("wc.C("
+			throw JagexException.create(runtimeexception, ("wc.C("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ','
 					+ arg2 + ',' + arg3 + ')'));
 		}
@@ -354,7 +354,7 @@ public class Class81 {
 			aClass16_1697.method720(class4_sub4_sub1, l, false);
 			return class4_sub4_sub1;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("wc.A("
+			throw JagexException.create(runtimeexception, ("wc.A("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ','
 					+ arg2 + ',' + arg3 + ')'));
 		}
@@ -371,7 +371,7 @@ public class Class81 {
 				return method1207(arg0, arg2, 0, -19717);
 			throw new RuntimeException();
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("wc.D("
+			throw JagexException.create(runtimeexception, ("wc.D("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ','
 					+ arg2 + ')'));
 		}
@@ -388,7 +388,7 @@ public class Class81 {
 				return method1205(arg2, 0, false, arg0);
 			throw new RuntimeException();
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("wc.B("
+			throw JagexException.create(runtimeexception, ("wc.B("
 					+ arg0 + ',' + arg1 + ','
 					+ (arg2 != null ? "{...}" : "null") + ')'));
 		}

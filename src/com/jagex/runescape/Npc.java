@@ -50,7 +50,7 @@ public class Npc extends Actor {
 			aJagexString_3630 = null;
 			aJagexString_3628 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "rb.K("
+			throw JagexException.create(runtimeexception, "rb.K("
 					+ arg0 + ')');
 		}
 	}
@@ -70,7 +70,7 @@ public class Npc extends Actor {
 				return arg0;
 			return 1;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("rb.J("
+			throw JagexException.create(runtimeexception, ("rb.J("
 					+ arg0 + ',' + arg1 + ',' + arg2 + ')'));
 		}
 	}
@@ -113,7 +113,7 @@ public class Npc extends Actor {
 				class4_sub20_sub7_sub7.aBoolean3454 = true;
 			return class4_sub20_sub7_sub7;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "rb.V("
+			throw JagexException.create(runtimeexception, "rb.V("
 					+ arg0 + ')');
 		}
 	}
@@ -128,7 +128,7 @@ public class Npc extends Actor {
 				return false;
 			return true;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "rb.D("
+			throw JagexException.create(runtimeexception, "rb.D("
 					+ arg0 + ')');
 		}
 	}

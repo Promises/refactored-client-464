@@ -43,7 +43,7 @@ public class Class43 {
 			Class67.anIntArray1367 = null;
 			Class35.anIntArray726 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ld.L("
+			throw JagexException.create(runtimeexception, "ld.L("
 					+ arg0 + ')');
 		}
 	}
@@ -56,7 +56,7 @@ public class Class43 {
 			anInt870++;
 			Class61.method1047(arg1, false, arg3, null, arg0);
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ld.N("
+			throw JagexException.create(runtimeexception, ("ld.N("
 					+ (arg0 != null ? "{...}" : "null") + ','
 					+ (arg1 != null ? "{...}" : "null") + ',' + arg2 + ','
 					+ arg3 + ')'));
@@ -73,7 +73,7 @@ public class Class43 {
 			StringUtilities.aJagexString_867 = null;
 			StringUtilities.aJagexString_864 = null;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ld.H("
+			throw JagexException.create(runtimeexception, "ld.H("
 					+ arg0 + ')');
 		}
 	}
@@ -245,7 +245,7 @@ public class Class43 {
 			}
 			anInt875++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ld.K("
+			throw JagexException.create(runtimeexception, "ld.K("
 					+ arg0 + ')');
 		}
 	}
@@ -254,7 +254,7 @@ public class Class43 {
 		try {
 			anInt858++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					"ld.C(" + ')');
 		}
 	}
@@ -272,7 +272,7 @@ public class Class43 {
 				anInt879++;
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ld.I("
+			throw JagexException.create(runtimeexception, "ld.I("
 					+ arg0 + ')');
 		}
 	}
@@ -285,7 +285,7 @@ public class Class43 {
 			}
 			anInt880++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ld.Q("
+			throw JagexException.create(runtimeexception, ("ld.Q("
 					+ arg0 + ',' + (arg1 != null ? "{...}" : "null") + ')'));
 		}
 	}
@@ -363,7 +363,7 @@ public class Class43 {
 				}
 			}
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ld.P("
+			throw JagexException.create(runtimeexception, "ld.P("
 					+ arg0 + ')');
 		}
 	}
@@ -372,7 +372,7 @@ public class Class43 {
 		try {
 			anInt873++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ld.D("
+			throw JagexException.create(runtimeexception, "ld.D("
 					+ (arg0 != null ? "{...}" : "null") + ')');
 		}
 	}
@@ -393,7 +393,7 @@ public class Class43 {
 			aClass4_Sub2Array899[i] = arg0;
 			arg0.anInt1871 = arg1;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, ("ld.S("
+			throw JagexException.create(runtimeexception, ("ld.S("
 					+ (arg0 != null ? "{...}" : "null") + ',' + arg1 + ','
 					+ arg2 + ')'));
 		}
@@ -426,7 +426,7 @@ public class Class43 {
 			anIntArray877 = null;
 			anInt865++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ld.R("
+			throw JagexException.create(runtimeexception, "ld.R("
 					+ arg0 + ')');
 		}
 	}
@@ -436,7 +436,7 @@ public class Class43 {
 			anInt863++;
 			return anInt902;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					"ld.B(" + ')');
 		}
 	}
@@ -445,7 +445,7 @@ public class Class43 {
 		try {
 			anInt903++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					"ld.A(" + ')');
 		}
 	}
@@ -552,7 +552,7 @@ public class Class43 {
 		try {
 			anInt892++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception, "ld.F("
+			throw JagexException.create(runtimeexception, "ld.F("
 					+ arg0 + ')');
 		}
 	}
@@ -575,7 +575,7 @@ public class Class43 {
 		try {
 			anInt890++;
 		} catch (RuntimeException runtimeexception) {
-			throw Class4_Sub20_Sub7_Sub4.method423(runtimeexception,
+			throw JagexException.create(runtimeexception,
 					"ld.E(" + ')');
 		}
 	}
